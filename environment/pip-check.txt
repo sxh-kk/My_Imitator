@@ -1,0 +1,10 @@
+Using Python 3.12.15 environment at: /home/zxc/miniconda3/envs/imitator
+Checked 316 packages in 3ms
+Found 7 incompatibilities
+The package `lerobot` requires `diffusers>=0.27.2,<0.36.0`, but `0.36.0` is installed
+The package `lerobot` requires `huggingface-hub>=1.0.0,<2.0.0`, but `0.35.3` is installed
+The package `lerobot` requires `numpy>=2.0.0,<2.3.0`, but `1.26.4` is installed
+The package `lerobot` requires `draccus==0.10.0`, but `0.11.5` is installed
+The package `lerobot` requires `gymnasium>=1.1.1,<2.0.0`, but `0.29.1` is installed
+The package `rerun-sdk` requires `numpy>=2`, but `1.26.4` is installed
+The package `dlimp` requires `tensorflow==2.15.0`, but `2.19.1` is installed

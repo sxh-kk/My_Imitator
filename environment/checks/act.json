@@ -1,0 +1,21 @@
+{
+  "stage": "act",
+  "status": "passed",
+  "result": {
+    "inputs": "synthetic; no benchmark data",
+    "video_frames": 2,
+    "encoder": "pretrained facebook/dinov2-large, frozen",
+    "backbone": "pretrained ResNet18",
+    "action_shape": [
+      1,
+      24,
+      16
+    ],
+    "loss": 1.0671517848968506,
+    "optimizer_steps": 1,
+    "adapter_gradient": true,
+    "backbone_frozen": true,
+    "peak_cuda_allocated_bytes": 1581171712
+  },
+  "seconds": 51.549
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "env_id": "L0_TwoRobotPlaceMugRack-v1",
+    "level": "L0",
+    "input_mode": "video_only",
+    "num_episodes": 2,
+    "timestamp": "20261006_215549",
+    "status": "success",
+    "success_once_mean": 0.0,
+    "success_once_std": 0.0,
+    "return_mean": 46.9097785949707,
+    "return_std": 0.22724151611328125,
+    "episode_len_mean": 500.0,
+    "episode_len_std": 0.0,
+    "reward_mean": 0.09381955718994141,
+    "reward_std": 0.0004544830322265603,
+    "last_reward_mean": 0.0941784530878067,
+    "last_reward_std": 0.0005207806825637817,
+    "success_at_end_mean": 0.0,
+    "success_at_end_std": 0.0,
+    "tss_fail_mean": 0.45910024642944336,
+    "tss_fail_std": 0.008415892720222473,
+    "ndtw_fail_mean": 1.178905725479126,
+    "ndtw_fail_std": 0.03994208574295044,
+    "tss_success_mean": null,
+    "tss_success_std": null,
+    "ndtw_success_mean": null,
+    "ndtw_success_std": null,
+    "wtss_mean": 0.0
+  }
+]

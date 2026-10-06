@@ -1,0 +1,268 @@
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-06 17:46:55.405391: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-06 17:46:55.414436: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791280015.424387  153172 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791280015.427624  153172 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791280015.436739  153172 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791280015.436752  153172 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791280015.436755  153172 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791280015.436757  153172 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-06 17:46:55.439185: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+usage: /home/zxc/Imitator/The-Imitator-Game/examples/baselines/act/train_act_imitator.py [-h] [OPTIONS]
+
+Full training configuration for ACT + Task Encoder.
+
+╭─ options ────────────────────────────────────────────────────────────────────╮
+│ -h, --help               show this help message and exit                     │
+│ --exp-name {None}|STR    ── Experiment ───────────────────────────────────── │
+│                          ─────────────────────── (default: None)             │
+│ --seed INT               ── Experiment ───────────────────────────────────── │
+│                          ─────────────────────── (default: 1)                │
+│ --cuda, --no-cuda        ── Experiment ───────────────────────────────────── │
+│                          ─────────────────────── (default: True)             │
+│ --track, --no-track      ── Experiment ───────────────────────────────────── │
+│                          ─────────────────────── (default: False)            │
+│ --wandb-project-name STR                                                     │
+│                          ── Experiment ───────────────────────────────────── │
+│                          ─────────────────────── (default: ACTTaskEncoder)   │
+│ --wandb-entity {None}|STR                                                    │
+│                          ── Experiment ───────────────────────────────────── │
+│                          ─────────────────────── (default: None)             │
+│ --human-root STR         ── Data paths ───────────────────────────────────── │
+│                          ─────────────────────── (default: demos)            │
+│ --sim-root STR           ── Data paths ───────────────────────────────────── │
+│                          ─────────────────────── (default: demos)            │
+│ --task-mapping-file STR  ── Data paths ───────────────────────────────────── │
+│                          ─────────────────────── (default: examples/baseline │
+│                          s/lerobot_dataset/task_mapping.json)                │
+│ --human-dataset-file {None}|STR                                              │
+│                          ── Dataset configs ──────────────────────────────── │
+│                          ─────────────────────── (default: examples/baseline │
+│                          s/lerobot_dataset/config/human_config.json)         │
+│ --sim-dataset-file {None}|STR                                                │
+│                          ── Dataset configs ──────────────────────────────── │
+│                          ─────────────────────── (default: examples/baseline │
+│                          s/lerobot_dataset/config/sim_config.json)           │
+│ --human-task-description-file {None}|STR                                     │
+│                          ── Dataset configs ──────────────────────────────── │
+│                          ─────────────────────── (default: examples/baseline │
+│                          s/lerobot_dataset/task_desc/human_desc.json)        │
+│ --sim-task-description-file {None}|STR                                       │
+│                          ── Dataset configs ──────────────────────────────── │
+│                          ─────────────────────── (default: examples/baseline │
+│                          s/lerobot_dataset/task_desc/sim_desc.json)          │
+│ --data-source STR        "sim" | "robot" (default: sim)                      │
+│ --robot-root STR         (default: demos)                                    │
+│ --robot-dataset-file {None}|STR                                              │
+│                          (default: None)                                     │
+│ --robot-task-description-file {None}|STR                                     │
+│                          (default: examples/baselines/lerobot_dataset/task_d │
+│                          esc/robot_desc.json)                                │
+│ --use-epoch-training, --no-use-epoch-training                                │
+│                          ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: True)             │
+│ --total-epochs INT       ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: 100)              │
+│ --total-iters INT        ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: 1000000)          │
+│ --batch-size INT         ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: 256)              │
+│ --lr FLOAT               ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: 0.0001)           │
+│ --lr-backbone FLOAT      ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: 1e-05)            │
+│ --kl-weight FLOAT        ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: 10.0)             │
+│ --num-dataload-workers INT                                                   │
+│                          ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: 0)                │
+│ --warmup-epochs INT      ── Training mode ────────────────────────────────── │
+│                          ─────────────────────── (default: 5)                │
+│ --action-dim INT         ── ACT model architecture                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 16)                                       │
+│ --state-dim INT          ── ACT model architecture                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 18)                                       │
+│ --pred-horizon INT       num_queries for DETRVAE (default: 24)               │
+│ --obs-horizon INT        (default: 1)                                        │
+│ --backbone STR           DETR / Transformer (default: resnet18)              │
+│ --position-embedding STR                                                     │
+│                          DETR / Transformer (default: sine)                  │
+│ --dilation, --no-dilation                                                    │
+│                          DETR / Transformer (default: False)                 │
+│ --masks, --no-masks      DETR / Transformer (default: False)                 │
+│ --enc-layers INT         DETR / Transformer (default: 2)                     │
+│ --dec-layers INT         DETR / Transformer (default: 4)                     │
+│ --dim-feedforward INT    DETR / Transformer (default: 512)                   │
+│ --hidden-dim INT         DETR / Transformer (default: 256)                   │
+│ --dropout FLOAT          DETR / Transformer (default: 0.1)                   │
+│ --nheads INT             DETR / Transformer (default: 8)                     │
+│ --pre-norm, --no-pre-norm                                                    │
+│                          DETR / Transformer (default: False)                 │
+│ --include-depth, --no-include-depth                                          │
+│                          ── Observation settings                             │
+│                          ──────────────────────────────────────────────────  │
+│                          (default: False)                                    │
+│ --cameras [STR [STR ...]]                                                    │
+│                          ── Observation settings                             │
+│                          ──────────────────────────────────────────────────  │
+│                          (default: zed2i)                                    │
+│ --image-size INT INT     ── Observation settings                             │
+│                          ──────────────────────────────────────────────────  │
+│                          (default: 224 224)                                  │
+│ --state-type STR         ── Observation settings                             │
+│                          ──────────────────────────────────────────────────  │
+│                          (default: qpos)                                     │
+│ --single-arm, --no-single-arm                                                │
+│                          ── Observation settings                             │
+│                          ──────────────────────────────────────────────────  │
+│                          (default: False)                                    │
+│ --task-encoder-type STR  ── Task encoder backend                             │
+│                          ──────────────────────────────────────────────────  │
+│                          "frozen_backbone" → FrozenVideoBackbone             │
+│                          (off-the-shelf frozen backbone) e.g. DINOv2, CLIP,  │
+│                          SigLIP, VideoMAE  (Condition C / ablation)          │
+│                          (default: frozen_backbone)                          │
+│ --frozen-backbone-type STR                                                   │
+│                          ── FrozenVideoBackbone settings (task_encoder_type  │
+│                          == "frozen_backbone") ─ Backbone: "dinov2_vitl14" | │
+│                          "dinov2_vitb14" | "dinov2_vitl14_reg"               │
+│                          "clip_vitl14"   | "clip_vitb16"                     │
+│                          "siglip2_so400m" | "videomae_large" |               │
+│                          "videomae_base" (default: dinov2_vitl14)            │
+│ --frozen-backbone-model {None}|STR                                           │
+│                          ── FrozenVideoBackbone settings (task_encoder_type  │
+│                          == "frozen_backbone") ─ Backbone: "dinov2_vitl14" | │
+│                          "dinov2_vitb14" | "dinov2_vitl14_reg"               │
+│                          "clip_vitl14"   | "clip_vitb16"                     │
+│                          "siglip2_so400m" | "videomae_large" |               │
+│                          "videomae_base" (default: None)                     │
+│ --frozen-backbone-adapter-layers INT                                         │
+│                          ── FrozenVideoBackbone settings (task_encoder_type  │
+│                          == "frozen_backbone") ─ Backbone: "dinov2_vitl14" | │
+│                          "dinov2_vitb14" | "dinov2_vitl14_reg"               │
+│                          "clip_vitl14"   | "clip_vitb16"                     │
+│                          "siglip2_so400m" | "videomae_large" |               │
+│                          "videomae_base" (default: 1)                        │
+│ --frozen-backbone-seq-patches INT                                            │
+│                          ── FrozenVideoBackbone settings (task_encoder_type  │
+│                          == "frozen_backbone") ─ Backbone: "dinov2_vitl14" | │
+│                          "dinov2_vitb14" | "dinov2_vitl14_reg"               │
+│                          "clip_vitl14"   | "clip_vitb16"                     │
+│                          "siglip2_so400m" | "videomae_large" |               │
+│                          "videomae_base" (default: 32)                       │
+│ --frozen-backbone-num-frames INT                                             │
+│                          ── FrozenVideoBackbone settings (task_encoder_type  │
+│                          == "frozen_backbone") ─ Backbone: "dinov2_vitl14" | │
+│                          "dinov2_vitb14" | "dinov2_vitl14_reg"               │
+│                          "clip_vitl14"   | "clip_vitb16"                     │
+│                          "siglip2_so400m" | "videomae_large" |               │
+│                          "videomae_base" (default: 4)                        │
+│ --video-encoder-type STR                                                     │
+│                          ── VideoEncoder (scratch) settings                  │
+│                          ────────────────────────────────────── (default:    │
+│                          temporal_transformer)                               │
+│ --video-encoder-hidden-dim INT                                               │
+│                          ── VideoEncoder (scratch) settings                  │
+│                          ────────────────────────────────────── (default:    │
+│                          512)                                                │
+│ --video-encoder-num-layers INT                                               │
+│                          ── VideoEncoder (scratch) settings                  │
+│                          ────────────────────────────────────── (default: 4) │
+│ --video-encoder-num-heads INT                                                │
+│                          ── VideoEncoder (scratch) settings                  │
+│                          ────────────────────────────────────── (default: 8) │
+│ --frozen-backbone-lora-rank INT                                              │
+│                          0 = no LoRA; typical: 8 or 16 (default: 0)          │
+│ --frozen-backbone-lora-alpha FLOAT                                           │
+│                          LoRA scaling: alpha / rank (default: 16.0)          │
+│ --frozen-backbone-lora-dropout FLOAT                                         │
+│                          LoRA input dropout (default: 0.0)                   │
+│ --task-latent-dim INT    ── Task latent settings                             │
+│                          ─────────────────────────────────────────────────   │
+│                          (default: 256)                                      │
+│ --task-num-frames INT    ── Task latent settings                             │
+│                          ─────────────────────────────────────────────────   │
+│                          (default: 10)                                       │
+│ --hf-cache-dir {None}|STR                                                    │
+│                          ── Task latent settings                             │
+│                          ─────────────────────────────────────────────────   │
+│                          (default: None)                                     │
+│ --te-cache-root {None}|STR                                                   │
+│                          ── VL cache ─────────────────────────────────────── │
+│                          ────────────────────── (default: ./te_cache)        │
+│ --te-cache-preload-to-memory, --no-te-cache-preload-to-memory                │
+│                          ── VL cache ─────────────────────────────────────── │
+│                          ────────────────────── (default: True)              │
+│ --te-cache-recompute, --no-te-cache-recompute                                │
+│                          ── VL cache ─────────────────────────────────────── │
+│                          ────────────────────── (default: False)             │
+│ --input-mode STR         ── Input mode ───────────────────────────────────── │
+│                          ─────────────────────── (default: video_only)       │
+│ --random-modality-selection, --no-random-modality-selection                  │
+│                          ── Input mode ───────────────────────────────────── │
+│                          ─────────────────────── (default: True)             │
+│ --use-video-prob FLOAT   ── Input mode ───────────────────────────────────── │
+│                          ─────────────────────── (default: 0.5)              │
+│ --include-first-frame, --no-include-first-frame                              │
+│                          ── Input mode ───────────────────────────────────── │
+│                          ─────────────────────── (default: True)             │
+│ --fps INT                ── Input mode ───────────────────────────────────── │
+│                          ─────────────────────── (default: 30)               │
+│ --video-backend STR      ── Input mode ───────────────────────────────────── │
+│                          ─────────────────────── (default: torchcodec)       │
+│ --log-freq INT           ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 10)                                       │
+│ --log-epoch-freq INT     ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 1)                                        │
+│ --eval-freq INT          ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 5000)                                     │
+│ --eval-epoch-freq INT    ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 5)                                        │
+│ --save-freq {None}|INT   ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: None)                                     │
+│ --save-epoch-freq INT    ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 10)                                       │
+│ --num-eval-episodes INT  ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 10)                                       │
+│ --num-eval-envs INT      ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: 1)                                        │
+│ --eval-temporal-agg, --no-eval-temporal-agg                                  │
+│                          ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: True)                                     │
+│ --no-eval, --no-no-eval  ── Logging and evaluation                           │
+│                          ────────────────────────────────────────────────    │
+│                          (default: True)                                     │
+│ --env-id STR             ── Environment ──────────────────────────────────── │
+│                          ─────────────────────── (default:                   │
+│                          TwoRobotStirSpoon-v1)                               │
+│ --max-episode-steps INT  ── Environment ──────────────────────────────────── │
+│                          ─────────────────────── (default: 500)              │
+│ --sim-backend STR        ── Environment ──────────────────────────────────── │
+│                          ─────────────────────── (default: physx_cpu)        │
+│ --control-mode STR       ── Environment ──────────────────────────────────── │
+│                          ─────────────────────── (default: pd_joint_pos)     │
+│ --obs-mode STR           ── Environment ──────────────────────────────────── │
+│                          ─────────────────────── (default: rgb)              │
+│ --shader STR             ── Environment ──────────────────────────────────── │
+│                          ─────────────────────── (default: rt-fast)          │
+│ --resume-from {None}|STR                                                     │
+│                          ── Checkpointing ────────────────────────────────── │
+│                          ─────────────────────── (default: None)             │
+│ --reset-lr-scheduler, --no-reset-lr-scheduler                                │
+│                          ── Checkpointing ────────────────────────────────── │
+│                          ─────────────────────── (default: False)            │
+╰──────────────────────────────────────────────────────────────────────────────╯

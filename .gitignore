@@ -1,0 +1,20 @@
+# Local-only caches, datasets and trained weights
+.github-publish/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+**/te_cache/
+**/checkpoints/
+**/runs/
+**/.cache/
+/data/
+/demos/
+/hf-cache/
+/uv-cache/
+.DS_Store

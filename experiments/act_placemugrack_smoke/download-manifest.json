@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-10-06 Asia/Shanghai",
+  "repository": "imitator-game/IG-10K-Dataset",
+  "revision": "57fa861d911afe899da5c0f28d973151411d46d1",
+  "selection": "One official task: human_H57 + L0_TwoRobotPlaceMugRack-v1. Shared RGB chunks plus sim depth chunk needed by the loader completeness check; training selects human episode 0 and sim episodes 0,1; evaluation selects human episode 1.",
+  "bytes": 180989653,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "imitator_human_v1/human_H57/data/chunk-000/file-000.parquet",
+      "size": 21393313,
+      "oid": "86f152f464c72a79d44a92c0a6d7f8673cf50218",
+      "lfs": {
+        "oid": "f454f3111717370070446623cb163474035a0934139f26949ca723391460afd6",
+        "size": 21393313,
+        "pointerSize": 133
+      }
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/episodes/chunk-000/file-000.parquet",
+      "size": 262868,
+      "oid": "686383b1304e86a457d1e05faf18c6adb86fa161",
+      "lfs": {
+        "oid": "c0b30639cb94edc2d7a8723677dfc30be7bb16c8df5703e7cb37d28ca0636adb",
+        "size": 262868,
+        "pointerSize": 131
+      }
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/info.json",
+      "size": 37608,
+      "oid": "69a35f7505878cec53ba36e24bb76067b6c6074b",
+      "lfs": null
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/stats.json",
+      "size": 277411,
+      "oid": "9a834fbe028d73d46053f97008c6658d7757e4b6",
+      "lfs": null
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/tasks.parquet",
+      "size": 2141,
+      "oid": "8a1882486fec5e0620359c74c1d331c3610965bf",
+      "lfs": {
+        "oid": "33aac16197daaf28e0e97f4ef92956c70e5e3c5354aefd31611871cd3247cb2f",
+        "size": 2141,
+        "pointerSize": 129
+      }
+    },
+    {
+      "path": "imitator_human_v1/human_H57/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "size": 114085774,
+      "oid": "2125bd4f7c579ac11711898344e6a26148f48ea5",
+      "lfs": {
+        "oid": "5d1ec3704794a0b19879f36b10d0eedac0338893e17673cf3b55d8a32ad6a9f9",
+        "size": 114085774,
+        "pointerSize": 134
+      }
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet",
+      "size": 1229857,
+      "oid": "aaf59eed09a67eaa6b35058195f46094284234c1",
+      "lfs": {
+        "oid": "79c85998133efc69cafae149e75bc5b08d41f11bdd82d470d5a9624ac1c8b581",
+        "size": 1229857,
+        "pointerSize": 132
+      }
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "size": 300948,
+      "oid": "f13c017bdac73dddeed621757c61775383ce0866",
+      "lfs": {
+        "oid": "60f733c17776becbce006a2baaeeb1ee4e0b3080d83ec6663647e0eaa34e5d58",
+        "size": 300948,
+        "pointerSize": 131
+      }
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/info.json",
+      "size": 3962,
+      "oid": "2290746db3536587f39b6465648882310d646242",
+      "lfs": null
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/stats.json",
+      "size": 19689,
+      "oid": "7e80872eed7caa540899c50698b72949a8db814d",
+      "lfs": null
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/tasks.parquet",
+      "size": 2120,
+      "oid": "ecedc576d51b73019f93ac85c7090a4efd56a400",
+      "lfs": {
+        "oid": "cfbb7167bd2e877be9a505775c9aaf1c3f3874e3945bb184b9068a5f208f5ce2",
+        "size": 2120,
+        "pointerSize": 129
+      }
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "size": 25874994,
+      "oid": "7d8d2100801a973c6234f0cd11106afe13830d4f",
+      "lfs": {
+        "oid": "c50556aa23cc290defb23ed98270a2c87592f8ec915d08a9b5daa0294c52ecdf",
+        "size": 25874994,
+        "pointerSize": 133
+      }
+    },
+    {
+      "type": "file",
+      "oid": "4d643983dc10bd8f48043cdf64001bc87a7ccce8",
+      "size": 17498968,
+      "lfs": {
+        "oid": "1adfd3be238315d64dbcffe44dcb3c451dfdc002c42d1495e342ee466847d842",
+        "size": 17498968,
+        "pointerSize": 133
+      },
+      "xetHash": "8e9418be534f7891330f43067f7647d2931f752de3753aacd5aeb7583aad61d1",
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i_depth/chunk-000/file-000.mp4"
+    }
+  ]
+}

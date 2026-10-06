@@ -1,0 +1,85 @@
+EXTRACT robotwin/objects/039_mug/model_data7.json 6770
+EXTRACT robotwin/objects/039_mug/visual/base12.glb 1635528
+EXTRACT robotwin/objects/039_mug/visual/base10.glb 8353956
+EXTRACT robotwin/objects/039_mug/visual/base5.glb 1726288
+EXTRACT robotwin/objects/039_mug/visual/base9.glb 1343076
+EXTRACT robotwin/objects/039_mug/visual/base7.glb 1988260
+EXTRACT robotwin/objects/039_mug/visual/base1.glb 1334244
+EXTRACT robotwin/objects/039_mug/visual/base4.glb 1457076
+EXTRACT robotwin/objects/039_mug/visual/base0.glb 1334244
+EXTRACT robotwin/objects/039_mug/visual/base6.glb 1990264
+EXTRACT robotwin/objects/039_mug/visual/base2.glb 1903428
+EXTRACT robotwin/objects/039_mug/visual/base3.glb 1913784
+EXTRACT robotwin/objects/039_mug/visual/base8.glb 2110724
+EXTRACT robotwin/objects/039_mug/visual/base11.glb 9109532
+EXTRACT robotwin/objects/039_mug/model_data11.json 6368
+EXTRACT robotwin/objects/039_mug/model_data1.json 6775
+EXTRACT robotwin/objects/039_mug/model_data0.json 6774
+EXTRACT robotwin/objects/039_mug/model_data12.json 6338
+EXTRACT robotwin/objects/039_mug/collision/base12.glb 881400
+EXTRACT robotwin/objects/039_mug/collision/base10.glb 1117880
+EXTRACT robotwin/objects/039_mug/collision/base5.glb 859648
+EXTRACT robotwin/objects/039_mug/collision/base9.glb 647732
+EXTRACT robotwin/objects/039_mug/collision/base7.glb 632224
+EXTRACT robotwin/objects/039_mug/collision/base1.glb 968808
+EXTRACT robotwin/objects/039_mug/collision/base4.glb 1441860
+EXTRACT robotwin/objects/039_mug/collision/base0.glb 968808
+EXTRACT robotwin/objects/039_mug/collision/base6.glb 813916
+EXTRACT robotwin/objects/039_mug/collision/base2.glb 689904
+EXTRACT robotwin/objects/039_mug/collision/base3.glb 878044
+EXTRACT robotwin/objects/039_mug/collision/base8.glb 813936
+EXTRACT robotwin/objects/039_mug/collision/base11.glb 958604
+EXTRACT robotwin/objects/039_mug/model_data9.json 6826
+EXTRACT robotwin/objects/039_mug/model_data4.json 6765
+EXTRACT robotwin/objects/039_mug/model_data10.json 6374
+EXTRACT robotwin/objects/039_mug/points_info.json 541
+EXTRACT robotwin/objects/039_mug/model_data2.json 6773
+EXTRACT robotwin/objects/039_mug/model_data5.json 6772
+EXTRACT robotwin/objects/039_mug/model_data6.json 6776
+EXTRACT robotwin/objects/039_mug/model_data8.json 6770
+EXTRACT robotwin/objects/039_mug/model_data3.json 6768
+ASSET STREAM 0.322 GB, 25s, extracted 40 files
+ASSET STREAM 0.641 GB, 50s, extracted 40 files
+ASSET STREAM 0.977 GB, 75s, extracted 40 files
+EXTRACT robotwin/objects/040_rack/visual/base0.glb 17352
+EXTRACT robotwin/objects/040_rack/model_data0.json 2820
+EXTRACT robotwin/objects/040_rack/collision/base0.glb 56500
+EXTRACT robotwin/objects/040_rack/points_info.json 272
+ASSET STREAM 1.326 GB, 100s, extracted 44 files
+ASSET STREAM 1.659 GB, 125s, extracted 44 files
+Traceback (most recent call last):
+  File "/home/zxc/Imitator/experiments/act_placemugrack_smoke/prepare_data.py", line 93, in <module>
+    getattr(__import__(__name__), parser.parse_args().mode)()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zxc/Imitator/experiments/act_placemugrack_smoke/prepare_data.py", line 63, in assets
+    for member in archive:
+                  ^^^^^^^
+  File "/home/zxc/miniconda3/lib/python3.13/tarfile.py", line 2914, in __iter__
+    tarinfo = self.next()
+  File "/home/zxc/miniconda3/lib/python3.13/tarfile.py", line 2763, in next
+    self.fileobj.seek(self.offset - 1)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zxc/miniconda3/lib/python3.13/tarfile.py", line 518, in seek
+    self.read(self.bufsize)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/zxc/miniconda3/lib/python3.13/tarfile.py", line 527, in read
+    buf = self._read(size)
+  File "/home/zxc/miniconda3/lib/python3.13/tarfile.py", line 535, in _read
+    return self.__read(size)
+           ~~~~~~~~~~~^^^^^^
+  File "/home/zxc/miniconda3/lib/python3.13/tarfile.py", line 565, in __read
+    buf = self.fileobj.read(self.bufsize)
+  File "/home/zxc/Imitator/experiments/act_placemugrack_smoke/prepare_data.py", line 51, in read
+    block = self.source.read(n)
+  File "/home/zxc/miniconda3/lib/python3.13/http/client.py", line 479, in read
+    s = self.fp.read(amt)
+  File "/home/zxc/miniconda3/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/zxc/miniconda3/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/zxc/miniconda3/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt

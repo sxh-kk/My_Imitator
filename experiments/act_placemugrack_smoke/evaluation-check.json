@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "process_seed": 1,
+  "policy_queries": 250,
+  "env_steps": 1000,
+  "all_actions_finite": true,
+  "episodes": [
+    {
+      "success_once": false,
+      "return": 47.137020111083984,
+      "episode_len": 500,
+      "reward": 0.09427404022216797,
+      "last_reward": 0.09469923377037048,
+      "success_at_end": false
+    },
+    {
+      "success_once": false,
+      "return": 46.68253707885742,
+      "episode_len": 500,
+      "reward": 0.09336507415771485,
+      "last_reward": 0.09365767240524292,
+      "success_at_end": false
+    }
+  ],
+  "started_at": 1791294921.267266,
+  "checkpoint": {
+    "path": "/home/zxc/Imitator/The-Imitator-Game/runs/act_placemugrack_smoke-20261006/checkpoints/final_model.pt",
+    "bytes": 1422994538,
+    "iteration": 171,
+    "epoch": 3,
+    "equal_state_tensors": 692,
+    "optimizer_step_values": [
+      171
+    ],
+    "optimizer_state_count": 167,
+    "scheduler_last_epoch": 171
+  },
+  "first_policy_query": {
+    "obs_shapes": {
+      "state": [
+        1,
+        1,
+        18
+      ],
+      "rgb": [
+        1,
+        1,
+        224,
+        224,
+        3
+      ]
+    },
+    "output_shape": [
+      1,
+      24,
+      16
+    ],
+    "min": -1.0614476203918457,
+    "max": 1.1175485849380493
+  },
+  "first_robot_action": {
+    "panda_wristcam-0": [
+      [
+        -0.06417779624462128,
+        0.45126622915267944,
+        0.08148379623889923,
+        -1.8761584758758545,
+        -0.04558556526899338,
+        2.3234009742736816,
+        0.5086796283721924,
+        1.1108214855194092
+      ]
+    ],
+    "panda_wristcam-1": [
+      [
+        0.004767455626279116,
+        0.3936551809310913,
+        -0.0015513690887019038,
+        -1.9678057432174683,
+        -0.004308846779167652,
+        2.3539223670959473,
+        0.7877592444419861,
+        1.0
+      ]
+    ]
+  },
+  "elapsed_seconds": 29.494753122329712
+}

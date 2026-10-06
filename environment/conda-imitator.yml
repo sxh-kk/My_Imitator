@@ -1,0 +1,16 @@
+name: imitator
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+variables:
+  UV_PROJECT_ENVIRONMENT: /home/zxc/miniconda3/envs/imitator
+  UV_CACHE_DIR: /var/tmp/imitator-game-zxc/uv-cache
+  UV_LINK_MODE: copy
+  HF_HOME: /var/tmp/imitator-game-zxc/hf-cache
+  HF_LEROBOT_HOME: /var/tmp/imitator-game-zxc/lerobot
+  TORCH_HOME: /var/tmp/imitator-game-zxc/torch-cache
+  MS_ASSET_DIR: /var/tmp/imitator-game-zxc/maniskill
+  TMPDIR: /var/tmp/imitator-game-zxc/tmp
+prefix: /home/zxc/miniconda3/envs/imitator

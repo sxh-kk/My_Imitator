@@ -1,0 +1,21 @@
+{
+  "target_repository": "sxh-kk/My_Imitator",
+  "visibility": "public",
+  "upstream_repository": "https://github.com/imitator-game/The-Imitator-Game",
+  "upstream_commit": "d6d16ec511bc389e0a207692730c137bc022ef14",
+  "snapshot_layout": "The-Imitator-Game is a regular directory, not a submodule.",
+  "file_count": 2305,
+  "copied_bytes": 406153834,
+  "exclusions": [
+    "datasets",
+    "downloaded task assets",
+    "trained checkpoints",
+    "feature caches",
+    "environment caches",
+    "local storage-cleanup audits"
+  ],
+  "publication_only_changes": [
+    "Markdown source links converted from local absolute paths to GitHub relative links",
+    "Local-only checkpoint link replaced with its path and an explicit not-uploaded note"
+  ]
+}

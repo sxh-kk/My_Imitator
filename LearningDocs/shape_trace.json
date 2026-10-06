@@ -1,0 +1,844 @@
+{
+  "scope": "synthetic sample at decoded-dataset boundary; no real IG-10K files or robot rollout",
+  "configuration": {
+    "batch": 1,
+    "human_frames": 10,
+    "encoder_frames": 10,
+    "obs_horizon": 1,
+    "pred_horizon": 24,
+    "hidden_dim": 256,
+    "decoder_layers": 4,
+    "cache": false
+  },
+  "sim_sample": {
+    "states": {
+      "shape": [
+        1,
+        18
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "actions": {
+      "shape": [
+        24,
+        16
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "view_1": {
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "dataset_idx": {
+      "shape": [],
+      "dtype": "torch.int64",
+      "device": "cpu"
+    },
+    "repo_id": "L0_TwoRobotPlaceMugRack-v1"
+  },
+  "paired_sample": {
+    "robot_obs": {
+      "states": {
+        "shape": [
+          1,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      },
+      "view_1": {
+        "shape": [
+          1,
+          224,
+          224,
+          3
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      }
+    },
+    "robot_actions": {
+      "shape": [
+        24,
+        16
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "dataset_idx": {
+      "shape": [],
+      "dtype": "torch.int64",
+      "device": "cpu"
+    },
+    "human_task_id": "human_H57",
+    "sim_task_id": "L0_TwoRobotPlaceMugRack-v1",
+    "sample_id": "L0_TwoRobotPlaceMugRack-v1::0",
+    "robot_first_frame_obs": {
+      "states": {
+        "shape": [
+          1,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      },
+      "view_1": {
+        "shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      }
+    },
+    "human_repo_id": "human_H57",
+    "human_video": {
+      "shape": [
+        10,
+        224,
+        224,
+        3
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    }
+  },
+  "collated_batch": {
+    "robot_actions": {
+      "shape": [
+        1,
+        24,
+        16
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "dataset_idx": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "device": "cpu"
+    },
+    "human_repo_id": [
+      "human_H57"
+    ],
+    "human_video": {
+      "shape": [
+        1,
+        10,
+        224,
+        224,
+        3
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu"
+    },
+    "robot_obs": {
+      "states": {
+        "shape": [
+          1,
+          1,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      },
+      "view_1": {
+        "shape": [
+          1,
+          1,
+          224,
+          224,
+          3
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      }
+    },
+    "robot_first_frame_obs": {
+      "states": {
+        "shape": [
+          1,
+          1,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      },
+      "view_1": {
+        "shape": [
+          1,
+          1,
+          3,
+          224,
+          224
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      }
+    }
+  },
+  "training": {
+    "model_observation": {
+      "state": {
+        "shape": [
+          1,
+          18
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      },
+      "rgb": {
+        "shape": [
+          1,
+          1,
+          3,
+          224,
+          224
+        ],
+        "dtype": "torch.float32",
+        "device": "cpu"
+      }
+    },
+    "dino_pixel_values": {
+      "shape": [
+        10,
+        3,
+        224,
+        224
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "dino": {
+      "input": [],
+      "output": {
+        "shape": [
+          10,
+          257,
+          1024
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "cls_adapter": {
+      "input": [
+        {
+          "shape": [
+            1,
+            1024
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "seq_adapter": {
+      "input": [
+        {
+          "shape": [
+            1,
+            32,
+            1024
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "task_layernorm": {
+      "input": [
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "cvae_encoder": {
+      "input": [
+        {
+          "shape": [
+            26,
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          26,
+          1,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "cvae_latent_proj": {
+      "input": [
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "resnet_joiner": {
+      "input": [
+        {
+          "shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": [
+        [
+          {
+            "shape": [
+              1,
+              512,
+              7,
+              7
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ],
+        [
+          {
+            "shape": [
+              1,
+              256,
+              7,
+              7
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      ]
+    },
+    "image_projection": {
+      "input": [
+        {
+          "shape": [
+            1,
+            512,
+            7,
+            7
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          256,
+          7,
+          7
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "act_encoder": {
+      "input": [
+        {
+          "shape": [
+            52,
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          52,
+          1,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "act_transformer": {
+      "input": [
+        {
+          "shape": [
+            1,
+            256,
+            7,
+            7
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        null,
+        {
+          "shape": [
+            24,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            1,
+            256,
+            7,
+            7
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            3,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          4,
+          1,
+          24,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "action_head": {
+      "input": [
+        {
+          "shape": [
+            1,
+            24,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          24,
+          16
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "action_head_uses_first_decoder_layer": true,
+    "action_head_uses_last_decoder_layer": false,
+    "loss_shapes": {
+      "loss": {
+        "shape": [],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      "l1": {
+        "shape": [],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      },
+      "kl": {
+        "shape": [],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    }
+  },
+  "inference": {
+    "dino_pixel_values": {
+      "shape": [
+        10,
+        3,
+        224,
+        224
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "dino": {
+      "input": [],
+      "output": {
+        "shape": [
+          10,
+          257,
+          1024
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "cls_adapter": {
+      "input": [
+        {
+          "shape": [
+            1,
+            1024
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "seq_adapter": {
+      "input": [
+        {
+          "shape": [
+            1,
+            32,
+            1024
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "task_layernorm": {
+      "input": [
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "cached_task_z": {
+      "shape": [
+        1,
+        256
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "resnet_joiner": {
+      "input": [
+        {
+          "shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": [
+        [
+          {
+            "shape": [
+              1,
+              512,
+              7,
+              7
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ],
+        [
+          {
+            "shape": [
+              1,
+              256,
+              7,
+              7
+            ],
+            "dtype": "torch.float32",
+            "device": "cuda:0"
+          }
+        ]
+      ]
+    },
+    "image_projection": {
+      "input": [
+        {
+          "shape": [
+            1,
+            512,
+            7,
+            7
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          256,
+          7,
+          7
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "act_encoder": {
+      "input": [
+        {
+          "shape": [
+            52,
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          52,
+          1,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "act_transformer": {
+      "input": [
+        {
+          "shape": [
+            1,
+            256,
+            7,
+            7
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        null,
+        {
+          "shape": [
+            24,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            1,
+            256,
+            7,
+            7
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            3,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        },
+        {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          4,
+          1,
+          24,
+          256
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "action_head": {
+      "input": [
+        {
+          "shape": [
+            1,
+            24,
+            256
+          ],
+          "dtype": "torch.float32",
+          "device": "cuda:0"
+        }
+      ],
+      "output": {
+        "shape": [
+          1,
+          24,
+          16
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    "action_head_uses_first_decoder_layer": true,
+    "action_head_uses_last_decoder_layer": false,
+    "predicted_chunk": {
+      "shape": [
+        1,
+        24,
+        16
+      ],
+      "dtype": "torch.float32",
+      "device": "cuda:0"
+    },
+    "cvae_encoder_called": false,
+    "robot_action_dict_shapes": {
+      "panda_wristcam-0": [
+        1,
+        8
+      ],
+      "panda_wristcam-1": [
+        1,
+        8
+      ]
+    },
+    "action_normalization_note": "synthetic q01/q99; shapes only, no real control values"
+  },
+  "dino_revision": "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c"
+}

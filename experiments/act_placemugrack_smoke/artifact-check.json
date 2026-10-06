@@ -1,0 +1,52 @@
+{
+  "checkpoint_sha256": "502114b33cbc2b5fa70e76cc65a07f4267facb29100461b1008780f4ae353d9c",
+  "videos": [
+    {
+      "path": "/home/zxc/Imitator/experiments/act_placemugrack_smoke/evaluation/videos/L0_TwoRobotPlaceMugRack-v1/0.mp4",
+      "bytes": 335942,
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 512,
+          "height": 512,
+          "r_frame_rate": "30/1",
+          "duration": "16.700000",
+          "nb_frames": "501"
+        }
+      ]
+    },
+    {
+      "path": "/home/zxc/Imitator/experiments/act_placemugrack_smoke/evaluation/videos/L0_TwoRobotPlaceMugRack-v1/1.mp4",
+      "bytes": 307501,
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 512,
+          "height": 512,
+          "r_frame_rate": "30/1",
+          "duration": "16.700000",
+          "nb_frames": "501"
+        }
+      ]
+    }
+  ],
+  "cache": {
+    "human_H57": {
+      "cls": {
+        "shape": [
+          1024
+        ],
+        "dtype": "torch.float32"
+      },
+      "seq": {
+        "shape": [
+          32,
+          1024
+        ],
+        "dtype": "torch.float32"
+      }
+    }
+  }
+}

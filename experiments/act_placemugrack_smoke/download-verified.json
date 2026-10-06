@@ -1,0 +1,67 @@
+[
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57/data/chunk-000/file-000.parquet",
+    "bytes": 21393313,
+    "sha256": "f454f3111717370070446623cb163474035a0934139f26949ca723391460afd6"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57/meta/episodes/chunk-000/file-000.parquet",
+    "bytes": 262868,
+    "sha256": "c0b30639cb94edc2d7a8723677dfc30be7bb16c8df5703e7cb37d28ca0636adb"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57/meta/info.json",
+    "bytes": 37608,
+    "sha256": "e879f21f11e1c4369c06cf1433a6d4a39c0e1cf545b4dc7c5e4977600b84fd6f"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57/meta/stats.json",
+    "bytes": 277411,
+    "sha256": "dec66528f9d1973983e6a83d51fa254632a8de55a6c6b680567ca1af866a17a0"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57/meta/tasks.parquet",
+    "bytes": 2141,
+    "sha256": "33aac16197daaf28e0e97f4ef92956c70e5e3c5354aefd31611871cd3247cb2f"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+    "bytes": 114085774,
+    "sha256": "5d1ec3704794a0b19879f36b10d0eedac0338893e17673cf3b55d8a32ad6a9f9"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet",
+    "bytes": 1229857,
+    "sha256": "79c85998133efc69cafae149e75bc5b08d41f11bdd82d470d5a9624ac1c8b581"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet",
+    "bytes": 300948,
+    "sha256": "60f733c17776becbce006a2baaeeb1ee4e0b3080d83ec6663647e0eaa34e5d58"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/info.json",
+    "bytes": 3962,
+    "sha256": "82e1e0d29e96ea4139f82f2196fe61b1c55cc74edb9ca22c793d9a9410d7c6b7"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/stats.json",
+    "bytes": 19689,
+    "sha256": "2307201041642ddd891fd09eaf4645331cecbc49b3d65a7c2aaa222cbd19530e"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/tasks.parquet",
+    "bytes": 2120,
+    "sha256": "cfbb7167bd2e877be9a505775c9aaf1c3f3874e3945bb184b9068a5f208f5ce2"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+    "bytes": 25874994,
+    "sha256": "c50556aa23cc290defb23ed98270a2c87592f8ec915d08a9b5daa0294c52ecdf"
+  },
+  {
+    "path": "/var/tmp/imitator-game-zxc/data/imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i_depth/chunk-000/file-000.mp4",
+    "bytes": 17498968,
+    "sha256": "1adfd3be238315d64dbcffe44dcb3c451dfdc002c42d1495e342ee466847d842"
+  }
+]

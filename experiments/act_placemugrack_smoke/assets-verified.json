@@ -1,0 +1,230 @@
+{
+  "repository": "imitator-game/IG-10K-Assets",
+  "revision": "2d7a339b27aff14a0780db4bd4d5e3a68c6358bc",
+  "archive": "robotwin.tar.zst",
+  "full_archive_downloaded": false,
+  "full_archive_hash_verified": false,
+  "note": "Stream stopped after both required object directories had been extracted. Required GLBs validated as complete and self-contained. SHA256 values below are local provenance hashes, not upstream per-file checksums.",
+  "files": [
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base0.glb",
+      "bytes": 968808,
+      "sha256": "73bde98a69ce5f2908cc9640906d8025eec3a0c80e50728d9ea1bcfbb34f3320"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base1.glb",
+      "bytes": 968808,
+      "sha256": "fee6e4406048ac3e5f24614db3361ff3ba3c52703ceece5033c65cec0f8cc98a"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base10.glb",
+      "bytes": 1117880,
+      "sha256": "39210358fb2bc54a0ac317b9d63b6ad22b28df74d20600981055406913a5020e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base11.glb",
+      "bytes": 958604,
+      "sha256": "54b7f4739487113f15660dfa24ccfee50630f830c5988ca9c77f05f1f83bf9c3"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base12.glb",
+      "bytes": 881400,
+      "sha256": "190a19f2dffd6a8b2ca763d924d9c28538c6a20d1b49d79defcedfde17434c8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base2.glb",
+      "bytes": 689904,
+      "sha256": "d5640a7fac7f8df3f3ddd03956dfff0e3ce7b6ad6d0bb88dd42914361310ca4a"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base3.glb",
+      "bytes": 878044,
+      "sha256": "4111965f73910c9b804acacbcfa324be12b920bc82b6c3fc65442c792e709b12"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base4.glb",
+      "bytes": 1441860,
+      "sha256": "fdcff38af19eb1ced3fa5b11e34e3d1ecfd8d660f50db0405673599ae89f11c5"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base5.glb",
+      "bytes": 859648,
+      "sha256": "4db208fc86eb93afe373ce5cc9805ff2ff4839aef4d2ac96fa2b0fe3ca66ebfb"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base6.glb",
+      "bytes": 813916,
+      "sha256": "a2dd0b0c9b90567c7764f25459c17d627c45ffb6c3582a89c5615496329068ca"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base7.glb",
+      "bytes": 632224,
+      "sha256": "77fdbd6c0dc9f3331cd145627a4ba9efe95d102436d3dc777a08072821c0f94f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base8.glb",
+      "bytes": 813936,
+      "sha256": "8395eece85bfbe4223c36fbeb2133c839ae43e82712d609ae519a634b2784335"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/collision/base9.glb",
+      "bytes": 647732,
+      "sha256": "08f0eb6e4af5b7a4642b4c198def3205ca430597d0c7560adcd300cc094b22d0"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data0.json",
+      "bytes": 6774,
+      "sha256": "c0057dfc51631a35d6b2bbac6b8719dde2830cfc64ca620ee92de59c60139e88"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data1.json",
+      "bytes": 6775,
+      "sha256": "d9475b48d210fb44cea8d2cb4beec94813b5bf963395cc97e131a4e213c2f0f6"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data10.json",
+      "bytes": 6374,
+      "sha256": "4d0ad312fa5bd7257fad69ff297ec3e7c8df478c8265d2bd1df886678d7dc812"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data11.json",
+      "bytes": 6368,
+      "sha256": "131160bfa00f2484c006ddc8a651eab1165884bcf3d40d029d500daaf7d42434"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data12.json",
+      "bytes": 6338,
+      "sha256": "7d755be45a9ff972afcd652da7baaa9f561da049129bb5bf33a5cd2a071bc467"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data2.json",
+      "bytes": 6773,
+      "sha256": "bf16aa8fcf0939c35769222e397ce80f2f3299e698f34d1a62f43022a15b922d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data3.json",
+      "bytes": 6768,
+      "sha256": "01f00a10422256bc228d520d354f6492146b6bc7c06f87080fb439444c8e7626"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data4.json",
+      "bytes": 6765,
+      "sha256": "40e8f3eb79fc309166d4b7349cfe59c377edea8e4c572dbf1229754514cbff74"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data5.json",
+      "bytes": 6772,
+      "sha256": "8e1e19ea0a92e41894035996474af35847b8929387ab17f1e143588304638ef7"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data6.json",
+      "bytes": 6776,
+      "sha256": "ad27c818c0abcd8b6ded3edff8a315e064cab676fff5ffd211451a3b7ab6fd80"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data7.json",
+      "bytes": 6770,
+      "sha256": "ff2fcf9b3de961d58c4528b96d55ef6ab45806da5632f9f3dcf7f7aa2dd88472"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data8.json",
+      "bytes": 6770,
+      "sha256": "aa71f7ce53f21b7002d698a34d914ba834e1fac41da94be6617c0232d4ab8946"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/model_data9.json",
+      "bytes": 6826,
+      "sha256": "937c6eea1499a0489387b6a66484f6f6d57f467e8f89bd7d4dc3294b0abd285b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/points_info.json",
+      "bytes": 541,
+      "sha256": "ffad5ed3e2fd31b506bb1eeeeb4345a87492afac9f2af2a86ed0577d91854a0a"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base0.glb",
+      "bytes": 1334244,
+      "sha256": "392ec804651d7d3c2d38f158de6e3863d75c63d9e59acb02fd7c3ae3cc694812"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base1.glb",
+      "bytes": 1334244,
+      "sha256": "392ec804651d7d3c2d38f158de6e3863d75c63d9e59acb02fd7c3ae3cc694812"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base10.glb",
+      "bytes": 8353956,
+      "sha256": "4f0bf7ef2915851f008b1ace710883f2ff28170a8c41e29de6f59f65e273e98f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base11.glb",
+      "bytes": 9109532,
+      "sha256": "f715d9188ceb9746006cddb24f7402571900fddbd96f5ab447fe004c718564b8"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base12.glb",
+      "bytes": 1635528,
+      "sha256": "09bb768c9ff159bd207d70d87efab141d676f03386bbd4beb596fa9f378f231b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base2.glb",
+      "bytes": 1903428,
+      "sha256": "5ee1fcabdd67f41fc9a6af1841a5643091b1ba0701a808bddffb780cd6dbd60c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base3.glb",
+      "bytes": 1913784,
+      "sha256": "519108d6b3e83ef37e7124db2e5b1a189038cdb52f97aab67a17e12a7de5a2c9"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base4.glb",
+      "bytes": 1457076,
+      "sha256": "b7b9f47810d157ff85639c0618df729f6769b6bb8e718f10eb6e2b4f09023daa"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base5.glb",
+      "bytes": 1726288,
+      "sha256": "a311a4ccb76f67f864d77c395069acc96b5b38adba4ac940fdd42e328ec529ba"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base6.glb",
+      "bytes": 1990264,
+      "sha256": "d35a5633d47c317acda2d8117df12094af471767915847893abd5d21f586dc30"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base7.glb",
+      "bytes": 1988260,
+      "sha256": "0bf6dac42c1046efaf8bbc384f62b3e02cf3ed41b9af719a2cdff69eea835f0c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base8.glb",
+      "bytes": 2110724,
+      "sha256": "2c0cd95c90da022fead78cb488b63b5140a5cde17fffa6df84141be9488b63e9"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/039_mug/visual/base9.glb",
+      "bytes": 1343076,
+      "sha256": "05784795fb0f1f03bd19bbfd40aeceb954b97fef8abe580218e05b98fbeb227a"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/040_rack/collision/base0.glb",
+      "bytes": 56500,
+      "sha256": "f277f6e7bf71555497b93c56c8b4a89a6d6b93706daa5dd11e7972c83571b205"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/040_rack/model_data0.json",
+      "bytes": 2820,
+      "sha256": "7637b19547f253031cbb9cc3284951b5504c396e8d0af442699d5397073827c1"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/040_rack/points_info.json",
+      "bytes": 272,
+      "sha256": "3c97d7cc1f3e032aad06655b50acc39ad68948ea1139c781424b84d119c339cc"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/040_rack/visual/base0.glb",
+      "bytes": 17352,
+      "sha256": "e8becf94e0a51d3f70be5dc2587e486af1675e3b45a03309e04032510a9187c5"
+    }
+  ]
+}

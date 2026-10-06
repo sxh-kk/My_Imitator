@@ -1,0 +1,116 @@
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+usage: eval_act_imitator.py [-h] --eval-config EVAL_CONFIG --checkpoint
+                            CHECKPOINT
+                            [--input-mode {video_only,language_only,video_and_language}]
+                            [--sim-config SIM_CONFIG]
+                            [--human-config HUMAN_CONFIG]
+                            [--task-mapping TASK_MAPPING]
+                            [--human-task-desc HUMAN_TASK_DESC]
+                            [--sim-task-desc SIM_TASK_DESC]
+                            [--human-root HUMAN_ROOT] [--sim-root SIM_ROOT]
+                            [--num-episodes NUM_EPISODES]
+                            [--num-envs NUM_ENVS]
+                            [--max-episode-steps MAX_EPISODE_STEPS]
+                            [--sim-backend SIM_BACKEND]
+                            [--control-mode CONTROL_MODE]
+                            [--obs-mode OBS_MODE] [--shader SHADER]
+                            [--include-depth] [--action-dim ACTION_DIM]
+                            [--state-dim STATE_DIM]
+                            [--pred-horizon PRED_HORIZON]
+                            [--obs-horizon OBS_HORIZON] [--temporal-agg]
+                            [--light-temporal-agg] [--tagg-window TAGG_WINDOW]
+                            [--enc-layers ENC_LAYERS]
+                            [--dec-layers DEC_LAYERS]
+                            [--dim-feedforward DIM_FEEDFORWARD]
+                            [--hidden-dim HIDDEN_DIM] [--nheads NHEADS]
+                            [--backbone BACKBONE]
+                            [--task-encoder-type {frozen_backbone}]
+                            [--frozen-backbone-type FROZEN_BACKBONE_TYPE]
+                            [--frozen-backbone-adapter-layers FROZEN_BACKBONE_ADAPTER_LAYERS]
+                            [--frozen-backbone-adapter-ln]
+                            [--frozen-backbone-seq-patches FROZEN_BACKBONE_SEQ_PATCHES]
+                            [--frozen-backbone-num-frames FROZEN_BACKBONE_NUM_FRAMES]
+                            [--frozen-backbone-lora-rank FROZEN_BACKBONE_LORA_RANK]
+                            [--frozen-backbone-lora-alpha FROZEN_BACKBONE_LORA_ALPHA]
+                            [--task-latent-dim TASK_LATENT_DIM]
+                            [--task-num-frames TASK_NUM_FRAMES]
+                            [--hf-cache-dir HF_CACHE_DIR]
+                            [--cameras CAMERAS [CAMERAS ...]]
+                            [--image-size IMAGE_SIZE IMAGE_SIZE]
+                            [--state-type STATE_TYPE] [--single-arm]
+                            [--use-ema] [--compute-dtw]
+                            [--dtw-band-ratio DTW_BAND_RATIO] --output-dir
+                            OUTPUT_DIR [--device DEVICE]
+
+ACT Evaluation with Frozen Video Backbone
+
+options:
+  -h, --help            show this help message and exit
+  --eval-config EVAL_CONFIG
+  --checkpoint CHECKPOINT
+  --input-mode {video_only,language_only,video_and_language}
+  --sim-config SIM_CONFIG
+  --human-config HUMAN_CONFIG
+  --task-mapping TASK_MAPPING
+  --human-task-desc HUMAN_TASK_DESC
+  --sim-task-desc SIM_TASK_DESC
+  --human-root HUMAN_ROOT
+  --sim-root SIM_ROOT
+  --num-episodes NUM_EPISODES
+  --num-envs NUM_ENVS
+  --max-episode-steps MAX_EPISODE_STEPS
+  --sim-backend SIM_BACKEND
+  --control-mode CONTROL_MODE
+  --obs-mode OBS_MODE
+  --shader SHADER
+  --include-depth
+  --action-dim ACTION_DIM
+  --state-dim STATE_DIM
+  --pred-horizon PRED_HORIZON
+  --obs-horizon OBS_HORIZON
+  --temporal-agg
+  --light-temporal-agg  Lightweight sliding-window temporal aggregation.
+                        Queries every --tagg-window steps and averages the
+                        last --tagg-window predictions. Faster than
+                        --temporal-agg while still smoothing chunk-boundary
+                        jitter. (default: True)
+  --tagg-window TAGG_WINDOW
+                        Window size K for --light-temporal-agg. Queries every
+                        K steps; smaller=smoother but slower. Typical: 4
+                        (pred_horizon=24 → 6× faster than temporal-agg).
+                        (default: 4)
+  --enc-layers ENC_LAYERS
+  --dec-layers DEC_LAYERS
+  --dim-feedforward DIM_FEEDFORWARD
+  --hidden-dim HIDDEN_DIM
+  --nheads NHEADS
+  --backbone BACKBONE
+  --task-encoder-type {frozen_backbone}
+                        'frozen_backbone' = FrozenVideoBackbone
+                        (DINOv2/CLIP/VideoMAE) (default: frozen_backbone)
+  --frozen-backbone-type FROZEN_BACKBONE_TYPE
+                        Backbone: dinov2_vitl14 | dinov2_vitb14 | clip_vitl14
+                        | clip_vitb16 | siglip2_so400m | videomae_large |
+                        videomae_base (default: dinov2_vitl14)
+  --frozen-backbone-adapter-layers FROZEN_BACKBONE_ADAPTER_LAYERS
+  --frozen-backbone-adapter-ln
+  --frozen-backbone-seq-patches FROZEN_BACKBONE_SEQ_PATCHES
+  --frozen-backbone-num-frames FROZEN_BACKBONE_NUM_FRAMES
+  --frozen-backbone-lora-rank FROZEN_BACKBONE_LORA_RANK
+                        LoRA rank used during training (0=frozen) (default: 0)
+  --frozen-backbone-lora-alpha FROZEN_BACKBONE_LORA_ALPHA
+                        LoRA alpha used during training (default: 16.0)
+  --task-latent-dim TASK_LATENT_DIM
+  --task-num-frames TASK_NUM_FRAMES
+  --hf-cache-dir HF_CACHE_DIR
+  --cameras CAMERAS [CAMERAS ...]
+  --image-size IMAGE_SIZE IMAGE_SIZE
+  --state-type STATE_TYPE
+  --single-arm
+  --use-ema             Load EMA weights (ema_agent_state_dict) if available
+                        (default: False)
+  --compute-dtw
+  --dtw-band-ratio DTW_BAND_RATIO
+  --output-dir OUTPUT_DIR
+  --device DEVICE

@@ -1,0 +1,141 @@
+{
+  "checked_at": "2026-10-06T17:47:55.607763+08:00",
+  "conda_environment": "imitator",
+  "code_revision": "d6d16ec511bc389e0a207692730c137bc022ef14",
+  "code_branch": "setup/imitator-env",
+  "dependency_lock_sha256": "50f5ebfd59a3681208abb20f703d49f2cedbbadcd1c25b049cf73dc791fbabde",
+  "checks": {
+    "core": {
+      "stage": "core",
+      "status": "passed",
+      "result": {
+        "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:20:25) [GCC 14.3.0]",
+        "prefix": "/home/zxc/miniconda3/envs/imitator",
+        "versions": {
+          "torch": "2.7.1+cu128",
+          "torchvision": "0.22.1+cu128",
+          "torchcodec": "0.5",
+          "numpy": "1.26.4",
+          "sapien": "3.0.3",
+          "gymnasium": "0.29.1",
+          "lerobot": "0.5.0",
+          "transformers": "4.53.3",
+          "diffusers": "0.36.0",
+          "huggingface-hub": "0.35.3"
+        },
+        "mani_skill_path": "/home/zxc/Imitator/The-Imitator-Game/mani_skill/__init__.py",
+        "cuda_runtime": "12.8",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "gpu_memory_bytes": 50851282944,
+        "benchmark_envs": [
+          "TwoRobotPickRemoteControl-v1",
+          "TwoRobotPickRemoteControlL3-v1",
+          "TwoRobotPlaceMugRack-v1",
+          "TwoRobotPlaceMugRackL3-v1",
+          "TwoRobotPourKettle-v1",
+          "TwoRobotPourKettleL3-v1"
+        ]
+      },
+      "seconds": 6.327
+    },
+    "video": {
+      "stage": "video",
+      "status": "passed",
+      "result": {
+        "frames": 10,
+        "decoded_shape": [
+          3,
+          3,
+          64,
+          64
+        ],
+        "backend": "torchcodec (CPU decoding)",
+        "video": "/home/zxc/Imitator/environment/checks/synthetic-video.mp4"
+      },
+      "seconds": 4.568
+    },
+    "act": {
+      "stage": "act",
+      "status": "passed",
+      "result": {
+        "inputs": "synthetic; no benchmark data",
+        "video_frames": 2,
+        "encoder": "pretrained facebook/dinov2-large, frozen",
+        "backbone": "pretrained ResNet18",
+        "action_shape": [
+          1,
+          24,
+          16
+        ],
+        "loss": 1.0671517848968506,
+        "optimizer_steps": 1,
+        "adapter_gradient": true,
+        "backbone_frozen": true,
+        "peak_cuda_allocated_bytes": 1581171712
+      },
+      "seconds": 51.549
+    },
+    "render-rt": {
+      "stage": "render-rt",
+      "status": "passed",
+      "result": {
+        "env": "Empty-v1",
+        "robot": "panda",
+        "shader": "rt-fast",
+        "physics": "physx_cpu",
+        "renderer": "gpu",
+        "steps": 3,
+        "rgb_shape": [
+          128,
+          128,
+          3
+        ],
+        "rgb_std": 14.248453103920543,
+        "image": "/home/zxc/Imitator/environment/checks/panda-rt-fast.png"
+      },
+      "seconds": 3.198
+    },
+    "render": {
+      "stage": "render",
+      "status": "passed",
+      "result": {
+        "env": "Empty-v1",
+        "robot": "panda",
+        "shader": "default",
+        "physics": "physx_cpu",
+        "renderer": "gpu",
+        "steps": 3,
+        "rgb_shape": [
+          128,
+          128,
+          3
+        ],
+        "rgb_std": 15.696427956651322,
+        "image": "/home/zxc/Imitator/environment/checks/panda-default.png"
+      },
+      "seconds": 3.723
+    }
+  },
+  "cli_checks": {
+    "train_act_help_exit_code": 0,
+    "eval_act_help_exit_code": 0
+  },
+  "dinov2_large_cached_revisions": [
+    "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c"
+  ],
+  "disk_usage_bytes": {
+    "/home/zxc/miniconda3/envs/imitator": 12971384832,
+    "/var/tmp/imitator-game-zxc/uv-cache": 14171140096,
+    "/var/tmp/imitator-game-zxc/hf-cache": 1217851392,
+    "/var/tmp/imitator-game-zxc/torch-cache": 46845952,
+    "/home/zxc/Imitator/The-Imitator-Game": 583815168
+  },
+  "disk_free_bytes": {
+    "/home": 106211196928,
+    "/var/tmp": 214839750656
+  },
+  "dependency_metadata_check": "7 upstream override conflicts; see pip-check.txt",
+  "benchmark_data_downloaded": false,
+  "benchmark_asset_archives_downloaded": false,
+  "paper_results_reproduced": false
+}

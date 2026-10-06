@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "task": "L0_TwoRobotPlaceMugRack-v1",
+  "robot_train_episodes": [
+    0,
+    1
+  ],
+  "human_train_episodes": [
+    0
+  ],
+  "human_eval_episodes": [
+    1
+  ],
+  "batch_size": 8,
+  "epochs": 3,
+  "optimizer_steps": 171,
+  "eval_episodes": 2,
+  "env_steps": 1000,
+  "success_count": 0,
+  "checkpoint": {
+    "path": "/home/zxc/Imitator/The-Imitator-Game/runs/act_placemugrack_smoke-20261006/checkpoints/final_model.pt",
+    "bytes": 1422994538,
+    "iteration": 171,
+    "epoch": 3,
+    "equal_state_tensors": 692,
+    "optimizer_step_values": [
+      171
+    ],
+    "optimizer_state_count": 167,
+    "scheduler_last_epoch": 171
+  },
+  "data_bytes": 180989653,
+  "storage": {
+    "/home/zxc/Imitator": {
+      "total_bytes": 1712325165056,
+      "used_bytes": 1520556048384,
+      "free_bytes": 104712302592
+    },
+    "/var/tmp/imitator-game-zxc": {
+      "total_bytes": 301237854208,
+      "used_bytes": 71358873600,
+      "free_bytes": 214502191104
+    }
+  }
+}

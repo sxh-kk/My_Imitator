@@ -1,0 +1,20 @@
+{
+  "stage": "render-rt",
+  "status": "passed",
+  "result": {
+    "env": "Empty-v1",
+    "robot": "panda",
+    "shader": "rt-fast",
+    "physics": "physx_cpu",
+    "renderer": "gpu",
+    "steps": 3,
+    "rgb_shape": [
+      128,
+      128,
+      3
+    ],
+    "rgb_std": 14.248453103920543,
+    "image": "/home/zxc/Imitator/environment/checks/panda-rt-fast.png"
+  },
+  "seconds": 3.198
+}
