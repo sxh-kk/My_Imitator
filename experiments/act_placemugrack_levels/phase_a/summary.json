@@ -1,0 +1,368 @@
+{
+  "status": "complete",
+  "episodes": 900,
+  "rows": [
+    {
+      "run": "A50_s1",
+      "level": "L0",
+      "step": 5400,
+      "summary": {
+        "success_once": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "return": {
+          "mean": 409.8951416015625,
+          "std": 5.629655361175537
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.8197902844238282,
+          "std": 0.011259310118160408
+        },
+        "last_reward": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "success_at_end": {
+          "mean": 0.94,
+          "std": 0.23748684174075835
+        }
+      },
+      "stages": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 100,
+        "is_obj_placed": 97,
+        "success": 100
+      },
+      "wall_seconds": 208.98767495155334,
+      "rollout_seconds": 195.3240098953247
+    },
+    {
+      "run": "A50_s1",
+      "level": "L1",
+      "step": 5400,
+      "summary": {
+        "success_once": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "return": {
+          "mean": 28.181957244873047,
+          "std": 2.101496458053589
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.056363916168212895,
+          "std": 0.00420299281148814
+        },
+        "last_reward": {
+          "mean": 0.05710434839129448,
+          "std": 0.004041088585467345
+        },
+        "success_at_end": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "stages": {
+        "is_grasped": 0,
+        "is_mug_above_table": 0,
+        "is_mug_contact_rack": 0,
+        "is_obj_placed": 0,
+        "success": 0
+      },
+      "wall_seconds": 189.3108434677124,
+      "rollout_seconds": 175.66797256469727
+    },
+    {
+      "run": "A50_s1",
+      "level": "L2",
+      "step": 5400,
+      "summary": {
+        "success_once": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "return": {
+          "mean": 0.24243560433387756,
+          "std": 0.045858826488256454
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.0004848711884021759,
+          "std": 9.171765680364411e-05
+        },
+        "last_reward": {
+          "mean": 0.0005312655866146087,
+          "std": 0.00010395983964612417
+        },
+        "success_at_end": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "stages": {
+        "is_grasped": 0,
+        "is_mug_above_table": 0,
+        "is_mug_contact_rack": 0,
+        "is_obj_placed": 0,
+        "success": 0
+      },
+      "wall_seconds": 201.47173762321472,
+      "rollout_seconds": 188.4054036140442
+    },
+    {
+      "run": "A50_s2",
+      "level": "L0",
+      "step": 12600,
+      "summary": {
+        "success_once": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "return": {
+          "mean": 407.8533630371094,
+          "std": 6.032794952392578
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.8157067266845703,
+          "std": 0.012065589906680791
+        },
+        "last_reward": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "success_at_end": {
+          "mean": 0.98,
+          "std": 0.13999999999999999
+        }
+      },
+      "stages": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 100,
+        "is_obj_placed": 100,
+        "success": 100
+      },
+      "wall_seconds": 202.928631067276,
+      "rollout_seconds": 189.2888104915619
+    },
+    {
+      "run": "A50_s2",
+      "level": "L1",
+      "step": 12600,
+      "summary": {
+        "success_once": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "return": {
+          "mean": 29.74533462524414,
+          "std": 1.9842463731765747
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.05949067462921143,
+          "std": 0.003968492892922947
+        },
+        "last_reward": {
+          "mean": 0.06073845654726028,
+          "std": 0.004006880007270086
+        },
+        "success_at_end": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "stages": {
+        "is_grasped": 0,
+        "is_mug_above_table": 0,
+        "is_mug_contact_rack": 0,
+        "is_obj_placed": 0,
+        "success": 0
+      },
+      "wall_seconds": 189.85078144073486,
+      "rollout_seconds": 176.1682267189026
+    },
+    {
+      "run": "A50_s2",
+      "level": "L2",
+      "step": 12600,
+      "summary": {
+        "success_once": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "return": {
+          "mean": 0.3311140537261963,
+          "std": 0.08568909019231796
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.0006622279751300812,
+          "std": 0.00017137817154157258
+        },
+        "last_reward": {
+          "mean": 0.0007999332249164581,
+          "std": 0.00021701651266766044
+        },
+        "success_at_end": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "stages": {
+        "is_grasped": 0,
+        "is_mug_above_table": 0,
+        "is_mug_contact_rack": 0,
+        "is_obj_placed": 0,
+        "success": 0
+      },
+      "wall_seconds": 193.3102583885193,
+      "rollout_seconds": 179.9644284248352
+    },
+    {
+      "run": "A50_s3",
+      "level": "L0",
+      "step": 5400,
+      "summary": {
+        "success_once": {
+          "mean": 0.98,
+          "std": 0.13999999999999999
+        },
+        "return": {
+          "mean": 399.9795227050781,
+          "std": 7.486689567565918
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.7999590356445313,
+          "std": 0.014973378611584183
+        },
+        "last_reward": {
+          "mean": 0.99801065325737,
+          "std": 0.013940052907576776
+        },
+        "success_at_end": {
+          "mean": 0.92,
+          "std": 0.2712931993250107
+        }
+      },
+      "stages": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 100,
+        "is_obj_placed": 98,
+        "success": 98
+      },
+      "wall_seconds": 204.10890340805054,
+      "rollout_seconds": 190.12426590919495
+    },
+    {
+      "run": "A50_s3",
+      "level": "L1",
+      "step": 5400,
+      "summary": {
+        "success_once": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "return": {
+          "mean": 27.765098571777344,
+          "std": 2.335151433944702
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.05553019760131836,
+          "std": 0.004670302821792129
+        },
+        "last_reward": {
+          "mean": 0.05583797946572304,
+          "std": 0.004524839896952039
+        },
+        "success_at_end": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "stages": {
+        "is_grasped": 0,
+        "is_mug_above_table": 0,
+        "is_mug_contact_rack": 0,
+        "is_obj_placed": 0,
+        "success": 0
+      },
+      "wall_seconds": 188.94752192497253,
+      "rollout_seconds": 175.5907371044159
+    },
+    {
+      "run": "A50_s3",
+      "level": "L2",
+      "step": 5400,
+      "summary": {
+        "success_once": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "return": {
+          "mean": 0.2958334684371948,
+          "std": 0.06584559381008148
+        },
+        "episode_len": {
+          "mean": 500.0,
+          "std": 0.0
+        },
+        "reward": {
+          "mean": 0.0005916668525338173,
+          "std": 0.00013169118588369762
+        },
+        "last_reward": {
+          "mean": 0.0007017961144447326,
+          "std": 0.00016832824752352924
+        },
+        "success_at_end": {
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "stages": {
+        "is_grasped": 0,
+        "is_mug_above_table": 0,
+        "is_mug_contact_rack": 0,
+        "is_obj_placed": 0,
+        "success": 0
+      },
+      "wall_seconds": 193.81089186668396,
+      "rollout_seconds": 180.58958768844604
+    }
+  ],
+  "paired_initial_conditions": true,
+  "finished_at": 1791387598.0427642
+}

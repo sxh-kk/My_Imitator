@@ -1,0 +1,1 @@
+CALIBRATION PASSED {"dual_gain": 0.17245718665316945, "mixed_gain": 0.5567866033988356, "config": {"batch_size": 64, "workers": 8, "optimizer_updates": 18000, "warmup_updates": 900, "eval_envs": 4, "parallel_training_runs": 2, "async_eval": true, "max_top_level_gpu_jobs": 2}}

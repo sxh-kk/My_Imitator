@@ -1,0 +1,198 @@
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:43:58.054941: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-07 23:43:58.063821: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387838.073316 2447242 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387838.076474 2447242 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387838.085387 2447242 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387838.085399 2447242 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387838.085402 2447242 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387838.085403 2447242 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-07 23:43:58.087724: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+================================================================================
+🔄 INITIALIZING HUMAN-SIM PAIRED DATASET
+================================================================================
+   Input mode: video_only
+   Include first frame: True
+
+📖 Loading task mapping from: examples/baselines/lerobot_dataset/task_mapping.json
+   ✓ 53 human task descriptions
+   ✓ 200 sim task descriptions
+
+✓ Mapping loaded:
+  - 53 human tasks: ['human_H1', 'human_H10', 'human_H11', 'human_H12', 'human_H13', 'human_H14', 'human_H15', 'human_H16', 'human_H17', 'human_H18', 'human_H19', 'human_H2', 'human_H20', 'human_H21', 'human_H22', 'human_H23', 'human_H24', 'human_H25', 'human_H26', 'human_H27', 'human_H28', 'human_H29', 'human_H3', 'human_H30', 'human_H31', 'human_H32', 'human_H33', 'human_H34', 'human_H35', 'human_H36', 'human_H37', 'human_H38', 'human_H39', 'human_H4', 'human_H40', 'human_H41', 'human_H42', 'human_H43', 'human_H44', 'human_H45', 'human_H46', 'human_H47', 'human_H48', 'human_H49', 'human_H5', 'human_H50', 'human_H56', 'human_H57', 'human_H58', 'human_H6', 'human_H7', 'human_H8', 'human_H9']
+  - 200 sim tasks: ['L0_TwoRobotCleanCup-v1', 'L0_TwoRobotCleanDesk-v1', 'L0_TwoRobotCutFruit-v1', 'L0_TwoRobotFoldBox-v1', 'L0_TwoRobotFoldTowel-v1', 'L0_TwoRobotGrindFood-v1', 'L0_TwoRobotKnifeBowlFork-v1', 'L0_TwoRobotLiftLidFromSkillet-v1', 'L0_TwoRobotOpenBox-v1', 'L0_TwoRobotOpenLiquidCap-v1', 'L0_TwoRobotPickAppleBananaToBaskets-v1', 'L0_TwoRobotPickAppleBasket-v1', 'L0_TwoRobotPickAppleToScale-v1', 'L0_TwoRobotPickFood-v1', 'L0_TwoRobotPickFruitsToPlate-v1', 'L0_TwoRobotPickPillToRegions-v1', 'L0_TwoRobotPickRemoteControl-v1', 'L0_TwoRobotPickTennisBallGolfBall-v1', 'L0_TwoRobotPickWash-v1', 'L0_TwoRobotPlaceBookBookcase-v1', 'L0_TwoRobotPlaceBrushRest-v1', 'L0_TwoRobotPlaceBurgerTray-v1', 'L0_TwoRobotPlaceChipsRack-v1', 'L0_TwoRobotPlaceClothBasket-v1', 'L0_TwoRobotPlaceCommodityRack-v1', 'L0_TwoRobotPlaceCupPlate-v1', 'L0_TwoRobotPlaceFileFolder-v1', 'L0_TwoRobotPlaceFoodScale-v1', 'L0_TwoRobotPlaceFruitBox-v1', 'L0_TwoRobotPlaceMagazineFolder-v1', 'L0_TwoRobotPlaceMugRack-v1', 'L0_TwoRobotPlacePillBox-v1', 'L0_TwoRobotPlacePlateRack-v1', 'L0_TwoRobotPlaceScrewdriver-v1', 'L0_TwoRobotPlaceShoeBox-v1', 'L0_TwoRobotPourCup-v1', 'L0_TwoRobotPourKetchupFries-v1', 'L0_TwoRobotPourKettle-v1', 'L0_TwoRobotPourLiquidCup-v1', 'L0_TwoRobotPourLiquidFilter-v1', 'L0_TwoRobotPourLiquidMug-v1', 'L0_TwoRobotPressJuicer-v1', 'L0_TwoRobotPressStapler-v1', 'L0_TwoRobotPutBox-v1', 'L0_TwoRobotPutCubeOnScale-v1', 'L0_TwoRobotScanMilkBox-v1', 'L0_TwoRobotScanPillBottle-v1', 'L0_TwoRobotStirSpoon-v1', 'L0_TwoRobotTransFood-v1', 'L0_TwoRobotWipePot-v1', 'L1_TwoRobotCleanCup-v1', 'L1_TwoRobotCleanDesk-v1', 'L1_TwoRobotCutFruit-v1', 'L1_TwoRobotFoldBox-v1', 'L1_TwoRobotFoldTowel-v1', 'L1_TwoRobotGrindFood-v1', 'L1_TwoRobotKnifeBowlFork-v1', 'L1_TwoRobotLiftLidFromSkillet-v1', 'L1_TwoRobotOpenBox-v1', 'L1_TwoRobotOpenLiquidCap-v1', 'L1_TwoRobotPickAppleBananaToBaskets-v1', 'L1_TwoRobotPickAppleBasket-v1', 'L1_TwoRobotPickAppleToScale-v1', 'L1_TwoRobotPickFood-v1', 'L1_TwoRobotPickFruitsToPlate-v1', 'L1_TwoRobotPickPillToRegions-v1', 'L1_TwoRobotPickRemoteControl-v1', 'L1_TwoRobotPickTennisBallGolfBall-v1', 'L1_TwoRobotPickWash-v1', 'L1_TwoRobotPlaceBookBookcase-v1', 'L1_TwoRobotPlaceBrushRest-v1', 'L1_TwoRobotPlaceBurgerTray-v1', 'L1_TwoRobotPlaceChipsRack-v1', 'L1_TwoRobotPlaceClothBasket-v1', 'L1_TwoRobotPlaceCommodityRack-v1', 'L1_TwoRobotPlaceCupPlate-v1', 'L1_TwoRobotPlaceFileFolder-v1', 'L1_TwoRobotPlaceFoodScale-v1', 'L1_TwoRobotPlaceFruitBox-v1', 'L1_TwoRobotPlaceMagazineFolder-v1', 'L1_TwoRobotPlaceMugRack-v1', 'L1_TwoRobotPlacePillBox-v1', 'L1_TwoRobotPlacePlateRack-v1', 'L1_TwoRobotPlaceScrewdriver-v1', 'L1_TwoRobotPlaceShoeBox-v1', 'L1_TwoRobotPourCup-v1', 'L1_TwoRobotPourKetchupFries-v1', 'L1_TwoRobotPourKettle-v1', 'L1_TwoRobotPourLiquidCup-v1', 'L1_TwoRobotPourLiquidFilter-v1', 'L1_TwoRobotPourLiquidMug-v1', 'L1_TwoRobotPressJuicer-v1', 'L1_TwoRobotPressStapler-v1', 'L1_TwoRobotPutBox-v1', 'L1_TwoRobotPutCubeOnScale-v1', 'L1_TwoRobotScanMilkBox-v1', 'L1_TwoRobotScanPillBottle-v1', 'L1_TwoRobotStirSpoon-v1', 'L1_TwoRobotTransFood-v1', 'L1_TwoRobotWipePot-v1', 'L2_TwoRobotCleanCup-v1', 'L2_TwoRobotCleanDesk-v1', 'L2_TwoRobotCutFruit-v1', 'L2_TwoRobotFoldBox-v1', 'L2_TwoRobotFoldTowel-v1', 'L2_TwoRobotGrindFood-v1', 'L2_TwoRobotKnifeBowlFork-v1', 'L2_TwoRobotLiftLidFromSkillet-v1', 'L2_TwoRobotOpenBox-v1', 'L2_TwoRobotOpenLiquidCap-v1', 'L2_TwoRobotPickAppleBananaToBaskets-v1', 'L2_TwoRobotPickAppleBasket-v1', 'L2_TwoRobotPickAppleToScale-v1', 'L2_TwoRobotPickFood-v1', 'L2_TwoRobotPickFruitsToPlate-v1', 'L2_TwoRobotPickPillToRegions-v1', 'L2_TwoRobotPickRemoteControl-v1', 'L2_TwoRobotPickTennisBallGolfBall-v1', 'L2_TwoRobotPickWash-v1', 'L2_TwoRobotPlaceBookBookcase-v1', 'L2_TwoRobotPlaceBrushRest-v1', 'L2_TwoRobotPlaceBurgerTray-v1', 'L2_TwoRobotPlaceChipsRack-v1', 'L2_TwoRobotPlaceClothBasket-v1', 'L2_TwoRobotPlaceCommodityRack-v1', 'L2_TwoRobotPlaceCupPlate-v1', 'L2_TwoRobotPlaceFileFolder-v1', 'L2_TwoRobotPlaceFoodScale-v1', 'L2_TwoRobotPlaceFruitBox-v1', 'L2_TwoRobotPlaceMagazineFolder-v1', 'L2_TwoRobotPlaceMugRack-v1', 'L2_TwoRobotPlacePillBox-v1', 'L2_TwoRobotPlacePlateRack-v1', 'L2_TwoRobotPlaceScrewdriver-v1', 'L2_TwoRobotPlaceShoeBox-v1', 'L2_TwoRobotPourCup-v1', 'L2_TwoRobotPourKetchupFries-v1', 'L2_TwoRobotPourKettle-v1', 'L2_TwoRobotPourLiquidCup-v1', 'L2_TwoRobotPourLiquidFilter-v1', 'L2_TwoRobotPourLiquidMug-v1', 'L2_TwoRobotPressJuicer-v1', 'L2_TwoRobotPressStapler-v1', 'L2_TwoRobotPutBox-v1', 'L2_TwoRobotPutCubeOnScale-v1', 'L2_TwoRobotScanMilkBox-v1', 'L2_TwoRobotScanPillBottle-v1', 'L2_TwoRobotStirSpoon-v1', 'L2_TwoRobotTransFood-v1', 'L2_TwoRobotWipePot-v1', 'L3_TwoRobotCleanCup-v1', 'L3_TwoRobotCleanDesk-v1', 'L3_TwoRobotCutFruit-v1', 'L3_TwoRobotFoldBox-v1', 'L3_TwoRobotFoldTowel-v1', 'L3_TwoRobotGrindFood-v1', 'L3_TwoRobotKnifeBowlFork-v1', 'L3_TwoRobotLiftLidFromSkillet-v1', 'L3_TwoRobotOpenBox-v1', 'L3_TwoRobotOpenLiquidCap-v1', 'L3_TwoRobotPickAppleBananaToBaskets-v1', 'L3_TwoRobotPickAppleBasket-v1', 'L3_TwoRobotPickAppleToScale-v1', 'L3_TwoRobotPickFood-v1', 'L3_TwoRobotPickFruitsToPlate-v1', 'L3_TwoRobotPickPillToRegions-v1', 'L3_TwoRobotPickRemoteControl-v1', 'L3_TwoRobotPickTennisBallGolfBall-v1', 'L3_TwoRobotPickWash-v1', 'L3_TwoRobotPlaceBookBookcase-v1', 'L3_TwoRobotPlaceBrushRest-v1', 'L3_TwoRobotPlaceBurgerTray-v1', 'L3_TwoRobotPlaceChipsRack-v1', 'L3_TwoRobotPlaceClothBasket-v1', 'L3_TwoRobotPlaceCommodityRack-v1', 'L3_TwoRobotPlaceCupPlate-v1', 'L3_TwoRobotPlaceFileFolder-v1', 'L3_TwoRobotPlaceFoodScale-v1', 'L3_TwoRobotPlaceFruitBox-v1', 'L3_TwoRobotPlaceMagazineFolder-v1', 'L3_TwoRobotPlaceMugRack-v1', 'L3_TwoRobotPlacePillBox-v1', 'L3_TwoRobotPlacePlateRack-v1', 'L3_TwoRobotPlaceScrewdriver-v1', 'L3_TwoRobotPlaceShoeBox-v1', 'L3_TwoRobotPourCup-v1', 'L3_TwoRobotPourKetchupFries-v1', 'L3_TwoRobotPourKettle-v1', 'L3_TwoRobotPourLiquidCup-v1', 'L3_TwoRobotPourLiquidFilter-v1', 'L3_TwoRobotPourLiquidMug-v1', 'L3_TwoRobotPressJuicer-v1', 'L3_TwoRobotPressStapler-v1', 'L3_TwoRobotPutBox-v1', 'L3_TwoRobotPutCubeOnScale-v1', 'L3_TwoRobotScanMilkBox-v1', 'L3_TwoRobotScanPillBottle-v1', 'L3_TwoRobotStirSpoon-v1', 'L3_TwoRobotTransFood-v1', 'L3_TwoRobotWipePot-v1']
+
+✓ Filtered human configs: 1 loaded, 0 skipped
+
+✓ Filtered sim configs: 2 loaded, 0 skipped
+
+================================================================================
+🎥 LOADING HUMAN VIDEO DATASET
+================================================================================
+Loading datasets from config: /var/tmp/imitator-game-zxc/tmp/tmpyps58yla.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.56it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.56it/s]
+[94mLoading episodes [0] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+
+================================================================================
+🤖 LOADING SIM TRAJECTORY DATASET
+================================================================================
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  3.05it/s]100%|██████████| 2/2 [00:00<00:00,  2.91it/s]100%|██████████| 2/2 [00:00<00:00,  2.93it/s]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B01/sim/L0_TwoRobotPlaceMugRack-v1 with split train[0m
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B01/sim/L1_TwoRobotPlaceMugRack-v1 with split train[0m
+
+================================================================================
+🔗 VALIDATING HUMAN-SIM TASK PAIRINGS
+================================================================================
+
+🔑 Indexing human videos...
+   ✓ human_H57 - 1 episodes
+
+🔑 Indexing sim trajectories (O(sub-datasets))...
+   L0_TwoRobotPlaceMugRack-v1: 11228 samples
+   L1_TwoRobotPlaceMugRack-v1: 12079 samples
+
+🔍 Validating pairings...
+
+✅ Successfully paired: 2 task pair(s)
+
+
+================================================================================
+✅ HUMAN-SIM PAIRED DATASET READY
+================================================================================
+📊 Summary:
+   - Total sim samples: 23307
+   - Valid paired samples: 23307
+   - Skipped samples: 0
+   - Valid paired tasks: 2
+   - Input mode: video_only
+   - Include first frame: True
+================================================================================
+
+\n   Building FrozenVideoBackbone (dinov2_vitl14) [Frozen] ...
+
+============================================================
+[FrozenBB] Setting up frozen backbone cache (dinov2_vitl14)
+  Backbone: 0 frozen tensors | Adapter: 525.8K trainable params
+  [RawFeatCache] Loaded 1 entries ← /home/zxc/Imitator/experiments/act_placemugrack_levels/calibration/init_B01/te_cache/backbone_dinov2_vitl14/raw_features.pt
+  [RawFeatCache] Cache ready: 1 entries loaded from disk.
+  [Done] CachedFrozenBackbone ready.
+  Expected per-step cost: ~0.15 ms  (dict lookup + adapter)
+============================================================
+
+   FrozenVideoBackbone: backbone frozen, cache active, adapter trainable.
+  [SkipVideo] skip_human_video=True activated on dataset (1 cache entries cover all tasks).
+  Video decode cost (~50-100 ms/sample) eliminated for training.
+
+   ACTAgent ready
+   Task encoder:  frozen_backbone (dinov2_vitl14)
+   Input mode:    video_only
+   Total params:  17.21M  |  Trainable: 17.21M
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:44:04.576520: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387844.586144 2447398 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387844.589509 2447398 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387844.598366 2447398 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387844.598379 2447398 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387844.598381 2447398 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387844.598384 2447398 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:44:09.473374: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387849.482793 2447521 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387849.485998 2447521 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387849.494546 2447521 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387849.494558 2447521 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387849.494561 2447521 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387849.494563 2447521 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:44:14.307946: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387854.317302 2447623 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387854.320491 2447623 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387854.329023 2447623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387854.329036 2447623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387854.329039 2447623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387854.329043 2447623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:44:19.156892: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387859.166149 2447756 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387859.169297 2447756 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387859.177782 2447756 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387859.177794 2447756 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387859.177797 2447756 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387859.177799 2447756 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:44:23.999146: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387864.008378 2447856 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387864.011492 2447856 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387864.019739 2447856 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387864.019753 2447856 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387864.019757 2447856 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387864.019759 2447856 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:44:28.774157: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387868.783469 2447980 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387868.786589 2447980 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387868.795008 2447980 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387868.795020 2447980 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387868.795023 2447980 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387868.795026 2447980 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:44:33.622681: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387873.631861 2448081 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387873.634988 2448081 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387873.643443 2448081 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387873.643456 2448081 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387873.643459 2448081 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387873.643462 2448081 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:44:38.444762: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791387878.454018 2448157 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791387878.457146 2448157 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791387878.465570 2448157 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387878.465590 2448157 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387878.465593 2448157 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791387878.465596 2448157 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+{"step": 1, "samples": 64, "level_sample_counts": {"L0": 32, "L1": 32}, "elapsed_train_s": 1.8859300369949779, "lr": [1.1111111111111112e-07, 1.1111111111111112e-08], "loss": 76.20156860351562, "l1": 0.7803529500961304, "kl": 7.542121887207031, "memory_allocated_GiB": 0.2731194496154785}
+{"step": 50, "samples": 3200, "level_sample_counts": {"L0": 1600, "L1": 1600}, "elapsed_train_s": 4.086912537008175, "lr": [5.555555555555556e-06, 5.555555555555555e-07], "loss": 68.38101196289062, "l1": 0.6421349924437854, "kl": 6.773887751053791, "memory_allocated_GiB": 0.274355411529541}
+{"step": 100, "samples": 6400, "level_sample_counts": {"L0": 3200, "L1": 3200}, "elapsed_train_s": 6.162658208995708, "lr": [1.1111111111111112e-05, 1.111111111111111e-06], "loss": 32.348064785003665, "l1": 0.46901799023151397, "kl": 3.18790470123291, "memory_allocated_GiB": 0.27489709854125977}
+{"step": 150, "samples": 9600, "level_sample_counts": {"L0": 4800, "L1": 4800}, "elapsed_train_s": 8.230559192001238, "lr": [1.6666666666666667e-05, 1.6666666666666667e-06], "loss": 6.3400425481796265, "l1": 0.39124375343322754, "kl": 0.5948798739910126, "memory_allocated_GiB": 0.27208948135375977}
+{"step": 200, "samples": 12800, "level_sample_counts": {"L0": 6400, "L1": 6400}, "elapsed_train_s": 10.238238521007588, "lr": [2.2222222222222223e-05, 2.222222222222222e-06], "loss": 2.8488133430480955, "l1": 0.32436031877994537, "kl": 0.2524453029036522, "memory_allocated_GiB": 0.27306604385375977}
+{"step": 250, "samples": 16000, "level_sample_counts": {"L0": 8000, "L1": 8000}, "elapsed_train_s": 12.31044761800149, "lr": [2.777777777777778e-05, 2.7777777777777783e-06], "loss": 2.0056818318367005, "l1": 0.2860410714149475, "kl": 0.1719640749692917, "memory_allocated_GiB": 0.27367639541625977}
+{"step": 300, "samples": 19200, "level_sample_counts": {"L0": 9600, "L1": 9600}, "elapsed_train_s": 14.34782475999964, "lr": [3.3333333333333335e-05, 3.3333333333333333e-06], "loss": 1.4730073833465576, "l1": 0.2440924119949341, "kl": 0.1228914974629879, "memory_allocated_GiB": 0.27208948135375977}
+{"step": 350, "samples": 22400, "level_sample_counts": {"L0": 11200, "L1": 11200}, "elapsed_train_s": 16.385538461006945, "lr": [3.888888888888889e-05, 3.88888888888889e-06], "loss": 1.0593685448169707, "l1": 0.20439647853374482, "kl": 0.08549720704555512, "memory_allocated_GiB": 0.27306604385375977}
+{"step": 400, "samples": 25600, "level_sample_counts": {"L0": 12800, "L1": 12800}, "elapsed_train_s": 18.438732202004758, "lr": [4.4444444444444447e-05, 4.444444444444444e-06], "loss": 0.7754795956611633, "l1": 0.18321883887052537, "kl": 0.05922607518732548, "memory_allocated_GiB": 0.27367639541625977}
+{"step": 450, "samples": 28800, "level_sample_counts": {"L0": 14400, "L1": 14400}, "elapsed_train_s": 20.537149384996155, "lr": [5e-05, 5e-06], "loss": 0.5558765441179275, "l1": 0.16811513096094133, "kl": 0.038776141181588175, "memory_allocated_GiB": 0.27208948135375977}
+{"step": 500, "samples": 32000, "level_sample_counts": {"L0": 16000, "L1": 16000}, "elapsed_train_s": 22.60505715700856, "lr": [5.555555555555556e-05, 5.555555555555557e-06], "loss": 0.40377008259296415, "l1": 0.15642678141593933, "kl": 0.024734330102801322, "memory_allocated_GiB": 0.27306604385375977}
+{"step": 550, "samples": 35200, "level_sample_counts": {"L0": 17600, "L1": 17600}, "elapsed_train_s": 24.485551371006295, "lr": [6.111111111111112e-05, 6.111111111111112e-06], "loss": 0.30468451023101806, "l1": 0.14504166722297668, "kl": 0.015964284259825944, "memory_allocated_GiB": 0.27367639541625977}
+TRAIN COMPLETE {"status": "complete", "condition": "B01", "seed": 1, "steps": 550, "samples": 35200, "batch_size": 64, "workers": 8, "wall_seconds": 65.80159521102905, "initialization_seconds": 41.315754890441895, "steady_steps": 500, "steady_step_median_s": 0.040327798000362236, "steady_step_p95_s": 0.04644629345057182, "steady_mean_step_s": 0.040795833890006176, "samples_per_second": 1568.7876407320648, "data_wait_mean_s": 0.00024223873185110278, "gpu_update_ms_median": 39.8493595123291, "peak_allocated_GiB": 1.5657305717468262, "peak_reserved_GiB": 1.837890625, "level_sample_counts": {"L0": 17600, "L1": 17600}, "sampling": {"seed": 10001, "completed_batches": 550, "extra_rotation": 0, "plan_sha256": "aef6209633f4a6cea009c3c308fdcf06c091b0207b87d3fa46bfe418ee8a4daa", "counts": {"L0": 17600, "L1": 17600}, "passes_and_cursors": {"L0": {"pass_index": 1, "cursor": 6372}, "L1": {"pass_index": 1, "cursor": 5521}}}}

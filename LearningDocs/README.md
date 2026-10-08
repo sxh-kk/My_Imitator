@@ -1,6 +1,6 @@
 # Imitator 源码学习导航
 
-核对日期：2026-10-06。源码目录：`/home/zxc/Imitator/The-Imitator-Game`。
+核对日期：2026-10-07。源码目录：`/home/zxc/Imitator/The-Imitator-Game`。
 核对 commit：`d6d16ec511bc389e0a207692730c137bc022ef14`。
 
 本组文档围绕 **ACT＋冻结 DINOv2-L、human video 条件、双臂仿真、单路 zed2i RGB、qpos 控制** 展开，描述当前代码的实际行为。前三篇记录初次源码梳理；第四篇补充随后完成的真实任务训练、checkpoint 和评估结果。核心代码保持原样，未提出或实现新方法。
@@ -11,6 +11,12 @@
 2. [02_SAMPLE_TO_ACT.md](02_SAMPLE_TO_ACT.md)：从一条离线轨迹样本、配对人类视频、DataLoader batch，一直追到 ACT 的动作块，逐步标注 tensor shape。
 3. [03_EVALUATION_TO_ROBOT.md](03_EVALUATION_TO_ROBOT.md)：追踪评估时的观测、动作聚合、反归一化、左右臂拆分、PD controller 和评分。
 4. [04_ACT_SMOKE_RUN.md](04_ACT_SMOKE_RUN.md)：官方 PlaceMugRack 最小数据闭环实测；171 次更新、checkpoint 回读、2 个仿真 episode、录像和复跑命令。
+5. [05_PLACEMUGRACK_TRAINING_PLAN.md](05_PLACEMUGRACK_TRAINING_PLAN.md)：前一版充分训练设计，保留作背景记录；执行排期由第六篇替代。
+6. [06_4090_EXPERIMENT_DESIGN.md](06_4090_EXPERIMENT_DESIGN.md)：已执行的 4090 实验方案；10/50 条示范 × 3 个训练 seed、固定计算预算、吞吐标定和独立最终测试。
+7. [07_PLACEMUGRACK_EXPERIMENT_RESULTS.md](07_PLACEMUGRACK_EXPERIMENT_RESULTS.md)：六组训练的最终成功率、稳定性、失败阶段、资源计时、图件及权重/视频索引。
+8. [08_REAL_SAMPLE_WALKTHROUGH.md](08_REAL_SAMPLE_WALKTHROUGH.md)：使用真实训练数据和已有 checkpoint，通过七个交互暂停点查看配对、DINO 缓存、ACT 动作块和 CVAE 训练/推理区别。
+9. [09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md](09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md)：下一轮 L0/L1/L2 数据覆盖实验；先冻结 A50 测跨级别，再做三组数据 × 三个训练 seed 的固定预算对照，记录动作尺度与左右臂限制。
+10. [10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md](10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)：跨级别实验运行记录与最终报告；当前记录已完成的900次冻结评估和首个B012开发结果，全部计算与审计完成后自动生成完整报告。
 
 训练和执行连接如下。训练 batch 中的 `robot_actions` 是监督标签；评估时送入模拟器的是策略预测的动作。
 

@@ -1,0 +1,54 @@
+{
+  "status": "partial_runs_archived_for_same_seed_restart",
+  "recorded_at": "2026-10-08T09:28:06.515763+08:00",
+  "exit_reason": "not recorded; controller and all experiment GPU processes absent, telemetry stale by about 8.9 hours",
+  "preserved_complete_run": "B012_s1",
+  "records": [
+    {
+      "run": "B0_s1",
+      "last_update": 9000,
+      "completed_development_episodes": 160,
+      "original_train_log_sha256": "d7edecb247af65a70b9d4bf746640f8face3854a72e0eb1309e687679842f2a7",
+      "checkpoints": [
+        {
+          "path": "runs/B0_s1/checkpoints/step_005400.pt",
+          "sha256": "dde466f7a493af762ef84602a27f20ef63c4e3c68a50626aa0e13ca55dd63f6e"
+        },
+        {
+          "path": "runs/B0_s1/checkpoints/step_009000.pt",
+          "sha256": "65a64bc73c53ea30aa7174cbbcaac43be99e4275af60080f120e59b86b0c1ec7"
+        },
+        {
+          "path": "runs/B0_s1/checkpoints/step_001800.pt",
+          "sha256": "cd1cf21e81343db95fc86fdf9b5b892d6772eff4b2e3f55a5c98903f08c4d2b2"
+        }
+      ],
+      "archive_directory": "interrupted_runs/20261008_092805/B0_s1"
+    },
+    {
+      "run": "B01_s1",
+      "last_update": 9000,
+      "completed_development_episodes": 160,
+      "original_train_log_sha256": "d37606e0c9cba864bef9cac283f4a2fdfc50cbba05fdeb92cd962b5f7064a65f",
+      "checkpoints": [
+        {
+          "path": "runs/B01_s1/checkpoints/step_005400.pt",
+          "sha256": "84adad598ce268af6b9c89475ec3f697caeafc40bfcaa25dad33d69dce4b13d2"
+        },
+        {
+          "path": "runs/B01_s1/checkpoints/step_009000.pt",
+          "sha256": "259acb21739e423a0b85216adf8cbe2eed4351abd7791a9951df217833a50387"
+        },
+        {
+          "path": "runs/B01_s1/checkpoints/step_001800.pt",
+          "sha256": "c18fd29599a890e2321a54e1ac0c54c19523f033ec02c712c722d4da56564f61"
+        }
+      ],
+      "archive_directory": "interrupted_runs/20261008_092805/B01_s1"
+    }
+  ],
+  "execution_sources_unchanged": true,
+  "protocol_unchanged": true,
+  "partial_results_excluded_from_formal_counts": true,
+  "new_process_owner": "systemd user service imitator-placemugrack-levels.service"
+}

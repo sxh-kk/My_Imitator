@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "files": [
+    {
+      "path": "/var/tmp/imitator-game-zxc/hf-cache/hub/models--facebook--dinov2-large/snapshots/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c/model.safetensors",
+      "sha256": "399fba97a95f22c36834418bc69373364a99af3a1153da1c0fb31db567c92e23",
+      "source": "previous frozen DINO manifest"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/torch-cache/hub/checkpoints/resnet18-f37072fd.pth",
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+      "source": "local torchvision pretrained weights"
+    }
+  ]
+}

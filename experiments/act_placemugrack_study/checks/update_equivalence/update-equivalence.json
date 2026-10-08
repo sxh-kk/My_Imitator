@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "actual_upstream_epoch_source_sha256": "dfe05297fcded83dcaab109885b2b5710b09203c66908e676f84f932daa24775",
+  "state_tensor_count": 253,
+  "max_parameter_difference": 0.0,
+  "losses": {
+    "loss": 81.18866729736328,
+    "l1": 0.7266486883163452,
+    "kl": 8.046201705932617
+  },
+  "scheduler_factors": {
+    "0": 0.0,
+    "1": 0.0011111111111111111,
+    "900": 1.0,
+    "9000": 0.5412896727361662,
+    "18000": 0.0
+  }
+}

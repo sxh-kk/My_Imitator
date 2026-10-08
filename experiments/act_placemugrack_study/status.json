@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "started_at": 1791301015.1514277,
+  "completed_runs": [
+    "A50_s1",
+    "A50_s2",
+    "A10_s1",
+    "A10_s2",
+    "A50_s3",
+    "A10_s3"
+  ],
+  "active_runs": [],
+  "config": {
+    "batch_size": 64,
+    "workers": 8,
+    "optimizer_steps": 18000,
+    "warmup_steps": 900,
+    "parallel_training_runs": 2,
+    "async_eval": true,
+    "eval_envs": 4,
+    "video_batches": 2,
+    "inference_tf32": false,
+    "training_tf32": true,
+    "auxiliary_dtw": false,
+    "normalization": "per_condition_training_only_q01_q99",
+    "checkpoint_steps": [
+      1800,
+      5400,
+      9000,
+      12600,
+      18000
+    ],
+    "dev_seeds": [
+      1000,
+      1019
+    ],
+    "test_seeds": [
+      2000,
+      2099
+    ],
+    "calibration_evidence": {
+      "single_samples_per_second": 1478.0905993121794,
+      "dual_total_samples_per_second": 1753.2081099963166,
+      "dual_steady_gain": 0.18613034330382816,
+      "mixed_whole_job_gain": 0.33133375207774707,
+      "peak_total_GPU_memory_GiB": 15.521484375,
+      "eval_rollout_seconds_4_episodes": {
+        "1": 14.505962610244751,
+        "2": 8.927168369293213,
+        "4": 6.471005201339722
+      }
+    },
+    "scheduling_note": "pilot may overlap one dev evaluation; subsequent two-run queue uses synchronous per-run evaluation and a global evaluation lock; the mixed calibration whole-job gain includes initialization overlap"
+  },
+  "active_test": null,
+  "finished_at": 1791308609.9380717
+}

@@ -55,7 +55,7 @@ checkpoint 回读检查通过：
 - [训练日志](../experiments/act_placemugrack_smoke/train.log)、[TensorBoard 导出的指标](../experiments/act_placemugrack_smoke/training-metrics.json)。
 - [checkpoint 与 rollout 检查](../experiments/act_placemugrack_smoke/evaluation-check.json)、[评估日志](../experiments/act_placemugrack_smoke/evaluate.log)。
 - [官方评估结果 JSON](../experiments/act_placemugrack_smoke/evaluation/eval_envs_video_only_20261006_215521.json)、[CSV](../experiments/act_placemugrack_smoke/evaluation/eval_envs_video_only_20261006_215521.csv)。
-- [Episode 0 录像](../experiments/act_placemugrack_smoke/evaluation/videos/L0_TwoRobotPlaceMugRack-v1/0.mp4)、[Episode 1 录像](../experiments/act_placemugrack_smoke/evaluation/videos/L0_TwoRobotPlaceMugRack-v1/1.mp4)。
+- Episode 0 录像（本机文件：`experiments/act_placemugrack_smoke/evaluation/videos/L0_TwoRobotPlaceMugRack-v1/0.mp4`）、Episode 1 录像（本机文件：`experiments/act_placemugrack_smoke/evaluation/videos/L0_TwoRobotPlaceMugRack-v1/1.mp4`）。
 - [checkpoint 与视频文件校验记录](../experiments/act_placemugrack_smoke/artifact-check.json)。
 
 ## 3. 本次真实运行中的关键 shape
@@ -98,7 +98,7 @@ ACT 内部张量链路仍见 [02_SAMPLE_TO_ACT.md](02_SAMPLE_TO_ACT.md)，控制
 
 - 数据：`/var/tmp/imitator-game-zxc/data/`，13 个原始发布文件，合计 **180,989,653 bytes ≈ 172.61 MiB**；`du -sh` 为 **173 MiB**。
 - 任务资产：`/var/tmp/imitator-game-zxc/maniskill/data/robotwin/objects/`，44 个提取文件，合计 **48,037,502 bytes ≈ 45.81 MiB**；`du -sh` 为 **46 MiB**。
-- checkpoint：`The-Imitator-Game/runs/act_placemugrack_smoke-20261006/checkpoints/final_model.pt`（保存在实验机器，未上传 GitHub），**1,422,994,538 bytes ≈ 1.33 GiB**；`du -sh` 显示约 **1.4 GiB**。
+- checkpoint：[final_model.pt](../The-Imitator-Game/runs/act_placemugrack_smoke-20261006/checkpoints/final_model.pt)，**1,422,994,538 bytes ≈ 1.33 GiB**；`du -sh` 显示约 **1.4 GiB**。
 - 实验目录：`experiments/act_placemugrack_smoke/`，约 12 MiB，包括约 10 MiB feature cache、配置、日志、预览图和两段录像。
 - 初次运行的 TensorBoard events：`The-Imitator-Game/runs/act_placemugrack_smoke-20261006/`。
 

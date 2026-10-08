@@ -1,0 +1,498 @@
+START A50_s1 PID 552127
+FINISH A50_s1
+START A10_s1 PID 582335
+START A50_s2 PID 582336
+FINISH A50_s2
+START A10_s2 PID 645496
+FINISH A10_s1
+START A50_s3 PID 678379
+FINISH A10_s2
+START A10_s3 PID 786967
+FINISH A50_s3
+FINISH A10_s3
+TEST FINISH A50_s1
+TEST FINISH A10_s1
+TEST FINISH A50_s2
+TEST FINISH A10_s2
+TEST FINISH A50_s3
+TEST FINISH A10_s3
+{
+  "status": "complete",
+  "runs": [
+    {
+      "run": "A50_s1",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s1/checkpoints/step_005400.pt",
+      "checkpoint_sha256": "525dfc778d6c033e024ddce2364516af1e886c1b91364ce33012edc9da1092e7",
+      "step": 5400,
+      "dev_success_once": 1.0,
+      "dev_success_at_end": 0.95,
+      "development_results": [
+        {
+          "step": 1800,
+          "success": 0.9,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 18
+          }
+        },
+        {
+          "step": 5400,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 9000,
+          "success": 0.95,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 19,
+            "success": 19
+          }
+        },
+        {
+          "step": 12600,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 18000,
+          "success": 0.95,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 19
+          }
+        }
+      ],
+      "test_successes": 99,
+      "test_episodes": 100,
+      "test_success_rate": 0.99,
+      "test_stage_counts": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 100,
+        "is_obj_placed": 99,
+        "success": 99
+      }
+    },
+    {
+      "run": "A10_s1",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s1/checkpoints/step_012600.pt",
+      "checkpoint_sha256": "3fd7804b929fb1d133443fadb9c5496d5be329ebbae1248c762a349805ba7ddd",
+      "step": 12600,
+      "dev_success_once": 1.0,
+      "dev_success_at_end": 0.95,
+      "development_results": [
+        {
+          "step": 1800,
+          "success": 0.9,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 18
+          }
+        },
+        {
+          "step": 5400,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 19,
+            "success": 20
+          }
+        },
+        {
+          "step": 9000,
+          "success": 0.95,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 19
+          }
+        },
+        {
+          "step": 12600,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 18000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 19,
+            "success": 20
+          }
+        }
+      ],
+      "test_successes": 96,
+      "test_episodes": 100,
+      "test_success_rate": 0.96,
+      "test_stage_counts": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 97,
+        "is_obj_placed": 95,
+        "success": 96
+      }
+    },
+    {
+      "run": "A50_s2",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s2/checkpoints/step_012600.pt",
+      "checkpoint_sha256": "a88fef0ca00b563c9b33df78f5bdc94f96860258c1106c8d04be07611bdde41a",
+      "step": 12600,
+      "dev_success_once": 1.0,
+      "dev_success_at_end": 1.0,
+      "development_results": [
+        {
+          "step": 1800,
+          "success": 0.9,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 18,
+            "is_obj_placed": 18,
+            "success": 18
+          }
+        },
+        {
+          "step": 5400,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 19,
+            "success": 20
+          }
+        },
+        {
+          "step": 9000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 12600,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 18000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 19,
+            "success": 20
+          }
+        }
+      ],
+      "test_successes": 98,
+      "test_episodes": 100,
+      "test_success_rate": 0.98,
+      "test_stage_counts": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 98,
+        "is_obj_placed": 96,
+        "success": 98
+      }
+    },
+    {
+      "run": "A10_s2",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s2/checkpoints/step_018000.pt",
+      "checkpoint_sha256": "856e9b7e888e78a0af721f2b741c4288b3a79e5df1241fe141a4f1d4bb6d1af7",
+      "step": 18000,
+      "dev_success_once": 1.0,
+      "dev_success_at_end": 1.0,
+      "development_results": [
+        {
+          "step": 1800,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 5400,
+          "success": 0.95,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 19,
+            "is_obj_placed": 19,
+            "success": 19
+          }
+        },
+        {
+          "step": 9000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 12600,
+          "success": 0.9,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 18
+          }
+        },
+        {
+          "step": 18000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        }
+      ],
+      "test_successes": 94,
+      "test_episodes": 100,
+      "test_success_rate": 0.94,
+      "test_stage_counts": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 95,
+        "is_obj_placed": 93,
+        "success": 94
+      }
+    },
+    {
+      "run": "A50_s3",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s3/checkpoints/step_005400.pt",
+      "checkpoint_sha256": "dad33850d2f40d26e635db9f880d77f303a9f356512c9b5e27ee5987b9b45b79",
+      "step": 5400,
+      "dev_success_once": 1.0,
+      "dev_success_at_end": 0.95,
+      "development_results": [
+        {
+          "step": 1800,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 5400,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 9000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 12600,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 18000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 19,
+            "success": 20
+          }
+        }
+      ],
+      "test_successes": 98,
+      "test_episodes": 100,
+      "test_success_rate": 0.98,
+      "test_stage_counts": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 100,
+        "is_obj_placed": 99,
+        "success": 98
+      }
+    },
+    {
+      "run": "A10_s3",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s3/checkpoints/step_005400.pt",
+      "checkpoint_sha256": "f0d5ff190631bddb25b1a286b5bb79cad3f7b57d852836ca8dd8311631e1047e",
+      "step": 5400,
+      "dev_success_once": 1.0,
+      "dev_success_at_end": 1.0,
+      "development_results": [
+        {
+          "step": 1800,
+          "success": 0.95,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 19,
+            "is_obj_placed": 19,
+            "success": 19
+          }
+        },
+        {
+          "step": 5400,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 9000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        },
+        {
+          "step": 12600,
+          "success": 0.95,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 19
+          }
+        },
+        {
+          "step": 18000,
+          "success": 1.0,
+          "stages": {
+            "is_grasped": 20,
+            "is_mug_above_table": 20,
+            "is_mug_contact_rack": 20,
+            "is_obj_placed": 20,
+            "success": 20
+          }
+        }
+      ],
+      "test_successes": 99,
+      "test_episodes": 100,
+      "test_success_rate": 0.99,
+      "test_stage_counts": {
+        "is_grasped": 100,
+        "is_mug_above_table": 100,
+        "is_mug_contact_rack": 99,
+        "is_obj_placed": 96,
+        "success": 99
+      }
+    }
+  ],
+  "conditions": {
+    "A50": {
+      "rates": [
+        0.99,
+        0.98,
+        0.98
+      ],
+      "mean": 0.9833333333333333,
+      "sample_std": 0.005773502691896263
+    },
+    "A10": {
+      "rates": [
+        0.96,
+        0.94,
+        0.99
+      ],
+      "mean": 0.9633333333333333,
+      "sample_std": 0.025166114784235853
+    }
+  },
+  "paired_differences": [
+    0.030000000000000027,
+    0.040000000000000036,
+    -0.010000000000000009
+  ]
+}

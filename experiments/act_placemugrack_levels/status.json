@@ -1,0 +1,26 @@
+{
+  "status": "running",
+  "stage": "training",
+  "started_at": 1791385683.8175526,
+  "completed_phase_a": [
+    "A50_s1/L0",
+    "A50_s1/L1",
+    "A50_s1/L2",
+    "A50_s2/L0",
+    "A50_s2/L1",
+    "A50_s2/L2",
+    "A50_s3/L0",
+    "A50_s3/L1",
+    "A50_s3/L2"
+  ],
+  "active_phase_a": null,
+  "finished_phase_a": 1791387598.0430262,
+  "started_training": 1791422886.6425254,
+  "active_runs": [
+    "B0_s1",
+    "B01_s1"
+  ],
+  "completed_runs": [
+    "B012_s1"
+  ]
+}

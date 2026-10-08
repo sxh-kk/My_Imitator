@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "condition": "A50",
+  "seed": 1,
+  "steps": 250,
+  "samples": 8000,
+  "batch_size": 32,
+  "workers": 4,
+  "wall_seconds": 28.45700740814209,
+  "initialization_seconds": null,
+  "steady_steps": 200,
+  "steady_step_median_s": 0.027288494502499816,
+  "steady_step_p95_s": 0.06300273050219402,
+  "steady_mean_step_s": 0.03388270843499413,
+  "samples_per_second": 944.4345354325434,
+  "data_wait_mean_s": 0.007108794239975395,
+  "gpu_update_ms_median": 26.159536361694336,
+  "peak_allocated_GiB": 0.9344792366027832,
+  "peak_reserved_GiB": 0.962890625
+}

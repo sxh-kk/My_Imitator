@@ -1,0 +1,52 @@
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 01:36:47.936395: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-07 01:36:47.947061: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791308207.958044  961063 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791308207.962076  961063 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791308207.972644  961063 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791308207.972668  961063 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791308207.972672  961063 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791308207.972674  961063 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-07 01:36:47.975299: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+🤖 Creating ACTAgent ...
+\n   Building FrozenVideoBackbone (dinov2_vitl14) [Frozen] ...
+
+   ACTAgent ready
+   Task encoder:  frozen_backbone (dinov2_vitl14)
+   Input mode:    video_only
+   Total params:  17.21M  |  Trainable: 17.21M
+
+✅ Agent loaded
+   Epoch: 30
+   Total parameters: 17.21M
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_study/prepared/human_ep1.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.05it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.04it/s]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[94mLoading episodes [1] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+  [FrozenVideoBackbone] Loading facebook/dinov2-large (DINOv2 via HF) ...
+  ✓ DINOv2 facebook/dinov2-large: 304M params loaded
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Eval [video_only]:   0%|          | 0/100 [00:00<?, ?ep/s]Eval [video_only]:   4%|▍         | 4/100 [00:13<05:29,  3.43s/ep]Eval [video_only]:   8%|▊         | 8/100 [00:27<05:16,  3.44s/ep]Eval [video_only]:  12%|█▏        | 12/100 [00:34<03:58,  2.71s/ep]Eval [video_only]:  16%|█▌        | 16/100 [00:42<03:18,  2.36s/ep]Eval [video_only]:  20%|██        | 20/100 [00:49<02:52,  2.16s/ep]Eval [video_only]:  24%|██▍       | 24/100 [00:56<02:36,  2.05s/ep]Eval [video_only]:  28%|██▊       | 28/100 [01:04<02:22,  1.98s/ep]Eval [video_only]:  32%|███▏      | 32/100 [01:11<02:10,  1.92s/ep]Eval [video_only]:  36%|███▌      | 36/100 [01:18<02:00,  1.89s/ep]Eval [video_only]:  40%|████      | 40/100 [01:25<01:51,  1.86s/ep]Eval [video_only]:  44%|████▍     | 44/100 [01:33<01:44,  1.86s/ep]Eval [video_only]:  48%|████▊     | 48/100 [01:40<01:35,  1.84s/ep]Eval [video_only]:  52%|█████▏    | 52/100 [01:47<01:27,  1.83s/ep]Eval [video_only]:  56%|█████▌    | 56/100 [01:54<01:20,  1.83s/ep]Eval [video_only]:  60%|██████    | 60/100 [02:02<01:12,  1.82s/ep]Eval [video_only]:  64%|██████▍   | 64/100 [02:09<01:05,  1.82s/ep]Eval [video_only]:  68%|██████▊   | 68/100 [02:16<00:58,  1.82s/ep]Eval [video_only]:  72%|███████▏  | 72/100 [02:23<00:50,  1.82s/ep]Eval [video_only]:  76%|███████▌  | 76/100 [02:31<00:43,  1.82s/ep]Eval [video_only]:  80%|████████  | 80/100 [02:38<00:36,  1.82s/ep]Eval [video_only]:  84%|████████▍ | 84/100 [02:45<00:29,  1.82s/ep]Eval [video_only]:  88%|████████▊ | 88/100 [02:53<00:21,  1.82s/ep]Eval [video_only]:  92%|█████████▏| 92/100 [03:00<00:14,  1.82s/ep]Eval [video_only]:  96%|█████████▌| 96/100 [03:07<00:07,  1.82s/ep]Eval [video_only]: 100%|██████████| 100/100 [03:14<00:00,  1.77s/ep]Eval [video_only]: 100%|██████████| 100/100 [03:14<00:00,  1.94s/ep]
+EVALUATION PASSED {"status": "passed", "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s3/checkpoints/step_005400.pt", "checkpoint_sha256": "dad33850d2f40d26e635db9f880d77f303a9f356512c9b5e27ee5987b9b45b79", "checkpoint_step": 5400, "condition": "A50", "num_envs": 4, "human_episode": 1, "human_video_sha256": "5c544a193ef9017c492bff8f8854d021900180ec518b429a9d225aa83260d132", "stats_sha256": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1", "all_loaded_tensors_equal": 253, "trainable_tensor_count": 171, "optimizer_steps": [5400], "policy_queries": 3125, "vector_steps": 12500, "auxiliary_dtw": false, "video_recording": true, "preselected_video_seeds": [2000, 2004], "first_policy_action": [[1.1112127304077148, 0.09585258364677429, -1.160006046295166, -0.04668259620666504, -0.6621472835540771, 0.7372240424156189, 0.8840592503547668, 1.0081299543380737, 0.9117522835731506, 0.7355672121047974, -0.9213695526123047, 0.04753931239247322, 0.35417044162750244, -0.7166581153869629, 0.053597480058670044, -0.9897807836532593], [0.8469052314758301, 0.10742789506912231, -1.0936130285263062, 0.053202852606773376, -0.7163370847702026, 0.8009504079818726, 0.9563660025596619, 1.0260207653045654, -0.5924819707870483, 0.8425092697143555, -0.5338497161865234, 0.37851741909980774, -0.27055519819259644, -0.09444184601306915, -0.5674428939819336, -0.9980226755142212], [0.7893974781036377, 0.05292195826768875, -0.7645125389099121, 0.10599612444639206, -0.7195667624473572, 0.8804391026496887, 0.8946750164031982, 1.0177674293518066, -0.6444677710533142, 0.4195936322212219, 0.6710361838340759, 0.926001787185669, -0.20342214405536652, 0.16934791207313538, -0.573707640171051, -1.005007028579712], [0.7014355659484863, -0.026405030861496925, -1.1067782640457153, -0.07430807501077652, -0.6930047273635864, 0.8515729308128357, 0.9473416805267334, 1.03571355342865, -0.9603075981140137, -0.21922655403614044, -0.7869852185249329, -0.3414144217967987, -0.039526067674160004, 0.2108192890882492, -0.1808784008026123, -1.0023680925369263]], "summary": {"success_once": {"mean": 0.98, "std": 0.13999999999999999}, "return": {"mean": 399.75390625, "std": 9.245851516723633}, "episode_len": {"mean": 500.0, "std": 0.0}, "reward": {"mean": 0.7995078369140625, "std": 0.01849170236308127}, "last_reward": {"mean": 0.9976536524295807, "std": 0.017027115822531892}, "success_at_end": {"mean": 0.96, "std": 0.19595917942265423}}, "stage_counts": {"is_grasped": 100, "is_mug_above_table": 100, "is_mug_contact_rack": 100, "is_obj_placed": 99, "success": 98}, "rollout_seconds": 194.69437313079834, "wall_seconds": 209.7873146533966}

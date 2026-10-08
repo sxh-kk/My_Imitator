@@ -1,0 +1,10 @@
+{
+  "formal_wall_hours": 2.1096629566616483,
+  "gpu_utilization_mean": 61.129602745149796,
+  "gpu_peak_memory_GiB": 20.8330078125,
+  "directory_own_files_GiB": 5.991279024630785,
+  "measured_steady_updates_hours": 1.9680598949277799,
+  "development_evaluator_active_hours": 0.6981688800785276,
+  "test_evaluator_active_hours": 0.342831410434511,
+  "timing_is_additive_work_not_disjoint_wall_clock": true
+}

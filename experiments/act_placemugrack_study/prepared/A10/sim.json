@@ -1,0 +1,8 @@
+[
+  {
+    "repo_id": "L0_TwoRobotPlaceMugRack-v1",
+    "root": "L0_TwoRobotPlaceMugRack-v1",
+    "train": "[5, 12, 14, 18, 31, 32, 33, 35, 43, 46]",
+    "test": ""
+  }
+]

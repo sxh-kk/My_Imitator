@@ -1,9 +1,9 @@
 # ImitatorGame 解决方案研究：启动与实验方案
 
 更新日期：2026-10-06  
-版本：v1.1  
+版本：v1.4  
 工作目录：`/home/zxc/Imitator`  
-当前状态：已检出固定版本代码、创建 `imitator` 环境，通过 CUDA、视频解码、基础仿真渲染与 ACT＋DINOv2 合成计算检查；尚未下载 IG-10K 数据/专用资产，未完成真实任务闭环与论文结果复现。环境用法、验证证据和依赖例外见 [`environment/README.md`](environment/README.md)。
+当前状态：已完成源码梳理、`imitator` 环境配置、最小训练与评估闭环，以及 PlaceMugRack 本地 ACT 的 10/50 条示范 × 3 个训练 seed 实验。六组均完成 18,000 次更新、共 600 次开发评估及 600 次独立最终测试，权重、指标与录像审计通过。执行方案见 [`LearningDocs/06_4090_EXPERIMENT_DESIGN.md`](LearningDocs/06_4090_EXPERIMENT_DESIGN.md)，结果见 [`LearningDocs/07_PLACEMUGRACK_EXPERIMENT_RESULTS.md`](LearningDocs/07_PLACEMUGRACK_EXPERIMENT_RESULTS.md)。本次是单任务小规模 ACT baseline，尚未复现论文整体性能。已发布的 GitHub 仓库不包含本轮新增结果；环境配置和依赖例外见 [`environment/README.md`](environment/README.md)。
 
 ## 1. 目标与第一阶段范围
 
@@ -332,9 +332,9 @@ M2 是第一次有实质内容的合作讨论里程碑，不必等待 M3 或全�
 - [ ] 向作者表达兴趣，获取推荐基线、配置和可用 checkpoint 信息。
 - [x] 检出固定版本代码，固定依赖和缓存路径。
 - [x] 建立 `imitator` 环境，通过 CUDA、视频、Panda 渲染和 ACT 合成计算检查。
-- [ ] 完成数据流阅读与记录，并用真实数据检查配对 loader。
-- [ ] 准备首批数据与专用资产，验证首个 benchmark 任务。
-- [ ] 完成 ACT 或作者推荐 baseline 的最小闭环。
+- [x] 完成数据流阅读与记录，并用真实数据检查配对 loader。
+- [x] 准备首个 PlaceMugRack 任务的数据与专用资产，验证 benchmark 场景。
+- [x] 完成 ACT 的最小训练、checkpoint 与仿真评估闭环。
 - [ ] 完成首批任务评估和失败报告。
 - [ ] 根据失败证据，与作者对齐首个诊断实验。
 - [ ] 开展相关工作核查，决定方法改进范围。

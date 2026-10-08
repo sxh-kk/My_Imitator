@@ -1,0 +1,163 @@
+{
+  "repository": "imitator-game/IG-10K-Dataset",
+  "revision": "57fa861d911afe899da5c0f28d973151411d46d1",
+  "files": [
+    {
+      "type": "file",
+      "oid": "7783ec9b0eb10d2704d65f889e5125202b7588f1",
+      "size": 90,
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/.complete"
+    },
+    {
+      "type": "file",
+      "oid": "bc4a2b3f6fa21ab9d72332aedd15a83333026b8f",
+      "size": 1321066,
+      "lfs": {
+        "oid": "7630635c372782f1a64f773594c0459c36b28d73aac454623adb94e23e8563e6",
+        "size": 1321066,
+        "pointerSize": 132
+      },
+      "xetHash": "b505ad33b78bc9022db1315e2550eec2ffd04f4b6082375f1d66f3c67daad633",
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "3f066799cd6736d8211565f22b54a43863a5023a",
+      "size": 300257,
+      "lfs": {
+        "oid": "42b170111fe8befe2c91a5a3ce6451b2a19fef143d927596b69cf2195eae5f1d",
+        "size": 300257,
+        "pointerSize": 131
+      },
+      "xetHash": "3e8db1b39d41254246f0d865685f38676d4e414e64ceca189e6384c334fb7ed6",
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b04e1670b9c50ed560f7e5e43c2f768c1ad0c97c",
+      "size": 3962,
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/info.json"
+    },
+    {
+      "type": "file",
+      "oid": "52afb518101b64b4ce5bd0ce6686d41aadbac69c",
+      "size": 19689,
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/stats.json"
+    },
+    {
+      "type": "file",
+      "oid": "978e698b35d7d68de552cb5261de8e0a4478479c",
+      "size": 2120,
+      "lfs": {
+        "oid": "56ffe9964266d7055234846948473f4bf8493f40b9ed0d10394e0643b50cd2d2",
+        "size": 2120,
+        "pointerSize": 129
+      },
+      "xetHash": "29905a0e87bfdb99de35cb19895fe0acbb91f60dc66e84a48a0e135e555683dc",
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/tasks.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e41869164c923eca2741171b9618279fd287a57e",
+      "size": 27180917,
+      "lfs": {
+        "oid": "e146f871c7b7ab3321d68ecdf987491566399a7ccf82b70573259a5e21cf712d",
+        "size": 27180917,
+        "pointerSize": 133
+      },
+      "xetHash": "d6047f48b7bf93baa3e1489cf2ab7e40cdf2d69e9ab0f1e53b0457db073d78b2",
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4"
+    },
+    {
+      "type": "file",
+      "oid": "7456a3130370999b732dd6c8e38c297f8233b610",
+      "size": 17721142,
+      "lfs": {
+        "oid": "eb76b4ad372398f77dfe93b98a63cc59258d729e47da0e6adf4513376b7f6b27",
+        "size": 17721142,
+        "pointerSize": 133
+      },
+      "xetHash": "d23fddea80fd45cb1ba0cd371b64a9a4586649222849b8e61121c69710978d1e",
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i_depth/chunk-000/file-000.mp4"
+    },
+    {
+      "type": "file",
+      "oid": "52a169793a7ea50e131c68582fabb7d4eac15a28",
+      "size": 90,
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/.complete"
+    },
+    {
+      "type": "file",
+      "oid": "4497d632e6186aaf91f48b67496672748935dd7e",
+      "size": 1238049,
+      "lfs": {
+        "oid": "2c4d0649126fb4365ff4134904c4952d762598be41e95dfc91953dc02226023e",
+        "size": 1238049,
+        "pointerSize": 132
+      },
+      "xetHash": "42855c69e855b8512e813595b28123e36012ef75fb5986410291c4658714c0c2",
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "95d666695b965884f0f59f9993ad6168ad383350",
+      "size": 300978,
+      "lfs": {
+        "oid": "a4b64f00c891058ba6bc93428b9c37962fdfa166a3177819a614c80a3ce27a42",
+        "size": 300978,
+        "pointerSize": 131
+      },
+      "xetHash": "da7d2a39dcedbc5b5cb082bedc066bafb5488e011ebe4929a73c54df3400c9b0",
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a151595ca3d268780178e471e87f494a9af3ceef",
+      "size": 3962,
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/info.json"
+    },
+    {
+      "type": "file",
+      "oid": "2eaf1740816d571910b68b0f0b0c2c1fea5e1495",
+      "size": 19689,
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/stats.json"
+    },
+    {
+      "type": "file",
+      "oid": "29f1b7ef135c76470c00f9659a0cb42fe94f2f66",
+      "size": 2120,
+      "lfs": {
+        "oid": "b41aab83a4c6c648455202122bc946bf66c1ebf9531a47f8acc28a1c548ca05d",
+        "size": 2120,
+        "pointerSize": 129
+      },
+      "xetHash": "404ba40b16f8c981e8fa1f06c62796b448b6b99021434b452dd08dd96eab6d44",
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/tasks.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "c544c25366207a1ee3c64160d74821152adb0ca3",
+      "size": 24908096,
+      "lfs": {
+        "oid": "e3cb095015225b8bb8d82bfa2bee8ddc2a56b9773cc0f21e6965e1effd4efc2a",
+        "size": 24908096,
+        "pointerSize": 133
+      },
+      "xetHash": "bb92a6b8a103d4e06510772ec3210ef495f5930deea06a801872ae43c465a145",
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4"
+    },
+    {
+      "type": "file",
+      "oid": "673709d78e4da8770788e695227553e22b570f66",
+      "size": 17505413,
+      "lfs": {
+        "oid": "2a53b3f6744fe4039bdb280d02f67b577590051e5c0b15e751f6d99297718762",
+        "size": 17505413,
+        "pointerSize": 133
+      },
+      "xetHash": "f884bda823ed45e214488824136a0095765d5d4400460044c57b749c4f5fe66f",
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i_depth/chunk-000/file-000.mp4"
+    }
+  ],
+  "bytes": 90527640
+}

@@ -1,4 +1,4 @@
-# Local-only caches, datasets and trained weights
+# Local datasets, trained weights and caches
 .github-publish/
 __pycache__/
 *.py[cod]
@@ -9,9 +9,16 @@ __pycache__/
 *.pth
 *.ckpt
 *.safetensors
+*.parquet
+*.npy
+*.npz
+experiments/**/videos/
+experiments/**/data/
 **/te_cache/
-**/checkpoints/
-**/runs/
+**/human_cache_*/
+**/checkpoints/*
+!**/checkpoints/*.ready.json
+**/interrupted_runs/
 **/.cache/
 /data/
 /demos/

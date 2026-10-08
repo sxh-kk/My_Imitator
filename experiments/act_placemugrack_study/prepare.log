@@ -1,0 +1,37 @@
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-06 23:15:36.386211: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-06 23:15:36.394794: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791299736.404161  518188 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791299736.407455  518188 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791299736.416439  518188 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791299736.416452  518188 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791299736.416455  518188 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791299736.416457  518188 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-06 23:15:36.418883: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+  [FrozenVideoBackbone] Loading facebook/dinov2-large (DINOv2 via HF) ...
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+  ✓ DINOv2 facebook/dinov2-large: 304M params loaded
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_study/prepared/human_ep0.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s][94mLoading episodes [0] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.79it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.78it/s]
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_study/prepared/human_ep1.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s][94mLoading episodes [1] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.34it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.33it/s]
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+PREPARATION PASSED {"A50": {"episodes": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49], "frames": 11228, "stats_sha256": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1", "checks": {"observation.qpos_gripper_states": {"shape": [11228, 18], "constant_dims": [16, 17], "clipped_fraction": 0.008911253612001742, "roundtrip_to_clipped_max_error": 1.1102230246251565e-16}, "action.qpos_gripper_actions": {"shape": [11228, 16], "constant_dims": [15], "clipped_fraction": 0.008806109725685785, "roundtrip_to_clipped_max_error": 1.1102230246251565e-16}}}, "A10": {"episodes": [5, 12, 14, 18, 31, 32, 33, 35, 43, 46], "frames": 2241, "stats_sha256": "1e014f0fb0a8620b104d43fcb5f72905f16858ad7e3a0ba8a21a9df82c5cb4c1", "checks": {"observation.qpos_gripper_states": {"shape": [2241, 18], "constant_dims": [16, 17], "clipped_fraction": 0.009098120878576033, "roundtrip_to_clipped_max_error": 1.1102230246251565e-16}, "action.qpos_gripper_actions": {"shape": [2241, 16], "constant_dims": [15], "clipped_fraction": 0.00892458723784025, "roundtrip_to_clipped_max_error": 1.1102230246251565e-16}}}, "D2": {"episodes": [0, 1], "frames": 453, "stats_sha256": "04f784cb2c725210e229d5f333f1c153a8fa6ca87b54c14ccba451a5c4471eff", "checks": {"observation.qpos_gripper_states": {"shape": [453, 18], "constant_dims": [16, 17], "clipped_fraction": 0.009811135638950209, "roundtrip_to_clipped_max_error": 1.1102230246251565e-16}, "action.qpos_gripper_actions": {"shape": [453, 16], "constant_dims": [15], "clipped_fraction": 0.008967991169977926, "roundtrip_to_clipped_max_error": 1.6653345369377348e-16}}}}

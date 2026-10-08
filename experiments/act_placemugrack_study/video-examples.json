@@ -1,0 +1,228 @@
+{
+  "selection": "recorded test examples first; otherwise earliest eligible seed",
+  "supplementary_replays_excluded_from_primary_results": true,
+  "runs": {
+    "A50_s1": {
+      "stable_success": {
+        "status": "available",
+        "category": "stable_success",
+        "seed": 2000,
+        "original_metrics": {
+          "success_once": true,
+          "success_at_end": true
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s1/test/videos/0.mp4",
+        "supplementary": false,
+        "replay_checks": null
+      },
+      "failure": {
+        "status": "available",
+        "category": "failure",
+        "seed": 2034,
+        "original_metrics": {
+          "success_once": false,
+          "success_at_end": false
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/supplementary_videos/A50_s1/failure_seed_2034/videos/0.mp4",
+        "supplementary": true,
+        "replay_checks": {
+          "source_result": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s1/test/result.json",
+          "seed": 2034,
+          "environment_index": 2,
+          "batch_start": 2032,
+          "selected_after_test_for_illustration_only": true,
+          "excluded_from_primary_results": true,
+          "factory_only_change": "video recording environment index",
+          "initial_conditions_match": true,
+          "success_metrics_match_original": true,
+          "stage_first_steps_match_original": true
+        }
+      }
+    },
+    "A10_s1": {
+      "stable_success": {
+        "status": "available",
+        "category": "stable_success",
+        "seed": 2000,
+        "original_metrics": {
+          "success_once": true,
+          "success_at_end": true
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s1/test/videos/0.mp4",
+        "supplementary": false,
+        "replay_checks": null
+      },
+      "failure": {
+        "status": "available",
+        "category": "failure",
+        "seed": 2006,
+        "original_metrics": {
+          "success_once": false,
+          "success_at_end": false
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/supplementary_videos/A10_s1/failure_seed_2006/videos/0.mp4",
+        "supplementary": true,
+        "replay_checks": {
+          "source_result": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s1/test/result.json",
+          "seed": 2006,
+          "environment_index": 2,
+          "batch_start": 2004,
+          "selected_after_test_for_illustration_only": true,
+          "excluded_from_primary_results": true,
+          "factory_only_change": "video recording environment index",
+          "initial_conditions_match": true,
+          "success_metrics_match_original": true,
+          "stage_first_steps_match_original": true
+        }
+      }
+    },
+    "A50_s2": {
+      "stable_success": {
+        "status": "available",
+        "category": "stable_success",
+        "seed": 2000,
+        "original_metrics": {
+          "success_once": true,
+          "success_at_end": true
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s2/test/videos/0.mp4",
+        "supplementary": false,
+        "replay_checks": null
+      },
+      "failure": {
+        "status": "available",
+        "category": "failure",
+        "seed": 2029,
+        "original_metrics": {
+          "success_once": false,
+          "success_at_end": false
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/supplementary_videos/A50_s2/failure_seed_2029/videos/0.mp4",
+        "supplementary": true,
+        "replay_checks": {
+          "source_result": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s2/test/result.json",
+          "seed": 2029,
+          "environment_index": 1,
+          "batch_start": 2028,
+          "selected_after_test_for_illustration_only": true,
+          "excluded_from_primary_results": true,
+          "factory_only_change": "video recording environment index",
+          "initial_conditions_match": true,
+          "success_metrics_match_original": true,
+          "stage_first_steps_match_original": true
+        }
+      }
+    },
+    "A10_s2": {
+      "stable_success": {
+        "status": "available",
+        "category": "stable_success",
+        "seed": 2000,
+        "original_metrics": {
+          "success_once": true,
+          "success_at_end": true
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s2/test/videos/0.mp4",
+        "supplementary": false,
+        "replay_checks": null
+      },
+      "failure": {
+        "status": "available",
+        "category": "failure",
+        "seed": 2007,
+        "original_metrics": {
+          "success_once": false,
+          "success_at_end": false
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/supplementary_videos/A10_s2/failure_seed_2007/videos/0.mp4",
+        "supplementary": true,
+        "replay_checks": {
+          "source_result": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s2/test/result.json",
+          "seed": 2007,
+          "environment_index": 3,
+          "batch_start": 2004,
+          "selected_after_test_for_illustration_only": true,
+          "excluded_from_primary_results": true,
+          "factory_only_change": "video recording environment index",
+          "initial_conditions_match": true,
+          "success_metrics_match_original": true,
+          "stage_first_steps_match_original": true
+        }
+      }
+    },
+    "A50_s3": {
+      "stable_success": {
+        "status": "available",
+        "category": "stable_success",
+        "seed": 2000,
+        "original_metrics": {
+          "success_once": true,
+          "success_at_end": true
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s3/test/videos/0.mp4",
+        "supplementary": false,
+        "replay_checks": null
+      },
+      "failure": {
+        "status": "available",
+        "category": "failure",
+        "seed": 2019,
+        "original_metrics": {
+          "success_once": false,
+          "success_at_end": false
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/supplementary_videos/A50_s3/failure_seed_2019/videos/0.mp4",
+        "supplementary": true,
+        "replay_checks": {
+          "source_result": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s3/test/result.json",
+          "seed": 2019,
+          "environment_index": 3,
+          "batch_start": 2016,
+          "selected_after_test_for_illustration_only": true,
+          "excluded_from_primary_results": true,
+          "factory_only_change": "video recording environment index",
+          "initial_conditions_match": true,
+          "success_metrics_match_original": true,
+          "stage_first_steps_match_original": true
+        }
+      }
+    },
+    "A10_s3": {
+      "stable_success": {
+        "status": "available",
+        "category": "stable_success",
+        "seed": 2000,
+        "original_metrics": {
+          "success_once": true,
+          "success_at_end": true
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s3/test/videos/0.mp4",
+        "supplementary": false,
+        "replay_checks": null
+      },
+      "failure": {
+        "status": "available",
+        "category": "failure",
+        "seed": 2082,
+        "original_metrics": {
+          "success_once": false,
+          "success_at_end": false
+        },
+        "video": "/home/zxc/Imitator/experiments/act_placemugrack_study/supplementary_videos/A10_s3/failure_seed_2082/videos/0.mp4",
+        "supplementary": true,
+        "replay_checks": {
+          "source_result": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s3/test/result.json",
+          "seed": 2082,
+          "environment_index": 2,
+          "batch_start": 2080,
+          "selected_after_test_for_illustration_only": true,
+          "excluded_from_primary_results": true,
+          "factory_only_change": "video recording environment index",
+          "initial_conditions_match": true,
+          "success_metrics_match_original": true,
+          "stage_first_steps_match_original": true
+        }
+      }
+    }
+  }
+}

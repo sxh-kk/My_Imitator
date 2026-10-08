@@ -1,0 +1,19 @@
+{
+  "pid": 3120389,
+  "monitor_pid": 3120391,
+  "started_at": 1791386401.3312218,
+  "current_process_started_at": 1791422886.5849118,
+  "previous_processes": [
+    {
+      "pid": 2381473,
+      "monitor_pid": 2381474,
+      "reason": "reload finalized preflight gates before formal training"
+    },
+    {
+      "pid": 2392917,
+      "monitor_pid": 2392918,
+      "reason": "controller process absent; archived partial B0_s1/B01_s1 and restarted same seeds under a separate systemd user service"
+    }
+  ],
+  "service": "imitator-placemugrack-levels.service"
+}

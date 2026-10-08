@@ -1,0 +1,251 @@
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 23:11:39.410019: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-07 23:11:39.418641: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791385899.430096 2356506 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791385899.433576 2356506 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791385899.443838 2356506 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791385899.443872 2356506 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791385899.443877 2356506 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791385899.443881 2356506 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-07 23:11:39.446408: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+================================================================================
+🔄 INITIALIZING HUMAN-SIM PAIRED DATASET
+================================================================================
+   Input mode: video_only
+   Include first frame: True
+
+📖 Loading task mapping from: examples/baselines/lerobot_dataset/task_mapping.json
+   ✓ 53 human task descriptions
+   ✓ 200 sim task descriptions
+
+✓ Mapping loaded:
+  - 53 human tasks: ['human_H1', 'human_H10', 'human_H11', 'human_H12', 'human_H13', 'human_H14', 'human_H15', 'human_H16', 'human_H17', 'human_H18', 'human_H19', 'human_H2', 'human_H20', 'human_H21', 'human_H22', 'human_H23', 'human_H24', 'human_H25', 'human_H26', 'human_H27', 'human_H28', 'human_H29', 'human_H3', 'human_H30', 'human_H31', 'human_H32', 'human_H33', 'human_H34', 'human_H35', 'human_H36', 'human_H37', 'human_H38', 'human_H39', 'human_H4', 'human_H40', 'human_H41', 'human_H42', 'human_H43', 'human_H44', 'human_H45', 'human_H46', 'human_H47', 'human_H48', 'human_H49', 'human_H5', 'human_H50', 'human_H56', 'human_H57', 'human_H58', 'human_H6', 'human_H7', 'human_H8', 'human_H9']
+  - 200 sim tasks: ['L0_TwoRobotCleanCup-v1', 'L0_TwoRobotCleanDesk-v1', 'L0_TwoRobotCutFruit-v1', 'L0_TwoRobotFoldBox-v1', 'L0_TwoRobotFoldTowel-v1', 'L0_TwoRobotGrindFood-v1', 'L0_TwoRobotKnifeBowlFork-v1', 'L0_TwoRobotLiftLidFromSkillet-v1', 'L0_TwoRobotOpenBox-v1', 'L0_TwoRobotOpenLiquidCap-v1', 'L0_TwoRobotPickAppleBananaToBaskets-v1', 'L0_TwoRobotPickAppleBasket-v1', 'L0_TwoRobotPickAppleToScale-v1', 'L0_TwoRobotPickFood-v1', 'L0_TwoRobotPickFruitsToPlate-v1', 'L0_TwoRobotPickPillToRegions-v1', 'L0_TwoRobotPickRemoteControl-v1', 'L0_TwoRobotPickTennisBallGolfBall-v1', 'L0_TwoRobotPickWash-v1', 'L0_TwoRobotPlaceBookBookcase-v1', 'L0_TwoRobotPlaceBrushRest-v1', 'L0_TwoRobotPlaceBurgerTray-v1', 'L0_TwoRobotPlaceChipsRack-v1', 'L0_TwoRobotPlaceClothBasket-v1', 'L0_TwoRobotPlaceCommodityRack-v1', 'L0_TwoRobotPlaceCupPlate-v1', 'L0_TwoRobotPlaceFileFolder-v1', 'L0_TwoRobotPlaceFoodScale-v1', 'L0_TwoRobotPlaceFruitBox-v1', 'L0_TwoRobotPlaceMagazineFolder-v1', 'L0_TwoRobotPlaceMugRack-v1', 'L0_TwoRobotPlacePillBox-v1', 'L0_TwoRobotPlacePlateRack-v1', 'L0_TwoRobotPlaceScrewdriver-v1', 'L0_TwoRobotPlaceShoeBox-v1', 'L0_TwoRobotPourCup-v1', 'L0_TwoRobotPourKetchupFries-v1', 'L0_TwoRobotPourKettle-v1', 'L0_TwoRobotPourLiquidCup-v1', 'L0_TwoRobotPourLiquidFilter-v1', 'L0_TwoRobotPourLiquidMug-v1', 'L0_TwoRobotPressJuicer-v1', 'L0_TwoRobotPressStapler-v1', 'L0_TwoRobotPutBox-v1', 'L0_TwoRobotPutCubeOnScale-v1', 'L0_TwoRobotScanMilkBox-v1', 'L0_TwoRobotScanPillBottle-v1', 'L0_TwoRobotStirSpoon-v1', 'L0_TwoRobotTransFood-v1', 'L0_TwoRobotWipePot-v1', 'L1_TwoRobotCleanCup-v1', 'L1_TwoRobotCleanDesk-v1', 'L1_TwoRobotCutFruit-v1', 'L1_TwoRobotFoldBox-v1', 'L1_TwoRobotFoldTowel-v1', 'L1_TwoRobotGrindFood-v1', 'L1_TwoRobotKnifeBowlFork-v1', 'L1_TwoRobotLiftLidFromSkillet-v1', 'L1_TwoRobotOpenBox-v1', 'L1_TwoRobotOpenLiquidCap-v1', 'L1_TwoRobotPickAppleBananaToBaskets-v1', 'L1_TwoRobotPickAppleBasket-v1', 'L1_TwoRobotPickAppleToScale-v1', 'L1_TwoRobotPickFood-v1', 'L1_TwoRobotPickFruitsToPlate-v1', 'L1_TwoRobotPickPillToRegions-v1', 'L1_TwoRobotPickRemoteControl-v1', 'L1_TwoRobotPickTennisBallGolfBall-v1', 'L1_TwoRobotPickWash-v1', 'L1_TwoRobotPlaceBookBookcase-v1', 'L1_TwoRobotPlaceBrushRest-v1', 'L1_TwoRobotPlaceBurgerTray-v1', 'L1_TwoRobotPlaceChipsRack-v1', 'L1_TwoRobotPlaceClothBasket-v1', 'L1_TwoRobotPlaceCommodityRack-v1', 'L1_TwoRobotPlaceCupPlate-v1', 'L1_TwoRobotPlaceFileFolder-v1', 'L1_TwoRobotPlaceFoodScale-v1', 'L1_TwoRobotPlaceFruitBox-v1', 'L1_TwoRobotPlaceMagazineFolder-v1', 'L1_TwoRobotPlaceMugRack-v1', 'L1_TwoRobotPlacePillBox-v1', 'L1_TwoRobotPlacePlateRack-v1', 'L1_TwoRobotPlaceScrewdriver-v1', 'L1_TwoRobotPlaceShoeBox-v1', 'L1_TwoRobotPourCup-v1', 'L1_TwoRobotPourKetchupFries-v1', 'L1_TwoRobotPourKettle-v1', 'L1_TwoRobotPourLiquidCup-v1', 'L1_TwoRobotPourLiquidFilter-v1', 'L1_TwoRobotPourLiquidMug-v1', 'L1_TwoRobotPressJuicer-v1', 'L1_TwoRobotPressStapler-v1', 'L1_TwoRobotPutBox-v1', 'L1_TwoRobotPutCubeOnScale-v1', 'L1_TwoRobotScanMilkBox-v1', 'L1_TwoRobotScanPillBottle-v1', 'L1_TwoRobotStirSpoon-v1', 'L1_TwoRobotTransFood-v1', 'L1_TwoRobotWipePot-v1', 'L2_TwoRobotCleanCup-v1', 'L2_TwoRobotCleanDesk-v1', 'L2_TwoRobotCutFruit-v1', 'L2_TwoRobotFoldBox-v1', 'L2_TwoRobotFoldTowel-v1', 'L2_TwoRobotGrindFood-v1', 'L2_TwoRobotKnifeBowlFork-v1', 'L2_TwoRobotLiftLidFromSkillet-v1', 'L2_TwoRobotOpenBox-v1', 'L2_TwoRobotOpenLiquidCap-v1', 'L2_TwoRobotPickAppleBananaToBaskets-v1', 'L2_TwoRobotPickAppleBasket-v1', 'L2_TwoRobotPickAppleToScale-v1', 'L2_TwoRobotPickFood-v1', 'L2_TwoRobotPickFruitsToPlate-v1', 'L2_TwoRobotPickPillToRegions-v1', 'L2_TwoRobotPickRemoteControl-v1', 'L2_TwoRobotPickTennisBallGolfBall-v1', 'L2_TwoRobotPickWash-v1', 'L2_TwoRobotPlaceBookBookcase-v1', 'L2_TwoRobotPlaceBrushRest-v1', 'L2_TwoRobotPlaceBurgerTray-v1', 'L2_TwoRobotPlaceChipsRack-v1', 'L2_TwoRobotPlaceClothBasket-v1', 'L2_TwoRobotPlaceCommodityRack-v1', 'L2_TwoRobotPlaceCupPlate-v1', 'L2_TwoRobotPlaceFileFolder-v1', 'L2_TwoRobotPlaceFoodScale-v1', 'L2_TwoRobotPlaceFruitBox-v1', 'L2_TwoRobotPlaceMagazineFolder-v1', 'L2_TwoRobotPlaceMugRack-v1', 'L2_TwoRobotPlacePillBox-v1', 'L2_TwoRobotPlacePlateRack-v1', 'L2_TwoRobotPlaceScrewdriver-v1', 'L2_TwoRobotPlaceShoeBox-v1', 'L2_TwoRobotPourCup-v1', 'L2_TwoRobotPourKetchupFries-v1', 'L2_TwoRobotPourKettle-v1', 'L2_TwoRobotPourLiquidCup-v1', 'L2_TwoRobotPourLiquidFilter-v1', 'L2_TwoRobotPourLiquidMug-v1', 'L2_TwoRobotPressJuicer-v1', 'L2_TwoRobotPressStapler-v1', 'L2_TwoRobotPutBox-v1', 'L2_TwoRobotPutCubeOnScale-v1', 'L2_TwoRobotScanMilkBox-v1', 'L2_TwoRobotScanPillBottle-v1', 'L2_TwoRobotStirSpoon-v1', 'L2_TwoRobotTransFood-v1', 'L2_TwoRobotWipePot-v1', 'L3_TwoRobotCleanCup-v1', 'L3_TwoRobotCleanDesk-v1', 'L3_TwoRobotCutFruit-v1', 'L3_TwoRobotFoldBox-v1', 'L3_TwoRobotFoldTowel-v1', 'L3_TwoRobotGrindFood-v1', 'L3_TwoRobotKnifeBowlFork-v1', 'L3_TwoRobotLiftLidFromSkillet-v1', 'L3_TwoRobotOpenBox-v1', 'L3_TwoRobotOpenLiquidCap-v1', 'L3_TwoRobotPickAppleBananaToBaskets-v1', 'L3_TwoRobotPickAppleBasket-v1', 'L3_TwoRobotPickAppleToScale-v1', 'L3_TwoRobotPickFood-v1', 'L3_TwoRobotPickFruitsToPlate-v1', 'L3_TwoRobotPickPillToRegions-v1', 'L3_TwoRobotPickRemoteControl-v1', 'L3_TwoRobotPickTennisBallGolfBall-v1', 'L3_TwoRobotPickWash-v1', 'L3_TwoRobotPlaceBookBookcase-v1', 'L3_TwoRobotPlaceBrushRest-v1', 'L3_TwoRobotPlaceBurgerTray-v1', 'L3_TwoRobotPlaceChipsRack-v1', 'L3_TwoRobotPlaceClothBasket-v1', 'L3_TwoRobotPlaceCommodityRack-v1', 'L3_TwoRobotPlaceCupPlate-v1', 'L3_TwoRobotPlaceFileFolder-v1', 'L3_TwoRobotPlaceFoodScale-v1', 'L3_TwoRobotPlaceFruitBox-v1', 'L3_TwoRobotPlaceMagazineFolder-v1', 'L3_TwoRobotPlaceMugRack-v1', 'L3_TwoRobotPlacePillBox-v1', 'L3_TwoRobotPlacePlateRack-v1', 'L3_TwoRobotPlaceScrewdriver-v1', 'L3_TwoRobotPlaceShoeBox-v1', 'L3_TwoRobotPourCup-v1', 'L3_TwoRobotPourKetchupFries-v1', 'L3_TwoRobotPourKettle-v1', 'L3_TwoRobotPourLiquidCup-v1', 'L3_TwoRobotPourLiquidFilter-v1', 'L3_TwoRobotPourLiquidMug-v1', 'L3_TwoRobotPressJuicer-v1', 'L3_TwoRobotPressStapler-v1', 'L3_TwoRobotPutBox-v1', 'L3_TwoRobotPutCubeOnScale-v1', 'L3_TwoRobotScanMilkBox-v1', 'L3_TwoRobotScanPillBottle-v1', 'L3_TwoRobotStirSpoon-v1', 'L3_TwoRobotTransFood-v1', 'L3_TwoRobotWipePot-v1']
+
+✓ Filtered human configs: 1 loaded, 0 skipped
+
+✓ Filtered sim configs: 1 loaded, 0 skipped
+
+================================================================================
+🎥 LOADING HUMAN VIDEO DATASET
+================================================================================
+Loading datasets from config: /var/tmp/imitator-game-zxc/tmp/tmp3ca6xc3o.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.40it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.39it/s]
+[94mLoading episodes [0] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+
+================================================================================
+🤖 LOADING SIM TRAJECTORY DATASET
+================================================================================
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.96it/s]100%|██████████| 1/1 [00:00<00:00,  2.96it/s]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B0/sim/L0_TwoRobotPlaceMugRack-v1 with split train[0m
+
+================================================================================
+🔗 VALIDATING HUMAN-SIM TASK PAIRINGS
+================================================================================
+
+🔑 Indexing human videos...
+   ✓ human_H57 - 1 episodes
+
+🔑 Indexing sim trajectories (O(sub-datasets))...
+   L0_TwoRobotPlaceMugRack-v1: 11228 samples
+
+🔍 Validating pairings...
+
+✅ Successfully paired: 1 task pair(s)
+
+
+================================================================================
+✅ HUMAN-SIM PAIRED DATASET READY
+================================================================================
+📊 Summary:
+   - Total sim samples: 11228
+   - Valid paired samples: 11228
+   - Skipped samples: 0
+   - Valid paired tasks: 1
+   - Input mode: video_only
+   - Include first frame: True
+================================================================================
+
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_ep1.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.14it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.13it/s]
+[94mLoading episodes [1] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+
+================================================================================
+🔄 INITIALIZING HUMAN-SIM PAIRED DATASET
+================================================================================
+   Input mode: video_only
+   Include first frame: True
+
+📖 Loading task mapping from: examples/baselines/lerobot_dataset/task_mapping.json
+   ✓ 53 human task descriptions
+   ✓ 200 sim task descriptions
+
+✓ Mapping loaded:
+  - 53 human tasks: ['human_H1', 'human_H10', 'human_H11', 'human_H12', 'human_H13', 'human_H14', 'human_H15', 'human_H16', 'human_H17', 'human_H18', 'human_H19', 'human_H2', 'human_H20', 'human_H21', 'human_H22', 'human_H23', 'human_H24', 'human_H25', 'human_H26', 'human_H27', 'human_H28', 'human_H29', 'human_H3', 'human_H30', 'human_H31', 'human_H32', 'human_H33', 'human_H34', 'human_H35', 'human_H36', 'human_H37', 'human_H38', 'human_H39', 'human_H4', 'human_H40', 'human_H41', 'human_H42', 'human_H43', 'human_H44', 'human_H45', 'human_H46', 'human_H47', 'human_H48', 'human_H49', 'human_H5', 'human_H50', 'human_H56', 'human_H57', 'human_H58', 'human_H6', 'human_H7', 'human_H8', 'human_H9']
+  - 200 sim tasks: ['L0_TwoRobotCleanCup-v1', 'L0_TwoRobotCleanDesk-v1', 'L0_TwoRobotCutFruit-v1', 'L0_TwoRobotFoldBox-v1', 'L0_TwoRobotFoldTowel-v1', 'L0_TwoRobotGrindFood-v1', 'L0_TwoRobotKnifeBowlFork-v1', 'L0_TwoRobotLiftLidFromSkillet-v1', 'L0_TwoRobotOpenBox-v1', 'L0_TwoRobotOpenLiquidCap-v1', 'L0_TwoRobotPickAppleBananaToBaskets-v1', 'L0_TwoRobotPickAppleBasket-v1', 'L0_TwoRobotPickAppleToScale-v1', 'L0_TwoRobotPickFood-v1', 'L0_TwoRobotPickFruitsToPlate-v1', 'L0_TwoRobotPickPillToRegions-v1', 'L0_TwoRobotPickRemoteControl-v1', 'L0_TwoRobotPickTennisBallGolfBall-v1', 'L0_TwoRobotPickWash-v1', 'L0_TwoRobotPlaceBookBookcase-v1', 'L0_TwoRobotPlaceBrushRest-v1', 'L0_TwoRobotPlaceBurgerTray-v1', 'L0_TwoRobotPlaceChipsRack-v1', 'L0_TwoRobotPlaceClothBasket-v1', 'L0_TwoRobotPlaceCommodityRack-v1', 'L0_TwoRobotPlaceCupPlate-v1', 'L0_TwoRobotPlaceFileFolder-v1', 'L0_TwoRobotPlaceFoodScale-v1', 'L0_TwoRobotPlaceFruitBox-v1', 'L0_TwoRobotPlaceMagazineFolder-v1', 'L0_TwoRobotPlaceMugRack-v1', 'L0_TwoRobotPlacePillBox-v1', 'L0_TwoRobotPlacePlateRack-v1', 'L0_TwoRobotPlaceScrewdriver-v1', 'L0_TwoRobotPlaceShoeBox-v1', 'L0_TwoRobotPourCup-v1', 'L0_TwoRobotPourKetchupFries-v1', 'L0_TwoRobotPourKettle-v1', 'L0_TwoRobotPourLiquidCup-v1', 'L0_TwoRobotPourLiquidFilter-v1', 'L0_TwoRobotPourLiquidMug-v1', 'L0_TwoRobotPressJuicer-v1', 'L0_TwoRobotPressStapler-v1', 'L0_TwoRobotPutBox-v1', 'L0_TwoRobotPutCubeOnScale-v1', 'L0_TwoRobotScanMilkBox-v1', 'L0_TwoRobotScanPillBottle-v1', 'L0_TwoRobotStirSpoon-v1', 'L0_TwoRobotTransFood-v1', 'L0_TwoRobotWipePot-v1', 'L1_TwoRobotCleanCup-v1', 'L1_TwoRobotCleanDesk-v1', 'L1_TwoRobotCutFruit-v1', 'L1_TwoRobotFoldBox-v1', 'L1_TwoRobotFoldTowel-v1', 'L1_TwoRobotGrindFood-v1', 'L1_TwoRobotKnifeBowlFork-v1', 'L1_TwoRobotLiftLidFromSkillet-v1', 'L1_TwoRobotOpenBox-v1', 'L1_TwoRobotOpenLiquidCap-v1', 'L1_TwoRobotPickAppleBananaToBaskets-v1', 'L1_TwoRobotPickAppleBasket-v1', 'L1_TwoRobotPickAppleToScale-v1', 'L1_TwoRobotPickFood-v1', 'L1_TwoRobotPickFruitsToPlate-v1', 'L1_TwoRobotPickPillToRegions-v1', 'L1_TwoRobotPickRemoteControl-v1', 'L1_TwoRobotPickTennisBallGolfBall-v1', 'L1_TwoRobotPickWash-v1', 'L1_TwoRobotPlaceBookBookcase-v1', 'L1_TwoRobotPlaceBrushRest-v1', 'L1_TwoRobotPlaceBurgerTray-v1', 'L1_TwoRobotPlaceChipsRack-v1', 'L1_TwoRobotPlaceClothBasket-v1', 'L1_TwoRobotPlaceCommodityRack-v1', 'L1_TwoRobotPlaceCupPlate-v1', 'L1_TwoRobotPlaceFileFolder-v1', 'L1_TwoRobotPlaceFoodScale-v1', 'L1_TwoRobotPlaceFruitBox-v1', 'L1_TwoRobotPlaceMagazineFolder-v1', 'L1_TwoRobotPlaceMugRack-v1', 'L1_TwoRobotPlacePillBox-v1', 'L1_TwoRobotPlacePlateRack-v1', 'L1_TwoRobotPlaceScrewdriver-v1', 'L1_TwoRobotPlaceShoeBox-v1', 'L1_TwoRobotPourCup-v1', 'L1_TwoRobotPourKetchupFries-v1', 'L1_TwoRobotPourKettle-v1', 'L1_TwoRobotPourLiquidCup-v1', 'L1_TwoRobotPourLiquidFilter-v1', 'L1_TwoRobotPourLiquidMug-v1', 'L1_TwoRobotPressJuicer-v1', 'L1_TwoRobotPressStapler-v1', 'L1_TwoRobotPutBox-v1', 'L1_TwoRobotPutCubeOnScale-v1', 'L1_TwoRobotScanMilkBox-v1', 'L1_TwoRobotScanPillBottle-v1', 'L1_TwoRobotStirSpoon-v1', 'L1_TwoRobotTransFood-v1', 'L1_TwoRobotWipePot-v1', 'L2_TwoRobotCleanCup-v1', 'L2_TwoRobotCleanDesk-v1', 'L2_TwoRobotCutFruit-v1', 'L2_TwoRobotFoldBox-v1', 'L2_TwoRobotFoldTowel-v1', 'L2_TwoRobotGrindFood-v1', 'L2_TwoRobotKnifeBowlFork-v1', 'L2_TwoRobotLiftLidFromSkillet-v1', 'L2_TwoRobotOpenBox-v1', 'L2_TwoRobotOpenLiquidCap-v1', 'L2_TwoRobotPickAppleBananaToBaskets-v1', 'L2_TwoRobotPickAppleBasket-v1', 'L2_TwoRobotPickAppleToScale-v1', 'L2_TwoRobotPickFood-v1', 'L2_TwoRobotPickFruitsToPlate-v1', 'L2_TwoRobotPickPillToRegions-v1', 'L2_TwoRobotPickRemoteControl-v1', 'L2_TwoRobotPickTennisBallGolfBall-v1', 'L2_TwoRobotPickWash-v1', 'L2_TwoRobotPlaceBookBookcase-v1', 'L2_TwoRobotPlaceBrushRest-v1', 'L2_TwoRobotPlaceBurgerTray-v1', 'L2_TwoRobotPlaceChipsRack-v1', 'L2_TwoRobotPlaceClothBasket-v1', 'L2_TwoRobotPlaceCommodityRack-v1', 'L2_TwoRobotPlaceCupPlate-v1', 'L2_TwoRobotPlaceFileFolder-v1', 'L2_TwoRobotPlaceFoodScale-v1', 'L2_TwoRobotPlaceFruitBox-v1', 'L2_TwoRobotPlaceMagazineFolder-v1', 'L2_TwoRobotPlaceMugRack-v1', 'L2_TwoRobotPlacePillBox-v1', 'L2_TwoRobotPlacePlateRack-v1', 'L2_TwoRobotPlaceScrewdriver-v1', 'L2_TwoRobotPlaceShoeBox-v1', 'L2_TwoRobotPourCup-v1', 'L2_TwoRobotPourKetchupFries-v1', 'L2_TwoRobotPourKettle-v1', 'L2_TwoRobotPourLiquidCup-v1', 'L2_TwoRobotPourLiquidFilter-v1', 'L2_TwoRobotPourLiquidMug-v1', 'L2_TwoRobotPressJuicer-v1', 'L2_TwoRobotPressStapler-v1', 'L2_TwoRobotPutBox-v1', 'L2_TwoRobotPutCubeOnScale-v1', 'L2_TwoRobotScanMilkBox-v1', 'L2_TwoRobotScanPillBottle-v1', 'L2_TwoRobotStirSpoon-v1', 'L2_TwoRobotTransFood-v1', 'L2_TwoRobotWipePot-v1', 'L3_TwoRobotCleanCup-v1', 'L3_TwoRobotCleanDesk-v1', 'L3_TwoRobotCutFruit-v1', 'L3_TwoRobotFoldBox-v1', 'L3_TwoRobotFoldTowel-v1', 'L3_TwoRobotGrindFood-v1', 'L3_TwoRobotKnifeBowlFork-v1', 'L3_TwoRobotLiftLidFromSkillet-v1', 'L3_TwoRobotOpenBox-v1', 'L3_TwoRobotOpenLiquidCap-v1', 'L3_TwoRobotPickAppleBananaToBaskets-v1', 'L3_TwoRobotPickAppleBasket-v1', 'L3_TwoRobotPickAppleToScale-v1', 'L3_TwoRobotPickFood-v1', 'L3_TwoRobotPickFruitsToPlate-v1', 'L3_TwoRobotPickPillToRegions-v1', 'L3_TwoRobotPickRemoteControl-v1', 'L3_TwoRobotPickTennisBallGolfBall-v1', 'L3_TwoRobotPickWash-v1', 'L3_TwoRobotPlaceBookBookcase-v1', 'L3_TwoRobotPlaceBrushRest-v1', 'L3_TwoRobotPlaceBurgerTray-v1', 'L3_TwoRobotPlaceChipsRack-v1', 'L3_TwoRobotPlaceClothBasket-v1', 'L3_TwoRobotPlaceCommodityRack-v1', 'L3_TwoRobotPlaceCupPlate-v1', 'L3_TwoRobotPlaceFileFolder-v1', 'L3_TwoRobotPlaceFoodScale-v1', 'L3_TwoRobotPlaceFruitBox-v1', 'L3_TwoRobotPlaceMagazineFolder-v1', 'L3_TwoRobotPlaceMugRack-v1', 'L3_TwoRobotPlacePillBox-v1', 'L3_TwoRobotPlacePlateRack-v1', 'L3_TwoRobotPlaceScrewdriver-v1', 'L3_TwoRobotPlaceShoeBox-v1', 'L3_TwoRobotPourCup-v1', 'L3_TwoRobotPourKetchupFries-v1', 'L3_TwoRobotPourKettle-v1', 'L3_TwoRobotPourLiquidCup-v1', 'L3_TwoRobotPourLiquidFilter-v1', 'L3_TwoRobotPourLiquidMug-v1', 'L3_TwoRobotPressJuicer-v1', 'L3_TwoRobotPressStapler-v1', 'L3_TwoRobotPutBox-v1', 'L3_TwoRobotPutCubeOnScale-v1', 'L3_TwoRobotScanMilkBox-v1', 'L3_TwoRobotScanPillBottle-v1', 'L3_TwoRobotStirSpoon-v1', 'L3_TwoRobotTransFood-v1', 'L3_TwoRobotWipePot-v1']
+
+✓ Filtered human configs: 1 loaded, 0 skipped
+
+✓ Filtered sim configs: 2 loaded, 0 skipped
+
+================================================================================
+🎥 LOADING HUMAN VIDEO DATASET
+================================================================================
+Loading datasets from config: /var/tmp/imitator-game-zxc/tmp/tmpefy2nnoh.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.22it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.21it/s]
+[94mLoading episodes [0] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+
+================================================================================
+🤖 LOADING SIM TRAJECTORY DATASET
+================================================================================
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  2.77it/s]100%|██████████| 2/2 [00:00<00:00,  2.68it/s]100%|██████████| 2/2 [00:00<00:00,  2.69it/s]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B01/sim/L0_TwoRobotPlaceMugRack-v1 with split train[0m
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B01/sim/L1_TwoRobotPlaceMugRack-v1 with split train[0m
+
+================================================================================
+🔗 VALIDATING HUMAN-SIM TASK PAIRINGS
+================================================================================
+
+🔑 Indexing human videos...
+   ✓ human_H57 - 1 episodes
+
+🔑 Indexing sim trajectories (O(sub-datasets))...
+   L0_TwoRobotPlaceMugRack-v1: 11228 samples
+   L1_TwoRobotPlaceMugRack-v1: 12079 samples
+
+🔍 Validating pairings...
+
+✅ Successfully paired: 2 task pair(s)
+
+
+================================================================================
+✅ HUMAN-SIM PAIRED DATASET READY
+================================================================================
+📊 Summary:
+   - Total sim samples: 23307
+   - Valid paired samples: 23307
+   - Skipped samples: 0
+   - Valid paired tasks: 2
+   - Input mode: video_only
+   - Include first frame: True
+================================================================================
+
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_ep1.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.04it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.03it/s]
+[94mLoading episodes [1] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+
+================================================================================
+🔄 INITIALIZING HUMAN-SIM PAIRED DATASET
+================================================================================
+   Input mode: video_only
+   Include first frame: True
+
+📖 Loading task mapping from: examples/baselines/lerobot_dataset/task_mapping.json
+   ✓ 53 human task descriptions
+   ✓ 200 sim task descriptions
+
+✓ Mapping loaded:
+  - 53 human tasks: ['human_H1', 'human_H10', 'human_H11', 'human_H12', 'human_H13', 'human_H14', 'human_H15', 'human_H16', 'human_H17', 'human_H18', 'human_H19', 'human_H2', 'human_H20', 'human_H21', 'human_H22', 'human_H23', 'human_H24', 'human_H25', 'human_H26', 'human_H27', 'human_H28', 'human_H29', 'human_H3', 'human_H30', 'human_H31', 'human_H32', 'human_H33', 'human_H34', 'human_H35', 'human_H36', 'human_H37', 'human_H38', 'human_H39', 'human_H4', 'human_H40', 'human_H41', 'human_H42', 'human_H43', 'human_H44', 'human_H45', 'human_H46', 'human_H47', 'human_H48', 'human_H49', 'human_H5', 'human_H50', 'human_H56', 'human_H57', 'human_H58', 'human_H6', 'human_H7', 'human_H8', 'human_H9']
+  - 200 sim tasks: ['L0_TwoRobotCleanCup-v1', 'L0_TwoRobotCleanDesk-v1', 'L0_TwoRobotCutFruit-v1', 'L0_TwoRobotFoldBox-v1', 'L0_TwoRobotFoldTowel-v1', 'L0_TwoRobotGrindFood-v1', 'L0_TwoRobotKnifeBowlFork-v1', 'L0_TwoRobotLiftLidFromSkillet-v1', 'L0_TwoRobotOpenBox-v1', 'L0_TwoRobotOpenLiquidCap-v1', 'L0_TwoRobotPickAppleBananaToBaskets-v1', 'L0_TwoRobotPickAppleBasket-v1', 'L0_TwoRobotPickAppleToScale-v1', 'L0_TwoRobotPickFood-v1', 'L0_TwoRobotPickFruitsToPlate-v1', 'L0_TwoRobotPickPillToRegions-v1', 'L0_TwoRobotPickRemoteControl-v1', 'L0_TwoRobotPickTennisBallGolfBall-v1', 'L0_TwoRobotPickWash-v1', 'L0_TwoRobotPlaceBookBookcase-v1', 'L0_TwoRobotPlaceBrushRest-v1', 'L0_TwoRobotPlaceBurgerTray-v1', 'L0_TwoRobotPlaceChipsRack-v1', 'L0_TwoRobotPlaceClothBasket-v1', 'L0_TwoRobotPlaceCommodityRack-v1', 'L0_TwoRobotPlaceCupPlate-v1', 'L0_TwoRobotPlaceFileFolder-v1', 'L0_TwoRobotPlaceFoodScale-v1', 'L0_TwoRobotPlaceFruitBox-v1', 'L0_TwoRobotPlaceMagazineFolder-v1', 'L0_TwoRobotPlaceMugRack-v1', 'L0_TwoRobotPlacePillBox-v1', 'L0_TwoRobotPlacePlateRack-v1', 'L0_TwoRobotPlaceScrewdriver-v1', 'L0_TwoRobotPlaceShoeBox-v1', 'L0_TwoRobotPourCup-v1', 'L0_TwoRobotPourKetchupFries-v1', 'L0_TwoRobotPourKettle-v1', 'L0_TwoRobotPourLiquidCup-v1', 'L0_TwoRobotPourLiquidFilter-v1', 'L0_TwoRobotPourLiquidMug-v1', 'L0_TwoRobotPressJuicer-v1', 'L0_TwoRobotPressStapler-v1', 'L0_TwoRobotPutBox-v1', 'L0_TwoRobotPutCubeOnScale-v1', 'L0_TwoRobotScanMilkBox-v1', 'L0_TwoRobotScanPillBottle-v1', 'L0_TwoRobotStirSpoon-v1', 'L0_TwoRobotTransFood-v1', 'L0_TwoRobotWipePot-v1', 'L1_TwoRobotCleanCup-v1', 'L1_TwoRobotCleanDesk-v1', 'L1_TwoRobotCutFruit-v1', 'L1_TwoRobotFoldBox-v1', 'L1_TwoRobotFoldTowel-v1', 'L1_TwoRobotGrindFood-v1', 'L1_TwoRobotKnifeBowlFork-v1', 'L1_TwoRobotLiftLidFromSkillet-v1', 'L1_TwoRobotOpenBox-v1', 'L1_TwoRobotOpenLiquidCap-v1', 'L1_TwoRobotPickAppleBananaToBaskets-v1', 'L1_TwoRobotPickAppleBasket-v1', 'L1_TwoRobotPickAppleToScale-v1', 'L1_TwoRobotPickFood-v1', 'L1_TwoRobotPickFruitsToPlate-v1', 'L1_TwoRobotPickPillToRegions-v1', 'L1_TwoRobotPickRemoteControl-v1', 'L1_TwoRobotPickTennisBallGolfBall-v1', 'L1_TwoRobotPickWash-v1', 'L1_TwoRobotPlaceBookBookcase-v1', 'L1_TwoRobotPlaceBrushRest-v1', 'L1_TwoRobotPlaceBurgerTray-v1', 'L1_TwoRobotPlaceChipsRack-v1', 'L1_TwoRobotPlaceClothBasket-v1', 'L1_TwoRobotPlaceCommodityRack-v1', 'L1_TwoRobotPlaceCupPlate-v1', 'L1_TwoRobotPlaceFileFolder-v1', 'L1_TwoRobotPlaceFoodScale-v1', 'L1_TwoRobotPlaceFruitBox-v1', 'L1_TwoRobotPlaceMagazineFolder-v1', 'L1_TwoRobotPlaceMugRack-v1', 'L1_TwoRobotPlacePillBox-v1', 'L1_TwoRobotPlacePlateRack-v1', 'L1_TwoRobotPlaceScrewdriver-v1', 'L1_TwoRobotPlaceShoeBox-v1', 'L1_TwoRobotPourCup-v1', 'L1_TwoRobotPourKetchupFries-v1', 'L1_TwoRobotPourKettle-v1', 'L1_TwoRobotPourLiquidCup-v1', 'L1_TwoRobotPourLiquidFilter-v1', 'L1_TwoRobotPourLiquidMug-v1', 'L1_TwoRobotPressJuicer-v1', 'L1_TwoRobotPressStapler-v1', 'L1_TwoRobotPutBox-v1', 'L1_TwoRobotPutCubeOnScale-v1', 'L1_TwoRobotScanMilkBox-v1', 'L1_TwoRobotScanPillBottle-v1', 'L1_TwoRobotStirSpoon-v1', 'L1_TwoRobotTransFood-v1', 'L1_TwoRobotWipePot-v1', 'L2_TwoRobotCleanCup-v1', 'L2_TwoRobotCleanDesk-v1', 'L2_TwoRobotCutFruit-v1', 'L2_TwoRobotFoldBox-v1', 'L2_TwoRobotFoldTowel-v1', 'L2_TwoRobotGrindFood-v1', 'L2_TwoRobotKnifeBowlFork-v1', 'L2_TwoRobotLiftLidFromSkillet-v1', 'L2_TwoRobotOpenBox-v1', 'L2_TwoRobotOpenLiquidCap-v1', 'L2_TwoRobotPickAppleBananaToBaskets-v1', 'L2_TwoRobotPickAppleBasket-v1', 'L2_TwoRobotPickAppleToScale-v1', 'L2_TwoRobotPickFood-v1', 'L2_TwoRobotPickFruitsToPlate-v1', 'L2_TwoRobotPickPillToRegions-v1', 'L2_TwoRobotPickRemoteControl-v1', 'L2_TwoRobotPickTennisBallGolfBall-v1', 'L2_TwoRobotPickWash-v1', 'L2_TwoRobotPlaceBookBookcase-v1', 'L2_TwoRobotPlaceBrushRest-v1', 'L2_TwoRobotPlaceBurgerTray-v1', 'L2_TwoRobotPlaceChipsRack-v1', 'L2_TwoRobotPlaceClothBasket-v1', 'L2_TwoRobotPlaceCommodityRack-v1', 'L2_TwoRobotPlaceCupPlate-v1', 'L2_TwoRobotPlaceFileFolder-v1', 'L2_TwoRobotPlaceFoodScale-v1', 'L2_TwoRobotPlaceFruitBox-v1', 'L2_TwoRobotPlaceMagazineFolder-v1', 'L2_TwoRobotPlaceMugRack-v1', 'L2_TwoRobotPlacePillBox-v1', 'L2_TwoRobotPlacePlateRack-v1', 'L2_TwoRobotPlaceScrewdriver-v1', 'L2_TwoRobotPlaceShoeBox-v1', 'L2_TwoRobotPourCup-v1', 'L2_TwoRobotPourKetchupFries-v1', 'L2_TwoRobotPourKettle-v1', 'L2_TwoRobotPourLiquidCup-v1', 'L2_TwoRobotPourLiquidFilter-v1', 'L2_TwoRobotPourLiquidMug-v1', 'L2_TwoRobotPressJuicer-v1', 'L2_TwoRobotPressStapler-v1', 'L2_TwoRobotPutBox-v1', 'L2_TwoRobotPutCubeOnScale-v1', 'L2_TwoRobotScanMilkBox-v1', 'L2_TwoRobotScanPillBottle-v1', 'L2_TwoRobotStirSpoon-v1', 'L2_TwoRobotTransFood-v1', 'L2_TwoRobotWipePot-v1', 'L3_TwoRobotCleanCup-v1', 'L3_TwoRobotCleanDesk-v1', 'L3_TwoRobotCutFruit-v1', 'L3_TwoRobotFoldBox-v1', 'L3_TwoRobotFoldTowel-v1', 'L3_TwoRobotGrindFood-v1', 'L3_TwoRobotKnifeBowlFork-v1', 'L3_TwoRobotLiftLidFromSkillet-v1', 'L3_TwoRobotOpenBox-v1', 'L3_TwoRobotOpenLiquidCap-v1', 'L3_TwoRobotPickAppleBananaToBaskets-v1', 'L3_TwoRobotPickAppleBasket-v1', 'L3_TwoRobotPickAppleToScale-v1', 'L3_TwoRobotPickFood-v1', 'L3_TwoRobotPickFruitsToPlate-v1', 'L3_TwoRobotPickPillToRegions-v1', 'L3_TwoRobotPickRemoteControl-v1', 'L3_TwoRobotPickTennisBallGolfBall-v1', 'L3_TwoRobotPickWash-v1', 'L3_TwoRobotPlaceBookBookcase-v1', 'L3_TwoRobotPlaceBrushRest-v1', 'L3_TwoRobotPlaceBurgerTray-v1', 'L3_TwoRobotPlaceChipsRack-v1', 'L3_TwoRobotPlaceClothBasket-v1', 'L3_TwoRobotPlaceCommodityRack-v1', 'L3_TwoRobotPlaceCupPlate-v1', 'L3_TwoRobotPlaceFileFolder-v1', 'L3_TwoRobotPlaceFoodScale-v1', 'L3_TwoRobotPlaceFruitBox-v1', 'L3_TwoRobotPlaceMagazineFolder-v1', 'L3_TwoRobotPlaceMugRack-v1', 'L3_TwoRobotPlacePillBox-v1', 'L3_TwoRobotPlacePlateRack-v1', 'L3_TwoRobotPlaceScrewdriver-v1', 'L3_TwoRobotPlaceShoeBox-v1', 'L3_TwoRobotPourCup-v1', 'L3_TwoRobotPourKetchupFries-v1', 'L3_TwoRobotPourKettle-v1', 'L3_TwoRobotPourLiquidCup-v1', 'L3_TwoRobotPourLiquidFilter-v1', 'L3_TwoRobotPourLiquidMug-v1', 'L3_TwoRobotPressJuicer-v1', 'L3_TwoRobotPressStapler-v1', 'L3_TwoRobotPutBox-v1', 'L3_TwoRobotPutCubeOnScale-v1', 'L3_TwoRobotScanMilkBox-v1', 'L3_TwoRobotScanPillBottle-v1', 'L3_TwoRobotStirSpoon-v1', 'L3_TwoRobotTransFood-v1', 'L3_TwoRobotWipePot-v1']
+
+✓ Filtered human configs: 1 loaded, 0 skipped
+
+✓ Filtered sim configs: 3 loaded, 0 skipped
+
+================================================================================
+🎥 LOADING HUMAN VIDEO DATASET
+================================================================================
+Loading datasets from config: /var/tmp/imitator-game-zxc/tmp/tmpe94cx60a.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.60it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.59it/s]
+[94mLoading episodes [0] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+
+================================================================================
+🤖 LOADING SIM TRAJECTORY DATASET
+================================================================================
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:00,  2.60it/s] 67%|██████▋   | 2/3 [00:00<00:00,  2.49it/s]100%|██████████| 3/3 [00:01<00:00,  2.52it/s]100%|██████████| 3/3 [00:01<00:00,  2.52it/s]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B012/sim/L0_TwoRobotPlaceMugRack-v1 with split train[0m
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B012/sim/L1_TwoRobotPlaceMugRack-v1 with split train[0m
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B012/sim/L2_TwoRobotPlaceMugRack-v1 with split train[0m
+
+================================================================================
+🔗 VALIDATING HUMAN-SIM TASK PAIRINGS
+================================================================================
+
+🔑 Indexing human videos...
+   ✓ human_H57 - 1 episodes
+
+🔑 Indexing sim trajectories (O(sub-datasets))...
+   L0_TwoRobotPlaceMugRack-v1: 11228 samples
+   L1_TwoRobotPlaceMugRack-v1: 12079 samples
+   L2_TwoRobotPlaceMugRack-v1: 11304 samples
+
+🔍 Validating pairings...
+
+✅ Successfully paired: 3 task pair(s)
+
+
+================================================================================
+✅ HUMAN-SIM PAIRED DATASET READY
+================================================================================
+📊 Summary:
+   - Total sim samples: 34611
+   - Valid paired samples: 34611
+   - Skipped samples: 0
+   - Valid paired tasks: 3
+   - Input mode: video_only
+   - Include first frame: True
+================================================================================
+
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_ep1.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.04it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  9.03it/s]
+[94mLoading episodes [1] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+DATA AUDIT PASSED {'B0': {'frames': 11228, 'episodes': 50, 'boundary_samples_checked': 100, 'exact_pairing_and_labels': True, 'eval_stats_identical_all_levels': True, 'stats_sha256': 'acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1'}, 'B01': {'frames': 23307, 'episodes': 100, 'boundary_samples_checked': 200, 'exact_pairing_and_labels': True, 'eval_stats_identical_all_levels': True, 'stats_sha256': '69af9ab83535458f3d2f218dd8001240b21d2d9b4a511ea51daada7b8763be3d'}, 'B012': {'frames': 34611, 'episodes': 150, 'boundary_samples_checked': 300, 'exact_pairing_and_labels': True, 'eval_stats_identical_all_levels': True, 'stats_sha256': 'eef9b3a5b978d219850e82461e613c1490af55976eb41c6e4fc0a843ad4c6d4e'}}

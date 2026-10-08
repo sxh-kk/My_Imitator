@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "supplementary_videos": 6,
+  "supplementary_rollouts": 24,
+  "excluded_from_primary_results": true,
+  "automatic_postprocessing_minutes_after_main_complete": 3.2840980052948,
+  "videos": [
+    {
+      "run": "A50_s1",
+      "seed": 2034,
+      "frames": 501,
+      "initial_conditions_and_success_and_stages_match": true
+    },
+    {
+      "run": "A10_s1",
+      "seed": 2006,
+      "frames": 501,
+      "initial_conditions_and_success_and_stages_match": true
+    },
+    {
+      "run": "A50_s2",
+      "seed": 2029,
+      "frames": 501,
+      "initial_conditions_and_success_and_stages_match": true
+    },
+    {
+      "run": "A10_s2",
+      "seed": 2007,
+      "frames": 501,
+      "initial_conditions_and_success_and_stages_match": true
+    },
+    {
+      "run": "A50_s3",
+      "seed": 2019,
+      "frames": 501,
+      "initial_conditions_and_success_and_stages_match": true
+    },
+    {
+      "run": "A10_s3",
+      "seed": 2082,
+      "frames": 501,
+      "initial_conditions_and_success_and_stages_match": true
+    }
+  ]
+}

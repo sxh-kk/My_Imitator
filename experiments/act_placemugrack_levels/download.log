@@ -1,0 +1,16 @@
+VERIFIED imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/info.json 3962
+VERIFIED imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/.complete 90
+VERIFIED imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/stats.json 19689
+VERIFIED imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/tasks.parquet 2120
+VERIFIED imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet 300257
+VERIFIED imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet 1321066
+VERIFIED imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/.complete 90
+VERIFIED imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i_depth/chunk-000/file-000.mp4 17721142
+VERIFIED imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet 1238049
+VERIFIED imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet 300978
+VERIFIED imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/info.json 3962
+VERIFIED imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/stats.json 19689
+VERIFIED imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4 27180917
+VERIFIED imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/tasks.parquet 2120
+VERIFIED imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4 24908096
+VERIFIED imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i_depth/chunk-000/file-000.mp4 17505413

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "episodes": 4,
+  "seed_range": [
+    2800,
+    2803
+  ],
+  "first_policy_action_exact": true,
+  "all_original_metrics_and_stage_events_exact": true,
+  "read_only_probes_preserve_rollout": true
+}

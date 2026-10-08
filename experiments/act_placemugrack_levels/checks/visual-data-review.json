@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "artifact": "official-demo-contact-sheet.png",
+  "scope": "episode0 four preselected times per level; other episodes checked numerically at boundaries",
+  "observations": {
+    "L0": "blue mug; robot on right side of image carries it to rack",
+    "L1": "same blue mug displaced farther from rack; changed reach path",
+    "L2": "white replacement mug on opposite side; robot on left side of image carries it to same rack"
+  },
+  "robot_bases_stay_on_their_sides": true,
+  "core_source_modified": false
+}

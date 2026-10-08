@@ -1,0 +1,26 @@
+{
+  "status": "running",
+  "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A50_s1/checkpoints/step_005400.pt",
+  "checkpoint_sha256": "525dfc778d6c033e024ddce2364516af1e886c1b91364ce33012edc9da1092e7",
+  "checkpoint_step": 5400,
+  "condition": "A50",
+  "num_envs": 4,
+  "human_episode": 1,
+  "human_video_sha256": "5c544a193ef9017c492bff8f8854d021900180ec518b429a9d225aa83260d132",
+  "stats_sha256": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1",
+  "all_loaded_tensors_equal": 253,
+  "trainable_tensor_count": 171,
+  "optimizer_steps": [
+    5400
+  ],
+  "episodes": [],
+  "policy_queries": 0,
+  "vector_steps": 0,
+  "auxiliary_dtw": false,
+  "video_recording": false,
+  "preselected_video_seeds": [],
+  "level": "L0",
+  "exact_repo_id": "L0_TwoRobotPlaceMugRack-v1",
+  "normalizer_dataset_idx": 0,
+  "wall_seconds": 14.204031705856323
+}

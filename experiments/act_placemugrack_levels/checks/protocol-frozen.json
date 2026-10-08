@@ -1,0 +1,24 @@
+{
+  "frozen_at": 1791388038.6755714,
+  "files": {
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/plan.json": "197a2511a5021382f1437827bd14e459d774eee196452a65237d9342f1f390fc",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/execution-config.json": "fd608edd90787d6067b7f706b1bc30684cb7cccc38435d05b035a414ab97d561",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/manifest.json": "fccf2c8b258a4a00487185d2e2ba9ceac97ae9476547f8baca815b9e72f72efe",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/A50/sim/L0_TwoRobotPlaceMugRack-v1/meta/stats.json": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/A50/sim/L1_TwoRobotPlaceMugRack-v1/meta/stats.json": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/A50/sim/L2_TwoRobotPlaceMugRack-v1/meta/stats.json": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B0/sim/L0_TwoRobotPlaceMugRack-v1/meta/stats.json": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B0/sim/L1_TwoRobotPlaceMugRack-v1/meta/stats.json": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B0/sim/L2_TwoRobotPlaceMugRack-v1/meta/stats.json": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B01/sim/L0_TwoRobotPlaceMugRack-v1/meta/stats.json": "69af9ab83535458f3d2f218dd8001240b21d2d9b4a511ea51daada7b8763be3d",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B01/sim/L1_TwoRobotPlaceMugRack-v1/meta/stats.json": "69af9ab83535458f3d2f218dd8001240b21d2d9b4a511ea51daada7b8763be3d",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B01/sim/L2_TwoRobotPlaceMugRack-v1/meta/stats.json": "69af9ab83535458f3d2f218dd8001240b21d2d9b4a511ea51daada7b8763be3d",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B012/sim/L0_TwoRobotPlaceMugRack-v1/meta/stats.json": "eef9b3a5b978d219850e82461e613c1490af55976eb41c6e4fc0a843ad4c6d4e",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B012/sim/L1_TwoRobotPlaceMugRack-v1/meta/stats.json": "eef9b3a5b978d219850e82461e613c1490af55976eb41c6e4fc0a843ad4c6d4e",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/B012/sim/L2_TwoRobotPlaceMugRack-v1/meta/stats.json": "eef9b3a5b978d219850e82461e613c1490af55976eb41c6e4fc0a843ad4c6d4e",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_ep0.pt": "e7cfd8c8cfbec02871910a52349654c0ad8365ab3f0ced7bc4ecf67c329a72c4",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_ep1.pt": "5c544a193ef9017c492bff8f8854d021900180ec518b429a9d225aa83260d132",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_cache_ep0/backbone_dinov2_vitl14/raw_features.pt": "417e33c2af7a9e93e1f408c2b5ed036be2aa69e3271b942c7827fb1ae3edb5c9",
+    "/home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_cache_ep1/backbone_dinov2_vitl14/raw_features.pt": "95f0b32f3c4a2ea2b71d6cc1c5398ca69828a67161a0b7420ddafd8c3004397d"
+  }
+}

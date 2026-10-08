@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "conditions": {
+    "B0": {
+      "frames": 11228,
+      "episodes": 50,
+      "boundary_samples_checked": 100,
+      "exact_pairing_and_labels": true,
+      "eval_stats_identical_all_levels": true,
+      "stats_sha256": "acc5affbc08654f35d554f08d793fbe9be76348cb31242ee8db100778026dba1"
+    },
+    "B01": {
+      "frames": 23307,
+      "episodes": 100,
+      "boundary_samples_checked": 200,
+      "exact_pairing_and_labels": true,
+      "eval_stats_identical_all_levels": true,
+      "stats_sha256": "69af9ab83535458f3d2f218dd8001240b21d2d9b4a511ea51daada7b8763be3d"
+    },
+    "B012": {
+      "frames": 34611,
+      "episodes": 150,
+      "boundary_samples_checked": 300,
+      "exact_pairing_and_labels": true,
+      "eval_stats_identical_all_levels": true,
+      "stats_sha256": "eef9b3a5b978d219850e82461e613c1490af55976eb41c6e4fc0a843ad4c6d4e"
+    }
+  }
+}

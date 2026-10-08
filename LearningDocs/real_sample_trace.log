@@ -1,0 +1,257 @@
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-07 21:47:26.672525: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-07 21:47:26.681345: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791380846.691408 2247647 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791380846.694621 2247647 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791380846.703801 2247647 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791380846.703816 2247647 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791380846.703819 2247647 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791380846.703821 2247647 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-07 21:47:26.706119: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+维度说明：shape=张量形状，dtype=数值类型，device=所在设备；B=batch 大小。
+
+================================================================================
+🔄 INITIALIZING HUMAN-SIM PAIRED DATASET
+================================================================================
+   Input mode: video_only
+   Include first frame: True
+
+📖 Loading task mapping from: examples/baselines/lerobot_dataset/task_mapping.json
+   ✓ 53 human task descriptions
+   ✓ 200 sim task descriptions
+
+✓ Mapping loaded:
+  - 53 human tasks: ['human_H1', 'human_H10', 'human_H11', 'human_H12', 'human_H13', 'human_H14', 'human_H15', 'human_H16', 'human_H17', 'human_H18', 'human_H19', 'human_H2', 'human_H20', 'human_H21', 'human_H22', 'human_H23', 'human_H24', 'human_H25', 'human_H26', 'human_H27', 'human_H28', 'human_H29', 'human_H3', 'human_H30', 'human_H31', 'human_H32', 'human_H33', 'human_H34', 'human_H35', 'human_H36', 'human_H37', 'human_H38', 'human_H39', 'human_H4', 'human_H40', 'human_H41', 'human_H42', 'human_H43', 'human_H44', 'human_H45', 'human_H46', 'human_H47', 'human_H48', 'human_H49', 'human_H5', 'human_H50', 'human_H56', 'human_H57', 'human_H58', 'human_H6', 'human_H7', 'human_H8', 'human_H9']
+  - 200 sim tasks: ['L0_TwoRobotCleanCup-v1', 'L0_TwoRobotCleanDesk-v1', 'L0_TwoRobotCutFruit-v1', 'L0_TwoRobotFoldBox-v1', 'L0_TwoRobotFoldTowel-v1', 'L0_TwoRobotGrindFood-v1', 'L0_TwoRobotKnifeBowlFork-v1', 'L0_TwoRobotLiftLidFromSkillet-v1', 'L0_TwoRobotOpenBox-v1', 'L0_TwoRobotOpenLiquidCap-v1', 'L0_TwoRobotPickAppleBananaToBaskets-v1', 'L0_TwoRobotPickAppleBasket-v1', 'L0_TwoRobotPickAppleToScale-v1', 'L0_TwoRobotPickFood-v1', 'L0_TwoRobotPickFruitsToPlate-v1', 'L0_TwoRobotPickPillToRegions-v1', 'L0_TwoRobotPickRemoteControl-v1', 'L0_TwoRobotPickTennisBallGolfBall-v1', 'L0_TwoRobotPickWash-v1', 'L0_TwoRobotPlaceBookBookcase-v1', 'L0_TwoRobotPlaceBrushRest-v1', 'L0_TwoRobotPlaceBurgerTray-v1', 'L0_TwoRobotPlaceChipsRack-v1', 'L0_TwoRobotPlaceClothBasket-v1', 'L0_TwoRobotPlaceCommodityRack-v1', 'L0_TwoRobotPlaceCupPlate-v1', 'L0_TwoRobotPlaceFileFolder-v1', 'L0_TwoRobotPlaceFoodScale-v1', 'L0_TwoRobotPlaceFruitBox-v1', 'L0_TwoRobotPlaceMagazineFolder-v1', 'L0_TwoRobotPlaceMugRack-v1', 'L0_TwoRobotPlacePillBox-v1', 'L0_TwoRobotPlacePlateRack-v1', 'L0_TwoRobotPlaceScrewdriver-v1', 'L0_TwoRobotPlaceShoeBox-v1', 'L0_TwoRobotPourCup-v1', 'L0_TwoRobotPourKetchupFries-v1', 'L0_TwoRobotPourKettle-v1', 'L0_TwoRobotPourLiquidCup-v1', 'L0_TwoRobotPourLiquidFilter-v1', 'L0_TwoRobotPourLiquidMug-v1', 'L0_TwoRobotPressJuicer-v1', 'L0_TwoRobotPressStapler-v1', 'L0_TwoRobotPutBox-v1', 'L0_TwoRobotPutCubeOnScale-v1', 'L0_TwoRobotScanMilkBox-v1', 'L0_TwoRobotScanPillBottle-v1', 'L0_TwoRobotStirSpoon-v1', 'L0_TwoRobotTransFood-v1', 'L0_TwoRobotWipePot-v1', 'L1_TwoRobotCleanCup-v1', 'L1_TwoRobotCleanDesk-v1', 'L1_TwoRobotCutFruit-v1', 'L1_TwoRobotFoldBox-v1', 'L1_TwoRobotFoldTowel-v1', 'L1_TwoRobotGrindFood-v1', 'L1_TwoRobotKnifeBowlFork-v1', 'L1_TwoRobotLiftLidFromSkillet-v1', 'L1_TwoRobotOpenBox-v1', 'L1_TwoRobotOpenLiquidCap-v1', 'L1_TwoRobotPickAppleBananaToBaskets-v1', 'L1_TwoRobotPickAppleBasket-v1', 'L1_TwoRobotPickAppleToScale-v1', 'L1_TwoRobotPickFood-v1', 'L1_TwoRobotPickFruitsToPlate-v1', 'L1_TwoRobotPickPillToRegions-v1', 'L1_TwoRobotPickRemoteControl-v1', 'L1_TwoRobotPickTennisBallGolfBall-v1', 'L1_TwoRobotPickWash-v1', 'L1_TwoRobotPlaceBookBookcase-v1', 'L1_TwoRobotPlaceBrushRest-v1', 'L1_TwoRobotPlaceBurgerTray-v1', 'L1_TwoRobotPlaceChipsRack-v1', 'L1_TwoRobotPlaceClothBasket-v1', 'L1_TwoRobotPlaceCommodityRack-v1', 'L1_TwoRobotPlaceCupPlate-v1', 'L1_TwoRobotPlaceFileFolder-v1', 'L1_TwoRobotPlaceFoodScale-v1', 'L1_TwoRobotPlaceFruitBox-v1', 'L1_TwoRobotPlaceMagazineFolder-v1', 'L1_TwoRobotPlaceMugRack-v1', 'L1_TwoRobotPlacePillBox-v1', 'L1_TwoRobotPlacePlateRack-v1', 'L1_TwoRobotPlaceScrewdriver-v1', 'L1_TwoRobotPlaceShoeBox-v1', 'L1_TwoRobotPourCup-v1', 'L1_TwoRobotPourKetchupFries-v1', 'L1_TwoRobotPourKettle-v1', 'L1_TwoRobotPourLiquidCup-v1', 'L1_TwoRobotPourLiquidFilter-v1', 'L1_TwoRobotPourLiquidMug-v1', 'L1_TwoRobotPressJuicer-v1', 'L1_TwoRobotPressStapler-v1', 'L1_TwoRobotPutBox-v1', 'L1_TwoRobotPutCubeOnScale-v1', 'L1_TwoRobotScanMilkBox-v1', 'L1_TwoRobotScanPillBottle-v1', 'L1_TwoRobotStirSpoon-v1', 'L1_TwoRobotTransFood-v1', 'L1_TwoRobotWipePot-v1', 'L2_TwoRobotCleanCup-v1', 'L2_TwoRobotCleanDesk-v1', 'L2_TwoRobotCutFruit-v1', 'L2_TwoRobotFoldBox-v1', 'L2_TwoRobotFoldTowel-v1', 'L2_TwoRobotGrindFood-v1', 'L2_TwoRobotKnifeBowlFork-v1', 'L2_TwoRobotLiftLidFromSkillet-v1', 'L2_TwoRobotOpenBox-v1', 'L2_TwoRobotOpenLiquidCap-v1', 'L2_TwoRobotPickAppleBananaToBaskets-v1', 'L2_TwoRobotPickAppleBasket-v1', 'L2_TwoRobotPickAppleToScale-v1', 'L2_TwoRobotPickFood-v1', 'L2_TwoRobotPickFruitsToPlate-v1', 'L2_TwoRobotPickPillToRegions-v1', 'L2_TwoRobotPickRemoteControl-v1', 'L2_TwoRobotPickTennisBallGolfBall-v1', 'L2_TwoRobotPickWash-v1', 'L2_TwoRobotPlaceBookBookcase-v1', 'L2_TwoRobotPlaceBrushRest-v1', 'L2_TwoRobotPlaceBurgerTray-v1', 'L2_TwoRobotPlaceChipsRack-v1', 'L2_TwoRobotPlaceClothBasket-v1', 'L2_TwoRobotPlaceCommodityRack-v1', 'L2_TwoRobotPlaceCupPlate-v1', 'L2_TwoRobotPlaceFileFolder-v1', 'L2_TwoRobotPlaceFoodScale-v1', 'L2_TwoRobotPlaceFruitBox-v1', 'L2_TwoRobotPlaceMagazineFolder-v1', 'L2_TwoRobotPlaceMugRack-v1', 'L2_TwoRobotPlacePillBox-v1', 'L2_TwoRobotPlacePlateRack-v1', 'L2_TwoRobotPlaceScrewdriver-v1', 'L2_TwoRobotPlaceShoeBox-v1', 'L2_TwoRobotPourCup-v1', 'L2_TwoRobotPourKetchupFries-v1', 'L2_TwoRobotPourKettle-v1', 'L2_TwoRobotPourLiquidCup-v1', 'L2_TwoRobotPourLiquidFilter-v1', 'L2_TwoRobotPourLiquidMug-v1', 'L2_TwoRobotPressJuicer-v1', 'L2_TwoRobotPressStapler-v1', 'L2_TwoRobotPutBox-v1', 'L2_TwoRobotPutCubeOnScale-v1', 'L2_TwoRobotScanMilkBox-v1', 'L2_TwoRobotScanPillBottle-v1', 'L2_TwoRobotStirSpoon-v1', 'L2_TwoRobotTransFood-v1', 'L2_TwoRobotWipePot-v1', 'L3_TwoRobotCleanCup-v1', 'L3_TwoRobotCleanDesk-v1', 'L3_TwoRobotCutFruit-v1', 'L3_TwoRobotFoldBox-v1', 'L3_TwoRobotFoldTowel-v1', 'L3_TwoRobotGrindFood-v1', 'L3_TwoRobotKnifeBowlFork-v1', 'L3_TwoRobotLiftLidFromSkillet-v1', 'L3_TwoRobotOpenBox-v1', 'L3_TwoRobotOpenLiquidCap-v1', 'L3_TwoRobotPickAppleBananaToBaskets-v1', 'L3_TwoRobotPickAppleBasket-v1', 'L3_TwoRobotPickAppleToScale-v1', 'L3_TwoRobotPickFood-v1', 'L3_TwoRobotPickFruitsToPlate-v1', 'L3_TwoRobotPickPillToRegions-v1', 'L3_TwoRobotPickRemoteControl-v1', 'L3_TwoRobotPickTennisBallGolfBall-v1', 'L3_TwoRobotPickWash-v1', 'L3_TwoRobotPlaceBookBookcase-v1', 'L3_TwoRobotPlaceBrushRest-v1', 'L3_TwoRobotPlaceBurgerTray-v1', 'L3_TwoRobotPlaceChipsRack-v1', 'L3_TwoRobotPlaceClothBasket-v1', 'L3_TwoRobotPlaceCommodityRack-v1', 'L3_TwoRobotPlaceCupPlate-v1', 'L3_TwoRobotPlaceFileFolder-v1', 'L3_TwoRobotPlaceFoodScale-v1', 'L3_TwoRobotPlaceFruitBox-v1', 'L3_TwoRobotPlaceMagazineFolder-v1', 'L3_TwoRobotPlaceMugRack-v1', 'L3_TwoRobotPlacePillBox-v1', 'L3_TwoRobotPlacePlateRack-v1', 'L3_TwoRobotPlaceScrewdriver-v1', 'L3_TwoRobotPlaceShoeBox-v1', 'L3_TwoRobotPourCup-v1', 'L3_TwoRobotPourKetchupFries-v1', 'L3_TwoRobotPourKettle-v1', 'L3_TwoRobotPourLiquidCup-v1', 'L3_TwoRobotPourLiquidFilter-v1', 'L3_TwoRobotPourLiquidMug-v1', 'L3_TwoRobotPressJuicer-v1', 'L3_TwoRobotPressStapler-v1', 'L3_TwoRobotPutBox-v1', 'L3_TwoRobotPutCubeOnScale-v1', 'L3_TwoRobotScanMilkBox-v1', 'L3_TwoRobotScanPillBottle-v1', 'L3_TwoRobotStirSpoon-v1', 'L3_TwoRobotTransFood-v1', 'L3_TwoRobotWipePot-v1']
+
+✓ Filtered human configs: 1 loaded, 0 skipped
+
+✓ Filtered sim configs: 1 loaded, 0 skipped
+
+================================================================================
+🎥 LOADING HUMAN VIDEO DATASET
+================================================================================
+Loading datasets from config: /var/tmp/imitator-game-zxc/tmp/tmp8zuv5hnr.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.64it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.63it/s]
+[94mLoading episodes [0] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+
+================================================================================
+🤖 LOADING SIM TRAJECTORY DATASET
+================================================================================
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  3.03it/s]100%|██████████| 1/1 [00:00<00:00,  3.03it/s]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /home/zxc/Imitator/experiments/act_placemugrack_study/prepared/A50/sim/L0_TwoRobotPlaceMugRack-v1 with split train[0m
+
+================================================================================
+🔗 VALIDATING HUMAN-SIM TASK PAIRINGS
+================================================================================
+
+🔑 Indexing human videos...
+   ✓ human_H57 - 1 episodes
+
+🔑 Indexing sim trajectories (O(sub-datasets))...
+   L0_TwoRobotPlaceMugRack-v1: 11228 samples
+
+🔍 Validating pairings...
+
+✅ Successfully paired: 1 task pair(s)
+
+
+================================================================================
+✅ HUMAN-SIM PAIRED DATASET READY
+================================================================================
+📊 Summary:
+   - Total sim samples: 11228
+   - Valid paired samples: 11228
+   - Skipped samples: 0
+   - Valid paired tasks: 1
+   - Input mode: video_only
+   - Include first frame: True
+================================================================================
+
+
+STEP 1｜数据集与任务配对：11228 个机器人时刻；[('human_H57', 'L0_TwoRobotPlaceMugRack-v1')]
+
+中文解释：这里按任务 ID 将机器人轨迹映射到人类示范，并不要求两段视频的帧号或 episode 号相同。
+接下来在 (Pdb) 中逐行检查：
+  p paired.paired_tasks
+    → 查看配对的人类任务和机器人任务
+  p paired.task_mapper.get_human_task_from_sim(TASK)
+    → 查看 PlaceMugRack 对应的人类任务
+检查完输入 c，继续到下一个暂停点；输入 q 可退出。
+> /home/zxc/Imitator/LearningDocs/trace_real_act_sample.py(112)main()
+-> actual_sim_idx = paired.valid_indices[cli.sample_index]
+(Pdb) 
+STEP 2｜单条真实样本：L0_TwoRobotPlaceMugRack-v1::0；机器人 episode=0，frame=0
+
+sample（配对后的单条样本：机器人观测、动作标签和同任务人类视频）:
+  {"robot_obs": {"states": {"shape": [1, 18], "dtype": "torch.float32", "device": "cpu"}, "view_1": {"shape": [1, 224, 224, 3], "dtype": "torch.float32", "device": "cpu"}}, "robot_actions": {"shape": [24, 16], "dtype": "torch.float32", "device": "cpu"}, "dataset_idx": {"shape": [], "dtype": "torch.int64", "device": "cpu"}, "human_task_id": "human_H57", "sim_task_id": "L0_TwoRobotPlaceMugRack-v1", "sample_id": "L0_TwoRobotPlaceMugRack-v1::0", "robot_first_frame_obs": {"states": {"shape": [1, 18], "dtype": "torch.float32", "device": "cpu"}, "view_1": {"shape": [1, 3, 224, 224], "dtype": "torch.float32", "device": "cpu"}}, "human_repo_id": "human_H57", "human_video": {"shape": [10, 224, 224, 3], "dtype": "torch.float32", "device": "cpu"}}
+
+raw_state（未归一化的当前状态：双臂各 7 个臂关节和 2 个手指关节）:
+  {"shape": [18], "dtype": "torch.float32", "device": "cpu"}
+
+raw_action（未归一化的当前动作标签：双臂各 7 个臂命令和 1 个夹爪命令）:
+  {"shape": [16], "dtype": "torch.float32", "device": "cpu"}
+24 步动作对应的原始行索引： [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+
+中文解释：state 每臂记录 7 个臂关节和 2 个手指，共 18 维；action 每臂只有 1 个夹爪命令，共 16 维。sample 内的数值已经归一化。
+接下来在 (Pdb) 中逐行检查：
+  p raw_state[:7], raw_state[7:9]
+    → 查看左臂关节和两个手指的原始状态
+  p sample['robot_actions'].shape
+    → 查看单条样本的 24×16 动作标签
+  p padding['action.qpos_gripper_actions_is_pad'].tolist()
+    → 查看哪些未来位置超出 episode 尾部
+检查完输入 c，继续到下一个暂停点；输入 q 可退出。
+> /home/zxc/Imitator/LearningDocs/trace_real_act_sample.py(143)main()
+-> loader = DataLoader(paired, batch_size=cli.batch_size,
+(Pdb) 
+STEP 3｜collate 后的真实 batch：此时仍包含人类视频
+
+batch_before_cache（启用特征缓存前的 batch：包含实际读取的人类视频）:
+  {"robot_actions": {"shape": [1, 24, 16], "dtype": "torch.float32", "device": "cpu"}, "dataset_idx": {"shape": [1], "dtype": "torch.int64", "device": "cpu"}, "human_repo_id": ["human_H57"], "human_video": {"shape": [1, 10, 224, 224, 3], "dtype": "torch.float32", "device": "cpu"}, "robot_obs": {"states": {"shape": [1, 1, 18], "dtype": "torch.float32", "device": "cpu"}, "view_1": {"shape": [1, 1, 224, 224, 3], "dtype": "torch.float32", "device": "cpu"}}, "robot_first_frame_obs": {"states": {"shape": [1, 1, 18], "dtype": "torch.float32", "device": "cpu"}, "view_1": {"shape": [1, 1, 3, 224, 224], "dtype": "torch.float32", "device": "cpu"}}}
+
+中文解释：collate 用 torch.stack 在最前面添加 B 维。例如 (24,16) 动作标签变为 (B,24,16)。机器人 view_1 的第二维是观测时间窗。
+接下来在 (Pdb) 中逐行检查：
+  p batch_before_cache['robot_actions'].shape
+    → 查看堆叠后的动作标签
+  p batch_before_cache['human_video'].shape
+    → 查看 B 条人类视频，每条 10 帧
+检查完输入 c，继续到下一个暂停点；输入 q 可退出。
+> /home/zxc/Imitator/LearningDocs/trace_real_act_sample.py(156)main()
+-> agent = ACTAgent(args, torch.device("cuda"), dataloader=loader)
+(Pdb) /home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+\n   Building FrozenVideoBackbone (dinov2_vitl14) [Frozen] ...
+
+============================================================
+[FrozenBB] Setting up frozen backbone cache (dinov2_vitl14)
+  Backbone: 0 frozen tensors | Adapter: 525.8K trainable params
+  [RawFeatCache] Loaded 1 entries ← /home/zxc/Imitator/experiments/act_placemugrack_study/prepared/human_cache_ep0/backbone_dinov2_vitl14/raw_features.pt
+  [RawFeatCache] Cache ready: 1 entries loaded from disk.
+  [Done] CachedFrozenBackbone ready.
+  Expected per-step cost: ~0.15 ms  (dict lookup + adapter)
+============================================================
+
+   FrozenVideoBackbone: backbone frozen, cache active, adapter trainable.
+  [SkipVideo] skip_human_video=True activated on dataset (1 cache entries cover all tasks).
+  Video decode cost (~50-100 ms/sample) eliminated for training.
+
+   ACTAgent ready
+   Task encoder:  frozen_backbone (dinov2_vitl14)
+   Input mode:    video_only
+   Total params:  17.21M  |  Trainable: 17.21M
+
+STEP 4｜正式训练的缓存路径：已加载 step 5400 的 checkpoint
+
+batch（缓存启用后的训练 batch：通过 human_repo_id 查询视频特征）:
+  {"robot_actions": {"shape": [1, 24, 16], "dtype": "torch.float32", "device": "cpu"}, "dataset_idx": {"shape": [1], "dtype": "torch.int64", "device": "cpu"}, "human_repo_id": ["human_H57"], "robot_obs": {"states": {"shape": [1, 1, 18], "dtype": "torch.float32", "device": "cpu"}, "view_1": {"shape": [1, 1, 224, 224, 3], "dtype": "torch.float32", "device": "cpu"}}, "robot_first_frame_obs": {"states": {"shape": [1, 1, 18], "dtype": "torch.float32", "device": "cpu"}, "view_1": {"shape": [1, 1, 3, 224, 224], "dtype": "torch.float32", "device": "cpu"}}}
+
+cached_raw（冻结 DINO 的缓存特征：cls 是视频全局特征，seq 是选取的 patch 特征）:
+  {"cls": {"shape": [1, 1024], "dtype": "torch.float32", "device": "cuda:0"}, "seq": {"shape": [1, 32, 1024], "dtype": "torch.float32", "device": "cuda:0"}}
+
+obs_for_model（送入 ACT 的机器人观测：state 为关节状态，rgb 为机器人相机图像）:
+  {"state": {"shape": [1, 18], "dtype": "torch.float32", "device": "cuda:0"}, "rgb": {"shape": [1, 1, 3, 224, 224], "dtype": "torch.float32", "device": "cuda:0"}}
+
+中文解释：batch 没有 human_video 是因为视频特征已经缓存。raw_cls 经过可训练 Adapter 变为任务条件；机器人图像则转为 CHW，送给另一个 ResNet18 编码器。
+接下来在 (Pdb) 中逐行检查：
+  p 'human_video' in batch
+    → 应为 False：数据读取跳过了视频解码
+  p cached_raw['cls'].shape
+    → DINO 缓存全局特征为 (B,1024)
+  p backbone.cls_adapter[0].weight.requires_grad
+    → 应为 True：Adapter 仍可训练
+检查完输入 c，继续到下一个暂停点；输入 q 可退出。
+> /home/zxc/Imitator/LearningDocs/trace_real_act_sample.py(194)main()
+-> phase, handles, live = "dino_precompute", [], {}
+(Pdb) Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+  [FrozenVideoBackbone] Loading facebook/dinov2-large (DINOv2 via HF) ...
+  ✓ DINOv2 facebook/dinov2-large: 304M params loaded
+
+STEP 5｜缓存来源：固定人类视频帧 → DINO → 原始特征
+
+fixed_video（本轮训练实际固定的人类视频帧：episode 0 的 10 帧）:
+  {"shape": [1, 10, 224, 224, 3], "dtype": "torch.float32", "device": "cuda:0"}
+
+raw_cls（DINO 每帧 CLS token 沿时间平均后的 1024 维特征）:
+  {"shape": [1, 1024], "dtype": "torch.float32", "device": "cuda:0"}
+
+raw_seq（DINO 全部帧的 patch tokens 中选出的最多 32 个特征）:
+  {"shape": [1, 32, 1024], "dtype": "torch.float32", "device": "cuda:0"}
+重算 DINO 与已有缓存的最大绝对误差（cls、seq）： 0.0 0.0
+
+中文解释：10 帧先合并为图像 batch。每帧有 1 个 CLS 和 256 个 patch token；CLS 沿时间平均得到 raw_cls。这次重算仅用于学习检查，正式训练直接读缓存。
+接下来在 (Pdb) 中逐行检查：
+  p report['hooks']['dino_precompute']['dino'][0]['output']['shape']
+    → 查看逐帧 DINO 输出：[10,257,1024]
+  p raw_cls.shape, raw_seq.shape
+    → 查看时间汇总和 patch 选取后的特征
+检查完输入 c，继续到下一个暂停点；输入 q 可退出。
+> /home/zxc/Imitator/LearningDocs/trace_real_act_sample.py(245)main()
+-> phase = "training"
+(Pdb) 
+STEP 6｜训练前向：缓存特征 → task_z；当前观测与动作标签 → CVAE → 动作块
+
+task_z（人类视频经过 Adapter 和 LayerNorm 后的 256 维任务条件）:
+  {"shape": [1, 256], "dtype": "torch.float32", "device": "cuda:0"}
+
+pred_train（训练分支预测的 24 步动作块，用于与 robot_actions 计算 L1）:
+  {"shape": [1, 24, 16], "dtype": "torch.bfloat16", "device": "cuda:0"}
+
+mu（CVAE 潜变量分布的均值，每条样本 32 维）:
+  {"shape": [1, 32], "dtype": "torch.bfloat16", "device": "cuda:0"}
+
+logvar（CVAE 潜变量分布的对数方差，每条样本 32 维）:
+  {"shape": [1, 32], "dtype": "torch.bfloat16", "device": "cuda:0"}
+训练损失（loss=总损失，l1=动作重建误差，kl=潜变量分布约束）： {'loss': 0.06015614792704582, 'l1': 0.05856559798121452, 'kl': 0.00015905499458312988}
+总损失是否保留梯度图： True
+
+中文解释：task_z 是 256 维视频条件；mu/logvar 描述另一种 32 维 CVAE 潜变量。24 个 learned queries 各预测一个 16 维动作，所以输出 (B,24,16)。当前损失为 L1+10×KL。
+接下来在 (Pdb) 中逐行检查：
+  p task_z.shape, mu.shape, logvar.shape
+    → 对比视频任务条件与 CVAE 分布参数的维度
+  p agent.model.query_embed.weight.shape
+    → 查看 24 个可训练动作查询向量
+  p pred_train.shape
+    → 查看动作块预测，与 robot_actions 形状一致
+检查完输入 c，继续到下一个暂停点；输入 q 可退出。
+> /home/zxc/Imitator/LearningDocs/trace_real_act_sample.py(275)main()
+-> phase = "inference_prepare"
+(Pdb) 
+STEP 7｜推理前向：不输入真实动作标签，跳过 CVAE encoder
+
+eval_task_z（推理准备阶段缓存的任务条件，随后供 get_action 使用）:
+  {"shape": [1, 256], "dtype": "torch.float32", "device": "cuda:0"}
+
+prediction（不输入真实动作标签时，策略预测的 24 步动作块）:
+  {"shape": [1, 24, 16], "dtype": "torch.float32", "device": "cuda:0"}
+
+latent_inference（推理时使用的 32 维零潜变量，尚未经过 latent_out_proj）:
+  {"shape": [1, 32], "dtype": "torch.float32", "device": "cuda:0"}
+
+中文解释：DETRVAE 根据 actions 是否为 None 选择分支。推理没有真实动作标签，直接使用 32 维零 latent。零 latent 经过带 bias 的投影后，256 维 token 不必为零。
+接下来在 (Pdb) 中逐行检查：
+  p live['inference']['model']['kwargs']['actions']
+    → 应为 None：未来真实动作没有进入推理
+  p 'cvae_encoder' in report['hooks']['inference']
+    → 应为 False：推理没有调用 CVAE encoder
+  p torch.count_nonzero(latent_inference).item()
+    → 应为 0：投影前的 latent 全为零
+检查完输入 c，继续到下一个暂停点；输入 q 可退出。
+> /home/zxc/Imitator/LearningDocs/trace_real_act_sample.py(299)main()
+-> for handle in handles:
+(Pdb) 
+TRACE PASSED｜跟踪通过；结果已保存到 /home/zxc/Imitator/LearningDocs/real_sample_trace.json

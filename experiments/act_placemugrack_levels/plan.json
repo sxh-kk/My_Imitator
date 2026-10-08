@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-07",
+  "status": "protocol_fixed_before_formal_training",
+  "source_commit": "d6d16ec511bc389e0a207692730c137bc022ef14",
+  "dataset_revision": "57fa861d911afe899da5c0f28d973151411d46d1",
+  "levels": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "conditions": {
+    "B0": [
+      "L0"
+    ],
+    "B01": [
+      "L0",
+      "L1"
+    ],
+    "B012": [
+      "L0",
+      "L1",
+      "L2"
+    ]
+  },
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "pilot": "B012_s1",
+  "run_queue": [
+    "B012_s1",
+    "B0_s1",
+    "B01_s1",
+    "B0_s2",
+    "B01_s2",
+    "B012_s2",
+    "B0_s3",
+    "B01_s3",
+    "B012_s3"
+  ],
+  "batch_size": 64,
+  "optimizer_updates": 18000,
+  "warmup_updates": 900,
+  "milestones": [
+    1800,
+    5400,
+    9000,
+    12600,
+    18000
+  ],
+  "human_train_episode": 0,
+  "human_eval_episode": 1,
+  "phase_a": {
+    "seed_start": 3000,
+    "episodes_per_model_level": 100,
+    "models": [
+      "A50_s1",
+      "A50_s2",
+      "A50_s3"
+    ]
+  },
+  "dev": {
+    "seed_start": 4000,
+    "episodes_per_model_level": 20
+  },
+  "test": {
+    "seed_start": 5000,
+    "episodes_per_model_level": 100
+  },
+  "selection": [
+    "max_macro_success_at_end",
+    "max_macro_success_once",
+    "min_step"
+  ],
+  "normalizer": "single_training_only_shared_stats_per_condition_all_levels",
+  "level_sampling": "equal_levels_per_batch_extra_rotates_every_update",
+  "eval_num_envs": 4,
+  "episode_steps": 500,
+  "query_frequency": 4,
+  "light_temporal_aggregation_window": 4,
+  "storage_budget_GiB": 30
+}

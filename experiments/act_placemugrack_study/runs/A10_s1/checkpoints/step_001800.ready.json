@@ -1,0 +1,10 @@
+{
+  "path": "/home/zxc/Imitator/experiments/act_placemugrack_study/runs/A10_s1/checkpoints/step_001800.pt",
+  "sha256": "d4dc98f4fadb5bd7dd15b9b74f1d696630b8424a5137d6594c95df6b2ab07a9c",
+  "bytes": 205347905,
+  "iteration": 1800,
+  "roundtrip_equal": true,
+  "optimizer_steps": [
+    1800
+  ]
+}
