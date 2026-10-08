@@ -1,8 +1,8 @@
 # PlaceMugRack：L0／L1／L2 数据覆盖实验计划
 
-日期：2026-10-07。执行进度更新：2026-10-08。状态：**900条冻结跨级别评估已完成，数据、真实样本、更新／评估一致性检查及标定通过；B012_s1 已完成18,000次更新、五个checkpoint及300次开发评估，当前并行执行 B0_s1、B01_s1。控制器将自动接续其余训练、独立最终测试与审计。运行进度见 [status.json](../experiments/act_placemugrack_levels/status.json)。**
+日期：2026-10-07。完成时间：2026-10-08 **13:54:56 CST**。状态：**九组训练、45个checkpoint、900条冻结评估、2,700条开发评估和2,700条独立最终测试全部完成，最终审计通过。** 最终结果见 [10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md](10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)，审计见 [final-audit.json](../experiments/act_placemugrack_levels/checks/final-audit.json)。以下保留原执行协议供复查。
 
-10月8日09:28恢复说明：旧控制器退出、进度文件陈旧；已将中断的 B0_s1／B01_s1 归档，并从原seed重新训练。已完成的 B012_s1 保留，实验源码和冻结协议不变。队列现由 `imitator-placemugrack-levels.service` 承载；详见[恢复记录](../experiments/act_placemugrack_levels/RECOVERY.md)。检查当前真实进程请运行 `python scripts/check_levels_status.py`，仅阅读静态状态文件无法判断进程是否存活。
+10月8日09:28恢复说明：旧控制器退出、进度文件陈旧；已将中断的 B0_s1／B01_s1 归档，并从原seed重新训练。已完成的 B012_s1 保留，实验源码和冻结协议不变。恢复队列由 `imitator-placemugrack-levels.service` 承载，已正常完成并释放实验进程；详见[恢复记录](../experiments/act_placemugrack_levels/RECOVERY.md)。`python scripts/check_levels_status.py` 现在报告 `complete`；实验正常结束后控制器不再存活，服务inactive和退出码0符合预期。
 
 本轮围绕同一个任务 PlaceMugRack，先测试现有 L0 策略跨级别执行的能力，再比较机器人监督数据覆盖范围的收益。沿用当前官方 ACT、冻结 DINOv2-L、human video 条件和仿真实现；新增工作限定在实验包装脚本、数据配置、采样与记录。既有 A50 权重、数据及 [上一轮结果](07_PLACEMUGRACK_EXPERIMENT_RESULTS.md) 保留。
 

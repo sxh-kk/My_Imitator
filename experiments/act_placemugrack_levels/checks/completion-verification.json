@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-08T14:43:58.331325+08:00",
+  "experiment_completed_at": "2026-10-08T13:54:56.271215+08:00",
+  "counts": {
+    "training_runs": 9,
+    "optimizer_updates": 162000,
+    "sample_presentations": 10368000,
+    "checkpoints": 45,
+    "phase_a_episodes": 900,
+    "dev_episodes": 2700,
+    "test_episodes": 2700,
+    "videos": 72
+  },
+  "execution_source_hashes_unchanged": true,
+  "final_tests_after_selection_freeze": true,
+  "initial_conditions_paired": true,
+  "service": [
+    "ExecMainStatus=0",
+    "ActiveState=inactive",
+    "SubState=dead"
+  ],
+  "report_and_results_sha256": {
+    "results.json": "dc0701faf696234dad4450d80a01c29ac37ff682a667ca66ce624cd2e34d077f",
+    "checks/final-audit.json": "62995b80b8ba24cc668b4ae7952ff4052ca230e13a768b70b69a3a5227d0f35c"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "condition": "B01",
+  "seed": 1,
+  "steps": 18000,
+  "samples": 1152000,
+  "batch_size": 64,
+  "workers": 8,
+  "wall_seconds": 2644.529007911682,
+  "initialization_seconds": 41.42209768295288,
+  "steady_steps": 17950,
+  "steady_step_median_s": 0.06511921600031201,
+  "steady_step_p95_s": 0.08256368600123096,
+  "steady_mean_step_s": 0.06230423979582148,
+  "samples_per_second": 1027.217412646968,
+  "data_wait_mean_s": 0.00039730684726348555,
+  "gpu_update_ms_median": 64.12556838989258,
+  "peak_allocated_GiB": 1.5646319389343262,
+  "peak_reserved_GiB": 1.837890625,
+  "level_sample_counts": {
+    "L0": 576000,
+    "L1": 576000
+  },
+  "sampling": {
+    "seed": 10001,
+    "completed_batches": 18000,
+    "extra_rotation": 0,
+    "plan_sha256": "d20f612234afad0b6744be7a2b45a07afac9ed3b8d5fbc9875deab0dd8bc928f",
+    "counts": {
+      "L0": 576000,
+      "L1": 576000
+    },
+    "passes_and_cursors": {
+      "L0": {
+        "pass_index": 51,
+        "cursor": 3372
+      },
+      "L1": {
+        "pass_index": 47,
+        "cursor": 8287
+      }
+    }
+  }
+}

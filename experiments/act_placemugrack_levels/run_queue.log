@@ -4,3 +4,27 @@ START B0_s1 2506521
 START B01_s1 2506523
 START B0_s1 3120399
 START B01_s1 3120400
+FINISH B0_s1
+START B0_s2 3210456
+FINISH B01_s1
+START B01_s2 3212776
+FINISH B0_s2
+START B012_s2 3298614
+FINISH B01_s2
+START B0_s3 3301027
+FINISH B012_s2
+START B01_s3 3387842
+FINISH B0_s3
+START B012_s3 3390210
+FINISH B01_s3
+FINISH B012_s3
+TEST DONE B012_s1
+TEST DONE B0_s1
+TEST DONE B01_s1
+TEST DONE B0_s2
+TEST DONE B01_s2
+TEST DONE B012_s2
+TEST DONE B0_s3
+TEST DONE B01_s3
+TEST DONE B012_s3
+SUMMARY COMPLETE {"B0": {"L0": {"success_at_end": {"mean": 0.9400000000000001, "sample_std": 0.03605551275463986, "per_training_seed": [0.95, 0.9, 0.97]}, "success_once": {"mean": 0.9866666666666667, "sample_std": 0.005773502691896262, "per_training_seed": [0.99, 0.98, 0.99]}}, "L1": {"success_at_end": {"mean": 0.0, "sample_std": 0.0, "per_training_seed": [0.0, 0.0, 0.0]}, "success_once": {"mean": 0.0, "sample_std": 0.0, "per_training_seed": [0.0, 0.0, 0.0]}}, "L2": {"success_at_end": {"mean": 0.0, "sample_std": 0.0, "per_training_seed": [0.0, 0.0, 0.0]}, "success_once": {"mean": 0.0, "sample_std": 0.0, "per_training_seed": [0.0, 0.0, 0.0]}}}, "B01": {"L0": {"success_at_end": {"mean": 0.9333333333333332, "sample_std": 0.025166114784235798, "per_training_seed": [0.91, 0.93, 0.96]}, "success_once": {"mean": 0.9866666666666667, "sample_std": 0.005773502691896262, "per_training_seed": [0.99, 0.98, 0.99]}}, "L1": {"success_at_end": {"mean": 0.8266666666666667, "sample_std": 0.023094010767584987, "per_training_seed": [0.84, 0.8, 0.84]}, "success_once": {"mean": 0.9166666666666666, "sample_std": 0.06658328118479392, "per_training_seed": [0.95, 0.84, 0.96]}}, "L2": {"success_at_end": {"mean": 0.0, "sample_std": 0.0, "per_training_seed": [0.0, 0.0, 0.0]}, "success_once": {"mean": 0.0, "sample_std": 0.0, "per_training_seed": [0.0, 0.0, 0.0]}}}, "B012": {"L0": {"success_at_end": {"mean": 0.9933333333333333, "sample_std": 0.011547005383792525, "per_training_seed": [1.0, 1.0, 0.98]}, "success_once": {"mean": 1.0, "sample_std": 0.0, "per_training_seed": [1.0, 1.0, 1.0]}}, "L1": {"success_at_end": {"mean": 0.9733333333333333, "sample_std": 0.01527525231651948, "per_training_seed": [0.99, 0.97, 0.96]}, "success_once": {"mean": 0.9966666666666667, "sample_std": 0.005773502691896262, "per_training_seed": [1.0, 1.0, 0.99]}}, "L2": {"success_at_end": {"mean": 0.9933333333333333, "sample_std": 0.011547005383792525, "per_training_seed": [0.98, 1.0, 1.0]}, "success_once": {"mean": 0.9966666666666667, "sample_std": 0.005773502691896262, "per_training_seed": [0.99, 1.0, 1.0]}}}}

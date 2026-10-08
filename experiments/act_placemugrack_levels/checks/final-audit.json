@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "counts": {
+    "training_runs": 9,
+    "optimizer_updates": 162000,
+    "sample_presentations": 10368000,
+    "checkpoints": 45,
+    "phase_a_episodes": 900,
+    "dev_episodes": 2700,
+    "test_episodes": 2700,
+    "videos": 72
+  },
+  "rows": [
+    {
+      "run": "B012_s1",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 384000,
+        "L1": 384000,
+        "L2": 384000
+      },
+      "selected_step": 12600
+    },
+    {
+      "run": "B0_s1",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 1152000
+      },
+      "selected_step": 12600
+    },
+    {
+      "run": "B01_s1",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 576000,
+        "L1": 576000
+      },
+      "selected_step": 9000
+    },
+    {
+      "run": "B0_s2",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 1152000
+      },
+      "selected_step": 5400
+    },
+    {
+      "run": "B01_s2",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 576000,
+        "L1": 576000
+      },
+      "selected_step": 18000
+    },
+    {
+      "run": "B012_s2",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 384000,
+        "L1": 384000,
+        "L2": 384000
+      },
+      "selected_step": 9000
+    },
+    {
+      "run": "B0_s3",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 1152000
+      },
+      "selected_step": 12600
+    },
+    {
+      "run": "B01_s3",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 576000,
+        "L1": 576000
+      },
+      "selected_step": 5400
+    },
+    {
+      "run": "B012_s3",
+      "steps": 18000,
+      "level_counts": {
+        "L0": 384000,
+        "L1": 384000,
+        "L2": 384000
+      },
+      "selected_step": 9000
+    }
+  ],
+  "all_core_and_old_scripts_unchanged": true,
+  "all_checkpoint_sha256_verified": true,
+  "all_same_level_seeds_paired": true,
+  "all_tests_after_freeze": true,
+  "completed_at": 1791438895.3087888
+}

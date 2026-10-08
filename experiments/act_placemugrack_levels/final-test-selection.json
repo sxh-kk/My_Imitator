@@ -1,0 +1,955 @@
+{
+  "frozen_at": 1791433303.1392133,
+  "selection_protocol": [
+    "max_macro_success_at_end",
+    "max_macro_success_once",
+    "min_step"
+  ],
+  "selections": [
+    {
+      "run": "B012_s1",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B012_s1/checkpoints/step_012600.pt",
+      "checkpoint_sha256": "378d7803ad970272a2709b683ec5b6837b64aac3c5a17bf77f8ac9cf2727b0df",
+      "step": 12600,
+      "macro_dev_success_at_end": 0.9500000000000001,
+      "macro_dev_success_once": 1.0,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.15,
+          "macro_success_once": 0.6333333333333334,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.45,
+              "success_once": 0.7
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.65
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.55
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.9333333333333332,
+          "macro_success_once": 0.9500000000000001,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.9,
+              "success_once": 0.95
+            },
+            "L2": {
+              "success_at_end": 0.9,
+              "success_once": 0.9
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 0.9333333333333332,
+          "macro_success_once": 0.9666666666666667,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 0.8,
+              "success_once": 0.9
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.9500000000000001,
+          "macro_success_once": 1.0,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 0.9,
+              "success_once": 1.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 0.9333333333333332,
+          "macro_success_once": 0.9833333333333334,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 0.85,
+              "success_once": 0.95
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "B0_s1",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B0_s1/checkpoints/step_012600.pt",
+      "checkpoint_sha256": "83394bcf9f7593cad8718bfb3369fcf31fdc7c1673e75f8ebc0990a14813f684",
+      "step": 12600,
+      "macro_dev_success_at_end": 0.3333333333333333,
+      "macro_dev_success_once": 0.3333333333333333,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.31666666666666665,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.25,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.75,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 0.31666666666666665,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.3333333333333333,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 0.3333333333333333,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "B01_s1",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B01_s1/checkpoints/step_009000.pt",
+      "checkpoint_sha256": "259acb21739e423a0b85216adf8cbe2eed4351abd7791a9951df217833a50387",
+      "step": 9000,
+      "macro_dev_success_at_end": 0.6166666666666667,
+      "macro_dev_success_once": 0.65,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.43333333333333335,
+          "macro_success_once": 0.5833333333333334,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.9,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.4,
+              "success_once": 0.75
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.6166666666666667,
+          "macro_success_once": 0.6333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.85,
+              "success_once": 0.9
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 0.6166666666666667,
+          "macro_success_once": 0.65,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.85,
+              "success_once": 0.95
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.5499999999999999,
+          "macro_success_once": 0.5666666666666668,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.9,
+              "success_once": 0.9
+            },
+            "L1": {
+              "success_at_end": 0.75,
+              "success_once": 0.8
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 0.5666666666666668,
+          "macro_success_once": 0.5833333333333334,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.9,
+              "success_once": 0.95
+            },
+            "L1": {
+              "success_at_end": 0.8,
+              "success_once": 0.8
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "B0_s2",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B0_s2/checkpoints/step_005400.pt",
+      "checkpoint_sha256": "89d5e0dc8060e57a087288a4b0be38170070f961b64264c730cfd445bdf2129a",
+      "step": 5400,
+      "macro_dev_success_at_end": 0.3333333333333333,
+      "macro_dev_success_once": 0.3333333333333333,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.31666666666666665,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.3333333333333333,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 0.31666666666666665,
+          "macro_success_once": 0.31666666666666665,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 0.95
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.3333333333333333,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 0.3333333333333333,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "B01_s2",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B01_s2/checkpoints/step_018000.pt",
+      "checkpoint_sha256": "1c09a4d2fdd40bbf6611a140ea041c8d105158b67a5f85e9374c4e4a13c8112b",
+      "step": 18000,
+      "macro_dev_success_at_end": 0.6,
+      "macro_dev_success_once": 0.6,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.35000000000000003,
+          "macro_success_once": 0.5166666666666667,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.75,
+              "success_once": 0.9
+            },
+            "L1": {
+              "success_at_end": 0.3,
+              "success_once": 0.65
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.4666666666666666,
+          "macro_success_once": 0.5499999999999999,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.9,
+              "success_once": 0.95
+            },
+            "L1": {
+              "success_at_end": 0.5,
+              "success_once": 0.7
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 0.5499999999999999,
+          "macro_success_once": 0.5499999999999999,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.9,
+              "success_once": 0.9
+            },
+            "L1": {
+              "success_at_end": 0.75,
+              "success_once": 0.75
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.5499999999999999,
+          "macro_success_once": 0.5666666666666667,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 0.95
+            },
+            "L1": {
+              "success_at_end": 0.7,
+              "success_once": 0.75
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 0.6,
+          "macro_success_once": 0.6,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 0.95
+            },
+            "L1": {
+              "success_at_end": 0.85,
+              "success_once": 0.85
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "B012_s2",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B012_s2/checkpoints/step_009000.pt",
+      "checkpoint_sha256": "48520ad83babaafbbd58c94eab175f90c11387a8359cd0d0ebec0f2849548f08",
+      "step": 9000,
+      "macro_dev_success_at_end": 1.0,
+      "macro_dev_success_once": 1.0,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.21666666666666667,
+          "macro_success_once": 0.39999999999999997,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.6,
+              "success_once": 0.7
+            },
+            "L1": {
+              "success_at_end": 0.05,
+              "success_once": 0.5
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.9,
+          "macro_success_once": 0.9833333333333334,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.9,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.8,
+              "success_once": 0.95
+            },
+            "L2": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 1.0,
+          "macro_success_once": 1.0,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.9833333333333334,
+          "macro_success_once": 1.0,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 0.9499999999999998,
+          "macro_success_once": 0.9833333333333334,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 0.95
+            },
+            "L1": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "B0_s3",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B0_s3/checkpoints/step_012600.pt",
+      "checkpoint_sha256": "7c222e45fa2761e65a357ee240ffd075020bcba07811ac31422ab4be159965fc",
+      "step": 12600,
+      "macro_dev_success_at_end": 0.3333333333333333,
+      "macro_dev_success_once": 0.3333333333333333,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.3,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.9,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.31666666666666665,
+          "macro_success_once": 0.31666666666666665,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 0.95
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 0.31666666666666665,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.3333333333333333,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 0.3333333333333333,
+          "macro_success_once": 0.3333333333333333,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "B01_s3",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B01_s3/checkpoints/step_005400.pt",
+      "checkpoint_sha256": "d05aa7ebc2438221fcf6e3980c00b860d7969f89fa762093cb936f1c36693a5b",
+      "step": 5400,
+      "macro_dev_success_at_end": 0.6,
+      "macro_dev_success_once": 0.6666666666666666,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.4166666666666667,
+          "macro_success_once": 0.6166666666666667,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.85,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.4,
+              "success_once": 0.85
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.6,
+          "macro_success_once": 0.6666666666666666,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.8,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 0.5833333333333334,
+          "macro_success_once": 0.5833333333333334,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.9,
+              "success_once": 0.9
+            },
+            "L1": {
+              "success_at_end": 0.85,
+              "success_once": 0.85
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.5666666666666667,
+          "macro_success_once": 0.5666666666666667,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 0.95
+            },
+            "L1": {
+              "success_at_end": 0.75,
+              "success_once": 0.75
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 0.4833333333333334,
+          "macro_success_once": 0.5,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.8,
+              "success_once": 0.8
+            },
+            "L1": {
+              "success_at_end": 0.65,
+              "success_once": 0.7
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "B012_s3",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B012_s3/checkpoints/step_009000.pt",
+      "checkpoint_sha256": "07f86d4787bb782336a28b2288ad49e8cfa24b7b0b96005edddb26b6beb7d995",
+      "step": 9000,
+      "macro_dev_success_at_end": 1.0,
+      "macro_dev_success_once": 1.0,
+      "development": [
+        {
+          "step": 1800,
+          "macro_success_at_end": 0.4833333333333334,
+          "macro_success_once": 0.5666666666666667,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.8,
+              "success_once": 0.85
+            },
+            "L1": {
+              "success_at_end": 0.65,
+              "success_once": 0.85
+            },
+            "L2": {
+              "success_at_end": 0.0,
+              "success_once": 0.0
+            }
+          }
+        },
+        {
+          "step": 5400,
+          "macro_success_at_end": 0.9333333333333332,
+          "macro_success_once": 1.0,
+          "levels": {
+            "L0": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 0.9,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            }
+          }
+        },
+        {
+          "step": 9000,
+          "macro_success_at_end": 1.0,
+          "macro_success_once": 1.0,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            }
+          }
+        },
+        {
+          "step": 12600,
+          "macro_success_at_end": 0.9833333333333334,
+          "macro_success_once": 1.0,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 0.95,
+              "success_once": 1.0
+            }
+          }
+        },
+        {
+          "step": 18000,
+          "macro_success_at_end": 1.0,
+          "macro_success_once": 1.0,
+          "levels": {
+            "L0": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L1": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            },
+            "L2": {
+              "success_at_end": 1.0,
+              "success_once": 1.0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

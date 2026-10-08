@@ -4,9 +4,9 @@
   "upstream_repository": "https://github.com/imitator-game/The-Imitator-Game",
   "upstream_commit": "d6d16ec511bc389e0a207692730c137bc022ef14",
   "snapshot_layout": "The-Imitator-Game is a regular directory, not a submodule.",
-  "captured_at": "2026-10-08T09:37:21.304078+08:00",
-  "file_count": 2908,
-  "copied_bytes": 432408022,
+  "captured_at": "2026-10-08T14:45:09.009774+08:00",
+  "file_count": 3333,
+  "copied_bytes": 482056984,
   "exclusions": [
     "datasets",
     "downloaded task assets",
@@ -67,16 +67,16 @@
       "sha256": "70e0078e6f44ebac9ab1a308648b79876cea09eb6b2bb3e53a60177fafa08e9d"
     },
     "LearningDocs/09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md": {
-      "bytes": 31972,
-      "sha256": "a0e7c98925af89c6b57d3deb386de66b076fa47ef3ad67b6f2f0e58b5b74ede8"
+      "bytes": 32050,
+      "sha256": "f16e53319df10cdce17fba9dc273f0f70a561af49562bb3fa1089dcb26ff3dde"
     },
     "LearningDocs/10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md": {
-      "bytes": 3009,
-      "sha256": "351384a704998948dec2019d6f14ce8cd952b84b66fe6136b47bed3b477a6300"
+      "bytes": 10541,
+      "sha256": "cc551c37c0d1479549bae5195503e10513fbff4a84eda1427a74f5af0089246a"
     },
     "LearningDocs/README.md": {
-      "bytes": 4901,
-      "sha256": "df07810da5772b8f3f0da41391b0f555708b56bd704d8b82e50b083cd38a4668"
+      "bytes": 4936,
+      "sha256": "36d8b1ae63728b19b3a474a69001369f59f6aab4fa474cc5aa73c3c6aa8d9626"
     },
     "LearningDocs/real_sample_trace.json": {
       "bytes": 24666,
@@ -103,12 +103,12 @@
       "sha256": "fdba9b1f960a1216c109a02ea4f7864effff595f3ed25bb188b1355f52834da8"
     },
     "PUBLICATION_STATUS.json": {
-      "bytes": 1058,
-      "sha256": "523eeeeae4ab60f3c04af61346a21fe56d187acf6d1ebb7de3dd480e40a0fd05"
+      "bytes": 1282,
+      "sha256": "5b2841c6d10ea6a60ec0704b9102086acf3214f3f9ed9f7d46b800c4ec685669"
     },
     "README.md": {
-      "bytes": 4117,
-      "sha256": "066e3e684e1af47b7f3547ad99c9d9d9b65f7b733fd397ac26a7bf7361454d81"
+      "bytes": 4499,
+      "sha256": "d0d5bf4c143c0a42d27ee9c2c4d210f394082d5f659d2ddff87235c11713a26b"
     },
     "The-Imitator-Game/.gitignore": {
       "bytes": 1548,
@@ -9139,12 +9139,12 @@
       "sha256": "e787af315c76592925d288f5ee7483e84fe30e86daa9333ae1d85cba58d965ac"
     },
     "experiments/act_placemugrack_levels/README.md": {
-      "bytes": 1864,
-      "sha256": "99fb7d1b5a73a1378528e67f45760fb2dadc0875a23e281a3f2398b96966026e"
+      "bytes": 2161,
+      "sha256": "dab2540c974ec5e9c203e0438d3ac8902a9cfd072231c7ab7a67e70f9449036d"
     },
     "experiments/act_placemugrack_levels/RECOVERY.md": {
-      "bytes": 3022,
-      "sha256": "fbfc4c0f99f6dee6668841cba94630480d397cacec5d91e174a334b2c6d5b1c6"
+      "bytes": 3643,
+      "sha256": "ea1e1a777cd39af50cffb3a89e7a8fc6369cbecc37a238afca65ef101b88b4ea"
     },
     "experiments/act_placemugrack_levels/audit-data.log": {
       "bytes": 36497,
@@ -9358,6 +9358,10 @@
       "bytes": 94964,
       "sha256": "6b410cfe7a083c2ca937feb0027a924dcc730cd3298cf2913a4f7baf9b6d95e3"
     },
+    "experiments/act_placemugrack_levels/checks/completion-verification.json": {
+      "bytes": 823,
+      "sha256": "132e07a1a5ce034a3dee48366d071f9764e18468364841c16bcc341f153d126d"
+    },
     "experiments/act_placemugrack_levels/checks/data-boundaries.json": {
       "bytes": 889,
       "sha256": "1bd2abd4f6840478a84849eeff7857859cc87d79a12c76917587c368f426371b"
@@ -9369,6 +9373,10 @@
     "experiments/act_placemugrack_levels/checks/evaluator-equivalence.json": {
       "bytes": 221,
       "sha256": "7f683e8c7b90664fd1a2348ce534e022157f670dd2218749d851a1338d3cceb8"
+    },
+    "experiments/act_placemugrack_levels/checks/final-audit.json": {
+      "bytes": 1941,
+      "sha256": "62995b80b8ba24cc668b4ae7952ff4052ca230e13a768b70b69a3a5227d0f35c"
     },
     "experiments/act_placemugrack_levels/checks/input-provenance.json": {
       "bytes": 144965,
@@ -9541,6 +9549,34 @@
     "experiments/act_placemugrack_levels/execution.lock": {
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "experiments/act_placemugrack_levels/failure_analysis.json": {
+      "bytes": 127279,
+      "sha256": "07287740f82aa2f7395aedb8519035fbbd092fcac4e1ae1d95db4438a7cc8fc0"
+    },
+    "experiments/act_placemugrack_levels/figures/failure-stages.png": {
+      "bytes": 57183,
+      "sha256": "3dc9437e1331e01190a454c0f0955a17b741d906501e1d1a8c88c932bca59eb2"
+    },
+    "experiments/act_placemugrack_levels/figures/learning-curves.png": {
+      "bytes": 179870,
+      "sha256": "d6e1880ce1c27d9c8dacf8fa92b2c20b4b64488c3dff210e12cd36c18e27c1e2"
+    },
+    "experiments/act_placemugrack_levels/figures/terminal-success.pdf": {
+      "bytes": 16183,
+      "sha256": "94685fa95030fc015f1154ccaba4ad299e889b35ec0fa37ee2ddbd049b15332c"
+    },
+    "experiments/act_placemugrack_levels/figures/terminal-success.png": {
+      "bytes": 61637,
+      "sha256": "e5f010ac1847a9b9421833d4df3decb45f173239e6b216d3a0c3ccc2350ba834"
+    },
+    "experiments/act_placemugrack_levels/final-test-selection.json": {
+      "bytes": 26069,
+      "sha256": "6d53d33f708281026893f05f1089ff8f17463051223ed77c1d0e7349d19a1a86"
+    },
+    "experiments/act_placemugrack_levels/final_audit.log": {
+      "bytes": 547,
+      "sha256": "0b6b73eee2a971141fc48d125962e146968dfda29bdf8f8f05774dbdd3122549"
     },
     "experiments/act_placemugrack_levels/final_audit.py": {
       "bytes": 6121,
@@ -9834,13 +9870,21 @@
       "bytes": 2127,
       "sha256": "784f5cdc8d002a7e92516e6a5b1f37723ee44895a52e739675997e1dbe322db1"
     },
+    "experiments/act_placemugrack_levels/resource-summary.json": {
+      "bytes": 830,
+      "sha256": "f7abece46d62fbdb11bd6c10098da279e97eeaff38215519481e587dd32ee74a"
+    },
+    "experiments/act_placemugrack_levels/results.json": {
+      "bytes": 35448,
+      "sha256": "dc0701faf696234dad4450d80a01c29ac37ff682a667ca66ce624cd2e34d077f"
+    },
     "experiments/act_placemugrack_levels/roundtrip.log": {
       "bytes": 31318,
       "sha256": "fb683f20ab81492e644cf167ac2315936f1d7d9f79139b71c2d160e4e75ec6db"
     },
     "experiments/act_placemugrack_levels/run_queue.log": {
-      "bytes": 119,
-      "sha256": "fc16e6fe623ab74e14d730e4a3880aa03557bf5975b653dd827a058ca71ccf99"
+      "bytes": 2600,
+      "sha256": "ceef1a47cd25919ec58abe7903a6c0f636dd3e55e459fda21a3d8789427c661c"
     },
     "experiments/act_placemugrack_levels/run_queue.py": {
       "bytes": 4797,
@@ -10030,9 +10074,469 @@
       "bytes": 2462,
       "sha256": "d2da976d7b48aeb3dc8283736e589a750be6418b1aa3e9871c88d09654ed61d1"
     },
+    "experiments/act_placemugrack_levels/runs/B012_s1/test.log": {
+      "bytes": 31753,
+      "sha256": "d4c0b2e48cfc46bb5436402d32910c6ef30a4675f0040755cec0743a53bd9a51"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s1/test/L0/progress.json": {
+      "bytes": 452575,
+      "sha256": "2401dbf281ce0b28cfd38935acda72eea8b7a556b91b5ea63cea13cf478cc92f"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s1/test/L0/result.json": {
+      "bytes": 453266,
+      "sha256": "d35dcacff7140bc1a52549812419a075f85676689403f1318551c89473e4c6fb"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s1/test/L1/progress.json": {
+      "bytes": 452811,
+      "sha256": "0b4525bad4df6c228a35cec910800e60f6d4be28d72eadab760d4169bac9b0ea"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s1/test/L1/result.json": {
+      "bytes": 453520,
+      "sha256": "f6966931191cba4321e9f3231562582bc6ee5d46ada695f762e61801c3af3e6d"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s1/test/L2/progress.json": {
+      "bytes": 458337,
+      "sha256": "af3feef8c6ff291d3c8b0398de48392f7276e64d784e374ac6ae671e1d544142"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s1/test/L2/result.json": {
+      "bytes": 459094,
+      "sha256": "9035ac0cd54f4c26c1a83d5b5d5fcf927ab2ebfd7cda0243ae0f17c4b608dc08"
+    },
     "experiments/act_placemugrack_levels/runs/B012_s1/train.jsonl": {
       "bytes": 116835,
       "sha256": "d0696aa27d9568ca2dcc95e150582a466a9f01ba7207c94ff2246bf164dda840"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/batch_shapes.json": {
+      "bytes": 342,
+      "sha256": "f6de4a2591b40d990b3cce212effd24752ec4cfd46d1321ea8b4a52ef776f435"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/checkpoints/step_001800.ready.json": {
+      "bytes": 298,
+      "sha256": "7fe42098fea1a714403f22f5f2cd7c333c92148f80235b461404ce552d8b8ac3"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/checkpoints/step_005400.ready.json": {
+      "bytes": 298,
+      "sha256": "f2e27ad11d26fc8c3ea1276db1837090bd9060f5eecbb2f549a290b4f71d047d"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/checkpoints/step_009000.ready.json": {
+      "bytes": 298,
+      "sha256": "2225af75bee4b01486652250618f34beffc2577fc4efd2d3683ed4a94296caf8"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/checkpoints/step_012600.ready.json": {
+      "bytes": 300,
+      "sha256": "caffd6d3b560a82a968bd496d0c9787d21ed50c2300c1459490e11bc07489364"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/checkpoints/step_018000.ready.json": {
+      "bytes": 300,
+      "sha256": "755245dddff201bb6a3710c9eac948fc5bd0e632e79b08d50df21d8a0c5ef4fc"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/complete.json": {
+      "bytes": 1200,
+      "sha256": "35324614cdbe117f1771e9032b563e01eb2b416c39782477dbfc878645307e46"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/config.json": {
+      "bytes": 3768,
+      "sha256": "74ef9d8ab06f0944e09b6f9e0fd61a9917a470601028d5a4e3353aea7dc7f97f"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_001800/L0/progress.json": {
+      "bytes": 93225,
+      "sha256": "0e0cd2409c32bf23f247a75d901d08f2cc5b5cd73dec01164d6241f086cec992"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_001800/L0/result.json": {
+      "bytes": 93969,
+      "sha256": "05298eb976c57210dce4340c0b635ba3e4124c6a4689e600ea08f6ce4d698c96"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_001800/L1/progress.json": {
+      "bytes": 93364,
+      "sha256": "fa6a1836dd6eec54e646a2b5c7f09da371f61f1930e0908179a21dd3b56cfb92"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_001800/L1/result.json": {
+      "bytes": 94098,
+      "sha256": "44256f50e3e25b9c66820c08d30c6369def73a5ee8fa2c4abfc2962dc66cb402"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_001800/L2/progress.json": {
+      "bytes": 94823,
+      "sha256": "04f431c3c2de9c617e75d9ae560b3a27a0b60aee0066928de6a439d3a3318b6d"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_001800/L2/result.json": {
+      "bytes": 95537,
+      "sha256": "83e07a77c301ef0fb43bc8cae51b6625beb74517e0f4c5c2a1d15994f0baaea6"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_005400/L0/progress.json": {
+      "bytes": 92913,
+      "sha256": "86c520a76cabbf5f928d1b42e264602a0b77414f93292fb4e255cb7d2ba612aa"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_005400/L0/result.json": {
+      "bytes": 93594,
+      "sha256": "24979eb9b334d04b7c851f3ebb7cca2977b15f24195c7869c8867d913ae5feba"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_005400/L1/progress.json": {
+      "bytes": 92878,
+      "sha256": "331e2769d0567c7e55929ec905803c4cd9bdc97c1c5eacf67fc41a9b6e281a02"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_005400/L1/result.json": {
+      "bytes": 93611,
+      "sha256": "c96d91c4a5050d0b6732d124e4484c202173ae71681f3bdee14ec756eb527e53"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_005400/L2/progress.json": {
+      "bytes": 93991,
+      "sha256": "c50ad95e7bf764a4e7a720c4e42845ec71d843000ce38538bf5286563f6c0a68"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_005400/L2/result.json": {
+      "bytes": 94678,
+      "sha256": "1901316f8e3a0e081213c4e5a927b6394cc3089cab4ef6d393439ae3858fbf5e"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_009000/L0/progress.json": {
+      "bytes": 92650,
+      "sha256": "f9e35af6655c54beb0463ba1c6a6f12c896f138416b87378c4306a2164a60631"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_009000/L0/result.json": {
+      "bytes": 93334,
+      "sha256": "774fc16c7081e319dcfa2a786619dcf928f7d9d2e43824a47c7cebe0e8b52705"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_009000/L1/progress.json": {
+      "bytes": 92685,
+      "sha256": "eef1d0489b17cd1114de5eb252920beb80c80252d233ebe84b5d3a663557e012"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_009000/L1/result.json": {
+      "bytes": 93372,
+      "sha256": "20bbcb7748c6c18177d0ea851f5916055cb2dccc39ac245ac93efd9247c12f1f"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_009000/L2/progress.json": {
+      "bytes": 93772,
+      "sha256": "6b8782e882e0477baafce05cea3843f84fa984ac72180fdd54058f7552587acb"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_009000/L2/result.json": {
+      "bytes": 94458,
+      "sha256": "4d3545f7dddd259f0886495ce320c66c0c7b6ebc94fa3a5d5343428d14833d1a"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_012600/L0/progress.json": {
+      "bytes": 92640,
+      "sha256": "ff100131edf131c6fbd65f8fb96e904efc3643a2502655d04561f27faed6dc4a"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_012600/L0/result.json": {
+      "bytes": 93342,
+      "sha256": "9332ac2ca6384277281c6ea9c8162feec58cf7d795897d69cde7057803918eae"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_012600/L1/progress.json": {
+      "bytes": 92655,
+      "sha256": "f3b7665ec8c37dc093ccd942af5632af4f9838264ae5b529e3db5449801440b0"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_012600/L1/result.json": {
+      "bytes": 93344,
+      "sha256": "2f78f9d78a0cf87639211de8686e0b134752b8e4d279396f1752573a330dc3d6"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_012600/L2/progress.json": {
+      "bytes": 93760,
+      "sha256": "93d6363e83feba254f6f5738e36ae47ea0251a8b92317620117dabcb57f8dce3"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_012600/L2/result.json": {
+      "bytes": 94445,
+      "sha256": "033338471a953748b5b2af8d190a0b469388e43629fdb8499d930011dfc62fcc"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_018000/L0/progress.json": {
+      "bytes": 92691,
+      "sha256": "c6079e3b147054838ba8de7aa3f2d63186640d3eabe97719d766e63cba097517"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_018000/L0/result.json": {
+      "bytes": 93441,
+      "sha256": "c5f6a02eef716540efed3d50eecf1b7b9a58a8cf4bd4b059d6af02a38136d845"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_018000/L1/progress.json": {
+      "bytes": 92662,
+      "sha256": "2114674794e9c862cb51a44e990d83b28a59ec44f14d951a75254bc47e17a2ab"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_018000/L1/result.json": {
+      "bytes": 93365,
+      "sha256": "fdce42a93d855b5513f5fe188e3654932991f47683d2478578acb48bb79b34d5"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_018000/L2/progress.json": {
+      "bytes": 93788,
+      "sha256": "99f57d83a63b419250d8cf630f638da37b4d2292fdb6e49e36894778fb879b89"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/dev/step_018000/L2/result.json": {
+      "bytes": 94490,
+      "sha256": "fb3bb011b11cb5385f07c80f05c99465b1ec7f01f4a7cf126fa5ab5a0c933f9c"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/eval_step_001800.log": {
+      "bytes": 25093,
+      "sha256": "ad588f43c760dc3a38c9632cd7157a73bd42d3d4848f71e4a5f4ccb46d2b54c3"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/eval_step_005400.log": {
+      "bytes": 24990,
+      "sha256": "9e0be287528412dd6a64f746563f339ff81f3ef35c0adf9c38e853abda430a17"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/eval_step_009000.log": {
+      "bytes": 24949,
+      "sha256": "6bd6cf5901e76b2981dc91a10c954adf4e1d840bb9e6489f199b88c62f74b4ef"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/eval_step_012600.log": {
+      "bytes": 24986,
+      "sha256": "4e576eac3d034bf797076a6e0759d149e5db980a84a77d9a9ea9878f541fafbf"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/eval_step_018000.log": {
+      "bytes": 25058,
+      "sha256": "de5838456180e659c1ecfd6584c85fae2264e9d6cfc46f857b69b0b37741eb13"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/initialization.json": {
+      "bytes": 1810,
+      "sha256": "1b196e4bd267a4866285ded6abd19a788b8ae67bcd5031351c0af5e53e2bdd11"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/run.log": {
+      "bytes": 153702,
+      "sha256": "48e538bb3370e10950a1dc1f4413ef02d14492986c8b0bbaf1a45ca4071a178d"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/selection.json": {
+      "bytes": 2416,
+      "sha256": "ace1d96929012cbd63714a065ba8fba63f7bb8e7e41d492c28754c708b6f633b"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/test.log": {
+      "bytes": 31710,
+      "sha256": "de9879621529208db4b0d8ba442e8d90e0b3bec8ed4763a62449fe40dcf6aa02"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/test/L0/progress.json": {
+      "bytes": 452766,
+      "sha256": "a1d481f92a721577b60b86e737d1fe2826dc3950e8d7a659aa74bf48c08ac5c6"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/test/L0/result.json": {
+      "bytes": 453457,
+      "sha256": "8728c56b804c708e8c475c6845d82f1b318c63c4375b9a9f3bc814cf7ad8a7ad"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/test/L1/progress.json": {
+      "bytes": 452946,
+      "sha256": "c7bc105b4217051fb2c47d707ff3dabe256b11acf913e8207177f0a5536e862f"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/test/L1/result.json": {
+      "bytes": 453653,
+      "sha256": "daefc2aaf1cb6121b842891c98db39a83b0b6c51825683c99cd89830f17c4ff1"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/test/L2/progress.json": {
+      "bytes": 458367,
+      "sha256": "5e03eab85965d46c92a2f7309a0dc629941ace7ee2931d012956833aff82118f"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/test/L2/result.json": {
+      "bytes": 459060,
+      "sha256": "cb22c744d504d599f3b5245022906f9e16c783034b6bf117ee5c0918c1921974"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s2/train.jsonl": {
+      "bytes": 116922,
+      "sha256": "069d4ac48de1df6ae694cc5468aa5bd586d5f2f6034490537a2cd903a8b05931"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/batch_shapes.json": {
+      "bytes": 342,
+      "sha256": "f6de4a2591b40d990b3cce212effd24752ec4cfd46d1321ea8b4a52ef776f435"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/checkpoints/step_001800.ready.json": {
+      "bytes": 298,
+      "sha256": "bc30a04af889bfc06c6b1c58f6da512d1e5e4e9d5a7df41bb90e2215ef61331a"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/checkpoints/step_005400.ready.json": {
+      "bytes": 298,
+      "sha256": "d2200356c60a69a340681c5e2c541f45d51fcdc29f0b178485bcaee6f6cbaf6a"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/checkpoints/step_009000.ready.json": {
+      "bytes": 298,
+      "sha256": "b4fd8ed07a7ae3813e1537ed656e48c99401dd56eb5d7b81e0b079a28762bb46"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/checkpoints/step_012600.ready.json": {
+      "bytes": 300,
+      "sha256": "0affec533f658f93c82e874e2a46b5a6976f0d024e186675c6fd9f01ee8d9b0b"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/checkpoints/step_018000.ready.json": {
+      "bytes": 300,
+      "sha256": "f47d8107ce4b8dd935da4dd465a040f5f8bef8ae0a1bf0ea38e6e84adaf6d3a0"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/complete.json": {
+      "bytes": 1202,
+      "sha256": "244a73ea1db212002520177ab0511fc2ae4efd16e4f666cb9e6531c26fd8366d"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/config.json": {
+      "bytes": 3768,
+      "sha256": "fa04c071d79a9bc82bd2989e24de7acefa4b1b4570c902c6582218b7742ad962"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_001800/L0/progress.json": {
+      "bytes": 93133,
+      "sha256": "9c2a568280f2af624fa587979470ebcb6faa0e4bc0f4045bca757d2a36453dc6"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_001800/L0/result.json": {
+      "bytes": 93866,
+      "sha256": "f900513a04c3c97f83ece0876023c062e1dabeaead476c261a2e9a2952283cd3"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_001800/L1/progress.json": {
+      "bytes": 93194,
+      "sha256": "64076987db92cc6c2795ff295712ef86cc606311898e63eb63f4b5b2d801c3dc"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_001800/L1/result.json": {
+      "bytes": 93942,
+      "sha256": "72af2aa2fdd7a88ba15f2ee413418a6d0e175a3e009f6c32de90f197c222df3d"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_001800/L2/progress.json": {
+      "bytes": 94742,
+      "sha256": "f9415d3915d5d1cd0e7f8a7c9ba56f7d844bc433211194ed8ef0d427e0073146"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_001800/L2/result.json": {
+      "bytes": 95455,
+      "sha256": "ed7d3589ba39b431a7733bca0a5a89b3c40924c8939ae295fceda6583b05e15f"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_005400/L0/progress.json": {
+      "bytes": 92796,
+      "sha256": "f6375f7f3fa20859dd62138b1d9c4bf5850cc5e149620a5c90060911738fc580"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_005400/L0/result.json": {
+      "bytes": 93499,
+      "sha256": "57361175843ad66ccb35c4fbc162e721d4798db03264d20d807c639b082d9e5d"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_005400/L1/progress.json": {
+      "bytes": 92872,
+      "sha256": "ac64c0d8b2f52943ad3b0fad82bce8b1ddf42fecd61e1842e3c43690ff305e7c"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_005400/L1/result.json": {
+      "bytes": 93560,
+      "sha256": "7693b7583ff5352d9282e4fadc2410140e7a530f046031a607400cf172ce3e73"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_005400/L2/progress.json": {
+      "bytes": 93986,
+      "sha256": "0b7d4ad8194a27ba359c9961dc6b317e210e12822fa81698671c3dd5fde3a55b"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_005400/L2/result.json": {
+      "bytes": 94689,
+      "sha256": "59d28478f3f0b2d94f9c08b8c694d581a1eb9a810ee16a17511a6300c6d43e91"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_009000/L0/progress.json": {
+      "bytes": 92810,
+      "sha256": "9fcca660b556d03ae5bddc98f7b8e5d8928a3886b36dcb6706891e2c9cee0254"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_009000/L0/result.json": {
+      "bytes": 93497,
+      "sha256": "82e7b8cc6defa238eac7c100218cf0ddf827b5953d0146f34fd9201d96db5fc7"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_009000/L1/progress.json": {
+      "bytes": 92823,
+      "sha256": "9ef3c7d0ecdb546864f3bea4c673685ecb280333a011d30becbc4b883d713b81"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_009000/L1/result.json": {
+      "bytes": 93509,
+      "sha256": "c86d425736f42a8d4f6173839b2901a9764b6de12715083081201a78d35b5cd7"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_009000/L2/progress.json": {
+      "bytes": 93757,
+      "sha256": "a61f6df98ca4b8852a3b02424e058278c6e5b249f2aaceb7dce88dbea8533b33"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_009000/L2/result.json": {
+      "bytes": 94444,
+      "sha256": "c62fd47ba5d327d5d8653bb611d65d84564f65d022f0801ef60c27c3cfc2c581"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_012600/L0/progress.json": {
+      "bytes": 92721,
+      "sha256": "beee5360594835080f2d3b64e29cbc387c223b3c82f3ebd3aa12afbd085320f9"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_012600/L0/result.json": {
+      "bytes": 93406,
+      "sha256": "90169b11e25bded892e91d144964bc93a7ef4b2ffe23de85c99c0a375078f3d4"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_012600/L1/progress.json": {
+      "bytes": 92662,
+      "sha256": "d873cb1ef6274546f37a27d9a5b8620f4a1d38bbb72673c4124395f4a8055c7d"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_012600/L1/result.json": {
+      "bytes": 93347,
+      "sha256": "7765a5936545ace738c71cc9b70fdd85dfd7b64b402470e8fb9b8d3655c7cc39"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_012600/L2/progress.json": {
+      "bytes": 93804,
+      "sha256": "f1bf5b72fdda2b2ce3f0e797e1a3f887e3042311fbd2923cded86817a4b7ddaf"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_012600/L2/result.json": {
+      "bytes": 94507,
+      "sha256": "b23114060f3426ecb2dd22b8ad565f393c1fd0b12301a99ef2ef35fb9e907265"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_018000/L0/progress.json": {
+      "bytes": 92652,
+      "sha256": "ad1a1ae7c78c187e2ad3f1b6620c6c5a5ba7480e7a5b53411d38024709ee4068"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_018000/L0/result.json": {
+      "bytes": 93338,
+      "sha256": "c8c9b8f636f50a4d950dff6fa03b73adf170cbfc58ac23d326c1637d1ac14621"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_018000/L1/progress.json": {
+      "bytes": 92689,
+      "sha256": "fabf75fdbcc3c04dee75af39f1fe6a276d8d81eaaba3ddf67c4d4a93947febec"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_018000/L1/result.json": {
+      "bytes": 93377,
+      "sha256": "88d92a8d7cb2716fc847ef47e18a3006b9036c73d77ca873187a706ee2dd7698"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_018000/L2/progress.json": {
+      "bytes": 93783,
+      "sha256": "314ecb81c715c4c361eb43f54391336c4b3de7eaf0c3eb4a5c3d241278d46cda"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/dev/step_018000/L2/result.json": {
+      "bytes": 94469,
+      "sha256": "038600ee8210c718cbb95f230d10a9072816a734e5de8add5119ca64085ba84e"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/eval_step_001800.log": {
+      "bytes": 25088,
+      "sha256": "346b96b56b838e004b5b49154fd79cf358fa26aa219f10f7c256c785ef89d11a"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/eval_step_005400.log": {
+      "bytes": 24983,
+      "sha256": "929b3430f7b89eaee583d6b89746a87170aad691fa5eeb741dce7a98ce1b0836"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/eval_step_009000.log": {
+      "bytes": 24959,
+      "sha256": "4d2b92a54f10a89ec8fd2f45ef01e97b9c3ca29ea57626e1a500a2e7dd761d85"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/eval_step_012600.log": {
+      "bytes": 24972,
+      "sha256": "0dac7e417e7b840668cb4aa80ea8aefaee40ba4f9e63b7ad19bbffe1a3d183b0"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/eval_step_018000.log": {
+      "bytes": 24965,
+      "sha256": "71f4d8162673cc72d12d9ff099dc5c1ac486f36ef084d5d5d141a25f71c4f2a5"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/initialization.json": {
+      "bytes": 1810,
+      "sha256": "f337ed0d8878e2a6ddf52055bef33bd13e2024fc851d83ba3bea379a6ddc4801"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/run.log": {
+      "bytes": 153589,
+      "sha256": "480f8b750aa3e21e0cce425ad3f84b8ea795d4e36c40f1ce863f5b75a1cc3c81"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/selection.json": {
+      "bytes": 2383,
+      "sha256": "0b5c1369f7c8439f75db8b60005dd3557b5dfd1571305eccf67769cab821a75b"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/test.log": {
+      "bytes": 31770,
+      "sha256": "9d29297ff20d5cee196be14b5866d9dce0f1ea09350556c035d2e0488bd722d9"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/test/L0/progress.json": {
+      "bytes": 453533,
+      "sha256": "8fe75ba04d4740e37a5f2ff45326e33df5576295525c33f25e3887731f71b32a"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/test/L0/result.json": {
+      "bytes": 454242,
+      "sha256": "f8fecc8193f2fa0ccff1b11748ec54f49ab5c35fc3de2127bdd865d6f1e94dad"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/test/L1/progress.json": {
+      "bytes": 453707,
+      "sha256": "9726a7b4fa84f03f429eb8fcf1b412419255b932adadc34901781e695e5fb0b7"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/test/L1/result.json": {
+      "bytes": 454463,
+      "sha256": "867f8cf437260953ec4518b4c1c4e9e659a338fa12ed0c928583066ccacce6e5"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/test/L2/progress.json": {
+      "bytes": 458275,
+      "sha256": "fee8db3ec566100910f2c94398f743d5642e65c66215393cb44a1e0e4673e45e"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/test/L2/result.json": {
+      "bytes": 458967,
+      "sha256": "9740d68065e78abe4928708a91174e27c49b486571501075738d241349a53496"
+    },
+    "experiments/act_placemugrack_levels/runs/B012_s3/train.jsonl": {
+      "bytes": 116911,
+      "sha256": "519c373d15e154247a0638fed53fde6d8ab7b3f38c932301f95cd3ad8176f4ff"
     },
     "experiments/act_placemugrack_levels/runs/B01_s1/batch_shapes.json": {
       "bytes": 342,
@@ -10041,6 +10545,26 @@
     "experiments/act_placemugrack_levels/runs/B01_s1/checkpoints/step_001800.ready.json": {
       "bytes": 297,
       "sha256": "a062ecbf727e13d4ae145e507165ce701b181e77a57eef2877bb037058db3207"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/checkpoints/step_005400.ready.json": {
+      "bytes": 297,
+      "sha256": "23f5a1b0586147c26cdc82b1cdc9197bf8da13945f94e142f889e57394a0e86b"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/checkpoints/step_009000.ready.json": {
+      "bytes": 297,
+      "sha256": "eb3fb1b579c57b75aba39ef3b6cfcf644e39cb70f9a363717502934a2d949d75"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/checkpoints/step_012600.ready.json": {
+      "bytes": 299,
+      "sha256": "1dc0cc5917784a956caaf4abd0443688c0178ef3b56d290db666a1d62a8e3d09"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/checkpoints/step_018000.ready.json": {
+      "bytes": 299,
+      "sha256": "816572c6f24295685a3e850f621c74637d4c06f46709b05e8221cad2aa4b9b42"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/complete.json": {
+      "bytes": 1087,
+      "sha256": "2b7222314b7b5194115dd8aacb12dd8de2217914fb6a105b0660631c3a6e5d2f"
     },
     "experiments/act_placemugrack_levels/runs/B01_s1/config.json": {
       "bytes": 3762,
@@ -10070,21 +10594,597 @@
       "bytes": 94794,
       "sha256": "17f54e2415b4b7b7708e5092b33103ac46d1d4d6904770c4c98a9b96fa3c35f6"
     },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_005400/L0/progress.json": {
+      "bytes": 92319,
+      "sha256": "3d993dccf3b4a72bf9c725f7b5aa083056d4f14fb7b8a24e34a4391c247d2394"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_005400/L0/result.json": {
+      "bytes": 93005,
+      "sha256": "fa4eef70cec77d9324e0d04b97da871bdeaced720e6ce9a0943eaddd45444c17"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_005400/L1/progress.json": {
+      "bytes": 92403,
+      "sha256": "2b691b1a7c2f0baa71fc1b4ebabd17f32bf60062a4e73cc1ab012f584eddb0aa"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_005400/L1/result.json": {
+      "bytes": 93151,
+      "sha256": "899cd8388a7c689d04f25be20903c20a9c294327a5004c76f4ffdc54eab6fc10"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_005400/L2/progress.json": {
+      "bytes": 94029,
+      "sha256": "c2009a14afa8c064611624928d0d9f7acb4d3669486a8ceb0f6d3e24c98b48e7"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_005400/L2/result.json": {
+      "bytes": 94754,
+      "sha256": "dfbb77f9544621cab9d4813a51b829a44a28627a3c5f11c40d989615bf77887b"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_009000/L0/progress.json": {
+      "bytes": 92312,
+      "sha256": "8c2adc1b2a5363cf027e464fdeb3de358513872b6ff912c0bf9993515e52db35"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_009000/L0/result.json": {
+      "bytes": 92998,
+      "sha256": "a90e0c7a8435516dc36d106b8be1ba8de0beda99c2a4185e85ff36acd363d936"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_009000/L1/progress.json": {
+      "bytes": 92334,
+      "sha256": "7300ee83a56f6a444f399369fda7a2ee4b677709870676ca4f4dfbc404b7736a"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_009000/L1/result.json": {
+      "bytes": 93083,
+      "sha256": "3879663b66f2e82975b36d0a6dc2b7a0b516ca74d0b160d8123bdb849f511556"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_009000/L2/progress.json": {
+      "bytes": 93933,
+      "sha256": "13ee3affb39a6bdcaab8e8a5cc808d3b10e3ca7724c9ccd9e44bc44918753ed8"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_009000/L2/result.json": {
+      "bytes": 94661,
+      "sha256": "6abae5e9b743f01fa144525847546844daf2cd7d2a5ea88c334f23648321a06a"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_012600/L0/progress.json": {
+      "bytes": 92319,
+      "sha256": "ce65ec970ef9295ac1daa76fcba9e03ee3efd338fb54b1eb113ee22d4b0a6bd1"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_012600/L0/result.json": {
+      "bytes": 93068,
+      "sha256": "cc2015643df32968d910dc221a119b19c16451339e60c92eeab73dbb17f6c532"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_012600/L1/progress.json": {
+      "bytes": 92377,
+      "sha256": "a4dc84f749db2a45b75734d0ba4aa7372d4d34418f38e1cd2653fabb96cb8daa"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_012600/L1/result.json": {
+      "bytes": 93111,
+      "sha256": "8401b22d6ca2a1cae7b6242128d80da9f96364510557c3492aef7e17d7bebbf8"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_012600/L2/progress.json": {
+      "bytes": 93908,
+      "sha256": "9889f43994e6482723447251e5dccdf44f15064a9a348c165cea4c05c30823f2"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_012600/L2/result.json": {
+      "bytes": 94634,
+      "sha256": "0e9cc0fc80067f52faddb58ff50d9f5ef117b34bd34895e410d92c7337e4a623"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_018000/L0/progress.json": {
+      "bytes": 92271,
+      "sha256": "38806a65b833effe9d793a80351aaac2e6a454505920b32f56342b3162700e11"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_018000/L0/result.json": {
+      "bytes": 93021,
+      "sha256": "0442eb9217504944e1d01a1ddbadc68da165155967ed717badfb1f57163a12c2"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_018000/L1/progress.json": {
+      "bytes": 92371,
+      "sha256": "9c2f1d8470c0e8c39e9599858eadca03870c8d46e08521a31ecfe14ff6ca0a94"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_018000/L1/result.json": {
+      "bytes": 93083,
+      "sha256": "ae156810e6200d09e32f184ba1110c10e960ba742744acdee31009536dbafbad"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_018000/L2/progress.json": {
+      "bytes": 93913,
+      "sha256": "87e87ebecf3b81bac4f6a94836ecf2a0a96d9a20cdd4321420989b43b2ed1460"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/dev/step_018000/L2/result.json": {
+      "bytes": 94641,
+      "sha256": "7e06df3b3e09794b6f90da743de56060c120aad9559b2520bd88d40e57471f77"
+    },
     "experiments/act_placemugrack_levels/runs/B01_s1/eval_step_001800.log": {
       "bytes": 25101,
       "sha256": "653ab3b40a7781567196bdded9d63316d6554f2a2480492cf3d66bf5f3b4b87e"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/eval_step_005400.log": {
+      "bytes": 25101,
+      "sha256": "73e4dac63321114b61cec4935ce144b7d8e5058ba80d4de726fe33ffec335536"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/eval_step_009000.log": {
+      "bytes": 25101,
+      "sha256": "59ceb79ee9e9b6eefeace7f37ff5fa9feb25d04f6524477753c79efb71c3091b"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/eval_step_012600.log": {
+      "bytes": 25155,
+      "sha256": "93778bcc46c71e2ec520885b5e07da7858d95590c8039c01bd45e87c3b25a5e4"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/eval_step_018000.log": {
+      "bytes": 25132,
+      "sha256": "2819abb30464d4e321eff209588b0135a8940b5bb59b6e89e6002b3654b79c56"
     },
     "experiments/act_placemugrack_levels/runs/B01_s1/initialization.json": {
       "bytes": 1810,
       "sha256": "d4e70e31053741f993791f464955ee5304b3bf7041307593d4036c3a6c179ac7"
     },
     "experiments/act_placemugrack_levels/runs/B01_s1/run.log": {
-      "bytes": 42867,
-      "sha256": "f7e2fce96b3c4e8480cf5a49c544f2f3bf90f561bc3b3f49388a7cf2fe43b4ef"
+      "bytes": 148627,
+      "sha256": "b602b105c7d208e812fa7b3311fc199b9489c3a045a035c93bf2889589f0c76b"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/selection.json": {
+      "bytes": 2474,
+      "sha256": "698549d926dd488cc36760f50ceb817f236bef9b58cbeb951b1ece0dcde270e5"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/test.log": {
+      "bytes": 31886,
+      "sha256": "4c61766c6b89a42954a74a5c872b3a001830341adb8be86894801687b0118ae4"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/test/L0/progress.json": {
+      "bytes": 451162,
+      "sha256": "76a32b173042c864805d6b4fcb88a1b2f1b5d532032a65b3a45219a34d7dc9c8"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/test/L0/result.json": {
+      "bytes": 451919,
+      "sha256": "a7eea6f4624a58429ee9b134e14654f7d0fbf017841dcc0cac4dd1163bd2e12c"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/test/L1/progress.json": {
+      "bytes": 451243,
+      "sha256": "d8e4afb54591e8d4a83eee3f7e7252062daba43f7afd5542ba13f98c5430293a"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/test/L1/result.json": {
+      "bytes": 451998,
+      "sha256": "788511fffc299141de38ac8ec112c308507cf7c38b8f2d1a75f2ead0bb1b8d88"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/test/L2/progress.json": {
+      "bytes": 458984,
+      "sha256": "af162e29b804a0a223fdb01dd347a0fdd931c7ea6680acf957f58941d22e7b92"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s1/test/L2/result.json": {
+      "bytes": 459711,
+      "sha256": "931ba1ce8edbdb5d7c12a5a3e6f6742604e415c4d3b1cb0dc6032e28755ae4da"
     },
     "experiments/act_placemugrack_levels/runs/B01_s1/train.jsonl": {
-      "bytes": 13321,
-      "sha256": "831d6b6304413a8455295b6553c9ceb63861c250bf50bb8cd70e597c335faed0"
+      "bytes": 112058,
+      "sha256": "25b787a058bce25f9b36cf6e1f3a1ba429b3efbd699ed1f8728f65d649689d17"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/batch_shapes.json": {
+      "bytes": 342,
+      "sha256": "f6de4a2591b40d990b3cce212effd24752ec4cfd46d1321ea8b4a52ef776f435"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/checkpoints/step_001800.ready.json": {
+      "bytes": 297,
+      "sha256": "3f75bb64f33c4f1e128f8098df04c30eaff43c6971b68ab16152f777faaebbbf"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/checkpoints/step_005400.ready.json": {
+      "bytes": 297,
+      "sha256": "a6a8663b8f20926f3bf3c1f323c7d944b6dfe0fbd2598d70540c27c1f10c15f3"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/checkpoints/step_009000.ready.json": {
+      "bytes": 297,
+      "sha256": "90c670dc2894ba92730f2fd2997bb31e90ba94e0b929f45caa4927fb7ca9b173"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/checkpoints/step_012600.ready.json": {
+      "bytes": 299,
+      "sha256": "7707d5fd23c85b1774328ed30b371aa46368042772d520f0fdbd91b90d65ad9a"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/checkpoints/step_018000.ready.json": {
+      "bytes": 299,
+      "sha256": "f9848b9781800a2f3fcc582071dc9d66ac4c1ddcbf268b5a37b307221ac465bf"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/complete.json": {
+      "bytes": 1087,
+      "sha256": "f029ad5da9e61f29ecbe2a4f614a864875dc09fe47391752b0445ecd39e25801"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/config.json": {
+      "bytes": 3762,
+      "sha256": "3b750d48354c9dda137dc3c7f93b5c956b15bd334b82e0f10115e70083fbc44f"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_001800/L0/progress.json": {
+      "bytes": 92619,
+      "sha256": "34fc1b0a9132a9bd0a9810b427c00f33a53e2042a4bb4cc034cdb05feb53b562"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_001800/L0/result.json": {
+      "bytes": 93368,
+      "sha256": "938342e1bb66dc2fcb6dc24ea6bc4205d2850098d14203abdf4c81475163fcbe"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_001800/L1/progress.json": {
+      "bytes": 92838,
+      "sha256": "3f333013e0a4afbc6c9f8ae918c36bf3d166522a95fd8c0950a53a69d497c652"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_001800/L1/result.json": {
+      "bytes": 93587,
+      "sha256": "b28b17b9b1a868172b5e84806afd863db0e9c880aae8d1926fc5feee5de3f6a6"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_001800/L2/progress.json": {
+      "bytes": 94228,
+      "sha256": "e284cbb545abfec3545550f3dd128c835b78589f811d8423ee6be9f5031b593e"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_001800/L2/result.json": {
+      "bytes": 94955,
+      "sha256": "b1464e7d23afc9064cf59aaea0e640fe44560f8ee4af1cef9071c92783fb7d64"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_005400/L0/progress.json": {
+      "bytes": 92389,
+      "sha256": "b9f1508894bb034899f285a4f139dd5288a90fcbfa305e7dd3e73a0a8bc08172"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_005400/L0/result.json": {
+      "bytes": 93122,
+      "sha256": "2da1375cb2dbb8044fcafaecbb4d1a182a0e55a53d38c92aa07029e5d43e5269"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_005400/L1/progress.json": {
+      "bytes": 92495,
+      "sha256": "64d9d5ff73d7a2983ddb1bdf2cc17bf7aaba3d607330090d1c0cb73a896e9fec"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_005400/L1/result.json": {
+      "bytes": 93221,
+      "sha256": "31a76d50b2e63ee228b1d828c306f14b535c5ff4b8037baeb0ae27905aa57ecf"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_005400/L2/progress.json": {
+      "bytes": 94030,
+      "sha256": "f511b78a58c45bbc5a88e11fbcff984185e44a54c62e62fe3adc0a13dc5735c5"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_005400/L2/result.json": {
+      "bytes": 94756,
+      "sha256": "9e6bbec115cb14c2a81248c1c5eb64bb4a59d67977b8e8db07a7b1f7dd08907d"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_009000/L0/progress.json": {
+      "bytes": 92393,
+      "sha256": "e17c0abb8cc8223e66e88f9cbc2056ef620a9395c9deb123b0591fcf224b8a1f"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_009000/L0/result.json": {
+      "bytes": 93141,
+      "sha256": "d872f7b55ec34277ba23e5c0e0b92130b82aba9cffdb77082a58814e8b41eb1e"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_009000/L1/progress.json": {
+      "bytes": 92462,
+      "sha256": "1c1bf5dfc3d441b68f22a0c3b0e2e6de547cd9d282e41b0054514154ced5e2e9"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_009000/L1/result.json": {
+      "bytes": 93210,
+      "sha256": "d714a41bc24f8e8d6c5965667f84bfa36199427c8fb279a82c8e5776507be957"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_009000/L2/progress.json": {
+      "bytes": 93996,
+      "sha256": "cbdc20d84f81dfa7b79767e78fe790c65a86b5c8fc457d0caf6598c3bc339096"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_009000/L2/result.json": {
+      "bytes": 94720,
+      "sha256": "f2d8d2243362296b15489c507e5bb39d3b1e896d22d5184eeb42bceec92d9580"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_012600/L0/progress.json": {
+      "bytes": 92326,
+      "sha256": "e724eae05d3fd4949e1f1ae7361ea890f77d658a496500f68b5c6b8ab5a5603a"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_012600/L0/result.json": {
+      "bytes": 93077,
+      "sha256": "eaee4b2e0217066ca56ae6e983f2c24af19bbe65f4dd1408bcdad0792f91571c"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_012600/L1/progress.json": {
+      "bytes": 92451,
+      "sha256": "f373a236463316969c0d397dd97b86f5a7107dbc226d9c66cb4b38ac3ca5734f"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_012600/L1/result.json": {
+      "bytes": 93197,
+      "sha256": "bf797f442236cd965c7184fb34bd3b2ca32061637a4a443c140318a9dcad55d7"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_012600/L2/progress.json": {
+      "bytes": 93922,
+      "sha256": "1013ac59262e1d95ae6fbab6bd7497d947b4fca198de573d9536a3a8376cf5af"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_012600/L2/result.json": {
+      "bytes": 94647,
+      "sha256": "60ba7c827198268e43c816c1e5301360e411e2d4b9fa12e6ef40021977880938"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_018000/L0/progress.json": {
+      "bytes": 92310,
+      "sha256": "6772c338677a4727937578e23889e2b57c5ab154a32c8a6589a2c29462c1a3a0"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_018000/L0/result.json": {
+      "bytes": 93060,
+      "sha256": "9609fd59b166acc6da1563922c88b899e102f91f9050ad65c5bb710ad6cfe613"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_018000/L1/progress.json": {
+      "bytes": 92386,
+      "sha256": "9ff3aca8042f823a577eb8c28a7f62a5a3f48b148b7468c5b57f33ec9fd5a272"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_018000/L1/result.json": {
+      "bytes": 93133,
+      "sha256": "c87df314451e4fe68b534c96f115529b4dccac37f6f164748df3916565fb9846"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_018000/L2/progress.json": {
+      "bytes": 93944,
+      "sha256": "d631932e15ad151b4b72fbb4a3a91789a2f0e7e8e23b37f47a5f11c056251f1e"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/dev/step_018000/L2/result.json": {
+      "bytes": 94670,
+      "sha256": "1970750bd132074881e617d5dde9c0d032ff6ecc323a2054f9a085032252e044"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/eval_step_001800.log": {
+      "bytes": 25160,
+      "sha256": "f6b2a935e485375ba19848c765310659b7da550cf9a8db7b3557203133e65d37"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/eval_step_005400.log": {
+      "bytes": 25125,
+      "sha256": "91b7ecde4c96af04f29176849596dd8005f54a079a18b6d1d5f9291d9b082bbf"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/eval_step_009000.log": {
+      "bytes": 25155,
+      "sha256": "24dff7a8b8b66abd5a644349e9c7b528fe0adcb41cf9750aeb79358c2cce1ba9"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/eval_step_012600.log": {
+      "bytes": 25171,
+      "sha256": "f233188b0f7e84be5e6ed431b018c61447352af136f719e7fb08abce3045bcbc"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/eval_step_018000.log": {
+      "bytes": 25178,
+      "sha256": "85ac0370a61ce4715d75fe22a20b026c23cc19070fa8b4537e8c207c44504190"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/initialization.json": {
+      "bytes": 1810,
+      "sha256": "cebcc60ff13b37412039908cb4b65ddfb01d2640167d79e928ca41d802228edd"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/run.log": {
+      "bytes": 148760,
+      "sha256": "c6cb8906cfe9767d9b43e23eee58c8117cdc0651937138a1400f3a561d5e1846"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/selection.json": {
+      "bytes": 2449,
+      "sha256": "c0db799bcff1a2d3db513aaeed7255b5ad5ef356bfe267295ba53aa46ff99ee2"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/test.log": {
+      "bytes": 31873,
+      "sha256": "8728488d56ee79311574fe78f9fc715ee024adf714cb60d5a02ed9a4775b0afb"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/test/L0/progress.json": {
+      "bytes": 450905,
+      "sha256": "e333632696684eb17deef34545303bddef5c430824e87f5122c2bccd4de0cffd"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/test/L0/result.json": {
+      "bytes": 451661,
+      "sha256": "70b58bc0af8bd0d557b0c6db226fbc372baeb6b66550d64849d33505616e2b82"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/test/L1/progress.json": {
+      "bytes": 451205,
+      "sha256": "b3c9d72be7dd74f19eaecf9090f06dbdb49a8355dc9819f22271a82956aa3db1"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/test/L1/result.json": {
+      "bytes": 451943,
+      "sha256": "d4fe6743e6ac094a8ee553ddb74e6f978c4a58e9a28fae5aaa127129faea4048"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/test/L2/progress.json": {
+      "bytes": 458821,
+      "sha256": "b0f04515d851613436d3614d0dd45b35b0c10678e8e5cbf985a82c4dfac505e3"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/test/L2/result.json": {
+      "bytes": 459547,
+      "sha256": "8ce0c8850f1f5101d5de2c2e7051c03ae3a8eedeab8c19638372b2f68bc42e28"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s2/train.jsonl": {
+      "bytes": 112012,
+      "sha256": "0652b1ff2678a1f421227b137bca7dfd52bfaf0fe7ebe5889145e8ae74554909"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/batch_shapes.json": {
+      "bytes": 342,
+      "sha256": "f6de4a2591b40d990b3cce212effd24752ec4cfd46d1321ea8b4a52ef776f435"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/checkpoints/step_001800.ready.json": {
+      "bytes": 297,
+      "sha256": "45914c267c4999b395901e708c0ae26b071f95a3e61085fe2ba8588d8805a45d"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/checkpoints/step_005400.ready.json": {
+      "bytes": 297,
+      "sha256": "773ef80c70a509aa5af0cac6ae402777923a244f5e7b323d986e72779865a63e"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/checkpoints/step_009000.ready.json": {
+      "bytes": 297,
+      "sha256": "a253ea02e0e9988228ae53d0b3558fe4783160708f452c2283cda81fa709acd0"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/checkpoints/step_012600.ready.json": {
+      "bytes": 299,
+      "sha256": "8f230c0e21537fa074cdb0c7bf250e1d8b68efa05409d596657f9f3c41eeb493"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/checkpoints/step_018000.ready.json": {
+      "bytes": 299,
+      "sha256": "d6596df83d0e7055e811f6b79af8525ebae59382092a177bf1956cde1aaf576a"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/complete.json": {
+      "bytes": 1088,
+      "sha256": "2a7f8651014831a301e894c15405c18381fa55c1c40d4aa6d80ae4034b85006a"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/config.json": {
+      "bytes": 3762,
+      "sha256": "0af61013b4e2b2532aad84b97b2d1ddb09b0afcb687d500c86d57d4feae6974d"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_001800/L0/progress.json": {
+      "bytes": 92554,
+      "sha256": "d16e9bb519ccbd05973a49d7d0f5988a461bc07d51605e71b8b9c80e0760a560"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_001800/L0/result.json": {
+      "bytes": 93255,
+      "sha256": "221987e3f9071a6e90ffef0c430afee8b54c19ba8a54d721defa425091b15769"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_001800/L1/progress.json": {
+      "bytes": 92695,
+      "sha256": "fc6f7b0695a48a1b260b30646a7448f42cff1ab310ad93182c155d36d076c55d"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_001800/L1/result.json": {
+      "bytes": 93444,
+      "sha256": "c4afac9339aef01c3b746cd15c9cee8b06cf368a302a91b81917a42b4d875e41"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_001800/L2/progress.json": {
+      "bytes": 94281,
+      "sha256": "a04eaf68db8f31e9c773dc4489c039aba822d0d064d9db55f000117e37c15859"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_001800/L2/result.json": {
+      "bytes": 95007,
+      "sha256": "4d0cfe65c7cbbbf2f6037298cf19269d3698748e10540212aebbf84930d159cb"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_005400/L0/progress.json": {
+      "bytes": 92432,
+      "sha256": "d03f9278cc1eea9fc638bd2ace47bbae67971577952c5871fabb71a3e985839d"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_005400/L0/result.json": {
+      "bytes": 93119,
+      "sha256": "49ee663aa3808a544c1d093ddb6b64d1ca747204c8af8679075d7deeabeb5efe"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_005400/L1/progress.json": {
+      "bytes": 92411,
+      "sha256": "a679ec2a53450cb4a1f0cd57fd0651cf7b4e22a8c10def4add7774c5bdd8eba8"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_005400/L1/result.json": {
+      "bytes": 93097,
+      "sha256": "d792483af68fe451724073923675ebfde32a303421958ef5b438a6e2f7a7ed85"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_005400/L2/progress.json": {
+      "bytes": 93983,
+      "sha256": "876cd86a2bb972f7d24d2af6f3895e507fa4fa17a81a072779644276ec719bbd"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_005400/L2/result.json": {
+      "bytes": 94709,
+      "sha256": "fd19294b8e4038a64f015041a643a9e5fabb0ebdb060c4835f0c757c5da2e2f4"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_009000/L0/progress.json": {
+      "bytes": 92355,
+      "sha256": "5cea6ed1b9efe02a854df85b5a43bbb7f816af83bb10c6bf4adebf8417267e73"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_009000/L0/result.json": {
+      "bytes": 93101,
+      "sha256": "ad21f97d7aa50ee28400b9e2fc8f1fc53b63c767b6328fa5eadfc3dafeab7775"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_009000/L1/progress.json": {
+      "bytes": 92428,
+      "sha256": "5e251b60f74f8adad74fae99504b13d4d70ca3eaf74854f17c9d5c2ae4561482"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_009000/L1/result.json": {
+      "bytes": 93176,
+      "sha256": "00746d14dbd642679e06495ea6f2f2b3d7becda9cadec88b0f1de98d78ba1c2e"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_009000/L2/progress.json": {
+      "bytes": 93960,
+      "sha256": "101a48134382af4e6c16f580f870c4acc28b9be5dcef979f6d0c0259236a90e0"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_009000/L2/result.json": {
+      "bytes": 94687,
+      "sha256": "a4afda21148600672fbf062503165431dc5402fc1446d6417a33727d48a6be00"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_012600/L0/progress.json": {
+      "bytes": 92339,
+      "sha256": "846db1f8fac89469d213d6236bf5f2263e4541d3696e7ebbb6abbbcaeaa87e43"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_012600/L0/result.json": {
+      "bytes": 93088,
+      "sha256": "87e9131d016dc6fc1f1576b94f014310b8363f0a4c0018a2742d65c440d555ca"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_012600/L1/progress.json": {
+      "bytes": 92367,
+      "sha256": "ef62d97991c49dd30511ba695910cb5d0c2c45e0dc67e3b0eea2ea0eeb0e85dc"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_012600/L1/result.json": {
+      "bytes": 93117,
+      "sha256": "2b022206f7866cdc02f78c1d0a5e491b462976f6b10e1f57584eb521e6a4b402"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_012600/L2/progress.json": {
+      "bytes": 93910,
+      "sha256": "30bbf4b7d12658ce26932619af8a2433b2602e7a3cdcb6b375924f5c6734bcbd"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_012600/L2/result.json": {
+      "bytes": 94634,
+      "sha256": "2b198211b02b086c2701522845c055baed8a0527a7fac10cede9cc326620afb2"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_018000/L0/progress.json": {
+      "bytes": 92383,
+      "sha256": "21e2a9de26a7e017fbda74ccf50081e16e530ec91018a22bf96d82a787993c66"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_018000/L0/result.json": {
+      "bytes": 93099,
+      "sha256": "506b00c89aaec07a2efc489cd529f9b42c6a72eba5dde7d43949643561fd2b74"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_018000/L1/progress.json": {
+      "bytes": 92446,
+      "sha256": "7d04a63d5cf98d636c9b2d521f3ea7d01b196ce1fa85a5d3ae8b56afd47f4496"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_018000/L1/result.json": {
+      "bytes": 93194,
+      "sha256": "01ff44f3e4af9bcf4fd65800949bd365d23a46a170a6d571973ddd23785b9770"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_018000/L2/progress.json": {
+      "bytes": 93953,
+      "sha256": "3c15468a7b74cd508be28d02e1afc57d6b03852ad0856da23f6d7e5c15d43611"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/dev/step_018000/L2/result.json": {
+      "bytes": 94678,
+      "sha256": "d1e72f9ad83102bfc37f3b9f19f3b49173e76a30039c985559834adc03284283"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/eval_step_001800.log": {
+      "bytes": 25107,
+      "sha256": "2e627554145f1c5e51389c71a0eda3605f7a0612297be6fa41892b347805cf0d"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/eval_step_005400.log": {
+      "bytes": 25031,
+      "sha256": "b1ec4bac98ff9aaf1f9c3616e4517617105f27d180222d8f8552a27398518d7f"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/eval_step_009000.log": {
+      "bytes": 25167,
+      "sha256": "aa076bd9059833351c30a58099669d4a28f13b3e2f7720fcb5d995d51a0bb0e9"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/eval_step_012600.log": {
+      "bytes": 25172,
+      "sha256": "16615c6a7a8c7bd84f132df9489ce5fd00649db6f1b34a1933c33c20636b35d6"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/eval_step_018000.log": {
+      "bytes": 25130,
+      "sha256": "c367788f47b7bb4caa2faa913258b5e6e119f62b5cae07f7c1124d2744773318"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/initialization.json": {
+      "bytes": 1810,
+      "sha256": "fd69c632ca94c7cc90996032038c0930e254a3dc88c2fd683ad7582aa4edc368"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/run.log": {
+      "bytes": 148560,
+      "sha256": "9de0395a75551a1efda92922a4f227ea6c823a3a425708596fab8203c9ba5aa1"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/selection.json": {
+      "bytes": 2459,
+      "sha256": "3462b8deefde309045e5da42ddcb6bf03ed6732283dd36671be3c7aacddae880"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/test.log": {
+      "bytes": 31881,
+      "sha256": "cce4238b02d4ee72ef9f0ce799adf19a191741b456bed9b35aab78f328d66c98"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/test/L0/progress.json": {
+      "bytes": 451570,
+      "sha256": "007631b09968a9a8fb4a536bcb6827d78f6d1978842f7a8f9f6619af30821c0b"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/test/L0/result.json": {
+      "bytes": 452324,
+      "sha256": "f5308997ca0dae933aad904a89b3d30d876d44b6f8b1808bcfb1e68ddff2eed1"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/test/L1/progress.json": {
+      "bytes": 451513,
+      "sha256": "eb485b8933a2c4c298e2965aab6d5c174a7fbf35663fdf27b5ec9e0a6bea1aef"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/test/L1/result.json": {
+      "bytes": 452269,
+      "sha256": "73e7e888f042f5afffea22c30c6c72adf2ea3740e51ef4cbb13b0d0c77da962d"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/test/L2/progress.json": {
+      "bytes": 459275,
+      "sha256": "f6fe0edb3b5dbcfc35a38814a46edc29749c8d9fd28476bc4c878a193450c4aa"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/test/L2/result.json": {
+      "bytes": 460000,
+      "sha256": "144af9e080b7cf63431b7b2e6047502672d73c8214a2bc3266c450efd938f87a"
+    },
+    "experiments/act_placemugrack_levels/runs/B01_s3/train.jsonl": {
+      "bytes": 111973,
+      "sha256": "97a5bb41a79d4cf6f8bbd774498decbce829400d58ec0e39633e1e175329bc5c"
     },
     "experiments/act_placemugrack_levels/runs/B0_s1/batch_shapes.json": {
       "bytes": 342,
@@ -10093,6 +11193,26 @@
     "experiments/act_placemugrack_levels/runs/B0_s1/checkpoints/step_001800.ready.json": {
       "bytes": 296,
       "sha256": "3740632c6024ea944237542ecef944eaf3ec6f6f12d44575ec8ae9d74da754c3"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/checkpoints/step_005400.ready.json": {
+      "bytes": 296,
+      "sha256": "a9c879349afb699d74ff37950c310e30b80f4122afaba55a9831cef887757922"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/checkpoints/step_009000.ready.json": {
+      "bytes": 296,
+      "sha256": "335c90fbbc69788215840369db74e3f0bf0f14433927d9ae51ca80746a22a4eb"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/checkpoints/step_012600.ready.json": {
+      "bytes": 298,
+      "sha256": "320a93b50ec00b6626e78c3a2f7b4772401671e787070428f49316b502e8aaf4"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/checkpoints/step_018000.ready.json": {
+      "bytes": 298,
+      "sha256": "9bc59da81b956cfe6ae059f36a5c833cbbfe30f5673f82a5f11521b2057a8e90"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/complete.json": {
+      "bytes": 978,
+      "sha256": "b2c7d1f9d21fe51c42025ec2b751a65fe016d854d730faa29d3656d07691be2f"
     },
     "experiments/act_placemugrack_levels/runs/B0_s1/config.json": {
       "bytes": 3756,
@@ -10122,25 +11242,601 @@
       "bytes": 95059,
       "sha256": "495e731cfc1936e6ac0ab9818cca333e80453d99a2faad70a10af455455c422d"
     },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_005400/L0/progress.json": {
+      "bytes": 92435,
+      "sha256": "4bcce8e1bc8f47236a05a390f28fa21136d68c5d811d624a826df7aaeb9ab6b6"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_005400/L0/result.json": {
+      "bytes": 93137,
+      "sha256": "699e6ba00b8d9676d8864139a214e67ffd4d1c9863f514ee9c32421078b82005"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_005400/L1/progress.json": {
+      "bytes": 92904,
+      "sha256": "bb1d4f8dd7070e47fb2deb965b97336c7239af63285eeb3ce559199a40cda8a4"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_005400/L1/result.json": {
+      "bytes": 93620,
+      "sha256": "28ede065a1b3898badc321ebc0022c610bab2a6ee9d77df441d9632836f4ce24"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_005400/L2/progress.json": {
+      "bytes": 94114,
+      "sha256": "c4496407ca27a56f6e061521eecfa7e2170496c40d4bd095f23e55d090749fa6"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_005400/L2/result.json": {
+      "bytes": 94840,
+      "sha256": "ef949b91a12439d85c3c8f0dcd2a1adc1aaf0ad7a934d87597dde82e1a8596d2"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_009000/L0/progress.json": {
+      "bytes": 92367,
+      "sha256": "9ffb3a297e088fa1cc93effca9f11d5fcc8a2dcdbbbeb4c778cc689eb076af50"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_009000/L0/result.json": {
+      "bytes": 93070,
+      "sha256": "6d04471be15654325709c41e8b0216e7d320b67beb25fce57985b4e0925bf8f5"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_009000/L1/progress.json": {
+      "bytes": 92941,
+      "sha256": "b2e7eca19d75f28135d08f62052c5c079367afeba93d24b0210121cf49272fe6"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_009000/L1/result.json": {
+      "bytes": 93657,
+      "sha256": "00411be1d8e23e0287ee6005536beecc1eeb1c9e790f16e9869e1189fa8c81df"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_009000/L2/progress.json": {
+      "bytes": 93978,
+      "sha256": "45e1f9759f51643b0c633e2d4415a0c5d21d57824590e448d6967633b38496e7"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_009000/L2/result.json": {
+      "bytes": 94700,
+      "sha256": "108ed42b9419bee5bcfa310addaedef3abe1547650595deabd7ed3f9140e1cab"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_012600/L0/progress.json": {
+      "bytes": 92324,
+      "sha256": "37c4e67333aaab29aee173d2398d4796a01dc12c09c67caa24b02d06646ab7e3"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_012600/L0/result.json": {
+      "bytes": 93010,
+      "sha256": "98a0f0fe05cdd3f12d412f3e279fdf38e0d2fe8961f9960332f41d8660909a6e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_012600/L1/progress.json": {
+      "bytes": 93015,
+      "sha256": "c300f64e9fa9ccc9bac3095094e8c67f02caf771bd77400825ef6ec959918e66"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_012600/L1/result.json": {
+      "bytes": 93735,
+      "sha256": "3b1dab9e6818f1632360ede7fc99a820dec908e15a8c8dba889823819b84fb31"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_012600/L2/progress.json": {
+      "bytes": 93919,
+      "sha256": "a252fed4a198c2b0140d350bc4eaf9b4b2dab84613b565e178f3ceb12c5df757"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_012600/L2/result.json": {
+      "bytes": 94643,
+      "sha256": "f12613923ea032680c0db08eac72efcfedea88a0f00049866e4a21c0ef61d632"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_018000/L0/progress.json": {
+      "bytes": 92292,
+      "sha256": "37cf571c20681f854be85d73e3a94b05a53b2928bde428f00a32213115b79c5f"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_018000/L0/result.json": {
+      "bytes": 92976,
+      "sha256": "08a00c804fb45462b065462a494a2b13b64faa066252c745fa13a3c9b4a0c5d7"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_018000/L1/progress.json": {
+      "bytes": 92983,
+      "sha256": "471f4c07f34a683c118c063cbfedb04a1db5c21543762c546e361d61da6916ba"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_018000/L1/result.json": {
+      "bytes": 93702,
+      "sha256": "bf968d7634e78239a91956307e82e1cbcad51f0714a266360ee22d2a7bc10a3f"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_018000/L2/progress.json": {
+      "bytes": 93898,
+      "sha256": "25f347bd1684dbf98145c5646f27534856c50d3cb6b23d47b9a0c23e4de13096"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/dev/step_018000/L2/result.json": {
+      "bytes": 94623,
+      "sha256": "81d9dafdea18c7dfba6640232642b8143c95583dab086a593c9fc70d04feda0f"
+    },
     "experiments/act_placemugrack_levels/runs/B0_s1/eval_step_001800.log": {
       "bytes": 25075,
       "sha256": "d65e5e7f1bd612d93ccfc3ea7cd17413de4548686d8fa6df9ab9be9be968bf67"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/eval_step_005400.log": {
+      "bytes": 25080,
+      "sha256": "1d9f40ea41c0d9440d784b0654150dfb83bb9e06b1f02ad1623192347bbedc14"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/eval_step_009000.log": {
+      "bytes": 25079,
+      "sha256": "36800e380282d8047a2d13dca514b861cb805949224d4853664c1c5e30d7a224"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/eval_step_012600.log": {
+      "bytes": 25076,
+      "sha256": "7e699ac57a763589af05526b0dbda8a7b66242b3848364b09b4380ee5e733fcc"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/eval_step_018000.log": {
+      "bytes": 25078,
+      "sha256": "8fa0acf71e27207a5db243b4482afda40538758948f9670085414da8d2926312"
     },
     "experiments/act_placemugrack_levels/runs/B0_s1/initialization.json": {
       "bytes": 1810,
       "sha256": "461d27127677f9a3384a2266a46e04727a3a630424eff91317dc128d91994df4"
     },
     "experiments/act_placemugrack_levels/runs/B0_s1/run.log": {
-      "bytes": 53683,
-      "sha256": "20bd1915ce73064f9ec70231266abbba271ec4902bee98efc8bbaa743ed8ad54"
+      "bytes": 143012,
+      "sha256": "0481f1aaf7337692c25cf24c83eab1320f4a4c9550c114ddcc8d23dd00c39781"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/selection.json": {
+      "bytes": 2485,
+      "sha256": "e5d4d98df1739f1b45417835a8806efc2affcd374e58f26c9a5a650073e81ebd"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/test.log": {
+      "bytes": 31852,
+      "sha256": "e0e47c532727ba32578bd216b49e99caf7d6cbbf049ee902eaa7377abcb53ca3"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/test/L0/progress.json": {
+      "bytes": 451046,
+      "sha256": "83de7865541310e7b746865df92a01a4f68d055f82e0436b0734ffc36a62614e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/test/L0/result.json": {
+      "bytes": 451802,
+      "sha256": "4f1437bc411bef5f24b8f3c37fc3cf362254bf1eadc59d5d97c22ecb8ed2c62c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/test/L1/progress.json": {
+      "bytes": 454317,
+      "sha256": "500a148769400b16f54ff17a02811edbaac3cc0f071d1e4a18ab95632a16a22f"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/test/L1/result.json": {
+      "bytes": 455033,
+      "sha256": "3e448eb012ec4fd1bfa0f77b441a2ce177e0e54fb14b4b8bcd75a80d7515ee34"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/test/L2/progress.json": {
+      "bytes": 458892,
+      "sha256": "b7ecf7d2572bff10c853f70bbf5b4df46e52d5223c99ddcccb07749ebe28591b"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s1/test/L2/result.json": {
+      "bytes": 459618,
+      "sha256": "4400f1e5c7f39b92cd4313fe5c5e954bc34f709fc5d6c13ddbd694c96788c24d"
     },
     "experiments/act_placemugrack_levels/runs/B0_s1/train.jsonl": {
-      "bytes": 24604,
-      "sha256": "66ee9de8ac2a90a44c051950389e3c90bfdc948186304c624d080fd3dd960a89"
+      "bytes": 107153,
+      "sha256": "51abda9348ee99b2904ab2f9b2fc9b42f7e7effeffd44de3f84ea3dd3870e2c1"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/batch_shapes.json": {
+      "bytes": 342,
+      "sha256": "f6de4a2591b40d990b3cce212effd24752ec4cfd46d1321ea8b4a52ef776f435"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/checkpoints/step_001800.ready.json": {
+      "bytes": 296,
+      "sha256": "16c6f6648c68ca8fff92c6e572d3d93c0d0e433f7ec15150c2534ee7b332304a"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/checkpoints/step_005400.ready.json": {
+      "bytes": 296,
+      "sha256": "24ea71adb1dbd57debd0510d44095367a3e27fac4b6cb6d3661696662c93a3bb"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/checkpoints/step_009000.ready.json": {
+      "bytes": 296,
+      "sha256": "7fafafb3c1db908a02d5656a9892de91c617ab617c9c90a50791ea85ce144c52"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/checkpoints/step_012600.ready.json": {
+      "bytes": 298,
+      "sha256": "da850c0a385a917e587151f0be239dc9f55b6b8ebd72b6f64786ae5386bd4d46"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/checkpoints/step_018000.ready.json": {
+      "bytes": 298,
+      "sha256": "c30fbb370e290449f19a3eea1586722ed1ac1f900500ded28c6728ec47d737e3"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/complete.json": {
+      "bytes": 982,
+      "sha256": "11b048cdb0d850c92377e7ea27a526cce2ea97e034c070dc03a609f2a5a8d447"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/config.json": {
+      "bytes": 3756,
+      "sha256": "b5aff71ab2287dce640bff58f6671eae58514b7e7be81dfe1db839b1e8cd2946"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_001800/L0/progress.json": {
+      "bytes": 92654,
+      "sha256": "18c31143082233f91f4bc35c333d440198a4af236fc454126adfd10111d10c80"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_001800/L0/result.json": {
+      "bytes": 93357,
+      "sha256": "da8927d22a2dda9ac693d585718f82af81458bf972e58d871132b81b4ef53d00"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_001800/L1/progress.json": {
+      "bytes": 93174,
+      "sha256": "f7da57c8544522346fad6046c242b5d92410a3b0ef155b909402dd7f609faddb"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_001800/L1/result.json": {
+      "bytes": 93893,
+      "sha256": "b99673e1aab0c76a905c175f58bfb50ae59b78e06b66f6f816ea3d671f604ce4"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_001800/L2/progress.json": {
+      "bytes": 94287,
+      "sha256": "ebdef11b6dfb33d60803243e8cd5dd46dcee1e321081a91a80ed19606c54d80c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_001800/L2/result.json": {
+      "bytes": 95014,
+      "sha256": "bee6b2844cd993b493c4ad2c8da05cabd04ea9532b829383a6bde70eeae84b92"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_005400/L0/progress.json": {
+      "bytes": 92406,
+      "sha256": "bd1f4962996edcbf09502ddbcc429ee2a480ba15f7559a028c6f36800946ba81"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_005400/L0/result.json": {
+      "bytes": 93091,
+      "sha256": "5264a7f90400ebc2cc4f01e0ece9d6012b2da6e852d8b5cec5633d007ef215b6"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_005400/L1/progress.json": {
+      "bytes": 93057,
+      "sha256": "357ede92bfbd885a8c44d78ea0008f3c344d9b9d2c0679639a251339bf235260"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_005400/L1/result.json": {
+      "bytes": 93776,
+      "sha256": "75927372442de03e69b2c93f9a4eebef802ee34efcdae5eea930ba1f7d7d3cf1"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_005400/L2/progress.json": {
+      "bytes": 94196,
+      "sha256": "864bd128662ab264c876d335b57d1c905ac88b761eafff72bee3f88e2d00d23a"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_005400/L2/result.json": {
+      "bytes": 94921,
+      "sha256": "0ad1c12e4a34193d1f34f95337ac759d71258eeb9aac69df842c86f937b5ef1f"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_009000/L0/progress.json": {
+      "bytes": 92340,
+      "sha256": "8531b1247490b499244e323a4978c5b28a3fcda09d15d57bd1782ee88c58af25"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_009000/L0/result.json": {
+      "bytes": 93091,
+      "sha256": "def58d904e0a960d9c6253a895179a0f023859962fae7bd65bd25dad9766b846"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_009000/L1/progress.json": {
+      "bytes": 93009,
+      "sha256": "a58c14d313f095c4d7aae92460a3df11be639d7c8b22eebb02c7f32fa0c93fa5"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_009000/L1/result.json": {
+      "bytes": 93728,
+      "sha256": "a0a893182808d9bd130e1eeb6c644067aaaf4ded157fbf51f81dc6c3cee8a98e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_009000/L2/progress.json": {
+      "bytes": 94115,
+      "sha256": "43abb3eb4268ef04d0745aee47ec2ac2ff1bb48b74f54c3bdff602c08610abda"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_009000/L2/result.json": {
+      "bytes": 94842,
+      "sha256": "977ff56ef78be4c7ae16ce6bd1e95d5110c3404e688331f144c638b3a72eca1c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_012600/L0/progress.json": {
+      "bytes": 92320,
+      "sha256": "fbcd2b3c8c697200aca4e20c5ed17b27723870d575fea500851f6899a7a3a88b"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_012600/L0/result.json": {
+      "bytes": 93003,
+      "sha256": "27f37dfbb0b13dfd46f41e1dd80e2c25d4b047f6fa75b499504c826621fc1453"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_012600/L1/progress.json": {
+      "bytes": 92957,
+      "sha256": "94c3c79e14be2596634e48ac976daeedf7c476178a633e9b70396dce16f5e447"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_012600/L1/result.json": {
+      "bytes": 93678,
+      "sha256": "87d145b27694cb1a6ea93684856a92f51b4e671fa420e18d18370f425faa30d6"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_012600/L2/progress.json": {
+      "bytes": 94100,
+      "sha256": "022075690ffacfab94d5acc449f6f99e5c4a3b758c339def79270e7851a1867e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_012600/L2/result.json": {
+      "bytes": 94827,
+      "sha256": "e1a1b718467b29f6b4d524d7e96d965967518ef7d90531dfe7135ed3d1e0642f"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_018000/L0/progress.json": {
+      "bytes": 92312,
+      "sha256": "e0310a34645d887dce0fed9a60b4cf97c392d5c452d5b9088eea0a00d17c05df"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_018000/L0/result.json": {
+      "bytes": 92999,
+      "sha256": "7b908ff4e1f620f72603bf3bcba3b4d55d3b2a4e9cbf3fafb2f2c7ede88900bf"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_018000/L1/progress.json": {
+      "bytes": 92970,
+      "sha256": "e1d93e7bee06ec654edf8a7a3617a6e15a88320b77c870916acfb72a5a3612dc"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_018000/L1/result.json": {
+      "bytes": 93688,
+      "sha256": "0f0c4ee0cde6917a909ec3abc0f4046d05701769990e692a8ac8cc72ab064b62"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_018000/L2/progress.json": {
+      "bytes": 94099,
+      "sha256": "32cf808cd3cf49fd3af0de3903d51b9c6ea1c43ec048728afd7c3db0db91b3c7"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/dev/step_018000/L2/result.json": {
+      "bytes": 94828,
+      "sha256": "79b3c7074e5314808e437d9271b05f2597d15e793cef0faa2ebf13d39a7cde55"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/eval_step_001800.log": {
+      "bytes": 25077,
+      "sha256": "c71a8bcec08f0b8840db81cde52264a21ee7b2c2f6f709b29f15c1c42e0fa032"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/eval_step_005400.log": {
+      "bytes": 25067,
+      "sha256": "26c9f810693ef78bf4c906c1659c3c6a5c8c6fd20e65607c1d86843ec0281993"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/eval_step_009000.log": {
+      "bytes": 25132,
+      "sha256": "eea5fa94602151efd46f70d897227f8bb5b8df67743ec86e3bada8bed55b0d7d"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/eval_step_012600.log": {
+      "bytes": 25079,
+      "sha256": "373c526bf3a0642486f1dcad38b6b7087f5702fb2f3b2be957bd44c7a36f60ba"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/eval_step_018000.log": {
+      "bytes": 25069,
+      "sha256": "ccca37065c1a45907510e472b88c816e14a31d1903ce4b0558eb2d6e0f5ff694"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/initialization.json": {
+      "bytes": 1810,
+      "sha256": "300546c7c77c6e4360e4a290a6cd7d2b0d0722b36ec7f544f29dd7accd98534c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/run.log": {
+      "bytes": 143029,
+      "sha256": "3527d9a5f7331be11972dbaf711d319d875fd3340dceaaebb43eaf5ff64f9978"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/selection.json": {
+      "bytes": 2499,
+      "sha256": "14ff49b382d8b0d4055f5d39aeaf0cc3adcb647de9fa10f32efeabcb87d491e9"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/test.log": {
+      "bytes": 31834,
+      "sha256": "c018e88e74e7f4228087960652437ddc8a4ff20cca365606538226486a93566c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/test/L0/progress.json": {
+      "bytes": 451545,
+      "sha256": "4205f4b8aea93849331b72972184d0830399ce84cd475a2db6ffd60058ed87fa"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/test/L0/result.json": {
+      "bytes": 452281,
+      "sha256": "207c0fedfa5d0283419d11f9cb290a8a338fed02b44f57f85080714355741999"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/test/L1/progress.json": {
+      "bytes": 454525,
+      "sha256": "af43872d4472940120e77ea72d2f19b6976c7883375f604eb5ff006f4f2d5afe"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/test/L1/result.json": {
+      "bytes": 455243,
+      "sha256": "8ef75ac387a40f7df800600f947e318f47a48f7bab6992b122ba95c6899040bc"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/test/L2/progress.json": {
+      "bytes": 460318,
+      "sha256": "51a6367d9ea0e168a7a1c1aa387ff001c056f2018024a58ff7b357ec70954f01"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/test/L2/result.json": {
+      "bytes": 461046,
+      "sha256": "e6ab2fb0ad2287fca0e9ce9b2cfb01e22e6a66c8f96ea47be5e453f60d5e7ebd"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s2/train.jsonl": {
+      "bytes": 107118,
+      "sha256": "b1b20bf956bda62394ae37f4a77bff4e18072a10fe6bc90b1b9703ca5a358e62"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/batch_shapes.json": {
+      "bytes": 342,
+      "sha256": "f6de4a2591b40d990b3cce212effd24752ec4cfd46d1321ea8b4a52ef776f435"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/checkpoints/step_001800.ready.json": {
+      "bytes": 296,
+      "sha256": "d2a4c1eeabafffb19d64e16677160c05650a914b2413d1aaa5237e0d1c931fc7"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/checkpoints/step_005400.ready.json": {
+      "bytes": 296,
+      "sha256": "6ffe4adac02250ca8fbf26402dd8a91f4196c18c8ecd7a0e6d82b1dd49b01f4b"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/checkpoints/step_009000.ready.json": {
+      "bytes": 296,
+      "sha256": "e1b479813e019b5e9ff4a3d062e38edb3a0aaaaae1440f060e7ec1d6c0a8a9a8"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/checkpoints/step_012600.ready.json": {
+      "bytes": 298,
+      "sha256": "b9be0339b312cf865c400ee0ccd3b4144e1b7641b1fb2f8194f4feb4430d71fe"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/checkpoints/step_018000.ready.json": {
+      "bytes": 298,
+      "sha256": "4ea4388134b669b3079bb80fb039147e1a67d8d87b7807618fcd19cec160fe4c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/complete.json": {
+      "bytes": 981,
+      "sha256": "738b134bd27d444c33f1aa48e0775cf8662b7504bf98a96eaad6b5b425bf5edb"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/config.json": {
+      "bytes": 3756,
+      "sha256": "dce045fa91e7c3013ad04ae4386f74caec5580f5a31a196c5bd3d9dbcaf4c99a"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_001800/L0/progress.json": {
+      "bytes": 92563,
+      "sha256": "8d28b45da660e45b3e65096159661923f7793ef9fd4fb355af26c9504391be40"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_001800/L0/result.json": {
+      "bytes": 93249,
+      "sha256": "48878d857cfd9bd7034cdfb4f891cba1069e69be2cac540806e40fa54bec0acd"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_001800/L1/progress.json": {
+      "bytes": 92998,
+      "sha256": "441934895851e45ac00f496ced40c97b6cafb854828616c05d54ae073353a63c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_001800/L1/result.json": {
+      "bytes": 93713,
+      "sha256": "ca93595ee809fb5062d2ecda6b09427d57a644b354736949129193e82cac6d0e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_001800/L2/progress.json": {
+      "bytes": 94303,
+      "sha256": "fc67795109a1f090d647b996b8d6e8d72454225fa1447dd2a1b9774841a12e43"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_001800/L2/result.json": {
+      "bytes": 95027,
+      "sha256": "9c5a6d44a40b356780de5a276e83dfd4e372281425017e674cf0995952228a12"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_005400/L0/progress.json": {
+      "bytes": 92427,
+      "sha256": "7096b3967f8688890f9d692d159379f650792b39557c4989504cb676a7f61d6e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_005400/L0/result.json": {
+      "bytes": 93180,
+      "sha256": "380ca197fa862b2870f7fa1349d8d63b264fae7081ab5a2072457d38ef4e3834"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_005400/L1/progress.json": {
+      "bytes": 92907,
+      "sha256": "c794b3ddd9cdf5334d29d76e2a40e865fea61799f658d2a3a40f2a2bdb33d14f"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_005400/L1/result.json": {
+      "bytes": 93622,
+      "sha256": "07cdd91687effb77cb72221ce9a60d8e5f0c05368fd8fed288ffdf8c1c062721"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_005400/L2/progress.json": {
+      "bytes": 94229,
+      "sha256": "52978b0d540d9df7a13a3ae324b1a89d0c87ffe268ed4c3a3df92484dcadc029"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_005400/L2/result.json": {
+      "bytes": 94955,
+      "sha256": "0c51cc284980f6d33ae502ab43b7ec65651022a7dd2b40c4a2bd92b8414930dc"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_009000/L0/progress.json": {
+      "bytes": 92306,
+      "sha256": "ae09aa77b684fefe4ac9aa91d1167b7dc996fdb1b51cf31e227c5040a40cc77e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_009000/L0/result.json": {
+      "bytes": 93009,
+      "sha256": "8c4e1fb3375d0066387806a498c1ce854e5e0b79351967b005fcb6c6ce9b4129"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_009000/L1/progress.json": {
+      "bytes": 92878,
+      "sha256": "758c614d395a11568c37df4461c9e282b224b91b07469a78f75a93c65b687ea3"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_009000/L1/result.json": {
+      "bytes": 93595,
+      "sha256": "1e44bd5e71b3780784839ab5aa04ca0ef94b6c6ca6b41c11faa276a244bffd21"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_009000/L2/progress.json": {
+      "bytes": 94083,
+      "sha256": "bd890f81a75a0c5e2ad74ac2625a964018ccfd7a0f068c29d4e6fb48239f3014"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_009000/L2/result.json": {
+      "bytes": 94810,
+      "sha256": "2f6846226a15bc05723687d7108aeae5446205f582715bd8fc873900a8619102"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_012600/L0/progress.json": {
+      "bytes": 92290,
+      "sha256": "549009991e887402be3fcf06afd109010b72395805245cb2fc098c3020c65673"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_012600/L0/result.json": {
+      "bytes": 92977,
+      "sha256": "cd459b15b85238dcb355e837a1a6e7fd071e8426631056d55811b0529f40918e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_012600/L1/progress.json": {
+      "bytes": 92952,
+      "sha256": "6102b4382fbc89ce34b09f078b6ab8ddf7c823f2001d7088d9fe69642d052b24"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_012600/L1/result.json": {
+      "bytes": 93673,
+      "sha256": "15249246443d3f52f4d2f1beb0f60beea7ddb51067643dcc274467bc62352401"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_012600/L2/progress.json": {
+      "bytes": 94062,
+      "sha256": "db1eb74cc56fed19432d7d1d9f82b66f5c81a75898b50840d8bb232b24c651cc"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_012600/L2/result.json": {
+      "bytes": 94787,
+      "sha256": "0982235666faabc98e32df26a92c03d0ec1e79f32a114d4cbbfc27c66a7df22f"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_018000/L0/progress.json": {
+      "bytes": 92322,
+      "sha256": "78746544fb387effa73d6b7cddafeee4e7e6f2d5e1e2378962c4c7ee826262be"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_018000/L0/result.json": {
+      "bytes": 93008,
+      "sha256": "1be39e634c4bd43200d9ee9ceca91c8dc760f50a3b719601137b869b6b86bf0c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_018000/L1/progress.json": {
+      "bytes": 92936,
+      "sha256": "0dc8c466328f2556b5d4f56e8a0c400e6e5aeaabe956faf6d81090b1e3c301b6"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_018000/L1/result.json": {
+      "bytes": 93655,
+      "sha256": "dafd1265bb457f03fc6326fd2f5d48d1b860cbc44af25530f87090b1f1bec1df"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_018000/L2/progress.json": {
+      "bytes": 94067,
+      "sha256": "817cf69ee6d04ab9f11b57bef3e0b7298bf67fef9c26c91a7a49bb171803b69f"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/dev/step_018000/L2/result.json": {
+      "bytes": 94793,
+      "sha256": "de4399266b30f3cf166cb2a45fdb8a30f42b216bc4f78c90abdcb04ed964747e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/eval_step_001800.log": {
+      "bytes": 25062,
+      "sha256": "b9e5fc5957b5ba4c876b96c71986162ce97cb6110479862a61bcf7c27bf4e033"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/eval_step_005400.log": {
+      "bytes": 25133,
+      "sha256": "22835f4f5ec9c58c49c37729978a7fc7e909ec684f7fc5f69a55854fcd0364a0"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/eval_step_009000.log": {
+      "bytes": 25777,
+      "sha256": "eced6bfe26c26ab5ea5c8f10d6420ce2c3aacaa619524a77cd46f8aab9ecfa33"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/eval_step_012600.log": {
+      "bytes": 25069,
+      "sha256": "6a59049db8b7b9abc4b8dca44084fea30b0d12d95b664bd6ba5a351867668af3"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/eval_step_018000.log": {
+      "bytes": 25073,
+      "sha256": "cbd16d021259cac2982da4a4c6b6c462e85a2cf6e26c451b41cd81c301231852"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/initialization.json": {
+      "bytes": 1810,
+      "sha256": "9229d12f1eed08a6fd0355ffb68a4804894cd82bddc8cfec36d6f27a14d3a16e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/run.log": {
+      "bytes": 143062,
+      "sha256": "df9aa19b95b023c43651012e9cca0077e5b624ec143edc9950f729e9ade34e4c"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/selection.json": {
+      "bytes": 2485,
+      "sha256": "8a13ce1e53e0db9d9b473a3847a1a2895a0c175464366979d73334af9afb6780"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/test.log": {
+      "bytes": 31858,
+      "sha256": "5e5ea9715f7923ecf32153e3d1987276333c1e944c2f679449adc4f5eefde6f3"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/test/L0/progress.json": {
+      "bytes": 450884,
+      "sha256": "69e16df32cd8163020ac64d229ce5bdc7e7ed50f439cf89b880b33f40dd946c6"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/test/L0/result.json": {
+      "bytes": 451641,
+      "sha256": "755ca52804234462d8a6155a01314754dc6d1a4e3f95311c4f7d9daad21a8c05"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/test/L1/progress.json": {
+      "bytes": 454231,
+      "sha256": "12646f1d0321b9bae7570c8f1425903fcb2f398558dfb4569bf1076b1a07d2da"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/test/L1/result.json": {
+      "bytes": 454951,
+      "sha256": "0d70774250811eb7f0e4ea1cefc0a5b486dd25f334920dd72b23f9032132e0fe"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/test/L2/progress.json": {
+      "bytes": 459766,
+      "sha256": "55f88001a98d3427d8896a9d31a3cc41b27b00ffbdf75cf6664c1c546c73e88e"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/test/L2/result.json": {
+      "bytes": 460494,
+      "sha256": "0c2fd92e5fe3a4cc06af1e5671be2aa98089d1d1a27ee3cadc1eb58c276b51c9"
+    },
+    "experiments/act_placemugrack_levels/runs/B0_s3/train.jsonl": {
+      "bytes": 107166,
+      "sha256": "93e5aad66483d49438a0b6d1f5c9b4f0cc25d2d6b4d080fe020d55671adb1d0e"
     },
     "experiments/act_placemugrack_levels/status.json": {
-      "bytes": 468,
-      "sha256": "28e1bb752e94be07a716b463df7615cbfabead46c1dbf69070a0cc22434a4362"
+      "bytes": 656,
+      "sha256": "8a9d674a771e38d085eea34f14dcf0e4b1484381e21400e587b8513b6d4be636"
     },
     "experiments/act_placemugrack_levels/summarize.py": {
       "bytes": 5897,
@@ -10149,6 +11845,10 @@
     "experiments/act_placemugrack_levels/train.py": {
       "bytes": 18411,
       "sha256": "7f38ec443afbbaf4008c5a6d3b5d482c809ed867b658fcd3f04da9ec4cd969e7"
+    },
+    "experiments/act_placemugrack_levels/write_report.log": {
+      "bytes": 15,
+      "sha256": "79fcd2572bab30256712431bc710dea0d8a173a027bb41acbca8010889376232"
     },
     "experiments/act_placemugrack_levels/write_report.py": {
       "bytes": 11574,

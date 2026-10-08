@@ -1,6 +1,6 @@
 {
-  "status": "running",
-  "stage": "training",
+  "status": "complete",
+  "stage": "complete",
   "started_at": 1791385683.8175526,
   "completed_phase_a": [
     "A50_s1/L0",
@@ -16,11 +16,19 @@
   "active_phase_a": null,
   "finished_phase_a": 1791387598.0430262,
   "started_training": 1791422886.6425254,
-  "active_runs": [
-    "B0_s1",
-    "B01_s1"
-  ],
+  "active_runs": [],
   "completed_runs": [
-    "B012_s1"
-  ]
+    "B012_s1",
+    "B0_s1",
+    "B01_s1",
+    "B0_s2",
+    "B01_s2",
+    "B012_s2",
+    "B0_s3",
+    "B01_s3",
+    "B012_s3"
+  ],
+  "active_test": null,
+  "finished_computation": 1791438882.548884,
+  "finished_at": 1791438896.2712154
 }

@@ -28,4 +28,10 @@ journalctl --user -u imitator-placemugrack-levels.service -n 20 --no-pager
 
 上传源码、依赖配置、中文文档、图件、数值结果、完整行训练日志、训练stats及checkpoint校验元数据。权重、视频、原始数据和缓存保留在本机；中断run仅上传本恢复说明及hash记录。
 
-仓库是上传时间的静态快照，采集时间和实际进程状态见仓库根目录 `PUBLICATION_STATUS.json`。本次上传时实验仍未完成；不会把开发评分标记为独立最终测试结果。同步脚本 `scripts/sync_github_snapshot.py` 只更新发布checkout，git commit和push须由调用者显式执行。
+仓库是上传时间的静态快照，采集时间和实际进程状态见仓库根目录 `PUBLICATION_STATUS.json`。上午提交 `19168cc` 时实验仍未完成，阶段报告明确区分开发评分和独立最终测试。同步脚本 `scripts/sync_github_snapshot.py` 只更新发布checkout，git commit和push须由调用者显式执行。
+
+## 完成复核
+
+2026-10-08 **13:54:56 CST**：九组训练、900次冻结评估、2,700次开发评估和2,700次独立最终测试全部完成，45个checkpoint和72段主录像审计通过。服务退出码0，控制器进程正常结束。恢复服务后的剩余流程用时约4.45小时；正式162,000次更新不包含归档run的18,000次额外更新。
+
+完成后已复核14个执行脚本hash未变、状态与汇总及最终审计一致，并将报告、导航和发布状态更新为完成。最终报告见 [LearningDocs/10](../../LearningDocs/10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)。

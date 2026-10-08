@@ -10,8 +10,9 @@ Imitator / The Imitator Game 的个人复现工作区，包含源码、本机环
 
 - 最小 ACT training → checkpoint → evaluation 已跑通，初始 smoke 为 0/2；参数和过程见 [04](LearningDocs/04_ACT_SMOKE_RUN.md)。
 - L0 的 A10／A50 数据量对照已完成六次训练、600 次开发评估及600次独立最终测试。A50 终端成功率为 **95.33% ± 1.15 个百分点**，详见 [07](LearningDocs/07_PLACEMUGRACK_EXPERIMENT_RESULTS.md)。
-- 新一轮 L0／L1／L2 覆盖实验**尚未完成**。冻结 A50 的900次迁移评估完成：L0终端成功率均值94.67%，L1／L2均0%。B012_s1完成18,000次更新和300次开发评估；其余八次训练及独立最终测试由队列接续执行。
-- 10月8日上午发现旧控制器已退出，已归档中断的 B0_s1／B01_s1，并按原seed从头重跑。队列改由独立 systemd 用户服务运行；详见 [恢复记录](experiments/act_placemugrack_levels/RECOVERY.md)。
+- L0／L1／L2 覆盖实验已于 **13:54:56 CST全部完成**：九组训练各18,000次更新、45个checkpoint、900次冻结评估、2,700次开发评估及2,700次独立最终测试；最终审计通过。
+- 独立测试的终端成功率，按 **L0／L1／L2** 顺序、三个训练seed平均：B0（只训练L0）为 **94.00%／0%／0%**；B01（L0＋L1）为 **93.33%／82.67%／0%**；B012（L0＋L1＋L2）为 **99.33%／97.33%／99.33%**。逐seed结果、误差和结论边界见 [最终报告](LearningDocs/10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)。
+- 10月8日上午发现旧控制器退出，已归档中断的 B0_s1／B01_s1，并按原seed从头重跑；恢复后的独立systemd用户服务已正常结束，退出码0。中断产物不计入正式结果；详见 [恢复记录](experiments/act_placemugrack_levels/RECOVERY.md)。
 
 各实验使用不同的评估seed与checkpoint选择规则，分开报告。上述结果是本机实验结果；论文指标复现还需要匹配论文完整协议。核心 ACT 和仿真源码保持上游实现，本机环境兼容调整记录在依赖文件和锁文件中。
 
@@ -25,7 +26,7 @@ GitHub 内容是上传时的静态快照；上传时间及实际进程检查见 
 - [environment/](environment/)：环境配置与检查记录。
 - [experiments/act_placemugrack_smoke/](experiments/act_placemugrack_smoke/)：下载、训练、评估脚本与实验记录。
 - [充分训练及数据量对照](LearningDocs/07_PLACEMUGRACK_EXPERIMENT_RESULTS.md)：A10／A50 六组结果与正确性检查。
-- [L0／L1／L2 实验方案](LearningDocs/09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md)及[阶段记录／最终报告](LearningDocs/10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)：九组固定预算训练和独立测试。
+- [L0／L1／L2 实验方案](LearningDocs/09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md)及[最终报告](LearningDocs/10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)：九组固定预算训练、独立测试、失败阶段及动作尺度分析。
 - [experiments/act_placemugrack_levels/](experiments/act_placemugrack_levels/)：多级别实验执行脚本、训练统计量和小型数值记录。
 - [研究复现规划](IMITATOR_RESEARCH_PLAN.md)：阶段方案和本机资源规划。
 

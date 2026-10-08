@@ -1,0 +1,105 @@
+{
+  "run": "B01_s1",
+  "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B01_s1/checkpoints/step_009000.pt",
+  "checkpoint_sha256": "259acb21739e423a0b85216adf8cbe2eed4351abd7791a9951df217833a50387",
+  "step": 9000,
+  "macro_dev_success_at_end": 0.6166666666666667,
+  "macro_dev_success_once": 0.65,
+  "development": [
+    {
+      "step": 1800,
+      "macro_success_at_end": 0.43333333333333335,
+      "macro_success_once": 0.5833333333333334,
+      "levels": {
+        "L0": {
+          "success_at_end": 0.9,
+          "success_once": 1.0
+        },
+        "L1": {
+          "success_at_end": 0.4,
+          "success_once": 0.75
+        },
+        "L2": {
+          "success_at_end": 0.0,
+          "success_once": 0.0
+        }
+      }
+    },
+    {
+      "step": 5400,
+      "macro_success_at_end": 0.6166666666666667,
+      "macro_success_once": 0.6333333333333333,
+      "levels": {
+        "L0": {
+          "success_at_end": 1.0,
+          "success_once": 1.0
+        },
+        "L1": {
+          "success_at_end": 0.85,
+          "success_once": 0.9
+        },
+        "L2": {
+          "success_at_end": 0.0,
+          "success_once": 0.0
+        }
+      }
+    },
+    {
+      "step": 9000,
+      "macro_success_at_end": 0.6166666666666667,
+      "macro_success_once": 0.65,
+      "levels": {
+        "L0": {
+          "success_at_end": 1.0,
+          "success_once": 1.0
+        },
+        "L1": {
+          "success_at_end": 0.85,
+          "success_once": 0.95
+        },
+        "L2": {
+          "success_at_end": 0.0,
+          "success_once": 0.0
+        }
+      }
+    },
+    {
+      "step": 12600,
+      "macro_success_at_end": 0.5499999999999999,
+      "macro_success_once": 0.5666666666666668,
+      "levels": {
+        "L0": {
+          "success_at_end": 0.9,
+          "success_once": 0.9
+        },
+        "L1": {
+          "success_at_end": 0.75,
+          "success_once": 0.8
+        },
+        "L2": {
+          "success_at_end": 0.0,
+          "success_once": 0.0
+        }
+      }
+    },
+    {
+      "step": 18000,
+      "macro_success_at_end": 0.5666666666666668,
+      "macro_success_once": 0.5833333333333334,
+      "levels": {
+        "L0": {
+          "success_at_end": 0.9,
+          "success_once": 0.95
+        },
+        "L1": {
+          "success_at_end": 0.8,
+          "success_once": 0.8
+        },
+        "L2": {
+          "success_at_end": 0.0,
+          "success_once": 0.0
+        }
+      }
+    }
+  ]
+}

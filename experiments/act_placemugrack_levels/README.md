@@ -2,9 +2,11 @@
 
 执行协议见 [LearningDocs/09](../../LearningDocs/09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md)。
 
+状态：**2026-10-08 13:54:56 CST全部完成**。九组训练、6,300条主实验rollout、45个checkpoint及最终审计通过；结果见 [LearningDocs/10](../../LearningDocs/10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)。用户服务已正常退出，勿重复启动已完成队列。
+
 本目录使用原 ACT、paired dataset、human encoder 和 evaluator；新代码仅负责固定预算、级别均衡采样、训练数据共享统计量、显式仿真级别、记录与审计。
 
-查看正在运行的实验：
+查看实验状态和数值记录：
 
 ```bash
 /home/zxc/miniconda3/envs/imitator/bin/python /home/zxc/Imitator/scripts/check_levels_status.py

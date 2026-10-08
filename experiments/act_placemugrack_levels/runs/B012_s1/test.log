@@ -1,0 +1,156 @@
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-08 12:21:46.476143: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-08 12:21:46.485171: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791433306.494861 3479470 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791433306.498004 3479470 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791433306.507135 3479470 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433306.507145 3479470 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433306.507148 3479470 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433306.507150 3479470 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-08 12:21:46.509648: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+🤖 Creating ACTAgent ...
+\n   Building FrozenVideoBackbone (dinov2_vitl14) [Frozen] ...
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+   ACTAgent ready
+   Task encoder:  frozen_backbone (dinov2_vitl14)
+   Input mode:    video_only
+   Total params:  17.21M  |  Trainable: 17.21M
+
+✅ Agent loaded
+   Epoch: 0
+   Total parameters: 17.21M
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_ep1.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s][94mLoading episodes [1] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.66it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.65it/s]
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+  [FrozenVideoBackbone] Loading facebook/dinov2-large (DINOv2 via HF) ...
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+  ✓ DINOv2 facebook/dinov2-large: 304M params loaded
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Eval [video_only]:   0%|          | 0/100 [00:00<?, ?ep/s]Eval [video_only]:   4%|▍         | 4/100 [00:12<05:08,  3.22s/ep]Eval [video_only]:   8%|▊         | 8/100 [00:25<04:56,  3.22s/ep]Eval [video_only]:  12%|█▏        | 12/100 [00:32<03:45,  2.56s/ep]Eval [video_only]:  16%|█▌        | 16/100 [00:40<03:09,  2.26s/ep]Eval [video_only]:  20%|██        | 20/100 [00:47<02:47,  2.09s/ep]Eval [video_only]:  24%|██▍       | 24/100 [00:54<02:31,  1.99s/ep]Eval [video_only]:  28%|██▊       | 28/100 [01:01<02:18,  1.92s/ep]Eval [video_only]:  32%|███▏      | 32/100 [01:08<02:07,  1.88s/ep]Eval [video_only]:  36%|███▌      | 36/100 [01:15<01:58,  1.86s/ep]Eval [video_only]:  40%|████      | 40/100 [01:23<01:50,  1.84s/ep]Eval [video_only]:  44%|████▍     | 44/100 [01:30<01:41,  1.82s/ep]Eval [video_only]:  48%|████▊     | 48/100 [01:37<01:34,  1.81s/ep]Eval [video_only]:  52%|█████▏    | 52/100 [01:44<01:26,  1.81s/ep]Eval [video_only]:  56%|█████▌    | 56/100 [01:51<01:19,  1.80s/ep]Eval [video_only]:  60%|██████    | 60/100 [01:58<01:11,  1.80s/ep]Eval [video_only]:  64%|██████▍   | 64/100 [02:06<01:04,  1.80s/ep]Eval [video_only]:  68%|██████▊   | 68/100 [02:13<00:57,  1.79s/ep]Eval [video_only]:  72%|███████▏  | 72/100 [02:20<00:50,  1.79s/ep]Eval [video_only]:  76%|███████▌  | 76/100 [02:27<00:42,  1.78s/ep]Eval [video_only]:  80%|████████  | 80/100 [02:34<00:35,  1.78s/ep]Eval [video_only]:  84%|████████▍ | 84/100 [02:41<00:28,  1.78s/ep]Eval [video_only]:  88%|████████▊ | 88/100 [02:48<00:21,  1.78s/ep]Eval [video_only]:  92%|█████████▏| 92/100 [02:55<00:14,  1.78s/ep]Eval [video_only]:  96%|█████████▌| 96/100 [03:03<00:07,  1.79s/ep]Eval [video_only]: 100%|██████████| 100/100 [03:10<00:00,  1.78s/ep]Eval [video_only]: 100%|██████████| 100/100 [03:10<00:00,  1.90s/ep]
+EVALUATION PASSED {"status": "passed", "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B012_s1/checkpoints/step_012600.pt", "checkpoint_sha256": "378d7803ad970272a2709b683ec5b6837b64aac3c5a17bf77f8ac9cf2727b0df", "checkpoint_step": 12600, "condition": "B012", "num_envs": 4, "human_episode": 1, "human_video_sha256": "5c544a193ef9017c492bff8f8854d021900180ec518b429a9d225aa83260d132", "stats_sha256": "eef9b3a5b978d219850e82461e613c1490af55976eb41c6e4fc0a843ad4c6d4e", "all_loaded_tensors_equal": 253, "trainable_tensor_count": 171, "optimizer_steps": [12600], "policy_queries": 3125, "vector_steps": 12500, "auxiliary_dtw": false, "video_recording": true, "preselected_video_seeds": [5000, 5004], "level": "L0", "exact_repo_id": "L0_TwoRobotPlaceMugRack-v1", "normalizer_dataset_idx": 0, "first_policy_action": [[0.7576076984405518, -0.07005680352449417, -0.839217483997345, 0.0451546274125576, -0.6426326632499695, 0.5429811477661133, 0.9859215021133423, 1.0093563795089722, -0.8207057118415833, -0.005243510007858276, 0.6387543678283691, 0.14982017874717712, 0.771506130695343, 0.8717281818389893, -0.8673863410949707, 1.0086263418197632], [0.7934761047363281, 0.011438721790909767, -0.8392734527587891, 0.13566966354846954, -0.6522747874259949, 0.5420506596565247, 0.9460209012031555, 1.008301019668579, -0.7710716724395752, 0.06909087300300598, 0.6539131999015808, 0.2409670650959015, 0.7698137760162354, 0.872966468334198, -0.9398250579833984, 1.0104773044586182], [0.6497578620910645, 0.05515216290950775, -0.7934158444404602, 0.009286285378038883, -0.7333716750144958, 0.5721989870071411, 0.9267509579658508, 0.9989839792251587, -0.9488289952278137, 0.11992197483778, 0.681276261806488, 0.12450975924730301, 0.6835304498672485, 0.9122377038002014, -0.935396671295166, 1.006560206413269], [0.7999088168144226, 0.02774891071021557, -0.6309124231338501, -0.0033309785649180412, -0.6950827836990356, 0.524829089641571, 0.9200090765953064, 1.001648187637329, -0.7481649518013, 0.11328137665987015, 0.850989043712616, 0.12933625280857086, 0.7195402979850769, 0.8390033841133118, -0.9324724674224854, 1.0080739259719849]], "summary": {"success_once": {"mean": 1.0, "std": 0.0}, "return": {"mean": 411.81707763671875, "std": 5.174937725067139}, "episode_len": {"mean": 500.0, "std": 0.0}, "reward": {"mean": 0.8236340856933595, "std": 0.01034987508831537}, "last_reward": {"mean": 1.0, "std": 0.0}, "success_at_end": {"mean": 1.0, "std": 0.0}}, "stage_counts": {"is_grasped": 100, "is_mug_above_table": 100, "is_mug_contact_rack": 100, "is_obj_placed": 100, "success": 100}, "rollout_seconds": 190.4752013683319, "wall_seconds": 204.1733329296112}
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-08 12:25:15.374912: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-08 12:25:15.383880: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791433515.393893 3488787 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791433515.397108 3488787 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791433515.406384 3488787 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433515.406395 3488787 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433515.406397 3488787 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433515.406407 3488787 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-08 12:25:15.408729: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+🤖 Creating ACTAgent ...
+\n   Building FrozenVideoBackbone (dinov2_vitl14) [Frozen] ...
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+   ACTAgent ready
+   Task encoder:  frozen_backbone (dinov2_vitl14)
+   Input mode:    video_only
+   Total params:  17.21M  |  Trainable: 17.21M
+
+✅ Agent loaded
+   Epoch: 0
+   Total parameters: 17.21M
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_ep1.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s][94mLoading episodes [1] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.34it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.33it/s]
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+  [FrozenVideoBackbone] Loading facebook/dinov2-large (DINOv2 via HF) ...
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+  ✓ DINOv2 facebook/dinov2-large: 304M params loaded
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Eval [video_only]:   0%|          | 0/100 [00:00<?, ?ep/s]Eval [video_only]:   4%|▍         | 4/100 [00:13<05:14,  3.27s/ep]Eval [video_only]:   8%|▊         | 8/100 [00:26<05:00,  3.26s/ep]Eval [video_only]:  12%|█▏        | 12/100 [00:33<03:48,  2.60s/ep]Eval [video_only]:  16%|█▌        | 16/100 [00:40<03:12,  2.29s/ep]Eval [video_only]:  20%|██        | 20/100 [00:47<02:49,  2.12s/ep]Eval [video_only]:  24%|██▍       | 24/100 [00:55<02:33,  2.02s/ep]Eval [video_only]:  28%|██▊       | 28/100 [01:02<02:20,  1.95s/ep]Eval [video_only]:  32%|███▏      | 32/100 [01:09<02:09,  1.90s/ep]Eval [video_only]:  36%|███▌      | 36/100 [01:16<01:59,  1.87s/ep]Eval [video_only]:  40%|████      | 40/100 [01:24<01:51,  1.86s/ep]Eval [video_only]:  44%|████▍     | 44/100 [01:31<01:43,  1.85s/ep]Eval [video_only]:  48%|████▊     | 48/100 [01:38<01:35,  1.83s/ep]Eval [video_only]:  52%|█████▏    | 52/100 [01:45<01:27,  1.83s/ep]Eval [video_only]:  56%|█████▌    | 56/100 [01:53<01:20,  1.83s/ep]Eval [video_only]:  60%|██████    | 60/100 [02:00<01:12,  1.82s/ep]Eval [video_only]:  64%|██████▍   | 64/100 [02:07<01:05,  1.82s/ep]Eval [video_only]:  68%|██████▊   | 68/100 [02:14<00:58,  1.82s/ep]Eval [video_only]:  72%|███████▏  | 72/100 [02:22<00:50,  1.81s/ep]Eval [video_only]:  76%|███████▌  | 76/100 [02:29<00:43,  1.81s/ep]Eval [video_only]:  80%|████████  | 80/100 [02:36<00:36,  1.81s/ep]Eval [video_only]:  84%|████████▍ | 84/100 [02:43<00:29,  1.82s/ep]Eval [video_only]:  88%|████████▊ | 88/100 [02:51<00:21,  1.82s/ep]Eval [video_only]:  92%|█████████▏| 92/100 [02:58<00:14,  1.82s/ep]Eval [video_only]:  96%|█████████▌| 96/100 [03:05<00:07,  1.82s/ep]Eval [video_only]: 100%|██████████| 100/100 [03:13<00:00,  1.82s/ep]Eval [video_only]: 100%|██████████| 100/100 [03:13<00:00,  1.93s/ep]
+EVALUATION PASSED {"status": "passed", "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B012_s1/checkpoints/step_012600.pt", "checkpoint_sha256": "378d7803ad970272a2709b683ec5b6837b64aac3c5a17bf77f8ac9cf2727b0df", "checkpoint_step": 12600, "condition": "B012", "num_envs": 4, "human_episode": 1, "human_video_sha256": "5c544a193ef9017c492bff8f8854d021900180ec518b429a9d225aa83260d132", "stats_sha256": "eef9b3a5b978d219850e82461e613c1490af55976eb41c6e4fc0a843ad4c6d4e", "all_loaded_tensors_equal": 253, "trainable_tensor_count": 171, "optimizer_steps": [12600], "policy_queries": 3125, "vector_steps": 12500, "auxiliary_dtw": false, "video_recording": true, "preselected_video_seeds": [5000, 5004], "level": "L1", "exact_repo_id": "L1_TwoRobotPlaceMugRack-v1", "normalizer_dataset_idx": 1, "first_policy_action": [[0.7576044797897339, -0.079468734562397, -0.8309067487716675, 0.03937426209449768, -0.6470364332199097, 0.5455837249755859, 0.9903285503387451, 1.0080705881118774, -0.8167322874069214, -0.0005373731255531311, 0.6336743235588074, 0.1589231938123703, 0.7735158205032349, 0.8729690313339233, -0.8674228191375732, 1.0056365728378296], [0.7999520897865295, 0.0064488560892641544, -0.8340070843696594, 0.13826638460159302, -0.6581076979637146, 0.5477570295333862, 0.9545167684555054, 1.008558750152588, -0.7694090008735657, 0.07829822599887848, 0.645656406879425, 0.2526572346687317, 0.7727706432342529, 0.8756763935089111, -0.9369852542877197, 1.0076043605804443], [0.6557485461235046, 0.03494434058666229, -0.795278012752533, -0.002654171548783779, -0.7420650720596313, 0.5796353220939636, 0.9446179270744324, 1.001887321472168, -0.9473262429237366, 0.12177964299917221, 0.675824761390686, 0.1285945624113083, 0.6860588192939758, 0.9147860407829285, -0.9389326572418213, 1.006441593170166], [0.8150965571403503, 0.02872501127421856, -0.6178110241889954, -0.012475096620619297, -0.7003680467605591, 0.5302345156669617, 0.932296872138977, 1.003820538520813, -0.7426453232765198, 0.11972197890281677, 0.8557801842689514, 0.1337970495223999, 0.7233339548110962, 0.8392596244812012, -0.9372929334640503, 1.0050711631774902]], "summary": {"success_once": {"mean": 1.0, "std": 0.0}, "return": {"mean": 396.25311279296875, "std": 4.508403778076172}, "episode_len": {"mean": 500.0, "std": 0.0}, "reward": {"mean": 0.7925062677001954, "std": 0.009016807595864955}, "last_reward": {"mean": 1.0, "std": 0.0}, "success_at_end": {"mean": 0.99, "std": 0.09949874371066199}}, "stage_counts": {"is_grasped": 100, "is_mug_above_table": 100, "is_mug_contact_rack": 100, "is_obj_placed": 100, "success": 100}, "rollout_seconds": 193.374436378479, "wall_seconds": 207.21395659446716}
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-08 12:28:47.268305: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-08 12:28:47.277467: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791433727.287646 3498290 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791433727.290959 3498290 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791433727.300324 3498290 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433727.300335 3498290 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433727.300337 3498290 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791433727.300339 3498290 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-08 12:28:47.302643: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+🤖 Creating ACTAgent ...
+\n   Building FrozenVideoBackbone (dinov2_vitl14) [Frozen] ...
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+   ACTAgent ready
+   Task encoder:  frozen_backbone (dinov2_vitl14)
+   Input mode:    video_only
+   Total params:  17.21M  |  Trainable: 17.21M
+
+✅ Agent loaded
+   Epoch: 0
+   Total parameters: 17.21M
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_placemugrack_levels/prepared/human_ep1.json
+Loading datasets:   0%|          | 0/1 [00:00<?, ?it/s][94mLoading episodes [1] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.63it/s]Loading datasets: 100%|██████████| 1/1 [00:00<00:00,  8.62it/s]
+✓ Loaded 1 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 1
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+  [FrozenVideoBackbone] Loading facebook/dinov2-large (DINOv2 via HF) ...
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+  ✓ DINOv2 facebook/dinov2-large: 304M params loaded
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Eval [video_only]:   0%|          | 0/100 [00:00<?, ?ep/s]Eval [video_only]:   4%|▍         | 4/100 [00:12<05:08,  3.21s/ep]Eval [video_only]:   8%|▊         | 8/100 [00:25<04:55,  3.21s/ep]Eval [video_only]:  12%|█▏        | 12/100 [00:32<03:44,  2.55s/ep]Eval [video_only]:  16%|█▌        | 16/100 [00:39<03:09,  2.25s/ep]Eval [video_only]:  20%|██        | 20/100 [00:47<02:46,  2.08s/ep]Eval [video_only]:  24%|██▍       | 24/100 [00:54<02:30,  1.99s/ep]Eval [video_only]:  28%|██▊       | 28/100 [01:01<02:18,  1.92s/ep]Eval [video_only]:  32%|███▏      | 32/100 [01:08<02:07,  1.88s/ep]Eval [video_only]:  36%|███▌      | 36/100 [01:15<01:58,  1.86s/ep]Eval [video_only]:  40%|████      | 40/100 [01:22<01:49,  1.83s/ep]Eval [video_only]:  44%|████▍     | 44/100 [01:30<01:41,  1.82s/ep]Eval [video_only]:  48%|████▊     | 48/100 [01:37<01:34,  1.81s/ep]Eval [video_only]:  52%|█████▏    | 52/100 [01:44<01:26,  1.81s/ep]Eval [video_only]:  56%|█████▌    | 56/100 [01:51<01:19,  1.80s/ep]Eval [video_only]:  60%|██████    | 60/100 [01:58<01:11,  1.80s/ep]Eval [video_only]:  64%|██████▍   | 64/100 [02:05<01:04,  1.80s/ep]Eval [video_only]:  68%|██████▊   | 68/100 [02:13<00:57,  1.80s/ep]Eval [video_only]:  72%|███████▏  | 72/100 [02:20<00:50,  1.79s/ep]Eval [video_only]:  76%|███████▌  | 76/100 [02:27<00:43,  1.79s/ep]Eval [video_only]:  80%|████████  | 80/100 [02:34<00:35,  1.79s/ep]Eval [video_only]:  84%|████████▍ | 84/100 [02:41<00:28,  1.79s/ep]Eval [video_only]:  88%|████████▊ | 88/100 [02:48<00:21,  1.79s/ep]Eval [video_only]:  92%|█████████▏| 92/100 [02:56<00:14,  1.79s/ep]Eval [video_only]:  96%|█████████▌| 96/100 [03:03<00:07,  1.80s/ep]Eval [video_only]: 100%|██████████| 100/100 [03:10<00:00,  1.79s/ep]Eval [video_only]: 100%|██████████| 100/100 [03:10<00:00,  1.90s/ep]
+EVALUATION PASSED {"status": "passed", "checkpoint": "/home/zxc/Imitator/experiments/act_placemugrack_levels/runs/B012_s1/checkpoints/step_012600.pt", "checkpoint_sha256": "378d7803ad970272a2709b683ec5b6837b64aac3c5a17bf77f8ac9cf2727b0df", "checkpoint_step": 12600, "condition": "B012", "num_envs": 4, "human_episode": 1, "human_video_sha256": "5c544a193ef9017c492bff8f8854d021900180ec518b429a9d225aa83260d132", "stats_sha256": "eef9b3a5b978d219850e82461e613c1490af55976eb41c6e4fc0a843ad4c6d4e", "all_loaded_tensors_equal": 253, "trainable_tensor_count": 171, "optimizer_steps": [12600], "policy_queries": 3125, "vector_steps": 12500, "auxiliary_dtw": false, "video_recording": true, "preselected_video_seeds": [5000, 5004], "level": "L2", "exact_repo_id": "L2_TwoRobotPlaceMugRack-v1", "normalizer_dataset_idx": 2, "first_policy_action": [[0.7465684413909912, -0.07774028182029724, -0.8406423926353455, 0.021724872291088104, -0.6498935222625732, 0.5519079566001892, 0.9722253680229187, 1.0031524896621704, -0.7991496324539185, 0.009089356288313866, 0.6502102613449097, 0.11799833178520203, 0.7532857060432434, 0.8714799284934998, -0.819279670715332, 1.0015519857406616], [0.7823938727378845, 0.008518079295754433, -0.830815851688385, 0.11696454882621765, -0.6465948224067688, 0.5552990436553955, 0.9344467520713806, 1.004990577697754, -0.747941255569458, 0.08120763301849365, 0.6482237577438354, 0.2094070017337799, 0.7576773166656494, 0.8733567595481873, -0.8876849412918091, 1.005029559135437], [0.6363447904586792, 0.04085271432995796, -0.7960332036018372, -0.003401918336749077, -0.7413296699523926, 0.5905774235725403, 0.9286931157112122, 1.0028969049453735, -0.914513111114502, 0.12229453772306442, 0.6877054572105408, 0.10537325590848923, 0.6778916716575623, 0.9195276498794556, -0.8995194435119629, 1.003019094467163], [0.8075710535049438, 0.020947998389601707, -0.6215797066688538, 0.004094013012945652, -0.7044128775596619, 0.5302039980888367, 0.9133808612823486, 1.004775047302246, -0.737324059009552, 0.11213796585798264, 0.8519474267959595, 0.12522688508033752, 0.7041065096855164, 0.830734372138977, -0.9170796871185303, 1.0062001943588257]], "summary": {"success_once": {"mean": 0.99, "std": 0.09949874371066199}, "return": {"mean": 405.43023681640625, "std": 11.30254077911377}, "episode_len": {"mean": 500.0, "std": 0.0}, "reward": {"mean": 0.8108604840087891, "std": 0.022605082660871384}, "last_reward": {"mean": 0.9970064532756805, "std": 0.029785413830895353}, "success_at_end": {"mean": 0.98, "std": 0.13999999999999999}}, "stage_counts": {"is_grasped": 100, "is_mug_above_table": 100, "is_mug_contact_rack": 99, "is_obj_placed": 99, "success": 99}, "rollout_seconds": 190.75590324401855, "wall_seconds": 204.08035826683044}

@@ -15,8 +15,8 @@
 6. [06_4090_EXPERIMENT_DESIGN.md](06_4090_EXPERIMENT_DESIGN.md)：已执行的 4090 实验方案；10/50 条示范 × 3 个训练 seed、固定计算预算、吞吐标定和独立最终测试。
 7. [07_PLACEMUGRACK_EXPERIMENT_RESULTS.md](07_PLACEMUGRACK_EXPERIMENT_RESULTS.md)：六组训练的最终成功率、稳定性、失败阶段、资源计时、图件及权重/视频索引。
 8. [08_REAL_SAMPLE_WALKTHROUGH.md](08_REAL_SAMPLE_WALKTHROUGH.md)：使用真实训练数据和已有 checkpoint，通过七个交互暂停点查看配对、DINO 缓存、ACT 动作块和 CVAE 训练/推理区别。
-9. [09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md](09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md)：下一轮 L0/L1/L2 数据覆盖实验；先冻结 A50 测跨级别，再做三组数据 × 三个训练 seed 的固定预算对照，记录动作尺度与左右臂限制。
-10. [10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md](10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)：跨级别实验运行记录与最终报告；当前记录已完成的900次冻结评估和首个B012开发结果，全部计算与审计完成后自动生成完整报告。
+9. [09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md](09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md)：已执行的 L0/L1/L2 数据覆盖实验；先冻结 A50 测跨级别，再做三组数据 × 三个训练 seed 的固定预算对照，记录动作尺度与左右臂限制。
+10. [10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md](10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)：跨级别实验最终报告；九组训练、6,300条主实验rollout和最终审计均已完成，包含独立测试结果、配对增益、学习曲线、失败阶段及中断恢复后的计时说明。
 
 训练和执行连接如下。训练 batch 中的 `robot_actions` 是监督标签；评估时送入模拟器的是策略预测的动作。
 
