@@ -1,0 +1,1432 @@
+{
+  "status": "passed",
+  "revision": "2d7a339b27aff14a0780db4bd4d5e3a68c6358bc",
+  "archive_sha256": "b165d040ef461e7c5563c1463ea638e200738c4cfe2c742cf99202dc43303215",
+  "files": [
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/images/texture_1.jpg",
+      "bytes": 5304,
+      "sha256": "2b6c4d53f699235ff29a2bf23adf80a44aee7d6bed833e8567bef3d71bc8498f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/images/texture_0.jpg",
+      "bytes": 2839,
+      "sha256": "113380832043022a73ef6f78eaab72e4ebfe924d4b8c7114c10c9686f6e2fff2"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/mobility.urdf",
+      "bytes": 40685,
+      "sha256": "1ae7ee063998c564c5a76e2217fb5e112b1d0bb376e55e5ca657d2c74297061e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/semantics.txt",
+      "bytes": 47,
+      "sha256": "0dec9d0e63128f822ceabcc874784ee54298b284d482e644d6adb3f4664fbf68"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/bounding_box.json",
+      "bytes": 78,
+      "sha256": "d30f28eb65cace7889d593309255be27dd93703b2792792f68b0d07c20eb5428"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/mobility_v2.json",
+      "bytes": 417,
+      "sha256": "7fb0f4146fc2b22de7ac98ad631055092987ac7f167357ddef97321bb6adf509"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-98.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-75.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-116.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-144.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-93.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-6.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-99.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-104.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-196.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-129.obj",
+      "bytes": 19552,
+      "sha256": "1c22369514136602e8af65316e8cec11733e3a4f60ac24a3b809692dc09020d3"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-68.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-53.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-55.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-13.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-138.obj",
+      "bytes": 19561,
+      "sha256": "e8864c7fe903422a5b5eb83bd09d69eb4ef9bc8b6c693f5fa2bdca0055b554f1"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-120.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-141.obj",
+      "bytes": 19561,
+      "sha256": "f5af17701428941c9cbbfdd047dff1e0f8566d346a77fd74511f39eeb9b26e0b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-15.obj",
+      "bytes": 4551,
+      "sha256": "f89e6803a94552720f6fc007ea3d9c1b5ec3d4984632d4c81ab75e352d63fdce"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-22.obj",
+      "bytes": 835,
+      "sha256": "c748c0f86464d26a2f760a292322e44ae7c7cf6cd91e3144a99018d51e14f66e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-79.obj",
+      "bytes": 43876,
+      "sha256": "0aebad149c5a75fe09f33f6810bf89fae15484e46f307f5aa1bc3bee355473e9"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-27.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-71.obj",
+      "bytes": 2568,
+      "sha256": "9720a812ac0ff59dd25cd949f239b3125ab44c1e03bea7c02cc1644951d4be1f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-128.obj",
+      "bytes": 223567,
+      "sha256": "7a40d34f096f55cd10af78529199c1609b51ffe548016081a2684e50fed35e9e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-186.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-16.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-129.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-24.obj",
+      "bytes": 4515,
+      "sha256": "98914804eef5b856e745be283c75571257d623c9000932413bcb3106847b5a5b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-107.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-90.obj",
+      "bytes": 5202,
+      "sha256": "6657bbc7ba823be6370f57f364d830c9d7156efc91bfb1ebfa78fd801ae81a86"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-103.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-52.obj",
+      "bytes": 823,
+      "sha256": "091e921b75d1fcf6bfc6a75edb92e1bc92f3656ed91d7db9fbc893d5c31b2e99"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-91.obj",
+      "bytes": 2984,
+      "sha256": "8f006376d024b244a2e3ba05f8a61d4ae64d25b3d10c5f88ccd60d2ded475d71"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-122.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-85.obj",
+      "bytes": 8651,
+      "sha256": "88f6f112e540027d4621b7d16298dac36f9987faec69210fce3ddfa20a8567f5"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-98.obj",
+      "bytes": 5613,
+      "sha256": "fcd1650a5abe31fda0dfca437f1732c8fd64ac8ec3c8b391673a6b15d10c4113"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-7.obj",
+      "bytes": 7127,
+      "sha256": "43c29b3335502bd0148e990fd88cfc9df356485b6dee93787dd5236db2951537"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-13.obj",
+      "bytes": 4953,
+      "sha256": "0a5dffc1601a9955f3edafad5431dbb2ce804aadb885484328f277708be74173"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-3.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-67.obj",
+      "bytes": 2592,
+      "sha256": "284af5d06a564b9abde022088d9e9f99b33e98698422aa0dd3bc34786defedc9"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-5.obj",
+      "bytes": 817,
+      "sha256": "ddb81ab24e7ccc257e878267c64f61a9a39c0e5d1891463d5a51e7f5f32f1064"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-26.obj",
+      "bytes": 4495,
+      "sha256": "cdf5041b6b4296c931902f6b23d39e5e6687bd4884d59218e30f08e7be7798a0"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-177.obj",
+      "bytes": 223569,
+      "sha256": "7f10ef43ce7f5bfbfe6b62fd7ca9d505cabb2c79c3a04de84b0df3b427f74ff2"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-48.obj",
+      "bytes": 1697,
+      "sha256": "336b5048122057f2ee159a6bb999acaa5007c6b780195ab56507e459681cff06"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-109.obj",
+      "bytes": 1247,
+      "sha256": "96976b85836b6831e314421a0fd98d5ef33b0384dbc7c27d9385925929b17976"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-54.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-79.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-51.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-94.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-126.obj",
+      "bytes": 19627,
+      "sha256": "2e36267d4ca51c4eee1a361d61e597d7ded1f69d95a7adf0b2d0c8d024b29d49"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-44.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-56.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-48.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-70.obj",
+      "bytes": 2580,
+      "sha256": "054b348afd9291a1ef7f7e08ad4042ef99cdb43617d7803213b800d79a6f407c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-165.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-165.obj",
+      "bytes": 19585,
+      "sha256": "383fb2aa7c21aee7e80ee4bca680faa36a8686a4f90695056d3a90e0a5ff62c3"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-150.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-175.obj",
+      "bytes": 19642,
+      "sha256": "0e66e4c5bac1bdc3dab63bf13576506bed7dc20631d985910e304458091d3477"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-43.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-51.obj",
+      "bytes": 1235,
+      "sha256": "07df81d8d18826e06a69d6b9ac76e85c143d59b01f4b0d676578fcb11d557859"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-123.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-46.obj",
+      "bytes": 4565,
+      "sha256": "15a86a5a5e8bca49fd489d9aa59ca8bf08bfec786513acbe2c393d2f819fb3d5"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-171.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-109.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-134.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-178.obj",
+      "bytes": 19576,
+      "sha256": "1f619b83a98eb5a5e95489e86f0c07c2d0d970c624ca3470ea2327984a28cf8c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-153.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-37.obj",
+      "bytes": 4951,
+      "sha256": "7448a27317c1016daf050f6f946f3c629efa89b665326d065a324782ad1c6ddf"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-69.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-110.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-25.obj",
+      "bytes": 4923,
+      "sha256": "3430918b73f7df521d352c711288fbce8d23f92ded76c624dc8cb6104594481f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-50.obj",
+      "bytes": 1247,
+      "sha256": "2a44d2aa5077f3d2cab43764b141ceb71a597508a9774c9d47a83b847d97e081"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-34.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-16.obj",
+      "bytes": 835,
+      "sha256": "0e4958ea1d0a3b76405de48dcf402c6b27d26e127146681b11f0d11244760e1f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-3.obj",
+      "bytes": 7127,
+      "sha256": "5c29851cc51a8607a2eb93ca36d88e748ad8b0be9e98ec6059144e9291b4d891"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-45.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-159.obj",
+      "bytes": 19616,
+      "sha256": "b7ce6fd58635ea1a7e6974cdc204cbe24939ccf77c57f011867c82166d8c967f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-135.obj",
+      "bytes": 19486,
+      "sha256": "c47d782a83e3b06db282cb38a7b9a0eb62efa9285b3e147616b7a06e27a79622"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-65.obj",
+      "bytes": 2580,
+      "sha256": "7fbd15099166c9e76383bdab5c4cb941d52804292a927873696e477418061ca7"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-54.obj",
+      "bytes": 2565,
+      "sha256": "c72aa58b9afeef6871fe8615373205346f2c0c02b0bdc30fad1ff985f29250b1"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-90.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-38.obj",
+      "bytes": 4537,
+      "sha256": "15d659bdfc1bd3dc7d18f4d9430b30f54cc079c0ea57f1c36cb139a3c289603d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-186.obj",
+      "bytes": 19519,
+      "sha256": "ffaba5b1729e34d94e5cfc4d068d9fcde982c3a97199fd21b5a0eaeb38798ae5"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-31.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-20.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-12.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-123.obj",
+      "bytes": 19550,
+      "sha256": "640d80a170a7677097afd1ff7a0d79105222e0abcdc02415f1d9fe5974b95192"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-18.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-60.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-147.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-93.obj",
+      "bytes": 3020,
+      "sha256": "c4d608937f89495da5b27e0cc492f05c02e9b4cb2583c8a58280028a874dd79c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-21.obj",
+      "bytes": 4551,
+      "sha256": "22cb1d718a0c01151f930487b9324558b48873de16a3a49e9bb5e75b0f0b2e24"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-137.obj",
+      "bytes": 223559,
+      "sha256": "17278c34d317394fefba918bbec977268432f70d391a6ac9c4cc7429d4587931"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-168.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-85.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-27.obj",
+      "bytes": 4523,
+      "sha256": "cbcf97f85fafa6529cb687496f153e14a4d6048745408e958ab7dbd25ff29c4b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-30.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-180.obj",
+      "bytes": 223569,
+      "sha256": "e6c37cd918866b0157b94a76aa4ff4a5d644817ef843107862f3c1a4bc202fff"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-106.obj",
+      "bytes": 16481,
+      "sha256": "61ec0c4e4915e85f9ab5208d7424232b3db89fb4b328e8a67ddca2039a437818"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-92.obj",
+      "bytes": 13816,
+      "sha256": "7d4482620215412e556f9298663f5527298dba2973979c8328d426ee507d3e1c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-178.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-167.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-147.obj",
+      "bytes": 19627,
+      "sha256": "6d3cd70f8d4881d191736a88efad42bc78a95d7864b52331a936ce809a20e1d6"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-192.obj",
+      "bytes": 19453,
+      "sha256": "bee5952f03b190948235c522f4445102665911989fc61a32fabd784f74d92f20"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-141.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-45.obj",
+      "bytes": 4557,
+      "sha256": "83f5d96a538b22b3a14ac37b248be5282c167f67893c3e526bcde49f440b5327"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-25.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-159.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-137.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-146.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-140.obj",
+      "bytes": 223559,
+      "sha256": "805477213d6803aefbe9d91f34c02461e59e110807c39fdf44a5c25ef3a57b06"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-140.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-103.obj",
+      "bytes": 16568,
+      "sha256": "75383609bd2673bdbb39eacff71b87785a3da683d331af290e567e388e9cff54"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-63.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-195.obj",
+      "bytes": 223569,
+      "sha256": "7243f2e039e8212d113f21cd8b602c63ddc97be3da6c5c88541c4683f76c978b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-149.obj",
+      "bytes": 223567,
+      "sha256": "ee78aab0a72c9f77e943afabbf26cff90c7f60c1f2cdfb4c16dee3aad8ac646e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-59.obj",
+      "bytes": 9693,
+      "sha256": "c53934777b2e48226730f919fc0714ac837f49ed2074c3bb715faed5967af934"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-4.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-125.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-37.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-68.obj",
+      "bytes": 2564,
+      "sha256": "805854a966060af8df068ff737877b7f356afa84d5d9d924b11a4656b2c6b596"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-88.obj",
+      "bytes": 4638,
+      "sha256": "b62b2a8ca777365fa9129e54ff10bc83b2cbf2ce067fc3ce425eb358b253d11c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-149.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-33.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-144.obj",
+      "bytes": 19627,
+      "sha256": "af4aaaeec99c9320bea89b6fb67a4abd7f5448df1294e2aef5d9f650d232820f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-30.obj",
+      "bytes": 4495,
+      "sha256": "985f7e9313f4ed027828305f3245a64461cc21a06fecab1cd69a70dc0805598b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-4.obj",
+      "bytes": 7183,
+      "sha256": "4a2defd055b784cf466d92ec232ae033682432269f2d01f34467cfaf26f83b68"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-47.obj",
+      "bytes": 835,
+      "sha256": "a19adddc1398e4e79eb7bb24b52aa673a425165a99003170c74875744c57f4bf"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-92.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-153.obj",
+      "bytes": 19552,
+      "sha256": "bbecc5c76c7eee91403a0d992809526e3f9c2ec5a8fb029a8e4ea23d8f8ad4b0"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-114.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-181.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-5.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-20.obj",
+      "bytes": 4535,
+      "sha256": "fa8f168aa539ab1a9bd5e73839bcf4b529dc75b9204bcedbcb7c4b9818cc167d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-60.obj",
+      "bytes": 6213,
+      "sha256": "082935c522820a669c82f08b0cb5ee11a7893ff61ffb6ad0a90b0b6f21bf28dc"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-155.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-174.obj",
+      "bytes": 224118,
+      "sha256": "a7ec78631112fdb9d4dc379ddb78035fd70dae419596779aedf898a62a68b086"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-58.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-65.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-191.obj",
+      "bytes": 222461,
+      "sha256": "4dbffa01beaffbbdd6ba63c3ee4fbc3e86e350bc97689d5a048d5391488c6e33"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-113.obj",
+      "bytes": 223010,
+      "sha256": "911fa16ad30a96159a045c3727703fd75ce3bdae10632bc378a1443ab8fcef20"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-125.obj",
+      "bytes": 224108,
+      "sha256": "695bf5efe3887d71b16191acdc3b96d1ae09e413c871d3d51e232c8088f8f3a3"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-158.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-64.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-99.obj",
+      "bytes": 5659,
+      "sha256": "e0d1d9193b2f31697d161383f1ded3ce75738e29495a3a7712d9456eccdb2948"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-53.obj",
+      "bytes": 5219,
+      "sha256": "ea9a1b32477d61e4bdfac91775db95b8438d30586ba4595646c170d9be513a6f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-105.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-156.obj",
+      "bytes": 19559,
+      "sha256": "b7f4e4f4e58ad275de272f0d1073e1c30213f259d71f492b4b5ac813f544937c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-57.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-49.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-168.obj",
+      "bytes": 19519,
+      "sha256": "4b1ca92a2682ab6d248fe35492de60ae969204d6f34f9a599f5e366fe82044e3"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-105.obj",
+      "bytes": 19644,
+      "sha256": "6507649e8980a238a162234c7d74a80771cfde7de56b3463706429d33d82fa1e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-143.obj",
+      "bytes": 224108,
+      "sha256": "9697a83fb20b2cf8668783a01fd9acc4e9fe9bb8844a0e692f00d8fb803b4b4e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-69.obj",
+      "bytes": 2586,
+      "sha256": "2339451e3a183348cebe8ffe58c2369b21cfc49a51f0f54367d62e5992a568c2"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-185.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-195.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-170.obj",
+      "bytes": 223010,
+      "sha256": "3d5bdcc714c6ec8a45bac52a60f3677457965ce910f1f4ad08489192ceb93db4"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-18.obj",
+      "bytes": 4535,
+      "sha256": "bb0725c52437f8d23df6e212b6a88563ff1ad91f1c7bb9232667d3d2c8b9844c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-32.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-100.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-201.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-100.obj",
+      "bytes": 5505,
+      "sha256": "7d4b877dd309a3c359e345e2c4cf892a8d376aaa549c024c3c2eb8d344cb0f76"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-107.obj",
+      "bytes": 837,
+      "sha256": "7aacbbfc1215587ceb8a0e5f7c9b57741e945861ac6100297403a7aa0c7f1fcf"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-6.obj",
+      "bytes": 7191,
+      "sha256": "f10770b625d7c427f466dcb9f3604b0b4a858cd26f5304f7b5aca63bed2298bc"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-67.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-113.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-156.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-198.obj",
+      "bytes": 223020,
+      "sha256": "5ad90cfc5878052aa4cac23803d29f4f2aada33c29b91a54472063fb82975656"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-22.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-87.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-15.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-192.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-143.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-101.obj",
+      "bytes": 5551,
+      "sha256": "4d6bf28d7bcbf2a2a75235e99d87dd5fc59c110d1f0afbf1012311a8b18c8ca1"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-199.obj",
+      "bytes": 19510,
+      "sha256": "8cd31f52d4c353cc1f25bc7a222925ced82fed226febac64cbda95d4fdd9430e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-150.obj",
+      "bytes": 19552,
+      "sha256": "96b628b6fac43b26b3087817a21966cf98e33c4ef865a284e4a94ed2338ee27e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-43.obj",
+      "bytes": 4981,
+      "sha256": "d749ba8e0914ddef5d760c38e0e4a1023679fd3b221b7498bac451bef14c67fd"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-126.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-44.obj",
+      "bytes": 4557,
+      "sha256": "2680d9f070a68efa10dd6f435e93f00d0b91517218090bf451be5250193eaa9a"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-56.obj",
+      "bytes": 1699,
+      "sha256": "d3be3f4cfe3c6656948aca796cf95c177a69a1d9c5302ec42c8a302c76de68e2"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-164.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-41.obj",
+      "bytes": 831,
+      "sha256": "618e34e25128b468f78ccf2bae6c22cb5b5f2b7ac24e71c362d91fe520fc027c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-39.obj",
+      "bytes": 4517,
+      "sha256": "affc0d60431fca4dc01cceadb0ae55488e6db4397d201abc97d0e2bb9aa0fa45"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-24.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-188.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-50.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-26.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-132.obj",
+      "bytes": 19486,
+      "sha256": "cbda5dec8b33db92eb5e45eb26a7880285822d59cffb34c177a8c7793e8dc56f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-28.obj",
+      "bytes": 831,
+      "sha256": "5c9a56d1c63ad1156e3d318960d5275338a72e477f8a36685cc0d25eb40f99e6"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-174.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-114.obj",
+      "bytes": 19493,
+      "sha256": "03b8807d4b48e95bf5ff41fbcebe9f1b3c43dacbf226b4fa45999280c154764b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-71.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-164.obj",
+      "bytes": 223559,
+      "sha256": "9a7127bdf9408a43ecb15883180c42aaec446c834c924a8a2dbfc79e8e9d0f4c"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-128.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-185.obj",
+      "bytes": 223010,
+      "sha256": "31305a060b4f018b2fd6a2a214536f9cf386c6a747c636fae655b2d18fe5e8d6"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-189.obj",
+      "bytes": 19453,
+      "sha256": "81f7453c20c8d42c1dcda941c64a2bb2555ab9b029d37f2ee29cca6779414ae2"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-64.obj",
+      "bytes": 2565,
+      "sha256": "20cb390ed4cac7a2588a6433581de58e1e35a2f9d62ac97fc090ea84bf7d7856"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-57.obj",
+      "bytes": 12669,
+      "sha256": "2ad110b04a409a6d065772dfe7f73bdfb5fc4e4f6534459485d956ba5297e9c7"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-19.obj",
+      "bytes": 4953,
+      "sha256": "3068a7d80193203c1c0cec40ce0cf7f5bb2a7d63f9c1b8bbd494c1e2c0f25987"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-119.obj",
+      "bytes": 223569,
+      "sha256": "d89fc262ae073b27b433a4d5b326a8fc389264ef1420e3ead0c2e92a2bc8260d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-82.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-134.obj",
+      "bytes": 223018,
+      "sha256": "c7d8f10d1fdeddfc5ef0186f3bae1696a769f2d03b1a461bd8fee656461232a4"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-196.obj",
+      "bytes": 19576,
+      "sha256": "7d05be2b0290382be8d6a2d3bae0d8fc7faf2c4db80b00bf105e7f11e2ed02a6"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-75.obj",
+      "bytes": 58729,
+      "sha256": "8113176008c6e3fde353b2aa8d02e75d5a063e5384bd236096ec0b0c4d902515"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-52.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-47.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-7.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-122.obj",
+      "bytes": 223569,
+      "sha256": "4c47b925319025c5d488665d439a392bf5bce8951c0e62e21dbcbe7b07a8c52d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-33.obj",
+      "bytes": 4511,
+      "sha256": "5676ca0dd2ce44976346cfcd63f79a86e43b5ab4218e33794c03c59bdd09427e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-189.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-39.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-40.obj",
+      "bytes": 4537,
+      "sha256": "f7ee1d3239f9b5fd2ac52a9a9d24b20138899f027ed2df706e309207383dc5fa"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-101.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-49.obj",
+      "bytes": 1247,
+      "sha256": "6ec6626af97b62bce50065535494222669682caf74e236345e370edc8ee5fa53"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-14.obj",
+      "bytes": 4535,
+      "sha256": "f3330c96032d14f403e06c6da293a07686a9416a30f59b1b9d00f55b70f43d86"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-181.obj",
+      "bytes": 19576,
+      "sha256": "1a7b2d140e81c0110e09f17a34511efd5b56c4ce1d15d5f36decfa23e85ff8b4"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-202.obj",
+      "bytes": 19510,
+      "sha256": "938e7585719c40b8eb33b1b9f85a6a58da66763705001bac851ffc8c141fba10"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-131.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-120.obj",
+      "bytes": 19550,
+      "sha256": "b38bf6986df2e663dfe1205237605b00358c1d610be019194500f3c77055d82d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-158.obj",
+      "bytes": 224118,
+      "sha256": "18a3598fb0020f050a5f31f79350894759ee1ab6bf5e23031521745caf474c16"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-170.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-76.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-55.obj",
+      "bytes": 1699,
+      "sha256": "befc892fbc909f7b67b9f347c662884054880ed04406bcb11bcd097baf0af11f"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-46.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-188.obj",
+      "bytes": 222461,
+      "sha256": "8347c8044d76bce9080266d8ce2d0e4b9e69fe6190ccf6f79ea02a2354e2152b"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-152.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-70.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-87.obj",
+      "bytes": 8638,
+      "sha256": "c41f7fb5bb616a733398b461629a6304818af3d9f2abab7c3da8184cbad7c32e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-31.obj",
+      "bytes": 4909,
+      "sha256": "0eaa23e6315da1b7d09b605e5c124d25c5f0ecc89e45c6ffc784ed1f86b2fa3e"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-86.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-28.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-12.obj",
+      "bytes": 4535,
+      "sha256": "d353fffa6635db4d0320230798af49ce1058d9a59ba24eed4644c77a7bc3cda5"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-180.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-191.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-63.obj",
+      "bytes": 2589,
+      "sha256": "e60f64840db2e10cb4e43c91b1f6384b2bfdcd650149377917f5fad94e0cf505"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-38.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-32.obj",
+      "bytes": 4495,
+      "sha256": "83d5e020749b065106ca9d59563f9cce9b8e0b4e0de85167724e4bb0b8ce853a"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-41.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-199.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-82.obj",
+      "bytes": 44204,
+      "sha256": "0d62023ab454db021d12f8424b3465902e2f5b2c3a12e190b9d580ca767ce163"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-177.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-201.obj",
+      "bytes": 223020,
+      "sha256": "5d5a0b1f970172c797cf024856aac137ce825215a17489add1e3b5050a663aa9"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-81.obj",
+      "bytes": 58875,
+      "sha256": "baf371a7e8cc72ebe7fac833a9a870aa009e2a1f432c21c2c5d287d5d252cd96"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-119.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-21.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-152.obj",
+      "bytes": 223567,
+      "sha256": "2f5cd66a8af8acf3829b3bc609572e0826e85212530e5cd53207dabdc39b3530"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-76.obj",
+      "bytes": 44108,
+      "sha256": "2549aed47a3096c84f267def7b47a3f3f89c116ce28e8c53643eb410b2737290"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-86.obj",
+      "bytes": 8666,
+      "sha256": "f3df3daa43c83160615a1aa5d45f193ce1ba11e159fbe22a35b021f87f662a32"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-40.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-175.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-91.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-81.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-146.obj",
+      "bytes": 224108,
+      "sha256": "1153e7e66a88d1a9aa69fee09327e3c9f3c205a7963f4349ce61a169d7530228"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-110.obj",
+      "bytes": 1259,
+      "sha256": "3b7dda4e95672a3dff133d62c4195bf1c9a57fd0d5055445d03df28964c8f8ee"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-88.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-131.obj",
+      "bytes": 223018,
+      "sha256": "98b02a48f84f6503b092c035052df0fb4d68960606fdd3ff32bb541915e85c87"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-14.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-58.obj",
+      "bytes": 9613,
+      "sha256": "65c1f90900ff694f3d4b9c8d5078356db771dfed2350300342d727289a26b534"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-59.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-155.obj",
+      "bytes": 223559,
+      "sha256": "959b31b67c6f3624f40e49f844c6c4aed5e5aa7d1bb9a7f57834c3c462de32e1"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-135.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-94.obj",
+      "bytes": 2570,
+      "sha256": "42b7fbbb93c2b17c0eceea94f218f5b19bc4c79f210f0e94282c269ebe4839ec"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-198.mtl",
+      "bytes": 401,
+      "sha256": "338a9a9e408390cadf013b835a54b30a751294b4f15fb9d703cd0cafe00eddab"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-167.obj",
+      "bytes": 223010,
+      "sha256": "6543a9c18ab01a7cdd809534d83ed52789f0044998f6158743321fc5f1b7d0eb"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-78.obj",
+      "bytes": 58445,
+      "sha256": "bcc69e04939a241b8bf95a265d19bae3d20ba4091a807cc023ce7410371a8c54"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-104.obj",
+      "bytes": 16446,
+      "sha256": "2410bd2ac742cce34a8e4011e9ad0c42236e00797d6574b7e3381bf49a71a415"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-202.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-34.obj",
+      "bytes": 827,
+      "sha256": "280bdf2d67f60537627a819c88609da6e59dbf6d037b5b8098c56cabed7eaee5"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-78.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-106.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-132.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-19.mtl",
+      "bytes": 113,
+      "sha256": "5a0e0067eb977aa7e645a9b459860c3a138b55e664f9ae856eb639106899d616"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-171.obj",
+      "bytes": 19519,
+      "sha256": "3de7bd38857ed718f0c8a99455d5c6d3eefc9c5e3692d48cc3bbff25de9a5809"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-117.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-116.obj",
+      "bytes": 223010,
+      "sha256": "3192434558f046799af0c3098af84237959122b37a6887fcc0de01438c0cdb18"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-138.mtl",
+      "bytes": 257,
+      "sha256": "bbd6a3b373bf7b4492a4f5550a0dc430dbdec0cf3c95727655a804d7b6e6ef8d"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/textured_objs/original-117.obj",
+      "bytes": 19493,
+      "sha256": "a1787fe33ea44dd45861597999a612a884961985f95106b3ca6f8ac6bba3fdcb"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/meta.json",
+      "bytes": 144,
+      "sha256": "0f9306acc50d70f53e126d6465a983a2e3a903d0986605430117524a29663d32"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/result_original.json",
+      "bytes": 304,
+      "sha256": "b21c7fdd064156d12c4e39370c6246ca622f92f0986f5a3b25f9cd70dff73164"
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/partnet_mobility/dataset/Box/100141/result.json",
+      "bytes": 2317,
+      "sha256": "ca47bbbc81ea7b49c22a4dea1c7d9f20aff0940e38a2c51cfc63f59b061f94a6"
+    }
+  ]
+}

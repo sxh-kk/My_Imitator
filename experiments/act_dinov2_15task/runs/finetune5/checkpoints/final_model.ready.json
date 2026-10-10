@@ -1,0 +1,10 @@
+{
+  "epoch": 100,
+  "iteration": 23600,
+  "checkpoint": "/home/zxc/Imitator/experiments/act_dinov2_15task/runs/finetune5/checkpoints/final_model.pt",
+  "sha256": "d1d7a599a0b1c159b02be44eba6a8d3b174d7d056a1ce5eae24987a544d0c95c",
+  "bytes": 205324671,
+  "saved_at": 1791542095.3588538,
+  "frozen_dino_weights_omitted": true,
+  "trainable_tensors": 171
+}

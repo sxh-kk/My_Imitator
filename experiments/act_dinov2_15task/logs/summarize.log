@@ -1,0 +1,4 @@
+
+START 2026-10-09 19:00:38 ['/home/zxc/miniconda3/envs/imitator/bin/python', '/home/zxc/Imitator/experiments/act_dinov2_15task/summarize.py']
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]

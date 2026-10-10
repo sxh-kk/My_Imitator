@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "env": "L3_TwoRobotPlacePlateRack-v1",
+  "registered_env": "TwoRobotPlacePlateRackL3-v1",
+  "level": "L3",
+  "probe_source_sha256": "f0c3d08afe250b7b67b7c53b14ef0fdd91edb528c015e4b4e9606abb0a2a5045",
+  "phase_names": [
+    "reach",
+    "grasp",
+    "transport",
+    "place"
+  ],
+  "phase_peaks": {
+    "peak_r_reach": [
+      0.12171578407287598
+    ],
+    "peak_r_grasp": [
+      0.12171578407287598
+    ],
+    "peak_r_transport": [
+      0.0
+    ],
+    "peak_r_place": [
+      0.0
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

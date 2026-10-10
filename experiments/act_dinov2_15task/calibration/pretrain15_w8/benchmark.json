@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "workers": 8,
+  "steps": 80,
+  "batch": 256,
+  "batches_per_epoch": 4038,
+  "seconds_per_step": 0.130851570982486,
+  "mean_seconds_per_step": 0.13450363048323197,
+  "data_wait_fraction": 0.0070982206587441934,
+  "samples_per_second": 1903.2943503477736,
+  "peak_gpu_gib": 6.456696033477783,
+  "initialization_seconds": 83.72644218601636,
+  "estimated_training_hours": 15.086823885869187
+}

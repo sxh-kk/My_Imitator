@@ -1,0 +1,126 @@
+{
+  "codebase_version": "v3.0",
+  "robot_type": null,
+  "total_episodes": 50,
+  "total_frames": 20935,
+  "total_tasks": 1,
+  "chunks_size": 1000,
+  "data_files_size_in_mb": 100,
+  "video_files_size_in_mb": 200,
+  "fps": 30,
+  "splits": {
+    "train": "0:50"
+  },
+  "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+  "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+  "features": {
+    "observation.images.zed2i": {
+      "dtype": "video",
+      "shape": [
+        3,
+        224,
+        224
+      ],
+      "names": [
+        "channels",
+        "height",
+        "width"
+      ],
+      "info": {
+        "video.height": 224,
+        "video.width": 224,
+        "video.codec": "hevc",
+        "video.pix_fmt": "yuv444p",
+        "video.is_depth_map": false,
+        "video.fps": 30,
+        "video.channels": 3,
+        "has_audio": false
+      }
+    },
+    "observation.qpos_gripper_states": {
+      "dtype": "float32",
+      "shape": [
+        18
+      ],
+      "names": [
+        "left_joint_0",
+        "left_joint_1",
+        "left_joint_2",
+        "left_joint_3",
+        "left_joint_4",
+        "left_joint_5",
+        "left_joint_6",
+        "left_gripper1",
+        "left_gripper2",
+        "right_joint_0",
+        "right_joint_1",
+        "right_joint_2",
+        "right_joint_3",
+        "right_joint_4",
+        "right_joint_5",
+        "right_joint_6",
+        "right_gripper1",
+        "right_gripper2"
+      ]
+    },
+    "action.qpos_gripper_actions": {
+      "dtype": "float32",
+      "shape": [
+        16
+      ],
+      "names": [
+        "left_joint_0",
+        "left_joint_1",
+        "left_joint_2",
+        "left_joint_3",
+        "left_joint_4",
+        "left_joint_5",
+        "left_joint_6",
+        "left_gripper1",
+        "right_joint_0",
+        "right_joint_1",
+        "right_joint_2",
+        "right_joint_3",
+        "right_joint_4",
+        "right_joint_5",
+        "right_joint_6",
+        "right_gripper1"
+      ]
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    }
+  }
+}

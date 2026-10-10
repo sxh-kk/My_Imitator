@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "env": "L3_TwoRobotPickFood-v1",
+  "registered_env": "TwoRobotPickFoodL3-v1",
+  "level": "L3",
+  "probe_source_sha256": "f0c3d08afe250b7b67b7c53b14ef0fdd91edb528c015e4b4e9606abb0a2a5045",
+  "phase_names": [
+    "reach_0",
+    "grasp_0",
+    "transport_0",
+    "place_0",
+    "reach_1",
+    "grasp_1",
+    "transport_1",
+    "place_1"
+  ],
+  "phase_peaks": {
+    "peak_r_reach_0": [
+      0.26850754022598267
+    ],
+    "peak_r_grasp_0": [
+      0.26850754022598267
+    ],
+    "peak_r_transport_0": [
+      0.0
+    ],
+    "peak_r_place_0": [
+      0.0
+    ],
+    "peak_r_reach_1": [
+      0.3250221610069275
+    ],
+    "peak_r_grasp_1": [
+      0.3250221610069275
+    ],
+    "peak_r_transport_1": [
+      0.0
+    ],
+    "peak_r_place_1": [
+      0.0
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

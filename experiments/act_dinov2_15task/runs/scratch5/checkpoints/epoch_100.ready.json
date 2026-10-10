@@ -1,0 +1,10 @@
+{
+  "epoch": 100,
+  "iteration": 23600,
+  "checkpoint": "/home/zxc/Imitator/experiments/act_dinov2_15task/runs/scratch5/checkpoints/epoch_100.pt",
+  "sha256": "16013097b513e0f92eb6185c50df4819267d7988ca90c2ef02acf7f784dadff5",
+  "bytes": 205322763,
+  "saved_at": 1791536126.6776538,
+  "frozen_dino_weights_omitted": true,
+  "trainable_tensors": 171
+}

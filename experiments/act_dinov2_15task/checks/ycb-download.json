@@ -1,0 +1,156 @@
+{
+  "status": "passed",
+  "official_archive_sha256": "1551724fd1ac7bad9807ebcf46dd4a788caed5c9499c1225b9bfa080ffbefcb3",
+  "files": [
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/011_banana/material_0.mtl",
+      "sha256": "a1fb81bded71d9fe3364ad73d0cac79b989aac3788a705f342af64fe3ca2438a",
+      "bytes": 197
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/011_banana/material_0.png",
+      "sha256": "4eca47d1cc60e0c7ee0570ef89b31b5fcc08458799996403f94b9dad824c8d63",
+      "bytes": 3654
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/011_banana/textured.obj",
+      "sha256": "86b70980d43648d138a8b4a3eb196648c0bec138863c5ee17360f6267570c346",
+      "bytes": 1026435
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/011_banana/textured.mtl",
+      "sha256": "24df6d9fd8366665821941bde13d9e4226d570193608ba4c9e4111b2908b8ec5",
+      "bytes": 63
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/011_banana/texture_map.png",
+      "sha256": "4eca47d1cc60e0c7ee0570ef89b31b5fcc08458799996403f94b9dad824c8d63",
+      "bytes": 3654
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/011_banana/collision.ply",
+      "sha256": "1b417ea72eb730abc5ea0adbe16f6f9f3523dd37fd8aa4cceff3eec9d0b246c5",
+      "bytes": 71045
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/013_apple/material_0.mtl",
+      "sha256": "a1fb81bded71d9fe3364ad73d0cac79b989aac3788a705f342af64fe3ca2438a",
+      "bytes": 197
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/013_apple/material_0.png",
+      "sha256": "97b3dafe52b7a3248918a79008cb696b39261d3f8b52780ba9a75d03fa557234",
+      "bytes": 4034
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/013_apple/textured.obj",
+      "sha256": "024a35596c90aeadc36828193965827a6e41a6f090c7875e55ce327961f05f0b",
+      "bytes": 1026293
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/013_apple/textured.mtl",
+      "sha256": "24df6d9fd8366665821941bde13d9e4226d570193608ba4c9e4111b2908b8ec5",
+      "bytes": 63
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/013_apple/texture_map.png",
+      "sha256": "97b3dafe52b7a3248918a79008cb696b39261d3f8b52780ba9a75d03fa557234",
+      "bytes": 4034
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/013_apple/collision.ply",
+      "sha256": "0e3b5740f2867cd690dd9f7418acf9ac9d3ac1556b998ed7fdb0cafe546c1375",
+      "bytes": 109655
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/014_lemon/material_0.mtl",
+      "sha256": "a1fb81bded71d9fe3364ad73d0cac79b989aac3788a705f342af64fe3ca2438a",
+      "bytes": 197
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/014_lemon/material_0.png",
+      "sha256": "46ef803704a8d2471d0a50d3ee6de9b48ab2bc33b97bcbd7f4d52c133207543d",
+      "bytes": 3777
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/014_lemon/textured.obj",
+      "sha256": "dc66c7e02bb52a4b016c90bd002be2a2344a6a9f4c7106b1dfe014d9761338e3",
+      "bytes": 1026053
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/014_lemon/textured.mtl",
+      "sha256": "24df6d9fd8366665821941bde13d9e4226d570193608ba4c9e4111b2908b8ec5",
+      "bytes": 63
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/014_lemon/texture_map.png",
+      "sha256": "46ef803704a8d2471d0a50d3ee6de9b48ab2bc33b97bcbd7f4d52c133207543d",
+      "bytes": 3777
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/014_lemon/collision.ply",
+      "sha256": "2f5a0fb0e196ee3834d2a9a81172c3b6671b9a4c5dd5c3fc55016862c93d0734",
+      "bytes": 78217
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/015_peach/material_0.mtl",
+      "sha256": "a1fb81bded71d9fe3364ad73d0cac79b989aac3788a705f342af64fe3ca2438a",
+      "bytes": 197
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/015_peach/material_0.png",
+      "sha256": "d2f4400e1bea3aade5c3a5014f07c8b7d3f2c13660acb837c3141365fee001ca",
+      "bytes": 3420
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/015_peach/textured.obj",
+      "sha256": "5c4c9e644d5fa914c3ea8adb69b3cadfceeb739e99e594e87c10e374e737625f",
+      "bytes": 1025507
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/015_peach/textured.mtl",
+      "sha256": "24df6d9fd8366665821941bde13d9e4226d570193608ba4c9e4111b2908b8ec5",
+      "bytes": 63
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/015_peach/texture_map.png",
+      "sha256": "d2f4400e1bea3aade5c3a5014f07c8b7d3f2c13660acb837c3141365fee001ca",
+      "bytes": 3420
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/015_peach/collision.ply",
+      "sha256": "2d83f1f2fb303d2bb8e42af97d05567418879623b88bb4f109137d24a7dffd01",
+      "bytes": 121277
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/028_skillet_lid/material_0.mtl",
+      "sha256": "a1fb81bded71d9fe3364ad73d0cac79b989aac3788a705f342af64fe3ca2438a",
+      "bytes": 197
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/028_skillet_lid/material_0.png",
+      "sha256": "c4e5a27b57cd83fb016b0cbb793844d4074248475ce34f61b67e0d83e25fdb43",
+      "bytes": 2176
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/028_skillet_lid/textured.obj",
+      "sha256": "633a659903cd472fb968fafe01dc9be9e7da5f94cb1c7844f73e051ac77ed287",
+      "bytes": 1110972
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/028_skillet_lid/textured.mtl",
+      "sha256": "24df6d9fd8366665821941bde13d9e4226d570193608ba4c9e4111b2908b8ec5",
+      "bytes": 63
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/028_skillet_lid/texture_map.png",
+      "sha256": "c4e5a27b57cd83fb016b0cbb793844d4074248475ce34f61b67e0d83e25fdb43",
+      "bytes": 2176
+    },
+    {
+      "path": "/var/tmp/imitator-game-zxc/maniskill/data/assets/mani_skill2_ycb/models/028_skillet_lid/collision.ply",
+      "sha256": "fb3d9dde941304e08df8e12247a9657e637de33285a51ece7edcfd162f03a46b",
+      "bytes": 77545
+    }
+  ]
+}

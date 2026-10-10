@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "env": "L3_TwoRobotScanMilkBox-v1",
+  "level": "L3",
+  "phase_names": [
+    "reach_scanner",
+    "grasp_scanner",
+    "reach_milkbox",
+    "grasp_milkbox",
+    "bring_milkbox",
+    "scan"
+  ],
+  "phase_peaks": {
+    "peak_r_reach_scanner": [
+      0.12947064638137817
+    ],
+    "peak_r_grasp_scanner": [
+      0.12947064638137817
+    ],
+    "peak_r_reach_milkbox": [
+      0.16193342208862305
+    ],
+    "peak_r_grasp_milkbox": [
+      0.16193342208862305
+    ],
+    "peak_r_bring_milkbox": [
+      0.0
+    ],
+    "peak_r_scan": [
+      0.0
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

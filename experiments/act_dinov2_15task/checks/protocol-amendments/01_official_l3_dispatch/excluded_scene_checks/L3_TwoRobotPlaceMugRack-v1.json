@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "env": "L3_TwoRobotPlaceMugRack-v1",
+  "level": "L3",
+  "phase_names": [
+    "reach_mug",
+    "grasp_mug",
+    "transport_mug",
+    "place_mug"
+  ],
+  "phase_peaks": {
+    "peak_r_reach_mug": [
+      0.3327983617782593
+    ],
+    "peak_r_grasp_mug": [
+      0.0
+    ],
+    "peak_r_transport_mug": [
+      0.0
+    ],
+    "peak_r_place_mug": [
+      0.0
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

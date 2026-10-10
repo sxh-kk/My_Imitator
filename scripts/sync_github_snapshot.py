@@ -10,11 +10,16 @@ import json
 import os
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 WORKSPACE = Path(__file__).resolve().parents[1]
 SOURCE = WORKSPACE / 'The-Imitator-Game'
 TARGET = WORKSPACE / '.github-publish/My_Imitator'
+LOCAL_ONLY_LOGS = {
+    f'experiments/act_dinov2_15task/runs/{condition}/train.jsonl'
+    for condition in ['pretrain15', 'scratch5', 'finetune5']
+}
 SMALL_SUFFIXES = {
     '.py', '.md', '.json', '.jsonl', '.csv', '.yaml', '.yml', '.toml',
     '.sh', '.txt', '.lock', '.png', '.pdf', '.svg', '.service', '.patch', '.log',
@@ -45,6 +50,7 @@ __pycache__/
 *.npz
 experiments/**/videos/
 experiments/**/data/
+/experiments/act_dinov2_15task/runs/*/train.jsonl
 **/te_cache/
 **/human_cache_*/
 **/checkpoints/*
@@ -70,6 +76,8 @@ def candidates():
     for directory in ['LearningDocs', 'environment', 'scripts', 'experiments']:
         for p in (WORKSPACE / directory).rglob('*'):
             parts = p.relative_to(WORKSPACE).parts
+            if p.relative_to(WORKSPACE).as_posix() in LOCAL_ONLY_LOGS:
+                continue
             if any(x in SKIP_PARTS or x.startswith('human_cache_') for x in parts):
                 continue
             if 'checkpoints' in parts and not p.name.endswith('.ready.json'):
@@ -125,6 +133,9 @@ def content(source):
             if TARGET not in destination.parents:
                 return match.group(0)
             relative = destination.relative_to(TARGET)
+            if relative.as_posix() in LOCAL_ONLY_LOGS:
+                summary = os.path.relpath(destination.with_name('epochs.jsonl'), target.parent)
+                return f'{label}（本机逐步日志；[每 epoch 摘要]({summary})）'
             if (relative.parts[0] in {'experiments', 'environment'}
                     and destination.suffix.lower() in {'.pt', '.pth', '.ckpt', '.safetensors', '.mp4', '.parquet', '.npz'}):
                 return f'{label}（本机文件：`{relative}`）'
@@ -145,16 +156,52 @@ def main():
     payload['LICENSE'] = (SOURCE / 'LICENSE').read_bytes()
     payload['.gitignore'] = IGNORE_TEXT.encode()
     from check_levels_status import inspect
-    runtime = inspect()
+    levels_runtime = inspect()
+    runtime = json.loads(subprocess.check_output(
+        [sys.executable, str(WORKSPACE / 'scripts/check_act15_status.py')], text=True))
+    act15_root = WORKSPACE / 'experiments/act_dinov2_15task'
+    results = json.loads((act15_root / 'results.json').read_text())
     capture = {
         'captured_at': datetime.datetime.now().astimezone().isoformat(),
         'snapshot_is_live': False,
-        'experiment': 'PlaceMugRack L0/L1/L2 coverage',
+        'experiment': 'ACT+DINOv2 official 15-task simulation reproduction',
         'runtime_at_capture': runtime,
-        'final_results_available': runtime['runtime_status'] == 'complete',
-        'recovery_history': 'experiments/act_placemugrack_levels/recovery-history.json',
+        'final_results_available': runtime['actual_status'] == 'complete',
+        'results': 'experiments/act_dinov2_15task/results.json',
+        'aggregates': results['aggregates'],
+        'experiments': {
+            'act_dinov2_15task': {
+                'runtime_status': runtime['actual_status'],
+                'formal_episodes': results['formal_episodes'],
+                'completion_audit': 'experiments/act_dinov2_15task/checks/completion-verification.json',
+            },
+            'act_placemugrack_levels': {
+                'runtime_at_capture': levels_runtime,
+                'final_results_available': levels_runtime['runtime_status'] == 'complete',
+                'recovery_history': 'experiments/act_placemugrack_levels/recovery-history.json',
+            },
+        },
     }
     payload['PUBLICATION_STATUS.json'] = (json.dumps(capture, indent=2, ensure_ascii=False) + '\n').encode()
+    log_provenance = []
+    for relative in sorted(LOCAL_ONLY_LOGS):
+        path = WORKSPACE / relative
+        digest = hashlib.sha256()
+        with path.open('rb') as stream:
+            for block in iter(lambda: stream.read(1024 * 1024), b''):
+                digest.update(block)
+        run = json.loads(path.with_name('complete.json').read_text())
+        log_provenance.append({
+            'local_only_log': relative,
+            'bytes': path.stat().st_size,
+            'sha256': digest.hexdigest(),
+            'iterations': run['iterations'],
+            'published_epoch_summary': str(path.with_name('epochs.jsonl').relative_to(WORKSPACE)),
+            'epochs': run['epochs'],
+        })
+    payload['experiments/act_dinov2_15task/TRAINING_LOG_PROVENANCE.json'] = (
+        json.dumps({'reason': 'Iteration logs stay local; original per-epoch summaries are published.',
+                    'logs': log_provenance}, indent=2) + '\n').encode()
     manifest = {
         'target_repository': 'sxh-kk/My_Imitator', 'visibility': 'public',
         'upstream_repository': 'https://github.com/imitator-game/The-Imitator-Game',
@@ -164,9 +211,11 @@ def main():
         'file_count': len(payload), 'copied_bytes': sum(len(b) for b in payload.values()),
         'exclusions': ['datasets', 'downloaded task assets', 'trained checkpoints',
                        'feature caches', 'environment caches', 'videos', 'interrupted partial runs'],
+        'local_only_iteration_logs': sorted(LOCAL_ONLY_LOGS),
         'publication_only_changes': ['Markdown navigation converted to GitHub relative links',
                                      'local-only artifact links rendered as file descriptions',
-                                     'live JSONL restricted to complete records'],
+                                     'live JSONL restricted to complete records',
+                                     'ACT-15 iteration logs replaced by existing epoch summaries and log provenance'],
         'files': {p: {'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
                   for p, b in sorted(payload.items())},
     }
@@ -183,7 +232,8 @@ def main():
     print(json.dumps({'apply': args.apply, 'file_count': manifest['file_count'],
                       'copied_MiB': round(manifest['copied_bytes'] / 1024 ** 2, 2),
                       'removed_previously_managed': sorted(stale),
-                      'runtime_status': runtime['runtime_status']}, indent=2))
+                      'runtime_status': runtime['actual_status'],
+                      'local_only_iteration_logs': sorted(LOCAL_ONLY_LOGS)}, indent=2))
     if not args.apply:
         return
     for relative in stale:

@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "env": "L2_TwoRobotPlaceFileFolder-v1",
+  "level": "L2",
+  "phase_names": [
+    "reach_file",
+    "grasp_file",
+    "transport_file",
+    "place_file",
+    "open_folder"
+  ],
+  "phase_peaks": {
+    "peak_r_reach_file": [
+      0.00700831413269043
+    ],
+    "peak_r_grasp_file": [
+      0.00700831413269043
+    ],
+    "peak_r_transport_file": [
+      0.0
+    ],
+    "peak_r_place_file": [
+      0.0
+    ],
+    "peak_r_open_folder": [
+      0.0
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

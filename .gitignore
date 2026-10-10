@@ -14,6 +14,7 @@ __pycache__/
 *.npz
 experiments/**/videos/
 experiments/**/data/
+/experiments/act_dinov2_15task/runs/*/train.jsonl
 **/te_cache/
 **/human_cache_*/
 **/checkpoints/*

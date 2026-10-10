@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "env": "L2_TwoRobotFoldTowel-v1",
+  "level": "L2",
+  "phase_names": [
+    "reach_first_fold",
+    "grasp_first_fold",
+    "fold_towel",
+    "reach_second_fold",
+    "transport_towel",
+    "place_towel"
+  ],
+  "phase_peaks": {
+    "peak_r_reach_first_fold": [
+      0.11830544471740723
+    ],
+    "peak_r_grasp_first_fold": [
+      0.11830544471740723
+    ],
+    "peak_r_fold_towel": [
+      0.0
+    ],
+    "peak_r_reach_second_fold": [
+      3.1227144063450396e-05
+    ],
+    "peak_r_transport_towel": [
+      0.0
+    ],
+    "peak_r_place_towel": [
+      0.0
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

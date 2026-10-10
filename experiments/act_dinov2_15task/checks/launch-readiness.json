@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checked_at": 1791449266.9244764,
+  "shell_syntax": "passed",
+  "python_syntax": "passed",
+  "dry_run": "passed",
+  "main_training_started": false,
+  "runtime_checkpoint_rollout": "runs automatically when experiment starts"
+}

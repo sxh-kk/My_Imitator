@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "losses": {
+    "loss": 0.2097061425447464,
+    "l1": 0.20967575907707214,
+    "kl": 3.037974238395691e-06
+  },
+  "action_shape": [
+    256,
+    24,
+    16
+  ],
+  "robot_obs": {
+    "states": [
+      256,
+      1,
+      18
+    ],
+    "view_1": [
+      256,
+      1,
+      224,
+      224,
+      3
+    ]
+  },
+  "roundtrip_tensors": 253,
+  "human_repos": [
+    "human_H13",
+    "human_H20",
+    "human_H21",
+    "human_H30",
+    "human_H4"
+  ]
+}

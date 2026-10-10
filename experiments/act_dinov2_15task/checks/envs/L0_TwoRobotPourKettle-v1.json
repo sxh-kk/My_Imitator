@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "env": "L0_TwoRobotPourKettle-v1",
+  "level": "L0",
+  "phase_names": [
+    "reach",
+    "grasp",
+    "pour"
+  ],
+  "phase_peaks": {
+    "peak_r_reach": [
+      0.14901643991470337
+    ],
+    "peak_r_grasp": [
+      0.14901643991470337
+    ],
+    "peak_r_pour": [
+      0.0
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

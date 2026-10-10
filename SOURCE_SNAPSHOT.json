@@ -4,9 +4,9 @@
   "upstream_repository": "https://github.com/imitator-game/The-Imitator-Game",
   "upstream_commit": "d6d16ec511bc389e0a207692730c137bc022ef14",
   "snapshot_layout": "The-Imitator-Game is a regular directory, not a submodule.",
-  "captured_at": "2026-10-08T14:45:09.009774+08:00",
-  "file_count": 3333,
-  "copied_bytes": 482056984,
+  "captured_at": "2026-10-10T20:33:18.927101+08:00",
+  "file_count": 3934,
+  "copied_bytes": 492122755,
   "exclusions": [
     "datasets",
     "downloaded task assets",
@@ -16,15 +16,21 @@
     "videos",
     "interrupted partial runs"
   ],
+  "local_only_iteration_logs": [
+    "experiments/act_dinov2_15task/runs/finetune5/train.jsonl",
+    "experiments/act_dinov2_15task/runs/pretrain15/train.jsonl",
+    "experiments/act_dinov2_15task/runs/scratch5/train.jsonl"
+  ],
   "publication_only_changes": [
     "Markdown navigation converted to GitHub relative links",
     "local-only artifact links rendered as file descriptions",
-    "live JSONL restricted to complete records"
+    "live JSONL restricted to complete records",
+    "ACT-15 iteration logs replaced by existing epoch summaries and log provenance"
   ],
   "files": {
     ".gitignore": {
-      "bytes": 365,
-      "sha256": "1f6094d663892146003554d4ce54281a07565980dfc51c02dfe15fb4be8650dc"
+      "bytes": 415,
+      "sha256": "ea79baca01ddd83676b5e30c4c2821ca057a7508132c44146b4ff6faa7703fb1"
     },
     "IMITATOR_RESEARCH_PLAN.md": {
       "bytes": 22459,
@@ -74,9 +80,17 @@
       "bytes": 10541,
       "sha256": "cc551c37c0d1479549bae5195503e10513fbff4a84eda1427a74f5af0089246a"
     },
+    "LearningDocs/11_ACT_DINOV2_15TASK_REPRODUCTION.md": {
+      "bytes": 11557,
+      "sha256": "54899581de9d5f02e352e0722a58c15199fbb187dfcfa3e9358e01eac0f9d22a"
+    },
+    "LearningDocs/12_ACT_DINOV2_15TASK_RESULTS.md": {
+      "bytes": 10766,
+      "sha256": "c2c412cacae29cf008293264dbbbe170c402e4f4e04c85321cdaf27e70990719"
+    },
     "LearningDocs/README.md": {
-      "bytes": 4936,
-      "sha256": "36d8b1ae63728b19b3a474a69001369f59f6aab4fa474cc5aa73c3c6aa8d9626"
+      "bytes": 5516,
+      "sha256": "e1fae60f480c6a49d42004e38ee2f947846b67a5de6e1ed50b8a5f2e387616f5"
     },
     "LearningDocs/real_sample_trace.json": {
       "bytes": 24666,
@@ -103,12 +117,12 @@
       "sha256": "fdba9b1f960a1216c109a02ea4f7864effff595f3ed25bb188b1355f52834da8"
     },
     "PUBLICATION_STATUS.json": {
-      "bytes": 1282,
-      "sha256": "5b2841c6d10ea6a60ec0704b9102086acf3214f3f9ed9f7d46b800c4ec685669"
+      "bytes": 5231,
+      "sha256": "93d055fe29ee30ebc8adb94bc08804e40bd73d80385d4534b1de232be69bb2e4"
     },
     "README.md": {
-      "bytes": 4499,
-      "sha256": "d0d5bf4c143c0a42d27ee9c2c4d210f394082d5f659d2ddff87235c11713a26b"
+      "bytes": 6039,
+      "sha256": "389ae57a36204283bfe90e501589ad348d52004ec04d7b1d44a66e36b82a4145"
     },
     "The-Imitator-Game/.gitignore": {
       "bytes": 1548,
@@ -9138,6 +9152,2386 @@
       "bytes": 2487,
       "sha256": "e787af315c76592925d288f5ee7483e84fe30e86daa9333ae1d85cba58d965ac"
     },
+    "experiments/act_dinov2_15task/README.md": {
+      "bytes": 1924,
+      "sha256": "d76dcc2dfd42144aa004054c46885758ee9eeed1c2505da3e3a11062c66ea18a"
+    },
+    "experiments/act_dinov2_15task/TRAINING_LOG_PROVENANCE.json": {
+      "bytes": 1146,
+      "sha256": "bc7c948c86d5b4e1617213dd176df3ea8b106f7750533d4ff659dc2bce58dc93"
+    },
+    "experiments/act_dinov2_15task/asset-manifest.json": {
+      "bytes": 1279,
+      "sha256": "dd99f5afb04735f6953d9cc5e4f637d403ae39c0ac659539be678c96cee5a785"
+    },
+    "experiments/act_dinov2_15task/asset-selection.json": {
+      "bytes": 2440,
+      "sha256": "8d491f1683c0dfc7657464f1e372f262e9057f4cf429ae5ee3de1ad1c18590a8"
+    },
+    "experiments/act_dinov2_15task/calibration/pretrain15_w8/benchmark.json": {
+      "bytes": 415,
+      "sha256": "4f741410a56b320abfab7ac732d2396fa25aed05faf8e84184c2c78813202e65"
+    },
+    "experiments/act_dinov2_15task/calibration/pretrain15_w8/checkpoints/benchmark.ready.json": {
+      "bytes": 358,
+      "sha256": "8661efb664902cdde552d19bf39a60dc70ddf0bf232d77ccf3b766a8182326f9"
+    },
+    "experiments/act_dinov2_15task/calibration/pretrain15_w8/config.json": {
+      "bytes": 3573,
+      "sha256": "bb36b98cbdc78ec9d43bf694bafbe58ce8f860332a3c8327bb406a49e62a3e65"
+    },
+    "experiments/act_dinov2_15task/calibration/pretrain15_w8/epochs.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "experiments/act_dinov2_15task/calibration/pretrain15_w8/real-batch-check.json": {
+      "bytes": 628,
+      "sha256": "d7fc0cfa16e38cfb4ee2ae26873c6c425ce209db4dbe70b32e1977c090c2a8e0"
+    },
+    "experiments/act_dinov2_15task/calibration/pretrain15_w8/train.jsonl": {
+      "bytes": 19216,
+      "sha256": "7623ec8b52a0938cd75e76933982ca6a397068ad065510d0c50aef6e7d4a29f8"
+    },
+    "experiments/act_dinov2_15task/checks/assets-download.json": {
+      "bytes": 395644,
+      "sha256": "2648740fd4475a32dfcf385c1974b3bbeeb3d8d5a06a571c4aa051e6b7d8bbeb"
+    },
+    "experiments/act_dinov2_15task/checks/checkpoint_rollout/progress.json": {
+      "bytes": 2853,
+      "sha256": "568155a400425fffb045e3d1a47cb6f131319135e826ac272b610716ffb70f7d"
+    },
+    "experiments/act_dinov2_15task/checks/checkpoint_rollout/result.json": {
+      "bytes": 3484,
+      "sha256": "1aa0d344310a6af24fdbf5c271f1fec3cbfa2e7d716be9c4634231d4f4d5bd75"
+    },
+    "experiments/act_dinov2_15task/checks/completion-verification.json": {
+      "bytes": 140,
+      "sha256": "0788f77010b44f21ab5ce2bd45070051e8f3b39361ffa37a7110b7705d8a0135"
+    },
+    "experiments/act_dinov2_15task/checks/data-boundaries.json": {
+      "bytes": 159588,
+      "sha256": "968936a21795ce249967ad70422063de2fc0d989b7b5ef90b0c1cafd997b8f08"
+    },
+    "experiments/act_dinov2_15task/checks/data-download.json": {
+      "bytes": 163664,
+      "sha256": "c07c30a6c9295e0d4e797421098cffda51eecfbad502b59ea16bf86a5840a399"
+    },
+    "experiments/act_dinov2_15task/checks/decoder-gradient-diagnosis.json": {
+      "bytes": 1143,
+      "sha256": "e64c7f8b890506d674cdc141e2c4043e8f9bbdda410933ba2ed8603a58cde99d"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotFoldBox-v1.json": {
+      "bytes": 388,
+      "sha256": "311e76428a431bc150ff4925533c1abe036769241cd4247e987b559eecb1e3c7"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotFoldTowel-v1.json": {
+      "bytes": 774,
+      "sha256": "cd15229a2d46ff672e47d21a3c9b100c0da585f68863c2b316280adb9d89de69"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotPickFood-v1.json": {
+      "bytes": 845,
+      "sha256": "dadd556c73fa920c8dda3b1375d4e8095f7aaaedb172bdb3fc33ce3208f1f680"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotPickRemoteControl-v1.json": {
+      "bytes": 626,
+      "sha256": "f322f1df93b4095e269081a64d000a6a926bbc7f618e36f7544d5529d4f32ce1"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotPlaceFileFolder-v1.json": {
+      "bytes": 676,
+      "sha256": "3adb893d42a5091b876d5a50bcd29a3fa09081596e08e9f63263c666d893e1ba"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotPlaceMugRack-v1.json": {
+      "bytes": 586,
+      "sha256": "2606c2fe2f7f9d0f07f0b5f188071d9b09e6e49acb61967269fb23a30b07af44"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotPlacePlateRack-v1.json": {
+      "bytes": 571,
+      "sha256": "86c1b57d99b5003d7ba4ae3dcde31ccaa2dfc0eca11179eadab0bc45227cfd6f"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotPourKettle-v1.json": {
+      "bytes": 507,
+      "sha256": "728e8351d444dad152a9c610479ad0e49ff75e7f1d0e98f24e195bff7f8f57c6"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotScanMilkBox-v1.json": {
+      "bytes": 776,
+      "sha256": "16342dd368515d04bc6e121fdad5987c0e98a59a1fc4e4745f2aa811a5616017"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L0_TwoRobotStirSpoon-v1.json": {
+      "bytes": 678,
+      "sha256": "c1797869d2df979b5db963282125c996b1bcc6dc2343f3f9be61a76aeecf4d88"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotFoldBox-v1.json": {
+      "bytes": 387,
+      "sha256": "ecb7eff57462faae74ed072e026b4d4a4ca383e1794a031fc1953e4a32b24109"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotFoldTowel-v1.json": {
+      "bytes": 772,
+      "sha256": "8dbd11ab75e8c65d6c5a372be22ba56b7ddc469614401770960dbf0125b879f0"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotPickFood-v1.json": {
+      "bytes": 845,
+      "sha256": "693c52ce1a28e3a8a1b889054cc04123ed64b91db8f445312042fe1f6be9d6da"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotPickRemoteControl-v1.json": {
+      "bytes": 626,
+      "sha256": "7b1138d605f006c45d3bed1032655244fd539fba2993601c262d5874d135d5af"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotPlaceFileFolder-v1.json": {
+      "bytes": 678,
+      "sha256": "46ae88cc8fcc212e18414b7a62d22db7a56e210febf1b4c65a92742ed4cd0089"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotPlaceMugRack-v1.json": {
+      "bytes": 587,
+      "sha256": "a4f19a05aa22fa42baee4afadf9adae5233b75b3beb75430e5561602f7bb1ab7"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotPlacePlateRack-v1.json": {
+      "bytes": 573,
+      "sha256": "9d170d95c10b43ee40fcfdc27cfe2a4a0bebbea955244c8f9d41ed28472f1415"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotPourKettle-v1.json": {
+      "bytes": 507,
+      "sha256": "3c0aebd9096ed13925211ec10eb668149627b0f9e8ef534cc0e557ec9905c548"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotScanMilkBox-v1.json": {
+      "bytes": 776,
+      "sha256": "070a81809c551fd58d307abc00ea84b24a06943b5515486a513e1b3703cfe942"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L1_TwoRobotStirSpoon-v1.json": {
+      "bytes": 678,
+      "sha256": "729b9169e68bfca002968cae0a4c45c4c0c8f276eaaec837aae0c86bf6636807"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotFoldBox-v1.json": {
+      "bytes": 387,
+      "sha256": "61f6cbc715fd8aad81d9da742540edfc492edf590421eba0a668f28ccadd786f"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotFoldTowel-v1.json": {
+      "bytes": 793,
+      "sha256": "33d396abfe517ae78978d83c892a93c675e01e403ca2c967bf0a6403413bdaed"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotPickFood-v1.json": {
+      "bytes": 853,
+      "sha256": "d82486865d85282ed87f27f9e46271ba52d42e06cf5efa76de7ac563b25317be"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotPickRemoteControl-v1.json": {
+      "bytes": 624,
+      "sha256": "5df47a6191bdb77bd65b8dd9baf7ad7d9856f3fd7f87b38a9fda3fb488bb89ca"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotPlaceFileFolder-v1.json": {
+      "bytes": 678,
+      "sha256": "877146280b50cde533568706f59e679142ea2d1d33b67f3a48f51a245e2effe5"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotPlaceMugRack-v1.json": {
+      "bytes": 589,
+      "sha256": "27f5f7b136457e96708ee6312964df5796d786f1f2eda1aed0d1c346ca752433"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotPlacePlateRack-v1.json": {
+      "bytes": 573,
+      "sha256": "74a175c22a80d0b95ee3d8a8bb458090d2a05463b5851bc43592e5fdf3fed3b6"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotPourKettle-v1.json": {
+      "bytes": 509,
+      "sha256": "78281466ffda734ea42792d22df2eeaa3618257bb8c1eea12d613e0cfd237654"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotScanMilkBox-v1.json": {
+      "bytes": 780,
+      "sha256": "e2fcae6588a34608627555d0fd1977a13271d5bc6e55e8f2c6e885f06a89a20f"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L2_TwoRobotStirSpoon-v1.json": {
+      "bytes": 680,
+      "sha256": "ea138f5eeebb42e0807048e0ef7c165f0b4c1ec403e06c91bf54d53a265ca242"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotFoldBox-v1.json": {
+      "bytes": 522,
+      "sha256": "40e3bf6ab8f187131585c39a961fc4c12f196d1b3f75da7d1ca59c553538e980"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotFoldTowel-v1.json": {
+      "bytes": 899,
+      "sha256": "680e5c44992c482592b1c93a37e0f1424ad57927f881b9624b1fd8b68d80a776"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotPickFood-v1.json": {
+      "bytes": 983,
+      "sha256": "4b8f5f89cd607d15030ccbd94413cb1abb77ec9f6ae74eabd311f6a52706a4a6"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotPickRemoteControl-v1.json": {
+      "bytes": 773,
+      "sha256": "5c6aebcec0d998e9410c5479bad2da25c0a7f47711faea38c0a01522cf3d5ff2"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotPlaceFileFolder-v1.json": {
+      "bytes": 717,
+      "sha256": "4ac9982a4e87e5ec7d145d37ca5da051ae301ea1391e9f3aac694d092e362798"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotPlaceMugRack-v1.json": {
+      "bytes": 697,
+      "sha256": "69421703b23f7be836a4bdea1d12be3dcb2bb2a20495c5af05e2178eb3a3b331"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotPlacePlateRack-v1.json": {
+      "bytes": 717,
+      "sha256": "eb69ab632a995287af8a20dc44c8bdb115989de586d5afc3cba4e397d27f6619"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotPourKettle-v1.json": {
+      "bytes": 647,
+      "sha256": "bf605b1a34ed955707811d3bb48726b05b69634a7748b4291135651258dbe491"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotScanMilkBox-v1.json": {
+      "bytes": 801,
+      "sha256": "37862bb5ea123ca24a14f0eba2fefda026f0c260fdf43b625a96de1ead9e07ce"
+    },
+    "experiments/act_dinov2_15task/checks/envs/L3_TwoRobotStirSpoon-v1.json": {
+      "bytes": 815,
+      "sha256": "e9df296b60e961a34c0abba6f8c5130bb209c3869d325948e9691904b949cfbb"
+    },
+    "experiments/act_dinov2_15task/checks/l3-additional-assets.json": {
+      "bytes": 69099,
+      "sha256": "38d078c12a30c6eb02caf5cd1cde1901ca4065780bceb4d83abfd84e1030dbd7"
+    },
+    "experiments/act_dinov2_15task/checks/l3-repair.json": {
+      "bytes": 250,
+      "sha256": "0114994316415dbd44c5bcd6492de216131b4c126b91b599f129992a8b6ca5dc"
+    },
+    "experiments/act_dinov2_15task/checks/launch-readiness.json": {
+      "bytes": 252,
+      "sha256": "567ecfd8610dc9e8c10fe698e3271a933b1ed693cf961d17e9d89a4c4084eba3"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/amendment.json": {
+      "bytes": 5563,
+      "sha256": "f3a16ebfc6cb07341506ff60fe26b05d649246bc55edf28e28274c8bf9241e94"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 23118,
+      "sha256": "9387c727e9d04c7052b27782ba3eb2323862276eec6eacb535833021b6a6f387"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23741,
+      "sha256": "d826a493415e964f17c90e775d166d53c2ce9f9fefdcf58fc9c5113f6eef2f37"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotFoldTowel-v1/progress.json": {
+      "bytes": 24339,
+      "sha256": "aade8b015770051faa23a9b5b158c2b62bdbf9b000fbb3b37f7cec67aa369acb"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotFoldTowel-v1/result.json": {
+      "bytes": 24975,
+      "sha256": "2383184e6300e3acdb91d6e3020dba816837405787ae1778484aa34071b047f5"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 24601,
+      "sha256": "48a9667443e2bba6247bc3d919c7b8a72170f8bf3f6e700847e8476433d08d51"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPickFood-v1/result.json": {
+      "bytes": 25223,
+      "sha256": "5b423de06dd7f3ef39a87c895c74d12936e254f76d3bbfff7064c07ed0e553ed"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 22224,
+      "sha256": "563e6b00cf602d609cdbda881edf282044f3f06289615786e385b49bce76bf16"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22846,
+      "sha256": "ec26375e2ccfd4a77937ffd2c7d093b1fe7bd9af6e0b40618ac796d6cf421c86"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPlaceFileFolder-v1/progress.json": {
+      "bytes": 24067,
+      "sha256": "004796ecc10b563b53bd38549f08824c302bb5e0f790a244236650993b864115"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPlaceFileFolder-v1/result.json": {
+      "bytes": 24688,
+      "sha256": "1051ef068dce581a51e344d48102363dce973474c7f1a6e6c1801d199dc78404"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPlaceMugRack-v1/progress.json": {
+      "bytes": 27546,
+      "sha256": "f64c8f077b60e6b7968521cc42e26480da37febce44f9635d1450852bc75ff81"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPlaceMugRack-v1/result.json": {
+      "bytes": 28166,
+      "sha256": "95bc835c522b7e1fe893629ce07581901eff5ba244bc1f1dc7e56f106c9e8276"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPlacePlateRack-v1/progress.json": {
+      "bytes": 24153,
+      "sha256": "ff63ba3109102cb0bc00506ca5e6c7d575e177e99aec719e8cc5cb420842fe1c"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPlacePlateRack-v1/result.json": {
+      "bytes": 24774,
+      "sha256": "2204f5897a7c0779d8ff0b9c568dc2cc55013b489be8c3d5411731f1cd1385ee"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21694,
+      "sha256": "b1313ac3767f0145fcdbae7baf5b9b6f8ed44a31c7d1240ef0f318d677c89810"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22317,
+      "sha256": "02e931091ebe0f97a2eadbd721d1cf63eb97a210a3fb348184b1e25f7cad6b51"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 24475,
+      "sha256": "5c7fb3111ccc74201bc1bdcf3b0b6653d21d77cba0a6b22d8f72c09cd36d7488"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 25097,
+      "sha256": "f72210bf8ea753ce11f2a07b777570333f98d7fc64e80bd258c477d39811840a"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotStirSpoon-v1/progress.json": {
+      "bytes": 22273,
+      "sha256": "42535d7c4b722ce7e81612d7a28e34df33bc881558d677aba5c94decfa7fb0f2"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_evaluation/L3_TwoRobotStirSpoon-v1/result.json": {
+      "bytes": 22892,
+      "sha256": "7d482a24b05a2966f5c80e12e247b43cbe5dc876e7d66ee65dda5ac0911b035a"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotFoldBox-v1.json": {
+      "bytes": 388,
+      "sha256": "893870e4b9b7287f9b5de2047c6cab8e4c46540ddccffef2f3d500fcd7893c39"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotFoldTowel-v1.json": {
+      "bytes": 774,
+      "sha256": "1feaa616d22ea78ea0eb61d56b2205bef05e9dac53233e297784b84b2ece389d"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotPickFood-v1.json": {
+      "bytes": 845,
+      "sha256": "21deceeebf6f3fbd45ed762814880dbadb9ca84789797769130ba7d58d5b5731"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotPickRemoteControl-v1.json": {
+      "bytes": 626,
+      "sha256": "65bcdb35f34f0d117d7e790fa88011e713512a1cae9594b4363ad302d5c69912"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotPlaceFileFolder-v1.json": {
+      "bytes": 676,
+      "sha256": "c40eb704502021158d7d71e6e830fc3427ea5745083fee4c0bde779450c6db20"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotPlaceMugRack-v1.json": {
+      "bytes": 586,
+      "sha256": "9f47eec8f9553f99ce726fbca1425e62430a0c346aa419a067dfd98b2ee286aa"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotPlacePlateRack-v1.json": {
+      "bytes": 571,
+      "sha256": "0879a392dddd1085fa560d91c708808540707bace00d4691ba1df7bd3217b1b2"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotPourKettle-v1.json": {
+      "bytes": 507,
+      "sha256": "904c1661d30868939eab461837ca2b370ebdf5b63dcfddfee1c63919718b3019"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotScanMilkBox-v1.json": {
+      "bytes": 776,
+      "sha256": "70e76d93cbb81f5a8f63f37bb6048942cd9022df3bf449a37d5981257b50d1c3"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/excluded_scene_checks/L3_TwoRobotStirSpoon-v1.json": {
+      "bytes": 678,
+      "sha256": "0a9f1e6a6405443cef11744699ea78fe923c178d032b13015e5c5bd297917eb7"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/original-execution-source-hashes.json": {
+      "bytes": 855,
+      "sha256": "73cf086270daec9147131ed7927c8dad8b316ac8288c0c4d65d0e0a7c9c5f67e"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/original_source/evaluate.py": {
+      "bytes": 7734,
+      "sha256": "7e1ca4cec92144c7e7b6b88067a033e4390c8395c30d0e5aa2b91a8667160d49"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/original_source/probe_env.py": {
+      "bytes": 1945,
+      "sha256": "c8e74a85663d7e83dd0d714f6646f36b344ee5f32e9636b881c68cd2051a8112"
+    },
+    "experiments/act_dinov2_15task/checks/protocol-amendments/01_official_l3_dispatch/original_source/summarize.py": {
+      "bytes": 6338,
+      "sha256": "ffbe2cb671832a28b40845b30ecf9d9cf7e6e5bdb9c653d59991d82e865b7449"
+    },
+    "experiments/act_dinov2_15task/checks/ycb-download.json": {
+      "bytes": 7098,
+      "sha256": "5462cb44e021b02396766dc1c2619f3d67557bc177bfd37706c48298fa798d05"
+    },
+    "experiments/act_dinov2_15task/common.py": {
+      "bytes": 5212,
+      "sha256": "97d885bff028e6090ffc7c09d621dfbf6221e17c5c5ff85c3c7b4697e0df7e07"
+    },
+    "experiments/act_dinov2_15task/controller.json": {
+      "bytes": 77,
+      "sha256": "448a1decf32e6fe7a624af44df0875b80546b308240be72045f3cff64ca4725a"
+    },
+    "experiments/act_dinov2_15task/download-manifest.json": {
+      "bytes": 215042,
+      "sha256": "1cf3db5b287a5b8809917c0a81abdb4022e0c1aa83fa6ca6b534760267cf12d4"
+    },
+    "experiments/act_dinov2_15task/evaluate.py": {
+      "bytes": 7964,
+      "sha256": "83b17d2198d33bb47717611043a5f6b11df266ae18dca3fd006cf4dbd8f25a4c"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 23008,
+      "sha256": "be597c74c094a8955dc6b48502aec166afc080353e3bf12b7b353b6482a3611d"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23785,
+      "sha256": "9859191a7fef3a775da3a96044dc0c13cec4820ad01f4a869dda7199ec3a2dee"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 23796,
+      "sha256": "40cd00e627b5b4eadb5567c2b26c22c24bb2e60abc9b58feda05b1233dc9c905"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotPickFood-v1/result.json": {
+      "bytes": 24574,
+      "sha256": "6cddb96663a3a18e23c4270a94cddab8b190cf410a5a9171b63b326c1f4b8e88"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 21515,
+      "sha256": "4722ced80db1ffe4eb8624705573487366fed0255a7cb7b1e134a51d9c0f02eb"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22302,
+      "sha256": "ddaadc9c6d5651991837f8e280970a42169c8aeee3f3e89b2c51389a71310769"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21264,
+      "sha256": "6cc93a081c1af554c8585044d91f0c150bc94da53685240fc74f80386f143453"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22058,
+      "sha256": "fc86de4728b771b138217fc6aece6bf2ce5eb233bff747368dc4d121acfe0c40"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23714,
+      "sha256": "04bc1f61d412ed4cfcc1a0137b4a64a554a51c7e26d589f34cdcbcffed264b9c"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L0_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 24511,
+      "sha256": "a5a0b2b4fe3617b6f22fe6350b4c3ca8603f8e71028741f2b16e751e33b5d096"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 22575,
+      "sha256": "d66376844643fb803e7dc1b1acc5d5c4eb3fa7f7a53356c2d904030926398df1"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23352,
+      "sha256": "6cb8e7cfe81338a7ed174a2effdbfc855f1fb87b6dc826330e8aaa7332b5de03"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 23628,
+      "sha256": "200df10ce9407ae9730f120ff0349e8af3ba836a955e6d2a35bef90a8f98a4d2"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotPickFood-v1/result.json": {
+      "bytes": 24406,
+      "sha256": "19d412a6ead60c31e63a8e55d5fe10952afee91f8fa67490c6d9c4c3b0661d89"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 21513,
+      "sha256": "cc95f30d863863b6b7dab2e4638c688a3eee2752880a78e832a174c030af08d5"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22300,
+      "sha256": "6736cf3c2f3d68c11ce3e4e8ee50887c0236e97e8f94ebaec6d29b9ec8d2ab64"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21408,
+      "sha256": "9120e2e355a939cf5f21aba4d8822802fd1da0a662af9f21ad0f385ed8fc93db"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22204,
+      "sha256": "7d71d554e187757ea5fde65d159080b0223b4dca0806f88d07fb5eb098da50e1"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23842,
+      "sha256": "ca51433bd2c16973203f1a595ee15f19e4685a6b872beea2f9bfc62a9e3939b1"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L1_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 24638,
+      "sha256": "3c91089dd8fa80df0218b7e8ccdbc2b91d2736f5b9dd8070816fb8084dbf90de"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 22541,
+      "sha256": "f74f47f2e1cc2c13fc9248866e7e328c9cf4ec68f1b3db12a02be51c1a166e3f"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23318,
+      "sha256": "49cf56deb4869d626edc4050302dab4a8e47789f4209a6d5a04e125935e7e57a"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 24374,
+      "sha256": "195bd57e94e23168605dff6804d46fc3a692a6810f283a0a8dbb97f050998ac2"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotPickFood-v1/result.json": {
+      "bytes": 25152,
+      "sha256": "eac0301b23609879b176fcd8746d9a5deea37c9b68bfd3ee8f7cc0a922ac30ef"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 21581,
+      "sha256": "e7f1cbddab07baecbbc4c6d2cf8ea5c715ae9788c4f542abae712f716280e955"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22367,
+      "sha256": "0e3639f508c4d5e352a564c7f7cface04644be7cc40cf9186bdc1e1345de690f"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21752,
+      "sha256": "51c6cc827810b850082bec197efed11f6e4fcb74c08d2235d06585d5bb99f66d"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22532,
+      "sha256": "c70b98ea48f4ed2d8ce78b143b2402f617afb8ecf5572e0b0fd4528ea886a912"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23599,
+      "sha256": "cf48bb661ba7e704e20f6ebf9d2e99a9009a9f9917b8a68eefac271a64212ffd"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L2_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 24380,
+      "sha256": "3836d2b3396be721a601210ace792a6e3f028e4be60fd0c13c4aeb73314975cb"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 22521,
+      "sha256": "9728cfdc6d0ad9dd2bdd19afcfa0c09355e018df199372b272fe7f0f30f1136a"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23301,
+      "sha256": "9e7a0fb3068c2b43026c82ee0a9711274deed2235b8be18745469b8800ab30de"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 23629,
+      "sha256": "fde8a171bdca4cb90ce3c526c1fc5fcfd7001144f4e1c8e51590222fcf694437"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotPickFood-v1/result.json": {
+      "bytes": 24409,
+      "sha256": "4a325b0017e80a6405f5054dc98d95470802f1a1697accdd79d42d32a9bdf0e2"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 21497,
+      "sha256": "da797623c7292797d734db67a5e2c5173ab0b110f5741609371a1556bed16217"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22286,
+      "sha256": "e64f4711057f1342146b58f61a1c584e374e02c69959b748f700283b2f436733"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 20988,
+      "sha256": "74879b20578799d9f0c30ac4a25e6870c568f46d2249fb3e30bb7fbb8c94a986"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 21770,
+      "sha256": "8b12d500cb475609cba8a5ad296f23961ed1000b2f69c935ea28780948c3e386"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23277,
+      "sha256": "29022619101c5bcacd91a3a4bb6994ce5168dcc075c20377b18e27c29c31c6e5"
+    },
+    "experiments/act_dinov2_15task/evaluation/finetune5/L3_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 24062,
+      "sha256": "ad530b7d99f4b38c33f0e5cc107e617652fd53d4f126e2bb0f14c2faa52c1c46"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 23121,
+      "sha256": "46654d7c258a86c96ba0591506de62572e37c52cf3712fdc8accd999195ed6f7"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23743,
+      "sha256": "1c0e61c628b19be8166aad9906dcfd34cc356ae13ef18d87f630eab34d507107"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotFoldTowel-v1/progress.json": {
+      "bytes": 24319,
+      "sha256": "ef8cade2c4ba92ae19ff5d51f921cb011853b0e984a11e98591d1f239fbb496c"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotFoldTowel-v1/result.json": {
+      "bytes": 24939,
+      "sha256": "65604b33ffdff997f4f5e4d71e4f97e871607daa2187aae229d8fe6c1deaddb3"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 24613,
+      "sha256": "d47dfff29f9875112c497e1f5ae0ccddce17a87e70baa01c45334cbef81e27ad"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPickFood-v1/result.json": {
+      "bytes": 25235,
+      "sha256": "0d45f24e7df5a59655be658f0164d7f361adb78c7bfa6c0228949f0bfd0b94a1"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 22208,
+      "sha256": "3f530ef72197f218dc94c33fc3f8adde3ba5233b0be8279b770e5ba37728cee2"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22830,
+      "sha256": "423233e94c2e4fe39b9b1dfc9dc5bc9ac295e42851d738a7f39911705acb50a6"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPlaceFileFolder-v1/progress.json": {
+      "bytes": 23431,
+      "sha256": "8346851e218845c0b99ddb031b3cd4e654986590b4baf3a0f11bff15abcc023f"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPlaceFileFolder-v1/result.json": {
+      "bytes": 24051,
+      "sha256": "9a27e523e8f0da27f15a74d6f9b24a376c7595729089b9bba4f57f33f572e782"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPlaceMugRack-v1/progress.json": {
+      "bytes": 27084,
+      "sha256": "bed4ec211e10a496afd4ef6d75eeada7de4c5987fe519ccdd293c5e6e626bc3b"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPlaceMugRack-v1/result.json": {
+      "bytes": 27704,
+      "sha256": "3960a1033118f73bf9491155ec63e9d303f9a10eeaa996713cece056b1813286"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPlacePlateRack-v1/progress.json": {
+      "bytes": 23693,
+      "sha256": "2a28a1c2f8be88ffaea53359f43febc9ced08379f150665ed4ad80240fc694b1"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPlacePlateRack-v1/result.json": {
+      "bytes": 24313,
+      "sha256": "0ad69b5824f416301702585d2075928153ab05ab2cbf43d42a8841d40e5a32e8"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21700,
+      "sha256": "97ba662748eaf7732b1da5bedf8e864ed761331852059008b32f83caac5d4f60"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22322,
+      "sha256": "0e2e6158db9950ed0111cc3a18d751e6812264cb885a9084cee54f9904013c61"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 24489,
+      "sha256": "ebbc11910cceb34ff6034b7f4ace484e501820872dd802a0614c7577cf4cb420"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 25111,
+      "sha256": "2f24a05458c0cb3813f679aa9c7c289e7b0a29c35f4da8b06eb81baadd32eacb"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotStirSpoon-v1/progress.json": {
+      "bytes": 21602,
+      "sha256": "7cf88545a5d37b5524adfbe84ff55113d17b2dc3acc8cda08d1759542ca7e265"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L0_TwoRobotStirSpoon-v1/result.json": {
+      "bytes": 22222,
+      "sha256": "06ba35ea95b60037c99e6e6a732032f446262f5b79b5f499d2eae5bcd119ed5c"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 22676,
+      "sha256": "981574945cd5c5c45bb9888edc722b304ba5f5543cff9fd840170a1e4b874c14"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23298,
+      "sha256": "b753e90048c9be2d857ba2bbe2fa73acd9051b704a874f078d5c455fada50c3a"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotFoldTowel-v1/progress.json": {
+      "bytes": 24303,
+      "sha256": "2bd92ef169426920ddc953d79e5f03f4aac316ef96ad6fbcf92593e773ccf93f"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotFoldTowel-v1/result.json": {
+      "bytes": 24923,
+      "sha256": "215b3ce7e26e998fe46e9ffb705c6fcc383e13741ef58f54866db8a225243400"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 24614,
+      "sha256": "c78aadf26c00359c0545dc1c7330874d33c10b2262ee196bf0e9acb5ae17626b"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPickFood-v1/result.json": {
+      "bytes": 25236,
+      "sha256": "e0a16f9f8461ad1766a0729d3054933e928ee25a6af0f162326c8e78e4edf112"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 22202,
+      "sha256": "09c48232557864c5f6334cd77f18b0141c368d14f587d9481c7b8bcaa3704a0e"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22824,
+      "sha256": "0a7ef9face425f0d5ba96422a773a0e9470e429b604125a8eab6b113628b2d3f"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPlaceFileFolder-v1/progress.json": {
+      "bytes": 23713,
+      "sha256": "193a5807ec5e77b64c5d4e6a60cfa70d5ebc7294f7517a720559b328de2ac4d9"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPlaceFileFolder-v1/result.json": {
+      "bytes": 24335,
+      "sha256": "c5d68e362c4632150ba960d461e5a71e0f8bc8e032719bb446ff12079a7657b0"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPlaceMugRack-v1/progress.json": {
+      "bytes": 27082,
+      "sha256": "a22e998a991eb6fcbd5aa75677126051d3472551fc4fb580ed85d9e94c5de22b"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPlaceMugRack-v1/result.json": {
+      "bytes": 27702,
+      "sha256": "3e7013bf31d8de898d71658140abd0530c4d90fedf7d03dfb8afc77e84a1817a"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPlacePlateRack-v1/progress.json": {
+      "bytes": 23634,
+      "sha256": "95374e802b58182a5629b4f2575162089ed3ee5ecb1ad5c6725c08379c6465f7"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPlacePlateRack-v1/result.json": {
+      "bytes": 24255,
+      "sha256": "bf61bf1098c5f17d8bb698cb7973b5db4141322963332af7f5ccc46efd143edd"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21713,
+      "sha256": "95eccb447cb8e20872100f0d624e623b982cfd047e6ee6320a0f49a6c92b1db7"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22335,
+      "sha256": "8299d7668836cbeaf945404dc563ebb34b136c64d4b922f44e571e453d511cfe"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 24474,
+      "sha256": "2d846335ace54df12b7b5f22a81a234f46e2f5e6fdfd64a8a58f9c74f97ffc70"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 25096,
+      "sha256": "e3be01e4865ecf1ab91662dcb278daa17a5271be8c04cc6b8b76dd4f76a4e20f"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotStirSpoon-v1/progress.json": {
+      "bytes": 21672,
+      "sha256": "d65269a0afda7a01ca9537a53a1e51825449642545870256c08829db3bce7058"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L1_TwoRobotStirSpoon-v1/result.json": {
+      "bytes": 22307,
+      "sha256": "f3b8d36a008ad3caf804843ba667d34786053665d691c049da87a58adcf1990a"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 23110,
+      "sha256": "b334bdd4537f6feb3523ccff2198e94026d240d0842c5ca7276c48b56e4b1eed"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23732,
+      "sha256": "1e3f5ca5893116f67a83694261c8a7a92f3f046001ac49e8bafa870745f4cc5e"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotFoldTowel-v1/progress.json": {
+      "bytes": 24381,
+      "sha256": "8a39fada9c5afd91750972fa4bb0812aece050133f9be77bdd465b4f4f146251"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotFoldTowel-v1/result.json": {
+      "bytes": 25014,
+      "sha256": "c0bad1cbad479fcba2a4c0ce82f54f5c6441e1218ddc818492bb0814fbf8898e"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 24726,
+      "sha256": "4ccf3e8b1d2e57723e3afd537c044374b806dae76cb625f08712c68a148476c9"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPickFood-v1/result.json": {
+      "bytes": 25349,
+      "sha256": "83c6d1e405afd52284aff6177272e6b9ed161710c44158a9d118427432c9e656"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 22261,
+      "sha256": "81971140c58269b5e268d962273dccf79df31330357c93262d0b98dd3e4c343e"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22883,
+      "sha256": "acc58c5c98fdc5292387e964ac91630493afb6b0818724fdf0e3ad8590ea03c8"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPlaceFileFolder-v1/progress.json": {
+      "bytes": 23939,
+      "sha256": "a574db1a294a1eb4a3d66b153044db561a47f95bc11cf32efe84418906b93402"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPlaceFileFolder-v1/result.json": {
+      "bytes": 24575,
+      "sha256": "c8be490f62ee5172823b25c233686bd7d370ed7065f8c2763b0525a36c5ce7b0"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPlaceMugRack-v1/progress.json": {
+      "bytes": 27074,
+      "sha256": "afdc6b54e7ea71b7eb735c7757a2159d15950aee347b7960243dbfd13c924685"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPlaceMugRack-v1/result.json": {
+      "bytes": 27695,
+      "sha256": "a653f199b884b4e8ff9eeb6bf7e1b48546dfed4b55df0886fb6a91233039bfc1"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPlacePlateRack-v1/progress.json": {
+      "bytes": 23514,
+      "sha256": "eeecde23fdeac0968a967504045f5be898c59e8204b2910a7e0bb1a12a4df167"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPlacePlateRack-v1/result.json": {
+      "bytes": 24135,
+      "sha256": "e0ae1f4e1d531b0c6d5a81ada584ea692bcdabfa0a8c09bbfc9e3e4bbf1948a8"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21772,
+      "sha256": "33a4fbac6733b4f1f1760ebb7bf4814b7d7cf07e26bf8efd3c7d9fbbf61ed5c0"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22394,
+      "sha256": "b7854a7cedeaa31cfed1e9ab61cb827eba64f4bb6061f915ee0d6f356b50fc88"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 24533,
+      "sha256": "d9e3042a22f8d94c8e696810f7b419d4789e32c8f82677c4f19ab0294b2daae8"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 25155,
+      "sha256": "4c88f7c27ce9c157b8203f116b88d9e8002e612aeca3bb8e0c2c27268ec34f01"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotStirSpoon-v1/progress.json": {
+      "bytes": 21999,
+      "sha256": "69f7393520d5e0f1a46c6b97e6edfba64128b039bb6842e5d4e8d7fa57fcd5ab"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L2_TwoRobotStirSpoon-v1/result.json": {
+      "bytes": 22619,
+      "sha256": "caadb0d6969b9c1aa651552ab3e8f90f44db1821a7b4613e39ea95960acd21c8"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 23080,
+      "sha256": "d2565538a8570dc2f4059ab57d1c97d9a52b2211a4f8149b0c78bcff388a0f21"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23861,
+      "sha256": "1d76769b3c81a151f40fd5a1dae045d40be02007518d9fd16d7fcc039356e2a8"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotFoldTowel-v1/progress.json": {
+      "bytes": 24367,
+      "sha256": "5f312d67e9b4047418627e613d56ee5c07f6f4fff53e3699d6cbd375e39bd848"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotFoldTowel-v1/result.json": {
+      "bytes": 25163,
+      "sha256": "04e94841b182538dac2946ccf674d0ce31dc899686a53551519cf350ad7e8751"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 24615,
+      "sha256": "5a22e76a4baccd1f9b8fc1287c2ebe0ee127544a1dfed69999712f9b7b9e05fb"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPickFood-v1/result.json": {
+      "bytes": 25397,
+      "sha256": "bd2839aac126e0992cd85d697a3f13a5d2f7bcbf91171588b33875e1522ed5e4"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 22188,
+      "sha256": "9d672a6e0800d744c3c4872c5ec85ffa0840cc771fc0d9361ddd19fa31c17141"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22979,
+      "sha256": "ebfc27fc90a94b2adc06d29458e824b17cca6bda16675c45d5d3422532d33c89"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPlaceFileFolder-v1/progress.json": {
+      "bytes": 23380,
+      "sha256": "8e3a98fd06cda4799c8f9367fec096e3dbbbadb196b69c262e8e250de3914aba"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPlaceFileFolder-v1/result.json": {
+      "bytes": 24167,
+      "sha256": "06f1ef0e523e3bfce4c1cc1b2d4768e4fb384dd1daf07af3ea3ea446cacffa36"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPlaceMugRack-v1/progress.json": {
+      "bytes": 26774,
+      "sha256": "9efe11e379b9fb08fc215ff499723778a8b061b908639490bb0aa73662795f3b"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPlaceMugRack-v1/result.json": {
+      "bytes": 27558,
+      "sha256": "237c3dc7d38c2708a8df806f36d463b08cb48632d888d0c853a009ec6f43b2d2"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPlacePlateRack-v1/progress.json": {
+      "bytes": 26661,
+      "sha256": "de2b7b0f1d739ed9e111d03bc21a66cd946ffafc544043c2d0a3e9e3f43bf841"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPlacePlateRack-v1/result.json": {
+      "bytes": 27448,
+      "sha256": "de90ecffd8b561b41fdce9f70eea248d360aeb983c947e243660f9aa60d6a3c2"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21699,
+      "sha256": "4c896c67c4158ab23bb4ec52f204885e641a023feae2996f686aaf17d8087ad5"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22483,
+      "sha256": "20b94e184bf84ec60b9493785179374690f7c34d3de5dbefedf487d52f6194cd"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23787,
+      "sha256": "55458392275da587d69bb1e048175e163a99123aa0b3ce44cb51d2b20ff58e6a"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 24573,
+      "sha256": "08d59d250f0775524f16e21ec6b3a6b2fec192b2e5ba7b01e678f3b5c45a4073"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotStirSpoon-v1/progress.json": {
+      "bytes": 28880,
+      "sha256": "6c7cd2ab316bdbc3964b7a6b723746869b43706ba7dff1f191f38b77dd9dd7ef"
+    },
+    "experiments/act_dinov2_15task/evaluation/pretrain15/L3_TwoRobotStirSpoon-v1/result.json": {
+      "bytes": 29662,
+      "sha256": "044dc36ffe3c89a9e98659ce0649a9ee1bff2a9d7260e97991831709b544f6ae"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 22541,
+      "sha256": "a717dcf9fe77b16a3c6dfaca4e8b02ab1999a15a7c5b0552e492ddb87645bc31"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23317,
+      "sha256": "5dc16288e07dac393da88aa12e578687c010b39fffd18f162326909aa769788a"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 23637,
+      "sha256": "d028317d20e95dcece58c11283e5b2cf2558d0ca15da2832e78d8989b6aa921d"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotPickFood-v1/result.json": {
+      "bytes": 24412,
+      "sha256": "63a85b13ae663eca6cf82a864204346bf64164e1aa9c12f022e37a62f4fb82aa"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 21505,
+      "sha256": "c2d3b34c864676c27dc92ba1eabf410350c53864b652c5bb1898069a1797e599"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22290,
+      "sha256": "bc06dc79e8101968330a3df0d66e18167fb93dcade5b43ff2658f16585f29fd0"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21411,
+      "sha256": "b04f7995aa81784a82670d19790ed65573e1d52c03e38770666e48caec373926"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22205,
+      "sha256": "004cc60b8bb80ecdbe4e265923b461b0f724b06d269bcf1fc150efd943b7643c"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23502,
+      "sha256": "0dc34af890c176aa04198dcf920f6246f020503f7c6bbb2eb6fca61d9c53d27f"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 24282,
+      "sha256": "18a9a245ff7e2ebe7829e9d10054c53f1e97ef14e88695cdf76921c527fa8a6a"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 22569,
+      "sha256": "a9c980b66b1fd46bca01a159a2a7bfe6e9da0d304e094558fc7ca54b662125d3"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23345,
+      "sha256": "8438d23bc9c02aa9d0bdf79849d839188adca424be72f440f5db85098505a8a9"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 23626,
+      "sha256": "ba9e46989db787c391740e6df59a86e00f9d2959d04a0e195c2d36fec52f2997"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotPickFood-v1/result.json": {
+      "bytes": 24402,
+      "sha256": "e206a6548a5622b2505c840c290c65013d94f040fad7948d9dc502286fb47884"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 21522,
+      "sha256": "4ae8676169e0c7a95f162e0851b9d5bc61258092fbf438d7badd3133d3390032"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22307,
+      "sha256": "c656cce2a3fe15d7a0944aec057b5f61dae58f5ef6644c8a03a2968138d9635f"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21483,
+      "sha256": "c112237a7b69c79f4f5f24fc98368336d8f8cd16211d4e3ab5207d06996944a3"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22277,
+      "sha256": "337a15d2c425d4038025b19378fc9c5d85646375331f5a70532c7d8fcf23d95c"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23490,
+      "sha256": "3ceaefbd282e14129e7c50c2ce054e1c8d0fd88651abd88251feac55d6890457"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L1_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 24270,
+      "sha256": "f916a2eb47a1ac2fbfd759675b85fd4c66dd16c4620e5a501ff0f06e3c106d9b"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 22547,
+      "sha256": "52643a216aa924336dbc32464325b3d7494cfab9f331e905fcc857ff2fd6b27a"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23322,
+      "sha256": "9e766f616d8eef627e976a1d1eb554b161559ecf1ba59d6151b7273e86765df7"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 24001,
+      "sha256": "d0b42eded54580e84f7b15a67f52b50dcd52ef34561cc0d1a5cac1ab043a99df"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotPickFood-v1/result.json": {
+      "bytes": 24777,
+      "sha256": "79f8f9e98e20523ac8ff60ea77554f95c0711b528aaa0d76dcd8469288702e6a"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 21595,
+      "sha256": "9bf1d00a9ae80b142f4e548cc719704b0a79267f9e28ed237ee41a3fdf0f743b"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22380,
+      "sha256": "e1ff5a941562925ffabd0e4d97f0d1c8c18850bc1ed539ad131301f324fdfcf9"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21752,
+      "sha256": "79346a8786f51e82c7cfe28f55aa2ba627e59fa7bfa04a3b72d0e1791baecb37"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 22531,
+      "sha256": "a5a92ad8cd4a41a4ff7127cd281fb41a84c877c8d2b0d72ff226be599e1b7c70"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23501,
+      "sha256": "99f354e10a25f5ea2673ac36943394a6c997e9c0cb1af1530cef70f661940edb"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L2_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 24280,
+      "sha256": "76b97ee4154531a31b7984eefa53753b353368dcf30c61d078b603d233dd8bee"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotFoldBox-v1/progress.json": {
+      "bytes": 22511,
+      "sha256": "d0793b9cd1c5773abc0476159a4bd2cf935d36a913d509e4f678a7676c1ab346"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotFoldBox-v1/result.json": {
+      "bytes": 23288,
+      "sha256": "13626a620826b42cd8e47352b435418b9fdec06a658013e1f52b056b254d0999"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotPickFood-v1/progress.json": {
+      "bytes": 23641,
+      "sha256": "ec924138150529cff5ca1c6849950e9181889daeb4c992df17f643852f1fe6fb"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotPickFood-v1/result.json": {
+      "bytes": 24419,
+      "sha256": "526c0ccbfc5046656cff92036dea7ca8bde290e6753c32ab81dff7adf0cc4eca"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotPickRemoteControl-v1/progress.json": {
+      "bytes": 21519,
+      "sha256": "25f1dcce42bc8dd1c12a30315415b3bf4a8d581245ec3c9125f556cc2e8e0221"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotPickRemoteControl-v1/result.json": {
+      "bytes": 22306,
+      "sha256": "2ecc1f1de0d4d17ed1aebc2e59b2c15edca2eeebeaa19dd100ba03fca4c4e2ab"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotPourKettle-v1/progress.json": {
+      "bytes": 21006,
+      "sha256": "e5d548d83972f5413492a53ce75ad0c44e27aa54e2f7c5d43aa877413c8b42f3"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotPourKettle-v1/result.json": {
+      "bytes": 21786,
+      "sha256": "d98c6e0b126cf970e7bb3d623a8fff78d1579b2f13bd5ec3ee50786bee1faa87"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotScanMilkBox-v1/progress.json": {
+      "bytes": 23128,
+      "sha256": "e6d15248a6db9d3c808d67ffeba6dc220d38aede67a7910e6ab8709cd3f4bc54"
+    },
+    "experiments/act_dinov2_15task/evaluation/scratch5/L3_TwoRobotScanMilkBox-v1/result.json": {
+      "bytes": 23909,
+      "sha256": "dc00b857df10809f067694117156a98cc826d95d7172d21c921649dbd39a2435"
+    },
+    "experiments/act_dinov2_15task/execute.py": {
+      "bytes": 6944,
+      "sha256": "7114a5d1eb38830f98f147da810a7d4111e9a51542e5ccb1f7e93f8d7a046a08"
+    },
+    "experiments/act_dinov2_15task/execution-source-hashes.json": {
+      "bytes": 855,
+      "sha256": "dc3b8620eacb4cb72befacb0fd1bb4b9777b6048e8e6157f1a12aafafb5fd637"
+    },
+    "experiments/act_dinov2_15task/execution.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "experiments/act_dinov2_15task/fetch_assets.py": {
+      "bytes": 6344,
+      "sha256": "c4bcdc8ac8bf02ade6b5286b5370d9b7da5608306f711da14b129ba07074f517"
+    },
+    "experiments/act_dinov2_15task/fetch_data.py": {
+      "bytes": 3388,
+      "sha256": "68e4d57af523aa288e021852737b2a59149fdac450b04eb5c17f9baa3fa69213"
+    },
+    "experiments/act_dinov2_15task/fetch_ycb.py": {
+      "bytes": 861,
+      "sha256": "d47935c0a5a296e9f9bf80743ac07dbbdb26348708fea0079b3e95763a91ea07"
+    },
+    "experiments/act_dinov2_15task/l3-repair.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "experiments/act_dinov2_15task/logs/checkpoint_rollout.log": {
+      "bytes": 8899,
+      "sha256": "2eec36ed1966f0947208900ac0e8653a2b10c45912b2734cfc2308e82bab6462"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L0_TwoRobotFoldBox-v1.log": {
+      "bytes": 9353,
+      "sha256": "4199db1f60a424759a14167396e661f23071458b0d37841ce38f7b35f5f9ce52"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L0_TwoRobotPickFood-v1.log": {
+      "bytes": 9356,
+      "sha256": "dc8465844f9a07bf9c29450537f5a0923720d879d367d9fb0b512670cf3c3db8"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L0_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9770,
+      "sha256": "1c37845a5fd6072ab30a666c78f43af9d4be8c39de3167fb6530384e845d150a"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L0_TwoRobotPourKettle-v1.log": {
+      "bytes": 9998,
+      "sha256": "a4a77e2cc56603079ceeb2bdadaadd0f8f682f2adfe09e2375fc1e7a4176ff4e"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L0_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9767,
+      "sha256": "54c0b0dba245607a1a9bfdcfe4ce39224b868c4b5470a9c392e1dd1e4fde276f"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L1_TwoRobotFoldBox-v1.log": {
+      "bytes": 9353,
+      "sha256": "3c34dd8a69c59e9392e8531ac91788c6d899691d6c7d7192f824a1beeeee4cfd"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L1_TwoRobotPickFood-v1.log": {
+      "bytes": 9356,
+      "sha256": "8479efa76e2a4fcd5a25542e151c74937d74d17f5515df5013291a814ab07d09"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L1_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9770,
+      "sha256": "4533eab2b2792de62f42fc69d848da455c94cc449e0bafed60020e286d238e5b"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L1_TwoRobotPourKettle-v1.log": {
+      "bytes": 9998,
+      "sha256": "cb02811ae486f06efcc69aaa51ef72c2957dfb1df0276d879c9e82c6cfd62bc9"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L1_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9767,
+      "sha256": "4768e337ef3d9237a7fdd884b33ed54e6f9880e7c8ad70785c3c193b2303679c"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L2_TwoRobotFoldBox-v1.log": {
+      "bytes": 9353,
+      "sha256": "d02ac625794b460c72ff26f5766f63e3b545d6f9a724bcafdb19f1922fb1f24d"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L2_TwoRobotPickFood-v1.log": {
+      "bytes": 9356,
+      "sha256": "30ce4cda0c392d0fb848327b28209d08b4eaee520de0983867b881e04158604f"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L2_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9770,
+      "sha256": "0f367ac64ecd813d29a872b25b8971577521ed15dfbac1f403e13b1acd335eff"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L2_TwoRobotPourKettle-v1.log": {
+      "bytes": 9983,
+      "sha256": "73ba89a02cc80f22ba2b800b07ec2590a870cc98c7eb5383ef653110b8fc2dac"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L2_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9953,
+      "sha256": "8a420845cde17577ef5e70db78c55213486072a20ce252cd57a2cd8b93938b9b"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L3_TwoRobotFoldBox-v1.log": {
+      "bytes": 9702,
+      "sha256": "f03dd78715daf5e5ae8c987179790110a7741bd1481401b472756c02a8e8406b"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L3_TwoRobotPickFood-v1.log": {
+      "bytes": 9356,
+      "sha256": "78a0bc7af645f5a89ddcca45eba2657670652430e71fdb328fe92b58bf979fff"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L3_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9770,
+      "sha256": "9289aa0ac18e4412f6c89e6c181e2d20db01656b837dfac03947b5ee3effc066"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L3_TwoRobotPourKettle-v1.log": {
+      "bytes": 9983,
+      "sha256": "d48e73d12418672af6d8388d83d3511ac79696a992254f26d299e4b4f1d0d656"
+    },
+    "experiments/act_dinov2_15task/logs/eval_finetune5_L3_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9987,
+      "sha256": "74db8a89f549c1ea36fe1deaee76aab73ce3fbd4f22d60ab0f44741c674380d7"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotFoldBox-v1.log": {
+      "bytes": 9357,
+      "sha256": "33bdfc9c93686d71d4f77f159d5c9599abc49d3932ad672d538ae4b662174d1a"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotFoldTowel-v1.log": {
+      "bytes": 9363,
+      "sha256": "c4e77cbaedc8899b5555d84e2b1ebcce15b325732c03b089497273653a2ca198"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotPickFood-v1.log": {
+      "bytes": 9360,
+      "sha256": "6dd8ff562855abcd304035813ea0e17da089472eeddbac24f724b1f9b2fc535e"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9774,
+      "sha256": "7aef1d623f10dad1a113830afed1562541f4cae762344a4043a66b1f895457a6"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotPlaceFileFolder-v1.log": {
+      "bytes": 9381,
+      "sha256": "0ed91a3d85f751e7c98ac3cd62c28d5bb936bbbc4b05ace60305eb613d637150"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotPlaceMugRack-v1.log": {
+      "bytes": 9372,
+      "sha256": "bae3c488e90b365f1661951ef18b00ad043ca85516b717f8ea8c478b71fea0d5"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotPlacePlateRack-v1.log": {
+      "bytes": 9378,
+      "sha256": "0e24f207dbbde8bebd5da52c44e0ad86a1fdd13b71af25f57e7c3aea62f1c4c1"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotPourKettle-v1.log": {
+      "bytes": 9753,
+      "sha256": "b612009b32e8de9192a2a7cc8f9f448f3916420c3c090520f2cbc1852f8f78fb"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9756,
+      "sha256": "00f8365dd4b85579a5de4b197adb529e45093aa7f19f26a1e3ebf9546b09c178"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L0_TwoRobotStirSpoon-v1.log": {
+      "bytes": 9880,
+      "sha256": "2e23828c46ca6813a3a7ba995d91d44aecabb65df66a92b2c1697dbb49925a30"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotFoldBox-v1.log": {
+      "bytes": 9357,
+      "sha256": "00eeddb35169a0507c82e2c34d8002bf92f4d5274c1ef0a64397c579831a73dc"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotFoldTowel-v1.log": {
+      "bytes": 9363,
+      "sha256": "d78dc38a603b0ee3255232fc888e30fbcda3e14f4c508b0fec952d8f501f162f"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotPickFood-v1.log": {
+      "bytes": 9360,
+      "sha256": "6495dcd27e0e047ac9b6b71b8d236ed59ad0f3ba79e9db0ab9e4fb97c3bb354a"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9774,
+      "sha256": "592d1f6bc3b6d960987ea3b46ebc5f4b29d2f066d3de86bdaabd69337765ac0e"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotPlaceFileFolder-v1.log": {
+      "bytes": 9382,
+      "sha256": "21d72774f5df3ded78b956bc89fa69ef485bcd722512b102c536999cb41a7f5b"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotPlaceMugRack-v1.log": {
+      "bytes": 9372,
+      "sha256": "1227f71785f461cf3c3c74739f9c3f89de6d625cd4f65ba6a0cd3060aa4a4649"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotPlacePlateRack-v1.log": {
+      "bytes": 9378,
+      "sha256": "1065c02fffa07de1e9ea549f8635814552a424ad53d36f11f3446676e840c8b1"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotPourKettle-v1.log": {
+      "bytes": 9753,
+      "sha256": "7f7b67d8a976fdd9e551d3fd90d14b3d836b4f4c88ee4070f5d0844c42d3eb4f"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9756,
+      "sha256": "495e57b8f47215f564df7305eba37ed7ca6ae752272e3f613217c0349b85147f"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L1_TwoRobotStirSpoon-v1.log": {
+      "bytes": 9895,
+      "sha256": "b43ed0ced43beece653c2a6cb7ab0169ce2baabb05dce197d02544c09c32c3df"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotFoldBox-v1.log": {
+      "bytes": 9357,
+      "sha256": "b0db21a8e174671b347efb94f2065aab7c50ef7da26bec9666baaeabd5219e68"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotFoldTowel-v1.log": {
+      "bytes": 9378,
+      "sha256": "aa0382159ea6c6c70d69eb307de1dbe0e0ca8d2d51c7a5058f196a2cde1ccac5"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotPickFood-v1.log": {
+      "bytes": 9360,
+      "sha256": "0955dfe0092560d2884f231af29ffdb3df8806108cc71da829699bcce6e68513"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9774,
+      "sha256": "b2449f21435cf04aaa88f1d492982c6bb7e891dda291d6c2665075d660eb2f65"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotPlaceFileFolder-v1.log": {
+      "bytes": 9397,
+      "sha256": "2968a8a6a41133acb5e9e434d68b81fe2a722064603e56fc9f3ad5cfe6bd50ae"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotPlaceMugRack-v1.log": {
+      "bytes": 9372,
+      "sha256": "b58e19da5518332fc844815a50be1b2dd8cd64e9cabdfd5deebfc7280d186166"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotPlacePlateRack-v1.log": {
+      "bytes": 9378,
+      "sha256": "5091104001b090c79414f658ba9c6f6ab88cd610d652c29a2a9d3c1d2eb750c0"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotPourKettle-v1.log": {
+      "bytes": 9753,
+      "sha256": "437ae03ca3a0dfe621f871a4620cf43a17ba2ffa2d41bc23d275ebd33d3b07cc"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9756,
+      "sha256": "3ee44e48d10975900850dd73852e0fa22e20e9879f968c3d8e5b7e1bbe2c9cf7"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L2_TwoRobotStirSpoon-v1.log": {
+      "bytes": 9881,
+      "sha256": "aecfb9441529e086085fb124d9e551f1df27ba0d1d0ebb5881320ede03fdab89"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotFoldBox-v1.log": {
+      "bytes": 18663,
+      "sha256": "1858912076b71143140ee4766427491f118612056a9ad2fb3bd345bdda95aa52"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotFoldTowel-v1.log": {
+      "bytes": 18352,
+      "sha256": "98c234a6e99ce8348793f0207713d7316e5db2159e07faac3fa45b51a3a54555"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotPickFood-v1.log": {
+      "bytes": 18318,
+      "sha256": "1e39b6b0a43906e835e911025619572f612630b16f732fe36c7598c6f50b139f"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 19128,
+      "sha256": "b977e1264ff7fe6bfb257fcaff1cb883f82569e4b7ae6b9b5caadc808fbcc7f6"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotPlaceFileFolder-v1.log": {
+      "bytes": 18347,
+      "sha256": "113cfe9fe05d17935671728bf0de7a980a0a82142f9eb91995724bf8e38b5079"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotPlaceMugRack-v1.log": {
+      "bytes": 18334,
+      "sha256": "ffa0922e1736f95f59861ddbec93db2c8c67cd0494dc4fcf99ddb55228ddd3c8"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotPlacePlateRack-v1.log": {
+      "bytes": 18342,
+      "sha256": "c246c17ef6308fa1889292d8500b4eb30df7139f73571961b0a84f10ba000600"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotPourKettle-v1.log": {
+      "bytes": 19100,
+      "sha256": "4d2904875c65296775f2f4b55fce143e4d8c734bacb6d8ba21d7de385642efd9"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 19104,
+      "sha256": "84099560499b1cbeb1bee9630b1bf9d97d20a51b424a4fd6b65e85a93ff39c5d"
+    },
+    "experiments/act_dinov2_15task/logs/eval_pretrain15_L3_TwoRobotStirSpoon-v1.log": {
+      "bytes": 18839,
+      "sha256": "afa1ff455e79a64b8e25d35c9c2fb0dda30a4b28eb1135200de50c139a159115"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L0_TwoRobotFoldBox-v1.log": {
+      "bytes": 9349,
+      "sha256": "b4d3ea993481e34b0e097e0023db6c244e24aa938a06f3a8b0beb8024af5a304"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L0_TwoRobotPickFood-v1.log": {
+      "bytes": 9352,
+      "sha256": "8caec5a38cfb8db56a4b5f668da4866b85d56cf94154860eb8a22cdf00999492"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L0_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9766,
+      "sha256": "677ac8c42a518cb0858c3265d279ba45da814d2c62ad8b4557b32309823281cb"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L0_TwoRobotPourKettle-v1.log": {
+      "bytes": 9760,
+      "sha256": "13fa484834a57552dff1adaffc6aa05ada6abd4f4a9568196355c31a74769aaa"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L0_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9748,
+      "sha256": "cbb0a7b60f5884222588b3154eec5607d2b2330c8c858caf1445c1e401f062c6"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L1_TwoRobotFoldBox-v1.log": {
+      "bytes": 9349,
+      "sha256": "c0cdc8bcd8a680cc37f934e85885dbd89132a13907ee978e693b5edac014b50d"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L1_TwoRobotPickFood-v1.log": {
+      "bytes": 9352,
+      "sha256": "50bc262fcfed5d62572a426e9726027cfd221c337a031b611eb6b0d76d01cc2f"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L1_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9766,
+      "sha256": "29581ee31cb403c5f9dfd8aabdda922046c35f7149b7791884466ed00f3d2260"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L1_TwoRobotPourKettle-v1.log": {
+      "bytes": 9760,
+      "sha256": "fe36f9c5ea2fa4fb2530b5f7aab5f8f5145d53b325a4905306a066b68761bcb5"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L1_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9748,
+      "sha256": "af87568c840770fcce35adcb6a86f941630a641ed3de2533e32418d4d7441fa4"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L2_TwoRobotFoldBox-v1.log": {
+      "bytes": 9349,
+      "sha256": "cf3ac99ab170a8e1623a48bbb158e3a73673573e1f47eb7c528bd9a94991dc8e"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L2_TwoRobotPickFood-v1.log": {
+      "bytes": 9352,
+      "sha256": "5f499e77deb897121913667a3cc750432fff24cce1c9c57e862f051e44e652e2"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L2_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9766,
+      "sha256": "0e1be4abc5d67fceac77477be72ea3c83eeefdfa22b8c92a3dae285529f5fe87"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L2_TwoRobotPourKettle-v1.log": {
+      "bytes": 9745,
+      "sha256": "0a33df8db2d769b94a5baad224229bcb5e13191fda15403aef20b0021712ae36"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L2_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9748,
+      "sha256": "3c104a802cd7339ee5bf88029f517c2d2a93d541a271465b4edb4149f5b34291"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L3_TwoRobotFoldBox-v1.log": {
+      "bytes": 9698,
+      "sha256": "475a90b03866cd78be2fb3a50bed3e9885b3615fab8e48f278650d18479dd086"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L3_TwoRobotPickFood-v1.log": {
+      "bytes": 9352,
+      "sha256": "8bcc92f4408f0dbb973ac5b78dbdf4b5710c37a1a0a24a8b125038fe3666a430"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L3_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 9766,
+      "sha256": "67d02ab667d83eff0c06a1d575dfabeab996ea88cac054ea42f6ff5cb92d4bd7"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L3_TwoRobotPourKettle-v1.log": {
+      "bytes": 9745,
+      "sha256": "7326fda9609897ff99b7dd84afd4b24f0aa69b56b90e712b9bbf39e011aae9dd"
+    },
+    "experiments/act_dinov2_15task/logs/eval_scratch5_L3_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 9748,
+      "sha256": "d82941f3e139f7d2237e6ead77b7ba37dbc55188f18eb7a9a5fc468c6621edd7"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotFoldBox-v1.log": {
+      "bytes": 554,
+      "sha256": "90698dd6a6af841dc1018cf0984dcdc0ebe8a656e57910f4ae632cafa6acc532"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotFoldTowel-v1.log": {
+      "bytes": 558,
+      "sha256": "fc229ec1cef23e54382a9cf08641617e87ee0a0ef701c3d726effd09061a90d8"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotPickFood-v1.log": {
+      "bytes": 556,
+      "sha256": "0dba4946ed5764fba20628e6ed71d0d72411472e4a854cad39181e4228dc4ac3"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 961,
+      "sha256": "c13c21e93fe3267585e104023abac9993c98743af3998ab702f6ead2f3577e59"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotPlaceFileFolder-v1.log": {
+      "bytes": 570,
+      "sha256": "1e6ac1e644f0d183e8d4a81a1d22990a8bb574dee1f581eca8451c2c883ba0b6"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotPlaceMugRack-v1.log": {
+      "bytes": 564,
+      "sha256": "01f826f399957999f861d95b2db518b7fabfcedcc0093d744d1c9a966693e1e1"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotPlacePlateRack-v1.log": {
+      "bytes": 568,
+      "sha256": "cc566e08b0f3ee99378c0369e64460ea49512a29833440d9b37862528f0ef4d6"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotPourKettle-v1.log": {
+      "bytes": 947,
+      "sha256": "82e7cc8da1be871e2df414472b4b9fd33d5c81cdb457fa8e69c5a6d88e4d2f3f"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 949,
+      "sha256": "3b051cbc3de316e520e5e36bf4f8ecee65f29133e99a397db3797725f3dc6a03"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L0_TwoRobotStirSpoon-v1.log": {
+      "bytes": 1075,
+      "sha256": "271c3a8ab1956b4644a8a036d0dcb883a6c399dee2ffcd0c9f8f598bf5b4d369"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotFoldBox-v1.log": {
+      "bytes": 554,
+      "sha256": "1f2a895027156ad8872a3f4843df0930cba4aa8440ccb9b6a0fc80c6c2e12ce2"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotFoldTowel-v1.log": {
+      "bytes": 558,
+      "sha256": "8a06f98131d5e0e187d0a42c8fc3224ba66683666152a292a0298e5633a6aae8"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotPickFood-v1.log": {
+      "bytes": 556,
+      "sha256": "f20d2a7b3d411a8ce6f06c309831ddfc9c40e44352a1638f412caa671b2cf547"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 961,
+      "sha256": "3a2bf428f0e00c69bdb5f0e0f9946121b5b0dfdb7bf166e582ab4b16b7d24813"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotPlaceFileFolder-v1.log": {
+      "bytes": 570,
+      "sha256": "827a5523d034d3f4c97463e39e729ffb37fb9fbd87b367388793699b0a24c332"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotPlaceMugRack-v1.log": {
+      "bytes": 564,
+      "sha256": "b67b6deed8faa09e03f5a44dd89acacf1eddbfd34e4881d93ade2b86f252d355"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotPlacePlateRack-v1.log": {
+      "bytes": 568,
+      "sha256": "f530a9e95849d9f5d78ce26362451d9b0c565a2c7aca935f76e42d073ef7a2e7"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotPourKettle-v1.log": {
+      "bytes": 947,
+      "sha256": "8da1666f85df070695c5185fa1e69337181341490e8e4bfce2e73cdca3004c1a"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 949,
+      "sha256": "5c35450dc5319fc114e0bd47dc38d23389d30c7d5dd7961ffbd976b71aed5359"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L1_TwoRobotStirSpoon-v1.log": {
+      "bytes": 1075,
+      "sha256": "edfc42ddb5dd6105f05aa1d86ce566c519da5a197dc7fabfe803ec4f090f9c14"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotFoldBox-v1.log": {
+      "bytes": 554,
+      "sha256": "a55a34b51892fbd42540dfcec7ac9706bd8f03e85697b1a021becf783de32a9f"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotFoldTowel-v1.log": {
+      "bytes": 558,
+      "sha256": "5894331ea2a9d82e2edac9d1785223e288857cf8c84045a5cf9fe2a5a60d2d1d"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotPickFood-v1.log": {
+      "bytes": 556,
+      "sha256": "c80a7cc20c086ae759385671976a1c1741480104c18789f9005dc2f2c46f8060"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 961,
+      "sha256": "a924b4ee4392ea81f1db4130553705bb6ce82d9de0be6c010c7a3302ea77f3f1"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotPlaceFileFolder-v1.log": {
+      "bytes": 570,
+      "sha256": "93593e03fcf582b240fd2fce976747851249d5927026c1b5fefea01459b17fb4"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotPlaceMugRack-v1.log": {
+      "bytes": 564,
+      "sha256": "8e2714c35189b917d0b64506be8a094e5d1e7af21668a8d247a450a63a34915f"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotPlacePlateRack-v1.log": {
+      "bytes": 568,
+      "sha256": "ca4c88eb003f70b0f18ecc568bbf89e6fcbcefcef292667f951ae62bddcb4c2a"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotPourKettle-v1.log": {
+      "bytes": 947,
+      "sha256": "b7883a0af414ddccd886dcc4256fa8d2ecb8a0eae04e9785988cb3ddfc1ff3fb"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 949,
+      "sha256": "9b919190f99f225e664d5eb559116fcfa3ddc52ba3b480cd1411f107484f50df"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L2_TwoRobotStirSpoon-v1.log": {
+      "bytes": 1075,
+      "sha256": "6d252ae06bd75270b04422424bad75d250f96f71cbce48bbe349b10d7a62aebf"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotFoldBox-v1.log": {
+      "bytes": 1321,
+      "sha256": "2beea2f0bc9ad3b47423cff6e4c65c707b0ad8d7a7223ea32874167d010e213f"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotFoldTowel-v1.log": {
+      "bytes": 978,
+      "sha256": "c8645f3b6bc2e25bd51aff31cb2f3f037dbcdf342ed873cdffef0e08f813db2c"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotPickFood-v1.log": {
+      "bytes": 975,
+      "sha256": "7d8e02e65558927673ecef9d13b71bbee808974848014f561d93de3da846b374"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotPickRemoteControl-v1.log": {
+      "bytes": 1776,
+      "sha256": "db6505e628146185864b292660686ecf8e6d307bcb4cbd41f0496df2c2e0f4f4"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotPlaceFileFolder-v1.log": {
+      "bytes": 996,
+      "sha256": "87bf89554f40367ff8c7847cb1e432afab3ef71166e10b70fe3733314f3d23bd"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotPlaceMugRack-v1.log": {
+      "bytes": 987,
+      "sha256": "d4fd51b9351d9e5fbf82120f05d4d10f5d0dd77e9f011956abf6b65785a7f897"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotPlacePlateRack-v1.log": {
+      "bytes": 993,
+      "sha256": "a84f2675236601861dd1062a58ce534a0fe22a9a77f4787ab3cefe9f63650c9e"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotPourKettle-v1.log": {
+      "bytes": 1755,
+      "sha256": "4ad383673b5d7d536f37b1a3c4653ab5ccbb956b919a164deb59c763261b43fe"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotScanMilkBox-v1.log": {
+      "bytes": 1758,
+      "sha256": "6b7aadc0f52598cc0d990d5b01135edafad74f5ece13703b41114a2cb7f42513"
+    },
+    "experiments/act_dinov2_15task/logs/scene_L3_TwoRobotStirSpoon-v1.log": {
+      "bytes": 1495,
+      "sha256": "b98f5ed06f7b1e35248c96d9ced795524faf2fca0499e981d45361ebfb9636a4"
+    },
+    "experiments/act_dinov2_15task/logs/summarize.log": {
+      "bytes": 483,
+      "sha256": "b6e8430cf6bd70d03bd4815cc7103f51602e39bf6db1faac68608630b816016c"
+    },
+    "experiments/act_dinov2_15task/logs/train_finetune5.log": {
+      "bytes": 131651,
+      "sha256": "3c98edb857f43c4a86cf7d110c3f765240885b89d8e0907b2783b16332913dd8"
+    },
+    "experiments/act_dinov2_15task/logs/train_pretrain15.log": {
+      "bytes": 1500790,
+      "sha256": "a6479bfcc58b207435b1b7df5dfdda7f434cc84eee27166aa94fab44bb2b0b37"
+    },
+    "experiments/act_dinov2_15task/logs/train_scratch5.log": {
+      "bytes": 132483,
+      "sha256": "ce8593eb124819546c8a19dbb772e57635f323cbce8fd7c04fb28c93a445aeac"
+    },
+    "experiments/act_dinov2_15task/plan.json": {
+      "bytes": 6158,
+      "sha256": "f41ddb7a1c52ee9fd8c3c0b92406bc5d2dbcff6e661325bb290a1a513c2779c3"
+    },
+    "experiments/act_dinov2_15task/prepare.log": {
+      "bytes": 48,
+      "sha256": "aaad2cac6a38cb235d713accbeeb0106c49b563e8b789664a12f573e31ae3272"
+    },
+    "experiments/act_dinov2_15task/prepare.py": {
+      "bytes": 4522,
+      "sha256": "a0d95566d558f825c6440fd8fe2e343fadaa1a313a129f5466763ebcef590b4a"
+    },
+    "experiments/act_dinov2_15task/prepared/human_eval.json": {
+      "bytes": 1103,
+      "sha256": "a300deea6b21da0c29e2e0a23d72eee9152509dd31620b4f0b8475b74f41228e"
+    },
+    "experiments/act_dinov2_15task/prepared/human_fewshot.json": {
+      "bytes": 490,
+      "sha256": "691a6fc6ea5708bb67bdf8bdd3575406a106438ca3244a4b44ef5ce3132ef98f"
+    },
+    "experiments/act_dinov2_15task/prepared/human_train_15.json": {
+      "bytes": 1464,
+      "sha256": "6d6d67b17e844e670a54115f709e13503d0156845b07ae4c132bba6912da3146"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_eval.json": {
+      "bytes": 5703,
+      "sha256": "97a4d7c6e09e6d64a2012725abe9fbf42085d7c34fd9358df734bbd23746ad34"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_fewshot.json": {
+      "bytes": 2586,
+      "sha256": "33cb957566b5b0a5fee24690ae8a8db2aa8379c4fac77cbfbe323f43d19d1244"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotCleanCup-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "fd439fe15dcb4372943e94f1245c83e8a6fd0758f132f6efafb3fe537f1ee904"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotCleanCup-v1/meta/relative_stats.json": {
+      "bytes": 45046,
+      "sha256": "5951072f0d11aa558022f2c38a438d7c46e1b65bf6bc9c1842e706c8ecc17f88"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotCleanCup-v1/meta/stats.json": {
+      "bytes": 19649,
+      "sha256": "f197b43a737c8fd9dad6f8614c028b7efbe9c4e5eb71f6ff96fe17e75b620830"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotCutFruit-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "0ac8ce8fe950a51a07e5f755a7207cbc43d34e2e3985ef134d813ae0cd0765d3"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotCutFruit-v1/meta/stats.json": {
+      "bytes": 19690,
+      "sha256": "24b5c3cdb4f229f4a561c4e66270df89b79f7e126d82fbc25910c7baf5c0fdca"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotFoldBox-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "479426861a931e0e35e46b8bbe65b64bf9db77e2ac29fd89a39737e1d8a10dfe"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotFoldBox-v1/meta/stats.json": {
+      "bytes": 19651,
+      "sha256": "dc08ff18b1e78780170f6ea65308d34ae6c43efbf7c1af6191352a48391ef5eb"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotFoldTowel-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "40538492ca7d01fc5e9cc9482bfd9dd7a564f18defb7de56cb1f8d74fdcd32a0"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotFoldTowel-v1/meta/stats.json": {
+      "bytes": 19666,
+      "sha256": "4ceb5f457a329fb1c6fd1db5798fc41ecef0ba54338597baecc196e200fa7fe3"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotGrindFood-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "bd38bfe9bc3c17436c572d61d0d61129a2df646f7a399a8067596297136cc512"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotGrindFood-v1/meta/stats.json": {
+      "bytes": 19665,
+      "sha256": "5bbfc6a93949f16474047e061f2ab42308d3bf04e89a9757444ee1885bd820a2"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotLiftLidFromSkillet-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "b740c0dc9000a0025248913e6d33044e2905175dcf631fc32e3bbbb73edc0b3f"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotLiftLidFromSkillet-v1/meta/stats.json": {
+      "bytes": 19647,
+      "sha256": "e659c5e7ede3342d5951d367313c79fba59bef5443292540f34bc92f7cf76d5c"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPickFood-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "1b1c424cd299afaa26b349aa8ac291f3b596a73155b65f8b63e3429985437ed4"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPickFood-v1/meta/stats.json": {
+      "bytes": 19696,
+      "sha256": "6e8817d3105bf34c2217b590e040e2898a48e1e8578eaf34eb4e4188287daae4"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPickRemoteControl-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "d5abd9733dd7aa49f266576815d1f68fe87eb6940e58d06ae82faae091004a81"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPickRemoteControl-v1/meta/stats.json": {
+      "bytes": 19686,
+      "sha256": "2e4d926bed26363577d6d3cb33f7d4afcb0bffc30a726577b50d7c882bf3c737"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPickWash-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "f831bcfa427933620877d1513aac554dfcfbfc8958ec6b216a132f22cb9b3181"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPickWash-v1/meta/stats.json": {
+      "bytes": 19657,
+      "sha256": "653ed95f559d4da10c2c55280e4a812f850662bfa5cb3752f44fc383983af8de"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceBrushRest-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "de9ebdf80d1063cd73861ae9794408e3479c7191258868bb459296c22d5507b9"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceBrushRest-v1/meta/stats.json": {
+      "bytes": 19658,
+      "sha256": "b96331aafa856b91ebda7f2abeba3fe5fcb139c4e9db32993e0efd330ad060ca"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceChipsRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "01f84e4e1ba0ca47f10f17e2b2cec7966f0d3e5005cf24f565927dc9235b5a7c"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceChipsRack-v1/meta/stats.json": {
+      "bytes": 19716,
+      "sha256": "c9ea000ee1051a9989c001e31ace62197bc18f3ff590601d13e8b00bddaec66d"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceClothBasket-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "093229047962791ce662fd5ac828c5da00c877082f4edc0033c149f5920489ae"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceClothBasket-v1/meta/stats.json": {
+      "bytes": 19664,
+      "sha256": "967815c5ee0f98d9b8369a34b82ffb8d83bbae7aceef30a8b4da319775d4e92f"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceFileFolder-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "793e3f8ec67c347dc081c46196ffd2eb761b408405848a32d375991e52822f6f"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceFileFolder-v1/meta/stats.json": {
+      "bytes": 19637,
+      "sha256": "a9412ab979247df19316eff23f298acd4ca7ac264213cb01085b6cce23b082d3"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceFruitBox-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "3ad727f815acbaa4587a571ea48aba68ead0a759ce4dc46b8a3d798a5bbc9a43"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceFruitBox-v1/meta/stats.json": {
+      "bytes": 19692,
+      "sha256": "d35d2129bc56f603a5dcc3297065e6bca144557be58ffd75c2171f983f83f0cc"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceMagazineFolder-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "85bbe02c6bef58bac62c2eaa3d6b4076b731a2097f47ef5852f49be59c4e4875"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceMagazineFolder-v1/meta/stats.json": {
+      "bytes": 19648,
+      "sha256": "85b77e6bf15ee10d260e6ef96c96ae56f0a4429a9dd887eb9103819621db6be6"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceMugRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "39d727c893a450051ebe5586928390ef01bb207c71dc2667e1a45459c6525807"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlaceMugRack-v1/meta/stats.json": {
+      "bytes": 19689,
+      "sha256": "2307201041642ddd891fd09eaf4645331cecbc49b3d65a7c2aaa222cbd19530e"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlacePlateRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "2c1cc7dcaa275a833fe43734b62b5a2e7a6dea7f0893ff2c2584e447c12c26f6"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPlacePlateRack-v1/meta/stats.json": {
+      "bytes": 19627,
+      "sha256": "f5067b7f766a6799ce00cc5a6a3d8fce4ae86463db905674fb960e2d2a83f44a"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPourKettle-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "87fcf3029e184443163a8965383c2dbcc926295fde576fbdb1ea46f0c2bacac1"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPourKettle-v1/meta/stats.json": {
+      "bytes": 19678,
+      "sha256": "22876b9b4361f12469df9094d466e86e4e3e98a0101600d16c4811312b6d5498"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotScanMilkBox-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "ed0b09a49523d485973e52cec818cb449d630be531fe2d82fdcd1d6710424bb9"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotScanMilkBox-v1/meta/stats.json": {
+      "bytes": 19635,
+      "sha256": "8c8466eefdcbd5c546c687c0a99817f6ef6c0dda624b90b6afa6559d5a028717"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotStirSpoon-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "a2038f753eab0ef433bb34b08bd39a688083a12412458ea19d7159a992e02396"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotStirSpoon-v1/meta/stats.json": {
+      "bytes": 19656,
+      "sha256": "d523eb4f9b09caf0ac6c537b34fcb08f5a4233e07c3e95f772cc22ed2e958ef9"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotCleanCup-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "89926b74e639cca00c40269b2304ebb720351765fabf1497548c9fd6d9290ec9"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotCleanCup-v1/meta/stats.json": {
+      "bytes": 19671,
+      "sha256": "31472da01959e7df07d2393af8092c935045e0f9213ff23541a785b96ef75d16"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotCutFruit-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "660b26e4fd4c8317c8b5dcfa72d58ba6ba5aabdbf83b716097e395cadbcc5400"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotCutFruit-v1/meta/stats.json": {
+      "bytes": 19693,
+      "sha256": "618ff36bdf711bd3a86428ff70a006c5c7339f3ace427e18ec356c25abe2fe38"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotFoldBox-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "be361323c29e1d6c10ea21ec3e97db25580297d11796ff7b5b6eced232510b40"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotFoldBox-v1/meta/stats.json": {
+      "bytes": 19660,
+      "sha256": "5337ccf8d6b56974b8c3087aa71331212488be96bcb1bffff9f3469383ddcc58"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotFoldTowel-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "0903d2b0c254700d8e5002ade77c5e7068fe27e231cd0239b07a71c3db34b01e"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotFoldTowel-v1/meta/stats.json": {
+      "bytes": 19611,
+      "sha256": "6941b2e0a6b5da6cae0811cb89e20db459eca2ce698d7eaa87b5b2bf56ddf3cc"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotGrindFood-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "3c4ffc75713310342b0aa97e7f585ff35aec454f4a6d7e8e7126b3c33aa0d7e5"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotGrindFood-v1/meta/stats.json": {
+      "bytes": 19662,
+      "sha256": "53b89b096290b6ae635f7fa59b328a08a5f0984e8695f26427f53bdb48f1a671"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotLiftLidFromSkillet-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "60d1eb6424913fc73a4e6872b79ebb0e3c28648933b730a0922b59273eda9eb6"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotLiftLidFromSkillet-v1/meta/stats.json": {
+      "bytes": 19659,
+      "sha256": "478b8231e63d693fbdcf8f6375c983d61fd4cdca90eb4d7ac683772492f840e5"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPickFood-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "57fb8522b05aa2da7f4082dc0eee8fd41c25101b20cc0ae99caae1ed488f4511"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPickFood-v1/meta/stats.json": {
+      "bytes": 19701,
+      "sha256": "2b0eb247cb77b54d84a669fe440b30591c0b09947807e3496bc7fb741c802508"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPickRemoteControl-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "d12981457405323d5167fab035c180a737b47fa3cd6d4fcb76da39a210b83da8"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPickRemoteControl-v1/meta/stats.json": {
+      "bytes": 19673,
+      "sha256": "5a28be6e335d98a38c9b803d5aba870439318bfe162931edb750e2575924f7c8"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPickWash-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "bd197cf2b36b609e4018ba64953365586b8ad054129809c6d4e4b42b421841aa"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPickWash-v1/meta/stats.json": {
+      "bytes": 19688,
+      "sha256": "506616f147ff314033e1dd81f384dc12be99c23e9b1bf0835b9acbe7299ab49a"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceBrushRest-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "ea70bde16024908a5236754a959f33d11dc07a59bf0d3eb7fe17061f274c52ea"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceBrushRest-v1/meta/stats.json": {
+      "bytes": 19686,
+      "sha256": "7ec9256c9d5a1fd01c17a4fdaea9238901c7c870445b7873a739a38f2a020567"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceChipsRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "7713de7f9fe3aff4bb9c69487a16d9d5a6fe09e5b1ce00d3a3459aac649027a9"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceChipsRack-v1/meta/stats.json": {
+      "bytes": 19654,
+      "sha256": "e3f8425297261683939e7204e6600fefbce6fdbe983350c94010e335e6b9d58c"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceClothBasket-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "232783a9ef7c21f59a020977cab72893e6d71b52fb3dbafac19bf361f0e45f07"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceClothBasket-v1/meta/stats.json": {
+      "bytes": 19680,
+      "sha256": "5253a88b96d3a6f4ee840c9243d3089f6724a116e8aec54c55bcb2f311d36f1d"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceFileFolder-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "0f399335dcf508d6a74e85efe285fafb2b3f414a613b9444120301b6884a7c16"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceFileFolder-v1/meta/stats.json": {
+      "bytes": 19654,
+      "sha256": "46c6f910ef561f9ec5349e1dbf4926784bae65e87a6e7b24ee81884b16294e65"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceFruitBox-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "b81a2443c19531f7db1f0845a98da64f8aaa5faafbb283446fd21873954d73d7"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceFruitBox-v1/meta/stats.json": {
+      "bytes": 19715,
+      "sha256": "2fd28e490eae596bab71f599c4a5ec2c659e811fc82881f5835bd6c3c16fd16d"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceMagazineFolder-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "b271457f992bd138a8fd5c093f08af4314254d003945e4304f82df550df2a42e"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceMagazineFolder-v1/meta/stats.json": {
+      "bytes": 19640,
+      "sha256": "28a75e832db1e58ab420f58e304564f6122eef348d823980b32b4c27e5430bd1"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceMugRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "d974e4679c05f84aa666e8ddec595e1d266da2b695db2cd4ebcbe0e8213bc2b1"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlaceMugRack-v1/meta/stats.json": {
+      "bytes": 19689,
+      "sha256": "5f8a48cfacea9d01adcea92cd282e4c2858d622ee37fd19a1dd2b11b7ac42e5c"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlacePlateRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "9ed82419f689d05fce90b654c60868c4e8cd2534eb811a1c6f193feb42a2d383"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPlacePlateRack-v1/meta/stats.json": {
+      "bytes": 19645,
+      "sha256": "0f4180622e92bc7504c0fe30c048c463df31c0e451b77dc93be379c3eae98f89"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPourKettle-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "bf7fbbf54ffa42f47dd9556342da1ba4ff87543e6a6a1381a883bc4e0d8060a6"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPourKettle-v1/meta/stats.json": {
+      "bytes": 19694,
+      "sha256": "89159b7e39749771b66c5c31ff27922979cf0e970369e74bc4c28e7efee7e5f7"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotScanMilkBox-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "422a31f2df0b0031a0ff85cdb008108ec615f162fd6b55d92a601ce7766d1500"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotScanMilkBox-v1/meta/stats.json": {
+      "bytes": 19618,
+      "sha256": "1955e050ef44443096e291109aed6b9cf04ad71a128e96c080dd4eecc43c6030"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotStirSpoon-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "d98ccb0937bd30d4cf4b0be59fa9c647efd8de7954f2fc969367d4adf212d9f3"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotStirSpoon-v1/meta/stats.json": {
+      "bytes": 19630,
+      "sha256": "d31d7c2257ebbc6b656f2ae19d2696f556c2c5663e699aecfd9f750c873b6cee"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotCleanCup-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "53339eb51e8486ac74ebb66162be0f11b0b73476c02c259d4fe80729ac8732de"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotCleanCup-v1/meta/stats.json": {
+      "bytes": 19681,
+      "sha256": "64c9e16b63db31c69f65d77e25310a531045488b8a12811ed218ba5aaefc5597"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotCutFruit-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "0d276bdfff5c44c970ec30d00a9a1e106c4c400c21ebcaa2f12ee0753406eaa5"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotCutFruit-v1/meta/stats.json": {
+      "bytes": 19669,
+      "sha256": "36f8706caf9a5b400a8531df3213bf8f3f7d16bdd1e1cc245f13d9586d5718ed"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotFoldBox-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "2bd43927072d6d4cf849a2ece256d7cee8c84e4c9007fe7042b5c405ae8bd468"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotFoldBox-v1/meta/stats.json": {
+      "bytes": 19642,
+      "sha256": "e5828be7e9b8135f87f5bff3d1e7cdd2d16e350a46ee9e6d73e4085de75e5d8b"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotFoldTowel-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "b301ed61f16cec1a5d6d1bc80b07eef95804e9f6ca3cc4d1039bc1756c9cd2f9"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotFoldTowel-v1/meta/stats.json": {
+      "bytes": 19634,
+      "sha256": "3237f1d3f0c145df97fe94219c7111b61465e841150101a17e54727cc7406492"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotGrindFood-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "c37e7774d067d83988863719d9d7cb6c8ea5c59ca2eb4970396e132a80656cde"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotGrindFood-v1/meta/stats.json": {
+      "bytes": 19621,
+      "sha256": "69bea0ac1fa6e5bb6fba02ef19c626c3b0059fa4ad4dd8abc62367196d6c44ca"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotLiftLidFromSkillet-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "aed6db3a385c6ea00cba82005a0b7090f589434ab71d33ed8b3d80253a1194ff"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotLiftLidFromSkillet-v1/meta/stats.json": {
+      "bytes": 19667,
+      "sha256": "af9bdbff295071bd720bc93ea581bad5ca63df761a672e5f4d1c1029d196d008"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPickFood-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "7959a5b92efb4fa28095b9096a80e2e4335f0c995c3318669405fc135bc3f1d8"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPickFood-v1/meta/stats.json": {
+      "bytes": 19651,
+      "sha256": "cb599affa6cd6e8aa0fdf837b161992c753c8b770ed909ad228a7b608b41ac35"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPickRemoteControl-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "64177fe12c7321a5326daefae250f636f94d157e3637f0da716caf3fce1a72d2"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPickRemoteControl-v1/meta/stats.json": {
+      "bytes": 19729,
+      "sha256": "cb61b781b38fe7c786c98906513bca4c9a34239db0e3d93a17bdbfefed065328"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPickWash-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "bee97b36012f61c3a694c67b5de2bf153f73b8109d64085025d051414fa4a55a"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPickWash-v1/meta/stats.json": {
+      "bytes": 19682,
+      "sha256": "5be17a3cf7788913862161d212afb21759dad6782a3c2bf44a68bf2b787299dc"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceBrushRest-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "eeceb0f4358d4fd46079f86b743c87261111280cee7312a29c420f3477592b59"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceBrushRest-v1/meta/stats.json": {
+      "bytes": 19704,
+      "sha256": "134cb574b91a2b3fa7359d8832bb421e6a2be2747d02029de32ef05d2f1a4757"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceChipsRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "7420dae8db48f30f9d72e4269f1c3873087697ca9b83345ff300590aeccfc42f"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceChipsRack-v1/meta/stats.json": {
+      "bytes": 19687,
+      "sha256": "cc25afbb4388a4cc7fcd87bb9f7c83088a0afdefa8b36505989f51010e07afbb"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceClothBasket-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "051d514114e9a6ee04aa351b4a8556bafeed2141a7a405e8cbff2305a60b0b1f"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceClothBasket-v1/meta/stats.json": {
+      "bytes": 19667,
+      "sha256": "25d88c7bb8c3c2e78a86682f108212fb29db39054b61f346c6b023399666fee1"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceFileFolder-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "e12619abbf629e5840554674c7465b437abcc1ba9891fc24b0367aebeba2b2d7"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceFileFolder-v1/meta/stats.json": {
+      "bytes": 19649,
+      "sha256": "c2e11c93c9cf18de1fdb61aae0d93e7b3bc6dd8dd69bd3c211b04bcfcbbc08ef"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceFruitBox-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "7d5c2d42390a3a7d37568774afc8db1afee5d76b8e4d828a3a7ba742c1d2797c"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceFruitBox-v1/meta/stats.json": {
+      "bytes": 19675,
+      "sha256": "ff0587bdf6d7d8643c2aeedcdbfce1f04d79a1d0986fb066d2b6ce34cc31d625"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceMagazineFolder-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "8428fcf0db6add69283fb37d901abea93e0e3ff88a6a274752a93a44f14c5435"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceMagazineFolder-v1/meta/stats.json": {
+      "bytes": 19623,
+      "sha256": "df7b653ff5e3c67e3263e83f6b1e2b9984c59421b0f89f0ee6fc14c1a0328bd1"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceMugRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "2605b7af4cc4d0ddc3df80c2ded36093797df870e5bc00e256e87d2418087ec5"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlaceMugRack-v1/meta/stats.json": {
+      "bytes": 19689,
+      "sha256": "a10e6126a4d218b93d68eed3778c6ed51e9112856072becc935f7fde7688c31e"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlacePlateRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "d258fdf2bcc82aeddb7aa9c689711912873873f6f35f8c9aed4b7a88338cb3fb"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPlacePlateRack-v1/meta/stats.json": {
+      "bytes": 19623,
+      "sha256": "514857496aa7206db075b5994c2d3a88bee84d61ba344f5705846abde2c787c9"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPourKettle-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "84070ece941b454113f2462403e7ae2760a134811f41261ec80df1c36ba28308"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPourKettle-v1/meta/stats.json": {
+      "bytes": 19706,
+      "sha256": "86ea2bb9a1a8265815449642da09e5aba84377d3ae7306ae20e846f3c25416b7"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotScanMilkBox-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "ebd192ab56a86b63238f00f08fb31bb1f533689d8113da99a321304430136c15"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotScanMilkBox-v1/meta/stats.json": {
+      "bytes": 19648,
+      "sha256": "a3e706ca6bd2f8e867806a36e444019ce1d49febe870917086b56aaa9dfc966a"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotStirSpoon-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "3de8661b17e1266f04bd307bbac92d6f9e60892fba080d892c4e38ab123e817a"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotStirSpoon-v1/meta/stats.json": {
+      "bytes": 19748,
+      "sha256": "0ba2a37a66b6e2d4aa092caec4387a03afa1bfc7c87f473d5dacb90107ba18cb"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotCleanCup-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "c27969b0fb86ece01fb3698f1d899275b3c6000019ad10b7e486a8664300dda4"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotCleanCup-v1/meta/stats.json": {
+      "bytes": 19652,
+      "sha256": "dd0873a73fa16ec27dddf48ec8dd2c1713ea10afe94d6d0cfc6c17e8b9c14429"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotCutFruit-v1/meta/info.json": {
+      "bytes": 2563,
+      "sha256": "92118ab976175747ffa09d913c5d19106a36ffdea807427c1e14a54fb7e0cb85"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotCutFruit-v1/meta/stats.json": {
+      "bytes": 19667,
+      "sha256": "be1cc3328f5a131f09dc8bd7991ca8fefab4d64819010e80943a3562cdf30518"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotFoldBox-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "7c896d34c8f51ba21fa41a51fb42596a18e72eb9eef56670d3798e759e06c519"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotFoldBox-v1/meta/stats.json": {
+      "bytes": 19593,
+      "sha256": "387c70e0004ef6f85817cf346114dba1f5d51901834b9d49cf56e17edb62d209"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotFoldTowel-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "f7dcd9ce336842ea64b17d4ff06fc0a8e11086cf02be6e38ccc3f39f7a72c19b"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotFoldTowel-v1/meta/stats.json": {
+      "bytes": 19642,
+      "sha256": "f36ba5623b6c856cf55016cac41c0fb466eacbbb985e35e3bf61e40912ce0c08"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotGrindFood-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "2ab6f9bcff5c42158f1850d7a44def66cb81251003cd0f5ec18ee9c67bc4dfe7"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotGrindFood-v1/meta/stats.json": {
+      "bytes": 19695,
+      "sha256": "312780c943e54141b7ba24b3c5638b3c9b473299df40ec6f23a44bfdad330e57"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotLiftLidFromSkillet-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "7148347c3a1cdbdb841061baeb57b2a75df26f0fbc2c6d20943bbd59f5136585"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotLiftLidFromSkillet-v1/meta/stats.json": {
+      "bytes": 19627,
+      "sha256": "eb72d264e0fed5f2880fed44753150892dd6abad84a435b838ddce730498fcc8"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPickFood-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "c76077186d3e0be50f785c9656f35fd4cde50229c107cff9972aca1de987d504"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPickFood-v1/meta/stats.json": {
+      "bytes": 19682,
+      "sha256": "e2970925e450820d58d5663aedfe56ffb37fe022ef0da1d27b01351b08fd3ce5"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPickRemoteControl-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "db2bbde4be9afbb833a4109d18c45178552bdef595508ab93be97a0145f9544a"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPickRemoteControl-v1/meta/stats.json": {
+      "bytes": 19688,
+      "sha256": "f794b06d56356b39331ec3992abc47f03fa656c5751f002f1ee7e2928f3b3171"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPickWash-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "0e84d41090d3acdcd46ce93a680786f2e044ec8ad43ef8334778236eec5ad677"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPickWash-v1/meta/stats.json": {
+      "bytes": 19664,
+      "sha256": "9ea12a24e50e96477a6ce2f389afd531b71569851f105b9a7dbb9fc09e94a71d"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceBrushRest-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "23404c36dd603bd453f9cf5e84790f7426f4b6609d194e63fbf6ba404991f2fd"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceBrushRest-v1/meta/stats.json": {
+      "bytes": 19697,
+      "sha256": "1407b3aed5b92383e76b991e330042899196147a49da20af46462f6115651c87"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceChipsRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "445754d2a76f7c4a390a7009156fb0ae9af8c3cd15a9dadaaccf4d22631c5438"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceChipsRack-v1/meta/stats.json": {
+      "bytes": 19693,
+      "sha256": "0ba0033ac41017a61d9cb6438782d675823fef2a0234327ebb315c8403ae0758"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceClothBasket-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "9395bd0096002eceb5c876744fcaf5f43765d2722ea849ed540dd875ff8ecc1f"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceClothBasket-v1/meta/stats.json": {
+      "bytes": 19633,
+      "sha256": "2bc11385e09c83feb9c9b190f241406e5ae436a9452bc5a6b3413d5695653f3f"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceFileFolder-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "2642c7b420cb3efde08caec6348a6581ce9b6538bdb427ede76bc2d5b18c3aab"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceFileFolder-v1/meta/stats.json": {
+      "bytes": 19656,
+      "sha256": "7060c4e10a3e7d2652a6f778c0850e996651046b1faa0f81bd07136b2f4bf8b0"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceFruitBox-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "0f5ba10a9b4e68c05a4f526f339bb12757fa6a110b9ec3039d0a7fb0dfb0ed7e"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceFruitBox-v1/meta/stats.json": {
+      "bytes": 19675,
+      "sha256": "f5ced1305c91dc4e3052a6ed152156055e865ff0db428d27624049fc4c557a5e"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceMagazineFolder-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "3c22f57c7ecbee9265ca4d548b72d09f52933b8f4e65bedb9d07f563bfbd8b63"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceMagazineFolder-v1/meta/stats.json": {
+      "bytes": 19507,
+      "sha256": "c81864dc4a1446a6a14abbd64915676775e2d6199df4272bda9885c147059c44"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceMugRack-v1/meta/info.json": {
+      "bytes": 2561,
+      "sha256": "b5c94ab7e4d342b26939c1141fcb406a54506d1322aba4658c5286d131190cfa"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlaceMugRack-v1/meta/stats.json": {
+      "bytes": 19710,
+      "sha256": "f83b6b3394c9ab2ae284d4e11b5d0e95cb155cd7b59e12c146ad37ef64401ba6"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlacePlateRack-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "47f65425dcb69cb285596a7af65cf68ef5f953f7603652e1337ae9627d5d7273"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPlacePlateRack-v1/meta/stats.json": {
+      "bytes": 19654,
+      "sha256": "ac154d6b595ae0f00e0c77068b86439ac9769e14bf5988cb6a7b9bd71d47619b"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPourKettle-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "8aa862c9a420d39e4134230ff93530db77d95c33d95084802b6d52e94a8cac4d"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPourKettle-v1/meta/stats.json": {
+      "bytes": 19645,
+      "sha256": "52742313df918dd829257816a0f5ab190163542b915a2fc9a8a4d6cde2a25e63"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotScanMilkBox-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "69ddd79fbb82c978f5a720638ae06e215e244ef79f2a8b3fd64648f078e742cc"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotScanMilkBox-v1/meta/stats.json": {
+      "bytes": 19660,
+      "sha256": "271715047cddb35bd894e4436b530a2863cf5dffbeb552483e13b09fa2e78024"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotStirSpoon-v1/meta/info.json": {
+      "bytes": 2562,
+      "sha256": "956ec700e8a248cdc6ab76014d7e3ecba2d82f86cb2d28ffa81163a9cb7f0b3b"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotStirSpoon-v1/meta/stats.json": {
+      "bytes": 19672,
+      "sha256": "e672cfbde0b152bfc654dd6298c4bcf57767cd1145bb46407d950fb4d18dffe1"
+    },
+    "experiments/act_dinov2_15task/prepared/sim_train_15.json": {
+      "bytes": 7970,
+      "sha256": "9c8a6af6c8eb2e513086e06b792e46952aafbfbe8e97f7575675ebaf98c2d878"
+    },
+    "experiments/act_dinov2_15task/probe_env.py": {
+      "bytes": 2140,
+      "sha256": "f0c3d08afe250b7b67b7c53b14ef0fdd91edb528c015e4b4e9606abb0a2a5045"
+    },
+    "experiments/act_dinov2_15task/results.csv": {
+      "bytes": 4658,
+      "sha256": "71c5a40a07c71a64eee9f0177fbcd3bbf7d2f3b56a8da76414c103937f36fb3d"
+    },
+    "experiments/act_dinov2_15task/results.json": {
+      "bytes": 18071,
+      "sha256": "6a3672df2dd7ff36d6e84601d619cbd4f340bb804de58efdd2953e45b711a8c3"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/checkpoints/epoch_010.ready.json": {
+      "bytes": 350,
+      "sha256": "97c86b24047eb30322b038ac1a8cfe15002285494a516b1734a3913234828fda"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/checkpoints/epoch_050.ready.json": {
+      "bytes": 351,
+      "sha256": "5a79e008b17d09328fde31cc673183e38cf6b921b717df588e4ea68e6a6623ac"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/checkpoints/epoch_100.ready.json": {
+      "bytes": 352,
+      "sha256": "4ac01f0ab10090ebf90e125f6e8408d57fce13c27f4dd855b741a22e29c6e231"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/checkpoints/final_model.ready.json": {
+      "bytes": 354,
+      "sha256": "eafc2b88c20661b5fb7f48aa8047b2cfe5eb631aec66157cfbcb82f1f65cefa3"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/checkpoints/latest.ready.json": {
+      "bytes": 348,
+      "sha256": "18203cbbdb36b54d11cb91a7e30640a1ac7f12eeab925d3fea1bd197bb212b02"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/complete.json": {
+      "bytes": 465,
+      "sha256": "5f9c8e5baa5b6ead4f44a3d1736495cdaf213493a927bdf0e0668e0f99386a91"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/config.json": {
+      "bytes": 4002,
+      "sha256": "05d68d700411fa3a85d73e59805593666bf3eb7b2916742480a5f0adff1de2ae"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/epochs.jsonl": {
+      "bytes": 15002,
+      "sha256": "74d3c1d2ad7df6953475acae31ac873f13e97be4e495d69ed2f787ccb9a49b5c"
+    },
+    "experiments/act_dinov2_15task/runs/finetune5/real-batch-check.json": {
+      "bytes": 469,
+      "sha256": "eafee8d5ed5166b0d970dc1dcadc126208088f883c524878431c5022935f708f"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/checkpoints/epoch_010.ready.json": {
+      "bytes": 352,
+      "sha256": "96be0fb393f64b557901c4dd6dedaab63e576caeebeccdd627612fed916017dc"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/checkpoints/epoch_050.ready.json": {
+      "bytes": 353,
+      "sha256": "cc3f0f9c92b9bfbe201311f3c8da9232c47c84347012a79215cab10812ed3205"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/checkpoints/epoch_100.ready.json": {
+      "bytes": 353,
+      "sha256": "4845b7620fe9bd0fadb0e0252208fc5a5f7d91c88bb888574f9efd4a74fc798d"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/checkpoints/final_model.ready.json": {
+      "bytes": 356,
+      "sha256": "ed3dfd3436f930b84c71365c656768ac7900e298aa507fbb983c1e65a17a3015"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/checkpoints/latest.ready.json": {
+      "bytes": 351,
+      "sha256": "03c29372cb6c7dd46f20af8e1d1170ea26a9ac5ec21cc53867a990b40979598c"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/complete.json": {
+      "bytes": 472,
+      "sha256": "f28e741fc6e2661d44c2e8035aa8af85606df6f469285d2a446a3f708466c9ca"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/config.json": {
+      "bytes": 3572,
+      "sha256": "db5ba77523b35f7aeff2c755dea0c2681ef6304fa96e4620af63cb6a1e3afd53"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/epochs.jsonl": {
+      "bytes": 15114,
+      "sha256": "ae96b2f05c1983412cf0da30578bcca295147b2d40e23501b1a7653ee80896ab"
+    },
+    "experiments/act_dinov2_15task/runs/pretrain15/real-batch-check.json": {
+      "bytes": 630,
+      "sha256": "a0ef8c4d04faa0b95a779a3ff8ce779808b02d4093186db0139c0624c0d2f187"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/checkpoints/epoch_010.ready.json": {
+      "bytes": 349,
+      "sha256": "9ceb8222a532fd9d1b7923d836cd9f48a6bb487bdd629fdee81a1ecb5b00101a"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/checkpoints/epoch_050.ready.json": {
+      "bytes": 350,
+      "sha256": "35a0c9e7d7c10df0e2a45118e3f211a8bb347d671dbbbbeed74b3203b75d776c"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/checkpoints/epoch_100.ready.json": {
+      "bytes": 351,
+      "sha256": "ebe22c8bd5adbfd9b3a1d730c25538a30f822d653ecdd39d24291983fe6584cc"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/checkpoints/final_model.ready.json": {
+      "bytes": 353,
+      "sha256": "1744f8b9e292f3a4165e69854c96c3311401b4536b71b673fb2e24ef0cba6f97"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/checkpoints/latest.ready.json": {
+      "bytes": 348,
+      "sha256": "a73867c5e4f72b56a30641c8948037eeb9ea57465f5f9699883f68a39b039acb"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/complete.json": {
+      "bytes": 464,
+      "sha256": "6ef23d1e025dabeb9b57b8ef19207b0b2a6487c3e84adf899ab2630086743fc2"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/config.json": {
+      "bytes": 3563,
+      "sha256": "d22c6a26866cfbc91dcfac40948eb529a06b788b44e61d6a799278a20efa18c3"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/epochs.jsonl": {
+      "bytes": 14927,
+      "sha256": "fdde75fd6d8142feae6a517c048ca3c4e31fa10d8ef57c3d072b54fd9d4c6b9c"
+    },
+    "experiments/act_dinov2_15task/runs/scratch5/real-batch-check.json": {
+      "bytes": 462,
+      "sha256": "9aaf151f309e3ab7f4465c3a8fa648f3adcda808b26cc456c2cb0d6d6144e0f8"
+    },
+    "experiments/act_dinov2_15task/status.json": {
+      "bytes": 1220,
+      "sha256": "adade45ea987f1f2c514676c50575440f72f3e9f487477fd09734a06e292a95b"
+    },
+    "experiments/act_dinov2_15task/summarize.py": {
+      "bytes": 8077,
+      "sha256": "ca4911d54beace992deb344f7bd8e1a75535f167e513c4435b612ab0093f69d9"
+    },
+    "experiments/act_dinov2_15task/train.py": {
+      "bytes": 11249,
+      "sha256": "ee97d716a8f10ef3926177fe0a99d969c032f4934da06152df0a826a1541c8e8"
+    },
     "experiments/act_placemugrack_levels/README.md": {
       "bytes": 2161,
       "sha256": "dab2540c974ec5e9c203e0438d3ac8902a9cfd072231c7ab7a67e70f9449036d"
@@ -13334,6 +15728,10 @@
       "bytes": 365,
       "sha256": "fe39ae3879a3a35420986d82dd17b3682b532865bf0231012037025506e1b15c"
     },
+    "scripts/check_act15_status.py": {
+      "bytes": 3557,
+      "sha256": "7669023f2f3e2027d3351ce3056325962a564e22abeb7840cb7f550b4c84a7e6"
+    },
     "scripts/check_environment.py": {
       "bytes": 7764,
       "sha256": "3507bd04f42b25fa1f0bedff3d94ebd943a86f33a04d85da453f390ced2c003a"
@@ -13342,17 +15740,29 @@
       "bytes": 1214,
       "sha256": "c58ccd7d02c41b959f16dbbf25763e1235757106461fef8aa67c926f79f48d88"
     },
+    "scripts/diagnose_act15_decoder.py": {
+      "bytes": 2212,
+      "sha256": "de3336aa2a8dc86733e5cfbc1a6f71314df4ed1f5edd7c86393acb596ecf3c3f"
+    },
     "scripts/prepare_github_snapshot.py": {
       "bytes": 3756,
       "sha256": "2c3bbd0ea160cd3de28debcb1b70fc963e994509625e99befe29ab1de22af9a4"
+    },
+    "scripts/repair_act15_l3_evaluation.py": {
+      "bytes": 3887,
+      "sha256": "dda862953b20eb31dafe67bddbbc1e7da52822071a691bb7a20822911b59d127"
+    },
+    "scripts/start_act15_service.sh": {
+      "bytes": 1246,
+      "sha256": "b41d1cd57ac1be4d728b766f07a44b12af0050dc8632b18d42d2a7a4cd343df9"
     },
     "scripts/start_levels_service.sh": {
       "bytes": 1083,
       "sha256": "4bb26cead9bb2a5f2cc52d16635fec341b11cff22e6746150f28c17a1e993827"
     },
     "scripts/sync_github_snapshot.py": {
-      "bytes": 8581,
-      "sha256": "6a0ef80330e6173cce7cb2b76671b41eed4511bbc960c062b4507a97f0df1347"
+      "bytes": 11268,
+      "sha256": "88fcd24bca618915743ca05eed1d03e130bcfaa1595e24609d496a06ebf9487b"
     }
   }
 }

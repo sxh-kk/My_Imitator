@@ -1,0 +1,41 @@
+{
+  "revision": "2d7a339b27aff14a0780db4bd4d5e3a68c6358bc",
+  "files": [
+    {
+      "type": "file",
+      "oid": "c250a9d10fe0ff3d78cfa7878b3855bf0d274493",
+      "size": 5609059428,
+      "lfs": {
+        "oid": "b165d040ef461e7c5563c1463ea638e200738c4cfe2c742cf99202dc43303215",
+        "size": 5609059428,
+        "pointerSize": 135
+      },
+      "xetHash": "a843e93a47098b50a40a274659a7b6d8a930dad6d35c7a4fbafdde9352993f14",
+      "path": "partnet_mobility.tar.zst"
+    },
+    {
+      "type": "file",
+      "oid": "15acecf0fde23823dd7dbc1137187975bd53acc6",
+      "size": 14764813696,
+      "lfs": {
+        "oid": "d73f4b1ea129649f03477a7d5ea411a902192920abb253ffa65f6ec77fdd4211",
+        "size": 14764813696,
+        "pointerSize": 136
+      },
+      "xetHash": "74d9f128088a07f0d89fa9170237ed6f59e0775f55a0dde07bae60ad2030f97d",
+      "path": "robotwin.tar.zst"
+    },
+    {
+      "type": "file",
+      "oid": "716fd86b9a3ffe28617597a9ac23a1bcc5dd5717",
+      "size": 31592699,
+      "lfs": {
+        "oid": "b9b56f13593fa5e80ec274191c230df4aab3db4f21a2ec2011a23ab87ec3ca61",
+        "size": 31592699,
+        "pointerSize": 133
+      },
+      "xetHash": "8559fec7a52b610ab5fbfbe1d743961704043688f7006c8c93f5f346b764016b",
+      "path": "sketchfab.tar.zst"
+    }
+  ]
+}

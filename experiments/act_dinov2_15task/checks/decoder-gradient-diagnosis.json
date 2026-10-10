@@ -1,0 +1,54 @@
+{
+  "status": "diagnosed",
+  "diagnostic": "real batch forward/backward only; no optimizer or checkpoint mutation",
+  "checkpoint_sha256": "d1d7a599a0b1c159b02be44eba6a8d3b174d7d056a1ce5eae24987a544d0c95c",
+  "robot_actions_shape": [
+    2,
+    24,
+    16
+  ],
+  "shapes": {
+    "decoder_all_layers": [
+      4,
+      24,
+      2,
+      256
+    ],
+    "predicted_action": [
+      2,
+      24,
+      16
+    ]
+  },
+  "loss": 0.025488732382655144,
+  "decoder_layers": [
+    {
+      "index": 0,
+      "parameter_tensors": 18,
+      "tensors_with_gradient": 18,
+      "nonzero_gradient_tensors": 18,
+      "gradient_abs_sum": 94.98661661380902
+    },
+    {
+      "index": 1,
+      "parameter_tensors": 18,
+      "tensors_with_gradient": 18,
+      "nonzero_gradient_tensors": 0,
+      "gradient_abs_sum": 0.0
+    },
+    {
+      "index": 2,
+      "parameter_tensors": 18,
+      "tensors_with_gradient": 18,
+      "nonzero_gradient_tensors": 0,
+      "gradient_abs_sum": 0.0
+    },
+    {
+      "index": 3,
+      "parameter_tensors": 18,
+      "tensors_with_gradient": 18,
+      "nonzero_gradient_tensors": 0,
+      "gradient_abs_sum": 0.0
+    }
+  ]
+}

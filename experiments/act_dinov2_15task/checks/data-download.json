@@ -1,0 +1,3897 @@
+{
+  "status": "passed",
+  "revision": "57fa861d911afe899da5c0f28d973151411d46d1",
+  "elapsed_seconds": 483.0834114551544,
+  "files": [
+    {
+      "path": "imitator_human_v1/human_H1/data/chunk-000/file-000.parquet",
+      "bytes": 46659687,
+      "sha256": "1d445ae501a492e34b5c2779bb031f91658bacad4574edc01f1d68dd46d54ba0"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 252417,
+      "sha256": "be5491430ab706ea8e8be52cd9569664e960b2aece675b31dcbee53b4e14dd33"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/meta/info.json",
+      "bytes": 37608,
+      "sha256": "d1b4141e6aac963da9f4e9db86367ed6e6bd2da7f80c3eb5daa71f0d94219484"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/meta/mask_labels/human_H1/observation.images.cam1_mask/global.json",
+      "bytes": 69,
+      "sha256": "d287de5758608f7e4d78b27cea06d2933164b3a49e694caa78153703380653be"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/meta/mask_labels/human_H1/observation.images.cam2_mask/global.json",
+      "bytes": 69,
+      "sha256": "d287de5758608f7e4d78b27cea06d2933164b3a49e694caa78153703380653be"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/meta/mask_labels/human_H1/observation.images.cam3_mask/global.json",
+      "bytes": 69,
+      "sha256": "d287de5758608f7e4d78b27cea06d2933164b3a49e694caa78153703380653be"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/meta/mask_labels/human_H1/observation.images.zed2i_mask/global.json",
+      "bytes": 69,
+      "sha256": "d287de5758608f7e4d78b27cea06d2933164b3a49e694caa78153703380653be"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/meta/stats.json",
+      "bytes": 278997,
+      "sha256": "e62694f52c849ebf5edd5bffdb371366d5be0948826e1dbaa63d361a4c9c3e53"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/meta/tasks.parquet",
+      "bytes": 2136,
+      "sha256": "404c972a404d1eda8ff9ae4cd9a3f25895ef9e046dfd329ef62d37adf1df9a59"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 206223384,
+      "sha256": "78361619ca8b82c6182e79dca2fa55f984512f69160d763f43c969e68b08d5c4"
+    },
+    {
+      "path": "imitator_human_v1/human_H1/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 80362155,
+      "sha256": "3494f7540e85f5ceb3717934315b2b02b7c81afdceda6a3bcc0dad757cee23ab"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/data/chunk-000/file-000.parquet",
+      "bytes": 25475831,
+      "sha256": "8af78fa4e3e83a704ff60e044eab56ef9ad634df9690f9467ca14d0882e89981"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 256562,
+      "sha256": "b192ef833dbdd3e147089764cb7ea6cad34ae5b663b50e3008df33021c61e4f9"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/meta/info.json",
+      "bytes": 37608,
+      "sha256": "0752e2f6d05472ee5c05d1707e2bf79092a328872f6ee3c3b4fbe4118637a377"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/meta/mask_labels/human_H10/observation.images.cam1_mask/global.json",
+      "bytes": 131,
+      "sha256": "f92428cb3dbef307018d44e22f7b3546e28ad938bd8091ac04d05661f18ae22b"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/meta/mask_labels/human_H10/observation.images.cam2_mask/global.json",
+      "bytes": 131,
+      "sha256": "f92428cb3dbef307018d44e22f7b3546e28ad938bd8091ac04d05661f18ae22b"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/meta/mask_labels/human_H10/observation.images.cam3_mask/global.json",
+      "bytes": 131,
+      "sha256": "f92428cb3dbef307018d44e22f7b3546e28ad938bd8091ac04d05661f18ae22b"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/meta/mask_labels/human_H10/observation.images.zed2i_mask/global.json",
+      "bytes": 131,
+      "sha256": "f92428cb3dbef307018d44e22f7b3546e28ad938bd8091ac04d05661f18ae22b"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/meta/stats.json",
+      "bytes": 276660,
+      "sha256": "ea7c47b9192dd6c2a4710863f8ec78c9e0834888c621cdc8e949ed019c00fb5f"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "54814f2c2f3aa74c78db9b461738edca8bcf35dc14d0c3b8a503b21fa3c2b02d"
+    },
+    {
+      "path": "imitator_human_v1/human_H10/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 192332284,
+      "sha256": "f85deb19d7943d365cac36e9f8ed5627f42cb9ba98632e75b697c672e52a4aa4"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/data/chunk-000/file-000.parquet",
+      "bytes": 39372130,
+      "sha256": "40d12d2a36832ff0abe7de6199c3e9a8f47bb93e33e69e25d81a7b53501bf166"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 250951,
+      "sha256": "8a6d3b267e8e2c8058e4e24b8dac1d28184df373f51e49239474d877e5ce429d"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/meta/info.json",
+      "bytes": 37608,
+      "sha256": "ce760d90bffb17247666af556595e922d80aa159cb33f867bd8426670927e032"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/meta/mask_labels/human_H12/observation.images.cam1_mask/global.json",
+      "bytes": 103,
+      "sha256": "df2485d6e7a236c43c7667550f6fd41df406cd7c3599e78750b5a1088feb228b"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/meta/mask_labels/human_H12/observation.images.cam2_mask/global.json",
+      "bytes": 103,
+      "sha256": "df2485d6e7a236c43c7667550f6fd41df406cd7c3599e78750b5a1088feb228b"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/meta/mask_labels/human_H12/observation.images.cam3_mask/global.json",
+      "bytes": 103,
+      "sha256": "df2485d6e7a236c43c7667550f6fd41df406cd7c3599e78750b5a1088feb228b"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/meta/mask_labels/human_H12/observation.images.zed2i_mask/global.json",
+      "bytes": 103,
+      "sha256": "df2485d6e7a236c43c7667550f6fd41df406cd7c3599e78750b5a1088feb228b"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/meta/stats.json",
+      "bytes": 275478,
+      "sha256": "3397f27935980f6d3531486f03e4c95d0aad1e8e2303250f1e4e314607981af2"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "07b5da399b1ab910b9421964b57ee81df952ff981789320d14493671bce535e6"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 208149912,
+      "sha256": "b595e67b0b465aac8f6cdb11ae5d1fa1d9f1b7f61891c48b7c6aa0b85218ef54"
+    },
+    {
+      "path": "imitator_human_v1/human_H12/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 52147155,
+      "sha256": "b99a7038c768114812bedba1967f644908069abfdd6989d89a7b381e703d8ee3"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/data/chunk-000/file-000.parquet",
+      "bytes": 50368257,
+      "sha256": "0e989729ec3c4a907eba8f3a56c5b807ae39f8be0ba301994b96a83c95535f4f"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 268938,
+      "sha256": "a6d13e46847ae35c2e8fe106e2982bd8ff45d11bd6afac7702b5626107ed5c71"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/meta/info.json",
+      "bytes": 37608,
+      "sha256": "47c4a9aa0a5e367252875acedfb9af6aa6dde5285d1d4ddafbbadfcc7b53299b"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/meta/mask_labels/human_H13/observation.images.cam1_mask/global.json",
+      "bytes": 57,
+      "sha256": "cb203028a4c8fed4205a0473c00ac39ed7d683d82fd4662831732dcd07e68f05"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/meta/mask_labels/human_H13/observation.images.cam2_mask/global.json",
+      "bytes": 57,
+      "sha256": "cb203028a4c8fed4205a0473c00ac39ed7d683d82fd4662831732dcd07e68f05"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/meta/mask_labels/human_H13/observation.images.cam3_mask/global.json",
+      "bytes": 57,
+      "sha256": "cb203028a4c8fed4205a0473c00ac39ed7d683d82fd4662831732dcd07e68f05"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/meta/mask_labels/human_H13/observation.images.zed2i_mask/global.json",
+      "bytes": 57,
+      "sha256": "cb203028a4c8fed4205a0473c00ac39ed7d683d82fd4662831732dcd07e68f05"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/meta/stats.json",
+      "bytes": 279297,
+      "sha256": "520e23302cdd54141e591833d8295c9e5e7f5f35bc21eee2c6a66f2cca6db3fa"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "560ac90273589832ad698a75457524722f69e0fc9d348ab551dfc0a68417ed06"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 206996029,
+      "sha256": "b3441062b8f6d9bc138262fe438e03c5640e114fe71f795edf4033b5fdef7d70"
+    },
+    {
+      "path": "imitator_human_v1/human_H13/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 106438067,
+      "sha256": "e395fd637daa9efa2ad7ab417284b8f06b1be3ccf8964db81281b30b75ae803e"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/data/chunk-000/file-000.parquet",
+      "bytes": 31103862,
+      "sha256": "a3de6ecfb40a141b96764d0aa72b7281a101fbd4157ac18b962f83fcc00633bd"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 258786,
+      "sha256": "135f9453cfe3c0ae643b22bcd9959014ebe61c53f6c73fba57f30fd718e7bc47"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/meta/info.json",
+      "bytes": 37608,
+      "sha256": "a3ecfeef8d9845f51e0f4167a65a5aa4782f25dfc8bd43ba8f140fdc293a922d"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/meta/mask_labels/human_H14/observation.images.cam1_mask/global.json",
+      "bytes": 89,
+      "sha256": "0dfe6fec796e1f84e05f29ebc465c9145fa7937102977bd57d56503941616c39"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/meta/mask_labels/human_H14/observation.images.cam2_mask/global.json",
+      "bytes": 159,
+      "sha256": "f425e55c6cda40b7d90d6e0256dc8ace79421fc90cee759cb25308527609d187"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/meta/mask_labels/human_H14/observation.images.cam3_mask/global.json",
+      "bytes": 172,
+      "sha256": "58a7121ea6353f9550196b9a45ae8b9b14fe0c7f6ece3f0a043d7ce1b079cab6"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/meta/mask_labels/human_H14/observation.images.zed2i_mask/global.json",
+      "bytes": 46,
+      "sha256": "bfd64e613122daea5035c48ea58a1bd2c398b6c355cd25c98001e0beb54589b3"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/meta/stats.json",
+      "bytes": 277303,
+      "sha256": "cdf54f60e904be7619a3e2076596ac4c4c66d013e2db733b65f011db7c86f397"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "2d16fc4f7a3a22a3e47c55d74b42ef2f0c5d6cd15ad74388c40e661a31028d9b"
+    },
+    {
+      "path": "imitator_human_v1/human_H14/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 172117110,
+      "sha256": "d84cb0fdb8bb310f9f7504ac0bd87c58c83e634f541d26bb3f94feadf1a7f6d5"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/data/chunk-000/file-000.parquet",
+      "bytes": 36707499,
+      "sha256": "2a8e3d53d094adea88b25779ba51aefd95752e3117cc5e2387fad1f3629cb708"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 260571,
+      "sha256": "4a72c5591709f0e90e34c8cdad0ffeb43d171b2a0819c3bf6336002371016d36"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/meta/info.json",
+      "bytes": 37608,
+      "sha256": "229a1c3368a86c08219db245e7ca5370edc7e086814b54bb6f72f70dea961192"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/meta/mask_labels/human_H15/observation.images.cam1_mask/global.json",
+      "bytes": 41,
+      "sha256": "a423118d7ba57bd8f07e07c88607fa81c822fc14779094ea406490e030b8f478"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/meta/mask_labels/human_H15/observation.images.cam2_mask/global.json",
+      "bytes": 41,
+      "sha256": "a423118d7ba57bd8f07e07c88607fa81c822fc14779094ea406490e030b8f478"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/meta/mask_labels/human_H15/observation.images.cam3_mask/global.json",
+      "bytes": 41,
+      "sha256": "a423118d7ba57bd8f07e07c88607fa81c822fc14779094ea406490e030b8f478"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/meta/mask_labels/human_H15/observation.images.zed2i_mask/global.json",
+      "bytes": 41,
+      "sha256": "a423118d7ba57bd8f07e07c88607fa81c822fc14779094ea406490e030b8f478"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/meta/stats.json",
+      "bytes": 278754,
+      "sha256": "86b8f8abbe1fcb2c33ff26f159a9a25af5c08bc088e4f1b3a549152d00c92994"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "bb819e91d84976bed6942e9694e4882adb8fd37c4a5fa0b71e326c14d4836b5b"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 208156277,
+      "sha256": "b441f5b7d4d71531351a4531f59b47c7c0953719aff48ba428c749533019ea82"
+    },
+    {
+      "path": "imitator_human_v1/human_H15/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 2847693,
+      "sha256": "90e736f1f0cea40209c04947bad6abd6f972ce348c03639c80d27bf1ea2e883e"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/data/chunk-000/file-000.parquet",
+      "bytes": 51063732,
+      "sha256": "2ce05ced22d04a8f85bf16e5d32ee837e237a038720a694175e6853328d6d25e"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 255319,
+      "sha256": "a0d774e99d918df79970c1654b125642701be6f2585d9c7f80cb93cb81778ec7"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/meta/info.json",
+      "bytes": 37608,
+      "sha256": "7752809ad264e1209b71d1342784ffc5f5a75ab72e1fb4414b59e034285fa097"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/meta/mask_labels/human_H20/observation.images.cam1_mask/global.json",
+      "bytes": 45,
+      "sha256": "e317e501758ac20521114f7dede2200072c0c5472cf823f645e3f97a95776f41"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/meta/mask_labels/human_H20/observation.images.cam2_mask/global.json",
+      "bytes": 45,
+      "sha256": "e317e501758ac20521114f7dede2200072c0c5472cf823f645e3f97a95776f41"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/meta/mask_labels/human_H20/observation.images.cam3_mask/global.json",
+      "bytes": 45,
+      "sha256": "e317e501758ac20521114f7dede2200072c0c5472cf823f645e3f97a95776f41"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/meta/mask_labels/human_H20/observation.images.zed2i_mask/global.json",
+      "bytes": 45,
+      "sha256": "e317e501758ac20521114f7dede2200072c0c5472cf823f645e3f97a95776f41"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/meta/stats.json",
+      "bytes": 276386,
+      "sha256": "06eef64c4560ff6dae2615a3f46ea6c6a3ab2a5a8a545b42faaf400beed29ca9"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "ee954451e9f8c4aea65774063c0fee426ec0c8c9fbf392a71d1843164a64bdd5"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 208173444,
+      "sha256": "3cda55534477bf218c253d8f4d07e8d85f08693e137d985892449b414091ff69"
+    },
+    {
+      "path": "imitator_human_v1/human_H20/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 111144085,
+      "sha256": "bc604f71eae8e45f71ef14f21d274d568188e24535165b87a489bdc84b62723a"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/data/chunk-000/file-000.parquet",
+      "bytes": 29291298,
+      "sha256": "12c12091b3815a56d8ba22a40e8adb9e0792224e668f6fa2632300b43cd3d865"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 252134,
+      "sha256": "c64e1e69a8bef81d11d354c9bc77f80939d500cea85b6ed5c652d5315da63e9d"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/meta/info.json",
+      "bytes": 37608,
+      "sha256": "4c7940f7b581e533a113ce35643cc88f9dedb162d4cb627f96ab14e843b7925e"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/meta/mask_labels/human_H21/observation.images.cam1_mask/global.json",
+      "bytes": 43,
+      "sha256": "5c46b5a7edb875a0f98bdb9bfd348823f63e3eee5f424e375dcef31fc6e91c1d"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/meta/mask_labels/human_H21/observation.images.cam2_mask/global.json",
+      "bytes": 60,
+      "sha256": "ef91c48b77ed1eebcfaa30c113723a938e53ce2d4603d1b18d817f39efe83dd4"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/meta/mask_labels/human_H21/observation.images.cam3_mask/global.json",
+      "bytes": 44,
+      "sha256": "e72dd31a61ea2e13fcb2d5f99d952efd0294f74257bbdd880ad85f9f4f2c22f9"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/meta/mask_labels/human_H21/observation.images.zed2i_mask/global.json",
+      "bytes": 60,
+      "sha256": "ef91c48b77ed1eebcfaa30c113723a938e53ce2d4603d1b18d817f39efe83dd4"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/meta/stats.json",
+      "bytes": 278486,
+      "sha256": "78c6fb4326ad11f7e2ad29fb88b0fcc5c2acbe5583c90e46c2456d27d37c3bd5"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "fabfd53eae1564f37b97d139c16e01151f0c21a9146b74e49e0eca0dd7d6ddf5"
+    },
+    {
+      "path": "imitator_human_v1/human_H21/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 171315840,
+      "sha256": "8238ecccc9ec6be6df1e9e2b0bd2144ae625a1c308c9454613a4fa7370a10489"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/data/chunk-000/file-000.parquet",
+      "bytes": 37949975,
+      "sha256": "666381a618be85ed10d65e226cc70a8768f6e2860bc0d3b64f5cba954b84864d"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 263780,
+      "sha256": "569e4b0922368cfdc01dfcd52df7596da9d4628b3a8c49eabf45ab54e05d3edd"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/meta/info.json",
+      "bytes": 37608,
+      "sha256": "e77cdbb2bdee36e6c2940047c475fd67f39a6f69cc30334ba596933a8d26bad4"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/meta/mask_labels/human_H3/observation.images.cam1_mask/global.json",
+      "bytes": 52,
+      "sha256": "59c7b22ead338fb5c2298115edd7cb0465733fcc23a168b654a7dcf3768eb9b7"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/meta/mask_labels/human_H3/observation.images.cam2_mask/global.json",
+      "bytes": 52,
+      "sha256": "59c7b22ead338fb5c2298115edd7cb0465733fcc23a168b654a7dcf3768eb9b7"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/meta/mask_labels/human_H3/observation.images.cam3_mask/global.json",
+      "bytes": 52,
+      "sha256": "59c7b22ead338fb5c2298115edd7cb0465733fcc23a168b654a7dcf3768eb9b7"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/meta/mask_labels/human_H3/observation.images.zed2i_mask/global.json",
+      "bytes": 52,
+      "sha256": "59c7b22ead338fb5c2298115edd7cb0465733fcc23a168b654a7dcf3768eb9b7"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/meta/stats.json",
+      "bytes": 277052,
+      "sha256": "f2bde71c1d53fc7a0b0ca2aed9ced6b4c6093bb16f9397392575a8e3a435a884"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/meta/tasks.parquet",
+      "bytes": 2136,
+      "sha256": "4cc1dc594af7b986186c15041f43b80941a32d5cc1101c845f9e9b46b78d00ca"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 207548000,
+      "sha256": "80696162e191385bb7f1905f0e075f35636e74d80f0e9ee581e146927800132b"
+    },
+    {
+      "path": "imitator_human_v1/human_H3/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 10568437,
+      "sha256": "4917f4ab84af46b9473886962ef7d2003194d8feffe4d148ca6d25ede266d040"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/data/chunk-000/file-000.parquet",
+      "bytes": 43520611,
+      "sha256": "6a01000a23443936d1e66203f2402ac1079fe667adc308397b903a62db9d09b8"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 272171,
+      "sha256": "68a91838750f7ec1cc73db943f259c1911eac970f59a96f193e4cbad65915b22"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/meta/info.json",
+      "bytes": 37608,
+      "sha256": "e07c2641202cfcb26cc34a38c965f661033524b1d9dd268f7b3b05529643a7e8"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/meta/mask_labels/human_H30/observation.images.cam1_mask/global.json",
+      "bytes": 73,
+      "sha256": "a5603f10e416244558da90a790f96c6352455cd336f4accb91b3fb64bafc9f6b"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/meta/mask_labels/human_H30/observation.images.cam2_mask/global.json",
+      "bytes": 73,
+      "sha256": "a5603f10e416244558da90a790f96c6352455cd336f4accb91b3fb64bafc9f6b"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/meta/mask_labels/human_H30/observation.images.cam3_mask/global.json",
+      "bytes": 73,
+      "sha256": "a5603f10e416244558da90a790f96c6352455cd336f4accb91b3fb64bafc9f6b"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/meta/mask_labels/human_H30/observation.images.zed2i_mask/global.json",
+      "bytes": 73,
+      "sha256": "a5603f10e416244558da90a790f96c6352455cd336f4accb91b3fb64bafc9f6b"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/meta/stats.json",
+      "bytes": 276767,
+      "sha256": "b87a8d8e4afeac5aec751664d4234dc190806d54d9f2ddb374b35c4ef9ba7c61"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "693edf17b8901ffb63050ad58670f51db9e58b32a0ac62d4c1e5dc0fdf55cf84"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 207226770,
+      "sha256": "21c46fd7ea1930c0eb0fc9f4e1ff6170a1ac8b0ba4359f4621cb0fcb7ba8fe26"
+    },
+    {
+      "path": "imitator_human_v1/human_H30/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 54879121,
+      "sha256": "849ce9e7eb12e01e77f2704712e12e2cb31e8d63616c8b6236630ed2f0fab80c"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/data/chunk-000/file-000.parquet",
+      "bytes": 29231498,
+      "sha256": "005571f47be36d5ced0df76edd25936271ddb35a04c8f15924fe9435c819d365"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 254670,
+      "sha256": "6dbeab85b08a7de74c88a45225cbd81772c7af9e7a0a0bdf7b46a315f93f531e"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/meta/info.json",
+      "bytes": 37608,
+      "sha256": "07c7364970e9b4f187cb52673e757d528b1f3ef67735d2cfdd03ff2e962f8619"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/meta/mask_labels/human_H32/observation.images.cam1_mask/global.json",
+      "bytes": 78,
+      "sha256": "0f413c44e92042ba5ba7b66ba8b54de1bcef6d2be750ddfda1fee479dc38a3c6"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/meta/mask_labels/human_H32/observation.images.cam2_mask/global.json",
+      "bytes": 78,
+      "sha256": "0f413c44e92042ba5ba7b66ba8b54de1bcef6d2be750ddfda1fee479dc38a3c6"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/meta/mask_labels/human_H32/observation.images.cam3_mask/global.json",
+      "bytes": 78,
+      "sha256": "0f413c44e92042ba5ba7b66ba8b54de1bcef6d2be750ddfda1fee479dc38a3c6"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/meta/mask_labels/human_H32/observation.images.zed2i_mask/global.json",
+      "bytes": 78,
+      "sha256": "0f413c44e92042ba5ba7b66ba8b54de1bcef6d2be750ddfda1fee479dc38a3c6"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/meta/stats.json",
+      "bytes": 276903,
+      "sha256": "166c02af52e8bf27d2d9fefdd2032f0e2eb61c41efe09891109e1bcaa7044516"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "6ed8a3faa857d92843cecb01fd5b178155a83a6bbbc89ab0325254cf6c55d221"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 209293013,
+      "sha256": "34a79bd0767c9602a5017669a5d3e3fdd4cc7ca125e3c18e21e15200150d598f"
+    },
+    {
+      "path": "imitator_human_v1/human_H32/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 38366801,
+      "sha256": "f53cbcfc6d6c79bb9e52dd83701081b1d3df603f573d749172f79ddbcb000b8a"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/data/chunk-000/file-000.parquet",
+      "bytes": 35291764,
+      "sha256": "f861a2ad06b24107397f7c3638c48e61e1d7dc3527f8e7c01a8ca235802aa2bb"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 268344,
+      "sha256": "f1508b10ff32b6619341c6f407a36b38354b26367ad808c2275ef33a6bb6be16"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/meta/info.json",
+      "bytes": 37608,
+      "sha256": "5083d185905014e607fa2511d86e568451e6c2b9d857d7448782f5e8a7f70178"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/meta/mask_labels/human_H35/observation.images.cam1_mask/global.json",
+      "bytes": 106,
+      "sha256": "7a8782ac573840031d71e1ca6e9749413a1f6738978b85e89fedf7ca797f2e3e"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/meta/mask_labels/human_H35/observation.images.cam2_mask/global.json",
+      "bytes": 84,
+      "sha256": "f1071c9d129de649a306b007d547d6db6c3ceb649dfe5d57fdcf5b69c69bb3ec"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/meta/mask_labels/human_H35/observation.images.cam3_mask/global.json",
+      "bytes": 84,
+      "sha256": "f1071c9d129de649a306b007d547d6db6c3ceb649dfe5d57fdcf5b69c69bb3ec"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/meta/mask_labels/human_H35/observation.images.zed2i_mask/global.json",
+      "bytes": 84,
+      "sha256": "f1071c9d129de649a306b007d547d6db6c3ceb649dfe5d57fdcf5b69c69bb3ec"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/meta/stats.json",
+      "bytes": 276579,
+      "sha256": "175a765631af0b0f7c83a4714340992155a0677c435522449c8633bc7aa31908"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "8994559f91cd7d21c197f99955f565a2239a36521ef30b576d8478fb997f02f7"
+    },
+    {
+      "path": "imitator_human_v1/human_H35/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 198295013,
+      "sha256": "4ba8f0755e3cc4b3c2e80984b3a0c5e550f0bcf14f6c077192224fa12c09df8b"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/data/chunk-000/file-000.parquet",
+      "bytes": 14940211,
+      "sha256": "a7c68c104e67052097e8fdd707ee95875b163dfae22aa2ceb34abf0a73775a4d"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 257041,
+      "sha256": "be175912e1940b5e461b27fc54d79d4a48ed453e20fbbf81129fcb331eb54523"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/meta/info.json",
+      "bytes": 37608,
+      "sha256": "5f3545ec150e6f0b83bf92dc73b3a1031c1a803d85f728218aeb875138506920"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/meta/mask_labels/human_H4/observation.images.cam1_mask/global.json",
+      "bytes": 57,
+      "sha256": "c0e81dfd8a78f57798d53c7893fa43a825581c92d8db109de14325a0e949a87d"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/meta/mask_labels/human_H4/observation.images.cam2_mask/global.json",
+      "bytes": 76,
+      "sha256": "e07c89cab64e171283266f3a7ef00914aa90d8cb81e89f8f346cdb0df532b794"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/meta/mask_labels/human_H4/observation.images.cam3_mask/global.json",
+      "bytes": 76,
+      "sha256": "e07c89cab64e171283266f3a7ef00914aa90d8cb81e89f8f346cdb0df532b794"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/meta/mask_labels/human_H4/observation.images.zed2i_mask/global.json",
+      "bytes": 76,
+      "sha256": "e07c89cab64e171283266f3a7ef00914aa90d8cb81e89f8f346cdb0df532b794"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/meta/stats.json",
+      "bytes": 277165,
+      "sha256": "a9750ed9c6f483b2abaa3161f6c5de97c66aa02427d0d5db0c6584b55d1aab1a"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/meta/tasks.parquet",
+      "bytes": 2136,
+      "sha256": "71c6212fdbc5b4c07fbe8f768cecc06da51c157e6076a479f736b09a282498f3"
+    },
+    {
+      "path": "imitator_human_v1/human_H4/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 80550853,
+      "sha256": "d032ca4b602f405e62d59af6436a54e8df23541cb2a33144b3241c623462f057"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/data/chunk-000/file-000.parquet",
+      "bytes": 52379771,
+      "sha256": "21438e62093a77825b44b584efb192477de4dc99fd87b484dc6ba2141903d9a2"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/data/chunk-000/file-001.parquet",
+      "bytes": 39787236,
+      "sha256": "3d510d467d69f4181e275a570cf84d03ab001eed62fa5ac69ca768f3fdc76bb2"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 291648,
+      "sha256": "5801c8975c8abe3379f25caa0920227d57e0389ffc2c5aa0834fc7ff5e60302c"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/meta/info.json",
+      "bytes": 37609,
+      "sha256": "ff89c2be107a5eac994484533519ba4c34c23d8be63c52ceed9f3f8eb05ec181"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/meta/mask_labels/human_H42/observation.images.cam1_mask/global.json",
+      "bytes": 74,
+      "sha256": "420ee7cbe80e4399aece220cb45a34bd0fd59213069c9d62446eeee83557f662"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/meta/mask_labels/human_H42/observation.images.cam2_mask/global.json",
+      "bytes": 74,
+      "sha256": "420ee7cbe80e4399aece220cb45a34bd0fd59213069c9d62446eeee83557f662"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/meta/mask_labels/human_H42/observation.images.cam3_mask/global.json",
+      "bytes": 74,
+      "sha256": "420ee7cbe80e4399aece220cb45a34bd0fd59213069c9d62446eeee83557f662"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/meta/mask_labels/human_H42/observation.images.zed2i_mask/global.json",
+      "bytes": 74,
+      "sha256": "420ee7cbe80e4399aece220cb45a34bd0fd59213069c9d62446eeee83557f662"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/meta/stats.json",
+      "bytes": 279322,
+      "sha256": "7b8b9158ffd54217cf65ced772449b912fd3755ea307bb95087fa48a5c34ddf4"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "fd97d957fc7b59c6115057fe6f13f3248d0704ac7c32bc0a33c5f2f3a72b3ff3"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 202372078,
+      "sha256": "1f96fd3f2b8534051bfafd576a6cae6fb031211e7e0835b17c54157b8a16e243"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 207523620,
+      "sha256": "80134f24f6a42bbc357e67f2f281e3aa6e46baa110d10aee58a550cd54148f1f"
+    },
+    {
+      "path": "imitator_human_v1/human_H42/videos/observation.images.zed2i/chunk-000/file-002.mp4",
+      "bytes": 151657423,
+      "sha256": "fc3851db403736c2b7cea96d8dd600e7dc16cee8b0a0ecdded87e38083e95f45"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/data/chunk-000/file-000.parquet",
+      "bytes": 44394284,
+      "sha256": "c86506f99b557bddce38a5b07c2139a79404c55a3fced2f83f3394106f77101f"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 266666,
+      "sha256": "6f8ab4cfd326f30fb6921053edf2f1d366a34874b74726845e4f8c8ee250ab7e"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/meta/info.json",
+      "bytes": 37608,
+      "sha256": "21f8a785db32023682694fbbb16db8b943260bae9612162751e0c6f1a7b75ccb"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/meta/mask_labels/human_H44/observation.images.cam1_mask/global.json",
+      "bytes": 76,
+      "sha256": "55ea57b3fef6d3504b0e7265565ead999ec7b5a321219e86e2737854b740b3cd"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/meta/mask_labels/human_H44/observation.images.cam2_mask/global.json",
+      "bytes": 76,
+      "sha256": "55ea57b3fef6d3504b0e7265565ead999ec7b5a321219e86e2737854b740b3cd"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/meta/mask_labels/human_H44/observation.images.cam3_mask/global.json",
+      "bytes": 76,
+      "sha256": "55ea57b3fef6d3504b0e7265565ead999ec7b5a321219e86e2737854b740b3cd"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/meta/mask_labels/human_H44/observation.images.zed2i_mask/global.json",
+      "bytes": 76,
+      "sha256": "55ea57b3fef6d3504b0e7265565ead999ec7b5a321219e86e2737854b740b3cd"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/meta/stats.json",
+      "bytes": 279931,
+      "sha256": "33be5e546137ba85092f069ef5cea44f6d699927abb6df9c7b2f5d19420f40f9"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "40b025e210158cc0cfc6d80d7d637c4726a8d32b6664f4da828074cb2de6c1b3"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 206679729,
+      "sha256": "9392b865f6f56cd53e2a342e8ab4c561fd9da9ff8d929f2b0830dfa67867219e"
+    },
+    {
+      "path": "imitator_human_v1/human_H44/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 62203024,
+      "sha256": "53b5a0aafe567174192503d2fe3094d5922a2777cb397c31b9a25e7eb4f355a1"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/data/chunk-000/file-000.parquet",
+      "bytes": 26194525,
+      "sha256": "55879de64caa26a38c4222548ab7bfb95aafbf45ca0b076d6bfcb6ebf9d2d76e"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 255392,
+      "sha256": "738fef68bff6841c808cb95faf9c5dc8139ab576f2e6d6c528c9d03b265af93b"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/meta/info.json",
+      "bytes": 37608,
+      "sha256": "e2e4be0672cf8df8239a27713be4aad113b53e94db34cc7551e27f37871feded"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/meta/mask_labels/human_H48/observation.images.cam1_mask/global.json",
+      "bytes": 37,
+      "sha256": "7f83e158fcd0061761e0fd7727492cf9873a03fd565fcbaba6b8c83c26fb5230"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/meta/mask_labels/human_H48/observation.images.cam2_mask/global.json",
+      "bytes": 37,
+      "sha256": "7f83e158fcd0061761e0fd7727492cf9873a03fd565fcbaba6b8c83c26fb5230"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/meta/mask_labels/human_H48/observation.images.cam3_mask/global.json",
+      "bytes": 37,
+      "sha256": "7f83e158fcd0061761e0fd7727492cf9873a03fd565fcbaba6b8c83c26fb5230"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/meta/mask_labels/human_H48/observation.images.zed2i_mask/global.json",
+      "bytes": 37,
+      "sha256": "7f83e158fcd0061761e0fd7727492cf9873a03fd565fcbaba6b8c83c26fb5230"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/meta/stats.json",
+      "bytes": 279586,
+      "sha256": "005c5b977934841b2c044416fb138cdbdf8b1ef0073e15b4ce64bb9c99f4a54a"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "4e309b3bdc9742e95bc17c89e5f9902589e191121d761ab7829ba37b2c7576fc"
+    },
+    {
+      "path": "imitator_human_v1/human_H48/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 140262879,
+      "sha256": "fc6cc629511d7b9cb08e235aae99672e6f33d689cd72de57d51d16651eb23110"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/data/chunk-000/file-000.parquet",
+      "bytes": 39796863,
+      "sha256": "d201972d260ab25b85a97bf2ff14399f84cc78942e419deef513a2bca5b93b82"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 260128,
+      "sha256": "d66583b216abf09cc54e2999906c540b2d157fc8c24ee2eaaf4de438355026c0"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/meta/info.json",
+      "bytes": 37608,
+      "sha256": "a71c090aa8f60013529663eeb162f8c22198f8c96b6950858013aa9fef14e825"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/meta/mask_labels/human_H49/observation.images.cam1_mask/global.json",
+      "bytes": 51,
+      "sha256": "3751514cc49faadaf337b2b041c69df1f07a519699c0d815abd2093eb424eaf9"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/meta/mask_labels/human_H49/observation.images.cam2_mask/global.json",
+      "bytes": 51,
+      "sha256": "3751514cc49faadaf337b2b041c69df1f07a519699c0d815abd2093eb424eaf9"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/meta/mask_labels/human_H49/observation.images.cam3_mask/global.json",
+      "bytes": 51,
+      "sha256": "3751514cc49faadaf337b2b041c69df1f07a519699c0d815abd2093eb424eaf9"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/meta/mask_labels/human_H49/observation.images.zed2i_mask/global.json",
+      "bytes": 51,
+      "sha256": "3751514cc49faadaf337b2b041c69df1f07a519699c0d815abd2093eb424eaf9"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/meta/stats.json",
+      "bytes": 276063,
+      "sha256": "64e525c0147056595ae8f754d618346b8c21b501c203b6072f0b6718f478bc20"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "df64181d3fba15304025ed589406f4e05a1397cef27636fb4575c4f513e09b3a"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 209429813,
+      "sha256": "a271cfc07f8a0965ddfffeeaef4ed6579717d1b70e83f2c884a37a1a678eaa61"
+    },
+    {
+      "path": "imitator_human_v1/human_H49/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 27053042,
+      "sha256": "4ff5586505af05ac818c5b487b7495164c632ed5267fd9f8cf7283305c4e3bbe"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/data/chunk-000/file-000.parquet",
+      "bytes": 50014881,
+      "sha256": "cf542825b6d05750a5791a179d9eba91b9fff90531e0a1b38e4b373d20167b25"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/data/chunk-000/file-001.parquet",
+      "bytes": 15575057,
+      "sha256": "0319e554af4b51d3d515514ebc2c081c058e8cab31687113b18507003fca0148"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 263848,
+      "sha256": "60b5508cf0c83ff27759004e466c3ca2ec2221cc36cd3ecda4e8afedb1882fcb"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/meta/info.json",
+      "bytes": 37609,
+      "sha256": "e5ea4e347f161f4ab75179fd04baab4792427c4a269c6562e3411fa2a191abf3"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/meta/mask_labels/human_H5/observation.images.cam1_mask/global.json",
+      "bytes": 85,
+      "sha256": "10e45207f63ea2c4cb5ba0ddffa35213283392f4a7d9d8bdcbec87e4d5344368"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/meta/mask_labels/human_H5/observation.images.cam2_mask/global.json",
+      "bytes": 85,
+      "sha256": "10e45207f63ea2c4cb5ba0ddffa35213283392f4a7d9d8bdcbec87e4d5344368"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/meta/mask_labels/human_H5/observation.images.cam3_mask/global.json",
+      "bytes": 85,
+      "sha256": "10e45207f63ea2c4cb5ba0ddffa35213283392f4a7d9d8bdcbec87e4d5344368"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/meta/mask_labels/human_H5/observation.images.zed2i_mask/global.json",
+      "bytes": 85,
+      "sha256": "10e45207f63ea2c4cb5ba0ddffa35213283392f4a7d9d8bdcbec87e4d5344368"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/meta/stats.json",
+      "bytes": 273923,
+      "sha256": "dd4ae518af413b84e6a4671e587e0917c45e29cae0ad10baa7830365465cb38e"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/meta/tasks.parquet",
+      "bytes": 2136,
+      "sha256": "ce50649ef453bc30cd27fd349fe1591d057673ee7187b59133dcc4fb9dd651b2"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 205643825,
+      "sha256": "48742f14278fa5790694e8017c22e5b709a1264e482914742cd06a8e27febc07"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 204371040,
+      "sha256": "71191aadd6ca9631da108a96e8e5ba2128107841e74a989b2b3ec444b125bed0"
+    },
+    {
+      "path": "imitator_human_v1/human_H5/videos/observation.images.zed2i/chunk-000/file-002.mp4",
+      "bytes": 12855718,
+      "sha256": "5cfb4e6ff0feef9d079ee67f13721d8eeba0b46a9535442656fcaeaa180b04d8"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/data/chunk-000/file-000.parquet",
+      "bytes": 21393313,
+      "sha256": "f454f3111717370070446623cb163474035a0934139f26949ca723391460afd6"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 262868,
+      "sha256": "c0b30639cb94edc2d7a8723677dfc30be7bb16c8df5703e7cb37d28ca0636adb"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/info.json",
+      "bytes": 37608,
+      "sha256": "e879f21f11e1c4369c06cf1433a6d4a39c0e1cf545b4dc7c5e4977600b84fd6f"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/mask_labels/human_H57/observation.images.cam1_mask/global.json",
+      "bytes": 50,
+      "sha256": "ac253541b23184b23037348640572b57468d7999ae7f6f51e2737ca918c3dac9"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/mask_labels/human_H57/observation.images.cam2_mask/global.json",
+      "bytes": 50,
+      "sha256": "ac253541b23184b23037348640572b57468d7999ae7f6f51e2737ca918c3dac9"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/mask_labels/human_H57/observation.images.cam3_mask/global.json",
+      "bytes": 50,
+      "sha256": "ac253541b23184b23037348640572b57468d7999ae7f6f51e2737ca918c3dac9"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/mask_labels/human_H57/observation.images.zed2i_mask/global.json",
+      "bytes": 50,
+      "sha256": "ac253541b23184b23037348640572b57468d7999ae7f6f51e2737ca918c3dac9"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/stats.json",
+      "bytes": 277411,
+      "sha256": "dec66528f9d1973983e6a83d51fa254632a8de55a6c6b680567ca1af866a17a0"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/meta/tasks.parquet",
+      "bytes": 2141,
+      "sha256": "33aac16197daaf28e0e97f4ef92956c70e5e3c5354aefd31611871cd3247cb2f"
+    },
+    {
+      "path": "imitator_human_v1/human_H57/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 114085774,
+      "sha256": "5d1ec3704794a0b19879f36b10d0eedac0338893e17673cf3b55d8a32ad6a9f9"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/data/chunk-000/file-000.parquet",
+      "bytes": 40813478,
+      "sha256": "55fdd4d535d7cdc9b4a9b97a188e0a8aba7028668fa172386183b8d68f04558f"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 272628,
+      "sha256": "23aadebf6232aa56d58c3e417dae42f59b8974fbb43b592f487d865dbe176e41"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/meta/info.json",
+      "bytes": 37608,
+      "sha256": "e5a40cf50e8dc0027dec4ade87f63c06906cc298c1f22165daa20af2b2b179eb"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/meta/mask_labels/human_H6/observation.images.cam1_mask/global.json",
+      "bytes": 95,
+      "sha256": "e64ab609d1e37e864dbc195539985fb5b5acb6a62630e50ae429a608f0f16ace"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/meta/mask_labels/human_H6/observation.images.cam2_mask/global.json",
+      "bytes": 95,
+      "sha256": "e64ab609d1e37e864dbc195539985fb5b5acb6a62630e50ae429a608f0f16ace"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/meta/mask_labels/human_H6/observation.images.cam3_mask/global.json",
+      "bytes": 95,
+      "sha256": "e64ab609d1e37e864dbc195539985fb5b5acb6a62630e50ae429a608f0f16ace"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/meta/mask_labels/human_H6/observation.images.zed2i_mask/global.json",
+      "bytes": 95,
+      "sha256": "e64ab609d1e37e864dbc195539985fb5b5acb6a62630e50ae429a608f0f16ace"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/meta/stats.json",
+      "bytes": 279475,
+      "sha256": "7c873a35e0a72c9ed8a76282510bae069485aef95c6e8379182e35b383c2d8a3"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/meta/tasks.parquet",
+      "bytes": 2136,
+      "sha256": "bfa11b8c477e1aec1eb61f237eeb32153a3db38b7c699adff8910e5e7bce96fa"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 206734574,
+      "sha256": "3d6089dee9ed8b1326f29fd1d03991bf08d623f7db46cfc7a224312df77c3880"
+    },
+    {
+      "path": "imitator_human_v1/human_H6/videos/observation.images.zed2i/chunk-000/file-001.mp4",
+      "bytes": 34805163,
+      "sha256": "6f52d1ef6eb818835fd28bf710184e85b6413ff88c16d01dbf60d9587dde67fd"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCleanCup-v1/.complete",
+      "bytes": 90,
+      "sha256": "8bc78b5b2f8585e62e799bbda3d6098058273a04ddb0d0a3e5bec6c21959c5d9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCleanCup-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2525424,
+      "sha256": "3047aa0facc9f3c2db9c9a5f1510f73e45b39d51bc9dddfc09df778a9b741ba5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCleanCup-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303184,
+      "sha256": "643b5126026f887db0d71db6bfe3d7d4fd1698149b80e674901c5ae93ea36174"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCleanCup-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "e12a2daec690937d5c7779a7b2861a3498e80bec943dccee1b4fa6450994a0f7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCleanCup-v1/meta/relative_stats.json",
+      "bytes": 45046,
+      "sha256": "5951072f0d11aa558022f2c38a438d7c46e1b65bf6bc9c1842e706c8ecc17f88"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCleanCup-v1/meta/stats.json",
+      "bytes": 19649,
+      "sha256": "f197b43a737c8fd9dad6f8614c028b7efbe9c4e5eb71f6ff96fe17e75b620830"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCleanCup-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "73d1d63da8ff6ae303e87d624a5b856c9083739250b6bc718baeff8de0f5a354"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCleanCup-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 53185376,
+      "sha256": "92297a3d79973e12c83a60ba04cab86a691d722bd5f0ba85b1f2fca3636124bb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCutFruit-v1/.complete",
+      "bytes": 90,
+      "sha256": "b7618ac3beac01ad74f31b8d8266a7c4ad9fe3bdfba0ce5264cd3656792f0a2b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCutFruit-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2069679,
+      "sha256": "486fd74202c8fe58862a5b62109bb45fa8e33c735ee44af9d89846d10c9f4f07"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCutFruit-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302368,
+      "sha256": "9b5fe714687db3318ce3ed75ac3cc8929bc303c1295b5107a63d6a91f44b8c37"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCutFruit-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "4ca4578d2afb2cbd7fb053ad4ef5bde411b26b0a17405a1df5770758f1d9eb65"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCutFruit-v1/meta/stats.json",
+      "bytes": 19690,
+      "sha256": "24b5c3cdb4f229f4a561c4e66270df89b79f7e126d82fbc25910c7baf5c0fdca"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCutFruit-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "4869d04be3df4d5a4ea0d874eada7b379074b4156fb5f9650604ca5f37a2d250"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotCutFruit-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52363876,
+      "sha256": "4f6032dd06ea3ba98b1deb302796a99ae9463d226110e3d5220ef11804c76bc4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "214ac67cc172dfbd2da6b3b72fd43be0e25a7f939fb537bf2a76cb006ec5238a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1039102,
+      "sha256": "b9da2057fefbab941ecd85f3aae6dfdd914fa0fcbd8fc2fa1b4a2bbe6c582934"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 241466,
+      "sha256": "37ca0867d522025baeb3d7fc49d93417bb5ad50e803137eec09ac57336245633"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldBox-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "2c71f73806f7077c15f6a4ac6ec7a55be11be81ca529ef96b5ced067fe11d569"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldBox-v1/meta/stats.json",
+      "bytes": 19651,
+      "sha256": "dc08ff18b1e78780170f6ea65308d34ae6c43efbf7c1af6191352a48391ef5eb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldBox-v1/meta/tasks.parquet",
+      "bytes": 2095,
+      "sha256": "e10167e2dd532eb084f910d3f5f2e13fef78878077fea6773e587e8815535b1d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 22310222,
+      "sha256": "348880849e8438e70a2dd0973694cd64bfe2387bacca9a6463f19c4b61e59693"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldTowel-v1/.complete",
+      "bytes": 90,
+      "sha256": "8fafc06190888035214a2814b43dbead259ac56e485f99aa73263d4ee383bea7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldTowel-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2325508,
+      "sha256": "31f05dc77f820f3db6afd49189637eed3fe84471afabedeae421576280b84c80"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldTowel-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 304158,
+      "sha256": "86b137d2fd04bca725d15ac9e22d575c1c1aa833dbdca54389b61c0e5ef2e913"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldTowel-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "f60c75d3747de2a9a4d37e436d01c2cbd9fab43db7c6a04c422f7371ff4ed437"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldTowel-v1/meta/stats.json",
+      "bytes": 19666,
+      "sha256": "4ceb5f457a329fb1c6fd1db5798fc41ecef0ba54338597baecc196e200fa7fe3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldTowel-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "4dcc4e1a539a7b2fd79c9c83ec7803eb8ef34a64889e48c23a6d6e315c590676"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotFoldTowel-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 55135242,
+      "sha256": "15d03798d1c86109dd1c58fd247c40ec7b4b5f29811acff204442af02f8a3dee"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotGrindFood-v1/.complete",
+      "bytes": 90,
+      "sha256": "5ef51b3222513cd9acb1a3219a70b5df063386a0ebdc9adcd3e0d4d4dd21b098"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotGrindFood-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1940107,
+      "sha256": "953d521e3af6b6d43fe667e5611fdb8902419d058b777b65772652dbcb26b4fa"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotGrindFood-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302738,
+      "sha256": "189f7938f217a6a869a84cd6b5c1cbf776713b7918bfbb08b5703a298e1e538c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotGrindFood-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "78faf130093257953fc6b749474600fb472d1e3a9f3d7321c88b587c304a9104"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotGrindFood-v1/meta/stats.json",
+      "bytes": 19665,
+      "sha256": "5bbfc6a93949f16474047e061f2ab42308d3bf04e89a9757444ee1885bd820a2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotGrindFood-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "12481b7200d02f9060b77ef3413e0cac67ecda6fd616769d9ee7d54bba83f64e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotGrindFood-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 38069524,
+      "sha256": "7f822e293a076449fe6b8f8b24d6443f64e0da1a6f52b34ea4f56a4c0fcb4ad1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotLiftLidFromSkillet-v1/.complete",
+      "bytes": 90,
+      "sha256": "4cedcf6fbbb101681b7703ffd72a9b1be4c0e37ada5cfc1b69f58879e830ffab"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotLiftLidFromSkillet-v1/data/chunk-000/file-000.parquet",
+      "bytes": 922872,
+      "sha256": "55b955559eafaf94b8596bec7e5a086cc25cd29e3c799cbf155a210146a5b79f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotLiftLidFromSkillet-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 298948,
+      "sha256": "b044f9b7b28748a396c0d00068a3f7c0e5f04432d3139f88d9173fe5c10ede0d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotLiftLidFromSkillet-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "386446b22cfc642d9ae9e6fa605dca411bf32889fd125689e180d09458cd0616"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotLiftLidFromSkillet-v1/meta/stats.json",
+      "bytes": 19647,
+      "sha256": "e659c5e7ede3342d5951d367313c79fba59bef5443292540f34bc92f7cf76d5c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotLiftLidFromSkillet-v1/meta/tasks.parquet",
+      "bytes": 2150,
+      "sha256": "d6c2e340d081d23516d88fa62ddedcbc2003c6b8dcbb27aa4f1b0cfcc5fb6aa6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotLiftLidFromSkillet-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 19515277,
+      "sha256": "6516a4d9aab1beddc0c0793f243a5ef16044a3b349ad88bbfe75cd29847994f9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickFood-v1/.complete",
+      "bytes": 90,
+      "sha256": "0bacf04e0756ec8d8de1c98691d4db469bc214fd8c6867177c9a13747c12a20c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickFood-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2184797,
+      "sha256": "6083c1dddf619846149f95c1c8aa77ac5d05811d14227b5871c7ae74eec779db"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickFood-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 312858,
+      "sha256": "c65269cdd6197a3d6464a19f51af5b603ad5ae4c108eac215e3395cae51a35e4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickFood-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "b6d41392294322c026abf2d5f5a194058278f6bdab5dfa302b257c899c47a097"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickFood-v1/meta/stats.json",
+      "bytes": 19696,
+      "sha256": "6e8817d3105bf34c2217b590e040e2898a48e1e8578eaf34eb4e4188287daae4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickFood-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "4f3416959ba4d3934b939d3b55b2764a001d3fdf6a93dddc54d4140c976b6ed8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickFood-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 45881203,
+      "sha256": "72facffb22c0d56db1a7f0f0afdb1c59189e46a48c93fa648758ebad08cdc92d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickRemoteControl-v1/.complete",
+      "bytes": 90,
+      "sha256": "230f5359d7e8486f3b352867a47996ca67e3d8104b37354b68fe59cdebd7f5cd"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickRemoteControl-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1002062,
+      "sha256": "82583ff5cdc5ffd6d15a5e891a11d06687b51a3e02b8e0555905f9c9f36ffd32"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickRemoteControl-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301827,
+      "sha256": "935da48a091e476278b435752224c26e5949d3e320c62ed18764257cc84b3478"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickRemoteControl-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "eca9381043a569bccfef55e1cc22ed92e26cae44e5a1e80d5083bdb35e262c65"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickRemoteControl-v1/meta/stats.json",
+      "bytes": 19686,
+      "sha256": "2e4d926bed26363577d6d3cb33f7d4afcb0bffc30a726577b50d7c882bf3c737"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickRemoteControl-v1/meta/tasks.parquet",
+      "bytes": 2145,
+      "sha256": "a4830be0349792600113a12ace6ecf8dc08625c504e98e8b612abe8a1efbe3bf"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickRemoteControl-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 21167789,
+      "sha256": "f24edf356b735ce91411b450f82ac145e6290330be5fd222c5f4ae16893bc9b6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickWash-v1/.complete",
+      "bytes": 90,
+      "sha256": "fda36181ffb6d7477253d4f25ab02eca7bb4f45469ead0a4aa6b4bad15f0ac11"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickWash-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1324315,
+      "sha256": "6f73e228c06a9d80836de760a2061178c6d5b569c5425124d64b70f0afba144d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickWash-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301512,
+      "sha256": "af0fe2c0bd82b199e3e3f945bb11b26e76c92f55ca160750a931fb36b1cd497d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickWash-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "597aaa270f2efcaa15fefe3490394fc93111f4b032ccb34f83e6f72e150d8e85"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickWash-v1/meta/stats.json",
+      "bytes": 19657,
+      "sha256": "653ed95f559d4da10c2c55280e4a812f850662bfa5cb3752f44fc383983af8de"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickWash-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "f224c27967e5f3847ee7906496acff2b9ea628df1f4dfa0897ee3fdf44ed120b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPickWash-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 27867210,
+      "sha256": "35e17558c614ea55c0f491eac3779e7e9c370a921930b30c140ef1ea71d7b74d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceBrushRest-v1/.complete",
+      "bytes": 90,
+      "sha256": "e99529de519b0192a0db5bbf74af59283d7f16d708849dcd3fb94cca84fd4c18"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceBrushRest-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1270949,
+      "sha256": "f223c19946335ff2771f99924f60585f5f269ced5447d31a89c9fc7049cddd4a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceBrushRest-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302959,
+      "sha256": "cb05294d7e621708b95de3db0b19d889951f356312746e3df98a2d49118e9617"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceBrushRest-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "34dc0bc67244120be5e5eb5a1d8e578c842b7243ff10867d09d9cdfa58784f83"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceBrushRest-v1/meta/stats.json",
+      "bytes": 19658,
+      "sha256": "b96331aafa856b91ebda7f2abeba3fe5fcb139c4e9db32993e0efd330ad060ca"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceBrushRest-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "42b7ef478b8dc3ff844f77759ed790878c7ca99f3cfb5a9ea50154632a2de49c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceBrushRest-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 29172854,
+      "sha256": "37894191e90cca70f75a48816742f81a40adb0cecf67147d9a52bf86acd6e0d7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceChipsRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "80aaf047848543af3dfddd71b00dc882f76e4b359e36d101e903d1db3821dd2b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceChipsRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1387994,
+      "sha256": "76ebd2f4ca4d8260f570280003e60797bc7fcbe5cdb82ee3b7439aa35006cdbd"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceChipsRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302546,
+      "sha256": "1aaa93528594e827655e4f4f9c09eecc36b8c81de23ed88127bf7a6e48d88f3f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceChipsRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "a11607b53effcdea22e1034a6d78f89a21a600ae985a0597b31ed4d9a383a9ea"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceChipsRack-v1/meta/stats.json",
+      "bytes": 19716,
+      "sha256": "c9ea000ee1051a9989c001e31ace62197bc18f3ff590601d13e8b00bddaec66d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceChipsRack-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "99b052f994be0ce52302397918aa9eb3b8faedd8ad40efecef58cf390f861eac"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceChipsRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 34909924,
+      "sha256": "fddca722765ed6b19188080b0933c7a74bfdafde9fa2ca63a928d747de2aba56"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceClothBasket-v1/.complete",
+      "bytes": 90,
+      "sha256": "b80948b1e09445119970f4244ff119c22f3d4894578921e8cdf50c3a7f7618eb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceClothBasket-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1521511,
+      "sha256": "f5ac75b8ef62b32b1ccfe38c9142479211d27ce2f2f4dd006b57e173190f8f42"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceClothBasket-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303358,
+      "sha256": "e0f3409c4830461f5df316cbdc9c10f8062dfe2958bd0b20f5b454d50834e0e3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceClothBasket-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "c15cc4e08460c6e8bf0726f64d68e68faf41416a6c74f7ce03841a6d0ddc8f5f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceClothBasket-v1/meta/stats.json",
+      "bytes": 19664,
+      "sha256": "967815c5ee0f98d9b8369a34b82ffb8d83bbae7aceef30a8b4da319775d4e92f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceClothBasket-v1/meta/tasks.parquet",
+      "bytes": 2140,
+      "sha256": "a521c6b8efbc7c2184f58eac442d5914c0ba98ec9fdcac983d9c8de292f79883"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceClothBasket-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 36596909,
+      "sha256": "676057f6df6ba711a68d57a4e401c8acea86ea164f88f8365ed86f1231df5461"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFileFolder-v1/.complete",
+      "bytes": 90,
+      "sha256": "2ffa669a3d135d75169a7be8dc0d6ad96c9081eec53c522415c59fe0546b2a85"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFileFolder-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2314829,
+      "sha256": "4d18f6cee7cb629786e187528a64dafaffd457cf0ae5603d506ada0d20a3013a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFileFolder-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 293768,
+      "sha256": "561309364ce33204d8ba0caf772a6386ee1d255f5f8d52a82653ec8705cb5f6a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFileFolder-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "bda27be9118c2cd9abe83cae42a86c0548bf77ab968fa9b99d3073950fa00d14"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFileFolder-v1/meta/stats.json",
+      "bytes": 19637,
+      "sha256": "a9412ab979247df19316eff23f298acd4ca7ac264213cb01085b6cce23b082d3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFileFolder-v1/meta/tasks.parquet",
+      "bytes": 2135,
+      "sha256": "3d947151963241d45e194604caa4cefb1ebb6bad35edb8f7da80f046cff80cc5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFileFolder-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52161365,
+      "sha256": "342a206de9c2dd0adaea6738bbb0aff0a3413083ae98c3c66360c75ae9086f04"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFruitBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "dd518d6a2551ce91201832bc4291baa1ef1cd7ca9359b3bb6ed540238063ecb9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFruitBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2237056,
+      "sha256": "093360927e750e7ce20c0a74b4856cb7fea590e40dab55d352a4f87b60ef25c3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFruitBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 305313,
+      "sha256": "037782fd56228e20e16d50a425ad9545487b2a8bfb47bf7aff4df6700f5c20df"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFruitBox-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "648fd6d1eaa591ca7605b7ab79fd86d0522a6333b08ff2768c0147a54a32639d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFruitBox-v1/meta/stats.json",
+      "bytes": 19692,
+      "sha256": "d35d2129bc56f603a5dcc3297065e6bca144557be58ffd75c2171f983f83f0cc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFruitBox-v1/meta/tasks.parquet",
+      "bytes": 2125,
+      "sha256": "972ac7b0f6bc6cbfb075c19c46d15b2c96211be0fd0f8ee9fcc096b6edf62bb9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceFruitBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 54798570,
+      "sha256": "ce77c080502a395c9e0187936202e03cec958b928d2b0505469a9168b4f98d44"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMagazineFolder-v1/.complete",
+      "bytes": 90,
+      "sha256": "127f2c63556dc7ab4660f104e81b77fa52d8788ae80bb99c717ffe5d80d1ebf1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMagazineFolder-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2322935,
+      "sha256": "0ecad1b662782090b7cbe906d4403cc05f4d5d77fe096d8b1f600a00c6873533"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMagazineFolder-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 287051,
+      "sha256": "23c67548320bda8416e5bdff837bde5a2b429640227758840a3b8ab0f49a0b4d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMagazineFolder-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "eaa7f67536ef9443160ff6ef05c64b8fd2d2af7c90819b2d7c71ca6623433c81"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMagazineFolder-v1/meta/stats.json",
+      "bytes": 19648,
+      "sha256": "85b77e6bf15ee10d260e6ef96c96ae56f0a4429a9dd887eb9103819621db6be6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMagazineFolder-v1/meta/tasks.parquet",
+      "bytes": 2155,
+      "sha256": "487f0f75eb90a47284a1f5b502ef9e7abd99810d92a4a55f8a62faca8938cc49"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMagazineFolder-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52671509,
+      "sha256": "965929d7bc8dd5ae8bd6a90901d93d7ba97f96963a5c079b0aafea60fea4cf93"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "bb00cbd4c05cf5d255800d080a2ba65670f42278fbf52682f3db11b168e99fbc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1229857,
+      "sha256": "79c85998133efc69cafae149e75bc5b08d41f11bdd82d470d5a9624ac1c8b581"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 300948,
+      "sha256": "60f733c17776becbce006a2baaeeb1ee4e0b3080d83ec6663647e0eaa34e5d58"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "82e1e0d29e96ea4139f82f2196fe61b1c55cc74edb9ca22c793d9a9410d7c6b7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/stats.json",
+      "bytes": 19689,
+      "sha256": "2307201041642ddd891fd09eaf4645331cecbc49b3d65a7c2aaa222cbd19530e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/meta/tasks.parquet",
+      "bytes": 2120,
+      "sha256": "cfbb7167bd2e877be9a505775c9aaf1c3f3874e3945bb184b9068a5f208f5ce2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 25874994,
+      "sha256": "c50556aa23cc290defb23ed98270a2c87592f8ec915d08a9b5daa0294c52ecdf"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlacePlateRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "ab7df965272bf20eb1895750ea9f66c4f905c221e0ee8f322611604d2240832e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlacePlateRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1813901,
+      "sha256": "f854b83ca8af7aa9d2c91f1066aff827d60d17640c1ff346a0161b196982c2ae"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlacePlateRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 300525,
+      "sha256": "d26d75673787d6e57720dc27fb598d960f7fe5075e32d5d61679221880bb8fed"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlacePlateRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "431ecb2b59e11ec66283efdd698e6d8fd5714a0a20180ca4783e498de12417d2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlacePlateRack-v1/meta/stats.json",
+      "bytes": 19627,
+      "sha256": "f5067b7f766a6799ce00cc5a6a3d8fce4ae86463db905674fb960e2d2a83f44a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlacePlateRack-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "7bad60c535e970721e398f38b38eafd4109a8969c4fbd1cfa32f4b3fe1a8a13a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPlacePlateRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 44343091,
+      "sha256": "c70bcbf3c4b62406991622f5922a9381eeddc9480ae741a82a13f7817cefcb23"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPourKettle-v1/.complete",
+      "bytes": 90,
+      "sha256": "2c2c9a374925491438d5b78957999dc4fabf46deee79faf082331bb67c17905d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPourKettle-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1571549,
+      "sha256": "b936134a8276a626191fb4b88e6d6701cd73214e28ded91844d7a52ec0fcea9b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPourKettle-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303488,
+      "sha256": "e94518b78fda467b486d77f7fe904e3226b1ea8badf00420307c5776d9530114"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPourKettle-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "24b877f53c99dbc7043416da28d027ae70bd203217012a6010ffb700508263a8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPourKettle-v1/meta/stats.json",
+      "bytes": 19678,
+      "sha256": "22876b9b4361f12469df9094d466e86e4e3e98a0101600d16c4811312b6d5498"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPourKettle-v1/meta/tasks.parquet",
+      "bytes": 2110,
+      "sha256": "3a89f7fa2b3c7acbc0cebee8bf057e0b9517e3ec178f59f20891e47d8964a3bf"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotPourKettle-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 35107655,
+      "sha256": "b4d69346ccd8b893945e7a28f880f92bd7060833349510c4903f0aaddee7e29b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotScanMilkBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "5d43a314de63b414eceb90ef001a27aa6da8eca8695b5f7ea9702015a69f483a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotScanMilkBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 3763078,
+      "sha256": "a5fcdd7865e3b265832b84bcc7d8c0052e8dbf6e0b9c791007cf2ab106191f64"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotScanMilkBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 312394,
+      "sha256": "387a5153b29f22c414f2c64d86a5f218cae66f61910ea55b37510d827436bc5e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotScanMilkBox-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "a8f896d14b626e10ed42f7616f021f96b3a5ea90d5afd82e2b632affed7e22a9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotScanMilkBox-v1/meta/stats.json",
+      "bytes": 19635,
+      "sha256": "8c8466eefdcbd5c546c687c0a99817f6ef6c0dda624b90b6afa6559d5a028717"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotScanMilkBox-v1/meta/tasks.parquet",
+      "bytes": 2115,
+      "sha256": "31a6e946932922e2a7e61b4e136447efcd75767999cc73395194f11694ca3324"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotScanMilkBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 53982559,
+      "sha256": "4861a45a251de6d0d70afa06cf58a3e9c76f746aff80a0b35d166c8555bb00ea"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotStirSpoon-v1/.complete",
+      "bytes": 90,
+      "sha256": "1dc3c7973c3d1febf8ab1c450803f0548991b2c4548e8e49a207edb735986234"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotStirSpoon-v1/data/chunk-000/file-000.parquet",
+      "bytes": 3620632,
+      "sha256": "7b02189d67e54f51db623b57d2a7ffc056d83657cdb3d4fa8d7d1bede0fad94a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotStirSpoon-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301192,
+      "sha256": "9bec5a3cf10822bd8d037bfda90e16ca8a9c64d70431a45a2cc9a2684bf34bd7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotStirSpoon-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "5cbb4f14febd220c81662fe6601e69718473c0b3d812e12b215458833b67313e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotStirSpoon-v1/meta/stats.json",
+      "bytes": 19656,
+      "sha256": "d523eb4f9b09caf0ac6c537b34fcb08f5a4233e07c3e95f772cc22ed2e958ef9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotStirSpoon-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "3e9048d08e627f05b22f96f3029fa6c563a02c18a07b0e8c8a66e5af6e693776"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L0_TwoRobotStirSpoon-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 81218198,
+      "sha256": "be6b83bb12bd8753698a66e9569ce2ff95f054a8ad1c0ed7c59f525f1ef0dbc6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCleanCup-v1/.complete",
+      "bytes": 90,
+      "sha256": "0c06214acc522b2c183e73e0b5d89bbc281cb567421d5e9ca62fcb794e7732c8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCleanCup-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2361553,
+      "sha256": "b4c5ab48ea98e1e3da5dda29d9537e2d19dce0800f100b42be8e1fb094b4aa23"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCleanCup-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303053,
+      "sha256": "8597ab0f02b6bc32b6f3c8dc6fa42b19ee5e73a78a412ef28cc5c28749a2ce2b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCleanCup-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "f9132435412490b58cb959f13bb481dcefd6fa4eef9c5bc671c0d1e9939078db"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCleanCup-v1/meta/stats.json",
+      "bytes": 19671,
+      "sha256": "31472da01959e7df07d2393af8092c935045e0f9213ff23541a785b96ef75d16"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCleanCup-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "8101bdc83c6fb5158fa04cebd610e0bcc97eff339d3085bbff52cea07cfdc299"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCleanCup-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 48549506,
+      "sha256": "1d06bedcfc2c64cdf9596b5c8c2fb5c86519cd39914af840ceb00e7c02665523"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCutFruit-v1/.complete",
+      "bytes": 90,
+      "sha256": "02f368a373c7028b88d108c3e1937cb20acad45980bc8c715a8adf90fadcb8dd"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCutFruit-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2028848,
+      "sha256": "48d4809072a806039eda5a81dbca3663cbb1a9d45e95b69f6fa2697b9e00c34d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCutFruit-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302691,
+      "sha256": "a448f2c1d35e3e3154e55add10e0c9bde814a09d16db7531b3c42d737797eae9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCutFruit-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "bb67205fedb4d79c106e4203ccb315d89c4746b289d22b95df15a55bdb27af9f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCutFruit-v1/meta/stats.json",
+      "bytes": 19693,
+      "sha256": "618ff36bdf711bd3a86428ff70a006c5c7339f3ace427e18ec356c25abe2fe38"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCutFruit-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "cd252e991cfa02f6c38ada7cc5861c637d625d5600c4c92023a606c8d674559e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotCutFruit-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 50901352,
+      "sha256": "c657d7bafa6e6b39102f935417be0a36d042dab985f006b5efbed7a5302dc456"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "781442a73cb1a6739656ec8c02d8226450eb9dae9355d238ab57ba23f888a05f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1044359,
+      "sha256": "c4566794225a61177a112ed90f405def541b51ec83b447243753b5202c261404"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 241522,
+      "sha256": "cdfefe95f34ba102dffc3a75c7b30b6441edb688a1f542977a195f125166fc23"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldBox-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "4bfbecc0340e9e3d355681ed983675c767fec7147f60f08426399fa39d9566f5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldBox-v1/meta/stats.json",
+      "bytes": 19660,
+      "sha256": "5337ccf8d6b56974b8c3087aa71331212488be96bcb1bffff9f3469383ddcc58"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldBox-v1/meta/tasks.parquet",
+      "bytes": 2095,
+      "sha256": "dabad52aa83c31e5f8553211b5bacb3a82af6cce7fecaeb36b1fbe1276dfe75f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 22306950,
+      "sha256": "3bcedee3cece5654dbb00dd595918dd23fde883d079790aba389b5b36386cc08"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldTowel-v1/.complete",
+      "bytes": 90,
+      "sha256": "bc5d0beca2da0781efd860dec98ec6c2a848bf297fbcd5743d2ea4f1cfa8c1ae"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldTowel-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2327894,
+      "sha256": "a1372b828d5475c57712455b8f4b9f3f31c29aa3dc2dfdbfea34b1f8f8011757"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldTowel-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303759,
+      "sha256": "601bee506fe4f269dc02a3b3559277d5cddc6e3b04a2abb9db26129d574e40b0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldTowel-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "14dda6a7f5de601060a3b8fca332522c0adb72ba83100bb7cba113ecc92b585e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldTowel-v1/meta/stats.json",
+      "bytes": 19611,
+      "sha256": "6941b2e0a6b5da6cae0811cb89e20db459eca2ce698d7eaa87b5b2bf56ddf3cc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldTowel-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "e8e07d521c22a96d07fed8862b91095c9baae8ca0c56d72808b4cc820fa47545"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotFoldTowel-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52897942,
+      "sha256": "0d6f803bed6c83332ecdab45d44338a0e07612509c84e251915f4cdc0fd98ad6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotGrindFood-v1/.complete",
+      "bytes": 90,
+      "sha256": "845f7d514af8d3dda5f92d6af8fa29b2938d4c28b42c6cd8d76e36d1e1dd50ed"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotGrindFood-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2053356,
+      "sha256": "704c7654ccc4f54ac5475ecc185fb1327d911f86a5094135d9c793f9cd1ffdc7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotGrindFood-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302699,
+      "sha256": "fafacfb449fcb76e6bbc545181d01c82479bf1d33be3d42eb75dc0a03e8ebbb4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotGrindFood-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "c706d310b3e81b022db576823cd5f8be8bf45d19c6dd9502db4f5dd5b69204e3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotGrindFood-v1/meta/stats.json",
+      "bytes": 19662,
+      "sha256": "53b89b096290b6ae635f7fa59b328a08a5f0984e8695f26427f53bdb48f1a671"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotGrindFood-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "622303a58cccb590064e8ae66b536fcd61cdd7b480d1ecc123aba566cb086be0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotGrindFood-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 40744840,
+      "sha256": "a62a60019da3ef2a6ad13c37e8c9585be6529408f66ca89f8074b07cfefd32e4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotLiftLidFromSkillet-v1/.complete",
+      "bytes": 90,
+      "sha256": "3eb1f3bfc6ac0697cb386952a24d61adb297e0271b469c1b9a4c5a884b6c2091"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotLiftLidFromSkillet-v1/data/chunk-000/file-000.parquet",
+      "bytes": 920556,
+      "sha256": "3d5049e5d11cf2b2fff3b80cd9302eab0c41c5ca04aa92537bc40a89041fb53c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotLiftLidFromSkillet-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 299219,
+      "sha256": "2ec2253f6d754decde3c8070f31f11f888f2a64873e9d182644ad755053f6387"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotLiftLidFromSkillet-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "95196e985d0b89e19899dcbdc5a9bde4dfdff6a0dd4edbf5918bba6dac67c623"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotLiftLidFromSkillet-v1/meta/stats.json",
+      "bytes": 19659,
+      "sha256": "478b8231e63d693fbdcf8f6375c983d61fd4cdca90eb4d7ac683772492f840e5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotLiftLidFromSkillet-v1/meta/tasks.parquet",
+      "bytes": 2150,
+      "sha256": "5098cb175ab06dbde42eef84d57dc4d2b80424b7386638781358b3d294ba6df0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotLiftLidFromSkillet-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 19561532,
+      "sha256": "632dfaba6299123bcb1797398d43272b3791d3045fc15f4c9413466daac7ea5c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickFood-v1/.complete",
+      "bytes": 90,
+      "sha256": "d4d1877ad464442cac49914e2a72ad5620fa7139236e7ada80e21950d7efe060"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickFood-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2298932,
+      "sha256": "40736627f084a0bcaac0e1d5fa115ee937abbe5c8eadd8c3a846f6aada2e298f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickFood-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 313183,
+      "sha256": "1bb11c55cc5bbfa47c19a36e1713fbbd16a2a82b33b8add96cf166bda1332ca2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickFood-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "ebceeec256ee33ead606e45ddc4cc3c3d9f34f0185ac9164bd86bbf31a198dc9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickFood-v1/meta/stats.json",
+      "bytes": 19701,
+      "sha256": "2b0eb247cb77b54d84a669fe440b30591c0b09947807e3496bc7fb741c802508"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickFood-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "3ca647c71a6dfdaed6829532278e1cb14ba1ca883a1e4e697d29297440653ea6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickFood-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 48589863,
+      "sha256": "5606bba833be4949ae7b1379bd911ed20eb0303c7409a60920320a11533f28b9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickRemoteControl-v1/.complete",
+      "bytes": 90,
+      "sha256": "2993758a7cdf266fbd03bbf42e6e6916085d7774d1d8c9280571a277ba32536a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickRemoteControl-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1114226,
+      "sha256": "0970ebd573739eea1d81bb40ed89686af95ccd61940d513f3e5b13157d7f7621"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickRemoteControl-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302160,
+      "sha256": "afce37165981710c933fc222269a08f2e626391a0cc540ab868951a917d8ad7f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickRemoteControl-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "e71030f3013dc647025164df4c584c25798964d867b6084d08846ae8689b91b3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickRemoteControl-v1/meta/stats.json",
+      "bytes": 19673,
+      "sha256": "5a28be6e335d98a38c9b803d5aba870439318bfe162931edb750e2575924f7c8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickRemoteControl-v1/meta/tasks.parquet",
+      "bytes": 2145,
+      "sha256": "892599f13483bf614dfbd994f58f77cb4c34d9784deb50f11bd40b2017169b0c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickRemoteControl-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 24214412,
+      "sha256": "bef524b1b67151efbf2804a8e745e108c0d9217aeb70eb3491907efb895b8f59"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickWash-v1/.complete",
+      "bytes": 90,
+      "sha256": "1f3ea09d8dffbcb3e724803d1f1ba10d0d02303f2c1e0e939e13c63e0f6b5d9f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickWash-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1412113,
+      "sha256": "2defe6cb7096e0a98ada092cb39fafaaaadb902fcbd81c2fce68ca4f354c9d70"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickWash-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301078,
+      "sha256": "32e33a809dbe6bd1488569561458db4b83c76baef672e7dea998f4c486df89b4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickWash-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "29c0dbe49d7e28282b45ed6741239ea18c9724a4b121caa929ca6662a215e3f5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickWash-v1/meta/stats.json",
+      "bytes": 19688,
+      "sha256": "506616f147ff314033e1dd81f384dc12be99c23e9b1bf0835b9acbe7299ab49a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickWash-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "ca1ff80116c4c1197ad4072bf95c4371c67893c8624c4251988316ee81844455"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPickWash-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 28280975,
+      "sha256": "0d73a1b0d25ae5be838dc457fd499e7e174fbc69261de67f2bbed833dec94d92"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceBrushRest-v1/.complete",
+      "bytes": 90,
+      "sha256": "9d18f586bdb47ce754e16f9995113b62203335ae149280cf547cbfa4f1620b6d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceBrushRest-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1313107,
+      "sha256": "edfbbb9e19d0142461a7b9f971373a4bd54e13e6d506b7c1dfaf6491d7b4a1d5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceBrushRest-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 305137,
+      "sha256": "bf7dfa251f173f46fd5fe016daa555648a46146027d2d6ff7c83d80a77fd5a56"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceBrushRest-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "fe2e5a908afd75fa7d4e46d293135ef11f6e12611b12a84069e5d453f4a9b949"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceBrushRest-v1/meta/stats.json",
+      "bytes": 19686,
+      "sha256": "7ec9256c9d5a1fd01c17a4fdaea9238901c7c870445b7873a739a38f2a020567"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceBrushRest-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "728d2c4594a89f3451177f88314634a5f287a063fe0a0a6a129a913415a575c4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceBrushRest-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 29322462,
+      "sha256": "2e54da9a8586529ac129cb81d442eaae016da112faca3eb661c64dbae4682833"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceChipsRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "d1107b9a0ecf6c0078e3bb7b8e71a3d9317ef97fbe7eacfb5f46c9d67200c033"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceChipsRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1519538,
+      "sha256": "09d0916f1d3151d995c590e16449646d90818b4489a80f72ebc2aeeb812d286d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceChipsRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301812,
+      "sha256": "abb566d7cf656e91cd6daa8e01735a58845867611ac6029b0420511e93800ee2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceChipsRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "4186ef71a44b67889323ce53fa5b18d28bb0d72b3bb44d3bc08e2d7336fe73a3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceChipsRack-v1/meta/stats.json",
+      "bytes": 19654,
+      "sha256": "e3f8425297261683939e7204e6600fefbce6fdbe983350c94010e335e6b9d58c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceChipsRack-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "b72ca1ad2493aaf94a8162f48f1bd7d54b8d7bf48481850fda5e9617563abbc5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceChipsRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 37418518,
+      "sha256": "42f2dc6d30989187aaf7596b14c4b69d57fa250a46152f7034e30277e022f5eb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceClothBasket-v1/.complete",
+      "bytes": 90,
+      "sha256": "9205083bc7a53f698a8a37bf1f8b489359b41460018c7539a4b0d8461dd3d118"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceClothBasket-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1670680,
+      "sha256": "6a9866a7d624630a083fa1678fcef76d2e9c7aca3a2c731edd4c55394d4bff46"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceClothBasket-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303213,
+      "sha256": "b0d8198e2e5491f5b4099a78f3556f73fedf7b8f5c07d855945b70ff522fd7b1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceClothBasket-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "411eb3305e16ecc0f44df8e18a1f2465bf2c02636a7ccd95093a26fcc465ba26"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceClothBasket-v1/meta/stats.json",
+      "bytes": 19680,
+      "sha256": "5253a88b96d3a6f4ee840c9243d3089f6724a116e8aec54c55bcb2f311d36f1d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceClothBasket-v1/meta/tasks.parquet",
+      "bytes": 2140,
+      "sha256": "7b8fd3a4a008c4cabcd00419879f36c2c7274597f5cb6bf22a19efb479deee45"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceClothBasket-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 41700765,
+      "sha256": "68efc92afe14286b018425dd9285df35b85705aad6b64add8bfe3ccd4907b3a9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFileFolder-v1/.complete",
+      "bytes": 90,
+      "sha256": "fa5661c5f828d3d2547dd27878743ecbd16d60617cc71fbbf847e7e953e00cdb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFileFolder-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2417256,
+      "sha256": "91567e4b973af600c0a56a8526450b9073c08157d420bb95698ca80d0a7418ea"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFileFolder-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 293117,
+      "sha256": "b5e088652c2c63a749dfe26125d5481e613c8b8fa1309a1f22aa92a14cfc21cd"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFileFolder-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "e80b1fc9b76c5c1b1aef728c1e214450e3d935321daf963c641293928351f696"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFileFolder-v1/meta/stats.json",
+      "bytes": 19654,
+      "sha256": "46c6f910ef561f9ec5349e1dbf4926784bae65e87a6e7b24ee81884b16294e65"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFileFolder-v1/meta/tasks.parquet",
+      "bytes": 2135,
+      "sha256": "0c3bd87088fea71318569f1a56859c1747b0f07597852c508ca75044d65ef065"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFileFolder-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 55965325,
+      "sha256": "3bf7ab009d59e07f2a451a43bf4613d2bd44a76a3f012be2617d030a160044b3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFruitBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "d2ba22fe1ebbe10056410ceec5688a0e83c9bdcfa49ff95d3d7706b21ac93504"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFruitBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2329076,
+      "sha256": "20c643c5e9d246b747959f7aeab1e70810f9b5737df0d1fa91ab9273e8a05a31"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFruitBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 305254,
+      "sha256": "efa93ea020494fddb641395dc6ece6cafb8c878a0e17058caabf9a0bd5c6bb53"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFruitBox-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "fde73dd5c0f21d4ce4bb21708812803f6aab53556ec8a8528c8f20f2fe7edb34"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFruitBox-v1/meta/stats.json",
+      "bytes": 19715,
+      "sha256": "2fd28e490eae596bab71f599c4a5ec2c659e811fc82881f5835bd6c3c16fd16d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFruitBox-v1/meta/tasks.parquet",
+      "bytes": 2125,
+      "sha256": "e298ee518950983d157bd5594cc4ea9ac56ac514dec56f3a5e41440eb96cd8bb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceFruitBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 57046582,
+      "sha256": "ed6c2ec0ad84a699f0d8f8162cb8d44280335d314ecab46a8328abebc5249700"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMagazineFolder-v1/.complete",
+      "bytes": 90,
+      "sha256": "b525b4d1448ba957382dae41d5d06787ae0c0e95fa48320d32128a6ca3039f7c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMagazineFolder-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2425607,
+      "sha256": "5bf1eb27d589ca24203985526d4073f29bba8b5aa3170d8c7269962c29c4ba17"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMagazineFolder-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 294290,
+      "sha256": "4b116530f9b1f9dbb5f73cab20b5670577e28111a4c1dcc704a96fdb875fe6b3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMagazineFolder-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "016eaa29881e0c10c72215d67b2a768c126f314ae1d355ad467aaab58482e950"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMagazineFolder-v1/meta/stats.json",
+      "bytes": 19640,
+      "sha256": "28a75e832db1e58ab420f58e304564f6122eef348d823980b32b4c27e5430bd1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMagazineFolder-v1/meta/tasks.parquet",
+      "bytes": 2155,
+      "sha256": "e16202b61a24e23a80cb4aaaaf082e48a1a77fde24b34d6b2e934107969f02e9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMagazineFolder-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 56414438,
+      "sha256": "a8a9aa939c76bf013f698ef2e61853fb772db77d73e1dde5f611a43d41b3d5bd"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "57a73b7ffb46246ba3eb829c36843cf4c60041dabe9d29a7aa0dbc9fa9ae232e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1321066,
+      "sha256": "7630635c372782f1a64f773594c0459c36b28d73aac454623adb94e23e8563e6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 300257,
+      "sha256": "42b170111fe8befe2c91a5a3ce6451b2a19fef143d927596b69cf2195eae5f1d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "3bec1c8e469a45bc259e543ab1e6e93a5e858207514b13f04122132ebb5e3b16"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/stats.json",
+      "bytes": 19689,
+      "sha256": "5f8a48cfacea9d01adcea92cd282e4c2858d622ee37fd19a1dd2b11b7ac42e5c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/meta/tasks.parquet",
+      "bytes": 2120,
+      "sha256": "56ffe9964266d7055234846948473f4bf8493f40b9ed0d10394e0643b50cd2d2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 27180917,
+      "sha256": "e146f871c7b7ab3321d68ecdf987491566399a7ccf82b70573259a5e21cf712d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlacePlateRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "ab7df965272bf20eb1895750ea9f66c4f905c221e0ee8f322611604d2240832e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlacePlateRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1775136,
+      "sha256": "f55cce65ec09df79d7cf209840fd896027acf79f34b88052d8b868aaeb023e32"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlacePlateRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301314,
+      "sha256": "017510df5bb3bc7d826e6136f1440c6949a4d5b12a998a40df60b47e22314704"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlacePlateRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "a27ed48257da23bc34a39f4649a5cafcf20255d485f29f24bac8ff53812abe39"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlacePlateRack-v1/meta/stats.json",
+      "bytes": 19645,
+      "sha256": "0f4180622e92bc7504c0fe30c048c463df31c0e451b77dc93be379c3eae98f89"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlacePlateRack-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "c623a1a8436f69ed32205117b469c8a13f0438fa2f70366df737fa5ee8d90c06"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPlacePlateRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 44350054,
+      "sha256": "fdf435d53595e89c888d511be03c675288330bf3593599b8ae0a4a7b602c3766"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPourKettle-v1/.complete",
+      "bytes": 90,
+      "sha256": "7060e397ab7425c43031f24692f48191e12580eb019fc721a30fdf0c0094cb17"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPourKettle-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1471524,
+      "sha256": "117a040aedeaa217e16576252170bd12dfad4357ae74f2675bb4e0beab35332a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPourKettle-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 300803,
+      "sha256": "56609f9ba80b955d480c2ecba7d82bcbb6eb20ffd8c4be1bc179a8793fc809ba"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPourKettle-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "814e7ffdd17613bfe9b81543d0eaf92268251753b99a6577822a91252c9be9fa"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPourKettle-v1/meta/stats.json",
+      "bytes": 19694,
+      "sha256": "89159b7e39749771b66c5c31ff27922979cf0e970369e74bc4c28e7efee7e5f7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPourKettle-v1/meta/tasks.parquet",
+      "bytes": 2110,
+      "sha256": "492b1d8d3042cda7bc24ee91e915bf5cee2f2a9fdfad52495e6c64b5b08d2ce0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotPourKettle-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 33191086,
+      "sha256": "f14dae96d8df1799a028f41c113ef56bcb7ef5051b57a3f71a3e48c25b7baa81"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotScanMilkBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "27d0898849ea3e4663f4d29ee9f6c11ba4286a3ba44d3ed95ea1f7f7fb18d27c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotScanMilkBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 4132591,
+      "sha256": "fa18103482a59697196f81e43f45e65992309014b57fac57d0a3c079681b04a3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotScanMilkBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 311574,
+      "sha256": "19744bf3b51718b199c754c068b3ea3099a4bf792fa7c6a72be690786810ba68"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotScanMilkBox-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "68dfca445a4e52d894b0b43dcf8e0e4d7b5fe4dc49d3dfab9e64eba70dc8d9fc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotScanMilkBox-v1/meta/stats.json",
+      "bytes": 19618,
+      "sha256": "1955e050ef44443096e291109aed6b9cf04ad71a128e96c080dd4eecc43c6030"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotScanMilkBox-v1/meta/tasks.parquet",
+      "bytes": 2115,
+      "sha256": "c94ac84095e947fee3106208079f1facdb3d2c9d477d8d2c431a6f10b47b5ab7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotScanMilkBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 59281877,
+      "sha256": "016c978ee1b196383df13730e383647cf9e8e15526684ca86fbcb87daf120b1e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotStirSpoon-v1/.complete",
+      "bytes": 90,
+      "sha256": "79ee804c435bfbaca0afb65a1bcd1a089d7da3acf070413083f9af2dadde6572"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotStirSpoon-v1/data/chunk-000/file-000.parquet",
+      "bytes": 3798882,
+      "sha256": "ad974f8a41a68773870d1de05d95925bafff230d060cd6722e5cb1d56afe6d68"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotStirSpoon-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302237,
+      "sha256": "a316b02b5a171c08430c9967f363425b6bdc588d900b870f0df3fdd6e41ef960"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotStirSpoon-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "9ab9310e7841cc05007efa5bfab4e0a650873e249a0965a4fea69c9f46ca1744"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotStirSpoon-v1/meta/stats.json",
+      "bytes": 19630,
+      "sha256": "d31d7c2257ebbc6b656f2ae19d2696f556c2c5663e699aecfd9f750c873b6cee"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotStirSpoon-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "28cb82bb2e4c01a78de65aa5c6b6092bb7f550d6b59d56e8a1271d617e45f86b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L1_TwoRobotStirSpoon-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 83660240,
+      "sha256": "665603e007678e25e48fc5fc17b5ec5b0e75d0600ae99c58dd71f58d82c81b49"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCleanCup-v1/.complete",
+      "bytes": 90,
+      "sha256": "44355dc3e47816de32ae97e5703091063c666c766392668540a859e7bf0730b1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCleanCup-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2540524,
+      "sha256": "0ce7ef81e8c8bc4b2a572eea1b674136c809d293bb0ab03073068bc6b4744a7c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCleanCup-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302637,
+      "sha256": "0bf9b640f22d96b222181bfcb66d8e589d69be5b7c411b3375e447f2f080e232"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCleanCup-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "7c156c6e6ae6b87072c1c76d869affa559f0b66fc9ecb63df08c298aee516324"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCleanCup-v1/meta/stats.json",
+      "bytes": 19681,
+      "sha256": "64c9e16b63db31c69f65d77e25310a531045488b8a12811ed218ba5aaefc5597"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCleanCup-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "a3f0322bd745a6a820078009139299d397815eaa2e5252be8bd7bf187eecab2b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCleanCup-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52421055,
+      "sha256": "d0efc3cff5c9ce7db1635ae09164142f245e2ef64a8ee319b0d302ab08717f2f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCutFruit-v1/.complete",
+      "bytes": 90,
+      "sha256": "b4662a556b79215da85fa75b6269052e4ba87cdb6042d92d595f05c2db8a4030"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCutFruit-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2071015,
+      "sha256": "d46e54219a00569fec895220adfdb12da545e755a0078d61578477deb2aa10e8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCutFruit-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303044,
+      "sha256": "51c6ce904f5f8b4c50ee2e0febbeb1d626fe76db73f977dfb4611d943a46e9d0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCutFruit-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "2f0e753cc39e629fde2c7855991f277423bc828d04df8cc44c99bec1382f5dac"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCutFruit-v1/meta/stats.json",
+      "bytes": 19669,
+      "sha256": "36f8706caf9a5b400a8531df3213bf8f3f7d16bdd1e1cc245f13d9586d5718ed"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCutFruit-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "a026c73f3b559791c6d266bd9976952cf20901cc0e618c86b31c1a1d53295fbc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotCutFruit-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52158447,
+      "sha256": "ad73622958106c3d1a0e7b5e74a2b2d7cb7587f4421edbca832a3a1a4e0225da"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "500db886f536f10eb07c749f2156116c187613c54562216c3fc29887bb9a9bb4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1045409,
+      "sha256": "d993a71508a72ac0994b4fb43760b3f890c7d78a0f79129e080f2e9be8b813db"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 241394,
+      "sha256": "c988cf4a135cda38a97577e3dd3d804ed8b8e4f9931eafaa72a54dc6bfd25fb1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldBox-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "094cebc62b79160c47f1880ecfd28d9d8698015fa32694f6a8d69d93bfd13d89"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldBox-v1/meta/stats.json",
+      "bytes": 19642,
+      "sha256": "e5828be7e9b8135f87f5bff3d1e7cdd2d16e350a46ee9e6d73e4085de75e5d8b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldBox-v1/meta/tasks.parquet",
+      "bytes": 2095,
+      "sha256": "ad5d9c812e53197a1170b2243fda128acedab38e4538d1cdb9f5732a97f7b062"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 23944217,
+      "sha256": "c1868aaff4e1395fc96cd068b84b125d859e16d72cfcb507375e88f27947795c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldTowel-v1/.complete",
+      "bytes": 90,
+      "sha256": "22bbdb96290af7bf567730835662d08222deef9fbca821016ed00cb885911c25"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldTowel-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2335776,
+      "sha256": "f68602f74bc503cdd25772c55c6085458994b6a041862d61a88cd5e5a6af2593"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldTowel-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 304602,
+      "sha256": "9d71fa0bb69251556a2eba7bc1e570a0b390771d08dc10c319437071d6e18f8f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldTowel-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "40c165c7471c6f92f5f928be7962ed43f1e7ac0a3c45c52807f1079d847e62cf"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldTowel-v1/meta/stats.json",
+      "bytes": 19634,
+      "sha256": "3237f1d3f0c145df97fe94219c7111b61465e841150101a17e54727cc7406492"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldTowel-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "f34b5b29cf1c40b869eca91538310759856134826b28be784b3bf82a590d7975"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotFoldTowel-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 53331238,
+      "sha256": "d652c36e4b3aa71ad6d2b4aba5345823172c3f34602c15f6f7a8ba783b1d9ce1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotGrindFood-v1/.complete",
+      "bytes": 90,
+      "sha256": "5ef51b3222513cd9acb1a3219a70b5df063386a0ebdc9adcd3e0d4d4dd21b098"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotGrindFood-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1864331,
+      "sha256": "3a28835fd51b389fe117efc205822eab56d454be4b8c38d4d9f027afe717f4b9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotGrindFood-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301886,
+      "sha256": "d24856494c4487af030778dceff8128b2fce2758c435e2dc557a554e6aff9270"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotGrindFood-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "845714bdd5a88613e99b02f50d83e53103a8f77feb0a0468863aa9dbd7709efe"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotGrindFood-v1/meta/stats.json",
+      "bytes": 19621,
+      "sha256": "69bea0ac1fa6e5bb6fba02ef19c626c3b0059fa4ad4dd8abc62367196d6c44ca"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotGrindFood-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "290817e3fa84a2877e5abe4c4c681ba8dd8bee5a8f648576b7353508a79f3153"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotGrindFood-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 37261262,
+      "sha256": "96a569873614bea9ae88bc315500f9a397564e70c559ff765a5ae54b835c5c66"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotLiftLidFromSkillet-v1/.complete",
+      "bytes": 90,
+      "sha256": "af87fe6aa8a1edf9f73c1140dff14944fcb71aedcd063099ba4e056d22e6c17c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotLiftLidFromSkillet-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1075722,
+      "sha256": "cdea2e333b88e6889db7938085990646512d7d6c1dd98a9682bab5dae43c28a3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotLiftLidFromSkillet-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301322,
+      "sha256": "e80483587b4b1f36134a3bd4b30498a7f47b2501bd70d648c804cc013fbb82bd"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotLiftLidFromSkillet-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "63eec3b031c21444fa4a1c3527e4d3ddf15de5d250b2a95f69dd610c96e950d1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotLiftLidFromSkillet-v1/meta/stats.json",
+      "bytes": 19667,
+      "sha256": "af9bdbff295071bd720bc93ea581bad5ca63df761a672e5f4d1c1029d196d008"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotLiftLidFromSkillet-v1/meta/tasks.parquet",
+      "bytes": 2150,
+      "sha256": "0ad1ce467db1553c7e7a757c5938ac8b065bee6a3d16798d3141ec023cfcdaf9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotLiftLidFromSkillet-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 22558624,
+      "sha256": "504a66136c97dd78a0c774331459a61e1e26b6c53e25e11c38a49748e534936a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickFood-v1/.complete",
+      "bytes": 90,
+      "sha256": "1e633124ee39f3709975f9b629d65e5d470c4a6ed2d241f7a8428ddfb1824700"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickFood-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2482303,
+      "sha256": "86ddb0f7f0f600b291297cf1d92821a91a5ce709710e3d191adf09ad5e591def"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickFood-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 313121,
+      "sha256": "39c0f2dab93135e250121fd1671e977f079ab3a940739bb3ca710c35ad75e912"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickFood-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "a5b3dd05f95b1d898021c7e62fbd0d0a170e08b80c8b6d6491f791bc21d3a71c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickFood-v1/meta/stats.json",
+      "bytes": 19651,
+      "sha256": "cb599affa6cd6e8aa0fdf837b161992c753c8b770ed909ad228a7b608b41ac35"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickFood-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "55a642cc2d5e6ff60abf68e7a2039ef94c5b22a4c5cc271cc05e3281e5b208f1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickFood-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52120756,
+      "sha256": "29c0fbc40309383c37851b265c2a29e42a2cc9f0e13a7d44a55032c1ad18ea49"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickRemoteControl-v1/.complete",
+      "bytes": 90,
+      "sha256": "9d3cf5316d0a35db2eb371bff9dcc790977f660ebc1f17e04757bb3278561502"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickRemoteControl-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1193695,
+      "sha256": "c7ad6e881969706513ebee017f22671a63b294d7136ba22ff7095b04f3b357f4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickRemoteControl-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301744,
+      "sha256": "33bbe133c4671e7fd5b04befa4481c8f94d897d2a43a612e708b0d9576510d99"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickRemoteControl-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "7d0777bb9648e7993a27590760fa268fb9f3efa9937059928687615642238a0f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickRemoteControl-v1/meta/stats.json",
+      "bytes": 19729,
+      "sha256": "cb61b781b38fe7c786c98906513bca4c9a34239db0e3d93a17bdbfefed065328"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickRemoteControl-v1/meta/tasks.parquet",
+      "bytes": 2145,
+      "sha256": "ee85608bc34112328878cf9aff8979d7a46a9ac89d5dcee36ed4d5f3c05d44a8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickRemoteControl-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 24978343,
+      "sha256": "284a155f0541ebf749b1ca4d186ee7aefee1b4df0450ddb05abad171114a22c6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickWash-v1/.complete",
+      "bytes": 90,
+      "sha256": "2b01aac1cc0f47ed9e04ee7231820bc078675301ea2ef2dc51f6cbb982756d17"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickWash-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1323457,
+      "sha256": "8c7e89bc64f0ccc5000d4e5b5c28035faacb1bf64105a53c36ba5fb02ca64f60"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickWash-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301453,
+      "sha256": "c0c52e20fd01bd809b46e3ccddf4d2cfc0e2cddbb7bc6cbf07a4a72f5f575c50"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickWash-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "8b2fdbd037e245df7245acaa760624b155f584950df816575c28831bc9b3e5c2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickWash-v1/meta/stats.json",
+      "bytes": 19682,
+      "sha256": "5be17a3cf7788913862161d212afb21759dad6782a3c2bf44a68bf2b787299dc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickWash-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "1c39a2294658e17cbdbecfedb54d31ff8085d939ba018cdbaae9fa788794a8aa"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPickWash-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 27911569,
+      "sha256": "9499b9d1ad317f2344fcdddc3ffa843f595ae970ef4455cd5b3e06dda20358d8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceBrushRest-v1/.complete",
+      "bytes": 90,
+      "sha256": "03041cd6fe086890627a6b893f34088b4071be0c42f0d262468f9d7d6e5e3a86"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceBrushRest-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1270574,
+      "sha256": "e1544b3e1e030b8ec6e789e7f5a58f7378d513079172ec4cc31f18864fde7989"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceBrushRest-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 300398,
+      "sha256": "d7aa62114a678df27532edbbdaf16186f26ab62cc9fc655f39a5de549af5299f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceBrushRest-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "814b4bd6ef64421cd2d34d3cc5d21f61cab18a3d914cb892ee134804f994d308"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceBrushRest-v1/meta/stats.json",
+      "bytes": 19704,
+      "sha256": "134cb574b91a2b3fa7359d8832bb421e6a2be2747d02029de32ef05d2f1a4757"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceBrushRest-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "f8d4f3c00444580735fd716d0fba145772ad2549b5a69aee21f7befc38c635aa"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceBrushRest-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 28770265,
+      "sha256": "152b2f86e4f969ee0061fbb98f2f37b37ff84547cc40b5374d87259780ad5d1f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceChipsRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "0469f00057c054aacfe500b8bac669319dcc1dbdb729ed793b5600afb1985b8d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceChipsRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1417484,
+      "sha256": "ece7c5df0ff03d812029d558e888b463e090e85b2e1a4b3c304b00307361c2e6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceChipsRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 301836,
+      "sha256": "88e1dbccf94033f0de7005162dd36c98d8b7cf69e81b9938a9a8f35c97d33ba9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceChipsRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "835cad44732f748584bfc2d531eb180ccb3f2d0d4a980b36473eb6679b03c5ef"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceChipsRack-v1/meta/stats.json",
+      "bytes": 19687,
+      "sha256": "cc25afbb4388a4cc7fcd87bb9f7c83088a0afdefa8b36505989f51010e07afbb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceChipsRack-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "4da4325798dd2e7fec674d6aed8f7f64eee4e116256eedd189bb4da23a33e8f3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceChipsRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 36580032,
+      "sha256": "893e0e7c651142d30c4d638ef074668224aadf5152d29c90912646376612c13b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceClothBasket-v1/.complete",
+      "bytes": 90,
+      "sha256": "b80948b1e09445119970f4244ff119c22f3d4894578921e8cdf50c3a7f7618eb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceClothBasket-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1542586,
+      "sha256": "34dfc4b7c842465786e175c947283f0b92dde1dd8ead2b2a7bc328d595d35def"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceClothBasket-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 304568,
+      "sha256": "610ba603f0a9ba7e7ccbeb8748759876fdc1d88dea5dc52433c55bb019124d00"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceClothBasket-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "aed7a594cf6b5fd725940eaeb4e4dfeebf6fe5ebc0d0d4adada13214cb7e6ac5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceClothBasket-v1/meta/stats.json",
+      "bytes": 19667,
+      "sha256": "25d88c7bb8c3c2e78a86682f108212fb29db39054b61f346c6b023399666fee1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceClothBasket-v1/meta/tasks.parquet",
+      "bytes": 2140,
+      "sha256": "4df8e052a91ab0a62996491d89ad12783a8a9ff4848d73e425d996d541f3491b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceClothBasket-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 37088779,
+      "sha256": "cae7bd6e1d286dbd7622eabce385a317c22c468a58de1d21a6f63cb3469ac26c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFileFolder-v1/.complete",
+      "bytes": 90,
+      "sha256": "55a25d28fd1223c97f99f773b118a62c26b0fc20958ef126033bca320a2432fe"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFileFolder-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2314704,
+      "sha256": "82bae9e628a2db597b20058f3e6f81c68a2d10b86b123befdc82aa9b5f151834"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFileFolder-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 289809,
+      "sha256": "3dcc39cb6d1f04e0c2a36ae49bf4dde59dfbe649ba415e9986e86ad7ceb3f009"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFileFolder-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "9486905be30063c6fc1a0ad90942098ed744f543720d51a4e28431f0bca6f949"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFileFolder-v1/meta/stats.json",
+      "bytes": 19649,
+      "sha256": "c2e11c93c9cf18de1fdb61aae0d93e7b3bc6dd8dd69bd3c211b04bcfcbbc08ef"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFileFolder-v1/meta/tasks.parquet",
+      "bytes": 2135,
+      "sha256": "03da1a36466871012b40c008d64c7686dfb9b0607793d1799f57030fe4ff16e3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFileFolder-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52018323,
+      "sha256": "9cf424ce6780d191fcdf1517fde0bac3aa92627ee0f7ba97f29d019a7222e7bc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFruitBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "d89162f97864f75452005b0d6e692a386a89c998f4db1e01f9cd49424a78119c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFruitBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2325327,
+      "sha256": "85e7106eea509129d228695bb6b43eb19a68453672d7401310c7248fc192e1b7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFruitBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302831,
+      "sha256": "bcf32dac52d34ee96717e7eb4d6fa3d2e240c720f7d6e54e179ca7d85cf852fa"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFruitBox-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "0d8461e4e5360e477ff764265a7bfa19fdf183f4c5678d9e598b05ef1bf6e71a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFruitBox-v1/meta/stats.json",
+      "bytes": 19675,
+      "sha256": "ff0587bdf6d7d8643c2aeedcdbfce1f04d79a1d0986fb066d2b6ce34cc31d625"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFruitBox-v1/meta/tasks.parquet",
+      "bytes": 2125,
+      "sha256": "80b41be1842a1816f817bd5a8eff00b3ca7a8607a913e0c2f62df75214baeaef"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceFruitBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 58462604,
+      "sha256": "80d6a3462dea2bfc7ba1459f02f20d7aeb06c6e629353804222859c0e84f99ce"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMagazineFolder-v1/.complete",
+      "bytes": 90,
+      "sha256": "55a25d28fd1223c97f99f773b118a62c26b0fc20958ef126033bca320a2432fe"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMagazineFolder-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2329640,
+      "sha256": "9b79a2d771f4fb740b18943d4eb74b0d3eccaec52298edd3a237a5f54ac974f2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMagazineFolder-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 289578,
+      "sha256": "da60722980e67d242e3da172573f0b5f67f28ac5ac8ab8da763fed10a34a21b7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMagazineFolder-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "3a43af4034c48c1b15a0b6b70a9909984656519eabbf922433f003e18f74fa27"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMagazineFolder-v1/meta/stats.json",
+      "bytes": 19623,
+      "sha256": "df7b653ff5e3c67e3263e83f6b1e2b9984c59421b0f89f0ee6fc14c1a0328bd1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMagazineFolder-v1/meta/tasks.parquet",
+      "bytes": 2155,
+      "sha256": "4974c2a9a133aae355d68f69253b74dc6324119f2e856f414f60b576aa1be00c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMagazineFolder-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52178262,
+      "sha256": "ac8d4ddc9689a75929cb1649fa7d7f9216b088d1f24993d0d6afe517d85cbef5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "b59a74310614b4c834ab1b9cec79e462f25a747ff3e48699fde1b81334ad8988"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1238049,
+      "sha256": "2c4d0649126fb4365ff4134904c4952d762598be41e95dfc91953dc02226023e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 300978,
+      "sha256": "a4b64f00c891058ba6bc93428b9c37962fdfa166a3177819a614c80a3ce27a42"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "d334f064c1ff40928bf2627a6a7ac1587268a20bc10887fe057a9e6c11db4c41"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/stats.json",
+      "bytes": 19689,
+      "sha256": "a10e6126a4d218b93d68eed3778c6ed51e9112856072becc935f7fde7688c31e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/meta/tasks.parquet",
+      "bytes": 2120,
+      "sha256": "b41aab83a4c6c648455202122bc946bf66c1ebf9531a47f8acc28a1c548ca05d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 24908096,
+      "sha256": "e3cb095015225b8bb8d82bfa2bee8ddc2a56b9773cc0f21e6965e1effd4efc2a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlacePlateRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "3e1101f9ca0b57f39eba4c05a4cc601f330529a01a9c8cd36967ce96fcbdf6b8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlacePlateRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1805730,
+      "sha256": "2d3da521deab279cf6e0ac0b5f8fdfa5c7ce4ae71f8f8c5c4e9eec3150df0f18"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlacePlateRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 299115,
+      "sha256": "5a8051ce1eb37c1b2ebfb66efffcbab65564ce615a0b38c862ae34d6c5488ead"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlacePlateRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "72a4a9527d04f2f9ba26561113f9a50743c2f576464cbe362ef286d35df1fbcb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlacePlateRack-v1/meta/stats.json",
+      "bytes": 19623,
+      "sha256": "514857496aa7206db075b5994c2d3a88bee84d61ba344f5705846abde2c787c9"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlacePlateRack-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "e08a856d971fcc7cfab4b52357ef12c7bc38551da5674eb91f3fbca05a5171d6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPlacePlateRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 43578766,
+      "sha256": "657327dcc308ffbb1aee5f8bc5fc8d515e09438704d87644950cb4bb2ab0122d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPourKettle-v1/.complete",
+      "bytes": 90,
+      "sha256": "7237835cb7767a45af32c8a40b9ef9c980c6cae03040d49e5a16558281a643fc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPourKettle-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1702800,
+      "sha256": "820d7021b0e16b4da1b104cef8f809b9065a47153fcb9ca72e6f7e6d52fca217"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPourKettle-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302932,
+      "sha256": "52f0459d7792174964e6be4576a924a12eccf8200f1a2b7386f2f22d0c40275a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPourKettle-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "55bb8e32bffe963f8a6a342216aa50b815697381912d3ec77c30beeb6af9cbc6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPourKettle-v1/meta/stats.json",
+      "bytes": 19706,
+      "sha256": "86ea2bb9a1a8265815449642da09e5aba84377d3ae7306ae20e846f3c25416b7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPourKettle-v1/meta/tasks.parquet",
+      "bytes": 2110,
+      "sha256": "60b365e9d372c4c00b7ca938aa18b8e5aa8eccbe4d9eb827079512b72e156629"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotPourKettle-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 39223265,
+      "sha256": "21643bf1e6ee71d7349ef98a0efdadab455356b281feb9b72054be5d73852cff"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotScanMilkBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "435f9d7b319b024ee1e306b9d2e5dbdc89c1e86bfe9a085e21ae49ea3e186e77"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotScanMilkBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 3714686,
+      "sha256": "0d48c9dd5db98094f434c7fa6a1149c6dbf793ccf343c7cfa44caba26568dfa8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotScanMilkBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 311920,
+      "sha256": "9d65e0297e76d42db6fc726b7a6ae67e814d73ae000eda0269355cbe3b066a78"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotScanMilkBox-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "82c61232d5d7eb1e2a1bc918615ae821838ea2dade1998f1eb2f9f5fef9e7669"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotScanMilkBox-v1/meta/stats.json",
+      "bytes": 19648,
+      "sha256": "a3e706ca6bd2f8e867806a36e444019ce1d49febe870917086b56aaa9dfc966a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotScanMilkBox-v1/meta/tasks.parquet",
+      "bytes": 2115,
+      "sha256": "fb17492c1a3d564293361d50f83b3bc48e4a1e0e8ef40ab857656d2d111c1cf8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotScanMilkBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 54415479,
+      "sha256": "e73dcf28e9b4336290026a058af9b957340e975e35b42eb5792e75155d71e4ba"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotStirSpoon-v1/.complete",
+      "bytes": 90,
+      "sha256": "1dc3c7973c3d1febf8ab1c450803f0548991b2c4548e8e49a207edb735986234"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotStirSpoon-v1/data/chunk-000/file-000.parquet",
+      "bytes": 3698281,
+      "sha256": "8365e89e4726139fecd01ce9bd9b45023d389f7048fb73b67e6b99b43572e610"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotStirSpoon-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303398,
+      "sha256": "b4639803d4a57256dcbad9216cd83cba56d825e75379eba0ceafe1cafac6b92b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotStirSpoon-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "8817bbb4083e4dc68eea33c1cb3f8c28cd8e3095fccaf11bf899ecb54c39cfd2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotStirSpoon-v1/meta/stats.json",
+      "bytes": 19748,
+      "sha256": "0ba2a37a66b6e2d4aa092caec4387a03afa1bfc7c87f473d5dacb90107ba18cb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotStirSpoon-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "284dd762e4136143a3028a89613dbde768c7392c6186b1501638b7b2ea136c79"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L2_TwoRobotStirSpoon-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 78947854,
+      "sha256": "2a311d90e4d7f39c15f39dbd5f933f636bf7fc90b98bc6acf524cd8dda24161f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCleanCup-v1/.complete",
+      "bytes": 90,
+      "sha256": "5a67798bd0704fded1a20ea51154a737ae8d9312b7b002b4c26131c4e44353ae"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCleanCup-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2594360,
+      "sha256": "6799aba5fcfc8aa478d14f80a8b5e6450900df35960c12319cbde0186f7a5b89"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCleanCup-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302734,
+      "sha256": "10b9ef9285a7f9f7c66f41fa3ebe838305ec5967a0a9bd0eb7285e768fc77bfe"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCleanCup-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "14fe5b77523d5598e16b6832620284e73074f6b60a1c433b5c9b943edd9a8fbd"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCleanCup-v1/meta/stats.json",
+      "bytes": 19652,
+      "sha256": "dd0873a73fa16ec27dddf48ec8dd2c1713ea10afe94d6d0cfc6c17e8b9c14429"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCleanCup-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "8905d3be3acec28e6ededd4dddf6e61b0af89fb8b8424206c16f8be3b25d5198"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCleanCup-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 52497367,
+      "sha256": "b3efa494b96add266ed7b93e020006f80eac09439e15b26e9bee8b2ec047247c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCutFruit-v1/.complete",
+      "bytes": 90,
+      "sha256": "17992ae5fd9f418dc3c085faa9665dcafdad70a34cea6d396d25e13bf3514f31"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCutFruit-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1075591,
+      "sha256": "a644e205e828ce600acb4367adbc007be57f8a1f27c82b19556a1fd360c0d14f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCutFruit-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 296715,
+      "sha256": "6596226cf413019c61182bdb0cec7a6168a76c6cc81851a139e02311260ff415"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCutFruit-v1/meta/info.json",
+      "bytes": 3965,
+      "sha256": "8e660ec5dd8e954e164bf3fa092faf4e83d14d7637dd3c543f35f8db311a36be"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCutFruit-v1/meta/stats.json",
+      "bytes": 19667,
+      "sha256": "be1cc3328f5a131f09dc8bd7991ca8fefab4d64819010e80943a3562cdf30518"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCutFruit-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "ed47689f78fdc8e7660042476f254833eb0f03cb489e8bb7cb2577867817f757"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotCutFruit-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 149072895,
+      "sha256": "01a3de8702c1d86536e895560ba0eac985119c229b9050bfc501b224d2a7f4cb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "3eb1f3bfc6ac0697cb386952a24d61adb297e0271b469c1b9a4c5a884b6c2091"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 864588,
+      "sha256": "fdca5e430f693afe2b5588c63e40e67000f4428c42b6525c133de3a93884a5de"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 241573,
+      "sha256": "03f960c35c2b70bf9a89703c7d4886a3f3e2ec2bf2159bdd6976b05caf45d3af"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldBox-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "8c8f9549f8122cfae393aae5b15e9bd9d5ad2e000676d653981e34151fd0abea"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldBox-v1/meta/stats.json",
+      "bytes": 19593,
+      "sha256": "387c70e0004ef6f85817cf346114dba1f5d51901834b9d49cf56e17edb62d209"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldBox-v1/meta/tasks.parquet",
+      "bytes": 2095,
+      "sha256": "32b19f687e29266918b3ab5b55ebf03803cd1cd98a24208485c2af80ae95b497"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 19500458,
+      "sha256": "ae2888465e34971215ec6e878f167cfaee6053ee8b0e858194410a10621b0034"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldTowel-v1/.complete",
+      "bytes": 90,
+      "sha256": "4b8393e531ba5628594fffbf8e3e764799d9d860985253766cb55ba6c4877f3f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldTowel-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2307976,
+      "sha256": "438ffd5a4a8f48ba64ff6fe6305b042a7f64bc6d05ad7dbf6842f249dbedb513"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldTowel-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303571,
+      "sha256": "fbaf355c348deed0b9960de2bf74f0e4cc533391b3d401f7416babf9f5b51564"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldTowel-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "69d88814a07d6aada548e71dddd0246139b2c95de4dd59a3a2a60b9e1780c2e8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldTowel-v1/meta/stats.json",
+      "bytes": 19642,
+      "sha256": "f36ba5623b6c856cf55016cac41c0fb466eacbbb985e35e3bf61e40912ce0c08"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldTowel-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "881814915c3a111c8f1a25301ca0a6fba3dd5dd97a1d6491be5d6acb4bf10f3f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotFoldTowel-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 57578310,
+      "sha256": "d3debd16bda7beefa4aa18f256ae305ca7b6f625bb04d76592970fe55daac487"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotGrindFood-v1/.complete",
+      "bytes": 90,
+      "sha256": "d6c9c7f8a334b7c917c84677b589dc20ceffb10a491a5378f8f56d8d63023617"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotGrindFood-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2077378,
+      "sha256": "42afbf320cab7da0714e5bb3b84f5334f3da069dbbe803b86f76cec504ac4542"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotGrindFood-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 305013,
+      "sha256": "3b4d97238ecfc62fa24ddd493d9afb1d76aed98a990db0eb2ba9e65a4d092056"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotGrindFood-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "6c6d073be6d4e6ceb6ec0fc90681d49a16f6281a9f986b45bdf773304b042acb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotGrindFood-v1/meta/stats.json",
+      "bytes": 19695,
+      "sha256": "312780c943e54141b7ba24b3c5638b3c9b473299df40ec6f23a44bfdad330e57"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotGrindFood-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "34e0dbf2f4abebaccc463718176949321b69c0927b5e8eb0cb5663ef6ff3b0e5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotGrindFood-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 46447102,
+      "sha256": "5e3ed3ed0ee7a5574d9231fdd23cbfb7ee83f850ca8e97dc01a259cf0f7896a5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotLiftLidFromSkillet-v1/.complete",
+      "bytes": 90,
+      "sha256": "674590fbd89030166d231e319a9ff7a4c2023e981037e5cff30d76e0559b26bf"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotLiftLidFromSkillet-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1058844,
+      "sha256": "3e8163fe74c4741e40589d928d9dfc30aaa120424e054d029275bbd0c8f98175"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotLiftLidFromSkillet-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 295686,
+      "sha256": "0935fdb27e63388cc4334ae85197a8dbea45e021efa216adad2d61e55e201004"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotLiftLidFromSkillet-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "d31bdd8524d3ebd217a30f7851feac8e5666fcbd2676642a318faa9eb58cc45d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotLiftLidFromSkillet-v1/meta/stats.json",
+      "bytes": 19627,
+      "sha256": "eb72d264e0fed5f2880fed44753150892dd6abad84a435b838ddce730498fcc8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotLiftLidFromSkillet-v1/meta/tasks.parquet",
+      "bytes": 2150,
+      "sha256": "f00af4df2ad62a847ffdea03f8d1cfd731eee2cab12bce7fdea091b43c7c6317"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotLiftLidFromSkillet-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 24206090,
+      "sha256": "28b7463bca0731a4598a06b0570d252556885309b9c795deb3d561766ae1b144"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickFood-v1/.complete",
+      "bytes": 90,
+      "sha256": "5e2bae55150f1709b2a5372862c9b04211193050d2fee15d6c2f1b26e49039a6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickFood-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2115961,
+      "sha256": "e80418b5fab70b785bcde3171370202af4bb8ad2dea7f7c3326713ba6fb8008f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickFood-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 312631,
+      "sha256": "d1777a75570f207de285e2e902a46348b891416697dac5df5f153fcda6f91476"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickFood-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "954620737d002b956127af814840726afe38bbb873dc6c2a717be0021f611ac0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickFood-v1/meta/stats.json",
+      "bytes": 19682,
+      "sha256": "e2970925e450820d58d5663aedfe56ffb37fe022ef0da1d27b01351b08fd3ce5"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickFood-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "73c04bf8aaf63f18a66794682812891df218c9706dd39fbc1413ea487ee2182e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickFood-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 44676772,
+      "sha256": "776a604074900c3eafca6c3564c1456e18f55c5e7aca93359b5f9edcc920ce13"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickRemoteControl-v1/.complete",
+      "bytes": 90,
+      "sha256": "80f34f9652999374ec4baa846fbeb966da6cecdc76c27c6e47b4495840e0f07a"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickRemoteControl-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1097592,
+      "sha256": "7a4af4dc33318b92659111baac8dda409c92667ce9b52dd1cddca9b658cde335"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickRemoteControl-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303207,
+      "sha256": "725f193515875e639ffa2e0c2bc073bf590076497d69a87838fca092d4d3ab94"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickRemoteControl-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "7954a61b51ff1dcf12b723ff07480871bb7bd9fc0cd892aa8cf767a42054c118"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickRemoteControl-v1/meta/stats.json",
+      "bytes": 19688,
+      "sha256": "f794b06d56356b39331ec3992abc47f03fa656c5751f002f1ee7e2928f3b3171"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickRemoteControl-v1/meta/tasks.parquet",
+      "bytes": 2145,
+      "sha256": "6f035b482691118753498a5cfc3656ef2ef0e6d791027f36a5688c7579653923"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickRemoteControl-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 24676091,
+      "sha256": "09b12f9fcbe3e80827990f98b1c6a92129b63d3eb017945aadb61802b5470d5b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickWash-v1/.complete",
+      "bytes": 90,
+      "sha256": "9d738e945a31cf82435863d536306303a6bbc0c9a91e84a3368e5870e6bf2303"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickWash-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1210418,
+      "sha256": "5f18944b783e3203bda1b3d17cdeb73226d613fddca8d748706971c2077e7cf4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickWash-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303531,
+      "sha256": "4244f8734f735a0c365ac5d4a46f5abe09aa548524d800380a570fe2a986cc5e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickWash-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "fb325512d87fba909a0393683cb6ee0e51b700761fce8f78f20ee822d80f4348"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickWash-v1/meta/stats.json",
+      "bytes": 19664,
+      "sha256": "9ea12a24e50e96477a6ce2f389afd531b71569851f105b9a7dbb9fc09e94a71d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickWash-v1/meta/tasks.parquet",
+      "bytes": 2100,
+      "sha256": "4aeca2a89720c6cfec1407e993139d969979175ecb26cced81110d03a5fb8f8f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPickWash-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 28616666,
+      "sha256": "44d7021b4886d4646d85e36621a66f2831a52fe847c510908ea0a166da830f39"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceBrushRest-v1/.complete",
+      "bytes": 90,
+      "sha256": "b4662a556b79215da85fa75b6269052e4ba87cdb6042d92d595f05c2db8a4030"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceBrushRest-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1897418,
+      "sha256": "e2dd8536383d875f9f982392b4723bafd15976a1900de9f0332b13f4f0142ba4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceBrushRest-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303218,
+      "sha256": "b0b4b26b0e6202e7f4879f0c18ccdc5ab6a5f796a18036767cbdeac15b17a838"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceBrushRest-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "d1842aff0b759e0c4673c181d0d9beedb570f81ef8a3e9f28433f33c6047c89e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceBrushRest-v1/meta/stats.json",
+      "bytes": 19697,
+      "sha256": "1407b3aed5b92383e76b991e330042899196147a49da20af46462f6115651c87"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceBrushRest-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "04ec31d6b310de9385858f63496f4178c15d18066ffd3d10d05eb22965dbbe3e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceBrushRest-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 45461582,
+      "sha256": "a24b98b67eb71dadd8323fe3b367fc16a5a6274f25f35f00b5874089e358e3a8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceChipsRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "944bcad737591d5e7af02a71ecdc302a481c918b0aaf973d40040f6801ea8327"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceChipsRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1438692,
+      "sha256": "da69a14d59d5959b966d2408122573685a480a2b4028a8110ce0665e0750a0ff"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceChipsRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302001,
+      "sha256": "da7673c925506ac781ebf62693f3ab50fbb33e01db2ecb8218defd6f23092964"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceChipsRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "d3d11aff7e395bde19857b20573a8f0a84a27c9f0bb2dfbb77ccfa813e12e653"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceChipsRack-v1/meta/stats.json",
+      "bytes": 19693,
+      "sha256": "0ba0033ac41017a61d9cb6438782d675823fef2a0234327ebb315c8403ae0758"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceChipsRack-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "4fcf1611d6c910b95a6cc8ae8bd8c6c9f77c9dbe685b4e5dc3c2705367b1d052"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceChipsRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 36661469,
+      "sha256": "dfe17c12f1a165935141e1287d9b44c5e512a7b96afeb934ec1eb216c214f8ed"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceClothBasket-v1/.complete",
+      "bytes": 90,
+      "sha256": "c2383adeb8a83c0b5d93618a00303e49d6b5ced1db46b8dc427f6f182483a559"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceClothBasket-v1/data/chunk-000/file-000.parquet",
+      "bytes": 2690268,
+      "sha256": "46da59bbce9970381b1e69702600a623a4e01909038f79cf8185771980440a63"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceClothBasket-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303486,
+      "sha256": "9dd6c7b8c986b9104bd52e9085f343d252df80dfe5e5b1034bda097fbb2a9bc4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceClothBasket-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "0b01087708f3eeb50ec8cff54df8639dc997c12cce4b79d0f9cc3091bcf13732"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceClothBasket-v1/meta/stats.json",
+      "bytes": 19633,
+      "sha256": "2bc11385e09c83feb9c9b190f241406e5ae436a9452bc5a6b3413d5695653f3f"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceClothBasket-v1/meta/tasks.parquet",
+      "bytes": 2140,
+      "sha256": "a0e89c8958868aee316071646831de4f8f9199a1a2718e92cd8e612f7d683759"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceClothBasket-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 65847857,
+      "sha256": "e835628ca727b1a39827d55d46e2ec39bd54162907bce2a5c019e322113bcd96"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFileFolder-v1/.complete",
+      "bytes": 90,
+      "sha256": "9d738e945a31cf82435863d536306303a6bbc0c9a91e84a3368e5870e6bf2303"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFileFolder-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1329462,
+      "sha256": "abc0d019fe542b4aa4c8320660116d34f14c5b46ff76aca9061f3b57d34b6916"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFileFolder-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 303514,
+      "sha256": "2b009c76d39631bb11f35054b556c14f4717f0493fc8dd36ef0d7e4fb4cd992c"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFileFolder-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "722ac720c5db4da12f8fa889214dc693de272beea9e2f88c84c52d1ff5f114f8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFileFolder-v1/meta/stats.json",
+      "bytes": 19656,
+      "sha256": "7060c4e10a3e7d2652a6f778c0850e996651046b1faa0f81bd07136b2f4bf8b0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFileFolder-v1/meta/tasks.parquet",
+      "bytes": 2135,
+      "sha256": "734c2d10b162a92b359e5e83138d677f9a3ce35074a3c082636b9dc381526499"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFileFolder-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 28868082,
+      "sha256": "cbb62374f47b6a42f7fd8b242e7402024ef3cfc5711ee3febb939b021f32e937"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFruitBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "de8fcbdfa458fd207a9b3334410ee7d1ebada1176beb7e412c0e01517f7a5680"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFruitBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1715392,
+      "sha256": "8f993caf9f9ecb97f9ebde1a30446efa5cb1b08aae1d4b7ea204d1fd5d2e0138"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFruitBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302209,
+      "sha256": "3205d748c89e846ce9134cbad7c44acfac0415e8b1f2274dc41ee7daacf1b3cb"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFruitBox-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "3a09591f819cdb51ad9da693fbe31eec40fee98de63b5b2324a2b7a903281759"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFruitBox-v1/meta/stats.json",
+      "bytes": 19675,
+      "sha256": "f5ced1305c91dc4e3052a6ed152156055e865ff0db428d27624049fc4c557a5e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFruitBox-v1/meta/tasks.parquet",
+      "bytes": 2125,
+      "sha256": "2a8c8636ca224358b433a36e4d88b888d8e4a2ae691a1f2a3855eb45c0b2e4a7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceFruitBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 39791904,
+      "sha256": "bea8de315f1aba29be834ec551c1bbdb5491917a58eaa247f05813a577e74598"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMagazineFolder-v1/.complete",
+      "bytes": 90,
+      "sha256": "9d18f586bdb47ce754e16f9995113b62203335ae149280cf547cbfa4f1620b6d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMagazineFolder-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1419104,
+      "sha256": "237fed1ed841b7cff85488f12d765730416886dd793a13f7f2a5c74b3d895c81"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMagazineFolder-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 264913,
+      "sha256": "a78604c2fafa076474e0c75c7fbf7a741fcf93f31cc2c34d28c8104eec98dace"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMagazineFolder-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "2031a41bd3bb67bd4a83c5d601b1d7444fe38bb4728c139d118f45736f2e7722"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMagazineFolder-v1/meta/stats.json",
+      "bytes": 19507,
+      "sha256": "c81864dc4a1446a6a14abbd64915676775e2d6199df4272bda9885c147059c44"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMagazineFolder-v1/meta/tasks.parquet",
+      "bytes": 2155,
+      "sha256": "dd9f474bd2de8b699f8a189d34fc0645cef5d6164d846a59a72276291f4e430b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMagazineFolder-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 30740724,
+      "sha256": "f0686a84a73c3371886633b47acfa2c75999eaa7f19cff1c048a2c8fd072c309"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMugRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "f222c83c308dfcefbe14ade072504e248281042b8990a2a913d58ec1972691d2"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMugRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1077146,
+      "sha256": "77fd2f134838bf9b543907f9ec5d00e75d51dc9759debde4ddd8cd0cda2fc7a3"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMugRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 298062,
+      "sha256": "6bdd3dbb19111d28335bbaa991b37627e76358b7780c7598e736ec34e1abaaf0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMugRack-v1/meta/info.json",
+      "bytes": 3961,
+      "sha256": "ee7ff1f959c3445f19e6a50a2461582a27e873c2a0fa5ca24fff937c134f5213"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMugRack-v1/meta/stats.json",
+      "bytes": 19710,
+      "sha256": "f83b6b3394c9ab2ae284d4e11b5d0e95cb155cd7b59e12c146ad37ef64401ba6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMugRack-v1/meta/tasks.parquet",
+      "bytes": 2120,
+      "sha256": "283137090744b46b4423e47e01240c3d698ff6e68c4c7887b408ff87cb5cf133"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlaceMugRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 22141140,
+      "sha256": "0507c4f94fbdce941410b3f8509dcec2bf18c7f943b38d76e298c30fee472125"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlacePlateRack-v1/.complete",
+      "bytes": 90,
+      "sha256": "730515e5804b36d52c71a14a9e0dd6416241dc4c3c26aea96a70d164a5f19f92"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlacePlateRack-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1228866,
+      "sha256": "94e5ab1cf1a2e6e540c02e3c42f4673c986de94ec8468d07baccc9bce300a30b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlacePlateRack-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 297895,
+      "sha256": "b06debe44f63e4027ef903de2d5b84568951f2591ef52d326d29de7e2bfc2ffc"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlacePlateRack-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "4734bb1c1dba858123054025a05f90c5a54c333cc08caaf6fde85938c93ab893"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlacePlateRack-v1/meta/stats.json",
+      "bytes": 19654,
+      "sha256": "ac154d6b595ae0f00e0c77068b86439ac9769e14bf5988cb6a7b9bd71d47619b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlacePlateRack-v1/meta/tasks.parquet",
+      "bytes": 2130,
+      "sha256": "fb272285d3e72173968206fdbe4e2bc4303420ea4b12e93f194fdd0b453ae1a8"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPlacePlateRack-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 25684982,
+      "sha256": "900fb3aa75e7b50065f0aa98896075080d68b4b8555f4dc09b349e7c1e4cf38b"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPourKettle-v1/.complete",
+      "bytes": 90,
+      "sha256": "f40336cb122cf3f45d86fcf87a5d557b1c35fcc6961a8b4e0b2a4ce1dc610a69"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPourKettle-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1823769,
+      "sha256": "8b943d38615a02ee2189d8629d472e3f9b994c139cc6e82d5c2d7a01e9d80e2e"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPourKettle-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302341,
+      "sha256": "8b01ba8ff3af754dc76fa0b440c6f97021a75dc1cf39cfdc5e72aa7593f7beb6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPourKettle-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "9663f0ee2414a76ad06d541b5f08723444592dce0b8db4e818bb45ad7cc4e8b0"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPourKettle-v1/meta/stats.json",
+      "bytes": 19645,
+      "sha256": "52742313df918dd829257816a0f5ab190163542b915a2fc9a8a4d6cde2a25e63"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPourKettle-v1/meta/tasks.parquet",
+      "bytes": 2110,
+      "sha256": "eed6bee0e1524d152885e7b4ffafc9864de6bf9fddf9771155c82fe662a88370"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotPourKettle-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 39343780,
+      "sha256": "4b35047b01a4b1c8280cc8b1af9e60cd07467a49e1cd8ac4e77ccd0995236545"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotScanMilkBox-v1/.complete",
+      "bytes": 90,
+      "sha256": "2c2c9a374925491438d5b78957999dc4fabf46deee79faf082331bb67c17905d"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotScanMilkBox-v1/data/chunk-000/file-000.parquet",
+      "bytes": 1362659,
+      "sha256": "99011b596b0105d02a4d78124c21323e2268912c118c123bcd2d102e06aae1cf"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotScanMilkBox-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302659,
+      "sha256": "f18e6d130491f88925edc9764196e1b4cd1a57eaca0f73db401a602c02701acf"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotScanMilkBox-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "7cf5144c08d1ee5234b20f431dc9a04ec4536152b070602c15b3c2762e6e8db4"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotScanMilkBox-v1/meta/stats.json",
+      "bytes": 19660,
+      "sha256": "271715047cddb35bd894e4436b530a2863cf5dffbeb552483e13b09fa2e78024"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotScanMilkBox-v1/meta/tasks.parquet",
+      "bytes": 2115,
+      "sha256": "657019206280168c853b70a0806ba1ec5b8f5d2b9fd1b51dba948321cf23e776"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotScanMilkBox-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 27649849,
+      "sha256": "7569ae74b827d1b28726f0597fb0993125b988c0ca5eae2e7aec78953a698fed"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotStirSpoon-v1/.complete",
+      "bytes": 90,
+      "sha256": "2b0d8b0415b96c95e09aca5f5f24264ad9a61a3a39b0d96f674d96eb463550b7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotStirSpoon-v1/data/chunk-000/file-000.parquet",
+      "bytes": 3147372,
+      "sha256": "5fb944318f8c6a44425814a5f90ade58b57c814563a642805cc25c203c4133df"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotStirSpoon-v1/meta/episodes/chunk-000/file-000.parquet",
+      "bytes": 302899,
+      "sha256": "4da77664998b97822784ad6dc0ea65ea4423900f4ddedd03880eb5a212e12060"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotStirSpoon-v1/meta/info.json",
+      "bytes": 3962,
+      "sha256": "65d8661df6a97c049bcb272ac0fe8a54f157ce9d0aa4e66f79f568e7ff66eac6"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotStirSpoon-v1/meta/stats.json",
+      "bytes": 19672,
+      "sha256": "e672cfbde0b152bfc654dd6298c4bcf57767cd1145bb46407d950fb4d18dffe1"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotStirSpoon-v1/meta/tasks.parquet",
+      "bytes": 2105,
+      "sha256": "05cfefb8a6540e7bba682b90fda8c1af3e4ab45a7fd651758d5f5261040f92c7"
+    },
+    {
+      "path": "imitator_sim_v1_zed2i/L3_TwoRobotStirSpoon-v1/videos/observation.images.zed2i/chunk-000/file-000.mp4",
+      "bytes": 65586990,
+      "sha256": "7aca992853c53f86439dc17241024620f7c645bd0d5390217076da734a73fecc"
+    }
+  ]
+}

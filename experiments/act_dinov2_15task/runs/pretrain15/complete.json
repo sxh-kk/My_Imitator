@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "condition": "pretrain15",
+  "checkpoint": "/home/zxc/Imitator/experiments/act_dinov2_15task/runs/pretrain15/checkpoints/final_model.pt",
+  "checkpoint_sha256": "f87b3d45f374bc591b9f7038d9a3a3066211cb9da4bd165a9f18b7842fb1d0e0",
+  "epochs": 100,
+  "iterations": 403800,
+  "optimizer_steps": [
+    403800
+  ],
+  "elapsed_seconds": 78325.13632373099,
+  "peak_gpu_gib": 5.320553302764893,
+  "frames": 1033711,
+  "finished_at": 1791527798.739359
+}

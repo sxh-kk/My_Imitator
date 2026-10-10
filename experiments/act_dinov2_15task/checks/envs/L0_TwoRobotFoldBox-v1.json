@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "env": "L0_TwoRobotFoldBox-v1",
+  "level": "L0",
+  "phase_names": [
+    "close"
+  ],
+  "phase_peaks": {
+    "peak_r_close": [
+      0.0024914564564824104
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

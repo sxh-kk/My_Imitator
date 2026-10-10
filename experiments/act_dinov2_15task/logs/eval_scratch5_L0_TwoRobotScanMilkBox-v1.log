@@ -1,0 +1,57 @@
+
+START 2026-10-09 17:02:46 ['/home/zxc/miniconda3/envs/imitator/bin/python', '/home/zxc/Imitator/experiments/act_dinov2_15task/evaluate.py', '--condition', 'scratch5', '--checkpoint', '/home/zxc/Imitator/experiments/act_dinov2_15task/runs/scratch5/checkpoints/final_model.pt', '--env', 'L0_TwoRobotScanMilkBox-v1', '--out', '/home/zxc/Imitator/experiments/act_dinov2_15task/evaluation/scratch5/L0_TwoRobotScanMilkBox-v1', '--episodes', '10']
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 17:02:49.625299: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-09 17:02:49.634353: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791536569.644421 1550869 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791536569.647674 1550869 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791536569.657075 1550869 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791536569.657095 1550869 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791536569.657098 1550869 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791536569.657101 1550869 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-09 17:02:49.659449: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+🤖 Creating ACTAgent ...
+\n   Building FrozenVideoBackbone (dinov2_vitl14) [Frozen] ...
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+   ACTAgent ready
+   Task encoder:  frozen_backbone (dinov2_vitl14)
+   Input mode:    video_only
+   Total params:  17.21M  |  Trainable: 17.21M
+
+✅ Agent loaded
+   Epoch: 100
+   Total parameters: 17.21M
+✓ Loaded 53 task descriptions
+Loading datasets from config: /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/human_eval.json
+Loading datasets:   0%|          | 0/10 [00:00<?, ?it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H1 with split train[0m
+Loading datasets:  10%|█         | 1/10 [00:00<00:01,  8.51it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H14 with split train[0m
+Loading datasets:  20%|██        | 2/10 [00:00<00:00,  8.90it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H32 with split train[0m
+Loading datasets:  30%|███       | 3/10 [00:00<00:00,  9.07it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H49 with split train[0m
+Loading datasets:  40%|████      | 4/10 [00:00<00:00,  9.14it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H57 with split train[0m
+Loading datasets:  50%|█████     | 5/10 [00:00<00:00,  9.18it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H4 with split train[0m
+Loading datasets:  60%|██████    | 6/10 [00:00<00:00,  9.15it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H13 with split train[0m
+Loading datasets:  70%|███████   | 7/10 [00:00<00:00,  9.16it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H20 with split train[0m
+Loading datasets:  80%|████████  | 8/10 [00:00<00:00,  9.20it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H21 with split train[0m
+Loading datasets:  90%|█████████ | 9/10 [00:00<00:00,  9.22it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H30 with split train[0m
+Loading datasets: 100%|██████████| 10/10 [00:01<00:00,  9.23it/s]Loading datasets: 100%|██████████| 10/10 [00:01<00:00,  9.15it/s]
+✓ Loaded 10 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 10
+  - Cameras: ['zed2i']
+  - Frames per sample: 4
+  - Sampling strategy: uniform_jitter
+  [FrozenVideoBackbone] Loading facebook/dinov2-large (DINOv2 via HF) ...
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+  ✓ DINOv2 facebook/dinov2-large: 304M params loaded
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/utils/_device.py:104: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  return func(*args, **kwargs)
+Eval [video_only]:   0%|          | 0/10 [00:00<?, ?ep/s]Eval [video_only]:  10%|█         | 1/10 [00:20<03:01, 20.19s/ep]Eval [video_only]:  20%|██        | 2/10 [00:29<01:49, 13.72s/ep]Eval [video_only]:  30%|███       | 3/10 [00:38<01:20, 11.51s/ep]Eval [video_only]:  40%|████      | 4/10 [00:47<01:03, 10.54s/ep]Eval [video_only]:  50%|█████     | 5/10 [00:56<00:50, 10.02s/ep]Eval [video_only]:  60%|██████    | 6/10 [01:05<00:38,  9.73s/ep]Eval [video_only]:  70%|███████   | 7/10 [01:14<00:28,  9.50s/ep]Eval [video_only]:  80%|████████  | 8/10 [01:23<00:18,  9.35s/ep]Eval [video_only]:  90%|█████████ | 9/10 [01:33<00:09,  9.42s/ep]Eval [video_only]: 100%|██████████| 10/10 [01:42<00:00,  9.53s/ep]Eval [video_only]: 100%|██████████| 10/10 [01:42<00:00, 10.30s/ep]
+EVALUATION COMPLETE scratch5 L0_TwoRobotScanMilkBox-v1 1.0 1.0

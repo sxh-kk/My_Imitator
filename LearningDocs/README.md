@@ -1,6 +1,6 @@
 # Imitator 源码学习导航
 
-核对日期：2026-10-07。源码目录：`/home/zxc/Imitator/The-Imitator-Game`。
+更新日期：2026-10-10。源码目录：`/home/zxc/Imitator/The-Imitator-Game`。
 核对 commit：`d6d16ec511bc389e0a207692730c137bc022ef14`。
 
 本组文档围绕 **ACT＋冻结 DINOv2-L、human video 条件、双臂仿真、单路 zed2i RGB、qpos 控制** 展开，描述当前代码的实际行为。前三篇记录初次源码梳理；第四篇补充随后完成的真实任务训练、checkpoint 和评估结果。核心代码保持原样，未提出或实现新方法。
@@ -17,6 +17,8 @@
 8. [08_REAL_SAMPLE_WALKTHROUGH.md](08_REAL_SAMPLE_WALKTHROUGH.md)：使用真实训练数据和已有 checkpoint，通过七个交互暂停点查看配对、DINO 缓存、ACT 动作块和 CVAE 训练/推理区别。
 9. [09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md](09_PLACEMUGRACK_LEVEL_EXPERIMENT_PLAN.md)：已执行的 L0/L1/L2 数据覆盖实验；先冻结 A50 测跨级别，再做三组数据 × 三个训练 seed 的固定预算对照，记录动作尺度与左右臂限制。
 10. [10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md](10_PLACEMUGRACK_LEVEL_EXPERIMENT_RESULTS.md)：跨级别实验最终报告；九组训练、6,300条主实验rollout和最终审计均已完成，包含独立测试结果、配对增益、学习曲线、失败阶段及中断恢复后的计时说明。
+11. [11_ACT_DINOV2_15TASK_REPRODUCTION.md](11_ACT_DINOV2_15TASK_REPRODUCTION.md)：已完成的 ACT＋DINOv2 官方 15 任务仿真复现；共享模型、已见／未见评估与少样本对照，明确记录论文和代码参数差异、归一化信息边界、临时 Sub-SR 阈值及 L3 评估修正。
+12. [12_ACT_DINOV2_15TASK_RESULTS.md](12_ACT_DINOV2_15TASK_RESULTS.md)：三个训练条件、800 次正式评估的最终结果与分析；包含少样本微调收益、失败阶段、论文对齐边界，以及 decoder 输出选层的源码和真实 batch 梯度证据。
 
 训练和执行连接如下。训练 batch 中的 `robot_actions` 是监督标签；评估时送入模拟器的是策略预测的动作。
 

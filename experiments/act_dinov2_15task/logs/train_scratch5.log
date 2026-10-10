@@ -1,0 +1,1525 @@
+
+START 2026-10-09 15:38:50 ['/home/zxc/miniconda3/envs/imitator/bin/python', '/home/zxc/Imitator/experiments/act_dinov2_15task/train.py', '--condition', 'scratch5', '--workers', '8']
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:38:52.673353: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-09 15:38:52.682915: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531532.693318 1439051 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531532.696764 1439051 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531532.706527 1439051 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531532.706549 1439051 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531532.706550 1439051 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531532.706552 1439051 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-10-09 15:38:52.708979: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+================================================================================
+🔄 INITIALIZING HUMAN-SIM PAIRED DATASET
+================================================================================
+   Input mode: video_only
+   Include first frame: True
+
+📖 Loading task mapping from: /home/zxc/Imitator/The-Imitator-Game/examples/baselines/lerobot_dataset/task_mapping.json
+   ✓ 53 human task descriptions
+   ✓ 200 sim task descriptions
+
+✓ Mapping loaded:
+  - 53 human tasks: ['human_H1', 'human_H10', 'human_H11', 'human_H12', 'human_H13', 'human_H14', 'human_H15', 'human_H16', 'human_H17', 'human_H18', 'human_H19', 'human_H2', 'human_H20', 'human_H21', 'human_H22', 'human_H23', 'human_H24', 'human_H25', 'human_H26', 'human_H27', 'human_H28', 'human_H29', 'human_H3', 'human_H30', 'human_H31', 'human_H32', 'human_H33', 'human_H34', 'human_H35', 'human_H36', 'human_H37', 'human_H38', 'human_H39', 'human_H4', 'human_H40', 'human_H41', 'human_H42', 'human_H43', 'human_H44', 'human_H45', 'human_H46', 'human_H47', 'human_H48', 'human_H49', 'human_H5', 'human_H50', 'human_H56', 'human_H57', 'human_H58', 'human_H6', 'human_H7', 'human_H8', 'human_H9']
+  - 200 sim tasks: ['L0_TwoRobotCleanCup-v1', 'L0_TwoRobotCleanDesk-v1', 'L0_TwoRobotCutFruit-v1', 'L0_TwoRobotFoldBox-v1', 'L0_TwoRobotFoldTowel-v1', 'L0_TwoRobotGrindFood-v1', 'L0_TwoRobotKnifeBowlFork-v1', 'L0_TwoRobotLiftLidFromSkillet-v1', 'L0_TwoRobotOpenBox-v1', 'L0_TwoRobotOpenLiquidCap-v1', 'L0_TwoRobotPickAppleBananaToBaskets-v1', 'L0_TwoRobotPickAppleBasket-v1', 'L0_TwoRobotPickAppleToScale-v1', 'L0_TwoRobotPickFood-v1', 'L0_TwoRobotPickFruitsToPlate-v1', 'L0_TwoRobotPickPillToRegions-v1', 'L0_TwoRobotPickRemoteControl-v1', 'L0_TwoRobotPickTennisBallGolfBall-v1', 'L0_TwoRobotPickWash-v1', 'L0_TwoRobotPlaceBookBookcase-v1', 'L0_TwoRobotPlaceBrushRest-v1', 'L0_TwoRobotPlaceBurgerTray-v1', 'L0_TwoRobotPlaceChipsRack-v1', 'L0_TwoRobotPlaceClothBasket-v1', 'L0_TwoRobotPlaceCommodityRack-v1', 'L0_TwoRobotPlaceCupPlate-v1', 'L0_TwoRobotPlaceFileFolder-v1', 'L0_TwoRobotPlaceFoodScale-v1', 'L0_TwoRobotPlaceFruitBox-v1', 'L0_TwoRobotPlaceMagazineFolder-v1', 'L0_TwoRobotPlaceMugRack-v1', 'L0_TwoRobotPlacePillBox-v1', 'L0_TwoRobotPlacePlateRack-v1', 'L0_TwoRobotPlaceScrewdriver-v1', 'L0_TwoRobotPlaceShoeBox-v1', 'L0_TwoRobotPourCup-v1', 'L0_TwoRobotPourKetchupFries-v1', 'L0_TwoRobotPourKettle-v1', 'L0_TwoRobotPourLiquidCup-v1', 'L0_TwoRobotPourLiquidFilter-v1', 'L0_TwoRobotPourLiquidMug-v1', 'L0_TwoRobotPressJuicer-v1', 'L0_TwoRobotPressStapler-v1', 'L0_TwoRobotPutBox-v1', 'L0_TwoRobotPutCubeOnScale-v1', 'L0_TwoRobotScanMilkBox-v1', 'L0_TwoRobotScanPillBottle-v1', 'L0_TwoRobotStirSpoon-v1', 'L0_TwoRobotTransFood-v1', 'L0_TwoRobotWipePot-v1', 'L1_TwoRobotCleanCup-v1', 'L1_TwoRobotCleanDesk-v1', 'L1_TwoRobotCutFruit-v1', 'L1_TwoRobotFoldBox-v1', 'L1_TwoRobotFoldTowel-v1', 'L1_TwoRobotGrindFood-v1', 'L1_TwoRobotKnifeBowlFork-v1', 'L1_TwoRobotLiftLidFromSkillet-v1', 'L1_TwoRobotOpenBox-v1', 'L1_TwoRobotOpenLiquidCap-v1', 'L1_TwoRobotPickAppleBananaToBaskets-v1', 'L1_TwoRobotPickAppleBasket-v1', 'L1_TwoRobotPickAppleToScale-v1', 'L1_TwoRobotPickFood-v1', 'L1_TwoRobotPickFruitsToPlate-v1', 'L1_TwoRobotPickPillToRegions-v1', 'L1_TwoRobotPickRemoteControl-v1', 'L1_TwoRobotPickTennisBallGolfBall-v1', 'L1_TwoRobotPickWash-v1', 'L1_TwoRobotPlaceBookBookcase-v1', 'L1_TwoRobotPlaceBrushRest-v1', 'L1_TwoRobotPlaceBurgerTray-v1', 'L1_TwoRobotPlaceChipsRack-v1', 'L1_TwoRobotPlaceClothBasket-v1', 'L1_TwoRobotPlaceCommodityRack-v1', 'L1_TwoRobotPlaceCupPlate-v1', 'L1_TwoRobotPlaceFileFolder-v1', 'L1_TwoRobotPlaceFoodScale-v1', 'L1_TwoRobotPlaceFruitBox-v1', 'L1_TwoRobotPlaceMagazineFolder-v1', 'L1_TwoRobotPlaceMugRack-v1', 'L1_TwoRobotPlacePillBox-v1', 'L1_TwoRobotPlacePlateRack-v1', 'L1_TwoRobotPlaceScrewdriver-v1', 'L1_TwoRobotPlaceShoeBox-v1', 'L1_TwoRobotPourCup-v1', 'L1_TwoRobotPourKetchupFries-v1', 'L1_TwoRobotPourKettle-v1', 'L1_TwoRobotPourLiquidCup-v1', 'L1_TwoRobotPourLiquidFilter-v1', 'L1_TwoRobotPourLiquidMug-v1', 'L1_TwoRobotPressJuicer-v1', 'L1_TwoRobotPressStapler-v1', 'L1_TwoRobotPutBox-v1', 'L1_TwoRobotPutCubeOnScale-v1', 'L1_TwoRobotScanMilkBox-v1', 'L1_TwoRobotScanPillBottle-v1', 'L1_TwoRobotStirSpoon-v1', 'L1_TwoRobotTransFood-v1', 'L1_TwoRobotWipePot-v1', 'L2_TwoRobotCleanCup-v1', 'L2_TwoRobotCleanDesk-v1', 'L2_TwoRobotCutFruit-v1', 'L2_TwoRobotFoldBox-v1', 'L2_TwoRobotFoldTowel-v1', 'L2_TwoRobotGrindFood-v1', 'L2_TwoRobotKnifeBowlFork-v1', 'L2_TwoRobotLiftLidFromSkillet-v1', 'L2_TwoRobotOpenBox-v1', 'L2_TwoRobotOpenLiquidCap-v1', 'L2_TwoRobotPickAppleBananaToBaskets-v1', 'L2_TwoRobotPickAppleBasket-v1', 'L2_TwoRobotPickAppleToScale-v1', 'L2_TwoRobotPickFood-v1', 'L2_TwoRobotPickFruitsToPlate-v1', 'L2_TwoRobotPickPillToRegions-v1', 'L2_TwoRobotPickRemoteControl-v1', 'L2_TwoRobotPickTennisBallGolfBall-v1', 'L2_TwoRobotPickWash-v1', 'L2_TwoRobotPlaceBookBookcase-v1', 'L2_TwoRobotPlaceBrushRest-v1', 'L2_TwoRobotPlaceBurgerTray-v1', 'L2_TwoRobotPlaceChipsRack-v1', 'L2_TwoRobotPlaceClothBasket-v1', 'L2_TwoRobotPlaceCommodityRack-v1', 'L2_TwoRobotPlaceCupPlate-v1', 'L2_TwoRobotPlaceFileFolder-v1', 'L2_TwoRobotPlaceFoodScale-v1', 'L2_TwoRobotPlaceFruitBox-v1', 'L2_TwoRobotPlaceMagazineFolder-v1', 'L2_TwoRobotPlaceMugRack-v1', 'L2_TwoRobotPlacePillBox-v1', 'L2_TwoRobotPlacePlateRack-v1', 'L2_TwoRobotPlaceScrewdriver-v1', 'L2_TwoRobotPlaceShoeBox-v1', 'L2_TwoRobotPourCup-v1', 'L2_TwoRobotPourKetchupFries-v1', 'L2_TwoRobotPourKettle-v1', 'L2_TwoRobotPourLiquidCup-v1', 'L2_TwoRobotPourLiquidFilter-v1', 'L2_TwoRobotPourLiquidMug-v1', 'L2_TwoRobotPressJuicer-v1', 'L2_TwoRobotPressStapler-v1', 'L2_TwoRobotPutBox-v1', 'L2_TwoRobotPutCubeOnScale-v1', 'L2_TwoRobotScanMilkBox-v1', 'L2_TwoRobotScanPillBottle-v1', 'L2_TwoRobotStirSpoon-v1', 'L2_TwoRobotTransFood-v1', 'L2_TwoRobotWipePot-v1', 'L3_TwoRobotCleanCup-v1', 'L3_TwoRobotCleanDesk-v1', 'L3_TwoRobotCutFruit-v1', 'L3_TwoRobotFoldBox-v1', 'L3_TwoRobotFoldTowel-v1', 'L3_TwoRobotGrindFood-v1', 'L3_TwoRobotKnifeBowlFork-v1', 'L3_TwoRobotLiftLidFromSkillet-v1', 'L3_TwoRobotOpenBox-v1', 'L3_TwoRobotOpenLiquidCap-v1', 'L3_TwoRobotPickAppleBananaToBaskets-v1', 'L3_TwoRobotPickAppleBasket-v1', 'L3_TwoRobotPickAppleToScale-v1', 'L3_TwoRobotPickFood-v1', 'L3_TwoRobotPickFruitsToPlate-v1', 'L3_TwoRobotPickPillToRegions-v1', 'L3_TwoRobotPickRemoteControl-v1', 'L3_TwoRobotPickTennisBallGolfBall-v1', 'L3_TwoRobotPickWash-v1', 'L3_TwoRobotPlaceBookBookcase-v1', 'L3_TwoRobotPlaceBrushRest-v1', 'L3_TwoRobotPlaceBurgerTray-v1', 'L3_TwoRobotPlaceChipsRack-v1', 'L3_TwoRobotPlaceClothBasket-v1', 'L3_TwoRobotPlaceCommodityRack-v1', 'L3_TwoRobotPlaceCupPlate-v1', 'L3_TwoRobotPlaceFileFolder-v1', 'L3_TwoRobotPlaceFoodScale-v1', 'L3_TwoRobotPlaceFruitBox-v1', 'L3_TwoRobotPlaceMagazineFolder-v1', 'L3_TwoRobotPlaceMugRack-v1', 'L3_TwoRobotPlacePillBox-v1', 'L3_TwoRobotPlacePlateRack-v1', 'L3_TwoRobotPlaceScrewdriver-v1', 'L3_TwoRobotPlaceShoeBox-v1', 'L3_TwoRobotPourCup-v1', 'L3_TwoRobotPourKetchupFries-v1', 'L3_TwoRobotPourKettle-v1', 'L3_TwoRobotPourLiquidCup-v1', 'L3_TwoRobotPourLiquidFilter-v1', 'L3_TwoRobotPourLiquidMug-v1', 'L3_TwoRobotPressJuicer-v1', 'L3_TwoRobotPressStapler-v1', 'L3_TwoRobotPutBox-v1', 'L3_TwoRobotPutCubeOnScale-v1', 'L3_TwoRobotScanMilkBox-v1', 'L3_TwoRobotScanPillBottle-v1', 'L3_TwoRobotStirSpoon-v1', 'L3_TwoRobotTransFood-v1', 'L3_TwoRobotWipePot-v1']
+
+✓ Filtered human configs: 5 loaded, 0 skipped
+
+✓ Filtered sim configs: 20 loaded, 0 skipped
+
+================================================================================
+🎥 LOADING HUMAN VIDEO DATASET
+================================================================================
+Loading datasets from config: /var/tmp/imitator-game-zxc/tmp/tmpyd8014cn.json
+Loading datasets:   0%|          | 0/5 [00:00<?, ?it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H4 with split train[0m
+Loading datasets:  20%|██        | 1/5 [00:00<00:00,  8.57it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H13 with split train[0m
+Loading datasets:  40%|████      | 2/5 [00:00<00:00,  8.97it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H20 with split train[0m
+Loading datasets:  60%|██████    | 3/5 [00:00<00:00,  8.96it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H21 with split train[0m
+Loading datasets:  80%|████████  | 4/5 [00:00<00:00,  8.94it/s][94mLoading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /var/tmp/imitator-game-zxc/data/imitator_human_v1/human_H30 with split train[0m
+Loading datasets: 100%|██████████| 5/5 [00:00<00:00,  8.80it/s]Loading datasets: 100%|██████████| 5/5 [00:00<00:00,  8.84it/s]
+✓ Loaded 5 unique tasks
+✓ HumanVideoDataset initialized
+  - Tasks: 5
+  - Cameras: ['zed2i']
+  - Frames per sample: 10
+  - Sampling strategy: uniform_jitter
+
+================================================================================
+🤖 LOADING SIM TRAJECTORY DATASET
+================================================================================
+  0%|          | 0/20 [00:00<?, ?it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPickRemoteControl-v1 with split train[0m
+  5%|▌         | 1/20 [00:00<00:01,  9.62it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPickRemoteControl-v1 with split train[0m
+ 10%|█         | 2/20 [00:00<00:01,  9.07it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPickRemoteControl-v1 with split train[0m
+ 15%|█▌        | 3/20 [00:00<00:01,  8.65it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPickRemoteControl-v1 with split train[0m
+ 20%|██        | 4/20 [00:00<00:01,  8.29it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotScanMilkBox-v1 with split train[0m
+ 25%|██▌       | 5/20 [00:00<00:02,  7.00it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotScanMilkBox-v1 with split train[0m
+ 30%|███       | 6/20 [00:00<00:02,  6.05it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotScanMilkBox-v1 with split train[0m
+ 35%|███▌      | 7/20 [00:01<00:02,  5.93it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotScanMilkBox-v1 with split train[0m
+ 40%|████      | 8/20 [00:01<00:01,  6.37it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPourKettle-v1 with split train[0m
+ 45%|████▌     | 9/20 [00:01<00:01,  6.68it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPourKettle-v1 with split train[0m
+ 50%|█████     | 10/20 [00:01<00:01,  7.11it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPourKettle-v1 with split train[0m
+ 55%|█████▌    | 11/20 [00:01<00:01,  7.09it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPourKettle-v1 with split train[0m
+ 60%|██████    | 12/20 [00:01<00:01,  7.04it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotPickFood-v1 with split train[0m
+ 65%|██████▌   | 13/20 [00:01<00:01,  6.65it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotPickFood-v1 with split train[0m
+ 70%|███████   | 14/20 [00:02<00:00,  6.50it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotPickFood-v1 with split train[0m
+ 75%|███████▌  | 15/20 [00:02<00:00,  6.20it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotPickFood-v1 with split train[0m
+ 80%|████████  | 16/20 [00:02<00:00,  6.34it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L0_TwoRobotFoldBox-v1 with split train[0m
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L1_TwoRobotFoldBox-v1 with split train[0m
+ 90%|█████████ | 18/20 [00:02<00:00,  7.80it/s][94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L2_TwoRobotFoldBox-v1 with split train[0m
+[94mloading episodes [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] from /home/zxc/Imitator/experiments/act_dinov2_15task/prepared/sim_rgb/L3_TwoRobotFoldBox-v1 with split train[0m
+100%|██████████| 20/20 [00:02<00:00,  8.86it/s]100%|██████████| 20/20 [00:02<00:00,  7.31it/s]
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+
+================================================================================
+🔗 VALIDATING HUMAN-SIM TASK PAIRINGS
+================================================================================
+
+🔑 Indexing human videos...
+   ✓ human_H4 - 10 episodes
+   ✓ human_H13 - 10 episodes
+   ✓ human_H20 - 10 episodes
+   ✓ human_H21 - 10 episodes
+   ✓ human_H30 - 10 episodes
+
+🔑 Indexing sim trajectories (O(sub-datasets))...
+   L0_TwoRobotPickRemoteControl-v1: 1795 samples
+   L1_TwoRobotPickRemoteControl-v1: 1996 samples
+   L2_TwoRobotPickRemoteControl-v1: 2151 samples
+   L3_TwoRobotPickRemoteControl-v1: 2045 samples
+   L0_TwoRobotScanMilkBox-v1: 4658 samples
+   L1_TwoRobotScanMilkBox-v1: 5076 samples
+   L2_TwoRobotScanMilkBox-v1: 4605 samples
+   L3_TwoRobotScanMilkBox-v1: 2468 samples
+   L0_TwoRobotPourKettle-v1: 2844 samples
+   L1_TwoRobotPourKettle-v1: 2655 samples
+   L2_TwoRobotPourKettle-v1: 3100 samples
+   L3_TwoRobotPourKettle-v1: 3336 samples
+   L0_TwoRobotPickFood-v1: 3886 samples
+   L1_TwoRobotPickFood-v1: 4179 samples
+   L2_TwoRobotPickFood-v1: 4595 samples
+   L3_TwoRobotPickFood-v1: 3787 samples
+   L0_TwoRobotFoldBox-v1: 1830 samples
+   L1_TwoRobotFoldBox-v1: 1860 samples
+   L2_TwoRobotFoldBox-v1: 1870 samples
+   L3_TwoRobotFoldBox-v1: 1510 samples
+
+🔍 Validating pairings...
+
+✅ Successfully paired: 20 task pair(s)
+
+
+================================================================================
+✅ HUMAN-SIM PAIRED DATASET READY
+================================================================================
+📊 Summary:
+   - Total sim samples: 60246
+   - Valid paired samples: 60246
+   - Skipped samples: 0
+   - Valid paired tasks: 20
+   - Input mode: video_only
+   - Include first frame: True
+================================================================================
+
+\n   Building FrozenVideoBackbone (dinov2_vitl14) [Frozen] ...
+
+============================================================
+[FrozenBB] Setting up frozen backbone cache (dinov2_vitl14)
+  Backbone: 0 frozen tensors | Adapter: 525.8K trainable params
+  [RawFeatCache] Cache empty — starting one-time precompute...
+  Backbone: dinov2_vitl14  (will run once per unique task, never again)
+  [Precompute] 5 unique repos (dedup from 60246 training samples)
+  [Precompute] Loader: 5 repos, bs=1, workers=4, batches=5
+
+  [RawFeatCache] Precompute: 5 unique repos, 0 cached, 5 to compute.
+  [FrozenVideoBackbone] Loading facebook/dinov2-large (DINOv2 via HF) ...
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+  ✓ DINOv2 facebook/dinov2-large: 304M params loaded
+  Precomputing backbone raw features:   0%|          | 0/5 [00:00<?, ?it/s]  [RawFeatCache] Flushed 1 entries → /home/zxc/Imitator/experiments/act_dinov2_15task/feature_cache/fewshot5/backbone_dinov2_vitl14/raw_features.pt
+  Precomputing backbone raw features:  20%|██        | 1/5 [00:02<00:08,  2.17s/it]  [RawFeatCache] Flushed 2 entries → /home/zxc/Imitator/experiments/act_dinov2_15task/feature_cache/fewshot5/backbone_dinov2_vitl14/raw_features.pt
+  Precomputing backbone raw features:  40%|████      | 2/5 [00:03<00:05,  1.93s/it]  [RawFeatCache] Flushed 3 entries → /home/zxc/Imitator/experiments/act_dinov2_15task/feature_cache/fewshot5/backbone_dinov2_vitl14/raw_features.pt
+  Precomputing backbone raw features:  60%|██████    | 3/5 [00:05<00:03,  1.85s/it]  [RawFeatCache] Flushed 4 entries → /home/zxc/Imitator/experiments/act_dinov2_15task/feature_cache/fewshot5/backbone_dinov2_vitl14/raw_features.pt
+  Precomputing backbone raw features:  80%|████████  | 4/5 [00:07<00:01,  1.81s/it]  [RawFeatCache] Flushed 5 entries → /home/zxc/Imitator/experiments/act_dinov2_15task/feature_cache/fewshot5/backbone_dinov2_vitl14/raw_features.pt
+  Precomputing backbone raw features: 100%|██████████| 5/5 [00:09<00:00,  1.79s/it]  Precomputing backbone raw features: 100%|██████████| 5/5 [00:09<00:00,  1.84s/it]
+  [RawFeatCache] Done.  5 entries cached → /home/zxc/Imitator/experiments/act_dinov2_15task/feature_cache/fewshot5/backbone_dinov2_vitl14/raw_features.pt
+  [Done] CachedFrozenBackbone ready.
+  Expected per-step cost: ~0.15 ms  (dict lookup + adapter)
+============================================================
+
+   FrozenVideoBackbone: backbone frozen, cache active, adapter trainable.
+  [SkipVideo] skip_human_video=True activated on dataset (5 cache entries cover all tasks).
+  Video decode cost (~50-100 ms/sample) eliminated for training.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+   ACTAgent ready
+   Task encoder:  frozen_backbone (dinov2_vitl14)
+   Input mode:    video_only
+   Total params:  321.58M  |  Trainable: 17.21M
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:39:13.786879: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531553.796234 1440599 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531553.799339 1440599 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531553.807882 1440599 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531553.807893 1440599 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531553.807895 1440599 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531553.807896 1440599 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:39:18.750000: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531558.759423 1440763 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531558.762587 1440763 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531558.771159 1440763 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531558.771170 1440763 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531558.771172 1440763 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531558.771174 1440763 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:39:23.544492: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531563.553900 1440882 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531563.557087 1440882 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531563.565633 1440882 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531563.565643 1440882 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531563.565645 1440882 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531563.565647 1440882 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:39:28.319210: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531568.328543 1441006 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531568.331682 1441006 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531568.340202 1441006 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531568.340213 1441006 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531568.340220 1441006 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531568.340222 1441006 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:39:33.375182: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531573.384435 1441138 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531573.387577 1441138 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531573.396094 1441138 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531573.396105 1441138 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531573.396108 1441138 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531573.396110 1441138 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:39:38.287051: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531578.296372 1441257 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531578.299469 1441257 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531578.307945 1441257 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531578.307955 1441257 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531578.307958 1441257 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531578.307960 1441257 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:39:43.083510: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531583.092800 1441365 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531583.095939 1441365 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531583.104416 1441365 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531583.104428 1441365 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531583.104431 1441365 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531583.104433 1441365 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/zxc/miniconda3/envs/imitator/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-10-09 15:39:48.047248: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1791531588.057056 1441474 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1791531588.060377 1441474 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1791531588.069302 1441474 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531588.069319 1441474 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531588.069322 1441474 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1791531588.069324 1441474 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+TRAIN scratch5 epoch 1 iter 20 loss 81.24699 seconds/step 0
+TRAIN scratch5 epoch 1 iter 40 loss 72.94872 seconds/step 0.1546
+TRAIN scratch5 epoch 1 iter 60 loss 58.4796 seconds/step 0.1407
+TRAIN scratch5 epoch 1 iter 80 loss 42.48315 seconds/step 0.1288
+TRAIN scratch5 epoch 1 iter 100 loss 26.08406 seconds/step 0.1298
+TRAIN scratch5 epoch 1 iter 120 loss 13.05405 seconds/step 0.1542
+TRAIN scratch5 epoch 1 iter 140 loss 6.49934 seconds/step 0.174
+TRAIN scratch5 epoch 1 iter 160 loss 4.29407 seconds/step 0.1781
+TRAIN scratch5 epoch 1 iter 180 loss 3.32791 seconds/step 0.191
+TRAIN scratch5 epoch 1 iter 200 loss 2.79975 seconds/step 0.1839
+TRAIN scratch5 epoch 1 iter 220 loss 2.38543 seconds/step 0.1844
+EPOCH COMPLETE scratch5 {"epoch": 1, "iteration": 236, "seconds": 83.4885772090056, "loss": 30.118617420479403, "l1": 0.5661493994421878, "kl": 2.9552468199724866}
+TRAIN scratch5 epoch 2 iter 240 loss 2.0749 seconds/step 0.206
+TRAIN scratch5 epoch 2 iter 260 loss 1.82162 seconds/step 0.2049
+TRAIN scratch5 epoch 2 iter 280 loss 1.60186 seconds/step 0.209
+TRAIN scratch5 epoch 2 iter 300 loss 1.4183 seconds/step 0.1758
+TRAIN scratch5 epoch 2 iter 320 loss 1.23092 seconds/step 0.1804
+TRAIN scratch5 epoch 2 iter 340 loss 1.06038 seconds/step 0.1773
+TRAIN scratch5 epoch 2 iter 360 loss 0.9143 seconds/step 0.1753
+TRAIN scratch5 epoch 2 iter 380 loss 0.80197 seconds/step 0.1807
+TRAIN scratch5 epoch 2 iter 400 loss 0.6824 seconds/step 0.1797
+TRAIN scratch5 epoch 2 iter 420 loss 0.58969 seconds/step 0.1819
+TRAIN scratch5 epoch 2 iter 440 loss 0.51959 seconds/step 0.1715
+TRAIN scratch5 epoch 2 iter 460 loss 0.45371 seconds/step 0.1747
+EPOCH COMPLETE scratch5 {"epoch": 2, "iteration": 472, "seconds": 43.185334667010466, "loss": 1.061889956563206, "l1": 0.24163100596959308, "kl": 0.08202589501358443}
+TRAIN scratch5 epoch 3 iter 480 loss 0.40555 seconds/step 0.2024
+TRAIN scratch5 epoch 3 iter 500 loss 0.35833 seconds/step 0.2041
+TRAIN scratch5 epoch 3 iter 520 loss 0.32725 seconds/step 0.2112
+TRAIN scratch5 epoch 3 iter 540 loss 0.30032 seconds/step 0.1813
+TRAIN scratch5 epoch 3 iter 560 loss 0.27344 seconds/step 0.1766
+TRAIN scratch5 epoch 3 iter 580 loss 0.25636 seconds/step 0.1821
+TRAIN scratch5 epoch 3 iter 600 loss 0.23985 seconds/step 0.1811
+TRAIN scratch5 epoch 3 iter 620 loss 0.22972 seconds/step 0.1844
+TRAIN scratch5 epoch 3 iter 640 loss 0.21878 seconds/step 0.1765
+TRAIN scratch5 epoch 3 iter 660 loss 0.20733 seconds/step 0.1907
+TRAIN scratch5 epoch 3 iter 680 loss 0.20035 seconds/step 0.1813
+TRAIN scratch5 epoch 3 iter 700 loss 0.19948 seconds/step 0.1871
+EPOCH COMPLETE scratch5 {"epoch": 3, "iteration": 708, "seconds": 43.87303830101155, "loss": 0.265926947154231, "l1": 0.19015272239507255, "kl": 0.007577422466642081}
+TRAIN scratch5 epoch 4 iter 720 loss 0.19363 seconds/step 0.2152
+TRAIN scratch5 epoch 4 iter 740 loss 0.18487 seconds/step 0.2196
+TRAIN scratch5 epoch 4 iter 760 loss 0.18845 seconds/step 0.1795
+TRAIN scratch5 epoch 4 iter 780 loss 0.18423 seconds/step 0.1809
+TRAIN scratch5 epoch 4 iter 800 loss 0.17432 seconds/step 0.1773
+TRAIN scratch5 epoch 4 iter 820 loss 0.17619 seconds/step 0.1796
+TRAIN scratch5 epoch 4 iter 840 loss 0.17578 seconds/step 0.1733
+TRAIN scratch5 epoch 4 iter 860 loss 0.17042 seconds/step 0.1891
+TRAIN scratch5 epoch 4 iter 880 loss 0.17193 seconds/step 0.1887
+TRAIN scratch5 epoch 4 iter 900 loss 0.16746 seconds/step 0.1848
+TRAIN scratch5 epoch 4 iter 920 loss 0.16574 seconds/step 0.1825
+TRAIN scratch5 epoch 4 iter 940 loss 0.16523 seconds/step 0.1638
+EPOCH COMPLETE scratch5 {"epoch": 4, "iteration": 944, "seconds": 44.013169563986594, "loss": 0.1761354526220742, "l1": 0.1630397524874089, "kl": 0.001309570024713432}
+TRAIN scratch5 epoch 5 iter 960 loss 0.16332 seconds/step 0.2009
+TRAIN scratch5 epoch 5 iter 980 loss 0.15785 seconds/step 0.1979
+TRAIN scratch5 epoch 5 iter 1000 loss 0.1584 seconds/step 0.1718
+TRAIN scratch5 epoch 5 iter 1020 loss 0.14794 seconds/step 0.1771
+TRAIN scratch5 epoch 5 iter 1040 loss 0.14641 seconds/step 0.1787
+TRAIN scratch5 epoch 5 iter 1060 loss 0.15207 seconds/step 0.174
+TRAIN scratch5 epoch 5 iter 1080 loss 0.14805 seconds/step 0.1802
+TRAIN scratch5 epoch 5 iter 1100 loss 0.14964 seconds/step 0.1765
+TRAIN scratch5 epoch 5 iter 1120 loss 0.14452 seconds/step 0.1729
+TRAIN scratch5 epoch 5 iter 1140 loss 0.14622 seconds/step 0.1813
+TRAIN scratch5 epoch 5 iter 1160 loss 0.14544 seconds/step 0.1769
+TRAIN scratch5 epoch 5 iter 1180 loss 0.14437 seconds/step 0.1703
+EPOCH COMPLETE scratch5 {"epoch": 5, "iteration": 1180, "seconds": 43.428395144001115, "loss": 0.15143678918228312, "l1": 0.14344451229198504, "kl": 0.0007992276502082566}
+TRAIN scratch5 epoch 6 iter 1200 loss 0.13878 seconds/step 0.2158
+TRAIN scratch5 epoch 6 iter 1220 loss 0.13619 seconds/step 0.2076
+TRAIN scratch5 epoch 6 iter 1240 loss 0.13186 seconds/step 0.1763
+TRAIN scratch5 epoch 6 iter 1260 loss 0.1369 seconds/step 0.176
+TRAIN scratch5 epoch 6 iter 1280 loss 0.12904 seconds/step 0.1849
+TRAIN scratch5 epoch 6 iter 1300 loss 0.13197 seconds/step 0.1832
+TRAIN scratch5 epoch 6 iter 1320 loss 0.13026 seconds/step 0.1765
+TRAIN scratch5 epoch 6 iter 1340 loss 0.12711 seconds/step 0.1839
+TRAIN scratch5 epoch 6 iter 1360 loss 0.12817 seconds/step 0.1814
+TRAIN scratch5 epoch 6 iter 1380 loss 0.13097 seconds/step 0.1911
+TRAIN scratch5 epoch 6 iter 1400 loss 0.12583 seconds/step 0.1829
+EPOCH COMPLETE scratch5 {"epoch": 6, "iteration": 1416, "seconds": 44.720236327004386, "loss": 0.13373784411509157, "l1": 0.12796393014743165, "kl": 0.0005773913746174835}
+TRAIN scratch5 epoch 7 iter 1420 loss 0.12506 seconds/step 0.2163
+TRAIN scratch5 epoch 7 iter 1440 loss 0.12791 seconds/step 0.2193
+TRAIN scratch5 epoch 7 iter 1460 loss 0.12246 seconds/step 0.2224
+TRAIN scratch5 epoch 7 iter 1480 loss 0.12252 seconds/step 0.1849
+TRAIN scratch5 epoch 7 iter 1500 loss 0.12073 seconds/step 0.1857
+TRAIN scratch5 epoch 7 iter 1520 loss 0.12169 seconds/step 0.1826
+TRAIN scratch5 epoch 7 iter 1540 loss 0.12014 seconds/step 0.1815
+TRAIN scratch5 epoch 7 iter 1560 loss 0.11519 seconds/step 0.1854
+TRAIN scratch5 epoch 7 iter 1580 loss 0.11733 seconds/step 0.1847
+TRAIN scratch5 epoch 7 iter 1600 loss 0.11843 seconds/step 0.1837
+TRAIN scratch5 epoch 7 iter 1620 loss 0.11769 seconds/step 0.1891
+TRAIN scratch5 epoch 7 iter 1640 loss 0.11515 seconds/step 0.1859
+EPOCH COMPLETE scratch5 {"epoch": 7, "iteration": 1652, "seconds": 45.328008554002736, "loss": 0.12036055932610722, "l1": 0.11561987025000281, "kl": 0.00047406891838872365}
+TRAIN scratch5 epoch 8 iter 1660 loss 0.11473 seconds/step 0.2105
+TRAIN scratch5 epoch 8 iter 1680 loss 0.11541 seconds/step 0.2169
+TRAIN scratch5 epoch 8 iter 1700 loss 0.11714 seconds/step 0.2173
+TRAIN scratch5 epoch 8 iter 1720 loss 0.10773 seconds/step 0.1751
+TRAIN scratch5 epoch 8 iter 1740 loss 0.1074 seconds/step 0.1745
+TRAIN scratch5 epoch 8 iter 1760 loss 0.11024 seconds/step 0.1753
+TRAIN scratch5 epoch 8 iter 1780 loss 0.10728 seconds/step 0.1763
+TRAIN scratch5 epoch 8 iter 1800 loss 0.11 seconds/step 0.1767
+TRAIN scratch5 epoch 8 iter 1820 loss 0.10211 seconds/step 0.1801
+TRAIN scratch5 epoch 8 iter 1840 loss 0.10514 seconds/step 0.1824
+TRAIN scratch5 epoch 8 iter 1860 loss 0.10913 seconds/step 0.1823
+TRAIN scratch5 epoch 8 iter 1880 loss 0.1037 seconds/step 0.177
+EPOCH COMPLETE scratch5 {"epoch": 8, "iteration": 1888, "seconds": 43.73407290701289, "loss": 0.10966856319899276, "l1": 0.10580777657865467, "kl": 0.0003860786764870666}
+TRAIN scratch5 epoch 9 iter 1900 loss 0.1073 seconds/step 0.213
+TRAIN scratch5 epoch 9 iter 1920 loss 0.10749 seconds/step 0.2094
+TRAIN scratch5 epoch 9 iter 1940 loss 0.09978 seconds/step 0.1831
+TRAIN scratch5 epoch 9 iter 1960 loss 0.10442 seconds/step 0.1838
+TRAIN scratch5 epoch 9 iter 1980 loss 0.10143 seconds/step 0.1827
+TRAIN scratch5 epoch 9 iter 2000 loss 0.10208 seconds/step 0.18
+TRAIN scratch5 epoch 9 iter 2020 loss 0.09675 seconds/step 0.1781
+TRAIN scratch5 epoch 9 iter 2040 loss 0.10071 seconds/step 0.1792
+TRAIN scratch5 epoch 9 iter 2060 loss 0.10039 seconds/step 0.1814
+TRAIN scratch5 epoch 9 iter 2080 loss 0.09808 seconds/step 0.1788
+TRAIN scratch5 epoch 9 iter 2100 loss 0.09653 seconds/step 0.1794
+TRAIN scratch5 epoch 9 iter 2120 loss 0.09601 seconds/step 0.1732
+EPOCH COMPLETE scratch5 {"epoch": 9, "iteration": 2124, "seconds": 44.20712050999282, "loss": 0.10132428365996328, "l1": 0.09774256863836515, "kl": 0.00035817150748729455}
+TRAIN scratch5 epoch 10 iter 2140 loss 0.0933 seconds/step 0.21
+TRAIN scratch5 epoch 10 iter 2160 loss 0.09682 seconds/step 0.2187
+TRAIN scratch5 epoch 10 iter 2180 loss 0.09528 seconds/step 0.1829
+TRAIN scratch5 epoch 10 iter 2200 loss 0.09304 seconds/step 0.1791
+TRAIN scratch5 epoch 10 iter 2220 loss 0.09418 seconds/step 0.1799
+TRAIN scratch5 epoch 10 iter 2240 loss 0.09472 seconds/step 0.1816
+TRAIN scratch5 epoch 10 iter 2260 loss 0.09502 seconds/step 0.1921
+TRAIN scratch5 epoch 10 iter 2280 loss 0.09196 seconds/step 0.1864
+TRAIN scratch5 epoch 10 iter 2300 loss 0.09154 seconds/step 0.19
+TRAIN scratch5 epoch 10 iter 2320 loss 0.0936 seconds/step 0.1974
+TRAIN scratch5 epoch 10 iter 2340 loss 0.09449 seconds/step 0.1987
+TRAIN scratch5 epoch 10 iter 2360 loss 0.09642 seconds/step 0.1745
+EPOCH COMPLETE scratch5 {"epoch": 10, "iteration": 2360, "seconds": 45.56263292999938, "loss": 0.09417027983246214, "l1": 0.09108440855802116, "kl": 0.0003085871058382031}
+TRAIN scratch5 epoch 11 iter 2380 loss 0.09217 seconds/step 0.2226
+TRAIN scratch5 epoch 11 iter 2400 loss 0.09215 seconds/step 0.2177
+TRAIN scratch5 epoch 11 iter 2420 loss 0.09124 seconds/step 0.1798
+TRAIN scratch5 epoch 11 iter 2440 loss 0.08877 seconds/step 0.1785
+TRAIN scratch5 epoch 11 iter 2460 loss 0.09045 seconds/step 0.1744
+TRAIN scratch5 epoch 11 iter 2480 loss 0.08854 seconds/step 0.1864
+TRAIN scratch5 epoch 11 iter 2500 loss 0.0922 seconds/step 0.1795
+TRAIN scratch5 epoch 11 iter 2520 loss 0.08942 seconds/step 0.1804
+TRAIN scratch5 epoch 11 iter 2540 loss 0.08471 seconds/step 0.1829
+TRAIN scratch5 epoch 11 iter 2560 loss 0.08702 seconds/step 0.1766
+TRAIN scratch5 epoch 11 iter 2580 loss 0.08983 seconds/step 0.1855
+EPOCH COMPLETE scratch5 {"epoch": 11, "iteration": 2596, "seconds": 44.39817359499284, "loss": 0.08887137447373342, "l1": 0.08488563830190796, "kl": 0.00039857359013818126}
+TRAIN scratch5 epoch 12 iter 2600 loss 0.08701 seconds/step 0.216
+TRAIN scratch5 epoch 12 iter 2620 loss 0.08578 seconds/step 0.2159
+TRAIN scratch5 epoch 12 iter 2640 loss 0.08481 seconds/step 0.2211
+TRAIN scratch5 epoch 12 iter 2660 loss 0.08193 seconds/step 0.1779
+TRAIN scratch5 epoch 12 iter 2680 loss 0.08723 seconds/step 0.1771
+TRAIN scratch5 epoch 12 iter 2700 loss 0.08457 seconds/step 0.1799
+TRAIN scratch5 epoch 12 iter 2720 loss 0.08383 seconds/step 0.1834
+TRAIN scratch5 epoch 12 iter 2740 loss 0.08229 seconds/step 0.1823
+TRAIN scratch5 epoch 12 iter 2760 loss 0.08422 seconds/step 0.18
+TRAIN scratch5 epoch 12 iter 2780 loss 0.08392 seconds/step 0.182
+TRAIN scratch5 epoch 12 iter 2800 loss 0.08104 seconds/step 0.1869
+TRAIN scratch5 epoch 12 iter 2820 loss 0.08352 seconds/step 0.1762
+EPOCH COMPLETE scratch5 {"epoch": 12, "iteration": 2832, "seconds": 44.140429079998285, "loss": 0.08351503442025791, "l1": 0.08096755198124102, "kl": 0.00025474825273149535}
+TRAIN scratch5 epoch 13 iter 2840 loss 0.08779 seconds/step 0.2044
+TRAIN scratch5 epoch 13 iter 2860 loss 0.07942 seconds/step 0.2159
+TRAIN scratch5 epoch 13 iter 2880 loss 0.08236 seconds/step 0.2313
+TRAIN scratch5 epoch 13 iter 2900 loss 0.08294 seconds/step 0.191
+TRAIN scratch5 epoch 13 iter 2920 loss 0.08012 seconds/step 0.1865
+TRAIN scratch5 epoch 13 iter 2940 loss 0.08134 seconds/step 0.1805
+TRAIN scratch5 epoch 13 iter 2960 loss 0.07847 seconds/step 0.181
+TRAIN scratch5 epoch 13 iter 2980 loss 0.07824 seconds/step 0.1809
+TRAIN scratch5 epoch 13 iter 3000 loss 0.0777 seconds/step 0.1835
+TRAIN scratch5 epoch 13 iter 3020 loss 0.07921 seconds/step 0.1872
+TRAIN scratch5 epoch 13 iter 3040 loss 0.07929 seconds/step 0.1851
+TRAIN scratch5 epoch 13 iter 3060 loss 0.07568 seconds/step 0.1833
+EPOCH COMPLETE scratch5 {"epoch": 13, "iteration": 3068, "seconds": 45.680771028011804, "loss": 0.07942457980144832, "l1": 0.07654476418333539, "kl": 0.000287981572910212}
+TRAIN scratch5 epoch 14 iter 3080 loss 0.07846 seconds/step 0.2191
+TRAIN scratch5 epoch 14 iter 3100 loss 0.07417 seconds/step 0.2149
+TRAIN scratch5 epoch 14 iter 3120 loss 0.07491 seconds/step 0.1817
+TRAIN scratch5 epoch 14 iter 3140 loss 0.07747 seconds/step 0.1776
+TRAIN scratch5 epoch 14 iter 3160 loss 0.07252 seconds/step 0.1804
+TRAIN scratch5 epoch 14 iter 3180 loss 0.0751 seconds/step 0.1799
+TRAIN scratch5 epoch 14 iter 3200 loss 0.07279 seconds/step 0.1809
+TRAIN scratch5 epoch 14 iter 3220 loss 0.07505 seconds/step 0.1844
+TRAIN scratch5 epoch 14 iter 3240 loss 0.07412 seconds/step 0.1857
+TRAIN scratch5 epoch 14 iter 3260 loss 0.07566 seconds/step 0.1834
+TRAIN scratch5 epoch 14 iter 3280 loss 0.07424 seconds/step 0.1952
+TRAIN scratch5 epoch 14 iter 3300 loss 0.07349 seconds/step 0.1778
+EPOCH COMPLETE scratch5 {"epoch": 14, "iteration": 3304, "seconds": 44.73921609201352, "loss": 0.07564303076873391, "l1": 0.07325507956162347, "kl": 0.0002387951468428305}
+TRAIN scratch5 epoch 15 iter 3320 loss 0.07548 seconds/step 0.2162
+TRAIN scratch5 epoch 15 iter 3340 loss 0.07296 seconds/step 0.2124
+TRAIN scratch5 epoch 15 iter 3360 loss 0.07295 seconds/step 0.1815
+TRAIN scratch5 epoch 15 iter 3380 loss 0.07431 seconds/step 0.1821
+TRAIN scratch5 epoch 15 iter 3400 loss 0.07583 seconds/step 0.1871
+TRAIN scratch5 epoch 15 iter 3420 loss 0.07343 seconds/step 0.1897
+TRAIN scratch5 epoch 15 iter 3440 loss 0.07204 seconds/step 0.1855
+TRAIN scratch5 epoch 15 iter 3460 loss 0.07196 seconds/step 0.201
+TRAIN scratch5 epoch 15 iter 3480 loss 0.07164 seconds/step 0.1934
+TRAIN scratch5 epoch 15 iter 3500 loss 0.07303 seconds/step 0.1874
+TRAIN scratch5 epoch 15 iter 3520 loss 0.07049 seconds/step 0.1872
+TRAIN scratch5 epoch 15 iter 3540 loss 0.07056 seconds/step 0.1741
+EPOCH COMPLETE scratch5 {"epoch": 15, "iteration": 3540, "seconds": 45.837144239019835, "loss": 0.0725432952581826, "l1": 0.0701151707730556, "kl": 0.00024281245998158198}
+TRAIN scratch5 epoch 16 iter 3560 loss 0.06875 seconds/step 0.2189
+TRAIN scratch5 epoch 16 iter 3580 loss 0.07208 seconds/step 0.2143
+TRAIN scratch5 epoch 16 iter 3600 loss 0.06994 seconds/step 0.1915
+TRAIN scratch5 epoch 16 iter 3620 loss 0.06916 seconds/step 0.1875
+TRAIN scratch5 epoch 16 iter 3640 loss 0.06835 seconds/step 0.1901
+TRAIN scratch5 epoch 16 iter 3660 loss 0.06996 seconds/step 0.1915
+TRAIN scratch5 epoch 16 iter 3680 loss 0.07073 seconds/step 0.1884
+TRAIN scratch5 epoch 16 iter 3700 loss 0.07226 seconds/step 0.1811
+TRAIN scratch5 epoch 16 iter 3720 loss 0.06789 seconds/step 0.1808
+TRAIN scratch5 epoch 16 iter 3740 loss 0.06927 seconds/step 0.1835
+TRAIN scratch5 epoch 16 iter 3760 loss 0.07087 seconds/step 0.1854
+EPOCH COMPLETE scratch5 {"epoch": 16, "iteration": 3776, "seconds": 45.12215335201472, "loss": 0.0700459846500623, "l1": 0.06774164101708743, "kl": 0.00023043435103934794}
+TRAIN scratch5 epoch 17 iter 3780 loss 0.06827 seconds/step 0.2114
+TRAIN scratch5 epoch 17 iter 3800 loss 0.06698 seconds/step 0.2084
+TRAIN scratch5 epoch 17 iter 3820 loss 0.06757 seconds/step 0.2196
+TRAIN scratch5 epoch 17 iter 3840 loss 0.07041 seconds/step 0.1839
+TRAIN scratch5 epoch 17 iter 3860 loss 0.0672 seconds/step 0.1823
+TRAIN scratch5 epoch 17 iter 3880 loss 0.0689 seconds/step 0.1846
+TRAIN scratch5 epoch 17 iter 3900 loss 0.07106 seconds/step 0.1885
+TRAIN scratch5 epoch 17 iter 3920 loss 0.068 seconds/step 0.1913
+TRAIN scratch5 epoch 17 iter 3940 loss 0.07194 seconds/step 0.1815
+TRAIN scratch5 epoch 17 iter 3960 loss 0.06661 seconds/step 0.1806
+TRAIN scratch5 epoch 17 iter 3980 loss 0.06569 seconds/step 0.1805
+TRAIN scratch5 epoch 17 iter 4000 loss 0.06728 seconds/step 0.1875
+EPOCH COMPLETE scratch5 {"epoch": 17, "iteration": 4012, "seconds": 44.94620671600569, "loss": 0.06800132929899935, "l1": 0.065650899089494, "kl": 0.00023504299296892912}
+TRAIN scratch5 epoch 18 iter 4020 loss 0.06515 seconds/step 0.2146
+TRAIN scratch5 epoch 18 iter 4040 loss 0.06623 seconds/step 0.2172
+TRAIN scratch5 epoch 18 iter 4060 loss 0.06543 seconds/step 0.2203
+TRAIN scratch5 epoch 18 iter 4080 loss 0.06638 seconds/step 0.1882
+TRAIN scratch5 epoch 18 iter 4100 loss 0.065 seconds/step 0.1802
+TRAIN scratch5 epoch 18 iter 4120 loss 0.06571 seconds/step 0.1848
+TRAIN scratch5 epoch 18 iter 4140 loss 0.06313 seconds/step 0.1841
+TRAIN scratch5 epoch 18 iter 4160 loss 0.06553 seconds/step 0.1912
+TRAIN scratch5 epoch 18 iter 4180 loss 0.06581 seconds/step 0.1924
+TRAIN scratch5 epoch 18 iter 4200 loss 0.0646 seconds/step 0.1873
+TRAIN scratch5 epoch 18 iter 4220 loss 0.06775 seconds/step 0.1853
+TRAIN scratch5 epoch 18 iter 4240 loss 0.06539 seconds/step 0.1882
+EPOCH COMPLETE scratch5 {"epoch": 18, "iteration": 4248, "seconds": 45.43772282198188, "loss": 0.06600246949405489, "l1": 0.06410437132531809, "kl": 0.00018980982682570988}
+TRAIN scratch5 epoch 19 iter 4260 loss 0.06745 seconds/step 0.2188
+TRAIN scratch5 epoch 19 iter 4280 loss 0.06289 seconds/step 0.2193
+TRAIN scratch5 epoch 19 iter 4300 loss 0.06294 seconds/step 0.1895
+TRAIN scratch5 epoch 19 iter 4320 loss 0.06544 seconds/step 0.1882
+TRAIN scratch5 epoch 19 iter 4340 loss 0.06123 seconds/step 0.1881
+TRAIN scratch5 epoch 19 iter 4360 loss 0.06137 seconds/step 0.1844
+TRAIN scratch5 epoch 19 iter 4380 loss 0.06317 seconds/step 0.1841
+TRAIN scratch5 epoch 19 iter 4400 loss 0.0646 seconds/step 0.1844
+TRAIN scratch5 epoch 19 iter 4420 loss 0.06435 seconds/step 0.186
+TRAIN scratch5 epoch 19 iter 4440 loss 0.06537 seconds/step 0.1868
+TRAIN scratch5 epoch 19 iter 4460 loss 0.06316 seconds/step 0.1791
+TRAIN scratch5 epoch 19 iter 4480 loss 0.06149 seconds/step 0.1793
+EPOCH COMPLETE scratch5 {"epoch": 19, "iteration": 4484, "seconds": 45.229314805998, "loss": 0.06379567519209142, "l1": 0.06194350813215567, "kl": 0.0001852167297329288}
+TRAIN scratch5 epoch 20 iter 4500 loss 0.06019 seconds/step 0.2118
+TRAIN scratch5 epoch 20 iter 4520 loss 0.06211 seconds/step 0.2112
+TRAIN scratch5 epoch 20 iter 4540 loss 0.06354 seconds/step 0.1853
+TRAIN scratch5 epoch 20 iter 4560 loss 0.06183 seconds/step 0.1866
+TRAIN scratch5 epoch 20 iter 4580 loss 0.06614 seconds/step 0.1874
+TRAIN scratch5 epoch 20 iter 4600 loss 0.06188 seconds/step 0.191
+TRAIN scratch5 epoch 20 iter 4620 loss 0.063 seconds/step 0.1883
+TRAIN scratch5 epoch 20 iter 4640 loss 0.06322 seconds/step 0.1953
+TRAIN scratch5 epoch 20 iter 4660 loss 0.06093 seconds/step 0.1798
+TRAIN scratch5 epoch 20 iter 4680 loss 0.06117 seconds/step 0.1919
+TRAIN scratch5 epoch 20 iter 4700 loss 0.06161 seconds/step 0.1853
+TRAIN scratch5 epoch 20 iter 4720 loss 0.06065 seconds/step 0.178
+EPOCH COMPLETE scratch5 {"epoch": 20, "iteration": 4720, "seconds": 45.14992475201143, "loss": 0.06239576525670492, "l1": 0.060557767133212696, "kl": 0.00018379981899624138}
+TRAIN scratch5 epoch 21 iter 4740 loss 0.05947 seconds/step 0.2123
+TRAIN scratch5 epoch 21 iter 4760 loss 0.06125 seconds/step 0.2155
+TRAIN scratch5 epoch 21 iter 4780 loss 0.05794 seconds/step 0.1849
+TRAIN scratch5 epoch 21 iter 4800 loss 0.06243 seconds/step 0.1795
+TRAIN scratch5 epoch 21 iter 4820 loss 0.06035 seconds/step 0.1836
+TRAIN scratch5 epoch 21 iter 4840 loss 0.06046 seconds/step 0.183
+TRAIN scratch5 epoch 21 iter 4860 loss 0.06202 seconds/step 0.187
+TRAIN scratch5 epoch 21 iter 4880 loss 0.06217 seconds/step 0.186
+TRAIN scratch5 epoch 21 iter 4900 loss 0.06097 seconds/step 0.1825
+TRAIN scratch5 epoch 21 iter 4920 loss 0.05999 seconds/step 0.1834
+TRAIN scratch5 epoch 21 iter 4940 loss 0.06202 seconds/step 0.1821
+EPOCH COMPLETE scratch5 {"epoch": 21, "iteration": 4956, "seconds": 44.96020641800715, "loss": 0.06106144243504031, "l1": 0.059252574487384094, "kl": 0.00018088679921752143}
+TRAIN scratch5 epoch 22 iter 4960 loss 0.06126 seconds/step 0.2183
+TRAIN scratch5 epoch 22 iter 4980 loss 0.06064 seconds/step 0.2101
+TRAIN scratch5 epoch 22 iter 5000 loss 0.06058 seconds/step 0.2131
+TRAIN scratch5 epoch 22 iter 5020 loss 0.0603 seconds/step 0.1775
+TRAIN scratch5 epoch 22 iter 5040 loss 0.05718 seconds/step 0.1825
+TRAIN scratch5 epoch 22 iter 5060 loss 0.05905 seconds/step 0.1827
+TRAIN scratch5 epoch 22 iter 5080 loss 0.06074 seconds/step 0.1843
+TRAIN scratch5 epoch 22 iter 5100 loss 0.05776 seconds/step 0.1843
+TRAIN scratch5 epoch 22 iter 5120 loss 0.0549 seconds/step 0.1895
+TRAIN scratch5 epoch 22 iter 5140 loss 0.06118 seconds/step 0.1853
+TRAIN scratch5 epoch 22 iter 5160 loss 0.06133 seconds/step 0.1928
+TRAIN scratch5 epoch 22 iter 5180 loss 0.05911 seconds/step 0.1826
+EPOCH COMPLETE scratch5 {"epoch": 22, "iteration": 5192, "seconds": 44.34152505500242, "loss": 0.05952310832059485, "l1": 0.05794203039890124, "kl": 0.0001581077949440904}
+TRAIN scratch5 epoch 23 iter 5200 loss 0.05936 seconds/step 0.2067
+TRAIN scratch5 epoch 23 iter 5220 loss 0.05924 seconds/step 0.2072
+TRAIN scratch5 epoch 23 iter 5240 loss 0.05944 seconds/step 0.2198
+TRAIN scratch5 epoch 23 iter 5260 loss 0.05856 seconds/step 0.1812
+TRAIN scratch5 epoch 23 iter 5280 loss 0.05551 seconds/step 0.1782
+TRAIN scratch5 epoch 23 iter 5300 loss 0.05636 seconds/step 0.18
+TRAIN scratch5 epoch 23 iter 5320 loss 0.05649 seconds/step 0.1825
+TRAIN scratch5 epoch 23 iter 5340 loss 0.0592 seconds/step 0.1858
+TRAIN scratch5 epoch 23 iter 5360 loss 0.05776 seconds/step 0.1822
+TRAIN scratch5 epoch 23 iter 5380 loss 0.0566 seconds/step 0.1855
+TRAIN scratch5 epoch 23 iter 5400 loss 0.05832 seconds/step 0.1741
+TRAIN scratch5 epoch 23 iter 5420 loss 0.05799 seconds/step 0.176
+EPOCH COMPLETE scratch5 {"epoch": 23, "iteration": 5428, "seconds": 43.846978015004424, "loss": 0.05817705403887114, "l1": 0.05657858785115561, "kl": 0.00015984663098036328}
+TRAIN scratch5 epoch 24 iter 5440 loss 0.05876 seconds/step 0.2791
+TRAIN scratch5 epoch 24 iter 5460 loss 0.05799 seconds/step 0.274
+TRAIN scratch5 epoch 24 iter 5480 loss 0.05531 seconds/step 0.1803
+TRAIN scratch5 epoch 24 iter 5500 loss 0.05708 seconds/step 0.1825
+TRAIN scratch5 epoch 24 iter 5520 loss 0.05581 seconds/step 0.1856
+TRAIN scratch5 epoch 24 iter 5540 loss 0.05769 seconds/step 0.1837
+TRAIN scratch5 epoch 24 iter 5560 loss 0.05963 seconds/step 0.1981
+TRAIN scratch5 epoch 24 iter 5580 loss 0.0582 seconds/step 0.1898
+TRAIN scratch5 epoch 24 iter 5600 loss 0.05592 seconds/step 0.1998
+TRAIN scratch5 epoch 24 iter 5620 loss 0.05993 seconds/step 0.1852
+TRAIN scratch5 epoch 24 iter 5640 loss 0.05539 seconds/step 0.1991
+TRAIN scratch5 epoch 24 iter 5660 loss 0.05724 seconds/step 0.1747
+EPOCH COMPLETE scratch5 {"epoch": 24, "iteration": 5664, "seconds": 44.89870215699193, "loss": 0.057123214606258826, "l1": 0.05571397018255824, "kl": 0.00014092443733854944}
+TRAIN scratch5 epoch 25 iter 5680 loss 0.05705 seconds/step 0.214
+TRAIN scratch5 epoch 25 iter 5700 loss 0.05864 seconds/step 0.2165
+TRAIN scratch5 epoch 25 iter 5720 loss 0.05737 seconds/step 0.1907
+TRAIN scratch5 epoch 25 iter 5740 loss 0.05702 seconds/step 0.1848
+TRAIN scratch5 epoch 25 iter 5760 loss 0.05775 seconds/step 0.1841
+TRAIN scratch5 epoch 25 iter 5780 loss 0.05627 seconds/step 0.1735
+TRAIN scratch5 epoch 25 iter 5800 loss 0.0566 seconds/step 0.1721
+TRAIN scratch5 epoch 25 iter 5820 loss 0.0556 seconds/step 0.1739
+TRAIN scratch5 epoch 25 iter 5840 loss 0.05789 seconds/step 0.1849
+TRAIN scratch5 epoch 25 iter 5860 loss 0.0558 seconds/step 0.184
+TRAIN scratch5 epoch 25 iter 5880 loss 0.05407 seconds/step 0.1883
+TRAIN scratch5 epoch 25 iter 5900 loss 0.05373 seconds/step 0.1751
+EPOCH COMPLETE scratch5 {"epoch": 25, "iteration": 5900, "seconds": 44.70470526700956, "loss": 0.05611150026700254, "l1": 0.05460092115957858, "kl": 0.00015105792174265737}
+TRAIN scratch5 epoch 26 iter 5920 loss 0.05486 seconds/step 0.2099
+TRAIN scratch5 epoch 26 iter 5940 loss 0.05617 seconds/step 0.2086
+TRAIN scratch5 epoch 26 iter 5960 loss 0.05456 seconds/step 0.1774
+TRAIN scratch5 epoch 26 iter 5980 loss 0.05503 seconds/step 0.1746
+TRAIN scratch5 epoch 26 iter 6000 loss 0.05314 seconds/step 0.1792
+TRAIN scratch5 epoch 26 iter 6020 loss 0.05432 seconds/step 0.1838
+TRAIN scratch5 epoch 26 iter 6040 loss 0.05468 seconds/step 0.1848
+TRAIN scratch5 epoch 26 iter 6060 loss 0.05677 seconds/step 0.1852
+TRAIN scratch5 epoch 26 iter 6080 loss 0.05413 seconds/step 0.1853
+TRAIN scratch5 epoch 26 iter 6100 loss 0.0538 seconds/step 0.1819
+TRAIN scratch5 epoch 26 iter 6120 loss 0.05327 seconds/step 0.1788
+EPOCH COMPLETE scratch5 {"epoch": 26, "iteration": 6136, "seconds": 44.54079399901093, "loss": 0.05494539409686448, "l1": 0.053649584226057694, "kl": 0.0001295809726520852}
+TRAIN scratch5 epoch 27 iter 6140 loss 0.05394 seconds/step 0.2122
+TRAIN scratch5 epoch 27 iter 6160 loss 0.05269 seconds/step 0.207
+TRAIN scratch5 epoch 27 iter 6180 loss 0.0527 seconds/step 0.2224
+TRAIN scratch5 epoch 27 iter 6200 loss 0.05433 seconds/step 0.1885
+TRAIN scratch5 epoch 27 iter 6220 loss 0.05464 seconds/step 0.1835
+TRAIN scratch5 epoch 27 iter 6240 loss 0.05343 seconds/step 0.1845
+TRAIN scratch5 epoch 27 iter 6260 loss 0.05327 seconds/step 0.1827
+TRAIN scratch5 epoch 27 iter 6280 loss 0.05215 seconds/step 0.1834
+TRAIN scratch5 epoch 27 iter 6300 loss 0.05343 seconds/step 0.1845
+TRAIN scratch5 epoch 27 iter 6320 loss 0.05288 seconds/step 0.1847
+TRAIN scratch5 epoch 27 iter 6340 loss 0.05176 seconds/step 0.1823
+TRAIN scratch5 epoch 27 iter 6360 loss 0.05343 seconds/step 0.1884
+EPOCH COMPLETE scratch5 {"epoch": 27, "iteration": 6372, "seconds": 45.03576065201196, "loss": 0.05402688862029779, "l1": 0.05271381700127307, "kl": 0.0001313071525917128}
+TRAIN scratch5 epoch 28 iter 6380 loss 0.05393 seconds/step 0.2151
+TRAIN scratch5 epoch 28 iter 6400 loss 0.05423 seconds/step 0.2181
+TRAIN scratch5 epoch 28 iter 6420 loss 0.05258 seconds/step 0.2183
+TRAIN scratch5 epoch 28 iter 6440 loss 0.05392 seconds/step 0.1812
+TRAIN scratch5 epoch 28 iter 6460 loss 0.05555 seconds/step 0.1843
+TRAIN scratch5 epoch 28 iter 6480 loss 0.05285 seconds/step 0.182
+TRAIN scratch5 epoch 28 iter 6500 loss 0.05228 seconds/step 0.1889
+TRAIN scratch5 epoch 28 iter 6520 loss 0.05308 seconds/step 0.1829
+TRAIN scratch5 epoch 28 iter 6540 loss 0.05226 seconds/step 0.1882
+TRAIN scratch5 epoch 28 iter 6560 loss 0.05169 seconds/step 0.1825
+TRAIN scratch5 epoch 28 iter 6580 loss 0.05428 seconds/step 0.1773
+TRAIN scratch5 epoch 28 iter 6600 loss 0.05208 seconds/step 0.1761
+EPOCH COMPLETE scratch5 {"epoch": 28, "iteration": 6608, "seconds": 44.76018893599394, "loss": 0.05321183298730244, "l1": 0.051979188096977894, "kl": 0.00012326449356451276}
+TRAIN scratch5 epoch 29 iter 6620 loss 0.05134 seconds/step 0.2134
+TRAIN scratch5 epoch 29 iter 6640 loss 0.05422 seconds/step 0.2161
+TRAIN scratch5 epoch 29 iter 6660 loss 0.05128 seconds/step 0.1826
+TRAIN scratch5 epoch 29 iter 6680 loss 0.05368 seconds/step 0.1798
+TRAIN scratch5 epoch 29 iter 6700 loss 0.05468 seconds/step 0.1837
+TRAIN scratch5 epoch 29 iter 6720 loss 0.05266 seconds/step 0.187
+TRAIN scratch5 epoch 29 iter 6740 loss 0.05245 seconds/step 0.1827
+TRAIN scratch5 epoch 29 iter 6760 loss 0.05224 seconds/step 0.1825
+TRAIN scratch5 epoch 29 iter 6780 loss 0.05183 seconds/step 0.1776
+TRAIN scratch5 epoch 29 iter 6800 loss 0.05159 seconds/step 0.1827
+TRAIN scratch5 epoch 29 iter 6820 loss 0.05102 seconds/step 0.1831
+TRAIN scratch5 epoch 29 iter 6840 loss 0.0521 seconds/step 0.1801
+EPOCH COMPLETE scratch5 {"epoch": 29, "iteration": 6844, "seconds": 44.887097552011255, "loss": 0.052341749891638756, "l1": 0.051265715021576924, "kl": 0.00010760349600863943}
+TRAIN scratch5 epoch 30 iter 6860 loss 0.05099 seconds/step 0.203
+TRAIN scratch5 epoch 30 iter 6880 loss 0.05367 seconds/step 0.2196
+TRAIN scratch5 epoch 30 iter 6900 loss 0.05181 seconds/step 0.1834
+TRAIN scratch5 epoch 30 iter 6920 loss 0.0524 seconds/step 0.1827
+TRAIN scratch5 epoch 30 iter 6940 loss 0.05217 seconds/step 0.1813
+TRAIN scratch5 epoch 30 iter 6960 loss 0.05451 seconds/step 0.1851
+TRAIN scratch5 epoch 30 iter 6980 loss 0.05049 seconds/step 0.1861
+TRAIN scratch5 epoch 30 iter 7000 loss 0.05026 seconds/step 0.1812
+TRAIN scratch5 epoch 30 iter 7020 loss 0.05105 seconds/step 0.1756
+TRAIN scratch5 epoch 30 iter 7040 loss 0.05061 seconds/step 0.1752
+TRAIN scratch5 epoch 30 iter 7060 loss 0.04968 seconds/step 0.1796
+TRAIN scratch5 epoch 30 iter 7080 loss 0.05018 seconds/step 0.1688
+EPOCH COMPLETE scratch5 {"epoch": 30, "iteration": 7080, "seconds": 44.60139177102246, "loss": 0.05166645005534766, "l1": 0.0505872911031721, "kl": 0.0001079159028141491}
+TRAIN scratch5 epoch 31 iter 7100 loss 0.05067 seconds/step 0.221
+TRAIN scratch5 epoch 31 iter 7120 loss 0.0501 seconds/step 0.2153
+TRAIN scratch5 epoch 31 iter 7140 loss 0.05271 seconds/step 0.1877
+TRAIN scratch5 epoch 31 iter 7160 loss 0.05101 seconds/step 0.1874
+TRAIN scratch5 epoch 31 iter 7180 loss 0.05097 seconds/step 0.186
+TRAIN scratch5 epoch 31 iter 7200 loss 0.04941 seconds/step 0.1833
+TRAIN scratch5 epoch 31 iter 7220 loss 0.04942 seconds/step 0.1868
+TRAIN scratch5 epoch 31 iter 7240 loss 0.05027 seconds/step 0.1861
+TRAIN scratch5 epoch 31 iter 7260 loss 0.0518 seconds/step 0.1821
+TRAIN scratch5 epoch 31 iter 7280 loss 0.04962 seconds/step 0.1823
+TRAIN scratch5 epoch 31 iter 7300 loss 0.05054 seconds/step 0.1804
+EPOCH COMPLETE scratch5 {"epoch": 31, "iteration": 7316, "seconds": 45.265301135979826, "loss": 0.050781738423442434, "l1": 0.04981125262960539, "kl": 9.70485756224045e-05}
+TRAIN scratch5 epoch 32 iter 7320 loss 0.05039 seconds/step 0.2198
+TRAIN scratch5 epoch 32 iter 7340 loss 0.05053 seconds/step 0.2148
+TRAIN scratch5 epoch 32 iter 7360 loss 0.0513 seconds/step 0.2264
+TRAIN scratch5 epoch 32 iter 7380 loss 0.04993 seconds/step 0.1838
+TRAIN scratch5 epoch 32 iter 7400 loss 0.05 seconds/step 0.1809
+TRAIN scratch5 epoch 32 iter 7420 loss 0.04931 seconds/step 0.184
+TRAIN scratch5 epoch 32 iter 7440 loss 0.05042 seconds/step 0.1832
+TRAIN scratch5 epoch 32 iter 7460 loss 0.05278 seconds/step 0.1814
+TRAIN scratch5 epoch 32 iter 7480 loss 0.05034 seconds/step 0.1864
+TRAIN scratch5 epoch 32 iter 7500 loss 0.05147 seconds/step 0.188
+TRAIN scratch5 epoch 32 iter 7520 loss 0.0484 seconds/step 0.1865
+TRAIN scratch5 epoch 32 iter 7540 loss 0.0493 seconds/step 0.1824
+EPOCH COMPLETE scratch5 {"epoch": 32, "iteration": 7552, "seconds": 45.304584564000834, "loss": 0.05023501876552226, "l1": 0.0492225557060565, "kl": 0.00010124629761005547}
+TRAIN scratch5 epoch 33 iter 7560 loss 0.04942 seconds/step 0.2142
+TRAIN scratch5 epoch 33 iter 7580 loss 0.04915 seconds/step 0.2234
+TRAIN scratch5 epoch 33 iter 7600 loss 0.04937 seconds/step 0.2228
+TRAIN scratch5 epoch 33 iter 7620 loss 0.05005 seconds/step 0.186
+TRAIN scratch5 epoch 33 iter 7640 loss 0.04908 seconds/step 0.1852
+TRAIN scratch5 epoch 33 iter 7660 loss 0.04869 seconds/step 0.1882
+TRAIN scratch5 epoch 33 iter 7680 loss 0.0497 seconds/step 0.1905
+TRAIN scratch5 epoch 33 iter 7700 loss 0.04898 seconds/step 0.1829
+TRAIN scratch5 epoch 33 iter 7720 loss 0.04931 seconds/step 0.1841
+TRAIN scratch5 epoch 33 iter 7740 loss 0.04871 seconds/step 0.182
+TRAIN scratch5 epoch 33 iter 7760 loss 0.04893 seconds/step 0.1856
+TRAIN scratch5 epoch 33 iter 7780 loss 0.04997 seconds/step 0.1856
+EPOCH COMPLETE scratch5 {"epoch": 33, "iteration": 7788, "seconds": 45.43254192799213, "loss": 0.04941884295667632, "l1": 0.048480828592585304, "kl": 9.380144087949934e-05}
+TRAIN scratch5 epoch 34 iter 7800 loss 0.05007 seconds/step 0.2192
+TRAIN scratch5 epoch 34 iter 7820 loss 0.04749 seconds/step 0.2167
+TRAIN scratch5 epoch 34 iter 7840 loss 0.04818 seconds/step 0.1844
+TRAIN scratch5 epoch 34 iter 7860 loss 0.05133 seconds/step 0.1834
+TRAIN scratch5 epoch 34 iter 7880 loss 0.05107 seconds/step 0.1825
+TRAIN scratch5 epoch 34 iter 7900 loss 0.04829 seconds/step 0.1868
+TRAIN scratch5 epoch 34 iter 7920 loss 0.04749 seconds/step 0.1847
+TRAIN scratch5 epoch 34 iter 7940 loss 0.04839 seconds/step 0.1894
+TRAIN scratch5 epoch 34 iter 7960 loss 0.05157 seconds/step 0.1845
+TRAIN scratch5 epoch 34 iter 7980 loss 0.04883 seconds/step 0.1861
+TRAIN scratch5 epoch 34 iter 8000 loss 0.04877 seconds/step 0.1828
+TRAIN scratch5 epoch 34 iter 8020 loss 0.04924 seconds/step 0.1771
+EPOCH COMPLETE scratch5 {"epoch": 34, "iteration": 8024, "seconds": 45.198171352996724, "loss": 0.04895806942387658, "l1": 0.04808812517420215, "kl": 8.699442440633054e-05}
+TRAIN scratch5 epoch 35 iter 8040 loss 0.05114 seconds/step 0.2114
+TRAIN scratch5 epoch 35 iter 8060 loss 0.04941 seconds/step 0.2235
+TRAIN scratch5 epoch 35 iter 8080 loss 0.0471 seconds/step 0.1884
+TRAIN scratch5 epoch 35 iter 8100 loss 0.04708 seconds/step 0.1893
+TRAIN scratch5 epoch 35 iter 8120 loss 0.04756 seconds/step 0.1848
+TRAIN scratch5 epoch 35 iter 8140 loss 0.04554 seconds/step 0.1906
+TRAIN scratch5 epoch 35 iter 8160 loss 0.04721 seconds/step 0.1886
+TRAIN scratch5 epoch 35 iter 8180 loss 0.04936 seconds/step 0.1963
+TRAIN scratch5 epoch 35 iter 8200 loss 0.04769 seconds/step 0.199
+TRAIN scratch5 epoch 35 iter 8220 loss 0.04977 seconds/step 0.1965
+TRAIN scratch5 epoch 35 iter 8240 loss 0.04885 seconds/step 0.1908
+TRAIN scratch5 epoch 35 iter 8260 loss 0.04818 seconds/step 0.1745
+EPOCH COMPLETE scratch5 {"epoch": 35, "iteration": 8260, "seconds": 46.88354766101111, "loss": 0.04813489802497423, "l1": 0.04733017069619086, "kl": 8.047273439518965e-05}
+TRAIN scratch5 epoch 36 iter 8280 loss 0.04919 seconds/step 0.2271
+TRAIN scratch5 epoch 36 iter 8300 loss 0.04998 seconds/step 0.2221
+TRAIN scratch5 epoch 36 iter 8320 loss 0.04838 seconds/step 0.1872
+TRAIN scratch5 epoch 36 iter 8340 loss 0.04884 seconds/step 0.1855
+TRAIN scratch5 epoch 36 iter 8360 loss 0.04726 seconds/step 0.1917
+TRAIN scratch5 epoch 36 iter 8380 loss 0.04661 seconds/step 0.1927
+TRAIN scratch5 epoch 36 iter 8400 loss 0.0479 seconds/step 0.1868
+TRAIN scratch5 epoch 36 iter 8420 loss 0.04828 seconds/step 0.1885
+TRAIN scratch5 epoch 36 iter 8440 loss 0.04829 seconds/step 0.1866
+TRAIN scratch5 epoch 36 iter 8460 loss 0.04754 seconds/step 0.1835
+TRAIN scratch5 epoch 36 iter 8480 loss 0.04803 seconds/step 0.1832
+EPOCH COMPLETE scratch5 {"epoch": 36, "iteration": 8496, "seconds": 46.24089306598762, "loss": 0.04764976199337487, "l1": 0.04688221675549018, "kl": 7.675451765323286e-05}
+TRAIN scratch5 epoch 37 iter 8500 loss 0.04502 seconds/step 0.2321
+TRAIN scratch5 epoch 37 iter 8520 loss 0.04833 seconds/step 0.2314
+TRAIN scratch5 epoch 37 iter 8540 loss 0.04821 seconds/step 0.2443
+TRAIN scratch5 epoch 37 iter 8560 loss 0.04665 seconds/step 0.191
+TRAIN scratch5 epoch 37 iter 8580 loss 0.04554 seconds/step 0.1844
+TRAIN scratch5 epoch 37 iter 8600 loss 0.0472 seconds/step 0.1889
+TRAIN scratch5 epoch 37 iter 8620 loss 0.04799 seconds/step 0.1891
+TRAIN scratch5 epoch 37 iter 8640 loss 0.04519 seconds/step 0.1854
+TRAIN scratch5 epoch 37 iter 8660 loss 0.04708 seconds/step 0.1812
+TRAIN scratch5 epoch 37 iter 8680 loss 0.04877 seconds/step 0.1781
+TRAIN scratch5 epoch 37 iter 8700 loss 0.04635 seconds/step 0.1767
+TRAIN scratch5 epoch 37 iter 8720 loss 0.04821 seconds/step 0.1703
+EPOCH COMPLETE scratch5 {"epoch": 37, "iteration": 8732, "seconds": 45.690556946006836, "loss": 0.04714547653319472, "l1": 0.04642918855898966, "kl": 7.162880366056431e-05}
+TRAIN scratch5 epoch 38 iter 8740 loss 0.0458 seconds/step 0.2078
+TRAIN scratch5 epoch 38 iter 8760 loss 0.0458 seconds/step 0.2134
+TRAIN scratch5 epoch 38 iter 8780 loss 0.04623 seconds/step 0.2202
+TRAIN scratch5 epoch 38 iter 8800 loss 0.04623 seconds/step 0.1928
+TRAIN scratch5 epoch 38 iter 8820 loss 0.04838 seconds/step 0.1837
+TRAIN scratch5 epoch 38 iter 8840 loss 0.04793 seconds/step 0.1828
+TRAIN scratch5 epoch 38 iter 8860 loss 0.04694 seconds/step 0.1788
+TRAIN scratch5 epoch 38 iter 8880 loss 0.0453 seconds/step 0.1783
+TRAIN scratch5 epoch 38 iter 8900 loss 0.04636 seconds/step 0.187
+TRAIN scratch5 epoch 38 iter 8920 loss 0.04621 seconds/step 0.1952
+TRAIN scratch5 epoch 38 iter 8940 loss 0.04692 seconds/step 0.1891
+TRAIN scratch5 epoch 38 iter 8960 loss 0.04515 seconds/step 0.1813
+EPOCH COMPLETE scratch5 {"epoch": 38, "iteration": 8968, "seconds": 45.30275516799884, "loss": 0.04671228148232577, "l1": 0.04601530190872944, "kl": 6.969796376617554e-05}
+TRAIN scratch5 epoch 39 iter 8980 loss 0.04595 seconds/step 0.2272
+TRAIN scratch5 epoch 39 iter 9000 loss 0.04667 seconds/step 0.2142
+TRAIN scratch5 epoch 39 iter 9020 loss 0.0467 seconds/step 0.1861
+TRAIN scratch5 epoch 39 iter 9040 loss 0.04568 seconds/step 0.1898
+TRAIN scratch5 epoch 39 iter 9060 loss 0.04805 seconds/step 0.1817
+TRAIN scratch5 epoch 39 iter 9080 loss 0.04574 seconds/step 0.1824
+TRAIN scratch5 epoch 39 iter 9100 loss 0.04488 seconds/step 0.1776
+TRAIN scratch5 epoch 39 iter 9120 loss 0.04578 seconds/step 0.1814
+TRAIN scratch5 epoch 39 iter 9140 loss 0.0455 seconds/step 0.1834
+TRAIN scratch5 epoch 39 iter 9160 loss 0.04488 seconds/step 0.1858
+TRAIN scratch5 epoch 39 iter 9180 loss 0.04623 seconds/step 0.1836
+TRAIN scratch5 epoch 39 iter 9200 loss 0.048 seconds/step 0.1801
+EPOCH COMPLETE scratch5 {"epoch": 39, "iteration": 9204, "seconds": 44.97668508498464, "loss": 0.046053751340230646, "l1": 0.04538110552071515, "kl": 6.726458932616416e-05}
+TRAIN scratch5 epoch 40 iter 9220 loss 0.04556 seconds/step 0.2056
+TRAIN scratch5 epoch 40 iter 9240 loss 0.04511 seconds/step 0.2178
+TRAIN scratch5 epoch 40 iter 9260 loss 0.0445 seconds/step 0.1925
+TRAIN scratch5 epoch 40 iter 9280 loss 0.04628 seconds/step 0.1957
+TRAIN scratch5 epoch 40 iter 9300 loss 0.0454 seconds/step 0.1964
+TRAIN scratch5 epoch 40 iter 9320 loss 0.04616 seconds/step 0.2073
+TRAIN scratch5 epoch 40 iter 9340 loss 0.04643 seconds/step 0.1997
+TRAIN scratch5 epoch 40 iter 9360 loss 0.04549 seconds/step 0.1956
+TRAIN scratch5 epoch 40 iter 9380 loss 0.04598 seconds/step 0.1907
+TRAIN scratch5 epoch 40 iter 9400 loss 0.04575 seconds/step 0.1834
+TRAIN scratch5 epoch 40 iter 9420 loss 0.04715 seconds/step 0.1828
+TRAIN scratch5 epoch 40 iter 9440 loss 0.04761 seconds/step 0.164
+EPOCH COMPLETE scratch5 {"epoch": 40, "iteration": 9440, "seconds": 46.46728703400004, "loss": 0.04566258676665819, "l1": 0.04502684294672336, "kl": 6.357437102405268e-05}
+TRAIN scratch5 epoch 41 iter 9460 loss 0.04401 seconds/step 0.214
+TRAIN scratch5 epoch 41 iter 9480 loss 0.04571 seconds/step 0.2146
+TRAIN scratch5 epoch 41 iter 9500 loss 0.04425 seconds/step 0.1912
+TRAIN scratch5 epoch 41 iter 9520 loss 0.04711 seconds/step 0.1837
+TRAIN scratch5 epoch 41 iter 9540 loss 0.04388 seconds/step 0.1875
+TRAIN scratch5 epoch 41 iter 9560 loss 0.04447 seconds/step 0.1871
+TRAIN scratch5 epoch 41 iter 9580 loss 0.04591 seconds/step 0.1828
+TRAIN scratch5 epoch 41 iter 9600 loss 0.04397 seconds/step 0.1831
+TRAIN scratch5 epoch 41 iter 9620 loss 0.04453 seconds/step 0.1873
+TRAIN scratch5 epoch 41 iter 9640 loss 0.04517 seconds/step 0.1891
+TRAIN scratch5 epoch 41 iter 9660 loss 0.0443 seconds/step 0.1848
+EPOCH COMPLETE scratch5 {"epoch": 41, "iteration": 9676, "seconds": 45.63010571300401, "loss": 0.045280771093222046, "l1": 0.04462842987376755, "kl": 6.523412646517608e-05}
+TRAIN scratch5 epoch 42 iter 9680 loss 0.04545 seconds/step 0.2202
+TRAIN scratch5 epoch 42 iter 9700 loss 0.04464 seconds/step 0.2166
+TRAIN scratch5 epoch 42 iter 9720 loss 0.0457 seconds/step 0.225
+TRAIN scratch5 epoch 42 iter 9740 loss 0.04526 seconds/step 0.1973
+TRAIN scratch5 epoch 42 iter 9760 loss 0.04458 seconds/step 0.1963
+TRAIN scratch5 epoch 42 iter 9780 loss 0.04437 seconds/step 0.188
+TRAIN scratch5 epoch 42 iter 9800 loss 0.04446 seconds/step 0.1813
+TRAIN scratch5 epoch 42 iter 9820 loss 0.04604 seconds/step 0.1794
+TRAIN scratch5 epoch 42 iter 9840 loss 0.04623 seconds/step 0.1927
+TRAIN scratch5 epoch 42 iter 9860 loss 0.04504 seconds/step 0.1915
+TRAIN scratch5 epoch 42 iter 9880 loss 0.04383 seconds/step 0.1844
+TRAIN scratch5 epoch 42 iter 9900 loss 0.04286 seconds/step 0.1888
+EPOCH COMPLETE scratch5 {"epoch": 42, "iteration": 9912, "seconds": 46.20543052800349, "loss": 0.04484989004746332, "l1": 0.044263805562661865, "kl": 5.860844455236151e-05}
+TRAIN scratch5 epoch 43 iter 9920 loss 0.04434 seconds/step 0.2172
+TRAIN scratch5 epoch 43 iter 9940 loss 0.04487 seconds/step 0.2281
+TRAIN scratch5 epoch 43 iter 9960 loss 0.04394 seconds/step 0.2255
+TRAIN scratch5 epoch 43 iter 9980 loss 0.04542 seconds/step 0.1928
+TRAIN scratch5 epoch 43 iter 10000 loss 0.04494 seconds/step 0.192
+TRAIN scratch5 epoch 43 iter 10020 loss 0.04477 seconds/step 0.194
+TRAIN scratch5 epoch 43 iter 10040 loss 0.0432 seconds/step 0.1898
+TRAIN scratch5 epoch 43 iter 10060 loss 0.04439 seconds/step 0.1851
+TRAIN scratch5 epoch 43 iter 10080 loss 0.04562 seconds/step 0.1806
+TRAIN scratch5 epoch 43 iter 10100 loss 0.04347 seconds/step 0.1801
+TRAIN scratch5 epoch 43 iter 10120 loss 0.04559 seconds/step 0.1778
+TRAIN scratch5 epoch 43 iter 10140 loss 0.04506 seconds/step 0.173
+EPOCH COMPLETE scratch5 {"epoch": 43, "iteration": 10148, "seconds": 45.29809278200264, "loss": 0.04456149204239502, "l1": 0.043956698297317756, "kl": 6.04793713445345e-05}
+TRAIN scratch5 epoch 44 iter 10160 loss 0.04517 seconds/step 0.209
+TRAIN scratch5 epoch 44 iter 10180 loss 0.0424 seconds/step 0.2002
+TRAIN scratch5 epoch 44 iter 10200 loss 0.04422 seconds/step 0.1866
+TRAIN scratch5 epoch 44 iter 10220 loss 0.04224 seconds/step 0.1828
+TRAIN scratch5 epoch 44 iter 10240 loss 0.04203 seconds/step 0.1861
+TRAIN scratch5 epoch 44 iter 10260 loss 0.04821 seconds/step 0.183
+TRAIN scratch5 epoch 44 iter 10280 loss 0.0456 seconds/step 0.1794
+TRAIN scratch5 epoch 44 iter 10300 loss 0.04431 seconds/step 0.1811
+TRAIN scratch5 epoch 44 iter 10320 loss 0.04511 seconds/step 0.1778
+TRAIN scratch5 epoch 44 iter 10340 loss 0.04317 seconds/step 0.192
+TRAIN scratch5 epoch 44 iter 10360 loss 0.04459 seconds/step 0.1839
+TRAIN scratch5 epoch 44 iter 10380 loss 0.04337 seconds/step 0.1683
+EPOCH COMPLETE scratch5 {"epoch": 44, "iteration": 10384, "seconds": 44.03275720498641, "loss": 0.04420560661513927, "l1": 0.04363592052674395, "kl": 5.696860192737234e-05}
+TRAIN scratch5 epoch 45 iter 10400 loss 0.04444 seconds/step 0.2001
+TRAIN scratch5 epoch 45 iter 10420 loss 0.04343 seconds/step 0.203
+TRAIN scratch5 epoch 45 iter 10440 loss 0.04303 seconds/step 0.1729
+TRAIN scratch5 epoch 45 iter 10460 loss 0.04231 seconds/step 0.1769
+TRAIN scratch5 epoch 45 iter 10480 loss 0.04352 seconds/step 0.1779
+TRAIN scratch5 epoch 45 iter 10500 loss 0.04576 seconds/step 0.1874
+TRAIN scratch5 epoch 45 iter 10520 loss 0.04227 seconds/step 0.1811
+TRAIN scratch5 epoch 45 iter 10540 loss 0.044 seconds/step 0.1719
+TRAIN scratch5 epoch 45 iter 10560 loss 0.04176 seconds/step 0.1857
+TRAIN scratch5 epoch 45 iter 10580 loss 0.04438 seconds/step 0.1785
+TRAIN scratch5 epoch 45 iter 10600 loss 0.04518 seconds/step 0.1807
+TRAIN scratch5 epoch 45 iter 10620 loss 0.04408 seconds/step 0.1745
+EPOCH COMPLETE scratch5 {"epoch": 45, "iteration": 10620, "seconds": 43.90830066500348, "loss": 0.04380333273655782, "l1": 0.04325682704605288, "kl": 5.465056000179236e-05}
+TRAIN scratch5 epoch 46 iter 10640 loss 0.04419 seconds/step 0.2063
+TRAIN scratch5 epoch 46 iter 10660 loss 0.04131 seconds/step 0.2038
+TRAIN scratch5 epoch 46 iter 10680 loss 0.04498 seconds/step 0.1844
+TRAIN scratch5 epoch 46 iter 10700 loss 0.04314 seconds/step 0.1793
+TRAIN scratch5 epoch 46 iter 10720 loss 0.04319 seconds/step 0.173
+TRAIN scratch5 epoch 46 iter 10740 loss 0.04483 seconds/step 0.178
+TRAIN scratch5 epoch 46 iter 10760 loss 0.04219 seconds/step 0.1833
+TRAIN scratch5 epoch 46 iter 10780 loss 0.04508 seconds/step 0.1769
+TRAIN scratch5 epoch 46 iter 10800 loss 0.0428 seconds/step 0.181
+TRAIN scratch5 epoch 46 iter 10820 loss 0.0447 seconds/step 0.1776
+TRAIN scratch5 epoch 46 iter 10840 loss 0.04299 seconds/step 0.1792
+EPOCH COMPLETE scratch5 {"epoch": 46, "iteration": 10856, "seconds": 43.68275947601069, "loss": 0.04352230840694096, "l1": 0.042965005562340806, "kl": 5.573028471898998e-05}
+TRAIN scratch5 epoch 47 iter 10860 loss 0.04311 seconds/step 0.2158
+TRAIN scratch5 epoch 47 iter 10880 loss 0.04408 seconds/step 0.2059
+TRAIN scratch5 epoch 47 iter 10900 loss 0.04379 seconds/step 0.2172
+TRAIN scratch5 epoch 47 iter 10920 loss 0.04472 seconds/step 0.1757
+TRAIN scratch5 epoch 47 iter 10940 loss 0.04208 seconds/step 0.1769
+TRAIN scratch5 epoch 47 iter 10960 loss 0.04298 seconds/step 0.1806
+TRAIN scratch5 epoch 47 iter 10980 loss 0.04395 seconds/step 0.1863
+TRAIN scratch5 epoch 47 iter 11000 loss 0.0436 seconds/step 0.1779
+TRAIN scratch5 epoch 47 iter 11020 loss 0.043 seconds/step 0.1791
+TRAIN scratch5 epoch 47 iter 11040 loss 0.04226 seconds/step 0.1798
+TRAIN scratch5 epoch 47 iter 11060 loss 0.04262 seconds/step 0.1757
+TRAIN scratch5 epoch 47 iter 11080 loss 0.04384 seconds/step 0.1788
+EPOCH COMPLETE scratch5 {"epoch": 47, "iteration": 11092, "seconds": 43.592275542003335, "loss": 0.043121749945616315, "l1": 0.04262106218454191, "kl": 5.00687737396713e-05}
+TRAIN scratch5 epoch 48 iter 11100 loss 0.04241 seconds/step 0.2083
+TRAIN scratch5 epoch 48 iter 11120 loss 0.04431 seconds/step 0.2131
+TRAIN scratch5 epoch 48 iter 11140 loss 0.04193 seconds/step 0.2196
+TRAIN scratch5 epoch 48 iter 11160 loss 0.04364 seconds/step 0.1783
+TRAIN scratch5 epoch 48 iter 11180 loss 0.04179 seconds/step 0.1785
+TRAIN scratch5 epoch 48 iter 11200 loss 0.04198 seconds/step 0.1758
+TRAIN scratch5 epoch 48 iter 11220 loss 0.04182 seconds/step 0.1763
+TRAIN scratch5 epoch 48 iter 11240 loss 0.04388 seconds/step 0.1787
+TRAIN scratch5 epoch 48 iter 11260 loss 0.04403 seconds/step 0.1793
+TRAIN scratch5 epoch 48 iter 11280 loss 0.04315 seconds/step 0.1795
+TRAIN scratch5 epoch 48 iter 11300 loss 0.04178 seconds/step 0.1719
+TRAIN scratch5 epoch 48 iter 11320 loss 0.04339 seconds/step 0.1695
+EPOCH COMPLETE scratch5 {"epoch": 48, "iteration": 11328, "seconds": 43.711466928973095, "loss": 0.04285338964565831, "l1": 0.04238285615219403, "kl": 4.7053351917677025e-05}
+TRAIN scratch5 epoch 49 iter 11340 loss 0.04283 seconds/step 0.2035
+TRAIN scratch5 epoch 49 iter 11360 loss 0.04283 seconds/step 0.2047
+TRAIN scratch5 epoch 49 iter 11380 loss 0.04206 seconds/step 0.1854
+TRAIN scratch5 epoch 49 iter 11400 loss 0.04209 seconds/step 0.186
+TRAIN scratch5 epoch 49 iter 11420 loss 0.0419 seconds/step 0.1798
+TRAIN scratch5 epoch 49 iter 11440 loss 0.04329 seconds/step 0.1822
+TRAIN scratch5 epoch 49 iter 11460 loss 0.04293 seconds/step 0.1802
+TRAIN scratch5 epoch 49 iter 11480 loss 0.04353 seconds/step 0.1821
+TRAIN scratch5 epoch 49 iter 11500 loss 0.04245 seconds/step 0.1811
+TRAIN scratch5 epoch 49 iter 11520 loss 0.04144 seconds/step 0.1801
+TRAIN scratch5 epoch 49 iter 11540 loss 0.04141 seconds/step 0.1805
+TRAIN scratch5 epoch 49 iter 11560 loss 0.04162 seconds/step 0.1783
+EPOCH COMPLETE scratch5 {"epoch": 49, "iteration": 11564, "seconds": 44.358192145009525, "loss": 0.042501505969439524, "l1": 0.04204891552611933, "kl": 4.5259050084958724e-05}
+TRAIN scratch5 epoch 50 iter 11580 loss 0.04182 seconds/step 0.2081
+TRAIN scratch5 epoch 50 iter 11600 loss 0.04343 seconds/step 0.2141
+TRAIN scratch5 epoch 50 iter 11620 loss 0.04137 seconds/step 0.1843
+TRAIN scratch5 epoch 50 iter 11640 loss 0.04204 seconds/step 0.1797
+TRAIN scratch5 epoch 50 iter 11660 loss 0.04426 seconds/step 0.1867
+TRAIN scratch5 epoch 50 iter 11680 loss 0.04179 seconds/step 0.1883
+TRAIN scratch5 epoch 50 iter 11700 loss 0.04278 seconds/step 0.1903
+TRAIN scratch5 epoch 50 iter 11720 loss 0.04308 seconds/step 0.1936
+TRAIN scratch5 epoch 50 iter 11740 loss 0.0418 seconds/step 0.2008
+TRAIN scratch5 epoch 50 iter 11760 loss 0.04269 seconds/step 0.2008
+TRAIN scratch5 epoch 50 iter 11780 loss 0.04324 seconds/step 0.2014
+TRAIN scratch5 epoch 50 iter 11800 loss 0.04725 seconds/step 0.1831
+EPOCH COMPLETE scratch5 {"epoch": 50, "iteration": 11800, "seconds": 46.3733732640103, "loss": 0.04219505634411412, "l1": 0.041713740834492745, "kl": 4.8131546756880104e-05}
+TRAIN scratch5 epoch 51 iter 11820 loss 0.04117 seconds/step 0.2304
+TRAIN scratch5 epoch 51 iter 11840 loss 0.04031 seconds/step 0.2266
+TRAIN scratch5 epoch 51 iter 11860 loss 0.04182 seconds/step 0.194
+TRAIN scratch5 epoch 51 iter 11880 loss 0.04179 seconds/step 0.1882
+TRAIN scratch5 epoch 51 iter 11900 loss 0.04066 seconds/step 0.1946
+TRAIN scratch5 epoch 51 iter 11920 loss 0.04132 seconds/step 0.1917
+TRAIN scratch5 epoch 51 iter 11940 loss 0.04361 seconds/step 0.1944
+TRAIN scratch5 epoch 51 iter 11960 loss 0.04198 seconds/step 0.1845
+TRAIN scratch5 epoch 51 iter 11980 loss 0.04167 seconds/step 0.1978
+TRAIN scratch5 epoch 51 iter 12000 loss 0.04112 seconds/step 0.1996
+TRAIN scratch5 epoch 51 iter 12020 loss 0.0418 seconds/step 0.2152
+EPOCH COMPLETE scratch5 {"epoch": 51, "iteration": 12036, "seconds": 47.080940110987285, "loss": 0.04183468328378463, "l1": 0.0414098693468308, "kl": 4.2481387427576886e-05}
+TRAIN scratch5 epoch 52 iter 12040 loss 0.04252 seconds/step 0.2349
+TRAIN scratch5 epoch 52 iter 12060 loss 0.04179 seconds/step 0.23
+TRAIN scratch5 epoch 52 iter 12080 loss 0.04163 seconds/step 0.2401
+TRAIN scratch5 epoch 52 iter 12100 loss 0.04205 seconds/step 0.1957
+TRAIN scratch5 epoch 52 iter 12120 loss 0.04182 seconds/step 0.1819
+TRAIN scratch5 epoch 52 iter 12140 loss 0.04172 seconds/step 0.1891
+TRAIN scratch5 epoch 52 iter 12160 loss 0.04184 seconds/step 0.1965
+TRAIN scratch5 epoch 52 iter 12180 loss 0.04112 seconds/step 0.1999
+TRAIN scratch5 epoch 52 iter 12200 loss 0.04077 seconds/step 0.1918
+TRAIN scratch5 epoch 52 iter 12220 loss 0.04103 seconds/step 0.1958
+TRAIN scratch5 epoch 52 iter 12240 loss 0.04176 seconds/step 0.1977
+TRAIN scratch5 epoch 52 iter 12260 loss 0.04178 seconds/step 0.2011
+EPOCH COMPLETE scratch5 {"epoch": 52, "iteration": 12272, "seconds": 47.158774559997255, "loss": 0.04154877097866798, "l1": 0.04110867498537241, "kl": 4.400960436106612e-05}
+TRAIN scratch5 epoch 53 iter 12280 loss 0.04076 seconds/step 0.2194
+TRAIN scratch5 epoch 53 iter 12300 loss 0.04165 seconds/step 0.2262
+TRAIN scratch5 epoch 53 iter 12320 loss 0.04057 seconds/step 0.2297
+TRAIN scratch5 epoch 53 iter 12340 loss 0.04162 seconds/step 0.1882
+TRAIN scratch5 epoch 53 iter 12360 loss 0.04168 seconds/step 0.1845
+TRAIN scratch5 epoch 53 iter 12380 loss 0.04102 seconds/step 0.1884
+TRAIN scratch5 epoch 53 iter 12400 loss 0.04093 seconds/step 0.1919
+TRAIN scratch5 epoch 53 iter 12420 loss 0.04078 seconds/step 0.1947
+TRAIN scratch5 epoch 53 iter 12440 loss 0.04208 seconds/step 0.1951
+TRAIN scratch5 epoch 53 iter 12460 loss 0.04111 seconds/step 0.1872
+TRAIN scratch5 epoch 53 iter 12480 loss 0.04178 seconds/step 0.1812
+TRAIN scratch5 epoch 53 iter 12500 loss 0.04068 seconds/step 0.1811
+EPOCH COMPLETE scratch5 {"epoch": 53, "iteration": 12508, "seconds": 46.23737685001106, "loss": 0.04136994110136214, "l1": 0.04096099175512791, "kl": 4.0894925713458225e-05}
+TRAIN scratch5 epoch 54 iter 12520 loss 0.04166 seconds/step 0.2237
+TRAIN scratch5 epoch 54 iter 12540 loss 0.04118 seconds/step 0.217
+TRAIN scratch5 epoch 54 iter 12560 loss 0.04049 seconds/step 0.1788
+TRAIN scratch5 epoch 54 iter 12580 loss 0.04105 seconds/step 0.1792
+TRAIN scratch5 epoch 54 iter 12600 loss 0.03973 seconds/step 0.1801
+TRAIN scratch5 epoch 54 iter 12620 loss 0.04005 seconds/step 0.1864
+TRAIN scratch5 epoch 54 iter 12640 loss 0.04219 seconds/step 0.1941
+TRAIN scratch5 epoch 54 iter 12660 loss 0.04122 seconds/step 0.1908
+TRAIN scratch5 epoch 54 iter 12680 loss 0.03934 seconds/step 0.1942
+TRAIN scratch5 epoch 54 iter 12700 loss 0.04101 seconds/step 0.1954
+TRAIN scratch5 epoch 54 iter 12720 loss 0.04157 seconds/step 0.198
+TRAIN scratch5 epoch 54 iter 12740 loss 0.04131 seconds/step 0.1858
+EPOCH COMPLETE scratch5 {"epoch": 54, "iteration": 12744, "seconds": 46.05437844997505, "loss": 0.041112780697264914, "l1": 0.040707209321149324, "kl": 4.0557133739269576e-05}
+TRAIN scratch5 epoch 55 iter 12760 loss 0.04226 seconds/step 0.1988
+TRAIN scratch5 epoch 55 iter 12780 loss 0.04091 seconds/step 0.2064
+TRAIN scratch5 epoch 55 iter 12800 loss 0.04061 seconds/step 0.1789
+TRAIN scratch5 epoch 55 iter 12820 loss 0.03959 seconds/step 0.1848
+TRAIN scratch5 epoch 55 iter 12840 loss 0.03954 seconds/step 0.178
+TRAIN scratch5 epoch 55 iter 12860 loss 0.04067 seconds/step 0.176
+TRAIN scratch5 epoch 55 iter 12880 loss 0.04164 seconds/step 0.1764
+TRAIN scratch5 epoch 55 iter 12900 loss 0.04027 seconds/step 0.1852
+TRAIN scratch5 epoch 55 iter 12920 loss 0.04132 seconds/step 0.1854
+TRAIN scratch5 epoch 55 iter 12940 loss 0.03874 seconds/step 0.1858
+TRAIN scratch5 epoch 55 iter 12960 loss 0.04025 seconds/step 0.1877
+TRAIN scratch5 epoch 55 iter 12980 loss 0.04112 seconds/step 0.1686
+EPOCH COMPLETE scratch5 {"epoch": 55, "iteration": 12980, "seconds": 44.3947177969967, "loss": 0.04077272734336429, "l1": 0.0403585719828636, "kl": 4.141555158855488e-05}
+TRAIN scratch5 epoch 56 iter 13000 loss 0.04014 seconds/step 0.2195
+TRAIN scratch5 epoch 56 iter 13020 loss 0.04045 seconds/step 0.2142
+TRAIN scratch5 epoch 56 iter 13040 loss 0.04254 seconds/step 0.1857
+TRAIN scratch5 epoch 56 iter 13060 loss 0.04198 seconds/step 0.1859
+TRAIN scratch5 epoch 56 iter 13080 loss 0.03964 seconds/step 0.1979
+TRAIN scratch5 epoch 56 iter 13100 loss 0.04165 seconds/step 0.1916
+TRAIN scratch5 epoch 56 iter 13120 loss 0.04029 seconds/step 0.1894
+TRAIN scratch5 epoch 56 iter 13140 loss 0.04168 seconds/step 0.185
+TRAIN scratch5 epoch 56 iter 13160 loss 0.04086 seconds/step 0.1836
+TRAIN scratch5 epoch 56 iter 13180 loss 0.04157 seconds/step 0.1813
+TRAIN scratch5 epoch 56 iter 13200 loss 0.03934 seconds/step 0.1812
+EPOCH COMPLETE scratch5 {"epoch": 56, "iteration": 13216, "seconds": 45.33564442399074, "loss": 0.040566266719567576, "l1": 0.040163410748591866, "kl": 4.0285593952877066e-05}
+TRAIN scratch5 epoch 57 iter 13220 loss 0.04166 seconds/step 0.2132
+TRAIN scratch5 epoch 57 iter 13240 loss 0.03936 seconds/step 0.2131
+TRAIN scratch5 epoch 57 iter 13260 loss 0.04052 seconds/step 0.2255
+TRAIN scratch5 epoch 57 iter 13280 loss 0.04087 seconds/step 0.1914
+TRAIN scratch5 epoch 57 iter 13300 loss 0.03942 seconds/step 0.1923
+TRAIN scratch5 epoch 57 iter 13320 loss 0.03959 seconds/step 0.199
+TRAIN scratch5 epoch 57 iter 13340 loss 0.04037 seconds/step 0.1913
+TRAIN scratch5 epoch 57 iter 13360 loss 0.04029 seconds/step 0.1896
+TRAIN scratch5 epoch 57 iter 13380 loss 0.0403 seconds/step 0.1863
+TRAIN scratch5 epoch 57 iter 13400 loss 0.04113 seconds/step 0.1877
+TRAIN scratch5 epoch 57 iter 13420 loss 0.0413 seconds/step 0.1756
+TRAIN scratch5 epoch 57 iter 13440 loss 0.04107 seconds/step 0.1836
+EPOCH COMPLETE scratch5 {"epoch": 57, "iteration": 13452, "seconds": 46.241191927023465, "loss": 0.04036433502274044, "l1": 0.03996737129291741, "kl": 3.9696380554232746e-05}
+TRAIN scratch5 epoch 58 iter 13460 loss 0.04039 seconds/step 0.2145
+TRAIN scratch5 epoch 58 iter 13480 loss 0.0406 seconds/step 0.218
+TRAIN scratch5 epoch 58 iter 13500 loss 0.04028 seconds/step 0.2259
+TRAIN scratch5 epoch 58 iter 13520 loss 0.0395 seconds/step 0.1862
+TRAIN scratch5 epoch 58 iter 13540 loss 0.04088 seconds/step 0.1879
+TRAIN scratch5 epoch 58 iter 13560 loss 0.04008 seconds/step 0.1837
+TRAIN scratch5 epoch 58 iter 13580 loss 0.04033 seconds/step 0.1847
+TRAIN scratch5 epoch 58 iter 13600 loss 0.04161 seconds/step 0.1868
+TRAIN scratch5 epoch 58 iter 13620 loss 0.03953 seconds/step 0.1919
+TRAIN scratch5 epoch 58 iter 13640 loss 0.0412 seconds/step 0.1888
+TRAIN scratch5 epoch 58 iter 13660 loss 0.04034 seconds/step 0.1907
+TRAIN scratch5 epoch 58 iter 13680 loss 0.04124 seconds/step 0.1887
+EPOCH COMPLETE scratch5 {"epoch": 58, "iteration": 13688, "seconds": 46.198515161988325, "loss": 0.040218746857875486, "l1": 0.03983041770377402, "kl": 3.883292075920893e-05}
+TRAIN scratch5 epoch 59 iter 13700 loss 0.03929 seconds/step 0.2324
+TRAIN scratch5 epoch 59 iter 13720 loss 0.03974 seconds/step 0.2245
+TRAIN scratch5 epoch 59 iter 13740 loss 0.04156 seconds/step 0.1986
+TRAIN scratch5 epoch 59 iter 13760 loss 0.04049 seconds/step 0.1933
+TRAIN scratch5 epoch 59 iter 13780 loss 0.03859 seconds/step 0.1904
+TRAIN scratch5 epoch 59 iter 13800 loss 0.04105 seconds/step 0.195
+TRAIN scratch5 epoch 59 iter 13820 loss 0.03836 seconds/step 0.1891
+TRAIN scratch5 epoch 59 iter 13840 loss 0.03892 seconds/step 0.192
+TRAIN scratch5 epoch 59 iter 13860 loss 0.03974 seconds/step 0.195
+TRAIN scratch5 epoch 59 iter 13880 loss 0.03937 seconds/step 0.19
+TRAIN scratch5 epoch 59 iter 13900 loss 0.03905 seconds/step 0.1878
+TRAIN scratch5 epoch 59 iter 13920 loss 0.04084 seconds/step 0.1929
+EPOCH COMPLETE scratch5 {"epoch": 59, "iteration": 13924, "seconds": 47.27640896901721, "loss": 0.04003022309645253, "l1": 0.03963104834369684, "kl": 3.991747199522205e-05}
+TRAIN scratch5 epoch 60 iter 13940 loss 0.03968 seconds/step 0.2302
+TRAIN scratch5 epoch 60 iter 13960 loss 0.04024 seconds/step 0.2328
+TRAIN scratch5 epoch 60 iter 13980 loss 0.03864 seconds/step 0.192
+TRAIN scratch5 epoch 60 iter 14000 loss 0.04098 seconds/step 0.197
+TRAIN scratch5 epoch 60 iter 14020 loss 0.04024 seconds/step 0.1982
+TRAIN scratch5 epoch 60 iter 14040 loss 0.04053 seconds/step 0.1913
+TRAIN scratch5 epoch 60 iter 14060 loss 0.03907 seconds/step 0.1905
+TRAIN scratch5 epoch 60 iter 14080 loss 0.03952 seconds/step 0.1891
+TRAIN scratch5 epoch 60 iter 14100 loss 0.03928 seconds/step 0.1893
+TRAIN scratch5 epoch 60 iter 14120 loss 0.03928 seconds/step 0.195
+TRAIN scratch5 epoch 60 iter 14140 loss 0.04105 seconds/step 0.1848
+TRAIN scratch5 epoch 60 iter 14160 loss 0.03859 seconds/step 0.1653
+EPOCH COMPLETE scratch5 {"epoch": 60, "iteration": 14160, "seconds": 46.42040733399335, "loss": 0.03978709575041371, "l1": 0.039382075180567924, "kl": 4.050205506384866e-05}
+TRAIN scratch5 epoch 61 iter 14180 loss 0.04025 seconds/step 0.2154
+TRAIN scratch5 epoch 61 iter 14200 loss 0.03897 seconds/step 0.218
+TRAIN scratch5 epoch 61 iter 14220 loss 0.04013 seconds/step 0.1749
+TRAIN scratch5 epoch 61 iter 14240 loss 0.0395 seconds/step 0.1722
+TRAIN scratch5 epoch 61 iter 14260 loss 0.04313 seconds/step 0.1752
+TRAIN scratch5 epoch 61 iter 14280 loss 0.03959 seconds/step 0.172
+TRAIN scratch5 epoch 61 iter 14300 loss 0.03985 seconds/step 0.1776
+TRAIN scratch5 epoch 61 iter 14320 loss 0.03923 seconds/step 0.1824
+TRAIN scratch5 epoch 61 iter 14340 loss 0.03886 seconds/step 0.1804
+TRAIN scratch5 epoch 61 iter 14360 loss 0.03907 seconds/step 0.1812
+TRAIN scratch5 epoch 61 iter 14380 loss 0.04001 seconds/step 0.1939
+EPOCH COMPLETE scratch5 {"epoch": 61, "iteration": 14396, "seconds": 44.96691005901084, "loss": 0.03968834419245437, "l1": 0.03930926480788296, "kl": 3.790794184847766e-05}
+TRAIN scratch5 epoch 62 iter 14400 loss 0.0387 seconds/step 0.2313
+TRAIN scratch5 epoch 62 iter 14420 loss 0.03917 seconds/step 0.2199
+TRAIN scratch5 epoch 62 iter 14440 loss 0.04035 seconds/step 0.2185
+TRAIN scratch5 epoch 62 iter 14460 loss 0.03814 seconds/step 0.1808
+TRAIN scratch5 epoch 62 iter 14480 loss 0.03876 seconds/step 0.1886
+TRAIN scratch5 epoch 62 iter 14500 loss 0.04055 seconds/step 0.1887
+TRAIN scratch5 epoch 62 iter 14520 loss 0.03965 seconds/step 0.1806
+TRAIN scratch5 epoch 62 iter 14540 loss 0.03909 seconds/step 0.1866
+TRAIN scratch5 epoch 62 iter 14560 loss 0.04056 seconds/step 0.1835
+TRAIN scratch5 epoch 62 iter 14580 loss 0.03942 seconds/step 0.1857
+TRAIN scratch5 epoch 62 iter 14600 loss 0.04206 seconds/step 0.1929
+TRAIN scratch5 epoch 62 iter 14620 loss 0.04073 seconds/step 0.1884
+EPOCH COMPLETE scratch5 {"epoch": 62, "iteration": 14632, "seconds": 45.48120375498547, "loss": 0.039541508449967636, "l1": 0.039160467589558184, "kl": 3.810409298701847e-05}
+TRAIN scratch5 epoch 63 iter 14640 loss 0.03882 seconds/step 0.2129
+TRAIN scratch5 epoch 63 iter 14660 loss 0.04042 seconds/step 0.2142
+TRAIN scratch5 epoch 63 iter 14680 loss 0.03864 seconds/step 0.2181
+TRAIN scratch5 epoch 63 iter 14700 loss 0.03951 seconds/step 0.1829
+TRAIN scratch5 epoch 63 iter 14720 loss 0.03984 seconds/step 0.1876
+TRAIN scratch5 epoch 63 iter 14740 loss 0.0394 seconds/step 0.1898
+TRAIN scratch5 epoch 63 iter 14760 loss 0.0392 seconds/step 0.1933
+TRAIN scratch5 epoch 63 iter 14780 loss 0.04118 seconds/step 0.1895
+TRAIN scratch5 epoch 63 iter 14800 loss 0.03849 seconds/step 0.1799
+TRAIN scratch5 epoch 63 iter 14820 loss 0.04269 seconds/step 0.1818
+TRAIN scratch5 epoch 63 iter 14840 loss 0.03939 seconds/step 0.1833
+TRAIN scratch5 epoch 63 iter 14860 loss 0.04071 seconds/step 0.1794
+EPOCH COMPLETE scratch5 {"epoch": 63, "iteration": 14868, "seconds": 45.31669225799851, "loss": 0.0393810331253177, "l1": 0.03902106380121688, "kl": 3.59969416560982e-05}
+TRAIN scratch5 epoch 64 iter 14880 loss 0.03885 seconds/step 0.2164
+TRAIN scratch5 epoch 64 iter 14900 loss 0.03842 seconds/step 0.2081
+TRAIN scratch5 epoch 64 iter 14920 loss 0.03907 seconds/step 0.1817
+TRAIN scratch5 epoch 64 iter 14940 loss 0.03801 seconds/step 0.1843
+TRAIN scratch5 epoch 64 iter 14960 loss 0.03998 seconds/step 0.1835
+TRAIN scratch5 epoch 64 iter 14980 loss 0.04021 seconds/step 0.1864
+TRAIN scratch5 epoch 64 iter 15000 loss 0.03971 seconds/step 0.1891
+TRAIN scratch5 epoch 64 iter 15020 loss 0.04056 seconds/step 0.1921
+TRAIN scratch5 epoch 64 iter 15040 loss 0.03938 seconds/step 0.1873
+TRAIN scratch5 epoch 64 iter 15060 loss 0.03848 seconds/step 0.1835
+TRAIN scratch5 epoch 64 iter 15080 loss 0.03845 seconds/step 0.182
+TRAIN scratch5 epoch 64 iter 15100 loss 0.03898 seconds/step 0.1872
+EPOCH COMPLETE scratch5 {"epoch": 64, "iteration": 15104, "seconds": 45.26682973201969, "loss": 0.03915251073253862, "l1": 0.03877354010750177, "kl": 3.789706544798179e-05}
+TRAIN scratch5 epoch 65 iter 15120 loss 0.03855 seconds/step 0.2167
+TRAIN scratch5 epoch 65 iter 15140 loss 0.039 seconds/step 0.2202
+TRAIN scratch5 epoch 65 iter 15160 loss 0.03994 seconds/step 0.1829
+TRAIN scratch5 epoch 65 iter 15180 loss 0.03881 seconds/step 0.1988
+TRAIN scratch5 epoch 65 iter 15200 loss 0.04101 seconds/step 0.1962
+TRAIN scratch5 epoch 65 iter 15220 loss 0.03833 seconds/step 0.2041
+TRAIN scratch5 epoch 65 iter 15240 loss 0.03781 seconds/step 0.1914
+TRAIN scratch5 epoch 65 iter 15260 loss 0.03969 seconds/step 0.1881
+TRAIN scratch5 epoch 65 iter 15280 loss 0.04111 seconds/step 0.1893
+TRAIN scratch5 epoch 65 iter 15300 loss 0.03868 seconds/step 0.1871
+TRAIN scratch5 epoch 65 iter 15320 loss 0.03804 seconds/step 0.1822
+TRAIN scratch5 epoch 65 iter 15340 loss 0.03763 seconds/step 0.1702
+EPOCH COMPLETE scratch5 {"epoch": 65, "iteration": 15340, "seconds": 46.05152050999459, "loss": 0.03911062783040738, "l1": 0.03873206973391569, "kl": 3.785580315321814e-05}
+TRAIN scratch5 epoch 66 iter 15360 loss 0.03845 seconds/step 0.222
+TRAIN scratch5 epoch 66 iter 15380 loss 0.03833 seconds/step 0.2228
+TRAIN scratch5 epoch 66 iter 15400 loss 0.03774 seconds/step 0.1904
+TRAIN scratch5 epoch 66 iter 15420 loss 0.03954 seconds/step 0.1905
+TRAIN scratch5 epoch 66 iter 15440 loss 0.03872 seconds/step 0.1848
+TRAIN scratch5 epoch 66 iter 15460 loss 0.03858 seconds/step 0.1762
+TRAIN scratch5 epoch 66 iter 15480 loss 0.03863 seconds/step 0.1765
+TRAIN scratch5 epoch 66 iter 15500 loss 0.03942 seconds/step 0.1796
+TRAIN scratch5 epoch 66 iter 15520 loss 0.03941 seconds/step 0.1908
+TRAIN scratch5 epoch 66 iter 15540 loss 0.03886 seconds/step 0.1908
+TRAIN scratch5 epoch 66 iter 15560 loss 0.0396 seconds/step 0.1893
+EPOCH COMPLETE scratch5 {"epoch": 66, "iteration": 15576, "seconds": 45.21694482699968, "loss": 0.039011078381563646, "l1": 0.03865841700363967, "kl": 3.526612062607024e-05}
+TRAIN scratch5 epoch 67 iter 15580 loss 0.03891 seconds/step 0.2163
+TRAIN scratch5 epoch 67 iter 15600 loss 0.03971 seconds/step 0.2175
+TRAIN scratch5 epoch 67 iter 15620 loss 0.03866 seconds/step 0.2206
+TRAIN scratch5 epoch 67 iter 15640 loss 0.04001 seconds/step 0.188
+TRAIN scratch5 epoch 67 iter 15660 loss 0.038 seconds/step 0.1822
+TRAIN scratch5 epoch 67 iter 15680 loss 0.0382 seconds/step 0.1885
+TRAIN scratch5 epoch 67 iter 15700 loss 0.03839 seconds/step 0.1858
+TRAIN scratch5 epoch 67 iter 15720 loss 0.03917 seconds/step 0.1844
+TRAIN scratch5 epoch 67 iter 15740 loss 0.03878 seconds/step 0.1975
+TRAIN scratch5 epoch 67 iter 15760 loss 0.03838 seconds/step 0.1966
+TRAIN scratch5 epoch 67 iter 15780 loss 0.03783 seconds/step 0.202
+TRAIN scratch5 epoch 67 iter 15800 loss 0.03961 seconds/step 0.1856
+EPOCH COMPLETE scratch5 {"epoch": 67, "iteration": 15812, "seconds": 45.81943796001724, "loss": 0.03886177963813988, "l1": 0.03852197100108458, "kl": 3.398085909331281e-05}
+TRAIN scratch5 epoch 68 iter 15820 loss 0.03907 seconds/step 0.2176
+TRAIN scratch5 epoch 68 iter 15840 loss 0.03839 seconds/step 0.2202
+TRAIN scratch5 epoch 68 iter 15860 loss 0.03847 seconds/step 0.2234
+TRAIN scratch5 epoch 68 iter 15880 loss 0.04018 seconds/step 0.1931
+TRAIN scratch5 epoch 68 iter 15900 loss 0.03909 seconds/step 0.1896
+TRAIN scratch5 epoch 68 iter 15920 loss 0.03872 seconds/step 0.187
+TRAIN scratch5 epoch 68 iter 15940 loss 0.04008 seconds/step 0.1791
+TRAIN scratch5 epoch 68 iter 15960 loss 0.03844 seconds/step 0.1893
+TRAIN scratch5 epoch 68 iter 15980 loss 0.03753 seconds/step 0.193
+TRAIN scratch5 epoch 68 iter 16000 loss 0.03847 seconds/step 0.196
+TRAIN scratch5 epoch 68 iter 16020 loss 0.03938 seconds/step 0.1982
+TRAIN scratch5 epoch 68 iter 16040 loss 0.03849 seconds/step 0.1799
+EPOCH COMPLETE scratch5 {"epoch": 68, "iteration": 16048, "seconds": 46.08503773598932, "loss": 0.03861122167969154, "l1": 0.03826296496820652, "kl": 3.4825670901859586e-05}
+TRAIN scratch5 epoch 69 iter 16060 loss 0.03776 seconds/step 0.2183
+TRAIN scratch5 epoch 69 iter 16080 loss 0.03785 seconds/step 0.2117
+TRAIN scratch5 epoch 69 iter 16100 loss 0.03975 seconds/step 0.176
+TRAIN scratch5 epoch 69 iter 16120 loss 0.03893 seconds/step 0.1748
+TRAIN scratch5 epoch 69 iter 16140 loss 0.03765 seconds/step 0.1817
+TRAIN scratch5 epoch 69 iter 16160 loss 0.03877 seconds/step 0.1835
+TRAIN scratch5 epoch 69 iter 16180 loss 0.03848 seconds/step 0.1842
+TRAIN scratch5 epoch 69 iter 16200 loss 0.03967 seconds/step 0.187
+TRAIN scratch5 epoch 69 iter 16220 loss 0.03961 seconds/step 0.1826
+TRAIN scratch5 epoch 69 iter 16240 loss 0.03833 seconds/step 0.1841
+TRAIN scratch5 epoch 69 iter 16260 loss 0.03824 seconds/step 0.1861
+TRAIN scratch5 epoch 69 iter 16280 loss 0.03858 seconds/step 0.1801
+EPOCH COMPLETE scratch5 {"epoch": 69, "iteration": 16284, "seconds": 44.496880538004916, "loss": 0.03845796194243229, "l1": 0.03813968624098826, "kl": 3.1827578021551804e-05}
+TRAIN scratch5 epoch 70 iter 16300 loss 0.03904 seconds/step 0.2248
+TRAIN scratch5 epoch 70 iter 16320 loss 0.03728 seconds/step 0.2186
+TRAIN scratch5 epoch 70 iter 16340 loss 0.03821 seconds/step 0.1808
+TRAIN scratch5 epoch 70 iter 16360 loss 0.0391 seconds/step 0.1859
+TRAIN scratch5 epoch 70 iter 16380 loss 0.03782 seconds/step 0.1804
+TRAIN scratch5 epoch 70 iter 16400 loss 0.03836 seconds/step 0.1975
+TRAIN scratch5 epoch 70 iter 16420 loss 0.03935 seconds/step 0.1993
+TRAIN scratch5 epoch 70 iter 16440 loss 0.03712 seconds/step 0.1988
+TRAIN scratch5 epoch 70 iter 16460 loss 0.03743 seconds/step 0.1906
+TRAIN scratch5 epoch 70 iter 16480 loss 0.03905 seconds/step 0.1931
+TRAIN scratch5 epoch 70 iter 16500 loss 0.03827 seconds/step 0.1981
+TRAIN scratch5 epoch 70 iter 16520 loss 0.03698 seconds/step 0.188
+EPOCH COMPLETE scratch5 {"epoch": 70, "iteration": 16520, "seconds": 46.926916251017246, "loss": 0.038324659485054216, "l1": 0.03806008592689947, "kl": 2.645735530369181e-05}
+TRAIN scratch5 epoch 71 iter 16540 loss 0.0376 seconds/step 0.2316
+TRAIN scratch5 epoch 71 iter 16560 loss 0.03847 seconds/step 0.2332
+TRAIN scratch5 epoch 71 iter 16580 loss 0.03881 seconds/step 0.1918
+TRAIN scratch5 epoch 71 iter 16600 loss 0.03665 seconds/step 0.1976
+TRAIN scratch5 epoch 71 iter 16620 loss 0.03628 seconds/step 0.2011
+TRAIN scratch5 epoch 71 iter 16640 loss 0.03818 seconds/step 0.1924
+TRAIN scratch5 epoch 71 iter 16660 loss 0.03734 seconds/step 0.19
+TRAIN scratch5 epoch 71 iter 16680 loss 0.03802 seconds/step 0.1946
+TRAIN scratch5 epoch 71 iter 16700 loss 0.03755 seconds/step 0.1906
+TRAIN scratch5 epoch 71 iter 16720 loss 0.03951 seconds/step 0.1906
+TRAIN scratch5 epoch 71 iter 16740 loss 0.03941 seconds/step 0.1895
+EPOCH COMPLETE scratch5 {"epoch": 71, "iteration": 16756, "seconds": 47.46903625098639, "loss": 0.03820990728435375, "l1": 0.037914248972626054, "kl": 2.956582836104336e-05}
+TRAIN scratch5 epoch 72 iter 16760 loss 0.04015 seconds/step 0.2283
+TRAIN scratch5 epoch 72 iter 16780 loss 0.03883 seconds/step 0.2169
+TRAIN scratch5 epoch 72 iter 16800 loss 0.03964 seconds/step 0.2163
+TRAIN scratch5 epoch 72 iter 16820 loss 0.03629 seconds/step 0.1794
+TRAIN scratch5 epoch 72 iter 16840 loss 0.03816 seconds/step 0.1834
+TRAIN scratch5 epoch 72 iter 16860 loss 0.03876 seconds/step 0.189
+TRAIN scratch5 epoch 72 iter 16880 loss 0.03756 seconds/step 0.1891
+TRAIN scratch5 epoch 72 iter 16900 loss 0.03723 seconds/step 0.1991
+TRAIN scratch5 epoch 72 iter 16920 loss 0.03794 seconds/step 0.1901
+TRAIN scratch5 epoch 72 iter 16940 loss 0.03705 seconds/step 0.1855
+TRAIN scratch5 epoch 72 iter 16960 loss 0.03893 seconds/step 0.1885
+TRAIN scratch5 epoch 72 iter 16980 loss 0.03907 seconds/step 0.1775
+EPOCH COMPLETE scratch5 {"epoch": 72, "iteration": 16992, "seconds": 44.34871535698767, "loss": 0.038174787188990644, "l1": 0.037866469677853384, "kl": 3.0831753635646825e-05}
+TRAIN scratch5 epoch 73 iter 17000 loss 0.03676 seconds/step 0.209
+TRAIN scratch5 epoch 73 iter 17020 loss 0.03781 seconds/step 0.2054
+TRAIN scratch5 epoch 73 iter 17040 loss 0.03699 seconds/step 0.2133
+TRAIN scratch5 epoch 73 iter 17060 loss 0.03806 seconds/step 0.1846
+TRAIN scratch5 epoch 73 iter 17080 loss 0.03657 seconds/step 0.1793
+TRAIN scratch5 epoch 73 iter 17100 loss 0.03812 seconds/step 0.1804
+TRAIN scratch5 epoch 73 iter 17120 loss 0.03891 seconds/step 0.1803
+TRAIN scratch5 epoch 73 iter 17140 loss 0.0384 seconds/step 0.1812
+TRAIN scratch5 epoch 73 iter 17160 loss 0.03778 seconds/step 0.1859
+TRAIN scratch5 epoch 73 iter 17180 loss 0.0368 seconds/step 0.1821
+TRAIN scratch5 epoch 73 iter 17200 loss 0.03747 seconds/step 0.1778
+TRAIN scratch5 epoch 73 iter 17220 loss 0.03843 seconds/step 0.1777
+EPOCH COMPLETE scratch5 {"epoch": 73, "iteration": 17228, "seconds": 43.87838327800273, "loss": 0.03799327860696841, "l1": 0.037711112823147895, "kl": 2.8216571312657185e-05}
+TRAIN scratch5 epoch 74 iter 17240 loss 0.03772 seconds/step 0.2167
+TRAIN scratch5 epoch 74 iter 17260 loss 0.03953 seconds/step 0.2086
+TRAIN scratch5 epoch 74 iter 17280 loss 0.03953 seconds/step 0.1757
+TRAIN scratch5 epoch 74 iter 17300 loss 0.03958 seconds/step 0.174
+TRAIN scratch5 epoch 74 iter 17320 loss 0.0373 seconds/step 0.1836
+TRAIN scratch5 epoch 74 iter 17340 loss 0.03895 seconds/step 0.1734
+TRAIN scratch5 epoch 74 iter 17360 loss 0.0387 seconds/step 0.186
+TRAIN scratch5 epoch 74 iter 17380 loss 0.03828 seconds/step 0.1844
+TRAIN scratch5 epoch 74 iter 17400 loss 0.03834 seconds/step 0.1825
+TRAIN scratch5 epoch 74 iter 17420 loss 0.03819 seconds/step 0.1772
+TRAIN scratch5 epoch 74 iter 17440 loss 0.03783 seconds/step 0.179
+TRAIN scratch5 epoch 74 iter 17460 loss 0.03724 seconds/step 0.1705
+EPOCH COMPLETE scratch5 {"epoch": 74, "iteration": 17464, "seconds": 43.614990752976155, "loss": 0.03794132922854969, "l1": 0.03765173455289865, "kl": 2.8959470216512396e-05}
+TRAIN scratch5 epoch 75 iter 17480 loss 0.03631 seconds/step 0.2114
+TRAIN scratch5 epoch 75 iter 17500 loss 0.03957 seconds/step 0.2061
+TRAIN scratch5 epoch 75 iter 17520 loss 0.03675 seconds/step 0.1769
+TRAIN scratch5 epoch 75 iter 17540 loss 0.03699 seconds/step 0.1866
+TRAIN scratch5 epoch 75 iter 17560 loss 0.03725 seconds/step 0.1747
+TRAIN scratch5 epoch 75 iter 17580 loss 0.03912 seconds/step 0.1751
+TRAIN scratch5 epoch 75 iter 17600 loss 0.03679 seconds/step 0.1844
+TRAIN scratch5 epoch 75 iter 17620 loss 0.0388 seconds/step 0.1869
+TRAIN scratch5 epoch 75 iter 17640 loss 0.03787 seconds/step 0.1823
+TRAIN scratch5 epoch 75 iter 17660 loss 0.0371 seconds/step 0.1813
+TRAIN scratch5 epoch 75 iter 17680 loss 0.0373 seconds/step 0.1835
+TRAIN scratch5 epoch 75 iter 17700 loss 0.03595 seconds/step 0.1725
+EPOCH COMPLETE scratch5 {"epoch": 75, "iteration": 17700, "seconds": 44.31070457500755, "loss": 0.03778416690242998, "l1": 0.03753280900103056, "kl": 2.513579885875885e-05}
+TRAIN scratch5 epoch 76 iter 17720 loss 0.03858 seconds/step 0.2213
+TRAIN scratch5 epoch 76 iter 17740 loss 0.03675 seconds/step 0.2157
+TRAIN scratch5 epoch 76 iter 17760 loss 0.03967 seconds/step 0.1875
+TRAIN scratch5 epoch 76 iter 17780 loss 0.03862 seconds/step 0.1857
+TRAIN scratch5 epoch 76 iter 17800 loss 0.03748 seconds/step 0.1882
+TRAIN scratch5 epoch 76 iter 17820 loss 0.03836 seconds/step 0.1875
+TRAIN scratch5 epoch 76 iter 17840 loss 0.03848 seconds/step 0.1885
+TRAIN scratch5 epoch 76 iter 17860 loss 0.03792 seconds/step 0.1816
+TRAIN scratch5 epoch 76 iter 17880 loss 0.03755 seconds/step 0.1835
+TRAIN scratch5 epoch 76 iter 17900 loss 0.0373 seconds/step 0.1872
+TRAIN scratch5 epoch 76 iter 17920 loss 0.03749 seconds/step 0.1831
+EPOCH COMPLETE scratch5 {"epoch": 76, "iteration": 17936, "seconds": 45.09209703601664, "loss": 0.037711198236477575, "l1": 0.0374535575224939, "kl": 2.5764071216468377e-05}
+TRAIN scratch5 epoch 77 iter 17940 loss 0.03689 seconds/step 0.2051
+TRAIN scratch5 epoch 77 iter 17960 loss 0.03987 seconds/step 0.2017
+TRAIN scratch5 epoch 77 iter 17980 loss 0.03608 seconds/step 0.2306
+TRAIN scratch5 epoch 77 iter 18000 loss 0.03873 seconds/step 0.1874
+TRAIN scratch5 epoch 77 iter 18020 loss 0.03738 seconds/step 0.1764
+TRAIN scratch5 epoch 77 iter 18040 loss 0.03836 seconds/step 0.1774
+TRAIN scratch5 epoch 77 iter 18060 loss 0.03781 seconds/step 0.1801
+TRAIN scratch5 epoch 77 iter 18080 loss 0.03705 seconds/step 0.1813
+TRAIN scratch5 epoch 77 iter 18100 loss 0.03769 seconds/step 0.188
+TRAIN scratch5 epoch 77 iter 18120 loss 0.03644 seconds/step 0.1855
+TRAIN scratch5 epoch 77 iter 18140 loss 0.03885 seconds/step 0.1805
+TRAIN scratch5 epoch 77 iter 18160 loss 0.03762 seconds/step 0.1815
+EPOCH COMPLETE scratch5 {"epoch": 77, "iteration": 18172, "seconds": 45.00798200099962, "loss": 0.03756030098045782, "l1": 0.037311746770421324, "kl": 2.4855426167728875e-05}
+TRAIN scratch5 epoch 78 iter 18180 loss 0.03778 seconds/step 0.2152
+TRAIN scratch5 epoch 78 iter 18200 loss 0.03769 seconds/step 0.2147
+TRAIN scratch5 epoch 78 iter 18220 loss 0.03802 seconds/step 0.2222
+TRAIN scratch5 epoch 78 iter 18240 loss 0.03841 seconds/step 0.1868
+TRAIN scratch5 epoch 78 iter 18260 loss 0.03703 seconds/step 0.1784
+TRAIN scratch5 epoch 78 iter 18280 loss 0.0371 seconds/step 0.1808
+TRAIN scratch5 epoch 78 iter 18300 loss 0.03633 seconds/step 0.1828
+TRAIN scratch5 epoch 78 iter 18320 loss 0.03716 seconds/step 0.1879
+TRAIN scratch5 epoch 78 iter 18340 loss 0.03697 seconds/step 0.1815
+TRAIN scratch5 epoch 78 iter 18360 loss 0.03676 seconds/step 0.1822
+TRAIN scratch5 epoch 78 iter 18380 loss 0.03635 seconds/step 0.1873
+TRAIN scratch5 epoch 78 iter 18400 loss 0.03701 seconds/step 0.1829
+EPOCH COMPLETE scratch5 {"epoch": 78, "iteration": 18408, "seconds": 44.9174997319933, "loss": 0.037468448123436866, "l1": 0.03724284137015121, "kl": 2.2560678806226954e-05}
+TRAIN scratch5 epoch 79 iter 18420 loss 0.03706 seconds/step 0.2195
+TRAIN scratch5 epoch 79 iter 18440 loss 0.03853 seconds/step 0.2137
+TRAIN scratch5 epoch 79 iter 18460 loss 0.03832 seconds/step 0.1804
+TRAIN scratch5 epoch 79 iter 18480 loss 0.03667 seconds/step 0.1913
+TRAIN scratch5 epoch 79 iter 18500 loss 0.03707 seconds/step 0.1907
+TRAIN scratch5 epoch 79 iter 18520 loss 0.03846 seconds/step 0.194
+TRAIN scratch5 epoch 79 iter 18540 loss 0.03796 seconds/step 0.1882
+TRAIN scratch5 epoch 79 iter 18560 loss 0.03702 seconds/step 0.1857
+TRAIN scratch5 epoch 79 iter 18580 loss 0.03697 seconds/step 0.1771
+TRAIN scratch5 epoch 79 iter 18600 loss 0.03757 seconds/step 0.1907
+TRAIN scratch5 epoch 79 iter 18620 loss 0.03748 seconds/step 0.1908
+TRAIN scratch5 epoch 79 iter 18640 loss 0.03826 seconds/step 0.183
+EPOCH COMPLETE scratch5 {"epoch": 79, "iteration": 18644, "seconds": 45.48875391599722, "loss": 0.03734342829655793, "l1": 0.03711207305728379, "kl": 2.313553017363844e-05}
+TRAIN scratch5 epoch 80 iter 18660 loss 0.03688 seconds/step 0.2104
+TRAIN scratch5 epoch 80 iter 18680 loss 0.03918 seconds/step 0.2247
+TRAIN scratch5 epoch 80 iter 18700 loss 0.03773 seconds/step 0.1815
+TRAIN scratch5 epoch 80 iter 18720 loss 0.03734 seconds/step 0.1799
+TRAIN scratch5 epoch 80 iter 18740 loss 0.03808 seconds/step 0.1819
+TRAIN scratch5 epoch 80 iter 18760 loss 0.03704 seconds/step 0.1839
+TRAIN scratch5 epoch 80 iter 18780 loss 0.03668 seconds/step 0.1808
+TRAIN scratch5 epoch 80 iter 18800 loss 0.0372 seconds/step 0.1894
+TRAIN scratch5 epoch 80 iter 18820 loss 0.03537 seconds/step 0.1877
+TRAIN scratch5 epoch 80 iter 18840 loss 0.03675 seconds/step 0.1771
+TRAIN scratch5 epoch 80 iter 18860 loss 0.03708 seconds/step 0.1798
+TRAIN scratch5 epoch 80 iter 18880 loss 0.03954 seconds/step 0.1681
+EPOCH COMPLETE scratch5 {"epoch": 80, "iteration": 18880, "seconds": 45.022601110016694, "loss": 0.03730208044713837, "l1": 0.03708000149640996, "kl": 2.220790215148354e-05}
+TRAIN scratch5 epoch 81 iter 18900 loss 0.03701 seconds/step 0.2175
+TRAIN scratch5 epoch 81 iter 18920 loss 0.03666 seconds/step 0.2151
+TRAIN scratch5 epoch 81 iter 18940 loss 0.03596 seconds/step 0.1676
+TRAIN scratch5 epoch 81 iter 18960 loss 0.03656 seconds/step 0.1752
+TRAIN scratch5 epoch 81 iter 18980 loss 0.03778 seconds/step 0.1726
+TRAIN scratch5 epoch 81 iter 19000 loss 0.03646 seconds/step 0.179
+TRAIN scratch5 epoch 81 iter 19020 loss 0.03899 seconds/step 0.1783
+TRAIN scratch5 epoch 81 iter 19040 loss 0.03692 seconds/step 0.1796
+TRAIN scratch5 epoch 81 iter 19060 loss 0.03704 seconds/step 0.1852
+TRAIN scratch5 epoch 81 iter 19080 loss 0.03652 seconds/step 0.1817
+TRAIN scratch5 epoch 81 iter 19100 loss 0.03912 seconds/step 0.1773
+EPOCH COMPLETE scratch5 {"epoch": 81, "iteration": 19116, "seconds": 43.73242151099839, "loss": 0.037287940886818756, "l1": 0.037044488351350116, "kl": 2.4345259157984154e-05}
+TRAIN scratch5 epoch 82 iter 19120 loss 0.03866 seconds/step 0.2073
+TRAIN scratch5 epoch 82 iter 19140 loss 0.03701 seconds/step 0.2025
+TRAIN scratch5 epoch 82 iter 19160 loss 0.03746 seconds/step 0.2133
+TRAIN scratch5 epoch 82 iter 19180 loss 0.03655 seconds/step 0.184
+TRAIN scratch5 epoch 82 iter 19200 loss 0.03695 seconds/step 0.1838
+TRAIN scratch5 epoch 82 iter 19220 loss 0.03689 seconds/step 0.1845
+TRAIN scratch5 epoch 82 iter 19240 loss 0.03806 seconds/step 0.1813
+TRAIN scratch5 epoch 82 iter 19260 loss 0.03813 seconds/step 0.1756
+TRAIN scratch5 epoch 82 iter 19280 loss 0.03586 seconds/step 0.1776
+TRAIN scratch5 epoch 82 iter 19300 loss 0.03683 seconds/step 0.1792
+TRAIN scratch5 epoch 82 iter 19320 loss 0.03695 seconds/step 0.1815
+TRAIN scratch5 epoch 82 iter 19340 loss 0.03729 seconds/step 0.179
+EPOCH COMPLETE scratch5 {"epoch": 82, "iteration": 19352, "seconds": 44.24941002498963, "loss": 0.03711094288944693, "l1": 0.036888410053137, "kl": 2.2253267377244025e-05}
+TRAIN scratch5 epoch 83 iter 19360 loss 0.03677 seconds/step 0.2051
+TRAIN scratch5 epoch 83 iter 19380 loss 0.03782 seconds/step 0.2135
+TRAIN scratch5 epoch 83 iter 19400 loss 0.03718 seconds/step 0.2157
+TRAIN scratch5 epoch 83 iter 19420 loss 0.03783 seconds/step 0.1825
+TRAIN scratch5 epoch 83 iter 19440 loss 0.03709 seconds/step 0.1873
+TRAIN scratch5 epoch 83 iter 19460 loss 0.03694 seconds/step 0.184
+TRAIN scratch5 epoch 83 iter 19480 loss 0.03857 seconds/step 0.1747
+TRAIN scratch5 epoch 83 iter 19500 loss 0.03569 seconds/step 0.1838
+TRAIN scratch5 epoch 83 iter 19520 loss 0.03789 seconds/step 0.1853
+TRAIN scratch5 epoch 83 iter 19540 loss 0.03803 seconds/step 0.1848
+TRAIN scratch5 epoch 83 iter 19560 loss 0.03799 seconds/step 0.1771
+TRAIN scratch5 epoch 83 iter 19580 loss 0.03642 seconds/step 0.1794
+EPOCH COMPLETE scratch5 {"epoch": 83, "iteration": 19588, "seconds": 44.159211301011965, "loss": 0.037104564119067235, "l1": 0.03690839168947127, "kl": 1.9617248538344353e-05}
+TRAIN scratch5 epoch 84 iter 19600 loss 0.03805 seconds/step 0.215
+TRAIN scratch5 epoch 84 iter 19620 loss 0.04006 seconds/step 0.2136
+TRAIN scratch5 epoch 84 iter 19640 loss 0.03786 seconds/step 0.1806
+TRAIN scratch5 epoch 84 iter 19660 loss 0.03683 seconds/step 0.1748
+TRAIN scratch5 epoch 84 iter 19680 loss 0.0388 seconds/step 0.1796
+TRAIN scratch5 epoch 84 iter 19700 loss 0.03565 seconds/step 0.1863
+TRAIN scratch5 epoch 84 iter 19720 loss 0.03715 seconds/step 0.1864
+TRAIN scratch5 epoch 84 iter 19740 loss 0.03744 seconds/step 0.1838
+TRAIN scratch5 epoch 84 iter 19760 loss 0.03757 seconds/step 0.173
+TRAIN scratch5 epoch 84 iter 19780 loss 0.03709 seconds/step 0.1817
+TRAIN scratch5 epoch 84 iter 19800 loss 0.0389 seconds/step 0.1825
+TRAIN scratch5 epoch 84 iter 19820 loss 0.03691 seconds/step 0.172
+EPOCH COMPLETE scratch5 {"epoch": 84, "iteration": 19824, "seconds": 43.972294484003214, "loss": 0.037042849586676745, "l1": 0.03685197527757136, "kl": 1.9087426060928087e-05}
+TRAIN scratch5 epoch 85 iter 19840 loss 0.03687 seconds/step 0.2056
+TRAIN scratch5 epoch 85 iter 19860 loss 0.0367 seconds/step 0.2174
+TRAIN scratch5 epoch 85 iter 19880 loss 0.03677 seconds/step 0.1937
+TRAIN scratch5 epoch 85 iter 19900 loss 0.03742 seconds/step 0.1853
+TRAIN scratch5 epoch 85 iter 19920 loss 0.03575 seconds/step 0.1745
+TRAIN scratch5 epoch 85 iter 19940 loss 0.03746 seconds/step 0.1821
+TRAIN scratch5 epoch 85 iter 19960 loss 0.03794 seconds/step 0.1739
+TRAIN scratch5 epoch 85 iter 19980 loss 0.03716 seconds/step 0.1798
+TRAIN scratch5 epoch 85 iter 20000 loss 0.03589 seconds/step 0.1681
+TRAIN scratch5 epoch 85 iter 20020 loss 0.03714 seconds/step 0.1662
+TRAIN scratch5 epoch 85 iter 20040 loss 0.03671 seconds/step 0.1821
+TRAIN scratch5 epoch 85 iter 20060 loss 0.03709 seconds/step 0.1687
+EPOCH COMPLETE scratch5 {"epoch": 85, "iteration": 20060, "seconds": 43.8140499459696, "loss": 0.0369840893042037, "l1": 0.03678967151790857, "kl": 1.9441769173851245e-05}
+TRAIN scratch5 epoch 86 iter 20080 loss 0.03686 seconds/step 0.2155
+TRAIN scratch5 epoch 86 iter 20100 loss 0.03726 seconds/step 0.2083
+TRAIN scratch5 epoch 86 iter 20120 loss 0.03822 seconds/step 0.1752
+TRAIN scratch5 epoch 86 iter 20140 loss 0.03702 seconds/step 0.1731
+TRAIN scratch5 epoch 86 iter 20160 loss 0.03653 seconds/step 0.1763
+TRAIN scratch5 epoch 86 iter 20180 loss 0.03664 seconds/step 0.1785
+TRAIN scratch5 epoch 86 iter 20200 loss 0.03711 seconds/step 0.1796
+TRAIN scratch5 epoch 86 iter 20220 loss 0.03559 seconds/step 0.1789
+TRAIN scratch5 epoch 86 iter 20240 loss 0.03608 seconds/step 0.1807
+TRAIN scratch5 epoch 86 iter 20260 loss 0.0364 seconds/step 0.183
+TRAIN scratch5 epoch 86 iter 20280 loss 0.03689 seconds/step 0.1815
+EPOCH COMPLETE scratch5 {"epoch": 86, "iteration": 20296, "seconds": 43.801647952990606, "loss": 0.03693382391485117, "l1": 0.03674391593973515, "kl": 1.899080553673646e-05}
+TRAIN scratch5 epoch 87 iter 20300 loss 0.03648 seconds/step 0.2176
+TRAIN scratch5 epoch 87 iter 20320 loss 0.03727 seconds/step 0.2051
+TRAIN scratch5 epoch 87 iter 20340 loss 0.03655 seconds/step 0.218
+TRAIN scratch5 epoch 87 iter 20360 loss 0.03761 seconds/step 0.1787
+TRAIN scratch5 epoch 87 iter 20380 loss 0.03766 seconds/step 0.1786
+TRAIN scratch5 epoch 87 iter 20400 loss 0.03727 seconds/step 0.177
+TRAIN scratch5 epoch 87 iter 20420 loss 0.03632 seconds/step 0.1783
+TRAIN scratch5 epoch 87 iter 20440 loss 0.03665 seconds/step 0.1752
+TRAIN scratch5 epoch 87 iter 20460 loss 0.03668 seconds/step 0.1766
+TRAIN scratch5 epoch 87 iter 20480 loss 0.0353 seconds/step 0.1834
+TRAIN scratch5 epoch 87 iter 20500 loss 0.03635 seconds/step 0.1837
+TRAIN scratch5 epoch 87 iter 20520 loss 0.03751 seconds/step 0.1834
+EPOCH COMPLETE scratch5 {"epoch": 87, "iteration": 20532, "seconds": 43.83660762797808, "loss": 0.036883160929684924, "l1": 0.03671413211751792, "kl": 1.690288036886575e-05}
+TRAIN scratch5 epoch 88 iter 20540 loss 0.03602 seconds/step 0.2136
+TRAIN scratch5 epoch 88 iter 20560 loss 0.03666 seconds/step 0.2146
+TRAIN scratch5 epoch 88 iter 20580 loss 0.03643 seconds/step 0.2153
+TRAIN scratch5 epoch 88 iter 20600 loss 0.03685 seconds/step 0.1768
+TRAIN scratch5 epoch 88 iter 20620 loss 0.03547 seconds/step 0.1717
+TRAIN scratch5 epoch 88 iter 20640 loss 0.03606 seconds/step 0.1701
+TRAIN scratch5 epoch 88 iter 20660 loss 0.03643 seconds/step 0.1794
+TRAIN scratch5 epoch 88 iter 20680 loss 0.03682 seconds/step 0.1784
+TRAIN scratch5 epoch 88 iter 20700 loss 0.03571 seconds/step 0.1749
+TRAIN scratch5 epoch 88 iter 20720 loss 0.03678 seconds/step 0.1776
+TRAIN scratch5 epoch 88 iter 20740 loss 0.03711 seconds/step 0.1801
+TRAIN scratch5 epoch 88 iter 20760 loss 0.03705 seconds/step 0.1776
+EPOCH COMPLETE scratch5 {"epoch": 88, "iteration": 20768, "seconds": 43.26696850301232, "loss": 0.036833598562595195, "l1": 0.03666786491176335, "kl": 1.65733749550566e-05}
+TRAIN scratch5 epoch 89 iter 20780 loss 0.03741 seconds/step 0.2124
+TRAIN scratch5 epoch 89 iter 20800 loss 0.03717 seconds/step 0.1983
+TRAIN scratch5 epoch 89 iter 20820 loss 0.0359 seconds/step 0.1689
+TRAIN scratch5 epoch 89 iter 20840 loss 0.03666 seconds/step 0.1714
+TRAIN scratch5 epoch 89 iter 20860 loss 0.0365 seconds/step 0.1735
+TRAIN scratch5 epoch 89 iter 20880 loss 0.03669 seconds/step 0.1722
+TRAIN scratch5 epoch 89 iter 20900 loss 0.03816 seconds/step 0.1708
+TRAIN scratch5 epoch 89 iter 20920 loss 0.03663 seconds/step 0.1802
+TRAIN scratch5 epoch 89 iter 20940 loss 0.0383 seconds/step 0.1753
+TRAIN scratch5 epoch 89 iter 20960 loss 0.03642 seconds/step 0.1707
+TRAIN scratch5 epoch 89 iter 20980 loss 0.0373 seconds/step 0.1749
+TRAIN scratch5 epoch 89 iter 21000 loss 0.03618 seconds/step 0.1712
+EPOCH COMPLETE scratch5 {"epoch": 89, "iteration": 21004, "seconds": 42.591371034039184, "loss": 0.036775436552273014, "l1": 0.036614228213616345, "kl": 1.612082953708862e-05}
+TRAIN scratch5 epoch 90 iter 21020 loss 0.03677 seconds/step 0.2021
+TRAIN scratch5 epoch 90 iter 21040 loss 0.0366 seconds/step 0.2037
+TRAIN scratch5 epoch 90 iter 21060 loss 0.03695 seconds/step 0.1806
+TRAIN scratch5 epoch 90 iter 21080 loss 0.0364 seconds/step 0.1773
+TRAIN scratch5 epoch 90 iter 21100 loss 0.03606 seconds/step 0.1777
+TRAIN scratch5 epoch 90 iter 21120 loss 0.03633 seconds/step 0.1724
+TRAIN scratch5 epoch 90 iter 21140 loss 0.03644 seconds/step 0.1764
+TRAIN scratch5 epoch 90 iter 21160 loss 0.03597 seconds/step 0.1777
+TRAIN scratch5 epoch 90 iter 21180 loss 0.03626 seconds/step 0.1743
+TRAIN scratch5 epoch 90 iter 21200 loss 0.03648 seconds/step 0.1767
+TRAIN scratch5 epoch 90 iter 21220 loss 0.037 seconds/step 0.1737
+TRAIN scratch5 epoch 90 iter 21240 loss 0.03487 seconds/step 0.1648
+EPOCH COMPLETE scratch5 {"epoch": 90, "iteration": 21240, "seconds": 42.79453687102068, "loss": 0.036683055240724044, "l1": 0.03652843671961356, "kl": 1.5461862103158206e-05}
+TRAIN scratch5 epoch 91 iter 21260 loss 0.03525 seconds/step 0.4268
+TRAIN scratch5 epoch 91 iter 21280 loss 0.03698 seconds/step 0.4263
+TRAIN scratch5 epoch 91 iter 21300 loss 0.03645 seconds/step 0.1738
+TRAIN scratch5 epoch 91 iter 21320 loss 0.03637 seconds/step 0.1722
+TRAIN scratch5 epoch 91 iter 21340 loss 0.03586 seconds/step 0.1623
+TRAIN scratch5 epoch 91 iter 21360 loss 0.0372 seconds/step 0.1767
+TRAIN scratch5 epoch 91 iter 21380 loss 0.03735 seconds/step 0.1761
+TRAIN scratch5 epoch 91 iter 21400 loss 0.03649 seconds/step 0.1837
+TRAIN scratch5 epoch 91 iter 21420 loss 0.03506 seconds/step 0.1789
+TRAIN scratch5 epoch 91 iter 21440 loss 0.03638 seconds/step 0.1772
+TRAIN scratch5 epoch 91 iter 21460 loss 0.03708 seconds/step 0.1792
+EPOCH COMPLETE scratch5 {"epoch": 91, "iteration": 21476, "seconds": 43.543330805026926, "loss": 0.03672605372523352, "l1": 0.036572398775714936, "kl": 1.536550014522726e-05}
+TRAIN scratch5 epoch 92 iter 21480 loss 0.03498 seconds/step 0.2177
+TRAIN scratch5 epoch 92 iter 21500 loss 0.03662 seconds/step 0.2017
+TRAIN scratch5 epoch 92 iter 21520 loss 0.03743 seconds/step 0.21
+TRAIN scratch5 epoch 92 iter 21540 loss 0.03637 seconds/step 0.1747
+TRAIN scratch5 epoch 92 iter 21560 loss 0.0369 seconds/step 0.1803
+TRAIN scratch5 epoch 92 iter 21580 loss 0.03613 seconds/step 0.1808
+TRAIN scratch5 epoch 92 iter 21600 loss 0.03576 seconds/step 0.1805
+TRAIN scratch5 epoch 92 iter 21620 loss 0.0372 seconds/step 0.1828
+TRAIN scratch5 epoch 92 iter 21640 loss 0.03787 seconds/step 0.1875
+TRAIN scratch5 epoch 92 iter 21660 loss 0.03621 seconds/step 0.1813
+TRAIN scratch5 epoch 92 iter 21680 loss 0.03783 seconds/step 0.1852
+TRAIN scratch5 epoch 92 iter 21700 loss 0.03658 seconds/step 0.1774
+EPOCH COMPLETE scratch5 {"epoch": 92, "iteration": 21712, "seconds": 44.01033630798338, "loss": 0.0366414121462632, "l1": 0.036494572836337454, "kl": 1.4683935251784949e-05}
+TRAIN scratch5 epoch 93 iter 21720 loss 0.03713 seconds/step 0.21
+TRAIN scratch5 epoch 93 iter 21740 loss 0.03719 seconds/step 0.2179
+TRAIN scratch5 epoch 93 iter 21760 loss 0.03599 seconds/step 0.2188
+TRAIN scratch5 epoch 93 iter 21780 loss 0.03644 seconds/step 0.1757
+TRAIN scratch5 epoch 93 iter 21800 loss 0.03515 seconds/step 0.1738
+TRAIN scratch5 epoch 93 iter 21820 loss 0.03699 seconds/step 0.1777
+TRAIN scratch5 epoch 93 iter 21840 loss 0.03746 seconds/step 0.1787
+TRAIN scratch5 epoch 93 iter 21860 loss 0.03482 seconds/step 0.1755
+TRAIN scratch5 epoch 93 iter 21880 loss 0.03698 seconds/step 0.1729
+TRAIN scratch5 epoch 93 iter 21900 loss 0.03634 seconds/step 0.1737
+TRAIN scratch5 epoch 93 iter 21920 loss 0.03757 seconds/step 0.1732
+TRAIN scratch5 epoch 93 iter 21940 loss 0.03883 seconds/step 0.1755
+EPOCH COMPLETE scratch5 {"epoch": 93, "iteration": 21948, "seconds": 43.521934883028734, "loss": 0.03672353018832914, "l1": 0.036575978069360984, "kl": 1.475521751564298e-05}
+TRAIN scratch5 epoch 94 iter 21960 loss 0.03681 seconds/step 0.2074
+TRAIN scratch5 epoch 94 iter 21980 loss 0.03536 seconds/step 0.1939
+TRAIN scratch5 epoch 94 iter 22000 loss 0.03612 seconds/step 0.1699
+TRAIN scratch5 epoch 94 iter 22020 loss 0.03814 seconds/step 0.1811
+TRAIN scratch5 epoch 94 iter 22040 loss 0.03592 seconds/step 0.1808
+TRAIN scratch5 epoch 94 iter 22060 loss 0.03656 seconds/step 0.1846
+TRAIN scratch5 epoch 94 iter 22080 loss 0.03661 seconds/step 0.1714
+TRAIN scratch5 epoch 94 iter 22100 loss 0.03594 seconds/step 0.1716
+TRAIN scratch5 epoch 94 iter 22120 loss 0.03605 seconds/step 0.1752
+TRAIN scratch5 epoch 94 iter 22140 loss 0.03596 seconds/step 0.1768
+TRAIN scratch5 epoch 94 iter 22160 loss 0.03597 seconds/step 0.1788
+TRAIN scratch5 epoch 94 iter 22180 loss 0.03683 seconds/step 0.1733
+EPOCH COMPLETE scratch5 {"epoch": 94, "iteration": 22184, "seconds": 42.95681603299454, "loss": 0.03661983081344831, "l1": 0.036484866860811996, "kl": 1.349639215747583e-05}
+TRAIN scratch5 epoch 95 iter 22200 loss 0.03539 seconds/step 0.2011
+TRAIN scratch5 epoch 95 iter 22220 loss 0.03813 seconds/step 0.212
+TRAIN scratch5 epoch 95 iter 22240 loss 0.0356 seconds/step 0.1824
+TRAIN scratch5 epoch 95 iter 22260 loss 0.03662 seconds/step 0.1798
+TRAIN scratch5 epoch 95 iter 22280 loss 0.03923 seconds/step 0.174
+TRAIN scratch5 epoch 95 iter 22300 loss 0.03634 seconds/step 0.1699
+TRAIN scratch5 epoch 95 iter 22320 loss 0.0357 seconds/step 0.1766
+TRAIN scratch5 epoch 95 iter 22340 loss 0.03789 seconds/step 0.1769
+TRAIN scratch5 epoch 95 iter 22360 loss 0.03624 seconds/step 0.1762
+TRAIN scratch5 epoch 95 iter 22380 loss 0.03571 seconds/step 0.1762
+TRAIN scratch5 epoch 95 iter 22400 loss 0.03708 seconds/step 0.1767
+TRAIN scratch5 epoch 95 iter 22420 loss 0.03679 seconds/step 0.1677
+EPOCH COMPLETE scratch5 {"epoch": 95, "iteration": 22420, "seconds": 43.4896812250372, "loss": 0.03664197123972541, "l1": 0.036511103243772255, "kl": 1.3086810976331482e-05}
+TRAIN scratch5 epoch 96 iter 22440 loss 0.03538 seconds/step 0.2163
+TRAIN scratch5 epoch 96 iter 22460 loss 0.03686 seconds/step 0.2119
+TRAIN scratch5 epoch 96 iter 22480 loss 0.03759 seconds/step 0.1846
+TRAIN scratch5 epoch 96 iter 22500 loss 0.03738 seconds/step 0.185
+TRAIN scratch5 epoch 96 iter 22520 loss 0.03568 seconds/step 0.1785
+TRAIN scratch5 epoch 96 iter 22540 loss 0.03597 seconds/step 0.1809
+TRAIN scratch5 epoch 96 iter 22560 loss 0.0362 seconds/step 0.1791
+TRAIN scratch5 epoch 96 iter 22580 loss 0.0378 seconds/step 0.1874
+TRAIN scratch5 epoch 96 iter 22600 loss 0.036 seconds/step 0.1808
+TRAIN scratch5 epoch 96 iter 22620 loss 0.03644 seconds/step 0.1808
+TRAIN scratch5 epoch 96 iter 22640 loss 0.03607 seconds/step 0.1769
+EPOCH COMPLETE scratch5 {"epoch": 96, "iteration": 22656, "seconds": 44.26217091898434, "loss": 0.03660792847937447, "l1": 0.03648009948369305, "kl": 1.2782891845144135e-05}
+TRAIN scratch5 epoch 97 iter 22660 loss 0.03602 seconds/step 0.2181
+TRAIN scratch5 epoch 97 iter 22680 loss 0.03743 seconds/step 0.2132
+TRAIN scratch5 epoch 97 iter 22700 loss 0.03751 seconds/step 0.2155
+TRAIN scratch5 epoch 97 iter 22720 loss 0.03846 seconds/step 0.1799
+TRAIN scratch5 epoch 97 iter 22740 loss 0.03511 seconds/step 0.1865
+TRAIN scratch5 epoch 97 iter 22760 loss 0.03758 seconds/step 0.1826
+TRAIN scratch5 epoch 97 iter 22780 loss 0.03605 seconds/step 0.1921
+TRAIN scratch5 epoch 97 iter 22800 loss 0.03661 seconds/step 0.1864
+TRAIN scratch5 epoch 97 iter 22820 loss 0.03746 seconds/step 0.1919
+TRAIN scratch5 epoch 97 iter 22840 loss 0.03685 seconds/step 0.1789
+TRAIN scratch5 epoch 97 iter 22860 loss 0.03704 seconds/step 0.186
+TRAIN scratch5 epoch 97 iter 22880 loss 0.0365 seconds/step 0.1767
+EPOCH COMPLETE scratch5 {"epoch": 97, "iteration": 22892, "seconds": 44.525827967969235, "loss": 0.03657012027135845, "l1": 0.03644243604108944, "kl": 1.2768422308554517e-05}
+TRAIN scratch5 epoch 98 iter 22900 loss 0.03642 seconds/step 0.22
+TRAIN scratch5 epoch 98 iter 22920 loss 0.03683 seconds/step 0.2173
+TRAIN scratch5 epoch 98 iter 22940 loss 0.03534 seconds/step 0.2176
+TRAIN scratch5 epoch 98 iter 22960 loss 0.03711 seconds/step 0.1757
+TRAIN scratch5 epoch 98 iter 22980 loss 0.03669 seconds/step 0.1886
+TRAIN scratch5 epoch 98 iter 23000 loss 0.03713 seconds/step 0.1859
+TRAIN scratch5 epoch 98 iter 23020 loss 0.03672 seconds/step 0.1868
+TRAIN scratch5 epoch 98 iter 23040 loss 0.03647 seconds/step 0.1811
+TRAIN scratch5 epoch 98 iter 23060 loss 0.03716 seconds/step 0.1827
+TRAIN scratch5 epoch 98 iter 23080 loss 0.03647 seconds/step 0.1864
+TRAIN scratch5 epoch 98 iter 23100 loss 0.03574 seconds/step 0.1865
+TRAIN scratch5 epoch 98 iter 23120 loss 0.03612 seconds/step 0.1782
+EPOCH COMPLETE scratch5 {"epoch": 98, "iteration": 23128, "seconds": 44.9075229659793, "loss": 0.03650559775405011, "l1": 0.03637875761773627, "kl": 1.2684021153984496e-05}
+TRAIN scratch5 epoch 99 iter 23140 loss 0.03705 seconds/step 0.2177
+TRAIN scratch5 epoch 99 iter 23160 loss 0.03574 seconds/step 0.2139
+TRAIN scratch5 epoch 99 iter 23180 loss 0.03478 seconds/step 0.185
+TRAIN scratch5 epoch 99 iter 23200 loss 0.03596 seconds/step 0.1929
+TRAIN scratch5 epoch 99 iter 23220 loss 0.03671 seconds/step 0.177
+TRAIN scratch5 epoch 99 iter 23240 loss 0.03662 seconds/step 0.1785
+TRAIN scratch5 epoch 99 iter 23260 loss 0.03714 seconds/step 0.18
+TRAIN scratch5 epoch 99 iter 23280 loss 0.03686 seconds/step 0.1813
+TRAIN scratch5 epoch 99 iter 23300 loss 0.03713 seconds/step 0.1774
+TRAIN scratch5 epoch 99 iter 23320 loss 0.0372 seconds/step 0.1787
+TRAIN scratch5 epoch 99 iter 23340 loss 0.03648 seconds/step 0.1782
+TRAIN scratch5 epoch 99 iter 23360 loss 0.03552 seconds/step 0.1737
+EPOCH COMPLETE scratch5 {"epoch": 99, "iteration": 23364, "seconds": 44.30090549797751, "loss": 0.03648639542950412, "l1": 0.03636195854741638, "kl": 1.2443678523426169e-05}
+TRAIN scratch5 epoch 100 iter 23380 loss 0.03811 seconds/step 0.2074
+TRAIN scratch5 epoch 100 iter 23400 loss 0.03742 seconds/step 0.2128
+TRAIN scratch5 epoch 100 iter 23420 loss 0.03719 seconds/step 0.1747
+TRAIN scratch5 epoch 100 iter 23440 loss 0.0367 seconds/step 0.192
+TRAIN scratch5 epoch 100 iter 23460 loss 0.03762 seconds/step 0.1854
+TRAIN scratch5 epoch 100 iter 23480 loss 0.03598 seconds/step 0.1876
+TRAIN scratch5 epoch 100 iter 23500 loss 0.03867 seconds/step 0.1878
+TRAIN scratch5 epoch 100 iter 23520 loss 0.03761 seconds/step 0.1967
+TRAIN scratch5 epoch 100 iter 23540 loss 0.03724 seconds/step 0.1905
+TRAIN scratch5 epoch 100 iter 23560 loss 0.03629 seconds/step 0.1852
+TRAIN scratch5 epoch 100 iter 23580 loss 0.03667 seconds/step 0.1855
+TRAIN scratch5 epoch 100 iter 23600 loss 0.03569 seconds/step 0.1666
+EPOCH COMPLETE scratch5 {"epoch": 100, "iteration": 23600, "seconds": 45.392187595018186, "loss": 0.03659814179448758, "l1": 0.03647290181242308, "kl": 1.2523992501297409e-05}

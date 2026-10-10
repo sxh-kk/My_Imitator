@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "condition": "scratch5",
+  "checkpoint": "/home/zxc/Imitator/experiments/act_dinov2_15task/runs/scratch5/checkpoints/final_model.pt",
+  "checkpoint_sha256": "e5881bd908f650d6b1daa46bb850d6e074e37c4df9193cf5f5c207818c294f10",
+  "epochs": 100,
+  "iterations": 23600,
+  "optimizer_steps": [
+    23600
+  ],
+  "elapsed_seconds": 4591.79911886499,
+  "peak_gpu_gib": 6.458115100860596,
+  "frames": 60246,
+  "finished_at": 1791536127.0525546
+}

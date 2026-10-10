@@ -1,0 +1,739 @@
+{
+  "status": "complete",
+  "scope": "ACT+DINOv2 simulation, official 15-task split; one seed; no 30/45-task scaling or real hardware",
+  "cells": [
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotStirSpoon-v1",
+      "group": "seen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotStirSpoon-v1",
+      "group": "seen",
+      "SR": 0.9,
+      "Sub_SR_tau_095": 0.9333333333333332,
+      "success_once": 0.9
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotStirSpoon-v1",
+      "group": "seen",
+      "SR": 0.4,
+      "Sub_SR_tau_095": 0.75,
+      "success_once": 0.4
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotStirSpoon-v1",
+      "group": "seen",
+      "SR": 0.1,
+      "Sub_SR_tau_095": 0.1,
+      "success_once": 0.1
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotPlacePlateRack-v1",
+      "group": "seen",
+      "SR": 0.7,
+      "Sub_SR_tau_095": 0.7,
+      "success_once": 0.7
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotPlacePlateRack-v1",
+      "group": "seen",
+      "SR": 0.8,
+      "Sub_SR_tau_095": 0.8,
+      "success_once": 0.8
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotPlacePlateRack-v1",
+      "group": "seen",
+      "SR": 0.9,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotPlacePlateRack-v1",
+      "group": "seen",
+      "SR": 0.7,
+      "Sub_SR_tau_095": 0.7,
+      "success_once": 0.7
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotPlaceFileFolder-v1",
+      "group": "seen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotPlaceFileFolder-v1",
+      "group": "seen",
+      "SR": 0.5,
+      "Sub_SR_tau_095": 0.64,
+      "success_once": 0.5
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotPlaceFileFolder-v1",
+      "group": "seen",
+      "SR": 0.3,
+      "Sub_SR_tau_095": 0.44000000000000006,
+      "success_once": 0.3
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotPlaceFileFolder-v1",
+      "group": "seen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotFoldTowel-v1",
+      "group": "seen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotFoldTowel-v1",
+      "group": "seen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotFoldTowel-v1",
+      "group": "seen",
+      "SR": 0.9,
+      "Sub_SR_tau_095": 0.9833333333333334,
+      "success_once": 0.9
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotFoldTowel-v1",
+      "group": "seen",
+      "SR": 0.8,
+      "Sub_SR_tau_095": 0.9833333333333334,
+      "success_once": 0.9
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotPlaceMugRack-v1",
+      "group": "seen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotPlaceMugRack-v1",
+      "group": "seen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotPlaceMugRack-v1",
+      "group": "seen",
+      "SR": 0.6,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotPlaceMugRack-v1",
+      "group": "seen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L0_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L1_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 0.8,
+      "Sub_SR_tau_095": 0.8,
+      "success_once": 0.8
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L2_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "pretrain15",
+      "env": "L3_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L0_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L1_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L2_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 0.9,
+      "Sub_SR_tau_095": 0.9,
+      "success_once": 0.9
+    },
+    {
+      "condition": "scratch5",
+      "env": "L3_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L0_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L1_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L2_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L3_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L0_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.4,
+      "Sub_SR_tau_095": 0.7333333333333334,
+      "success_once": 0.4
+    },
+    {
+      "condition": "scratch5",
+      "env": "L1_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.3,
+      "Sub_SR_tau_095": 0.5666666666666667,
+      "success_once": 0.3
+    },
+    {
+      "condition": "scratch5",
+      "env": "L2_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L3_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L0_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L1_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L2_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 0.5,
+      "Sub_SR_tau_095": 0.7,
+      "success_once": 0.5
+    },
+    {
+      "condition": "scratch5",
+      "env": "L3_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L0_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L1_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L2_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "scratch5",
+      "env": "L3_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L0_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L1_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L2_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 0.9,
+      "Sub_SR_tau_095": 0.9,
+      "success_once": 0.9
+    },
+    {
+      "condition": "finetune5",
+      "env": "L3_TwoRobotPickRemoteControl-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L0_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 0.7,
+      "Sub_SR_tau_095": 0.8666666666666666,
+      "success_once": 0.7
+    },
+    {
+      "condition": "finetune5",
+      "env": "L1_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 0.5,
+      "Sub_SR_tau_095": 0.7666666666666666,
+      "success_once": 0.5
+    },
+    {
+      "condition": "finetune5",
+      "env": "L2_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 0.9,
+      "Sub_SR_tau_095": 0.9,
+      "success_once": 0.9
+    },
+    {
+      "condition": "finetune5",
+      "env": "L3_TwoRobotScanMilkBox-v1",
+      "group": "unseen",
+      "SR": 0.7,
+      "Sub_SR_tau_095": 0.82,
+      "success_once": 0.7
+    },
+    {
+      "condition": "finetune5",
+      "env": "L0_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.6,
+      "Sub_SR_tau_095": 0.6666666666666667,
+      "success_once": 0.6
+    },
+    {
+      "condition": "finetune5",
+      "env": "L1_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.4,
+      "Sub_SR_tau_095": 0.5333333333333333,
+      "success_once": 0.4
+    },
+    {
+      "condition": "finetune5",
+      "env": "L2_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.0,
+      "success_once": 0.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L3_TwoRobotPourKettle-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L0_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 0.7,
+      "Sub_SR_tau_095": 0.9,
+      "success_once": 0.7
+    },
+    {
+      "condition": "finetune5",
+      "env": "L1_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L2_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 0.0,
+      "Sub_SR_tau_095": 0.4,
+      "success_once": 0.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L3_TwoRobotPickFood-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L0_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 0.2,
+      "Sub_SR_tau_095": 0.2,
+      "success_once": 0.2
+    },
+    {
+      "condition": "finetune5",
+      "env": "L1_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L2_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    },
+    {
+      "condition": "finetune5",
+      "env": "L3_TwoRobotFoldBox-v1",
+      "group": "unseen",
+      "SR": 1.0,
+      "Sub_SR_tau_095": 1.0,
+      "success_once": 1.0
+    }
+  ],
+  "aggregates": {
+    "pretrain15_seen": {
+      "SR": 0.78,
+      "Sub_SR_tau_095": 0.8515,
+      "success_once": 0.8099999999999999
+    },
+    "pretrain15_unseen": {
+      "SR": 0.04,
+      "Sub_SR_tau_095": 0.04,
+      "success_once": 0.04
+    },
+    "scratch5_unseen": {
+      "SR": 0.8550000000000001,
+      "Sub_SR_tau_095": 0.8949999999999999,
+      "success_once": 0.8550000000000001
+    },
+    "finetune5_unseen": {
+      "SR": 0.73,
+      "Sub_SR_tau_095": 0.7976666666666666,
+      "success_once": 0.73
+    }
+  },
+  "PFT_minus_Scratch": {
+    "SR": -0.1250000000000001,
+    "Sub_SR_tau_095": -0.09733333333333327
+  },
+  "formal_episodes": 800,
+  "training_runs": {
+    "pretrain15": {
+      "status": "complete",
+      "condition": "pretrain15",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_dinov2_15task/runs/pretrain15/checkpoints/final_model.pt",
+      "checkpoint_sha256": "f87b3d45f374bc591b9f7038d9a3a3066211cb9da4bd165a9f18b7842fb1d0e0",
+      "epochs": 100,
+      "iterations": 403800,
+      "optimizer_steps": [
+        403800
+      ],
+      "elapsed_seconds": 78325.13632373099,
+      "peak_gpu_gib": 5.320553302764893,
+      "frames": 1033711,
+      "finished_at": 1791527798.739359
+    },
+    "scratch5": {
+      "status": "complete",
+      "condition": "scratch5",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_dinov2_15task/runs/scratch5/checkpoints/final_model.pt",
+      "checkpoint_sha256": "e5881bd908f650d6b1daa46bb850d6e074e37c4df9193cf5f5c207818c294f10",
+      "epochs": 100,
+      "iterations": 23600,
+      "optimizer_steps": [
+        23600
+      ],
+      "elapsed_seconds": 4591.79911886499,
+      "peak_gpu_gib": 6.458115100860596,
+      "frames": 60246,
+      "finished_at": 1791536127.0525546
+    },
+    "finetune5": {
+      "status": "complete",
+      "condition": "finetune5",
+      "checkpoint": "/home/zxc/Imitator/experiments/act_dinov2_15task/runs/finetune5/checkpoints/final_model.pt",
+      "checkpoint_sha256": "d1d7a599a0b1c159b02be44eba6a8d3b174d7d056a1ce5eae24987a544d0c95c",
+      "epochs": 100,
+      "iterations": 23600,
+      "optimizer_steps": [
+        23600
+      ],
+      "elapsed_seconds": 4416.216175207985,
+      "peak_gpu_gib": 5.32310152053833,
+      "frames": 60246,
+      "finished_at": 1791542095.488965
+    }
+  },
+  "audit": {
+    "upstream_unchanged": true,
+    "outer_scripts_unchanged": false,
+    "source_manifest_verified": true,
+    "training_source_unchanged": true,
+    "protocol_amendments": [
+      "checks/protocol-amendments/01_official_l3_dispatch/amendment.json"
+    ],
+    "paired_reset_and_video": true,
+    "equal_fewshot_budget": true
+  },
+  "limitations": [
+    "one training seed and ten trials per cell",
+    "only 15-task scale; paper Table3 also averages 30/45",
+    "unpublished Sub-SR threshold replaced by explicitly authorized 0.95",
+    "target task metadata statistics available, faithful to released evaluator",
+    "Transformer size, warmup and few-shot training duration defaulted where paper is unspecified"
+  ],
+  "finished_at": 1791543643.198685
+}

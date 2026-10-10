@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "env": "L0_TwoRobotStirSpoon-v1",
+  "level": "L0",
+  "phase_names": [
+    "reach",
+    "grasp",
+    "lift",
+    "approach_bowl",
+    "stir",
+    "return"
+  ],
+  "phase_peaks": {
+    "peak_r_reach": [
+      0.13835221529006958
+    ],
+    "peak_r_grasp": [
+      0.13835221529006958
+    ],
+    "peak_r_lift": [
+      0.0
+    ],
+    "peak_r_approach_bowl": [
+      0.0
+    ],
+    "peak_r_stir": [
+      0.0
+    ],
+    "peak_r_return": [
+      0.0
+    ]
+  },
+  "rgb_render_shape": [
+    1,
+    512,
+    512,
+    3
+  ],
+  "action_shapes": {
+    "panda_wristcam-0": [
+      8
+    ],
+    "panda_wristcam-1": [
+      8
+    ]
+  },
+  "success_available": true
+}

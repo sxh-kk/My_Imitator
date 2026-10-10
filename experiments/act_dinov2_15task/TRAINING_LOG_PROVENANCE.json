@@ -1,0 +1,29 @@
+{
+  "reason": "Iteration logs stay local; original per-epoch summaries are published.",
+  "logs": [
+    {
+      "local_only_log": "experiments/act_dinov2_15task/runs/finetune5/train.jsonl",
+      "bytes": 5945168,
+      "sha256": "584c8299caed3087e7df46a92206c98af54c5cf4327458c87842d28a437727e3",
+      "iterations": 23600,
+      "published_epoch_summary": "experiments/act_dinov2_15task/runs/finetune5/epochs.jsonl",
+      "epochs": 100
+    },
+    {
+      "local_only_log": "experiments/act_dinov2_15task/runs/pretrain15/train.jsonl",
+      "bytes": 102265035,
+      "sha256": "c89966424c0a5b7fd79fe7a738f2a24c651c0ae6e054aab255461131b490b9eb",
+      "iterations": 403800,
+      "published_epoch_summary": "experiments/act_dinov2_15task/runs/pretrain15/epochs.jsonl",
+      "epochs": 100
+    },
+    {
+      "local_only_log": "experiments/act_dinov2_15task/runs/scratch5/train.jsonl",
+      "bytes": 5926724,
+      "sha256": "35d85331db1af78ec3fa1e2549e8a24ac9efddf5650c219f4d747559bc03b69b",
+      "iterations": 23600,
+      "published_epoch_summary": "experiments/act_dinov2_15task/runs/scratch5/epochs.jsonl",
+      "epochs": 100
+    }
+  ]
+}
